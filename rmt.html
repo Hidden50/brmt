@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>brmt</title>
+</head>
+
+<body>
+	<div>
+		<!--Page Title-->
+		<h2 style="display: inline-block; margin-right:.25em">OU Weakness Checker (BreakMyTeam)</h2>
+		<a target="_blank" style="font-size:10pt"
+		   href="https://dl.dropboxusercontent.com/u/9207945/CompGen/Output/Compendiums_html/_more/javascript/About.html">
+			About this tool
+		</a>
+		
+		<!--Controls to set the Rating Function-->
+		<span style="float:right">
+			Rating function: 
+			<input type="number" ID="RatCoeffSel0" onchange="onRatCoeffSelectorChange(0, this.value)">*a +
+			<input type="number" ID="RatCoeffSel1" onchange="onRatCoeffSelectorChange(1, this.value)">*b +
+			<input type="number" ID="RatCoeffSel2" onchange="onRatCoeffSelectorChange(2, this.value)">*c -
+			<input type="number" ID="RatCoeffSel3" onchange="onRatCoeffSelectorChange(3, this.value)">*d -
+			<input type="number" ID="RatCoeffSel4" onchange="onRatCoeffSelectorChange(4, this.value)">*e -
+			<input type="number" ID="RatCoeffSel5" onchange="onRatCoeffSelectorChange(5, this.value)">*f
+			<script>
+				for (Mode = 0; Mode < 6; Mode++)
+					document.getElementById("RatCoeffSel" + Mode).style = "width:60px; text-align:right";
+			</script>
+			<br style="margin-bottom:8px">
+			<button onclick="onRatCoeffSelectorChange(6, [10000,100,2,11,7,3])">Break it!<br>[10000,100,2,11,7,3]</button>
+			<button onclick="onRatCoeffSelectorChange(6, [0,0,0,11,7,3])">Wall it!<br>[0,0,0,11,7,3]</button>
+		</span>
+	</div>
+	
+	<!-- leftside main div -->
+	<!-- select team members -->
+	<div style="float:left; margin-right:25px; width:25%; display:inline-block">
+		<h3>Add Team Members</h3>
+		<form id="form1" onsubmit="document.getElementById('0').onclick(); return false;">
+			Filter: <input name="name" type="text" size="20" oninput = "UpdateAutocompleteResults()" onpropertychange="UpdateAutocompleteResults()">
+			<a style="text-decoration:underline; text-decoration-color:blue; cursor:pointer; color:blue" onclick="urlparam=''; AddToTeam('');">
+				Clear Team
+			</a>
+		</form>
+		<p id="demo">Loading..</p>
+	</div>
+	
+	<!-- rightside main div -->
+	<div style="float:left; width:73%; display:inline-block">
+		<h3>Team</h3>
+		<p id="team"></p>
+		
+		<h3>Threatlist</h3>
+		<p id="threatlist"></p>
+	</div>
+	
+	
+
+
+
+
+
+
+
+
+<!--  Begin messy section. Skip it, I'll get back to cleaning this up later  -Orda -->
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+		const offline = false;
+		
+		window.onload = init;
+		var Threats = ["|"];
+		var Entries = ["|"];
+		var FilteredChecks;
+		var name, team, threatlist, urlparam;
+		
+		function init() {
+			name = document.getElementById("form1").elements["name"].value;
+			team = document.getElementById("team");
+			threatlist = document.getElementById("threatlist");
+			urlparam = getUrlParam('team=');
+			// pokemon identifiers contain a-z, A-Z, 0-9 and "-". Treat everything else as a separator
+			urlparam = urlparam.replace(/([^a-zA-Z0-9\-])+/g, ',');
+			UpdateAutocompleteResults();
+			AddToTeam('');
+			onRatCoeffSelectorChange(6, [10000,100,2,11,7,3]);  // init rating function
+		}
+		
+		function onRatCoeffSelectorChange(Mode, NewValue) {
+			SetRatingCoeff(Mode, NewValue);
+			for (var Mode = 0; Mode < 6; Mode++)
+				document.getElementById("RatCoeffSel" + Mode).value = RatingCoeff[Mode];
+			threatlist.innerHTML = ChecksArrayToHtml(FilteredChecks);
+		}
+		
+		function UpdateAutocompleteResults() {
+			demo.innerHTML = ParseCompendium(AutocompleteList(name));
+		}
+		
+		function AddToTeam(DexnumberOrName) {
+			// update the "urlparam" variable
+			// by adding the mon if it's not in there, removing it if it is
+			// (toggle)
+			var temp = urlparam.split(',');
+			urlparam = [];
+			var newGuy;
+			var alreadyExists = false;
+			if (DexnumberOrName.length > 0)
+				newGuy = AutocompletePokemon(DexnumberOrName);
+			else newGuy = "";
+			for (var i = 0; i < temp.length; i++) {
+				if (temp[i].length > 0) {
+					temp[i] = ExtractDexNum(AutocompletePokemon(temp[i]));
+					if ( newGuy.indexOf(temp[i]) >= 0 )
+						alreadyExists = true
+					else urlparam.push(temp[i]);
+				}
+			}
+			if ( (DexnumberOrName.length > 0) && (!alreadyExists) )
+				urlparam.push(DexnumberOrName);
+			urlparam = urlparam.join(',');
+			
+			// change the current url and page title to reflect the updated team
+			if (urlparam.length == 0) {
+				if (offline)
+					history.pushState({}, "", "file:///C:/Users/Daniel/Dropbox/Public/rmt3.html")
+				else history.pushState({}, "", "/u/9207945/rmt3.html");
+				document.title = "brmt";
+			} else {
+				if (offline)
+					history.pushState({}, "", "file:///C:/Users/Daniel/Dropbox/Public/rmt3.html?team=" + urlparam)
+				else history.pushState({}, "", "/u/9207945/rmt3.html?team=" + urlparam);
+				temp = urlparam.split(',');
+				for (var i = 0; i < temp.length; i++)
+					temp[i] = ExtractName(AutocompletePokemon(temp[i]))
+				document.title = "brmt - " + temp.join(", ");
+			}
+			
+			// print the team
+			var result2 = [];
+			var temp = urlparam.split(',');
+			for (var t in temp) {
+				if (temp[t].length > 0)
+					result2.push(  MakeClickable( AutocompletePokemon(temp[t]) )  );
+			}
+			team.innerHTML = ParseCompendium( result2.join("\n") );
+			
+			// print the threatlist
+			Entries = [];//["|"];
+			var temp2 = urlparam.split(",");
+			for (var t in temp2) {
+				if (temp2[t].length > 0)
+					Entries[t] = AutocompletePokemon(temp2[t]);
+			}
+			FilteredChecks = FilterChecksArray(Checks, Threats, Entries);
+			
+			threatlist.innerHTML = ChecksArrayToHtml(FilteredChecks);
+			
+			
+			document.getElementById("form1").elements["name"].value = '';
+			document.getElementById("form1").elements["name"].select();
+			document.getElementById("form1").elements["name"].oninput();
+			
+//			DownloadTxt( BuildCompendium(FilteredChecks), 'OUcc.txt' );
+//			DownloadHtml( BuildCompendium(FilteredChecks), 'OUcc.html' );
+	
+		}
+		
+		function getUrlParam(keyword) {
+			var param = location.search.split('team=').splice(1).join('').split('&')[0];
+			// replace %20 with spaces, and so on.
+			return decodeURIComponent(param);
+		}
+	</script>
+
+
+<!-- end messy section -->
+
+
+	<script src="https://dl.dropboxusercontent.com/u/9207945/CompGen/Output/Compendiums_html/_more/javascript/CompParser3.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/9207945/CompGen/Output/Compendiums_html/_more/javascript/CompAutocomplete3.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/9207945/CompGen/Output/Compendiums_html/_more/javascript/ccTools3.js"></script>
+
+
+	<!-- for offline version-->
+<!--
+	<script src="file:///C:/Users/Daniel/Dropbox/Public/CompGen/Output/Compendiums_html/_more/javascript/CompParser3.js"></script>
+	<script src="file:///C:/Users/Daniel/Dropbox/Public/CompGen/Output/Compendiums_html/_more/javascript/CompAutocomplete3.js"></script>
+	<script src="file:///C:/Users/Daniel/Dropbox/Public/CompGen/Output/Compendiums_html/_more/javascript/ccTools3.js"></script>
+-->
+	
+</body>
+</html>
