@@ -10,7 +10,7 @@
 		<!--Page Title-->
 		<h2 style="display: inline-block; margin-right:.25em">OU Weakness Checker (BreakMyTeam)</h2>
 		<a target="_blank" style="font-size:10pt"
-		   href="https://dl.dropboxusercontent.com/u/9207945/CompGen/Output/Compendiums_html/_more/javascript/About.html">
+		   href="About.html">
 			About this tool
 		</a>
 		
@@ -47,6 +47,7 @@
 	</div>
 	
 	<!-- rightside main div -->
+	<!-- print team and threatlist -->
 	<div style="float:left; width:73%; display:inline-block">
 		<h3>Team</h3>
 		<p id="team"></p>
@@ -133,14 +134,10 @@
 			
 			// change the current url and page title to reflect the updated team
 			if (urlparam.length == 0) {
-				if (offline)
-					history.pushState({}, "", "file:///C:/Users/Daniel/Dropbox/Public/rmt3.html")
-				else history.pushState({}, "", "/u/9207945/rmt3.html");
+				history.pushState({}, "", location.pathname);
 				document.title = "brmt";
 			} else {
-				if (offline)
-					history.pushState({}, "", "file:///C:/Users/Daniel/Dropbox/Public/rmt3.html?team=" + urlparam)
-				else history.pushState({}, "", "/u/9207945/rmt3.html?team=" + urlparam);
+				history.pushState({}, "", "?team=" + urlparam);
 				temp = urlparam.split(',');
 				for (var i = 0; i < temp.length; i++)
 					temp[i] = ExtractName(AutocompletePokemon(temp[i]))
@@ -178,7 +175,7 @@
 		}
 		
 		function getUrlParam(keyword) {
-			var param = location.search.split('team=').splice(1).join('').split('&')[0];
+			var param = location.search.split(keyword).splice(1).join('').split('&')[0];
 			// replace %20 with spaces, and so on.
 			return decodeURIComponent(param);
 		}
@@ -188,17 +185,10 @@
 <!-- end messy section -->
 
 
-	<script src="https://dl.dropboxusercontent.com/u/9207945/CompGen/Output/Compendiums_html/_more/javascript/CompParser3.js"></script>
-	<script src="https://dl.dropboxusercontent.com/u/9207945/CompGen/Output/Compendiums_html/_more/javascript/CompAutocomplete3.js"></script>
-	<script src="https://dl.dropboxusercontent.com/u/9207945/CompGen/Output/Compendiums_html/_more/javascript/ccTools3.js"></script>
+	<script src="cgfParser.js"></script>
+	<script src="cgfAutocomplete.js"></script>
+	<script src="ccTools.js"></script>
 
-
-	<!-- for offline version-->
-<!--
-	<script src="file:///C:/Users/Daniel/Dropbox/Public/CompGen/Output/Compendiums_html/_more/javascript/CompParser3.js"></script>
-	<script src="file:///C:/Users/Daniel/Dropbox/Public/CompGen/Output/Compendiums_html/_more/javascript/CompAutocomplete3.js"></script>
-	<script src="file:///C:/Users/Daniel/Dropbox/Public/CompGen/Output/Compendiums_html/_more/javascript/ccTools3.js"></script>
--->
 	
 </body>
 </html>

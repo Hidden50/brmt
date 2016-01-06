@@ -60,9 +60,10 @@ var Checks = [];
 
 {
 	var ChecksCompendium; 
-	if (offline)
-		ChecksCompendium = OpenTextfile('file:///C:/Users/Daniel/Dropbox/Public/CompGen/Output/Compendiums_txt/OU_Checks_Sorted2.txt').join('\n')
-	else ChecksCompendium = OpenTextfile('https://dl.dropboxusercontent.com/u/9207945/CompGen/Output/Compendiums_txt/OU_Checks_Sorted2.txt').join('\n');
+//	if (offline)
+//		ChecksCompendium = OpenTextfile('file:///C:/Users/Daniel/Dropbox/Public/CompGen/Output/Compendiums_txt/OU_Checks_Sorted2.txt').join('\n')
+//	else ChecksCompendium = OpenTextfile('https://dl.dropboxusercontent.com/u/9207945/CompGen/Output/Compendiums_txt/OU_Checks_Sorted2.txt').join('\n');
+	ChecksCompendium = OpenTextfile('OUcc.txt').join('\n');
 	Checks = ChecksCompendiumToChecksArray(ChecksCompendium);
 }
 

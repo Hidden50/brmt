@@ -1,9 +1,10 @@
 var _autocomplete_StartIndex = -1;
 var _AutocompleteList;
 
-if (offline) 
-	_AutocompleteList = OpenTextfile('file:///C:/Users/Daniel/Dropbox/Public/CompGen/full%20Sourcecode/v1_2/_autocomplete.txt')
-else _AutocompleteList = OpenTextfile('https://dl.dropboxusercontent.com/u/9207945/CompGen/full%20Sourcecode/v1_2/_autocomplete.txt');
+//if (offline) 
+//	_AutocompleteList = OpenTextfile('file:///C:/Users/Daniel/Dropbox/Public/CompGen/full%20Sourcecode/v1_2/_autocomplete.txt')
+//else _AutocompleteList = OpenTextfile('https://dl.dropboxusercontent.com/u/9207945/CompGen/full%20Sourcecode/v1_2/_autocomplete.txt');
+_AutocompleteList = OpenTextfile('_autocomplete.txt');
 
 var found = false;
 

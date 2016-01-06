@@ -2,7 +2,8 @@ function quotes(S) { return "\"" + S + "\""; }
 
 
 function Weblink(Dexnumber) {
-	if (offline)
+	return 'Serebii__Images/' + Dexnumber + '.png';
+/*	if (offline)
 		return 'file:///C:/Users/Daniel/Dropbox/Public/CompGen/Serebii__Images/' + Dexnumber + '.png'
 	else {
 		if ( Dexnumber.substring(0, 4).toLowerCase() != "493-" )
@@ -14,7 +15,7 @@ function Weblink(Dexnumber) {
 				                            // psychic color looks almost like fairy anyway
 			return 'http://sprites.pokecheck.org/icon/' + Dexnumber + '.png'
 		}
-	}
+	}*/
 // don't use this. Dropbox counts every single sprite as a file request, and kills your links if you have too many.
 //	return 'https://dl.dropboxusercontent.com/u/9207945/CompGen/Serebii_Images/' + Dexnumber + '.png'
 }
