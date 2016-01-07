@@ -84,10 +84,9 @@
 		var Threats = ["|"];
 		var Entries = ["|"];
 		var FilteredChecks;
-		var name, team, threatlist, urlparam;
+		var team, threatlist, urlparam;
 		
 		function init() {
-			name = document.getElementById("form1").elements["name"].value;
 			team = document.getElementById("team");
 			threatlist = document.getElementById("threatlist");
 			urlparam = getUrlParam('team=');
@@ -106,7 +105,7 @@
 		}
 		
 		function UpdateAutocompleteResults() {
-			demo.innerHTML = ParseCompendium(AutocompleteList(name));
+			demo.innerHTML = ParseCompendium(AutocompleteList( document.getElementById("form1").elements["name"].value ));
 		}
 		
 		function AddToTeam(DexnumberOrName) {
