@@ -238,19 +238,38 @@ function ThreatEntryToCGF(Threat) {
 
 function AddMouseover(DN, content) {
 	var result = [];
+	result.push( '<div style="display:inline-block; cursor:pointer; padding:15px; margin:5px; border: 2px solid navy;'
+	   + 'vertical-align:middle"'
+	   + ' onclick="OnClick(\'' + DN + '\', this);">' );
+	result.push( content );
+	result.push( '</div>' );
+	return result.join("\n");
+}
+
+function OnClick(DN, Sender) {
+	var mo = document.getElementById('mouseover');
+	mo.innerHTML = Checks[DN].asHtml;
+	mo.style.display = 'block';
+	mo.style.right = '0px';
+	mo.style.top = Sender.offsetTop + "px";
+//	mo.style.top = Math.floor(Sender.getBoundingClientRect().top) + "px";
+}
+
+/*function AddMouseover(DN, content) {
+	var result = [];
 	// Container X, with two divs in it (Y and Z) that can change visibility
 	result.push(
 	  '<div'
-	   + ' id="Threat_' + DN + '" style="display:inline-block; padding:15px; margin:5px; border: 2px solid navy; vertical-align:middle"'
+	   + ' style="display:inline-block"'
 	   + ' onmouseenter="OnMouseEnter(\'' + DN + '\', this);"'
-	   + ' onmouseleave="this.childNodes[1].style.display = \'inline-block\'; this.childNodes[3].style.display = \'none\';">'
+	   + ' onmouseleave="OnMouseLeave(this);">'
 	)
 	// Container Y, for the content
-	result.push( '<div style="display:inline-block">' );
+	result.push( '<div style="display:inline-block; padding:15px; margin:5px; border: 2px solid navy; vertical-align:middle">' );
 	result.push( content );
 	result.push( '</div>' );
 	// Container Z, for the mouse-over
-	result.push( '<div style="display:none"></div>' );
+	result.push( '<div style="display:none; padding:15px; margin:5px; border: 2px solid navy"></div>' );
 	result.push( '</div>' );
 	return result.join("\n");
 }
@@ -260,3 +279,8 @@ function OnMouseEnter(DN, Sender) {
 	Sender.childNodes[1].style.display = 'none';
 	Sender.childNodes[3].style.display = 'inline-block';
 }
+
+function OnMouseLeave(Sender) {
+	Sender.childNodes[1].style.display = 'inline-block';
+	Sender.childNodes[3].style.display = 'none';
+}*/
