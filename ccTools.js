@@ -204,7 +204,8 @@ function ChecksArrayToHtml(ChecksArray) {
 		Heaps[rating] = Heaps[rating].sort(  function(a,b) { return a.Tiebreaker - b.Tiebreaker; }  );
 		for (i = 0; i < Heaps[rating].length; i++) {
 			var DN = ExtractDexNum( Heaps[rating][i][_SI] );
-			result.push(  '', AddMouseover( DN, Heaps[rating][i].asHtml ), ''  );
+			result.push(  '', AddMouseover( DN, rating, ParseCompendium(AutocompletePokemon(DN)) ), ''  );
+//			result.push(  '', AddMouseover( DN, Heaps[rating][i].asHtml ), ''  );
 //			result.push("\nNewline\nNewline\n");
 		}
 	}
@@ -216,16 +217,16 @@ function ThreatEntryToCGF(Threat) {
 	
 	result.push(Threat[_SI]);
 	
-	if (  (Threat[invGSI].length + Threat[invSSI].length + Threat[invNSI].length) > 0  ) {
+/*	if (  (Threat[invGSI].length + Threat[invSSI].length + Threat[invNSI].length) > 0  ) {
 		result.push("(Threatens ");
 		for (var Mode = invGSI; Mode <= invNSI; Mode++) {
 			if (  ( Threat[Mode].length > 0 ) && ( Threat[Mode][0] !== "|" ) )
 				result.push( Threat[Mode].join("\n") );
 		}
 		result.push(")");
-	}
+	}*/
 	
-	for (var Mode = GSI; Mode <= NSI; Mode++) {
+	for (var Mode = GSI; Mode <= invNSI; Mode++) {
 		if (  ( Threat[Mode].length > 0 ) && ( Threat[Mode][0] !== "|" ) ) {
 			result.push( "Newline" );
 			result.push( Keywords[Mode] );
@@ -236,11 +237,14 @@ function ThreatEntryToCGF(Threat) {
 	return result;
 }
 
-function AddMouseover(DN, content) {
+function AddMouseover(DN, rating, content) {
 	var result = [];
-	result.push( '<div style="display:inline-block; cursor:pointer; padding:15px; margin:5px; border: 2px solid navy;'
-	   + 'vertical-align:middle"'
+	var theRating = -MinRating - rating;
+	var theColor = (theRating > 0) ? 'Coral' : (theRating > -50) ? 'Orange' : (theRating > -5000) ? 'PowderBlue ' : 'PaleGreen';
+	result.push( '<div style="display:inline-block; cursor:pointer; padding:5px; margin:5px; border: 2px solid Navy;'
+	   + ' background-color:' + theColor + '; vertical-align:middle"'
 	   + ' onclick="OnClick(\'' + DN + '\', this);">' );
+	result.push( '<span style="float:left; font-size:7pt">' + theRating + '</span>' );
 	result.push( content );
 	result.push( '</div>' );
 	return result.join("\n");
