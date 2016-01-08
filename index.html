@@ -6,62 +6,78 @@
 </head>
 
 <body>
-	<div>
-		<!--Page Title-->
-		<h2 style="display: inline-block; margin-right:.25em">OU Weakness Checker (BreakMyTeam)</h2>
-		<a target="_blank" style="font-size:10pt"
-		   href="About.html">
-			About this tool
-		</a>
-		
-		<!--Controls to set the Rating Function-->
-		<span style="float:right">
-			Rating function: 
-			<input type="number" ID="RatCoeffSel0" onchange="onRatCoeffSelectorChange(0, this.value)">*a +
-			<input type="number" ID="RatCoeffSel1" onchange="onRatCoeffSelectorChange(1, this.value)">*b +
-			<input type="number" ID="RatCoeffSel2" onchange="onRatCoeffSelectorChange(2, this.value)">*c -
-			<input type="number" ID="RatCoeffSel3" onchange="onRatCoeffSelectorChange(3, this.value)">*d -
-			<input type="number" ID="RatCoeffSel4" onchange="onRatCoeffSelectorChange(4, this.value)">*e -
-			<input type="number" ID="RatCoeffSel5" onchange="onRatCoeffSelectorChange(5, this.value)">*f
-			<script>
-				for (Mode = 0; Mode < 6; Mode++)
-					document.getElementById("RatCoeffSel" + Mode).style = "width:60px; text-align:right";
-			</script>
-			<br style="margin-bottom:8px">
+
+<!-- topside div -->
+<div>
+	<!--Page Title-->
+	<h2 style="display: inline-block; margin-right:.25em">OU Weakness Checker (BreakMyTeam)</h2>
+	<a target="_blank" style="font-size:10pt"
+	   href="About.html">
+		About this tool
+	</a>
+	
+	<!--Controls to set the Rating Function-->
+	<span style="float:right; padding:2px">
+		<span>
+			<span>Rating function:</span> 
+			<table style="display:inline-block; margin-bottom:0px; vertical-align:middle";>
+			<tr>
+				<td><input type="number" ID="RatCoeffSel0" onchange="onRatCoeffSelectorChange(0, this.value)"></td> <td>+</td>
+				<td><input type="number" ID="RatCoeffSel1" onchange="onRatCoeffSelectorChange(1, this.value)"></td> <td>+</td>
+				<td><input type="number" ID="RatCoeffSel2" onchange="onRatCoeffSelectorChange(2, this.value)"></td> <td>-</td>
+				<td><input type="number" ID="RatCoeffSel3" onchange="onRatCoeffSelectorChange(3, this.value)"></td> <td>-</td>
+				<td><input type="number" ID="RatCoeffSel4" onchange="onRatCoeffSelectorChange(4, this.value)"></td> <td>-</td>
+				<td><input type="number" ID="RatCoeffSel5" onchange="onRatCoeffSelectorChange(5, this.value)"></td>
+			</tr>
+			<tr>
+				<td align="center">GSI</td><td></td>
+				<td align="center">SSI</td><td></td>
+				<td align="center">NSI</td><td></td>
+				<td align="center">gsi</td><td></td>
+				<td align="center">ssi</td><td></td>
+				<td align="center">nsi</td>
+			</tr>
+			</table>
+		</span>
+		<script>
+			for (Mode = 0; Mode < 6; Mode++)
+				document.getElementById("RatCoeffSel" + Mode).style = "width:60px; text-align:right";
+		</script>
+		<div style="margin-top:8px">
 			<button onclick="onRatCoeffSelectorChange(6, [10000,100,2,11,7,3])">Break it!<br>[10000,100,2,11,7,3]</button>
 			<button onclick="onRatCoeffSelectorChange(6, [0,0,0,11,7,3])">Wall it!<br>[0,0,0,11,7,3]</button>
-		</span>
-	</div>
-	
-	<!-- leftside main div -->
-	<!-- select team members -->
-	<div style="float:left; margin-right:25px; width:25%; display:inline-block">
-		<h3>Add Team Members</h3>
-		<form id="form1" onsubmit="document.getElementById('0').onclick(); return false;">
-			Filter: <input name="name" type="text" size="20" oninput = "UpdateAutocompleteResults()" onpropertychange="UpdateAutocompleteResults()">
-			<a style="text-decoration:underline; text-decoration-color:blue; cursor:pointer; color:blue" onclick="urlparam=''; AddToTeam('');">
-				Clear Team
-			</a>
-		</form>
-		<p id="demo">Loading..</p>
-	</div>
-	
-	<!-- rightside main div -->
-	<!-- print team and threatlist -->
-	<div style="float:left; width:73%; display:inline-block">
-		<h3>Team</h3>
-		<p id="team"></p>
-		
-		<h3>Threatlist</h3>
-		<p id="threatlist"></p>
-		
-		<div ID="mouseover"
-		 style="display:none; padding:15px; margin:5px; border: 2px solid black; position: absolute; background-color:white"
-		 onmouseleave="this.style.display = 'none';"></div> );
-	</div>
-	
-	
+		</div>
+	</span>
+</div>
 
+<!-- leftside main div -->
+<!-- select team members -->
+<div style="float:left; margin-right:25px; width:25%; display:inline-block">
+	<h3>Add Team Members</h3>
+	<form id="form1" onsubmit="document.getElementById('0').onclick(); return false;">
+		Filter: <input name="name" type="text" size="20" oninput = "UpdateAutocompleteResults()" onpropertychange="UpdateAutocompleteResults()">
+		<a style="text-decoration:underline; text-decoration-color:blue; cursor:pointer; color:blue" onclick="urlparam=''; AddToTeam('');">
+			Clear Team
+		</a>
+	</form>
+	<p id="demo">Loading..</p>
+</div>
+
+<!-- rightside main div -->
+<!-- print team and threatlist -->
+<div style="float:left; width:73%; display:inline-block">
+	<h3>Team</h3>
+	<p id="team"></p>
+	
+	<h3>Threatlist</h3>
+	<p id="threatlist"></p>
+	
+	<div ID="mouseover"
+	 style="display:none; padding:15px; margin:5px; border: 4px solid Black; position: absolute; background-color:white"
+	 onmouseleave="this.style.display = 'none';"></div>
+</div>
+
+</body>
 
 
 
@@ -192,6 +208,4 @@
 	<script src="cgfAutocomplete.js"></script>
 	<script src="ccTools.js"></script>
 
-	
-</body>
 </html>
