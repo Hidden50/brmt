@@ -3049,6 +3049,7 @@ GSI:
 479h         | Rotom-Heat        | 
 Newline
 SSI: 
+594          | Alomomola         | 
 006-my       | Charizard-Mega-Y  | 
 450          | Hippowdon         | 
 113          | Chansey           | 
@@ -6825,6 +6826,7 @@ SSI to:
 212          | Scizor            | 
 212-m        | Scizor-Mega       | 
 625          | Bisharp           | 
+641-s        | Tornadus-Therian  | 
 
 Newline
 Newline
