@@ -17,7 +17,7 @@
 //         function ChecksArrayToHtml(ChecksArray)                                             //
 //         function AddMouseover(DN, content)                                                  //
 //  or BUILD a ChecksArray-Entry into the CompGen format                                       //
-//         function ThreatEntryToCGF(Threat)                                                   //
+//         ThreatEntryToCGF(Threat, ThreatV2_hlOccurences, ThreatV3_hlDifferences)             //
 //                                                                                             //
 // Todo: Replace steps 1/3 with pre-parsed versions for accelerating the initial load.         //
 //                                                                                             //
@@ -57,6 +57,7 @@ const _SI = 6;
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 var Checks = [];
+var FilteredChecks;
 
 {
 	var ChecksCompendium; 
@@ -121,7 +122,7 @@ function FilterChecksArray(ChecksArray, Threats, Entries) {
 	}
 	// Pre-parse html to speed up the HeapSorting process
 	for (var DN in result)
-		result[DN].asHtml = ParseCompendium(  ThreatEntryToCGF( result[DN] ).join("\n")  );
+		result[DN].asHtml = ParseCompendium(  ThreatEntryToCGF( result[DN] )  );
 	return result;
 }
 
@@ -212,29 +213,30 @@ function ChecksArrayToHtml(ChecksArray) {
 	return result.join("\n");
 }
 
-function ThreatEntryToCGF(Threat) {
+function ThreatEntryToCGF(Threat, ThreatV2_hlOccurences, ThreatV3_hlDifferences) {
 	var result = [];
+	if (ThreatV2_hlOccurences === undefined)
+		ThreatV2_hlOccurences = [[],[],[],[],[],[]];
+	if (ThreatV3_hlDifferences === undefined)
+		ThreatV3_hlDifferences = [[],[],[],[],[],[]];
 	
 	result.push(Threat[_SI]);
 	
-/*	if (  (Threat[invGSI].length + Threat[invSSI].length + Threat[invNSI].length) > 0  ) {
-		result.push("(Threatens ");
-		for (var Mode = invGSI; Mode <= invNSI; Mode++) {
-			if (  ( Threat[Mode].length > 0 ) && ( Threat[Mode][0] !== "|" ) )
-				result.push( Threat[Mode].join("\n") );
-		}
-		result.push(")");
-	}*/
-	
 	for (var Mode = GSI; Mode <= invNSI; Mode++) {
-		if (  ( Threat[Mode].length > 0 ) && ( Threat[Mode][0] !== "|" ) ) {
+		if (  ( Threat[Mode].length > 0 ) || ( ThreatV3_hlDifferences[Mode].length > 0 )  ) {
 			result.push( "Newline" );
 			result.push( Keywords[Mode] );
-			result.push( Threat[Mode].join("\n") );
+				for (k = 0; k < Threat[Mode].length; k++) {
+					if (  ThreatV2_hlOccurences[Mode].indexOf( Threat[Mode][k] ) >= 0  )
+						result.push( '<div style="display:inline-block; margin:1px; border: 1px solid Red">' )
+					else result.push( '<div style="display:inline-block; margin:1px">' );
+					result.push( Threat[Mode][k] );
+					result.push( '</div>' );
+				}
 		}
 	}
 	
-	return result;
+	return result.join('\n');
 }
 
 function AddMouseover(DN, rating, content) {
@@ -252,7 +254,8 @@ function AddMouseover(DN, rating, content) {
 
 function OnClick(DN, Sender) {
 	var mo = document.getElementById('mouseover');
-	mo.innerHTML = Checks[DN].asHtml;
+//	mo.innerHTML = Checks[DN].asHtml;
+	mo.innerHTML = ParseCompendium(  ThreatEntryToCGF( Checks[DN], FilteredChecks[DN] ), true  );
 	mo.style.display = 'block';
 	mo.style.right = '0px';
 	mo.style.top = Sender.offsetTop + "px";
