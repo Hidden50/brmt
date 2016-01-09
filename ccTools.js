@@ -223,8 +223,11 @@ function ThreatEntryToCGF(Threat, ThreatV2_hlOccurences, ThreatV3_hlDifferences)
 	result.push(Threat[_SI]);
 	
 	for (var Mode = GSI; Mode <= invNSI; Mode++) {
+		if ( Mode == invGSI )
+			result.push( '<hr>' );
 		if (  ( Threat[Mode].length > 0 ) || ( ThreatV3_hlDifferences[Mode].length > 0 )  ) {
-			result.push( "Newline" );
+			if ( Mode != invGSI )
+				result.push( "Newline" );
 			result.push( Keywords[Mode] );
 				for (k = 0; k < Threat[Mode].length; k++) {
 					if (  ThreatV2_hlOccurences[Mode].indexOf( Threat[Mode][k] ) >= 0  )
