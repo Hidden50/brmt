@@ -261,7 +261,10 @@ function OnClick(DN, Sender) {
 	mo.innerHTML = ParseCompendium(  ThreatEntryToCGF( Checks[DN], FilteredChecks[DN] ), true  );
 	mo.style.display = 'block';
 	mo.style.right = '0px';
-	mo.style.top = Sender.offsetTop + "px";
+	mo.style.right = Math.max(mo.offsetLeft - Sender.offsetLeft, 0) + 'px';
+	var maxTop = window.pageYOffset + window.innerHeight - mo.offsetHeight - 5;
+	mo.style.top = maxTop + 'px';
+	mo.style.top = (maxTop - Math.max(mo.offsetTop - Sender.offsetTop, 0)) + 'px';
 //	mo.style.top = Math.floor(Sender.getBoundingClientRect().top) + "px";
 }
 
