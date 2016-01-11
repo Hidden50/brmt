@@ -58,14 +58,11 @@ const _SI = 6;
 
 var Checks = [];
 var FilteredChecks;
+var RatingCoeff = [0,0,0,0,0,0];
 
 {
-	var ChecksCompendium; 
-//	if (offline)
-//		ChecksCompendium = OpenTextfile('file:///C:/Users/Daniel/Dropbox/Public/CompGen/Output/Compendiums_txt/OU_Checks_Sorted2.txt').join('\n')
-//	else ChecksCompendium = OpenTextfile('https://dl.dropboxusercontent.com/u/9207945/CompGen/Output/Compendiums_txt/OU_Checks_Sorted2.txt').join('\n');
-	ChecksCompendium = OpenTextfile('OUcc.txt').join('\n');
-	Checks = ChecksCompendiumToChecksArray(ChecksCompendium);
+	var ChecksCompendium = OpenTextfile('OUcc.txt').join('\n');
+	Checks = ChecksCompendiumToChecksArray(ChecksCompendium);//, true);
 }
 
 function ChecksCompendiumToChecksArray(ChecksCompendium, CreateInverseEntries) {
@@ -160,22 +157,21 @@ function HeapSort(ChecksArray) {
 	return result;
 }
 
-var RatingCoeff = [];
-var MinRating = -31800;
-var MaxRating = 32300 - MinRating;
+var MinRating = 0;
+var MaxRating = 0;
 
 function Point_Rating(a,b,c,d,e,f) {
 	var rating = RatingCoeff[GSI]*a + RatingCoeff[SSI]*b + RatingCoeff[NSI]*c
 	           - RatingCoeff[invGSI]*d - RatingCoeff[invSSI]*e - RatingCoeff[invNSI]*f;
-	return rating - MinRating;  // make rating non-negative so we can use it as a heapsort array index
+	return rating - MinRating;  // shift: make rating non-negative so we can use it as a heapsort array index
 }
 
 function SetRatingCoeff(Mode, NewValue) {
 	if (Mode == 6)
 		RatingCoeff = NewValue
 	else RatingCoeff[Mode] = NewValue;
-	MinRating += Point_Rating(0,0,0,51,51,51);
-	MaxRating = Point_Rating(51,51,51,0,0,0) - MinRating;
+	MinRating = Point_Rating(0,0,0,51,51,51) + MinRating;  // MinRating=Point_Rating(0,0,0,51,51,51), but without the shift
+	MaxRating = Point_Rating(51,51,51,0,0,0);
 }
 
 function Threat_Rating(Threat) {
@@ -184,8 +180,8 @@ function Threat_Rating(Threat) {
 }
 
 function CountPokemon(PokeArray) {
-	if (PokeArray[0] == "|") return 50
-	else return PokeArray.length;
+	if (PokeArray[0] == "|") return 50  // threat has no compendium entry, assume it's super easy to check.
+	else return PokeArray.length;       // this sends it to the bottom, unless we rate for defensive threats (0,0,0,11,7,3)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -198,7 +194,7 @@ function CountPokemon(PokeArray) {
 function ChecksArrayToHtml(ChecksArray) {
 	var result = [];
 	var Heaps = HeapSort(ChecksArray);
-	for (var rating = 0; rating < MaxRating; rating++) {
+	for (var rating = 0; rating <= MaxRating; rating++) {
 		if ( Heaps[rating] === undefined )
 			continue;
 //		result.push('\n(Threat rating: ' + (-MinRating() - rating) + ')\n')
@@ -207,10 +203,13 @@ function ChecksArrayToHtml(ChecksArray) {
 			var DN = ExtractDexNum( Heaps[rating][i][_SI] );
 			result.push(  '', AddMouseover( DN, rating, ParseCompendium(AutocompletePokemon(DN)) ), ''  );
 //			result.push(  '', AddMouseover( DN, Heaps[rating][i].asHtml ), ''  );
+//			result.push(  '', ThreatEntryToCGF( Heaps[rating][i] ) , ''  );
 //			result.push("\nNewline\nNewline\n");
 		}
 	}
 	return result.join("\n");
+//	DownloadTxt(result.join("\n"), 'cc.txt');
+//	return ParseCompendium(result.join("\n"));
 }
 
 function ThreatEntryToCGF(Threat, ThreatV2_hlOccurences, ThreatV3_hlDifferences) {
@@ -256,16 +255,19 @@ function AddMouseover(DN, rating, content) {
 }
 
 function OnClick(DN, Sender) {
+	ShowPopout(    ParseCompendium(  ThreatEntryToCGF( Checks[DN], FilteredChecks[DN] ), true  ), Sender    );
+//	ShowPopout( Checks[DN].asHtml );
+}
+
+function ShowPopout(content, Sender) {
 	var mo = document.getElementById('mouseover');
-//	mo.innerHTML = Checks[DN].asHtml;
-	mo.innerHTML = ParseCompendium(  ThreatEntryToCGF( Checks[DN], FilteredChecks[DN] ), true  );
+	mo.innerHTML = content;
 	mo.style.display = 'block';
 	mo.style.right = '0px';
 	mo.style.right = Math.max(mo.offsetLeft - Sender.offsetLeft, 0) + 'px';
 	var maxTop = window.pageYOffset + window.innerHeight - mo.offsetHeight - 5;
 	mo.style.top = maxTop + 'px';
 	mo.style.top = (maxTop - Math.max(mo.offsetTop - Sender.offsetTop, 0)) + 'px';
-//	mo.style.top = Math.floor(Sender.getBoundingClientRect().top) + "px";
 }
 
 /*function AddMouseover(DN, content) {
