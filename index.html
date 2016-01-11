@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100%">
 
 <head>
 	<title>brmt</title>
 </head>
 
-<body>
+<body style="height:100%">
 
 <!-- topside div -->
 <div>
@@ -52,7 +52,8 @@
 
 <!-- leftside main div -->
 <!-- select team members -->
-<div style="float:left; margin-right:25px; width:25%; display:inline-block">
+<div ID="AddPokemon" onmouseleave="this.style.display='none';"
+                     style="float:left; margin-right:25px; width:25%; height:100%; display:none">
 	<h3>Add Team Members</h3>
 	<form id="form1" onsubmit="document.getElementById('0').onclick(); return false;">
 		Filter: <input name="name" type="text" size="20" oninput = "UpdateAutocompleteResults()" onpropertychange="UpdateAutocompleteResults()">
@@ -65,15 +66,16 @@
 
 <!-- rightside main div -->
 <!-- print team and threatlist -->
-<div style="float:left; width:73%; display:inline-block">
-	<h3>Team</h3>
-	<p id="team"></p>
+<div style="display:block">
+	<h3 style="margin-bottom:0px">Team</h3>
+	<p id="team" style="display:inline-block; min-height:20px; min-width:60px; padding:5px; border:2px solid Blue"
+	   onclick="document.getElementById('AddPokemon').style.display = 'inline-block';"></p>
 	
 	<h3>Threatlist</h3>
 	<p id="threatlist"></p>
 	
 	<div ID="mouseover"
-	 style="display:none; padding:15px; margin:5px; border: 4px solid Black; position: absolute; background-color:white"
+	 style="display:none; padding:15px; margin:5px; border:4px solid Black; position: absolute; background-color:white"
 	 onmouseleave="this.style.display = 'none';"></div>
 </div>
 
@@ -186,10 +188,6 @@
 			document.getElementById("form1").elements["name"].value = '';
 			document.getElementById("form1").elements["name"].select();
 			document.getElementById("form1").elements["name"].oninput();
-			
-//			DownloadTxt( BuildCompendium(FilteredChecks), 'OUcc.txt' );
-//			DownloadHtml( BuildCompendium(FilteredChecks), 'OUcc.html' );
-	
 		}
 		
 		function getUrlParam(keyword) {
