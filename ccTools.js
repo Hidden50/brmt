@@ -60,11 +60,6 @@ var Checks = [];
 var FilteredChecks;
 var RatingCoeff = [0,0,0,0,0,0];
 
-{
-	var ChecksCompendium = OpenTextfile('OUcc.txt').join('\n');
-	Checks = ChecksCompendiumToChecksArray(ChecksCompendium);//, true);
-}
-
 function ChecksCompendiumToChecksArray(ChecksCompendium, CreateInverseEntries) {
 	var result = [];
 	var Threats = ChecksCompendium.split('\n\nNewline\nNewline\n\n');
