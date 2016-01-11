@@ -58,14 +58,11 @@ const _SI = 6;
 
 var Checks = [];
 var FilteredChecks;
+var RatingCoeff = [0,0,0,0,0,0];
 
 {
-	var ChecksCompendium; 
-//	if (offline)
-//		ChecksCompendium = OpenTextfile('file:///C:/Users/Daniel/Dropbox/Public/CompGen/Output/Compendiums_txt/OU_Checks_Sorted2.txt').join('\n')
-//	else ChecksCompendium = OpenTextfile('https://dl.dropboxusercontent.com/u/9207945/CompGen/Output/Compendiums_txt/OU_Checks_Sorted2.txt').join('\n');
-	ChecksCompendium = OpenTextfile('OUcc.txt').join('\n');
-	Checks = ChecksCompendiumToChecksArray(ChecksCompendium);
+	var ChecksCompendium = OpenTextfile('RUcc.txt').join('\n');
+	Checks = ChecksCompendiumToChecksArray(ChecksCompendium);//, true);
 }
 
 function ChecksCompendiumToChecksArray(ChecksCompendium, CreateInverseEntries) {
@@ -90,7 +87,7 @@ function ChecksCompendiumToChecksArray(ChecksCompendium, CreateInverseEntries) {
 			if ( CreateInverseEntries === undefined )
 				continue;
 			// if we just added skarmory as an Excadrill GSI, add Excadrill as a Skarmory invGSI 
-/*			for (k = 0; k < result[DN][Mode].length; k++) {
+			for (k = 0; k < result[DN][Mode].length; k++) {
 				var Defender = ExtractDexNum(result[DN][Mode][k]);
 				if (result[Defender] === undefined) {
 					var DefenderName = AutocompletePokemon(Defender)
@@ -98,7 +95,7 @@ function ChecksCompendiumToChecksArray(ChecksCompendium, CreateInverseEntries) {
 					result[Defender] = [["|"], ["|"], ["|"], [], [], [], DefenderName];
 				}
 				result[Defender][Mode+3].push(AutocompletePokemon(DN));
-			}*/
+			}
 		}
 	}
 	return result;
@@ -160,9 +157,9 @@ function HeapSort(ChecksArray) {
 	return result;
 }
 
-var RatingCoeff = [];
-var MinRating = -31800;
-var MaxRating = 32300 - MinRating;
+//var RatingCoeff = [0,0,0,0,0,0];
+var MinRating = 0;
+var MaxRating = 0;
 
 function Point_Rating(a,b,c,d,e,f) {
 	var rating = RatingCoeff[GSI]*a + RatingCoeff[SSI]*b + RatingCoeff[NSI]*c
@@ -198,19 +195,21 @@ function CountPokemon(PokeArray) {
 function ChecksArrayToHtml(ChecksArray) {
 	var result = [];
 	var Heaps = HeapSort(ChecksArray);
-	for (var rating = 0; rating < MaxRating; rating++) {
+	for (var rating = -1; rating <= MaxRating; rating++) {
 		if ( Heaps[rating] === undefined )
 			continue;
 //		result.push('\n(Threat rating: ' + (-MinRating() - rating) + ')\n')
 		Heaps[rating] = Heaps[rating].sort(  function(a,b) { return a.Tiebreaker - b.Tiebreaker; }  );
 		for (i = 0; i < Heaps[rating].length; i++) {
 			var DN = ExtractDexNum( Heaps[rating][i][_SI] );
-			result.push(  '', AddMouseover( DN, rating, ParseCompendium(AutocompletePokemon(DN)) ), ''  );
+//			result.push(  '', AddMouseover( DN, rating, ParseCompendium(AutocompletePokemon(DN)) ), ''  );
 //			result.push(  '', AddMouseover( DN, Heaps[rating][i].asHtml ), ''  );
-//			result.push("\nNewline\nNewline\n");
+			result.push(  '', ThreatEntryToCGF( Heaps[rating][i] ) , ''  );
+			result.push("\nNewline\nNewline\n");
 		}
 	}
-	return result.join("\n");
+//	DownloadTxt(result.join("\n"), 'cc.txt');
+	return ParseCompendium(result.join("\n"));
 }
 
 function ThreatEntryToCGF(Threat, ThreatV2_hlOccurences, ThreatV3_hlDifferences) {
@@ -223,18 +222,18 @@ function ThreatEntryToCGF(Threat, ThreatV2_hlOccurences, ThreatV3_hlDifferences)
 	result.push(Threat[_SI]);
 	
 	for (var Mode = GSI; Mode <= invNSI; Mode++) {
-		if ( Mode == invGSI )
-			result.push( '<hr>' );
+//		if ( Mode == invGSI )
+//			result.push( '<hr>' );
 		if (  ( Threat[Mode].length > 0 ) || ( ThreatV3_hlDifferences[Mode].length > 0 )  ) {
-			if ( Mode != invGSI )
+//			if ( Mode != invGSI )
 				result.push( "Newline" );
 			result.push( Keywords[Mode] );
 				for (k = 0; k < Threat[Mode].length; k++) {
 					if (  ThreatV2_hlOccurences[Mode].indexOf( Threat[Mode][k] ) >= 0  )
-						result.push( '<div style="display:inline-block; margin:1px; border: 1px solid Red">' )
-					else result.push( '<div style="display:inline-block; margin:1px">' );
+						result.push( '<div style="display:inline-block; margin:1px; border: 1px solid Red">' );
+//					else result.push( '<div style="display:inline-block; margin:1px">' );
 					result.push( Threat[Mode][k] );
-					result.push( '</div>' );
+//					result.push( '</div>' );
 				}
 		}
 	}
@@ -256,16 +255,19 @@ function AddMouseover(DN, rating, content) {
 }
 
 function OnClick(DN, Sender) {
+	ShowPopout(    ParseCompendium(  ThreatEntryToCGF( Checks[DN], FilteredChecks[DN] ), true  ), Sender    );
+//	ShowPopout( Checks[DN].asHtml );
+}
+
+function ShowPopout(content, Sender) {
 	var mo = document.getElementById('mouseover');
-//	mo.innerHTML = Checks[DN].asHtml;
-	mo.innerHTML = ParseCompendium(  ThreatEntryToCGF( Checks[DN], FilteredChecks[DN] ), true  );
+	mo.innerHTML = content;
 	mo.style.display = 'block';
 	mo.style.right = '0px';
 	mo.style.right = Math.max(mo.offsetLeft - Sender.offsetLeft, 0) + 'px';
 	var maxTop = window.pageYOffset + window.innerHeight - mo.offsetHeight - 5;
 	mo.style.top = maxTop + 'px';
 	mo.style.top = (maxTop - Math.max(mo.offsetTop - Sender.offsetTop, 0)) + 'px';
-//	mo.style.top = Math.floor(Sender.getBoundingClientRect().top) + "px";
 }
 
 /*function AddMouseover(DN, content) {
