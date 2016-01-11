@@ -27,10 +27,8 @@ NSI to:
 210          | Granbull          | 
 693          | Clawitzer         | 
 
-
 Newline
 Newline
-
 
 648          | Meloetta          | [B][U]Meloetta Checks[/U][/B]
 Newline
@@ -77,10 +75,8 @@ NSI to:
 354-m        | Banette-Mega      | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 621          | Druddigon         | [B][U]Druddigon Checks[/U][/B]
 Newline
@@ -117,10 +113,8 @@ SSI to:
 666          | Vivillon          | 
 617          | Accelgor          | 
 
-
 Newline
 Newline
-
 
 655          | Delphox           | [B][U]Delphox Checks[/U][/B]
 Newline
@@ -158,10 +152,8 @@ NSI to:
 666          | Vivillon          | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 210          | Granbull          | [B][U]Granbull Checks[/U][/B]
 Newline
@@ -199,10 +191,8 @@ SSI to:
 354-m        | Banette-Mega      | 
 617          | Accelgor          | 
 
-
 Newline
 Newline
-
 
 500          | Emboar            | [B][U] Emboar Checks[/U][/B]
 Newline
@@ -262,10 +252,8 @@ NSI to:
 604          | Eelektross        | 
 687          | Malamar           | 
 
-
 Newline
 Newline
-
 
 628          | Braviary          | [B][U]Braviary Checks[/U][/B]
 Newline
@@ -303,10 +291,8 @@ NSI:
 135          | Jolteon           | 
 124          | Jynx              | 
 
-
 Newline
 Newline
-
 
 693          | Clawitzer         | [B][U]Clawitzer Checks[/U][/B]
 Newline
@@ -340,10 +326,8 @@ Newline
 SSI to: 
 221          | Piloswine         | 
 
-
 Newline
 Newline
-
 
 319          | Sharpedo          | [B][U]Sharpedo Checks[/U][/B]
 Newline
@@ -379,10 +363,8 @@ NSI to:
 617          | Accelgor          | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 460-m        | Abomasnow-Mega    | [B][U]Abomasnow-Mega Checks[/U][/B]
 Newline
@@ -444,10 +426,8 @@ NSI to:
 617          | Accelgor          | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 330          | Flygon            | [B][U]Flygon Checks[/U][/B]
 Newline
@@ -499,10 +479,8 @@ NSI to:
 503          | Samurott          | 
 621          | Druddigon         | 
 
-
 Newline
 Newline
-
 
 539          | Sawk              | [B][U] Sawk Checks[/U][/B]
 Newline
@@ -559,10 +537,8 @@ NSI to:
 693          | Clawitzer         | 
 221          | Piloswine         | 
 
-
 Newline
 Newline
-
 
 604          | Eelektross        | [B][U]Eelektross Checks[/U][/B]
 Newline
@@ -593,10 +569,8 @@ SSI to:
 617          | Accelgor          | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 589          | Escavalier        | [B][U]Escavalier Checks[/U][/B]
 Newline
@@ -640,10 +614,8 @@ SSI to:
 693          | Clawitzer         | 
 687          | Malamar           | 
 
-
 Newline
 Newline
-
 
 229          | Houndoom          | [B][U]Houndoom Checks[/U][/B]
 Newline
@@ -696,10 +668,8 @@ NSI to:
 475          | Gallade           | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 503          | Samurott          | [B][U]Samurott Checks[/U][/B]
 Newline
@@ -743,10 +713,8 @@ NSI to:
 306          | Aggron            | 
 617          | Accelgor          | 
 
-
 Newline
 Newline
-
 
 632          | Durant            | [B][U]Durant Checks[/U][/B]
 Newline
@@ -801,10 +769,8 @@ NSI to:
 124          | Jynx              | 
 475          | Gallade           | 
 
-
 Newline
 Newline
-
 
 199          | Slowking          | [B][U]Slowking Checks[/U][/B]
 Newline
@@ -866,10 +832,8 @@ SSI to:
 308          | Medicham          | 
 539          | Sawk              | 
 
-
 Newline
 Newline
-
 
 475          | Gallade           | [B][U]Gallade Checks[/U][/B]
 Newline
@@ -893,10 +857,8 @@ NSI:
 481          | Mesprit           | 
 632          | Durant            | 
 
-
 Newline
 Newline
-
 
 560          | Scrafty           | [B][U]Scrafty Checks[/U][/B]
 Newline
@@ -934,10 +896,8 @@ NSI to:
 306          | Aggron            | 
 221          | Piloswine         | 
 
-
 Newline
 Newline
-
 
 323-m        | Camerupt-Mega     | [B][U]Camerupt-Mega Checks[/U][/B]
 Newline
@@ -988,10 +948,8 @@ Newline
 NSI to: 
 452          | Drapion           | 
 
-
 Newline
 Newline
-
 
 561          | Sigilyph          | [B][U]Sigilyph Checks[/U][/B]
 Newline
@@ -1043,10 +1001,8 @@ NSI to:
 589          | Escavalier        | 
 666          | Vivillon          | 
 
-
 Newline
 Newline
-
 
 640          | Virizion          | [B][U]Virizion Checks[/U][/B]
 Newline
@@ -1107,10 +1063,8 @@ NSI to:
 306          | Aggron            | 
 124          | Jynx              | 
 
-
 Newline
 Newline
-
 
 697          | Tyrantrum         | [B][U]Tyrantrum Checks[/U][/B]
 Newline
@@ -1178,10 +1132,8 @@ NSI to:
 693          | Clawitzer         | 
 604          | Eelektross        | 
 
-
 Newline
 Newline
-
 
 465          | Tangrowth         | [B][U]Tangrowth Checks[/U][/B]
 Newline
@@ -1238,10 +1190,8 @@ NSI to:
 306          | Aggron            | 
 210          | Granbull          | 
 
-
 Newline
 Newline
-
 
 662          | Fletchinder       | [B][U] Fletchinder Checks[/U][/B]
 Newline
@@ -1296,10 +1246,8 @@ NSI to:
 354-m        | Banette-Mega      | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 687          | Malamar           | [B][U]Malamar Checks[/U][/B]
 Newline
@@ -1330,10 +1278,8 @@ NSI:
 500          | Emboar            | 
 106          | Hitmonlee         | 
 
-
 Newline
 Newline
-
 
 306          | Aggron            | [B][U]Aggron Checks[/U][/B]
 Newline
@@ -1385,10 +1331,8 @@ SSI to:
 666          | Vivillon          | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 359          | Absol             | [B][U]Absol Checks[/U][/B]
 Newline
@@ -1429,10 +1373,8 @@ NSI to:
 124          | Jynx              | 
 617          | Accelgor          | 
 
-
 Newline
 Newline
-
 
 308          | Medicham          | [B][U]Medicham Checks[/U][/B]
 Newline
@@ -1475,10 +1417,8 @@ NSI to:
 693          | Clawitzer         | 
 221          | Piloswine         | 
 
-
 Newline
 Newline
-
 
 617          | Accelgor          | [B][U]Accelgor Checks[/U][/B]
 Newline
@@ -1521,10 +1461,8 @@ NSI:
 106          | Hitmonlee         | 
 503          | Samurott          | 
 
-
 Newline
 Newline
-
 
 124          | Jynx              | [B][U]Jynx Checks[/U][/B]
 Newline
@@ -1558,10 +1496,8 @@ NSI to:
 666          | Vivillon          | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 452          | Drapion           | [B][U]Drapion Checks[/U][/B]
 Newline
@@ -1604,10 +1540,8 @@ GSI to:
 354-m        | Banette-Mega      | 
 354-m        | Banette-Mega      | 
 
-
 Newline
 Newline
-
 
 666          | Vivillon          | [B][U]Vivillon Checks[/U][/B]
 Newline
@@ -1644,10 +1578,8 @@ NSI:
 561          | Sigilyph          | 
 442          | Spiritomb         | 
 
-
 Newline
 Newline
-
 
 533          | Gurdurr           | [B][U]Gurdurr Checks[/U][/B]
 Newline
@@ -1697,10 +1629,8 @@ NSI to:
 295          | Exploud           | 
 306          | Aggron            | 
 
-
 Newline
 Newline
-
 
 362-m        | Glalie-Mega       | [B][U]Glalie-Mega Checks[/U][/B]
 Newline
@@ -1757,10 +1687,8 @@ NSI to:
 617          | Accelgor          | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 479m         | Rotom-Mow         | [B][U]Rotom-Mow[/U][/B]
 Newline
@@ -1808,10 +1736,8 @@ NSI to:
 666          | Vivillon          | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 142          | Aerodactyl        | [B][U]Aerodactyl Checks[/U][/B]
 Newline
@@ -1861,10 +1787,8 @@ NSI to:
 539          | Sawk              | 
 124          | Jynx              | 
 
-
 Newline
 Newline
-
 
 106          | Hitmonlee         | [B][U]Hitmonlee Checks[/U][/B]
 Newline
@@ -1918,10 +1842,8 @@ NSI to:
 687          | Malamar           | 
 617          | Accelgor          | 
 
-
 Newline
 Newline
-
 
 354-m        | Banette-Mega      | [B][U]Mega Banette Checks[/U][/B]
 Newline
@@ -1950,10 +1872,8 @@ NSI:
 648          | Meloetta          | 
 662          | Fletchinder       | 
 
-
 Newline
 Newline
-
 
 135          | Jolteon           | [B][U]Jolteon Checks[/U][/B]
 Newline
@@ -2002,10 +1922,8 @@ NSI to:
 687          | Malamar           | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 215          | Sneasel           | [B][U]Sneasel Checks[/U][/B]
 Newline
@@ -2045,10 +1963,8 @@ NSI to:
 475          | Gallade           | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 221          | Piloswine         | [B][U]Piloswine Checks[/U][/B]
 Newline
@@ -2097,10 +2013,8 @@ Newline
 SSI to: 
 604          | Eelektross        | 
 
-
 Newline
 Newline
-
 
 208-m        | Steelix-Mega      | [B][U]Mega Steelix Checks[/U][/B]
 Newline
@@ -2181,10 +2095,8 @@ SSI to:
 124          | Jynx              | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 062          | Poliwrath         | [B][U]Poliwrath Checks[/U][/B]
 Newline
@@ -2224,10 +2136,8 @@ SSI to:
 687          | Malamar           | 
 617          | Accelgor          | 
 
-
 Newline
 Newline
-
 
 594          | Alomomola         | [B][U]Alomomola Checks[/U][/B]
 Newline
@@ -2268,10 +2178,8 @@ SSI to:
 617          | Accelgor          | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 437          | Bronzong          | [B][U]Bronzong Checks[/U][/B]
 Newline
@@ -2305,10 +2213,8 @@ SSI to:
 295          | Exploud           | 
 210          | Granbull          | 
 
-
 Newline
 Newline
-
 
 195          | Quagsire          | [B][U]Quagsire Checks[/U][/B]
 Newline
@@ -2344,10 +2250,8 @@ SSI to:
 475          | Gallade           | 
 617          | Accelgor          | 
 
-
 Newline
 Newline
-
 
 537          | Seismitoad        | [B][U]Seismitoad Checks[/U][/B]
 Newline
@@ -2382,10 +2286,8 @@ SSI to:
 135          | Jolteon           | 
 617          | Accelgor          | 
 
-
 Newline
 Newline
-
 
 211          | Qwilfish          | [B][U]Qwilfish Checks[/U][/B]
 Newline
@@ -2421,10 +2323,8 @@ SSI to:
 539          | Sawk              | 
 210          | Granbull          | 
 
-
 Newline
 Newline
-
 
 591          | Amoonguss         | [B][U]Amoonguss Checks[/U][/B]
 Newline
@@ -2458,10 +2358,8 @@ SSI to:
 210          | Granbull          | 
 687          | Malamar           | 
 
-
 Newline
 Newline
-
 
 297          | Hariyama          | [B][U]Hariyama Checks[/U][/B]
 Newline
@@ -2498,10 +2396,8 @@ NSI to:
 697          | Tyrantrum         | 
 295          | Exploud           | 
 
-
 Newline
 Newline
-
 
 683          | Aromatisse        | [B][U]Aromatisse Checks[/U][/B]
 Newline
@@ -2536,10 +2432,8 @@ SSI to:
 354-m        | Banette-Mega      | 
 617          | Accelgor          | 
 
-
 Newline
 Newline
-
 
 009          | Blastoise         | [B][U]Blastoise Checks[/U][/B]
 Newline
@@ -2576,10 +2470,8 @@ Newline
 NSI to: 
 306          | Aggron            | 
 
-
 Newline
 Newline
-
 
 279          | Pelipper          | [B][U]Pelipper Checks[/U][/B]
 Newline
@@ -2610,10 +2502,8 @@ SSI to:
 308          | Medicham          | 
 539          | Sawk              | 
 
-
 Newline
 Newline
-
 
 479s         | Rotom-Fan         | [B][U]Rotom-Fan Checks[/U][/B]
 Newline
@@ -2649,10 +2539,8 @@ NSI to:
 503          | Samurott          | 
 693          | Clawitzer         | 
 
-
 Newline
 Newline
-
 
 176          | Togetic           | [B][U]Togetic Checks[/U][/B]
 Newline
@@ -2683,10 +2571,8 @@ SSI to:
 354-m        | Banette-Mega      | 
 617          | Accelgor          | 
 
-
 Newline
 Newline
-
 
 593          | Jellicent         | [B][U]Jellicent Checks[/U][/B]
 Newline
@@ -2717,10 +2603,8 @@ SSI to:
 539          | Sawk              | 
 617          | Accelgor          | 
 
-
 Newline
 Newline
-
 
 711          | Gourgeist         | [B][U]Gourgeist Checks[/U][/B]
 Newline
@@ -2752,10 +2636,8 @@ SSI to:
 135          | Jolteon           | 
 539          | Sawk              | 
 
-
 Newline
 Newline
-
 
 597          | Ferroseed         | [B][U]Ferroseed Checks[/U][/B]
 Newline
@@ -2784,10 +2666,8 @@ SSI to:
 306          | Aggron            | 
 210          | Granbull          | 
 
-
 Newline
 Newline
-
 
 237          | Hitmontop         | [B][U]Hitmontop Checks[/U][/B]
 Newline
@@ -2819,10 +2699,8 @@ NSI to:
 460-m        | Abomasnow-Mega    | 
 229          | Houndoom          | 
 
-
 Newline
 Newline
-
 
 045          | Vileplume         | [B][U]Vileplume Checks[/U][/B]
 Newline
@@ -2855,10 +2733,8 @@ Newline
 NSI to: 
 221          | Piloswine         | 
 
-
 Newline
 Newline
-
 
 110          | Weezing           | [B][U]Weezing Checks[/U][/B]
 Newline
@@ -2888,10 +2764,8 @@ Newline
 NSI to: 
 621          | Druddigon         | 
 
-
 Newline
 Newline
-
 
 379          | Registeel         | [B][U]Registeel Checks[/U][/B]
 Newline
@@ -2922,10 +2796,8 @@ SSI to:
 604          | Eelektross        | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 464          | Rhyperior         | [B][U]Rhyperior Checks[/U][/B]
 Newline
@@ -2958,10 +2830,8 @@ Newline
 NSI to: 
 208-m        | Steelix-Mega      | 
 
-
 Newline
 Newline
-
 
 479f         | Rotom-Frost       | [B][U]Rotom-Frost Checks[/U][/B]
 Newline
@@ -2994,10 +2864,8 @@ NSI to:
 621          | Druddigon         | 
 693          | Clawitzer         | 
 
-
 Newline
 Newline
-
 
 531-m        | Audino-Mega       | [B][U]Audino-Mega Checks[/U][/B]
 Newline
@@ -3025,10 +2893,8 @@ SSI to:
 621          | Druddigon         | 
 354-m        | Banette-Mega      | 
 
-
 Newline
 Newline
-
 
 171          | Lanturn           | [B][U]Lanturn Checks[/U][/B]
 Newline
@@ -3058,10 +2924,8 @@ Newline
 NSI to: 
 142          | Aerodactyl        | 
 
-
 Newline
 Newline
-
 
 442          | Spiritomb         | [B][U]Spiritomb Checks[/U][/B]
 Newline
@@ -3091,10 +2955,8 @@ Newline
 NSI to: 
 666          | Vivillon          | 
 
-
 Newline
 Newline
-
 
 423          | Gastrodon         | [B][U]Gastrodon Checks[/U][/B]
 Newline
@@ -3121,10 +2983,8 @@ SSI to:
 135          | Jolteon           | 
 617          | Accelgor          | 
 
-
 Newline
 Newline
-
 
 601          | Klinklang         | [B][U]Klinklang Checks[/U][/B]
 Newline
@@ -3150,10 +3010,8 @@ SSI to:
 221          | Piloswine         | 
 628          | Braviary          | 
 
-
 Newline
 Newline
-
 
 042          | Golbat            | [B][U]Golbat Checks[/U][/B]
 Newline
@@ -3178,10 +3036,8 @@ SSI to:
 308          | Medicham          | 
 539          | Sawk              | 
 
-
 Newline
 Newline
-
 
 082          | Magneton          | [B][U]Magneton Checks[/U][/B]
 Newline
@@ -3210,10 +3066,8 @@ Newline
 NSI to: 
 589          | Escavalier        | 
 
-
 Newline
 Newline
-
 
 479          | Rotom             | [B][U]Rotom Checks[/U][/B]
 Newline
@@ -3241,10 +3095,8 @@ Newline
 NSI to: 
 693          | Clawitzer         | 
 
-
 Newline
 Newline
-
 
 315          | Roselia           | [B][U]Roselia Checks[/U][/B]
 Newline
@@ -3271,10 +3123,8 @@ Newline
 NSI to: 
 693          | Clawitzer         | 
 
-
 Newline
 Newline
-
 
 346          | Cradily           | [B][U]Cradily Checks[/U][/B]
 Newline
@@ -3301,10 +3151,8 @@ Newline
 NSI to: 
 221          | Piloswine         | 
 
-
 Newline
 Newline
-
 
 389          | Torterra          | [B][U]Torterra Checks[/U][/B]
 Newline
@@ -3331,10 +3179,8 @@ Newline
 NSI to: 
 604          | Eelektross        | 
 
-
 Newline
 Newline
-
 
 481          | Mesprit           | [B][U]Mesprit Checks[/U][/B]
 Newline
@@ -3362,10 +3208,8 @@ NSI to:
 640          | Virizion          | 
 475          | Gallade           | 
 
-
 Newline
 Newline
-
 
 123          | Scyther           | [B][U]Scyther Checks[/U][/B]
 Newline
@@ -3395,10 +3239,8 @@ NSI to:
 359          | Absol             | 
 687          | Malamar           | 
 
-
 Newline
 Newline
-
 
 480          | Uxie              | [B][U]Uxie Checks[/U][/B]
 Newline
@@ -3421,10 +3263,8 @@ SSI to:
 539          | Sawk              | 
 475          | Gallade           | 
 
-
 Newline
 Newline
-
 
 569          | Garbodor          | [B][U]Garbodor Checks[/U][/B]
 Newline
@@ -3446,10 +3286,8 @@ SSI to:
 479m         | Rotom-Mow         | 
 539          | Sawk              | 
 
-
 Newline
 Newline
-
 
 567          | Archeops          | [B][U]Archeops Checks[/U][/B]
 Newline
@@ -3477,10 +3315,8 @@ NSI to:
 539          | Sawk              | 
 306          | Aggron            | 
 
-
 Newline
 Newline
-
 
 272          | Ludicolo          | [B][U]Ludicolo Checks[/U][/B]
 Newline
@@ -3504,10 +3340,8 @@ Newline
 NSI to: 
 323-m        | Camerupt-Mega     | 
 
-
 Newline
 Newline
-
 
 518          | Musharna          | [B][U]Musharna Checks[/U][/B]
 Newline
@@ -3527,10 +3361,8 @@ Newline
 SSI to: 
 539          | Sawk              | 
 
-
 Newline
 Newline
-
 
 435          | Skuntank          | [B][U]Skuntank Checks[/U][/B]
 Newline
@@ -3549,10 +3381,8 @@ SSI to:
 465          | Tangrowth         | 
 655          | Delphox           | 
 
-
 Newline
 Newline
-
 
 709          | Trevenant         | [B][U]Trevenant Checks[/U][/B]
 Newline
@@ -3573,10 +3403,8 @@ NSI to:
 693          | Clawitzer         | 
 221          | Piloswine         | 
 
-
 Newline
 Newline
-
 
 051          | Dugtrio           | [B][U]Dugtrio Checks[/U][/B]
 Newline
@@ -3601,10 +3429,8 @@ NSI to:
 655          | Delphox           | 
 306          | Aggron            | 
 
-
 Newline
 Newline
-
 
 139          | Omastar           | [B][U]Omastar Checks[/U][/B]
 Newline
@@ -3627,10 +3453,8 @@ NSI to:
 323-m        | Camerupt-Mega     | 
 306          | Aggron            | 
 
-
 Newline
 Newline
-
 
 275          | Shiftry           | [B][U]Shiftry Checks[/U][/B]
 Newline
@@ -3652,10 +3476,8 @@ NSI to:
 503          | Samurott          | 
 693          | Clawitzer         | 
 
-
 Newline
 Newline
-
 
 178          | Xatu              | [B][U]Xatu Checks[/U][/B]
 Newline
@@ -3673,10 +3495,8 @@ SSI to:
 533          | Gurdurr           | 
 308          | Medicham          | 
 
-
 Newline
 Newline
-
 
 141          | Kabutops          | [B][U]Kabutops Checks[/U][/B]
 Newline
@@ -3698,10 +3518,8 @@ NSI to:
 229          | Houndoom          | 
 306          | Aggron            | 
 
-
 Newline
 Newline
-
 
 103          | Exeggutor         | [B][U]Exeggutor Checks[/U][/B]
 Newline
@@ -3721,10 +3539,8 @@ Newline
 NSI to: 
 221          | Piloswine         | 
 
-
 Newline
 Newline
-
 
 144          | Articuno          | [B][U]Articuno Checks[/U][/B]
 Newline
@@ -3741,10 +3557,8 @@ SSI to:
 460-m        | Abomasnow-Mega    | 
 533          | Gurdurr           | 
 
-
 Newline
 Newline
-
 
 689          | Barbaracle        | [B][U]Barbaracle Checks[/U][/B]
 Newline
@@ -3764,10 +3578,8 @@ NSI to:
 460-m        | Abomasnow-Mega    | 
 323-m        | Camerupt-Mega     | 
 
-
 Newline
 Newline
-
 
 254          | Sceptile          | [B][U]Sceptile Checks[/U][/B]
 Newline
@@ -3786,10 +3598,8 @@ NSI to:
 503          | Samurott          | 
 693          | Clawitzer         | 
 
-
 Newline
 Newline
-
 
 226          | Mantine           | [B][U]Mantine Checks[/U][/B]
 Newline
@@ -3805,10 +3615,8 @@ Newline
 GSI to: 
 208-m        | Steelix-Mega      | 
 
-
 Newline
 Newline
-
 
 303          | Mawile            | [B][U]Mawile Checks[/U][/B]
 Newline
@@ -3824,10 +3632,8 @@ Newline
 GSI to: 
 697          | Tyrantrum         | 
 
-
 Newline
 Newline
-
 
 563          | Cofagrigus        | [B][U]Cofagrigus Checks[/U][/B]
 Newline
@@ -3843,10 +3649,8 @@ Newline
 GSI to: 
 308          | Medicham          | 
 
-
 Newline
 Newline
-
 
 699          | Aurorus           | [B][U]Aurorus Checks[/U][/B]
 Newline
@@ -3865,10 +3669,8 @@ Newline
 NSI to: 
 621          | Druddigon         | 
 
-
 Newline
 Newline
-
 
 510          | Liepard           | [B][U]Liepard Checks[/U][/B]
 Newline
@@ -3886,10 +3688,8 @@ NSI to:
 648          | Meloetta          | 
 561          | Sigilyph          | 
 
-
 Newline
 Newline
-
 
 429          | Mismagius         | [B][U]Mismagius Checks[/U][/B]
 Newline
@@ -3905,10 +3705,8 @@ Newline
 SSI to: 
 199          | Slowking          | 
 
-
 Newline
 Newline
-
 
 460          | Abomasnow         | [B][U]Abomasnow Checks[/U][/B]
 Newline
@@ -3924,10 +3722,8 @@ Newline
 SSI to: 
 330          | Flygon            | 
 
-
 Newline
 Newline
-
 
 531          | Audino            | [B][U]Audino Checks[/U][/B]
 Newline
@@ -3943,10 +3739,8 @@ Newline
 SSI to: 
 479m         | Rotom-Mow         | 
 
-
 Newline
 Newline
-
 
 128          | Tauros            | [B][U]Tauros Checks[/U][/B]
 Newline
