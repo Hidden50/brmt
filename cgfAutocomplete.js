@@ -70,7 +70,7 @@ function AutocompleteList(trigger) {
 		result.push( 'Newline' );
 		current = AutocompletePokemon(trigger, true);
 		count++;
-	} while (  (_autocomplete_StartIndex > i_Start) && (count < 10)  );
+	} while (  (_autocomplete_StartIndex > i_Start) && (count < 13)  );
 	if (_autocomplete_StartIndex > i_Start)
 		result.push( '...' );
 	return result.join('\n');
