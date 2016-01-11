@@ -5,6 +5,13 @@
 	<title>brmt</title>
 </head>
 
+<style>
+	input[type=number] {
+		width:60px;
+		text-align:right;
+	}
+</style>
+
 <body>
 
 <!-- topside div -->
@@ -39,16 +46,12 @@
 			</tr>
 			</table>
 		</span>
-		<script>
-			for (Mode = 0; Mode < 6; Mode++)
-				document.getElementById("RatCoeffSel" + Mode).style = "width:60px; text-align:right";
-		</script>
 		<div style="margin-top:8px">
 			<button onclick="onRatCoeffSelectorChange(6, [10000,100,2,11,7,3])">Break it!<br>[10000,100,2,11,7,3]</button>
 			<button onclick="onRatCoeffSelectorChange(6, [0,0,0,11,7,3])">Wall it!<br>[0,0,0,11,7,3]</button>
-			<select onchange="SetChecksCompendium(this.value);">
-				<option value="OUcc.txt">OU Checks Compendium</option>
-				<option value="RUcc.txt">RU Checks Compendium</option>
+			<select ID="ccSelector" onchange="SetChecksCompendium(this.value);">
+				<option value="OUcc.txt">OU Checks Compendium by Tressed</option>
+				<option value="RUcc.txt">RU Checks Compendium by Arifeen</option>
 			</select>
 		</div>
 	</span>
@@ -116,7 +119,7 @@
 			// pokemon identifiers contain a-z, A-Z, 0-9 and "-". Treat everything else as a separator
 			urlparam = urlparam.replace(/([^a-zA-Z0-9\-])+/g, ',');
 			UpdateAutocompleteResults();
-			SetChecksCompendium('OUcc.txt');
+			SetChecksCompendium(document.getElementById('ccSelector').value);
 			AddToTeam('');
 			onRatCoeffSelectorChange(6, [10000,100,2,11,7,3]);  // init rating function
 		}
