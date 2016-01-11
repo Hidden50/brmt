@@ -1,12 +1,17 @@
 var _autocomplete_StartIndex = -1;
-var _AutocompleteList;
 
-//if (offline) 
-//	_AutocompleteList = OpenTextfile('file:///C:/Users/Daniel/Dropbox/Public/CompGen/full%20Sourcecode/v1_2/_autocomplete.txt')
-//else _AutocompleteList = OpenTextfile('https://dl.dropboxusercontent.com/u/9207945/CompGen/full%20Sourcecode/v1_2/_autocomplete.txt');
-_AutocompleteList = OpenTextfile('autocomplete.txt');
+var _AutocompleteList = OpenTextfile('autocomplete.txt');
+// make extra entries for full name / dexnumber lookup
+for (var line = 0; line < _AutocompleteList.length; line++) {
+	if ( _AutocompleteList[line].indexOf('|') >= 0 ) {
+		var entry = _AutocompleteList[line];
+		_AutocompleteList['e' + ExtractDexNum(entry).toLowerCase()] = entry;
+		_AutocompleteList['e' + ExtractName(entry).toLowerCase()] = entry;
+	}
+}
 
-var found = false;
+function ExtractDexNum(pokemon) { return pokemon.split('|')[0].trim(); }
+function ExtractName(pokemon) { return pokemon.split('|')[1].trim(); }
 
 function OpenTextfile(url)
 {
@@ -17,13 +22,6 @@ function OpenTextfile(url)
 	return xhr.responseText.split('\r\n').join('\n').split('\n');
 }
 
-function ExtractDexNum(pokemon) {
-	return pokemon.split('|')[0].trim();
-}
-
-function ExtractName(pokemon) {
-	return pokemon.split('|')[1].trim();
-}
 
 function MakeClickable(pokemon, visibleHtml, id) {
 	if (visibleHtml === undefined)
@@ -57,64 +55,10 @@ function ColumnAtPosition(TableRow, Position) {
 	return TableRow.substring(p+1, q-1).trim().toUpperCase();
 }
 
-function AutocompletePokemon(trigger, OmitToRestart) {
-	// OmitToRestart: Starts searching from zero, unless otherwise specified
-	if (OmitToRestart === undefined)
-		_autocomplete_StartIndex = -1;
-	
-	if (trigger.length == 0)
-		trigger = "|";  // match empty search strings onto anything that's a table
-	var result = trigger;
-	found = false;
-	trigger = trigger.toUpperCase();
-	
-	var start = _autocomplete_StartIndex;
-	// search the autocomplete file starting at line "start"
-	for (var i = 1; i <= _AutocompleteList.length; i++) {
-		var line = (start + i) % _AutocompleteList.length;
-		var Row = _AutocompleteList[line].toUpperCase();
-		var p, q;
-		p = Row.indexOf(trigger);
-		if (p > -1) {
-			// found a match
-			q = p + trigger.length - 1;
-			
-			found = true;
-			result = _AutocompleteList[line];
-			_autocomplete_StartIndex = line;  // put a bookmark in case we want to search further
-			
-			// Lando -> Landorus-t is ok, but not Landorus -> Landorus-t
-			// (don't pull up wrong matches because of usage, if a full name was typed in)
-			// likewise, 212 -> 212-m is a no-go.
-			
-			if(     (     (p == 0)
-			           || (Row.charAt(p-1) == " ")
-			        )
-			     && (     (q == Row.length + 1)
-			           || (Row.charAt(q+1) == " ")
-			           || (Row.charAt(q+1) == "-")
-			        )
-			)
-			{
-				// full word was typed in, rather than just a part.
-				// require a 1:1 match with the result
-				if ( trigger.trim() != ColumnAtPosition(Row, p) ) {
-//					window.alert(  trigger.trim() + ' != ' + ColumnAtPosition(Row, p)  );
-					continue;  // No exact match, keep looking :(
-					// if we don't find an exact match at all, we still take it though
-					// (already assigned result, Completion and the new StartIndex)
-				}
-			}
-			// since we didn't exit at the continue statement just now,
-			// apparently we've found a good match
-			return result;
-		}
-	}
-	return result;
-}
+var found = false;
 
 function AutocompleteList(trigger) {
-	var result = "";
+	var result = [];
 	var count = 0;
 	
 	var current = AutocompletePokemon(trigger);
@@ -122,12 +66,42 @@ function AutocompleteList(trigger) {
 		return "";
 	var i_Start = _autocomplete_StartIndex;
 	do {
-		result += MakeClickable( current, current + current.replace("|", "").replace("|", ""), count )
-			   +  "\nNewline\n";
+		result.push(  MakeClickable( current, current + current.replace("|", "").replace("|", ""), count )  )
+		result.push( 'Newline' );
 		current = AutocompletePokemon(trigger, true);
 		count++;
-	} while (  (_autocomplete_StartIndex > i_Start) && (count < 50)  );
+	} while (  (_autocomplete_StartIndex > i_Start) && (count < 10)  );
 	if (_autocomplete_StartIndex > i_Start)
-		result += "\n...";
-	return result;
+		result.push( '...' );
+	return result.join('\n');
+}
+
+function AutocompletePokemon(trigger, OmitToRestart) {
+	theTrigger = trigger.toLowerCase();
+	// look up if it's a full name / dex number
+	if ( _AutocompleteList['e' + theTrigger] !== undefined )
+		return _AutocompleteList['e' + theTrigger];
+	
+	// it's no full name / DN, so we return the first string to contain the trigger
+
+	// OmitToRestart: Starts searching from zero, unless otherwise specified
+	if (OmitToRestart === undefined)
+		_autocomplete_StartIndex = -1;
+	
+	if (theTrigger.length == 0) theTrigger = '|';  // match empty search strings onto anything that's a table
+	
+	found = false;
+	var start = _autocomplete_StartIndex;
+	// search the autocomplete file starting at line start
+	for (var i = 1; i <= _AutocompleteList.length; i++) {
+		var line = (start + i) % _AutocompleteList.length;
+		if (_AutocompleteList[line].toLowerCase().indexOf(theTrigger) >= 0) {
+			found = true;
+			// put a bookmark for the next search in case we want to search for another completion of the trigger
+			_autocomplete_StartIndex = line;
+			return _AutocompleteList[line];
+		}
+	}
+	// nothing was found
+	return trigger;
 }
