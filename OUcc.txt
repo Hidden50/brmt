@@ -8556,6 +8556,3 @@ NSI:
 Newline
 NSI to: 
 647          | Keldeo            | 
-
-Newline
-Newline
