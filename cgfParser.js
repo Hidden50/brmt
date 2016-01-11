@@ -3,21 +3,6 @@ function quotes(S) { return "\"" + S + "\""; }
 
 function Weblink(Dexnumber) {
 	return 'Serebii__Images/' + Dexnumber + '.png';
-/*	if (offline)
-		return 'file:///C:/Users/Daniel/Dropbox/Public/CompGen/Serebii__Images/' + Dexnumber + '.png'
-	else {
-		if ( Dexnumber.substring(0, 4).toLowerCase() != "493-" )
-			return "http://www.serebii.net/pokedex-xy/icon/" + Dexnumber + ".png"
-		else {
-			// Arceus formes are only available on this one site, afaik
-			if (Dexnumber == '493-fairy')
-				Dexnumber = '493-psychic';  // REALLY dirty fix for a missing image q_q
-				                            // psychic color looks almost like fairy anyway
-			return 'http://sprites.pokecheck.org/icon/' + Dexnumber + '.png'
-		}
-	}*/
-// don't use this. Dropbox counts every single sprite as a file request, and kills your links if you have too many.
-//	return 'https://dl.dropboxusercontent.com/u/9207945/CompGen/Serebii_Images/' + Dexnumber + '.png'
 }
 
 function DownloadTxt(content, name) {
@@ -29,12 +14,12 @@ function DownloadHtml(content, name) {
 }
 
 function DownloadFile(content, name, type) {
-//    var a = document.createElement("a");
-    var file = new Blob([content], {type: type});
-//    a.href = URL.createObjectURL(file);
-//    a.download = name;
-//    a.click();
+	var file = new Blob([content], {type: type});
 	window.open(URL.createObjectURL(file));
+//	var a = document.createElement("a");
+//	a.href = URL.createObjectURL(file);
+//	a.download = name;
+//	a.click();
 }
 
 function ParseCompendium(Compendium, MakeImagesClickable) {
