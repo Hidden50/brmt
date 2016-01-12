@@ -1538,7 +1538,6 @@ NSI:
 Newline
 GSI to: 
 354-m        | Banette-Mega      | 
-354-m        | Banette-Mega      | 
 
 Newline
 Newline
@@ -1853,7 +1852,6 @@ GSI:
 195          | Quagsire          | 
 594          | Alomomola         | 
 591          | Amoonguss         | 
-452          | Drapion           | 
 533          | Gurdurr           | 
 211          | Qwilfish          | 
 062          | Poliwrath         | 
