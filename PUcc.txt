@@ -1,34 +1,383 @@
-024          | Arbok             | [B][U]Arbok Checks[/U][/B]
-Newline
-GSI: 
-618          | Stunfisk          | 
-200          | Misdreavus        | 
-444          | Gabite            | 
-713          | Avalugg           | 
-356          | Dusclops          | 
+634          | Zweilous          | [B][U]Zweilous Checks[/U][/B]
 Newline
 SSI: 
-476          | Probopass         | 
-024          | Arbok             | 
-076          | Golem             | 
-711          | Gourgeist         | 
-600          | Klang             | 
-375          | Metang            | 
+114          | Tangela           | 
+067          | Machoke           | 
+122          | Mr. Mime          | 
+035          | Clefairy          | 
 369          | Relicanth         | 
+600          | Klang             | 
+713          | Avalugg           | 
+Newline
+NSI: 
+419          | Floatzel          | 
+085          | Dodrio            | 
+508          | Stoutland         | 
+516          | Simipour          | 
+217          | Ursaring          | 
+479f         | Rotom-Frost       | 
+055          | Golduck           | 
+611          | Fraxure           | 
+144          | Articuno          | 
+550          | Basculin          | 
+291          | Ninjask           | 
+444          | Gabite            | 
+GSI to: 
+477          | Dusknoir          | 
+200          | Misdreavus        | 
+326          | Grumpig           | 
+038          | Ninetales         | 
+Newline
+SSI to: 
+516          | Simipour          | 
+463          | Lickilicky        | 
+578          | Duosion           | 
+055          | Golduck           | 
+581          | Swanna            | 
+606          | Beheeyem          | 
+367          | Huntail           | 
+673          | Gogoat            | 
+064          | Kadabra           | 
+114          | Tangela           | 
+550          | Basculin          | 
+189          | Jumpluff          | 
+
+Newline
+Newline
+
+419          | Floatzel          | [B][U]Floatzel Checks[/U][/B]
+Newline
+SSI: 
+315          | Roselia           | 
+114          | Tangela           | 
+326          | Grumpig           | 
+035          | Clefairy          | 
+711          | Gourgeist         | 
+463          | Lickilicky        | 
+186          | Politoed          | 
+369          | Relicanth         | 
+651          | Quilladin         | 
+131          | Lapras            | 
+Newline
+NSI: 
+523          | Zebstrika         | 
+516          | Simipour          | 
+067          | Machoke           | 
+378          | Regice            | 
+586          | Sawsbuck          | 
+144          | Articuno          | 
+673          | Gogoat            | 
+125          | Electabuzz        | 
+291          | Ninjask           | 
+Newline
+NSI to: 
+634          | Zweilous          | 
+217          | Ursaring          | 
+614          | Beartic           | 
+512          | Simisage          | 
+514          | Simisear          | 
+516          | Simipour          | 
 348          | Armaldo           | 
 477          | Dusknoir          | 
-449          | Hippopotas        | 
+463          | Lickilicky        | 
+508          | Stoutland         | 
+624          | Pawniard          | 
+099          | Kingler           | 
+035          | Clefairy          | 
+391          | Monferno          | 
+026          | Raichu            | 
+369          | Relicanth         | 
+626          | Bouffalant        | 
+470          | Leafeon           | 
+055          | Golduck           | 
+581          | Swanna            | 
+600          | Klang             | 
+064          | Kadabra           | 
+078          | Rapidash          | 
+076          | Golem             | 
+038          | Ninetales         | 
+114          | Tangela           | 
+550          | Basculin          | 
+441          | Chatot            | 
+085          | Dodrio            | 
+189          | Jumpluff          | 
+024          | Arbok             | 
+432          | Purugly           | 
+315          | Roselia           | 
+125          | Electabuzz        | 
+
+Newline
+Newline
+
+217          | Ursaring          | [B][U]Ursaring Checks[/U][/B]
+Newline
+GSI: 
+114          | Tangela           | 
+Newline
+SSI: 
+618          | Stunfisk          | 
+200          | Misdreavus        | 
+711          | Gourgeist         | 
+369          | Relicanth         | 
+713          | Avalugg           | 
+Newline
+NSI: 
+419          | Floatzel          | 
+523          | Zebstrika         | 
+064          | Kadabra           | 
+026          | Raichu            | 
+067          | Machoke           | 
+432          | Purugly           | 
+291          | Ninjask           | 
+391          | Monferno          | 
+Newline
+SSI to: 
+477          | Dusknoir          | 
+Newline
+NSI to: 
+634          | Zweilous          | 
+512          | Simisage          | 
+479f         | Rotom-Frost       | 
+514          | Simisear          | 
+463          | Lickilicky        | 
+508          | Stoutland         | 
+035          | Clefairy          | 
+578          | Duosion           | 
+626          | Bouffalant        | 
+470          | Leafeon           | 
+581          | Swanna            | 
+606          | Beheeyem          | 
+064          | Kadabra           | 
+378          | Regice            | 
+326          | Grumpig           | 
+144          | Articuno          | 
+038          | Ninetales         | 
+550          | Basculin          | 
+024          | Arbok             | 
+315          | Roselia           | 
+125          | Electabuzz        | 
+
+Newline
+Newline
+
+614          | Beartic           | [B][U]Beartic Checks[/U][/B](in rain)
+Newline
+GSI: 
+375          | Metang            | 
+Newline
+SSI: 
+326          | Grumpig           | 
+186          | Politoed          | 
+369          | Relicanth         | 
+713          | Avalugg           | 
+324          | Torkoal           | 
+Newline
+NSI: 
+419          | Floatzel          | 
+064          | Kadabra           | 
+067          | Machoke           | 
+055          | Golduck           | 
+391          | Monferno          | 
+291          | Ninjask           | 
+348          | Armaldo           | 
+367          | Huntail           | 
 338          | Solrock           | 
+
+Newline
+Newline
+
+512          | Simisage          | [B][U]Simisage Checks[/U][/B]
+Newline
+GSI: 
+317          | Swalot            | 
+Newline
+SSI: 
+315          | Roselia           | 
+024          | Arbok             | 
+144          | Articuno          | 
+463          | Lickilicky        | 
+711          | Gourgeist         | 
+629          | Vullaby           | 
+Newline
+NSI: 
+419          | Floatzel          | 
+523          | Zebstrika         | 
+085          | Dodrio            | 
+189          | Jumpluff          | 
+064          | Kadabra           | 
+078          | Rapidash          | 
+217          | Ursaring          | 
+514          | Simisear          | 
+291          | Ninjask           | 
+432          | Purugly           | 
+391          | Monferno          | 
+Newline
+NSI to: 
+348          | Armaldo           | 
+477          | Dusknoir          | 
+508          | Stoutland         | 
+099          | Kingler           | 
+200          | Misdreavus        | 
+035          | Clefairy          | 
+369          | Relicanth         | 
+581          | Swanna            | 
+606          | Beheeyem          | 
+326          | Grumpig           | 
+076          | Golem             | 
+144          | Articuno          | 
+550          | Basculin          | 
+
+Newline
+Newline
+
+516          | Simipour          | [B][U]Simipour Checks[/U][/B]
+Newline
+GSI: 
+186          | Politoed          | 
+Newline
+SSI: 
+315          | Roselia           | 
+326          | Grumpig           | 
+463          | Lickilicky        | 
+035          | Clefairy          | 
+673          | Gogoat            | 
+629          | Vullaby           | 
+634          | Zweilous          | 
+Newline
+NSI: 
+419          | Floatzel          | 
+523          | Zebstrika         | 
+189          | Jumpluff          | 
+026          | Raichu            | 
+078          | Rapidash          | 
+064          | Kadabra           | 
+144          | Articuno          | 
+550          | Basculin          | 
+291          | Ninjask           | 
+432          | Purugly           | 
+Newline
+NSI to: 
+634          | Zweilous          | 
+419          | Floatzel          | 
+514          | Simisear          | 
+348          | Armaldo           | 
+477          | Dusknoir          | 
+463          | Lickilicky        | 
+508          | Stoutland         | 
+624          | Pawniard          | 
+099          | Kingler           | 
+200          | Misdreavus        | 
+391          | Monferno          | 
+611          | Fraxure           | 
+368          | Gorebyss          | 
+369          | Relicanth         | 
+626          | Bouffalant        | 
+470          | Leafeon           | 
+055          | Golduck           | 
+581          | Swanna            | 
+606          | Beheeyem          | 
+367          | Huntail           | 
+673          | Gogoat            | 
+600          | Klang             | 
+064          | Kadabra           | 
+076          | Golem             | 
+038          | Ninetales         | 
+114          | Tangela           | 
+550          | Basculin          | 
+441          | Chatot            | 
+291          | Ninjask           | 
+085          | Dodrio            | 
+024          | Arbok             | 
+
+Newline
+Newline
+
+479f         | Rotom-Frost       | [B][U]Rotom-F Checks[/U][/B]
+Newline
+GSI: 
+463          | Lickilicky        | 
+Newline
+SSI: 
+326          | Grumpig           | 
+038          | Ninetales         | 
+378          | Regice            | 
+476          | Probopass         | 
+035          | Clefairy          | 
+600          | Klang             | 
+125          | Electabuzz        | 
+Newline
+NSI: 
+523          | Zebstrika         | 
+078          | Rapidash          | 
+217          | Ursaring          | 
+026          | Raichu            | 
+067          | Machoke           | 
+514          | Simisear          | 
+391          | Monferno          | 
+GSI to: 
+144          | Articuno          | 
+Newline
+SSI to: 
+673          | Gogoat            | 
+Newline
+NSI to: 
+634          | Zweilous          | 
+624          | Pawniard          | 
+611          | Fraxure           | 
+368          | Gorebyss          | 
+369          | Relicanth         | 
+581          | Swanna            | 
+367          | Huntail           | 
+198          | Murkrow           | 
+114          | Tangela           | 
+550          | Basculin          | 
+085          | Dodrio            | 
+189          | Jumpluff          | 
+
+Newline
+Newline
+
+514          | Simisear          | [B][U]Simisear Checks[/U][/B]
+Newline
+GSI: 
+186          | Politoed          | 
+Newline
+SSI: 
+078          | Rapidash          | 
+391          | Monferno          | 
+326          | Grumpig           | 
+463          | Lickilicky        | 
+279          | Pelipper          | 
+444          | Gabite            | 
 329          | Vibrava           | 
 Newline
 NSI: 
 419          | Floatzel          | 
+523          | Zebstrika         | 
 516          | Simipour          | 
+189          | Jumpluff          | 
 064          | Kadabra           | 
-026          | Raichu            | 
 217          | Ursaring          | 
+611          | Fraxure           | 
+432          | Purugly           | 
+067          | Machoke           | 
+Newline
+NSI to: 
+512          | Simisage          | 
+479f         | Rotom-Frost       | 
+348          | Armaldo           | 
+508          | Stoutland         | 
+200          | Misdreavus        | 
+470          | Leafeon           | 
+600          | Klang             | 
+378          | Regice            | 
+144          | Articuno          | 
+038          | Ninetales         | 
+114          | Tangela           | 
 441          | Chatot            | 
-105          | Marowak           | 
+085          | Dodrio            | 
+586          | Sawsbuck          | 
+315          | Roselia           | 
 
 Newline
 Newline
@@ -59,98 +408,832 @@ NSI:
 514          | Simisear          | 
 581          | Swanna            | 
 550          | Basculin          | 
+Newline
+SSI to: 
+508          | Stoutland         | 
+078          | Rapidash          | 
+024          | Arbok             | 
+Newline
+NSI to: 
+614          | Beartic           | 
+578          | Duosion           | 
+378          | Regice            | 
 
 Newline
 Newline
 
-144          | Articuno          | [B][U]Articuno Checks[/U][/B]
+463          | Lickilicky        | [B][U]Lickilicky Checks[/U][/B]
 Newline
 GSI: 
-476          | Probopass         | 
+713          | Avalugg           | 
+Newline
+SSI: 
+114          | Tangela           | 
+067          | Machoke           | 
+200          | Misdreavus        | 
+076          | Golem             | 
+711          | Gourgeist         | 
+369          | Relicanth         | 
+444          | Gabite            | 
+634          | Zweilous          | 
+338          | Solrock           | 
+Newline
+NSI: 
+419          | Floatzel          | 
+085          | Dodrio            | 
+508          | Stoutland         | 
+516          | Simipour          | 
+026          | Raichu            | 
+217          | Ursaring          | 
+024          | Arbok             | 
+550          | Basculin          | 
+391          | Monferno          | 
+GSI to: 
 479f         | Rotom-Frost       | 
+055          | Golduck           | 
+581          | Swanna            | 
+606          | Beheeyem          | 
+064          | Kadabra           | 
+326          | Grumpig           | 
+523          | Zebstrika         | 
+315          | Roselia           | 
+125          | Electabuzz        | 
+Newline
+SSI to: 
+419          | Floatzel          | 
+512          | Simisage          | 
+514          | Simisear          | 
+516          | Simipour          | 
+368          | Gorebyss          | 
+026          | Raichu            | 
+578          | Duosion           | 
+378          | Regice            | 
+122          | Mr. Mime          | 
+144          | Articuno          | 
+038          | Ninetales         | 
+441          | Chatot            | 
+
+Newline
+Newline
+
+477          | Dusknoir          | [B][U]Dusknoir Checks[/U][/B]
+Newline
+GSI: 
+634          | Zweilous          | 
+Newline
+SSI: 
+508          | Stoutland         | 
+114          | Tangela           | 
+067          | Machoke           | 
+217          | Ursaring          | 
+076          | Golem             | 
+279          | Pelipper          | 
+369          | Relicanth         | 
+629          | Vullaby           | 
+713          | Avalugg           | 
+Newline
+NSI: 
+419          | Floatzel          | 
+085          | Dodrio            | 
+516          | Simipour          | 
+026          | Raichu            | 
+512          | Simisage          | 
+262          | Mightyena         | 
+200          | Misdreavus        | 
+550          | Basculin          | 
+GSI to: 
+122          | Mr. Mime          | 
+441          | Chatot            | 
+Newline
+SSI to: 
+391          | Monferno          | 
+026          | Raichu            | 
+626          | Bouffalant        | 
+024          | Arbok             | 
+432          | Purugly           | 
+315          | Roselia           | 
+Newline
+NSI to: 
+578          | Duosion           | 
+606          | Beheeyem          | 
+064          | Kadabra           | 
+326          | Grumpig           | 
+523          | Zebstrika         | 
+
+Newline
+Newline
+
+508          | Stoutland         | [B][U]Stoutland Checks[/U][/B]
+Newline
+GSI: 
+114          | Tangela           | 
+Newline
+SSI: 
+618          | Stunfisk          | 
+476          | Probopass         | 
+369          | Relicanth         | 
+076          | Golem             | 
+375          | Metang            | 
+600          | Klang             | 
+338          | Solrock           | 
+348          | Armaldo           | 
+713          | Avalugg           | 
+Newline
+NSI: 
+419          | Floatzel          | 
+516          | Simipour          | 
+085          | Dodrio            | 
+026          | Raichu            | 
+326          | Grumpig           | 
+217          | Ursaring          | 
+078          | Rapidash          | 
+512          | Simisage          | 
+514          | Simisear          | 
+391          | Monferno          | 
+441          | Chatot            | 
+Newline
+SSI to: 
+477          | Dusknoir          | 
+200          | Misdreavus        | 
+Newline
+NSI to: 
+634          | Zweilous          | 
+463          | Lickilicky        | 
+035          | Clefairy          | 
+578          | Duosion           | 
+626          | Bouffalant        | 
+606          | Beheeyem          | 
+064          | Kadabra           | 
+378          | Regice            | 
+326          | Grumpig           | 
+076          | Golem             | 
+122          | Mr. Mime          | 
+144          | Articuno          | 
+523          | Zebstrika         | 
+189          | Jumpluff          | 
+315          | Roselia           | 
+125          | Electabuzz        | 
+
+Newline
+Newline
+
+067          | Machoke           | [B][U]Machoke Checks[/U][/B]
+Newline
+GSI: 
+024          | Arbok             | 
+317          | Swalot            | 
+Newline
+SSI: 
+144          | Articuno          | 
+035          | Clefairy          | 
+114          | Tangela           | 
+711          | Gourgeist         | 
+338          | Solrock           | 
+Newline
+NSI: 
+189          | Jumpluff          | 
+085          | Dodrio            | 
+326          | Grumpig           | 
+122          | Mr. Mime          | 
+581          | Swanna            | 
+291          | Ninjask           | 
+198          | Murkrow           | 
+GSI to: 
+200          | Misdreavus        | 
+Newline
+SSI to: 
+634          | Zweilous          | 
+348          | Armaldo           | 
+477          | Dusknoir          | 
+463          | Lickilicky        | 
+624          | Pawniard          | 
+369          | Relicanth         | 
+626          | Bouffalant        | 
+600          | Klang             | 
+378          | Regice            | 
+038          | Ninetales         | 
+315          | Roselia           | 
+125          | Electabuzz        | 
+Newline
+NSI to: 
+419          | Floatzel          | 
+217          | Ursaring          | 
+614          | Beartic           | 
+479f         | Rotom-Frost       | 
+514          | Simisear          | 
+391          | Monferno          | 
+611          | Fraxure           | 
+026          | Raichu            | 
+055          | Golduck           | 
+367          | Huntail           | 
+078          | Rapidash          | 
+076          | Golem             | 
+523          | Zebstrika         | 
+586          | Sawsbuck          | 
+262          | Mightyena         | 
+432          | Purugly           | 
+
+Newline
+Newline
+
+200          | Misdreavus        | [B][U]Misdreavus Checks[/U][/B]
+Newline
+GSI: 
+067          | Machoke           | 
+634          | Zweilous          | 
+Newline
+SSI: 
+315          | Roselia           | 
+508          | Stoutland         | 
+038          | Ninetales         | 
+078          | Rapidash          | 
+378          | Regice            | 
+629          | Vullaby           | 
+Newline
+NSI: 
+085          | Dodrio            | 
+516          | Simipour          | 
+512          | Simisage          | 
+514          | Simisear          | 
+262          | Mightyena         | 
+470          | Leafeon           | 
+432          | Purugly           | 
+099          | Kingler           | 
+GSI to: 
+578          | Duosion           | 
+626          | Bouffalant        | 
+122          | Mr. Mime          | 
+441          | Chatot            | 
+024          | Arbok             | 
+Newline
+SSI to: 
+217          | Ursaring          | 
+348          | Armaldo           | 
+463          | Lickilicky        | 
+035          | Clefairy          | 
+391          | Monferno          | 
+611          | Fraxure           | 
+369          | Relicanth         | 
+606          | Beheeyem          | 
+367          | Huntail           | 
+673          | Gogoat            | 
+600          | Klang             | 
+064          | Kadabra           | 
+326          | Grumpig           | 
+076          | Golem             | 
+189          | Jumpluff          | 
+586          | Sawsbuck          | 
+432          | Purugly           | 
+315          | Roselia           | 
+125          | Electabuzz        | 
+Newline
+NSI to: 
+477          | Dusknoir          | 
+
+Newline
+Newline
+
+624          | Pawniard          | [B][U]Pawniard Checks[/U][/B]
+Newline
+GSI: 
+618          | Stunfisk          | 
+369          | Relicanth         | 
+Newline
+SSI: 
+067          | Machoke           | 
+391          | Monferno          | 
+114          | Tangela           | 
+476          | Probopass         | 
+444          | Gabite            | 
+Newline
+NSI: 
+419          | Floatzel          | 
+523          | Zebstrika         | 
+078          | Rapidash          | 
+516          | Simipour          | 
+479f         | Rotom-Frost       | 
+038          | Ninetales         | 
+186          | Politoed          | 
+
+Newline
+Newline
+
+035          | Clefairy          | [B][U]Clefairy Checks[/U][/B] (calm mind)
+Newline
+GSI: 
 600          | Klang             | 
 375          | Metang            | 
 Newline
 SSI: 
-378          | Regice            | 
+315          | Roselia           | 
 326          | Grumpig           | 
 038          | Ninetales         | 
-463          | Lickilicky        | 
-125          | Electabuzz        | 
-446          | Munchlax          | 
+024          | Arbok             | 
+200          | Misdreavus        | 
+186          | Politoed          | 
 Newline
 NSI: 
+419          | Floatzel          | 
 085          | Dodrio            | 
 508          | Stoutland         | 
-523          | Zebstrika         | 
-078          | Rapidash          | 
-026          | Raichu            | 
+064          | Kadabra           | 
 217          | Ursaring          | 
 512          | Simisage          | 
-038          | Ninetales         | 
-514          | Simisear          | 
-405          | Luxray            | 
+076          | Golem             | 
+550          | Basculin          | 
+099          | Kingler           | 
+105          | Marowak           | 
+GSI to: 
+378          | Regice            | 
+125          | Electabuzz        | 
+Newline
+SSI to: 
+634          | Zweilous          | 
+419          | Floatzel          | 
+479f         | Rotom-Frost       | 
+516          | Simipour          | 
+067          | Machoke           | 
+391          | Monferno          | 
+611          | Fraxure           | 
+368          | Gorebyss          | 
+055          | Golduck           | 
+064          | Kadabra           | 
+326          | Grumpig           | 
+122          | Mr. Mime          | 
 
 Newline
 Newline
 
-550          | Basculin          | [B][U]Basculin Checks[/U][/B]
+099          | Kingler           | [B][U]Kingler Checks[/U][/B]
 Newline
 GSI: 
-369          | Relicanth         | 
-713          | Avalugg           | 
-186          | Politoed          | 
-131          | Lapras            | 
+114          | Tangela           | 
+651          | Quilladin         | 
 Newline
 SSI: 
+369          | Relicanth         | 
+711          | Gourgeist         | 
+186          | Politoed          | 
+629          | Vullaby           | 
+673          | Gogoat            | 
+470          | Leafeon           | 
+Newline
+NSI: 
+419          | Floatzel          | 
+516          | Simipour          | 
+085          | Dodrio            | 
+189          | Jumpluff          | 
+064          | Kadabra           | 
+512          | Simisage          | 
+586          | Sawsbuck          | 
+405          | Luxray            | 
+Newline
+NSI to: 
+200          | Misdreavus        | 
+035          | Clefairy          | 
+
+Newline
+Newline
+
+391          | Monferno          | [B][U]Monferno Checks[/U][/B]
+Newline
+GSI: 
+618          | Stunfisk          | 
+449          | Hippopotas        | 
+Newline
+SSI: 
+326          | Grumpig           | 
+578          | Duosion           | 
+035          | Clefairy          | 
+200          | Misdreavus        | 
+444          | Gabite            | 
+629          | Vullaby           | 
+477          | Dusknoir          | 
+Newline
+NSI: 
+419          | Floatzel          | 
+516          | Simipour          | 
+085          | Dodrio            | 
+189          | Jumpluff          | 
+067          | Machoke           | 
+078          | Rapidash          | 
+122          | Mr. Mime          | 
+024          | Arbok             | 
+055          | Golduck           | 
+581          | Swanna            | 
+338          | Solrock           | 
+Newline
+SSI to: 
+514          | Simisear          | 
+624          | Pawniard          | 
+470          | Leafeon           | 
+378          | Regice            | 
+262          | Mightyena         | 
+Newline
+NSI to: 
+217          | Ursaring          | 
+614          | Beartic           | 
+512          | Simisage          | 
+479f         | Rotom-Frost       | 
+463          | Lickilicky        | 
+508          | Stoutland         | 
+626          | Bouffalant        | 
+673          | Gogoat            | 
+600          | Klang             | 
+586          | Sawsbuck          | 
+432          | Purugly           | 
 315          | Roselia           | 
+
+Newline
+Newline
+
+611          | Fraxure           | [B][U]Fraxure Checks[/U][/B]
+Newline
+GSI: 
+114          | Tangela           | 
+375          | Metang            | 
+Newline
+SSI: 
+618          | Stunfisk          | 
+200          | Misdreavus        | 
+035          | Clefairy          | 
+711          | Gourgeist         | 
+076          | Golem             | 
+369          | Relicanth         | 
+651          | Quilladin         | 
+338          | Solrock           | 
+713          | Avalugg           | 
+Newline
+NSI: 
+516          | Simipour          | 
+064          | Kadabra           | 
+067          | Machoke           | 
+122          | Mr. Mime          | 
+479f         | Rotom-Frost       | 
+291          | Ninjask           | 
+Newline
+SSI to: 
+038          | Ninetales         | 
+Newline
+NSI to: 
+634          | Zweilous          | 
+514          | Simisear          | 
+523          | Zebstrika         | 
+189          | Jumpluff          | 
+432          | Purugly           | 
+125          | Electabuzz        | 
+
+Newline
+Newline
+
+369          | Relicanth         | [B][U]Relicanth Checks[/U][/B]
+Newline
+GSI: 
 114          | Tangela           | 
 711          | Gourgeist         | 
-470          | Leafeon           | 
-673          | Gogoat            | 
 651          | Quilladin         | 
+Newline
+SSI: 
+067          | Machoke           | 
+200          | Misdreavus        | 
+470          | Leafeon           | 
+375          | Metang            | 
+444          | Gabite            | 
+Newline
+NSI: 
+419          | Floatzel          | 
+523          | Zebstrika         | 
+516          | Simipour          | 
+064          | Kadabra           | 
+026          | Raichu            | 
+479f         | Rotom-Frost       | 
+512          | Simisage          | 
+GSI to: 
+348          | Armaldo           | 
+624          | Pawniard          | 
+078          | Rapidash          | 
+550          | Basculin          | 
+291          | Ninjask           | 
+085          | Dodrio            | 
+262          | Mightyena         | 
+432          | Purugly           | 
+Newline
+SSI to: 
 634          | Zweilous          | 
+419          | Floatzel          | 
+217          | Ursaring          | 
+614          | Beartic           | 
+477          | Dusknoir          | 
+463          | Lickilicky        | 
+508          | Stoutland         | 
+099          | Kingler           | 
+611          | Fraxure           | 
+626          | Bouffalant        | 
+198          | Murkrow           | 
+441          | Chatot            | 
+024          | Arbok             | 
+
+Newline
+Newline
+
+026          | Raichu            | [B][U]Raichu Checks[/U][/B]
+Newline
+GSI: 
+315          | Roselia           | 
+618          | Stunfisk          | 
+673          | Gogoat            | 
+Newline
+SSI: 
+463          | Lickilicky        | 
+326          | Grumpig           | 
+378          | Regice            | 
+711          | Gourgeist         | 
+477          | Dusknoir          | 
+Newline
+NSI: 
+419          | Floatzel          | 
+523          | Zebstrika         | 
+432          | Purugly           | 
+064          | Kadabra           | 
+067          | Machoke           | 
+378          | Regice            | 
+Newline
+NSI to: 
+217          | Ursaring          | 
+479f         | Rotom-Frost       | 
+516          | Simipour          | 
+348          | Armaldo           | 
+477          | Dusknoir          | 
+463          | Lickilicky        | 
+508          | Stoutland         | 
+369          | Relicanth         | 
+600          | Klang             | 
+064          | Kadabra           | 
+078          | Rapidash          | 
+144          | Articuno          | 
+038          | Ninetales         | 
+550          | Basculin          | 
+441          | Chatot            | 
+291          | Ninjask           | 
+085          | Dodrio            | 
+523          | Zebstrika         | 
+189          | Jumpluff          | 
+024          | Arbok             | 
+
+Newline
+Newline
+
+470          | Leafeon           | [B][U]Leafeon Checks[/U][/B]
+Newline
+GSI: 
+114          | Tangela           | 
+629          | Vullaby           | 
+713          | Avalugg           | 
+Newline
+SSI: 
+189          | Jumpluff          | 
+078          | Rapidash          | 
+024          | Arbok             | 
+391          | Monferno          | 
+651          | Quilladin         | 
 Newline
 NSI: 
 419          | Floatzel          | 
 085          | Dodrio            | 
 523          | Zebstrika         | 
 516          | Simipour          | 
-189          | Jumpluff          | 
-064          | Kadabra           | 
-026          | Raichu            | 
 217          | Ursaring          | 
-586          | Sawsbuck          | 
-512          | Simisage          | 
-479f         | Rotom-Frost       | 
+038          | Ninetales         | 
+514          | Simisear          | 
+581          | Swanna            | 
+291          | Ninjask           | 
+Newline
+SSI to: 
+099          | Kingler           | 
+369          | Relicanth         | 
+076          | Golem             | 
+550          | Basculin          | 
+Newline
+NSI to: 
+200          | Misdreavus        | 
+606          | Beheeyem          | 
 125          | Electabuzz        | 
-496          | Servine           | 
 
 Newline
 Newline
 
-614          | Beartic           | [B][U]Beartic Checks[/U] [/B](in rain)
+578          | Duosion           | [B][U]Duosion Checks[/U][/B]
 Newline
 GSI: 
-375          | Metang            | 
+326          | Grumpig           | 
+200          | Misdreavus        | 
+600          | Klang             | 
 Newline
 SSI: 
-326          | Grumpig           | 
+476          | Probopass         | 
+463          | Lickilicky        | 
 186          | Politoed          | 
+634          | Zweilous          | 
+629          | Vullaby           | 
+Newline
+NSI: 
+508          | Stoutland         | 
+064          | Kadabra           | 
+078          | Rapidash          | 
+217          | Ursaring          | 
+262          | Mightyena         | 
+550          | Basculin          | 
+477          | Dusknoir          | 
+348          | Armaldo           | 
+Newline
+SSI to: 
+391          | Monferno          | 
+
+Newline
+Newline
+
+626          | Bouffalant        | [B][U]Bouffalant Checks[/U][/B]
+Newline
+GSI: 
+200          | Misdreavus        | 
+711          | Gourgeist         | 
+338          | Solrock           | 
+Newline
+SSI: 
+067          | Machoke           | 
 369          | Relicanth         | 
-713          | Avalugg           | 
-324          | Torkoal           | 
+629          | Vullaby           | 
+477          | Dusknoir          | 
+426          | Drifblim          | 
 Newline
 NSI: 
 419          | Floatzel          | 
+508          | Stoutland         | 
+085          | Dodrio            | 
+078          | Rapidash          | 
+516          | Simipour          | 
+217          | Ursaring          | 
+391          | Monferno          | 
+198          | Murkrow           | 
+550          | Basculin          | 
+Newline
+SSI to: 
+368          | Gorebyss          | 
+
+Newline
+Newline
+
+368          | Gorebyss          | [B][U]Gorebyss Checks[/U][/B]
+Newline
+GSI: 
+315          | Roselia           | 
+186          | Politoed          | 
+131          | Lapras            | 
+Newline
+SSI: 
+326          | Grumpig           | 
+626          | Bouffalant        | 
+035          | Clefairy          | 
+463          | Lickilicky        | 
+673          | Gogoat            | 
+Newline
+NSI: 
+064          | Kadabra           | 
+378          | Regice            | 
+516          | Simipour          | 
+586          | Sawsbuck          | 
+479f         | Rotom-Frost       | 
+441          | Chatot            | 
+
+Newline
+Newline
+
+581          | Swanna            | [B][U]Swanna Checks[/U][/B]
+Newline
+GSI: 
+378          | Regice            | 
+463          | Lickilicky        | 
+186          | Politoed          | 
+Newline
+SSI: 
+326          | Grumpig           | 
+629          | Vullaby           | 
+600          | Klang             | 
+634          | Zweilous          | 
+125          | Electabuzz        | 
+131          | Lapras            | 
+Newline
+NSI: 
+419          | Floatzel          | 
+085          | Dodrio            | 
+523          | Zebstrika         | 
+516          | Simipour          | 
+064          | Kadabra           | 
+078          | Rapidash          | 
+217          | Ursaring          | 
+512          | Simisage          | 
+479f         | Rotom-Frost       | 
+Newline
+NSI to: 
+348          | Armaldo           | 
+067          | Machoke           | 
+391          | Monferno          | 
+470          | Leafeon           | 
+673          | Gogoat            | 
+114          | Tangela           | 
+
+Newline
+Newline
+
+055          | Golduck           | [B][U]Golduck Checks[/U][/B]
+Newline
+GSI: 
+186          | Politoed          | 
+463          | Lickilicky        | 
+131          | Lapras            | 
+Newline
+SSI: 
+315          | Roselia           | 
+326          | Grumpig           | 
+378          | Regice            | 
+035          | Clefairy          | 
+634          | Zweilous          | 
+673          | Gogoat            | 
+Newline
+NSI: 
+419          | Floatzel          | 
+516          | Simipour          | 
 064          | Kadabra           | 
 067          | Machoke           | 
-055          | Golduck           | 
-391          | Monferno          | 
-291          | Ninjask           | 
+144          | Articuno          | 
+313          | Volbeat           | 
+125          | Electabuzz        | 
+262          | Mightyena         | 
+Newline
+NSI to: 
+634          | Zweilous          | 
+614          | Beartic           | 
 348          | Armaldo           | 
-367          | Huntail           | 
-338          | Solrock           | 
+391          | Monferno          | 
+076          | Golem             | 
+
+Newline
+Newline
+
+600          | Klang             | [B][U]Klang Checks[/U][/B]
+Newline
+GSI: 
+618          | Stunfisk          | 
+444          | Gabite            | 
+324          | Torkoal           | 
+Newline
+SSI: 
+078          | Rapidash          | 
+114          | Tangela           | 
+067          | Machoke           | 
+200          | Misdreavus        | 
+476          | Probopass         | 
+186          | Politoed          | 
+375          | Metang            | 
+552          | Krokorok          | 
+Newline
+NSI: 
+419          | Floatzel          | 
+516          | Simipour          | 
+523          | Zebstrika         | 
+026          | Raichu            | 
+038          | Ninetales         | 
+514          | Simisear          | 
+391          | Monferno          | 
+105          | Marowak           | 
+GSI to: 
+035          | Clefairy          | 
+578          | Duosion           | 
+198          | Murkrow           | 
+064          | Kadabra           | 
+144          | Articuno          | 
+291          | Ninjask           | 
+189          | Jumpluff          | 
+586          | Sawsbuck          | 
+262          | Mightyena         | 
+432          | Purugly           | 
+315          | Roselia           | 
+Newline
+SSI to: 
+634          | Zweilous          | 
+479f         | Rotom-Frost       | 
+348          | Armaldo           | 
+508          | Stoutland         | 
+581          | Swanna            | 
+606          | Beheeyem          | 
+378          | Regice            | 
+114          | Tangela           | 
+441          | Chatot            | 
+085          | Dodrio            | 
+024          | Arbok             | 
+Newline
+NSI to: 
+122          | Mr. Mime          | 
 
 Newline
 Newline
@@ -188,30 +1271,616 @@ NSI:
 Newline
 Newline
 
-626          | Bouffalant        | [B][U]Bouffalant Checks[/U][/B]
+673          | Gogoat            | [B][U]Gogoat Checks[/U][/B]
 Newline
 GSI: 
-200          | Misdreavus        | 
+189          | Jumpluff          | 
+114          | Tangela           | 
 711          | Gourgeist         | 
-338          | Solrock           | 
 Newline
 SSI: 
-067          | Machoke           | 
-369          | Relicanth         | 
+315          | Roselia           | 
+200          | Misdreavus        | 
+479f         | Rotom-Frost       | 
+144          | Articuno          | 
 629          | Vullaby           | 
-477          | Dusknoir          | 
-426          | Drifblim          | 
+634          | Zweilous          | 
+713          | Avalugg           | 
+Newline
+NSI: 
+085          | Dodrio            | 
+516          | Simipour          | 
+064          | Kadabra           | 
+078          | Rapidash          | 
+378          | Regice            | 
+038          | Ninetales         | 
+024          | Arbok             | 
+581          | Swanna            | 
+391          | Monferno          | 
+291          | Ninjask           | 
+GSI to: 
+026          | Raichu            | 
+125          | Electabuzz        | 
+Newline
+SSI to: 
+516          | Simipour          | 
+099          | Kingler           | 
+368          | Gorebyss          | 
+055          | Golduck           | 
+367          | Huntail           | 
+076          | Golem             | 
+550          | Basculin          | 
+523          | Zebstrika         | 
+Newline
+NSI to: 
+419          | Floatzel          | 
+
+Newline
+Newline
+
+367          | Huntail           | [B][U]Huntail Checks[/U][/B]
+Newline
+GSI: 
+315          | Roselia           | 
+186          | Politoed          | 
+711          | Gourgeist         | 
+Newline
+SSI: 
+200          | Misdreavus        | 
+279          | Pelipper          | 
+375          | Metang            | 
+673          | Gogoat            | 
+629          | Vullaby           | 
+634          | Zweilous          | 
+713          | Avalugg           | 
+Newline
+NSI: 
+516          | Simipour          | 
+064          | Kadabra           | 
+067          | Machoke           | 
+586          | Sawsbuck          | 
+479f         | Rotom-Frost       | 
+125          | Electabuzz        | 
+Newline
+NSI to: 
+614          | Beartic           | 
+
+Newline
+Newline
+
+198          | Murkrow           | [B][U]Murkrow Checks[/U][/B]
+Newline
+GSI: 
+618          | Stunfisk          | 
+600          | Klang             | 
+703          | Carbink           | 
+Newline
+SSI: 
+476          | Probopass         | 
+076          | Golem             | 
+378          | Regice            | 
+369          | Relicanth         | 
+444          | Gabite            | 
+375          | Metang            | 
+713          | Avalugg           | 
+338          | Solrock           | 
+Newline
+NSI: 
+479f         | Rotom-Frost       | 
+125          | Electabuzz        | 
+Newline
+NSI to: 
+067          | Machoke           | 
+626          | Bouffalant        | 
+
+Newline
+Newline
+
+064          | Kadabra           | [B][U]Kadabra Checks[/U][/B]
+Newline
+GSI: 
+463          | Lickilicky        | 
+629          | Vullaby           | 
+600          | Klang             | 
+Newline
+SSI: 
+618          | Stunfisk          | 
+326          | Grumpig           | 
+378          | Regice            | 
+200          | Misdreavus        | 
+035          | Clefairy          | 
+186          | Politoed          | 
+375          | Metang            | 
+634          | Zweilous          | 
+097          | Hypno             | 
 Newline
 NSI: 
 419          | Floatzel          | 
 508          | Stoutland         | 
-085          | Dodrio            | 
-078          | Rapidash          | 
+523          | Zebstrika         | 
 516          | Simipour          | 
 217          | Ursaring          | 
-391          | Monferno          | 
-198          | Murkrow           | 
+026          | Raichu            | 
+262          | Mightyena         | 
+432          | Purugly           | 
+477          | Dusknoir          | 
+Newline
+NSI to: 
+217          | Ursaring          | 
+614          | Beartic           | 
+512          | Simisage          | 
+514          | Simisear          | 
+516          | Simipour          | 
+099          | Kingler           | 
+035          | Clefairy          | 
+611          | Fraxure           | 
+368          | Gorebyss          | 
+026          | Raichu            | 
+369          | Relicanth         | 
+578          | Duosion           | 
+055          | Golduck           | 
+581          | Swanna            | 
+367          | Huntail           | 
+673          | Gogoat            | 
+078          | Rapidash          | 
+378          | Regice            | 
 550          | Basculin          | 
+441          | Chatot            | 
+085          | Dodrio            | 
+024          | Arbok             | 
+586          | Sawsbuck          | 
+432          | Purugly           | 
+
+Newline
+Newline
+
+378          | Regice            | [B][U]Regice Checks[/U][/B]
+Newline
+GSI: 
+326          | Grumpig           | 
+375          | Metang            | 
+035          | Clefairy          | 
+097          | Hypno             | 
+Newline
+SSI: 
+067          | Machoke           | 
+463          | Lickilicky        | 
+391          | Monferno          | 
+600          | Klang             | 
+Newline
+NSI: 
+508          | Stoutland         | 
+078          | Rapidash          | 
+217          | Ursaring          | 
+064          | Kadabra           | 
+038          | Ninetales         | 
+514          | Simisear          | 
+348          | Armaldo           | 
+GSI to: 
+581          | Swanna            | 
+114          | Tangela           | 
+Newline
+SSI to: 
+479f         | Rotom-Frost       | 
+200          | Misdreavus        | 
+026          | Raichu            | 
+055          | Golduck           | 
+606          | Beheeyem          | 
+198          | Murkrow           | 
+064          | Kadabra           | 
+122          | Mr. Mime          | 
+144          | Articuno          | 
+441          | Chatot            | 
+523          | Zebstrika         | 
+125          | Electabuzz        | 
+Newline
+NSI to: 
+419          | Floatzel          | 
+368          | Gorebyss          | 
+026          | Raichu            | 
+673          | Gogoat            | 
+
+Newline
+Newline
+
+078          | Rapidash          | [B][U]Rapidash Checks[/U][/B]
+Newline
+GSI: 
+444          | Gabite            | 
+369          | Relicanth         | 
+338          | Solrock           | 
+076          | Golem             | 
+Newline
+SSI: 
+618          | Stunfisk          | 
+476          | Probopass         | 
+186          | Politoed          | 
+348          | Armaldo           | 
+Newline
+NSI: 
+419          | Floatzel          | 
+026          | Raichu            | 
+523          | Zebstrika         | 
+064          | Kadabra           | 
+067          | Machoke           | 
+550          | Basculin          | 
+326          | Grumpig           | 
+GSI to: 
+038          | Ninetales         | 
+Newline
+SSI to: 
+514          | Simisear          | 
+200          | Misdreavus        | 
+470          | Leafeon           | 
+600          | Klang             | 
+315          | Roselia           | 
+Newline
+NSI to: 
+512          | Simisage          | 
+479f         | Rotom-Frost       | 
+516          | Simipour          | 
+508          | Stoutland         | 
+624          | Pawniard          | 
+391          | Monferno          | 
+578          | Duosion           | 
+626          | Bouffalant        | 
+581          | Swanna            | 
+606          | Beheeyem          | 
+673          | Gogoat            | 
+378          | Regice            | 
+144          | Articuno          | 
+114          | Tangela           | 
+441          | Chatot            | 
+085          | Dodrio            | 
+189          | Jumpluff          | 
+586          | Sawsbuck          | 
+262          | Mightyena         | 
+125          | Electabuzz        | 
+
+Newline
+Newline
+
+326          | Grumpig           | [B][U]Grumpig Checks[/U][/B]
+Newline
+GSI: 
+463          | Lickilicky        | 
+375          | Metang            | 
+629          | Vullaby           | 
+634          | Zweilous          | 
+Newline
+SSI: 
+618          | Stunfisk          | 
+200          | Misdreavus        | 
+035          | Clefairy          | 
+711          | Gourgeist         | 
+446          | Munchlax          | 
+Newline
+NSI: 
+085          | Dodrio            | 
+508          | Stoutland         | 
+189          | Jumpluff          | 
+217          | Ursaring          | 
+512          | Simisage          | 
+586          | Sawsbuck          | 
+262          | Mightyena         | 
+550          | Basculin          | 
+477          | Dusknoir          | 
+GSI to: 
+578          | Duosion           | 
+378          | Regice            | 
+038          | Ninetales         | 
+523          | Zebstrika         | 
+315          | Roselia           | 
+125          | Electabuzz        | 
+Newline
+SSI to: 
+419          | Floatzel          | 
+614          | Beartic           | 
+479f         | Rotom-Frost       | 
+514          | Simisear          | 
+516          | Simipour          | 
+035          | Clefairy          | 
+391          | Monferno          | 
+368          | Gorebyss          | 
+026          | Raichu            | 
+055          | Golduck           | 
+581          | Swanna            | 
+606          | Beheeyem          | 
+064          | Kadabra           | 
+122          | Mr. Mime          | 
+144          | Articuno          | 
+114          | Tangela           | 
+Newline
+NSI to: 
+508          | Stoutland         | 
+067          | Machoke           | 
+078          | Rapidash          | 
+
+Newline
+Newline
+
+076          | Golem             | [B][U]Golem Checks[/U][/B]
+Newline
+GSI: 
+114          | Tangela           | 
+711          | Gourgeist         | 
+651          | Quilladin         | 
+338          | Solrock           | 
+Newline
+SSI: 
+315          | Roselia           | 
+200          | Misdreavus        | 
+470          | Leafeon           | 
+673          | Gogoat            | 
+329          | Vibrava           | 
+Newline
+NSI: 
+419          | Floatzel          | 
+516          | Simipour          | 
+189          | Jumpluff          | 
+508          | Stoutland         | 
+067          | Machoke           | 
+512          | Simisage          | 
+586          | Sawsbuck          | 
+055          | Golduck           | 
+186          | Politoed          | 
+550          | Basculin          | 
+GSI to: 
+078          | Rapidash          | 
+085          | Dodrio            | 
+432          | Purugly           | 
+Newline
+SSI to: 
+477          | Dusknoir          | 
+463          | Lickilicky        | 
+508          | Stoutland         | 
+611          | Fraxure           | 
+198          | Murkrow           | 
+291          | Ninjask           | 
+523          | Zebstrika         | 
+024          | Arbok             | 
+262          | Mightyena         | 
+Newline
+NSI to: 
+035          | Clefairy          | 
+
+Newline
+Newline
+
+114          | Tangela           | [B][U]Tangela Checks[/U][/B]
+Newline
+GSI: 
+315          | Roselia           | 
+378          | Regice            | 
+711          | Gourgeist         | 
+629          | Vullaby           | 
+Newline
+SSI: 
+523          | Zebstrika         | 
+326          | Grumpig           | 
+038          | Ninetales         | 
+024          | Arbok             | 
+144          | Articuno          | 
+600          | Klang             | 
+634          | Zweilous          | 
+Newline
+NSI: 
+419          | Floatzel          | 
+085          | Dodrio            | 
+516          | Simipour          | 
+078          | Rapidash          | 
+479f         | Rotom-Frost       | 
+441          | Chatot            | 
+514          | Simisear          | 
+581          | Swanna            | 
+GSI to: 
+217          | Ursaring          | 
+508          | Stoutland         | 
+099          | Kingler           | 
+611          | Fraxure           | 
+369          | Relicanth         | 
+470          | Leafeon           | 
+673          | Gogoat            | 
+076          | Golem             | 
+586          | Sawsbuck          | 
+262          | Mightyena         | 
+Newline
+SSI to: 
+634          | Zweilous          | 
+419          | Floatzel          | 
+348          | Armaldo           | 
+477          | Dusknoir          | 
+463          | Lickilicky        | 
+067          | Machoke           | 
+624          | Pawniard          | 
+600          | Klang             | 
+550          | Basculin          | 
+189          | Jumpluff          | 
+432          | Purugly           | 
+125          | Electabuzz        | 
+
+Newline
+Newline
+
+144          | Articuno          | [B][U]Articuno Checks[/U][/B]
+Newline
+GSI: 
+476          | Probopass         | 
+479f         | Rotom-Frost       | 
+600          | Klang             | 
+375          | Metang            | 
+Newline
+SSI: 
+378          | Regice            | 
+326          | Grumpig           | 
+038          | Ninetales         | 
+463          | Lickilicky        | 
+125          | Electabuzz        | 
+446          | Munchlax          | 
+Newline
+NSI: 
+085          | Dodrio            | 
+508          | Stoutland         | 
+523          | Zebstrika         | 
+078          | Rapidash          | 
+026          | Raichu            | 
+217          | Ursaring          | 
+512          | Simisage          | 
+038          | Ninetales         | 
+514          | Simisear          | 
+405          | Luxray            | 
+Newline
+SSI to: 
+512          | Simisage          | 
+067          | Machoke           | 
+673          | Gogoat            | 
+114          | Tangela           | 
+189          | Jumpluff          | 
+586          | Sawsbuck          | 
+Newline
+NSI to: 
+634          | Zweilous          | 
+419          | Floatzel          | 
+516          | Simipour          | 
+055          | Golduck           | 
+315          | Roselia           | 
+
+Newline
+Newline
+
+122          | Mr. Mime          | [B][U]Mr. Mime Checks[/U][/B]
+Newline
+GSI: 
+375          | Metang            | 
+200          | Misdreavus        | 
+477          | Dusknoir          | 
+356          | Dusclops          | 
+Newline
+SSI: 
+463          | Lickilicky        | 
+618          | Stunfisk          | 
+326          | Grumpig           | 
+378          | Regice            | 
+035          | Clefairy          | 
+097          | Hypno             | 
+Newline
+NSI: 
+508          | Stoutland         | 
+085          | Dodrio            | 
+186          | Politoed          | 
+600          | Klang             | 
+262          | Mightyena         | 
+GSI to: 
+441          | Chatot            | 
+Newline
+SSI to: 
+634          | Zweilous          | 
+Newline
+NSI to: 
+067          | Machoke           | 
+391          | Monferno          | 
+611          | Fraxure           | 
+315          | Roselia           | 
+
+Newline
+Newline
+
+038          | Ninetales         | [B][U]Ninetales Checks[/U][/B]
+Newline
+GSI: 
+326          | Grumpig           | 
+078          | Rapidash          | 
+329          | Vibrava           | 
+634          | Zweilous          | 
+Newline
+SSI: 
+067          | Machoke           | 
+611          | Fraxure           | 
+476          | Probopass         | 
+463          | Lickilicky        | 
+279          | Pelipper          | 
+444          | Gabite            | 
+618          | Stunfisk          | 
+Newline
+NSI: 
+419          | Floatzel          | 
+026          | Raichu            | 
+217          | Ursaring          | 
+516          | Simipour          | 
+514          | Simisear          | 
+550          | Basculin          | 
+432          | Purugly           | 
+Newline
+SSI to: 
+479f         | Rotom-Frost       | 
+200          | Misdreavus        | 
+035          | Clefairy          | 
+144          | Articuno          | 
+114          | Tangela           | 
+315          | Roselia           | 
+Newline
+NSI to: 
+348          | Armaldo           | 
+624          | Pawniard          | 
+470          | Leafeon           | 
+673          | Gogoat            | 
+600          | Klang             | 
+378          | Regice            | 
+144          | Articuno          | 
+523          | Zebstrika         | 
+586          | Sawsbuck          | 
+262          | Mightyena         | 
+
+Newline
+Newline
+
+550          | Basculin          | [B][U]Basculin Checks[/U][/B]
+Newline
+GSI: 
+369          | Relicanth         | 
+713          | Avalugg           | 
+186          | Politoed          | 
+131          | Lapras            | 
+Newline
+SSI: 
+315          | Roselia           | 
+114          | Tangela           | 
+711          | Gourgeist         | 
+470          | Leafeon           | 
+673          | Gogoat            | 
+651          | Quilladin         | 
+634          | Zweilous          | 
+Newline
+NSI: 
+419          | Floatzel          | 
+085          | Dodrio            | 
+523          | Zebstrika         | 
+516          | Simipour          | 
+189          | Jumpluff          | 
+064          | Kadabra           | 
+026          | Raichu            | 
+217          | Ursaring          | 
+586          | Sawsbuck          | 
+512          | Simisage          | 
+479f         | Rotom-Frost       | 
+125          | Electabuzz        | 
+496          | Servine           | 
+Newline
+NSI to: 
+634          | Zweilous          | 
+516          | Simipour          | 
+348          | Armaldo           | 
+477          | Dusknoir          | 
+463          | Lickilicky        | 
+035          | Clefairy          | 
+578          | Duosion           | 
+626          | Bouffalant        | 
+606          | Beheeyem          | 
+078          | Rapidash          | 
+326          | Grumpig           | 
+076          | Golem             | 
+038          | Ninetales         | 
+441          | Chatot            | 
 
 Newline
 Newline
@@ -245,35 +1914,53 @@ NSI:
 514          | Simisear          | 
 550          | Basculin          | 
 125          | Electabuzz        | 
+Newline
+NSI to: 
+508          | Stoutland         | 
+368          | Gorebyss          | 
+606          | Beheeyem          | 
+114          | Tangela           | 
+024          | Arbok             | 
 
 Newline
 Newline
 
-035          | Clefairy          | [B][U]Clefairy Checks[/U][/B] (calm mind)
+291          | Ninjask           | [B][U]Ninjask Checks[/U][/B]
 Newline
 GSI: 
+618          | Stunfisk          | 
+476          | Probopass         | 
+369          | Relicanth         | 
 600          | Klang             | 
-375          | Metang            | 
+703          | Carbink           | 
 Newline
 SSI: 
-315          | Roselia           | 
-326          | Grumpig           | 
-038          | Ninetales         | 
-024          | Arbok             | 
-200          | Misdreavus        | 
-186          | Politoed          | 
+076          | Golem             | 
+444          | Gabite            | 
+713          | Avalugg           | 
 Newline
 NSI: 
+516          | Simipour          | 
+432          | Purugly           | 
+026          | Raichu            | 
+586          | Sawsbuck          | 
+375          | Metang            | 
+Newline
+NSI to: 
+634          | Zweilous          | 
 419          | Floatzel          | 
-085          | Dodrio            | 
-508          | Stoutland         | 
-064          | Kadabra           | 
 217          | Ursaring          | 
+614          | Beartic           | 
 512          | Simisage          | 
-076          | Golem             | 
-550          | Basculin          | 
-099          | Kingler           | 
-105          | Marowak           | 
+516          | Simipour          | 
+067          | Machoke           | 
+611          | Fraxure           | 
+470          | Leafeon           | 
+606          | Beheeyem          | 
+673          | Gogoat            | 
+523          | Zebstrika         | 
+189          | Jumpluff          | 
+586          | Sawsbuck          | 
 
 Newline
 Newline
@@ -305,320 +1992,89 @@ NSI:
 479f         | Rotom-Frost       | 
 514          | Simisear          | 
 432          | Purugly           | 
-
 Newline
-Newline
-
-578          | Duosion           | [B][U]Duosion Checks[/U][/B]
-Newline
-GSI: 
-326          | Grumpig           | 
-200          | Misdreavus        | 
-600          | Klang             | 
-Newline
-SSI: 
-476          | Probopass         | 
-463          | Lickilicky        | 
-186          | Politoed          | 
+NSI to: 
 634          | Zweilous          | 
-629          | Vullaby           | 
-Newline
-NSI: 
-508          | Stoutland         | 
-064          | Kadabra           | 
-078          | Rapidash          | 
-217          | Ursaring          | 
-262          | Mightyena         | 
-550          | Basculin          | 
-477          | Dusknoir          | 
-348          | Armaldo           | 
-
-Newline
-Newline
-
-477          | Dusknoir          | [B][U]Dusknoir Checks[/U][/B]
-Newline
-GSI: 
-634          | Zweilous          | 
-Newline
-SSI: 
-508          | Stoutland         | 
-114          | Tangela           | 
-067          | Machoke           | 
-217          | Ursaring          | 
-076          | Golem             | 
-279          | Pelipper          | 
-369          | Relicanth         | 
-629          | Vullaby           | 
-713          | Avalugg           | 
-Newline
-NSI: 
-419          | Floatzel          | 
-085          | Dodrio            | 
-516          | Simipour          | 
-026          | Raichu            | 
 512          | Simisage          | 
-262          | Mightyena         | 
-200          | Misdreavus        | 
-550          | Basculin          | 
-
-Newline
-Newline
-
-125          | Electabuzz        | [B][U]Electabuzz Checks[/U][/B]
-Newline
-GSI: 
-315          | Roselia           | 
-326          | Grumpig           | 
-618          | Stunfisk          | 
-035          | Clefairy          | 
+477          | Dusknoir          | 
 463          | Lickilicky        | 
-711          | Gourgeist         | 
-673          | Gogoat            | 
-449          | Hippopotas        | 
-Newline
-SSI: 
-114          | Tangela           | 
-067          | Machoke           | 
-378          | Regice            | 
-200          | Misdreavus        | 
-Newline
-NSI: 
-419          | Floatzel          | 
 508          | Stoutland         | 
-078          | Rapidash          | 
-217          | Ursaring          | 
-611          | Fraxure           | 
-470          | Leafeon           | 
-
-Newline
-Newline
-
-419          | Floatzel          | [B][U]Floatzel Checks[/U][/B]
-Newline
-GSI: 
-Newline
-SSI: 
-315          | Roselia           | 
-114          | Tangela           | 
-326          | Grumpig           | 
-035          | Clefairy          | 
-711          | Gourgeist         | 
-463          | Lickilicky        | 
-186          | Politoed          | 
-369          | Relicanth         | 
-651          | Quilladin         | 
-131          | Lapras            | 
-Newline
-NSI: 
-523          | Zebstrika         | 
-516          | Simipour          | 
 067          | Machoke           | 
-378          | Regice            | 
-586          | Sawsbuck          | 
-144          | Articuno          | 
-673          | Gogoat            | 
-125          | Electabuzz        | 
-291          | Ninjask           | 
-
-Newline
-Newline
-
-611          | Fraxure           | [B][U]Fraxure Checks[/U][/B]
-Newline
-GSI: 
-114          | Tangela           | 
-375          | Metang            | 
-Newline
-SSI: 
-618          | Stunfisk          | 
+099          | Kingler           | 
 200          | Misdreavus        | 
 035          | Clefairy          | 
-711          | Gourgeist         | 
-076          | Golem             | 
-369          | Relicanth         | 
-651          | Quilladin         | 
-338          | Solrock           | 
-713          | Avalugg           | 
-Newline
-NSI: 
-516          | Simipour          | 
-064          | Kadabra           | 
-067          | Machoke           | 
-122          | Mr. Mime          | 
-479f         | Rotom-Frost       | 
-291          | Ninjask           | 
-Newline
-
-Newline
-Newline
-
-673          | Gogoat            | [B][U]Gogoat Checks[/U][/B]
-Newline
-GSI: 
-189          | Jumpluff          | 
-114          | Tangela           | 
-711          | Gourgeist         | 
-Newline
-SSI: 
-315          | Roselia           | 
-200          | Misdreavus        | 
-479f         | Rotom-Frost       | 
-144          | Articuno          | 
-629          | Vullaby           | 
-634          | Zweilous          | 
-713          | Avalugg           | 
-Newline
-NSI: 
-085          | Dodrio            | 
-516          | Simipour          | 
-064          | Kadabra           | 
-078          | Rapidash          | 
-378          | Regice            | 
-038          | Ninetales         | 
-024          | Arbok             | 
-581          | Swanna            | 
 391          | Monferno          | 
-291          | Ninjask           | 
-
-Newline
-Newline
-
-055          | Golduck           | [B][U]Golduck Checks[/U][/B]
-Newline
-GSI: 
-186          | Politoed          | 
-463          | Lickilicky        | 
-131          | Lapras            | 
-Newline
-SSI: 
-315          | Roselia           | 
-326          | Grumpig           | 
-378          | Regice            | 
-035          | Clefairy          | 
-634          | Zweilous          | 
-673          | Gogoat            | 
-Newline
-NSI: 
-419          | Floatzel          | 
-516          | Simipour          | 
-064          | Kadabra           | 
-067          | Machoke           | 
-144          | Articuno          | 
-313          | Volbeat           | 
-125          | Electabuzz        | 
-262          | Mightyena         | 
-
-Newline
-Newline
-
-076          | Golem             | [B][U]Golem Checks[/U][/B]
-Newline
-GSI: 
-114          | Tangela           | 
-711          | Gourgeist         | 
-651          | Quilladin         | 
-338          | Solrock           | 
-Newline
-SSI: 
-315          | Roselia           | 
-200          | Misdreavus        | 
-470          | Leafeon           | 
-673          | Gogoat            | 
-329          | Vibrava           | 
-Newline
-NSI: 
-419          | Floatzel          | 
-516          | Simipour          | 
-189          | Jumpluff          | 
-508          | Stoutland         | 
-067          | Machoke           | 
-512          | Simisage          | 
-586          | Sawsbuck          | 
-055          | Golduck           | 
-186          | Politoed          | 
-550          | Basculin          | 
-
-Newline
-Newline
-
-368          | Gorebyss          | [B][U]Gorebyss Checks[/U][/B]
-Newline
-GSI: 
-315          | Roselia           | 
-186          | Politoed          | 
-131          | Lapras            | 
-Newline
-SSI: 
-326          | Grumpig           | 
 626          | Bouffalant        | 
-035          | Clefairy          | 
-463          | Lickilicky        | 
+470          | Leafeon           | 
+581          | Swanna            | 
+606          | Beheeyem          | 
 673          | Gogoat            | 
-Newline
-NSI: 
-064          | Kadabra           | 
-378          | Regice            | 
-516          | Simipour          | 
-586          | Sawsbuck          | 
-479f         | Rotom-Frost       | 
+326          | Grumpig           | 
+122          | Mr. Mime          | 
+144          | Articuno          | 
+114          | Tangela           | 
+550          | Basculin          | 
 441          | Chatot            | 
+586          | Sawsbuck          | 
+315          | Roselia           | 
 
 Newline
 Newline
 
-326          | Grumpig           | [B][U]Grumpig Checks[/U][/B]
+523          | Zebstrika         | [B][U]Zebstrika Checks[/U][/B]
 Newline
 GSI: 
+618          | Stunfisk          | 
+315          | Roselia           | 
+326          | Grumpig           | 
 463          | Lickilicky        | 
-375          | Metang            | 
-629          | Vullaby           | 
-634          | Zweilous          | 
+328          | Trapinch          | 
 Newline
 SSI: 
-618          | Stunfisk          | 
-200          | Misdreavus        | 
-035          | Clefairy          | 
-711          | Gourgeist         | 
-446          | Munchlax          | 
+288          | Vigoroth          | 
+378          | Regice            | 
+476          | Probopass         | 
+076          | Golem             | 
+673          | Gogoat            | 
+125          | Electabuzz        | 
+105          | Marowak           | 
 Newline
 NSI: 
-085          | Dodrio            | 
 508          | Stoutland         | 
+026          | Raichu            | 
+067          | Machoke           | 
+611          | Fraxure           | 
+038          | Ninetales         | 
+291          | Ninjask           | 
+432          | Purugly           | 
+477          | Dusknoir          | 
+GSI to: 
 189          | Jumpluff          | 
+Newline
+SSI to: 
+114          | Tangela           | 
+Newline
+NSI to: 
+419          | Floatzel          | 
 217          | Ursaring          | 
 512          | Simisage          | 
-586          | Sawsbuck          | 
-262          | Mightyena         | 
-550          | Basculin          | 
-477          | Dusknoir          | 
-
-Newline
-Newline
-
-367          | Huntail           | [B][U]Huntail Checks[/U][/B]
-Newline
-GSI: 
-315          | Roselia           | 
-186          | Politoed          | 
-711          | Gourgeist         | 
-Newline
-SSI: 
-200          | Misdreavus        | 
-279          | Pelipper          | 
-375          | Metang            | 
-673          | Gogoat            | 
-629          | Vullaby           | 
-634          | Zweilous          | 
-713          | Avalugg           | 
-Newline
-NSI: 
-516          | Simipour          | 
-064          | Kadabra           | 
-067          | Machoke           | 
-586          | Sawsbuck          | 
 479f         | Rotom-Frost       | 
-125          | Electabuzz        | 
+514          | Simisear          | 
+516          | Simipour          | 
+624          | Pawniard          | 
+026          | Raichu            | 
+369          | Relicanth         | 
+470          | Leafeon           | 
+581          | Swanna            | 
+600          | Klang             | 
+064          | Kadabra           | 
+078          | Rapidash          | 
+144          | Articuno          | 
+550          | Basculin          | 
+441          | Chatot            | 
+085          | Dodrio            | 
+586          | Sawsbuck          | 
+432          | Purugly           | 
 
 Newline
 Newline
@@ -653,524 +2109,120 @@ NSI:
 479f         | Rotom-Frost       | 
 291          | Ninjask           | 
 432          | Purugly           | 
-
-Newline
-Newline
-
-064          | Kadabra           | [B][U]Kadabra Checks[/U][/B]
-Newline
-GSI: 
-463          | Lickilicky        | 
-629          | Vullaby           | 
-600          | Klang             | 
-Newline
-SSI: 
-618          | Stunfisk          | 
-326          | Grumpig           | 
-378          | Regice            | 
-200          | Misdreavus        | 
-035          | Clefairy          | 
-186          | Politoed          | 
-375          | Metang            | 
-634          | Zweilous          | 
-097          | Hypno             | 
-Newline
-NSI: 
-419          | Floatzel          | 
-508          | Stoutland         | 
-523          | Zebstrika         | 
-516          | Simipour          | 
-217          | Ursaring          | 
-026          | Raichu            | 
-262          | Mightyena         | 
-432          | Purugly           | 
-477          | Dusknoir          | 
-
-Newline
-Newline
-
-099          | Kingler           | [B][U]Kingler Checks[/U][/B]
-Newline
-GSI: 
-114          | Tangela           | 
-651          | Quilladin         | 
-Newline
-SSI: 
-369          | Relicanth         | 
-711          | Gourgeist         | 
-186          | Politoed          | 
-629          | Vullaby           | 
+GSI to: 
 673          | Gogoat            | 
+Newline
+SSI to: 
 470          | Leafeon           | 
 Newline
-NSI: 
-419          | Floatzel          | 
-516          | Simipour          | 
-085          | Dodrio            | 
-189          | Jumpluff          | 
-064          | Kadabra           | 
-512          | Simisage          | 
-586          | Sawsbuck          | 
-405          | Luxray            | 
-
-Newline
-Newline
-
-600          | Klang             | [B][U]Klang Checks[/U][/B]
-Newline
-GSI: 
-618          | Stunfisk          | 
-444          | Gabite            | 
-324          | Torkoal           | 
-Newline
-SSI: 
-078          | Rapidash          | 
-114          | Tangela           | 
-067          | Machoke           | 
-200          | Misdreavus        | 
-476          | Probopass         | 
-186          | Politoed          | 
-375          | Metang            | 
-552          | Krokorok          | 
-Newline
-NSI: 
-419          | Floatzel          | 
-516          | Simipour          | 
-523          | Zebstrika         | 
-026          | Raichu            | 
-038          | Ninetales         | 
-514          | Simisear          | 
-391          | Monferno          | 
-105          | Marowak           | 
-
-Newline
-Newline
-
-470          | Leafeon           | [B][U]Leafeon Checks[/U][/B]
-Newline
-GSI: 
-114          | Tangela           | 
-629          | Vullaby           | 
-713          | Avalugg           | 
-Newline
-SSI: 
-189          | Jumpluff          | 
-078          | Rapidash          | 
-024          | Arbok             | 
-391          | Monferno          | 
-651          | Quilladin         | 
-Newline
-NSI: 
-419          | Floatzel          | 
-085          | Dodrio            | 
-523          | Zebstrika         | 
-516          | Simipour          | 
-217          | Ursaring          | 
-038          | Ninetales         | 
-514          | Simisear          | 
-581          | Swanna            | 
-291          | Ninjask           | 
-
-Newline
-Newline
-
-463          | Lickilicky        | [B][U]Lickilicky Checks[/U][/B]
-Newline
-GSI: 
-713          | Avalugg           | 
-Newline
-SSI: 
-114          | Tangela           | 
-067          | Machoke           | 
-200          | Misdreavus        | 
-076          | Golem             | 
-711          | Gourgeist         | 
-369          | Relicanth         | 
-444          | Gabite            | 
-634          | Zweilous          | 
-338          | Solrock           | 
-Newline
-NSI: 
-419          | Floatzel          | 
-085          | Dodrio            | 
-508          | Stoutland         | 
-516          | Simipour          | 
-026          | Raichu            | 
-217          | Ursaring          | 
-024          | Arbok             | 
-550          | Basculin          | 
-391          | Monferno          | 
-
-Newline
-Newline
-
-067          | Machoke           | [B][U]Machoke Checks[/U][/B]
-Newline
-GSI: 
-024          | Arbok             | 
-317          | Swalot            | 
-Newline
-SSI: 
-144          | Articuno          | 
-035          | Clefairy          | 
-114          | Tangela           | 
-711          | Gourgeist         | 
-338          | Solrock           | 
-Newline
-NSI: 
-189          | Jumpluff          | 
-085          | Dodrio            | 
-326          | Grumpig           | 
-122          | Mr. Mime          | 
-581          | Swanna            | 
-291          | Ninjask           | 
-198          | Murkrow           | 
-
-Newline
-Newline
-
-262          | Mightyena         | [B][U]Mightyena Checks[/U][/B]
-Newline
-GSI: 
-618          | Stunfisk          | 
-114          | Tangela           | 
-369          | Relicanth         | 
-600          | Klang             | 
-449          | Hippopotas        | 
-651          | Quilladin         | 
-Newline
-SSI: 
-476          | Probopass         | 
-076          | Golem             | 
-444          | Gabite            | 
-391          | Monferno          | 
-713          | Avalugg           | 
-676          | Furfrou           | 
-Newline
-NSI: 
-189          | Jumpluff          | 
-038          | Ninetales         | 
-078          | Rapidash          | 
-067          | Machoke           | 
-
-Newline
-Newline
-
-200          | Misdreavus        | [B][U]Misdreavus Checks[/U][/B]
-Newline
-GSI: 
-067          | Machoke           | 
-634          | Zweilous          | 
-Newline
-SSI: 
-315          | Roselia           | 
-508          | Stoutland         | 
-038          | Ninetales         | 
-078          | Rapidash          | 
-378          | Regice            | 
-629          | Vullaby           | 
-Newline
-NSI: 
-085          | Dodrio            | 
-516          | Simipour          | 
+NSI to: 
 512          | Simisage          | 
 514          | Simisear          | 
-262          | Mightyena         | 
-470          | Leafeon           | 
-432          | Purugly           | 
+516          | Simipour          | 
+067          | Machoke           | 
 099          | Kingler           | 
+391          | Monferno          | 
+606          | Beheeyem          | 
+326          | Grumpig           | 
+076          | Golem             | 
+550          | Basculin          | 
+586          | Sawsbuck          | 
+262          | Mightyena         | 
+315          | Roselia           | 
 
 Newline
 Newline
 
-391          | Monferno          | [B][U]Monferno Checks[/U][/B]
+024          | Arbok             | [B][U]Arbok Checks[/U][/B]
 Newline
 GSI: 
 618          | Stunfisk          | 
-449          | Hippopotas        | 
-Newline
-SSI: 
-326          | Grumpig           | 
-578          | Duosion           | 
-035          | Clefairy          | 
 200          | Misdreavus        | 
 444          | Gabite            | 
-629          | Vullaby           | 
-477          | Dusknoir          | 
-Newline
-NSI: 
-419          | Floatzel          | 
-516          | Simipour          | 
-085          | Dodrio            | 
-189          | Jumpluff          | 
-067          | Machoke           | 
-078          | Rapidash          | 
-122          | Mr. Mime          | 
-024          | Arbok             | 
-055          | Golduck           | 
-581          | Swanna            | 
-338          | Solrock           | 
-
-Newline
-Newline
-
-122          | Mr. Mime          | [B][U]Mr. Mime Checks[/U][/B]
-Newline
-GSI: 
-375          | Metang            | 
-200          | Misdreavus        | 
-477          | Dusknoir          | 
+713          | Avalugg           | 
 356          | Dusclops          | 
 Newline
 SSI: 
-463          | Lickilicky        | 
-618          | Stunfisk          | 
-326          | Grumpig           | 
-378          | Regice            | 
-035          | Clefairy          | 
-097          | Hypno             | 
-Newline
-NSI: 
-508          | Stoutland         | 
-085          | Dodrio            | 
-186          | Politoed          | 
-600          | Klang             | 
-262          | Mightyena         | 
-
-Newline
-Newline
-
-198          | Murkrow           | [B][U]Murkrow Checks[/U][/B]
-Newline
-GSI: 
-618          | Stunfisk          | 
-600          | Klang             | 
-703          | Carbink           | 
-Newline
-SSI: 
 476          | Probopass         | 
+024          | Arbok             | 
 076          | Golem             | 
-378          | Regice            | 
-369          | Relicanth         | 
-444          | Gabite            | 
+711          | Gourgeist         | 
+600          | Klang             | 
 375          | Metang            | 
-713          | Avalugg           | 
+369          | Relicanth         | 
+348          | Armaldo           | 
+477          | Dusknoir          | 
+449          | Hippopotas        | 
 338          | Solrock           | 
-Newline
-NSI: 
-479f         | Rotom-Frost       | 
-125          | Electabuzz        | 
-
-Newline
-Newline
-
-038          | Ninetales         | [B][U]Ninetales Checks[/U][/B]
-Newline
-GSI: 
-326          | Grumpig           | 
-078          | Rapidash          | 
 329          | Vibrava           | 
-634          | Zweilous          | 
-Newline
-SSI: 
-067          | Machoke           | 
-611          | Fraxure           | 
-476          | Probopass         | 
-463          | Lickilicky        | 
-279          | Pelipper          | 
-444          | Gabite            | 
-618          | Stunfisk          | 
 Newline
 NSI: 
 419          | Floatzel          | 
+516          | Simipour          | 
+064          | Kadabra           | 
 026          | Raichu            | 
 217          | Ursaring          | 
-516          | Simipour          | 
-514          | Simisear          | 
-550          | Basculin          | 
-432          | Purugly           | 
-
-Newline
-Newline
-
-291          | Ninjask           | [B][U]Ninjask Checks[/U][/B]
-Newline
-GSI: 
-618          | Stunfisk          | 
-476          | Probopass         | 
-369          | Relicanth         | 
-600          | Klang             | 
-703          | Carbink           | 
-Newline
-SSI: 
-076          | Golem             | 
-444          | Gabite            | 
-713          | Avalugg           | 
-Newline
-NSI: 
-516          | Simipour          | 
-432          | Purugly           | 
-026          | Raichu            | 
-586          | Sawsbuck          | 
-375          | Metang            | 
-
-Newline
-Newline
-
-624          | Pawniard          | [B][U]Pawniard Checks[/U][/B]
-Newline
-GSI: 
-618          | Stunfisk          | 
-369          | Relicanth         | 
-Newline
-SSI: 
+441          | Chatot            | 
+105          | Marowak           | 
+GSI to: 
 067          | Machoke           | 
-391          | Monferno          | 
-114          | Tangela           | 
-476          | Probopass         | 
-444          | Gabite            | 
-Newline
-NSI: 
-419          | Floatzel          | 
-523          | Zebstrika         | 
-078          | Rapidash          | 
-516          | Simipour          | 
-479f         | Rotom-Frost       | 
-038          | Ninetales         | 
-186          | Politoed          | 
-
-Newline
-Newline
-
-432          | Purugly           | [B][U]Purugly Checks[/U][/B]
-Newline
-GSI: 
-476          | Probopass         | 
-076          | Golem             | 
-369          | Relicanth         | 
-279          | Pelipper          | 
-600          | Klang             | 
-713          | Avalugg           | 
-Newline
-SSI: 
-618          | Stunfisk          | 
-114          | Tangela           | 
-375          | Metang            | 
-200          | Misdreavus        | 
-711          | Gourgeist         | 
-477          | Dusknoir          | 
-444          | Gabite            | 
-Newline
-NSI: 
-419          | Floatzel          | 
-523          | Zebstrika         | 
-064          | Kadabra           | 
-067          | Machoke           | 
-391          | Monferno          | 
-611          | Fraxure           | 
-
-Newline
-Newline
-
-026          | Raichu            | [B][U]Raichu Checks[/U][/B]
-Newline
-GSI: 
 315          | Roselia           | 
-618          | Stunfisk          | 
-673          | Gogoat            | 
 Newline
-SSI: 
-463          | Lickilicky        | 
-326          | Grumpig           | 
-378          | Regice            | 
-711          | Gourgeist         | 
-477          | Dusknoir          | 
-Newline
-NSI: 
-419          | Floatzel          | 
-523          | Zebstrika         | 
-432          | Purugly           | 
-064          | Kadabra           | 
-067          | Machoke           | 
-378          | Regice            | 
-
-Newline
-Newline
-
-078          | Rapidash          | [B][U]Rapidash Checks[/U][/B]
-Newline
-GSI: 
-444          | Gabite            | 
-369          | Relicanth         | 
-338          | Solrock           | 
-076          | Golem             | 
-Newline
-SSI: 
-618          | Stunfisk          | 
-476          | Probopass         | 
-186          | Politoed          | 
-348          | Armaldo           | 
-Newline
-NSI: 
-419          | Floatzel          | 
-026          | Raichu            | 
-523          | Zebstrika         | 
-064          | Kadabra           | 
-067          | Machoke           | 
-550          | Basculin          | 
-326          | Grumpig           | 
-
-Newline
-Newline
-
-378          | Regice            | [B][U]Regice Checks[/U][/B]
-Newline
-GSI: 
-326          | Grumpig           | 
-375          | Metang            | 
+SSI to: 
+512          | Simisage          | 
 035          | Clefairy          | 
-097          | Hypno             | 
+470          | Leafeon           | 
+114          | Tangela           | 
+189          | Jumpluff          | 
+024          | Arbok             | 
+586          | Sawsbuck          | 
 Newline
-SSI: 
-067          | Machoke           | 
+NSI to: 
+348          | Armaldo           | 
 463          | Lickilicky        | 
 391          | Monferno          | 
-600          | Klang             | 
-Newline
-NSI: 
-508          | Stoutland         | 
-078          | Rapidash          | 
-217          | Ursaring          | 
-064          | Kadabra           | 
-038          | Ninetales         | 
-514          | Simisear          | 
-348          | Armaldo           | 
+673          | Gogoat            | 
 
 Newline
 Newline
 
-369          | Relicanth         | [B][U]Relicanth Checks[/U][/B]
+586          | Sawsbuck          | [B][U]Sawsbuck Checks[/U][/B]
 Newline
 GSI: 
 114          | Tangela           | 
 711          | Gourgeist         | 
-651          | Quilladin         | 
+629          | Vullaby           | 
+600          | Klang             | 
+375          | Metang            | 
+713          | Avalugg           | 
 Newline
 SSI: 
-067          | Machoke           | 
+315          | Roselia           | 
+024          | Arbok             | 
 200          | Misdreavus        | 
-470          | Leafeon           | 
-375          | Metang            | 
-444          | Gabite            | 
+144          | Articuno          | 
 Newline
 NSI: 
-419          | Floatzel          | 
+085          | Dodrio            | 
 523          | Zebstrika         | 
-516          | Simipour          | 
+189          | Jumpluff          | 
 064          | Kadabra           | 
-026          | Raichu            | 
-479f         | Rotom-Frost       | 
-512          | Simisage          | 
+067          | Machoke           | 
+078          | Rapidash          | 
+038          | Ninetales         | 
+514          | Simisear          | 
+291          | Ninjask           | 
+391          | Monferno          | 
+Newline
+NSI to: 
+419          | Floatzel          | 
+099          | Kingler           | 
+368          | Gorebyss          | 
+367          | Huntail           | 
+326          | Grumpig           | 
+076          | Golem             | 
+550          | Basculin          | 
+291          | Ninjask           | 
 
 Newline
 Newline
@@ -1204,323 +2256,865 @@ NSI:
 144          | Articuno          | 
 391          | Monferno          | 
 514          | Simisear          | 
-
-Newline
-Newline
-
-479f         | Rotom-Frost       | [B][U]Rotom-F Checks[/U][/B]
-Newline
-GSI: 
-463          | Lickilicky        | 
-Newline
-SSI: 
-326          | Grumpig           | 
-038          | Ninetales         | 
-378          | Regice            | 
-476          | Probopass         | 
-035          | Clefairy          | 
-600          | Klang             | 
+GSI to: 
+368          | Gorebyss          | 
+026          | Raichu            | 
+367          | Huntail           | 
+114          | Tangela           | 
+523          | Zebstrika         | 
 125          | Electabuzz        | 
 Newline
-NSI: 
-523          | Zebstrika         | 
-078          | Rapidash          | 
-217          | Ursaring          | 
-026          | Raichu            | 
-067          | Machoke           | 
-514          | Simisear          | 
-391          | Monferno          | 
-
-Newline
-Newline
-
-586          | Sawsbuck          | [B][U]Sawsbuck Checks[/U][/B]
-Newline
-GSI: 
-114          | Tangela           | 
-711          | Gourgeist         | 
-629          | Vullaby           | 
-600          | Klang             | 
-375          | Metang            | 
-713          | Avalugg           | 
-Newline
-SSI: 
-315          | Roselia           | 
-024          | Arbok             | 
-200          | Misdreavus        | 
-144          | Articuno          | 
-Newline
-NSI: 
-085          | Dodrio            | 
-523          | Zebstrika         | 
-189          | Jumpluff          | 
-064          | Kadabra           | 
-067          | Machoke           | 
-078          | Rapidash          | 
-038          | Ninetales         | 
-514          | Simisear          | 
-291          | Ninjask           | 
-391          | Monferno          | 
-
-Newline
-Newline
-
-516          | Simipour          | [B][U]Simipour Checks[/U][/B]
-Newline
-GSI: 
-186          | Politoed          | 
-Newline
-SSI: 
-315          | Roselia           | 
-326          | Grumpig           | 
-463          | Lickilicky        | 
-035          | Clefairy          | 
-673          | Gogoat            | 
-629          | Vullaby           | 
-634          | Zweilous          | 
-Newline
-NSI: 
+SSI to: 
 419          | Floatzel          | 
-523          | Zebstrika         | 
-189          | Jumpluff          | 
-026          | Raichu            | 
-078          | Rapidash          | 
-064          | Kadabra           | 
-144          | Articuno          | 
-550          | Basculin          | 
-291          | Ninjask           | 
-432          | Purugly           | 
-
-Newline
-Newline
-
-512          | Simisage          | [B][U]Simisage Checks[/U][/B]
-Newline
-GSI: 
-317          | Swalot            | 
-Newline
-SSI: 
-315          | Roselia           | 
-024          | Arbok             | 
-144          | Articuno          | 
-463          | Lickilicky        | 
-711          | Gourgeist         | 
-629          | Vullaby           | 
-Newline
-NSI: 
-419          | Floatzel          | 
-523          | Zebstrika         | 
-085          | Dodrio            | 
-189          | Jumpluff          | 
-064          | Kadabra           | 
-078          | Rapidash          | 
-217          | Ursaring          | 
-514          | Simisear          | 
-291          | Ninjask           | 
-432          | Purugly           | 
-391          | Monferno          | 
-
-Newline
-Newline
-
-514          | Simisear          | [B][U]Simisear Checks[/U][/B]
-Newline
-GSI: 
-186          | Politoed          | 
-Newline
-SSI: 
-078          | Rapidash          | 
-391          | Monferno          | 
-326          | Grumpig           | 
-463          | Lickilicky        | 
-279          | Pelipper          | 
-444          | Gabite            | 
-329          | Vibrava           | 
-Newline
-NSI: 
-419          | Floatzel          | 
-523          | Zebstrika         | 
+512          | Simisage          | 
 516          | Simipour          | 
-189          | Jumpluff          | 
-064          | Kadabra           | 
-217          | Ursaring          | 
-611          | Fraxure           | 
-432          | Purugly           | 
-067          | Machoke           | 
+200          | Misdreavus        | 
+035          | Clefairy          | 
+055          | Golduck           | 
+673          | Gogoat            | 
+076          | Golem             | 
+550          | Basculin          | 
+586          | Sawsbuck          | 
 
 Newline
 Newline
 
-508          | Stoutland         | [B][U]Stoutland Checks[/U][/B]
+262          | Mightyena         | [B][U]Mightyena Checks[/U][/B]
 Newline
 GSI: 
+618          | Stunfisk          | 
 114          | Tangela           | 
+369          | Relicanth         | 
+600          | Klang             | 
+449          | Hippopotas        | 
+651          | Quilladin         | 
+Newline
+SSI: 
+476          | Probopass         | 
+076          | Golem             | 
+444          | Gabite            | 
+391          | Monferno          | 
+713          | Avalugg           | 
+676          | Furfrou           | 
+Newline
+NSI: 
+189          | Jumpluff          | 
+038          | Ninetales         | 
+078          | Rapidash          | 
+067          | Machoke           | 
+Newline
+NSI to: 
+477          | Dusknoir          | 
+200          | Misdreavus        | 
+578          | Duosion           | 
+055          | Golduck           | 
+606          | Beheeyem          | 
+064          | Kadabra           | 
+326          | Grumpig           | 
+122          | Mr. Mime          | 
+
+Newline
+Newline
+
+432          | Purugly           | [B][U]Purugly Checks[/U][/B]
+Newline
+GSI: 
+476          | Probopass         | 
+076          | Golem             | 
+369          | Relicanth         | 
+279          | Pelipper          | 
+600          | Klang             | 
+713          | Avalugg           | 
 Newline
 SSI: 
 618          | Stunfisk          | 
-476          | Probopass         | 
-369          | Relicanth         | 
-076          | Golem             | 
+114          | Tangela           | 
 375          | Metang            | 
-600          | Klang             | 
-338          | Solrock           | 
-348          | Armaldo           | 
-713          | Avalugg           | 
+200          | Misdreavus        | 
+711          | Gourgeist         | 
+477          | Dusknoir          | 
+444          | Gabite            | 
 Newline
 NSI: 
 419          | Floatzel          | 
-516          | Simipour          | 
-085          | Dodrio            | 
-026          | Raichu            | 
-326          | Grumpig           | 
+523          | Zebstrika         | 
+064          | Kadabra           | 
+067          | Machoke           | 
+391          | Monferno          | 
+611          | Fraxure           | 
+Newline
+NSI to: 
 217          | Ursaring          | 
-078          | Rapidash          | 
 512          | Simisage          | 
 514          | Simisear          | 
-391          | Monferno          | 
-441          | Chatot            | 
-
-Newline
-Newline
-
-581          | Swanna            | [B][U]Swanna Checks[/U][/B]
-Newline
-GSI: 
-378          | Regice            | 
-463          | Lickilicky        | 
-186          | Politoed          | 
-Newline
-SSI: 
-326          | Grumpig           | 
-629          | Vullaby           | 
-600          | Klang             | 
-634          | Zweilous          | 
-125          | Electabuzz        | 
-131          | Lapras            | 
-Newline
-NSI: 
-419          | Floatzel          | 
+516          | Simipour          | 
+200          | Misdreavus        | 
+026          | Raichu            | 
+064          | Kadabra           | 
+038          | Ninetales         | 
+291          | Ninjask           | 
 085          | Dodrio            | 
 523          | Zebstrika         | 
-516          | Simipour          | 
-064          | Kadabra           | 
-078          | Rapidash          | 
-217          | Ursaring          | 
-512          | Simisage          | 
-479f         | Rotom-Frost       | 
+189          | Jumpluff          | 
 
 Newline
 Newline
 
-114          | Tangela           | [B][U]Tangela Checks[/U][/B]
+125          | Electabuzz        | [B][U]Electabuzz Checks[/U][/B]
 Newline
 GSI: 
 315          | Roselia           | 
-378          | Regice            | 
+326          | Grumpig           | 
+618          | Stunfisk          | 
+035          | Clefairy          | 
+463          | Lickilicky        | 
 711          | Gourgeist         | 
-629          | Vullaby           | 
+673          | Gogoat            | 
+449          | Hippopotas        | 
 Newline
 SSI: 
-523          | Zebstrika         | 
-326          | Grumpig           | 
-038          | Ninetales         | 
-024          | Arbok             | 
-144          | Articuno          | 
-600          | Klang             | 
-634          | Zweilous          | 
+114          | Tangela           | 
+067          | Machoke           | 
+378          | Regice            | 
+200          | Misdreavus        | 
 Newline
 NSI: 
 419          | Floatzel          | 
-085          | Dodrio            | 
-516          | Simipour          | 
+508          | Stoutland         | 
 078          | Rapidash          | 
+217          | Ursaring          | 
+611          | Fraxure           | 
+470          | Leafeon           | 
+GSI to: 
+189          | Jumpluff          | 
+Newline
+SSI to: 
 479f         | Rotom-Frost       | 
+581          | Swanna            | 
+144          | Articuno          | 
+085          | Dodrio            | 
+523          | Zebstrika         | 
+Newline
+NSI to: 
+419          | Floatzel          | 
+055          | Golduck           | 
+367          | Huntail           | 
+198          | Murkrow           | 
+550          | Basculin          | 
 441          | Chatot            | 
+
+Newline
+Newline
+
+618          | Stunfisk          | [B][U]Stunfisk Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+624          | Pawniard          | 
+391          | Monferno          | 
+026          | Raichu            | 
+198          | Murkrow           | 
+600          | Klang             | 
+291          | Ninjask           | 
+085          | Dodrio            | 
+523          | Zebstrika         | 
+024          | Arbok             | 
+262          | Mightyena         | 
+125          | Electabuzz        | 
+Newline
+SSI to: 
+217          | Ursaring          | 
+348          | Armaldo           | 
+508          | Stoutland         | 
+611          | Fraxure           | 
+064          | Kadabra           | 
+078          | Rapidash          | 
+326          | Grumpig           | 
+122          | Mr. Mime          | 
+038          | Ninetales         | 
+441          | Chatot            | 
+189          | Jumpluff          | 
+432          | Purugly           | 
+
+Newline
+Newline
+
+375          | Metang            | [B][U]Metang Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+614          | Beartic           | 
+035          | Clefairy          | 
+611          | Fraxure           | 
+606          | Beheeyem          | 
+378          | Regice            | 
+326          | Grumpig           | 
+122          | Mr. Mime          | 
+144          | Articuno          | 
+189          | Jumpluff          | 
+586          | Sawsbuck          | 
+315          | Roselia           | 
+Newline
+SSI to: 
+508          | Stoutland         | 
+369          | Relicanth         | 
+367          | Huntail           | 
+198          | Murkrow           | 
+600          | Klang             | 
+064          | Kadabra           | 
+441          | Chatot            | 
+085          | Dodrio            | 
+024          | Arbok             | 
+432          | Purugly           | 
+Newline
+NSI to: 
+291          | Ninjask           | 
+
+Newline
+Newline
+
+711          | Gourgeist         | [B][U]Gourgeist Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+369          | Relicanth         | 
+626          | Bouffalant        | 
+367          | Huntail           | 
+673          | Gogoat            | 
+076          | Golem             | 
+114          | Tangela           | 
+586          | Sawsbuck          | 
+125          | Electabuzz        | 
+Newline
+SSI to: 
+419          | Floatzel          | 
+217          | Ursaring          | 
+512          | Simisage          | 
+348          | Armaldo           | 
+463          | Lickilicky        | 
+067          | Machoke           | 
+099          | Kingler           | 
+611          | Fraxure           | 
+026          | Raichu            | 
+326          | Grumpig           | 
+550          | Basculin          | 
+441          | Chatot            | 
+189          | Jumpluff          | 
+024          | Arbok             | 
+432          | Purugly           | 
+
+Newline
+Newline
+
+713          | Avalugg           | [B][U]Avalugg Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+463          | Lickilicky        | 
+470          | Leafeon           | 
+550          | Basculin          | 
+085          | Dodrio            | 
+189          | Jumpluff          | 
+024          | Arbok             | 
+586          | Sawsbuck          | 
+432          | Purugly           | 
+Newline
+SSI to: 
+634          | Zweilous          | 
+217          | Ursaring          | 
+614          | Beartic           | 
+477          | Dusknoir          | 
+508          | Stoutland         | 
+611          | Fraxure           | 
+367          | Huntail           | 
+673          | Gogoat            | 
+198          | Murkrow           | 
+291          | Ninjask           | 
+262          | Mightyena         | 
+
+Newline
+Newline
+
+629          | Vullaby           | [B][U]Vullaby Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+470          | Leafeon           | 
+606          | Beheeyem          | 
+064          | Kadabra           | 
+326          | Grumpig           | 
+114          | Tangela           | 
+586          | Sawsbuck          | 
+315          | Roselia           | 
+Newline
+SSI to: 
+512          | Simisage          | 
+516          | Simipour          | 
+477          | Dusknoir          | 
+099          | Kingler           | 
+200          | Misdreavus        | 
+391          | Monferno          | 
+578          | Duosion           | 
+626          | Bouffalant        | 
+581          | Swanna            | 
+367          | Huntail           | 
+673          | Gogoat            | 
+189          | Jumpluff          | 
+
+Newline
+Newline
+
+476          | Probopass         | [B][U]Probopass Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+144          | Articuno          | 
+291          | Ninjask           | 
+085          | Dodrio            | 
+432          | Purugly           | 
+Newline
+SSI to: 
+479f         | Rotom-Frost       | 
+508          | Stoutland         | 
+624          | Pawniard          | 
+578          | Duosion           | 
+606          | Beheeyem          | 
+198          | Murkrow           | 
+600          | Klang             | 
+078          | Rapidash          | 
+038          | Ninetales         | 
+441          | Chatot            | 
+523          | Zebstrika         | 
+189          | Jumpluff          | 
+024          | Arbok             | 
+262          | Mightyena         | 
+315          | Roselia           | 
+
+Newline
+Newline
+
+186          | Politoed          | [B][U]Politoed Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
 514          | Simisear          | 
+516          | Simipour          | 
+368          | Gorebyss          | 
+055          | Golduck           | 
+581          | Swanna            | 
+367          | Huntail           | 
+550          | Basculin          | 
+Newline
+SSI to: 
+419          | Floatzel          | 
+614          | Beartic           | 
+099          | Kingler           | 
+035          | Clefairy          | 
+578          | Duosion           | 
+600          | Klang             | 
+064          | Kadabra           | 
+078          | Rapidash          | 
+Newline
+NSI to: 
+348          | Armaldo           | 
+624          | Pawniard          | 
+076          | Golem             | 
+122          | Mr. Mime          | 
+
+Newline
+Newline
+
+444          | Gabite            | [B][U]Gabite Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+600          | Klang             | 
+078          | Rapidash          | 
+024          | Arbok             | 
+Newline
+SSI to: 
+514          | Simisear          | 
+348          | Armaldo           | 
+463          | Lickilicky        | 
+624          | Pawniard          | 
+391          | Monferno          | 
+369          | Relicanth         | 
+198          | Murkrow           | 
+038          | Ninetales         | 
+291          | Ninjask           | 
+085          | Dodrio            | 
+189          | Jumpluff          | 
+262          | Mightyena         | 
+432          | Purugly           | 
+Newline
+NSI to: 
+634          | Zweilous          | 
+
+Newline
+Newline
+
+338          | Solrock           | [B][U]Solrock Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+626          | Bouffalant        | 
+078          | Rapidash          | 
+076          | Golem             | 
+Newline
+SSI to: 
+463          | Lickilicky        | 
+508          | Stoutland         | 
+067          | Machoke           | 
+611          | Fraxure           | 
+198          | Murkrow           | 
+085          | Dodrio            | 
+024          | Arbok             | 
+Newline
+NSI to: 
+614          | Beartic           | 
+391          | Monferno          | 
+
+Newline
+Newline
+
+651          | Quilladin         | [B][U]Quilladin Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+099          | Kingler           | 
+369          | Relicanth         | 
+076          | Golem             | 
+262          | Mightyena         | 
+Newline
+SSI to: 
+419          | Floatzel          | 
+611          | Fraxure           | 
+470          | Leafeon           | 
+550          | Basculin          | 
+315          | Roselia           | 
+
+Newline
+Newline
+
+131          | Lapras            | [B][U]Lapras Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+368          | Gorebyss          | 
+055          | Golduck           | 
+550          | Basculin          | 
+Newline
+SSI to: 
+419          | Floatzel          | 
 581          | Swanna            | 
 
 Newline
 Newline
 
-217          | Ursaring          | [B][U]Ursaring Checks[/U][/B]
+449          | Hippopotas        | [B][U]Hippopotas Checks[/U][/B]
 Newline
 GSI: 
-114          | Tangela           | 
+|
 Newline
 SSI: 
-618          | Stunfisk          | 
-200          | Misdreavus        | 
-711          | Gourgeist         | 
-369          | Relicanth         | 
-713          | Avalugg           | 
+|
 Newline
 NSI: 
-419          | Floatzel          | 
-523          | Zebstrika         | 
-064          | Kadabra           | 
-026          | Raichu            | 
-067          | Machoke           | 
-432          | Purugly           | 
-291          | Ninjask           | 
+|
+GSI to: 
 391          | Monferno          | 
-
-Newline
-Newline
-
-523          | Zebstrika         | [B][U]Zebstrika Checks[/U][/B]
-Newline
-GSI: 
-618          | Stunfisk          | 
-315          | Roselia           | 
-326          | Grumpig           | 
-463          | Lickilicky        | 
-328          | Trapinch          | 
-Newline
-SSI: 
-288          | Vigoroth          | 
-378          | Regice            | 
-476          | Probopass         | 
-076          | Golem             | 
-673          | Gogoat            | 
+262          | Mightyena         | 
 125          | Electabuzz        | 
-105          | Marowak           | 
 Newline
-NSI: 
-508          | Stoutland         | 
-026          | Raichu            | 
-067          | Machoke           | 
-611          | Fraxure           | 
-038          | Ninetales         | 
-291          | Ninjask           | 
-432          | Purugly           | 
-477          | Dusknoir          | 
+SSI to: 
+024          | Arbok             | 
 
 Newline
 Newline
 
-634          | Zweilous          | [B][U]Zweilous Checks[/U][/B]
+279          | Pelipper          | [B][U]Pelipper Checks[/U][/B]
 Newline
 GSI: 
+|
 Newline
 SSI: 
-114          | Tangela           | 
-067          | Machoke           | 
-122          | Mr. Mime          | 
-035          | Clefairy          | 
-369          | Relicanth         | 
-600          | Klang             | 
-713          | Avalugg           | 
+|
 Newline
 NSI: 
-419          | Floatzel          | 
-085          | Dodrio            | 
-508          | Stoutland         | 
-516          | Simipour          | 
-217          | Ursaring          | 
-479f         | Rotom-Frost       | 
-055          | Golduck           | 
-611          | Fraxure           | 
-144          | Articuno          | 
-550          | Basculin          | 
+|
+GSI to: 
+432          | Purugly           | 
+Newline
+SSI to: 
+514          | Simisear          | 
+477          | Dusknoir          | 
+367          | Huntail           | 
+038          | Ninetales         | 
+
+Newline
+Newline
+
+356          | Dusclops          | [B][U]Dusclops Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+122          | Mr. Mime          | 
+441          | Chatot            | 
+024          | Arbok             | 
+
+Newline
+Newline
+
+329          | Vibrava           | [B][U]Vibrava Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+038          | Ninetales         | 
+Newline
+SSI to: 
+514          | Simisear          | 
+076          | Golem             | 
+024          | Arbok             | 
+
+Newline
+Newline
+
+097          | Hypno             | [B][U]Hypno Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+378          | Regice            | 
+Newline
+SSI to: 
+064          | Kadabra           | 
+122          | Mr. Mime          | 
+
+Newline
+Newline
+
+317          | Swalot            | [B][U]Swalot Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+512          | Simisage          | 
+067          | Machoke           | 
+
+Newline
+Newline
+
+703          | Carbink           | [B][U]Carbink Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+198          | Murkrow           | 
 291          | Ninjask           | 
-444          | Gabite            | 
+
+Newline
+Newline
+
+324          | Torkoal           | [B][U]Torkoal Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+600          | Klang             | 
+Newline
+SSI to: 
+614          | Beartic           | 
+
+Newline
+Newline
+
+105          | Marowak           | [B][U]Marowak Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+523          | Zebstrika         | 
+Newline
+NSI to: 
+035          | Clefairy          | 
+600          | Klang             | 
+024          | Arbok             | 
+
+Newline
+Newline
+
+446          | Munchlax          | [B][U]Munchlax Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+326          | Grumpig           | 
+144          | Articuno          | 
+
+Newline
+Newline
+
+405          | Luxray            | [B][U]Luxray Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+085          | Dodrio            | 
+Newline
+NSI to: 
+099          | Kingler           | 
+144          | Articuno          | 
+
+Newline
+Newline
+
+328          | Trapinch          | [B][U]Trapinch Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+GSI to: 
+523          | Zebstrika         | 
+
+Newline
+Newline
+
+288          | Vigoroth          | [B][U]Vigoroth Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+523          | Zebstrika         | 
+
+Newline
+Newline
+
+426          | Drifblim          | [B][U]Drifblim Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+626          | Bouffalant        | 
+
+Newline
+Newline
+
+552          | Krokorok          | [B][U]Krokorok Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+600          | Klang             | 
+
+Newline
+Newline
+
+676          | Furfrou           | [B][U]Furfrou Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+262          | Mightyena         | 
+
+Newline
+Newline
+
+313          | Volbeat           | [B][U]Volbeat Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+NSI to: 
+055          | Golduck           | 
+
+Newline
+Newline
+
+496          | Servine           | [B][U]Servine Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+NSI to: 
+550          | Basculin          | 
