@@ -22,6 +22,7 @@ NSI:
 550          | Basculin          | 
 291          | Ninjask           | 
 444          | Gabite            | 
+Newline
 GSI to: 
 477          | Dusknoir          | 
 200          | Misdreavus        | 
@@ -160,7 +161,7 @@ NSI to:
 Newline
 Newline
 
-614          | Beartic           | [B][U]Beartic Checks[/U][/B](in rain)
+614          | Beartic           | [B][U]Beartic Checks[/U][/B] (in rain)
 Newline
 GSI: 
 375          | Metang            | 
@@ -314,6 +315,7 @@ NSI:
 067          | Machoke           | 
 514          | Simisear          | 
 391          | Monferno          | 
+Newline
 GSI to: 
 144          | Articuno          | 
 Newline
@@ -448,6 +450,7 @@ NSI:
 024          | Arbok             | 
 550          | Basculin          | 
 391          | Monferno          | 
+Newline
 GSI to: 
 479f         | Rotom-Frost       | 
 055          | Golduck           | 
@@ -501,6 +504,7 @@ NSI:
 262          | Mightyena         | 
 200          | Misdreavus        | 
 550          | Basculin          | 
+Newline
 GSI to: 
 122          | Mr. Mime          | 
 441          | Chatot            | 
@@ -598,6 +602,7 @@ NSI:
 581          | Swanna            | 
 291          | Ninjask           | 
 198          | Murkrow           | 
+Newline
 GSI to: 
 200          | Misdreavus        | 
 Newline
@@ -659,6 +664,7 @@ NSI:
 470          | Leafeon           | 
 432          | Purugly           | 
 099          | Kingler           | 
+Newline
 GSI to: 
 578          | Duosion           | 
 626          | Bouffalant        | 
@@ -743,6 +749,7 @@ NSI:
 550          | Basculin          | 
 099          | Kingler           | 
 105          | Marowak           | 
+Newline
 GSI to: 
 378          | Regice            | 
 125          | Electabuzz        | 
@@ -908,6 +915,7 @@ NSI:
 026          | Raichu            | 
 479f         | Rotom-Frost       | 
 512          | Simisage          | 
+Newline
 GSI to: 
 348          | Armaldo           | 
 624          | Pawniard          | 
@@ -1206,6 +1214,7 @@ NSI:
 514          | Simisear          | 
 391          | Monferno          | 
 105          | Marowak           | 
+Newline
 GSI to: 
 035          | Clefairy          | 
 578          | Duosion           | 
@@ -1298,6 +1307,7 @@ NSI:
 581          | Swanna            | 
 391          | Monferno          | 
 291          | Ninjask           | 
+Newline
 GSI to: 
 026          | Raichu            | 
 125          | Electabuzz        | 
@@ -1456,6 +1466,7 @@ NSI:
 038          | Ninetales         | 
 514          | Simisear          | 
 348          | Armaldo           | 
+Newline
 GSI to: 
 581          | Swanna            | 
 114          | Tangela           | 
@@ -1505,6 +1516,7 @@ NSI:
 067          | Machoke           | 
 550          | Basculin          | 
 326          | Grumpig           | 
+Newline
 GSI to: 
 038          | Ninetales         | 
 Newline
@@ -1565,6 +1577,7 @@ NSI:
 262          | Mightyena         | 
 550          | Basculin          | 
 477          | Dusknoir          | 
+Newline
 GSI to: 
 578          | Duosion           | 
 378          | Regice            | 
@@ -1625,6 +1638,7 @@ NSI:
 055          | Golduck           | 
 186          | Politoed          | 
 550          | Basculin          | 
+Newline
 GSI to: 
 078          | Rapidash          | 
 085          | Dodrio            | 
@@ -1673,6 +1687,7 @@ NSI:
 441          | Chatot            | 
 514          | Simisear          | 
 581          | Swanna            | 
+Newline
 GSI to: 
 217          | Ursaring          | 
 508          | Stoutland         | 
@@ -1770,6 +1785,7 @@ NSI:
 186          | Politoed          | 
 600          | Klang             | 
 262          | Mightyena         | 
+Newline
 GSI to: 
 441          | Chatot            | 
 Newline
@@ -2048,6 +2064,7 @@ NSI:
 291          | Ninjask           | 
 432          | Purugly           | 
 477          | Dusknoir          | 
+Newline
 GSI to: 
 189          | Jumpluff          | 
 Newline
@@ -2109,6 +2126,7 @@ NSI:
 479f         | Rotom-Frost       | 
 291          | Ninjask           | 
 432          | Purugly           | 
+Newline
 GSI to: 
 673          | Gogoat            | 
 Newline
@@ -2164,6 +2182,7 @@ NSI:
 217          | Ursaring          | 
 441          | Chatot            | 
 105          | Marowak           | 
+Newline
 GSI to: 
 067          | Machoke           | 
 315          | Roselia           | 
@@ -2256,6 +2275,7 @@ NSI:
 144          | Articuno          | 
 391          | Monferno          | 
 514          | Simisear          | 
+Newline
 GSI to: 
 368          | Gorebyss          | 
 026          | Raichu            | 
@@ -2385,6 +2405,7 @@ NSI:
 217          | Ursaring          | 
 611          | Fraxure           | 
 470          | Leafeon           | 
+Newline
 GSI to: 
 189          | Jumpluff          | 
 Newline
