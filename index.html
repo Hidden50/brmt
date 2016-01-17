@@ -7,66 +7,71 @@
 
 <style>
 	input[type=number] {
-		width:60px;
-		text-align:right;
+		width: 60px;
+		text-align: right;
+	}
+	div.infopopout {
+		display: none;
+		position: absolute;
+		background-color: white;
+		padding: 15px;
+		margin: 5px;
+		border: 4px solid Black;
+	}
+	button {
+		margin: 3px;
+	}
+	a.javascriptlink {
+		text-decoration: underline;
+		text-decoration-color: blue;
+		cursor: pointer;
+		color:blue;
+	}
+	img {
+		vertical-align: middle;
 	}
 </style>
 
 <body>
 
-<!-- topside div -->
-<div>
-	<!--Page Title-->
-	<h2 style="display: inline-block; margin-right:.25em">OU Weakness Checker (BreakMyTeam)</h2>
-	<a target="_blank" style="font-size:10pt"
-	   href="About.html">
-		About this tool
-	</a>
-	
-	<!--Controls to set the Rating Function-->
-	<span style="float:right; padding:2px">
-		<span>
-			<span>Rating function:</span> 
-			<table style="display:inline-block; margin-bottom:0px; vertical-align:middle";>
-			<tr>
-				<td><input type="number" ID="RatCoeffSel0" onchange="onRatCoeffSelectorChange(0, this.value)"></td> <td>+</td>
-				<td><input type="number" ID="RatCoeffSel1" onchange="onRatCoeffSelectorChange(1, this.value)"></td> <td>+</td>
-				<td><input type="number" ID="RatCoeffSel2" onchange="onRatCoeffSelectorChange(2, this.value)"></td> <td>-</td>
-				<td><input type="number" ID="RatCoeffSel3" onchange="onRatCoeffSelectorChange(3, this.value)"></td> <td>-</td>
-				<td><input type="number" ID="RatCoeffSel4" onchange="onRatCoeffSelectorChange(4, this.value)"></td> <td>-</td>
-				<td><input type="number" ID="RatCoeffSel5" onchange="onRatCoeffSelectorChange(5, this.value)"></td>
-			</tr>
-			<tr>
-				<td align="center">GSI</td><td></td>
-				<td align="center">SSI</td><td></td>
-				<td align="center">NSI</td><td></td>
-				<td align="center">gsi</td><td></td>
-				<td align="center">ssi</td><td></td>
-				<td align="center">nsi</td>
-			</tr>
-			</table>
-		</span>
-		<div style="margin-top:8px">
-			<button onclick="onRatCoeffSelectorChange(6, [10000,100,2,11,7,3])">Break it!<br>[10000,100,2,11,7,3]</button>
-			<button onclick="onRatCoeffSelectorChange(6, [0,0,0,11,7,3])">Wall it!<br>[0,0,0,11,7,3]</button>
-			<select ID="ccSelector" onchange="SetChecksCompendium(this.value);">
-				<option value="OUcc.txt">OU Checks Compendium by Tressed</option>
-				<option value="RUcc.txt">RU Checks Compendium by Arifeen</option>
-				<option value="PUcc.txt">PU Checks Compendium by Anty</option>
-			</select>
-		</div>
-	</span>
-</div>
+<!--Page Title-->
+<h2 style="display: inline-block; margin-right:.25em">OU Weakness Checker (BreakMyTeam)</h2>
+<a target="_blank" style="font-size:10pt" href="About.html">
+	About this tool
+</a>
 
+<!--Settings-->
+<span style="float:right"><!--
+<span style="position:absolute; right:6px; top:6px"><!---->
+	<button onclick="RatCoeffChange([10000,100,2,11,7,3]);">Break it!<br>[10000,100,2,11,7,3]</button>
+	<button onclick="RatCoeffChange([0,0,0,11,7,3]);">Wall it!<br>[0,0,0,11,7,3]</button>
+	<button onclick="RatCoeffChange([0,0,0,0,0,0]);">Unsorted<br>[0,0,0,0,0,0]</button>
+	<button onClick="ShowPopout('ratfunction', this);">Custom rating function<br>[ , , , , , ]</button>
+	<div style="margin-top:5px">
+		<select ID="ccSelector" onchange="SetChecksCompendium(this.value);">
+			<!--<option value="UBcc.txt" disabled>Ubers does not exist yet</option>-->
+			<option value="OUcc.txt" selected>OU Checks Compendium by Tressed</option>
+			<!--<option value="UUcc.txt" disabled>UU does not exist yet</option>-->
+			<option value="RUcc.txt">RU Checks Compendium by Arifeen</option>
+			<!--<option value="NUcc.txt" disabled>NU does not exist yet</option>-->
+			<option value="PUcc.txt">PU Checks Compendium by Anty</option>
+			<!--<option value="LCcc.txt" disabled>LC does not exist yet</option>-->
+		</select>
+		<button class="btn-xs" style="font-size:8pt" onclick="ShowPopout('tools', this);">edit</button>
+		<button class="btn-xs" style="font-size:8pt" onclick="ccSelector.onchange();">reload and discard changes</button>
+	</div>
+</span>
+
+<!-- Main div -->
+<div>
 <!-- leftside main div -->
 <!-- select team members -->
 <div style="float:left; margin-right:25px; width:25%; display:inline-block">
 	<h3>Add Team Members</h3>
 	<form id="form1" onsubmit="document.getElementById('0').onclick(); return false;">
-		Filter: <input name="name" type="text" size="20" oninput = "UpdateAutocompleteResults()" onpropertychange="UpdateAutocompleteResults()">
-		<a style="text-decoration:underline; text-decoration-color:blue; cursor:pointer; color:blue" onclick="urlparam=''; AddToTeam('');">
-			Clear Team
-		</a>
+		Filter: <input name="name" type="text" size="20"
+		               oninput = "UpdateAutocompleteResults()" onpropertychange="UpdateAutocompleteResults()">
+		<a class="javascriptlink" onclick="urlparam=''; AddToTeam('');">Clear Team</a>
 	</form>
 	<p id="demo">Loading..</p>
 </div>
@@ -79,11 +84,59 @@
 	
 	<h3>Threatlist</h3>
 	<p id="threatlist"></p>
-	
-	<div ID="mouseover"
-	 style="display:none; padding:15px; margin:5px; border:4px solid Black; position: absolute; background-color:white"
-	 onmouseleave="this.style.display = 'none';"></div>
 </div>
+
+</div>
+<!-- /Main div -->
+
+<!---------------------------------------------------------------------------------------------->
+<!-- Popout page elements -->
+<!---------------------------------------------------------------------------------------------->
+
+<!-- OnClick-Info to show a Pokémon's Compendium Entry -->
+<div ID="onclickinfo_popout" class="infopopout" onmouseleave="this.style.display = 'none';"></div>
+
+<!-- Rating Function Menu -->
+<div ID="ratfunction" class="infopopout" onmouseleave="this.style.display = 'none'; RatCoeffChange();">
+	<span>Rating function:</span> 
+	<table style="display:inline-block; margin-bottom:0px; vertical-align:middle";>
+		<tr>
+			<td><input type="number" ID="RatCoeffSel0"></td> <td>+</td>
+			<td><input type="number" ID="RatCoeffSel1"></td> <td>+</td>
+			<td><input type="number" ID="RatCoeffSel2"></td> <td>-</td>
+			<td><input type="number" ID="RatCoeffSel3"></td> <td>-</td>
+			<td><input type="number" ID="RatCoeffSel4"></td> <td>-</td>
+			<td><input type="number" ID="RatCoeffSel5"></td>
+		</tr>
+		<tr>
+			<td align="center">GSI</td><td></td>
+			<td align="center">SSI</td><td></td>
+			<td align="center">NSI</td><td></td>
+			<td align="center">gsi</td><td></td>
+			<td align="center">ssi</td><td></td>
+			<td align="center">nsi</td>
+		</tr>
+	</table>
+</div>
+
+<!-- Tools Menu -->
+<div ID="tools" class="infopopout" onmouseleave="this.style.display = 'none';">
+	<center style="background-color:lightblue"><b>Edit the checks compendium directly in the threatlist. (coming soon)</b></center>
+	<h3>Tools for Compendium Authors:</h3>
+	<button onclick="OpenHtml(  HtmlToHtmlpage( ChecksArrayToHtml(Checks) )  );">Export to Html</button><br>
+	<button onclick="OpenTxt( ChecksArrayToCGF(Checks) );">Export to CompGen format (.txt)</button><br>
+	<button onclick="cgfTextarea.value = ChecksArrayToCGF(Checks);
+	                 ShowPopout( 'importcompendium', this );">Edit in CompGen format</button>
+	<button onclick="ShowPopout( 'importcompendium', this );">Reveal textarea as-was</button><br>
+	<button onclick="cgfTextarea.value = ''; ShowPopout( 'importcompendium', this );">Import from CompGen format</button>
+</div>
+
+<!-- textarea for importing compendiums -->
+<div ID="importcompendium" class="infopopout" onmouseleave="this.style.display = 'none';">
+	<textarea ID="cgfTextarea" style="width:90vw; height:60vh"></textarea>
+	<button onclick="SetChecksCompendium( this.previousElementSibling.value, true );">import</button>
+</div>
+<!-- /Popout page elements -->
 
 </body>
 
@@ -106,36 +159,73 @@
 
 
 	<script>
-		const offline = false;
-		
+		const LayeredOnClickInfo = false;
 		window.onload = init;
 		var Threats = ["|"];
 		var Entries = ["|"];
-		var team, threatlist, urlparam;
+		var urlparam;
 		
 		function init() {
-			team = document.getElementById("team");
-			threatlist = document.getElementById("threatlist");
 			urlparam = getUrlParam('team=');
 			// pokemon identifiers contain a-z, A-Z, 0-9 and "-". Treat everything else as a separator
 			urlparam = urlparam.replace(/([^a-zA-Z0-9\-])+/g, ',');
 			UpdateAutocompleteResults();
 			SetChecksCompendium(document.getElementById('ccSelector').value);
 			AddToTeam('');
-			onRatCoeffSelectorChange(6, [10000,100,2,11,7,3]);  // init rating function
+			RatCoeffChange([10000,100,2,11,7,3]);  // init rating function
 		}
 		
-		function onRatCoeffSelectorChange(Mode, NewValue) {
-			SetRatingCoeff(Mode, NewValue);
-			for (var Mode = 0; Mode < 6; Mode++)
-				document.getElementById("RatCoeffSel" + Mode).value = RatingCoeff[Mode];
-			threatlist.innerHTML = ChecksArrayToHtml(FilteredChecks);
+/*		function HtmlToSVG(htmldata) {
+			var DOMURL = window.URL || window.webkitURL || window;
+			var data =
+			  '<svg xmlns="http://www.w3.org/2000/svg">' +
+                '<foreignObject width="80%" height="100%">' +
+                  '<div xmlns="http://www.w3.org/1999/xhtml">' +
+                    htmldata.split('style="vertical-align:middle">\n</div>').join('style="vertical-align:middle"/>\n</div>').split('<br>').join('<br/>').split('<hr>').join('<hr/>').split('src="').join('src="http://hidden50.github.io/brmt/') +
+                  '</div>' +
+                '</foreignObject>' +
+              '</svg>';
+			var svg = new Blob([data], {type: 'image/svg+xml;charset=utf-8'});
+			var url = DOMURL.createObjectURL(svg);
+//			window.open(url);
+			
+			var canvas = document.getElementById('MyCanvas');
+			var ctx    = canvas.getContext('2d');
+			
+			var img = new Image();
+			img.onload = function () {
+				ctx.drawImage(img, 0, 0);
+				DOMURL.revokeObjectURL(url);
+				alert('test');
+			}
+			
+			img.src = url;
+//			var png = new Blob([img], {type: 'image/png'});
+//			var url = DOMURL.createObjectURL(png);
+//			window.open(url);
+		}*/
+		
+		function RatCoeffChange(NewValue) {
+			if (!NewValue) {
+				NewValue = [];
+				for (Mode = 0; Mode <= 5; Mode++)  // synch Htmlelements -> Rating Function
+					NewValue[Mode] = document.getElementById("RatCoeffSel" + Mode).value;
+			} else {
+				for (var Mode = 0; Mode <= 5; Mode++)  // synch Rating Function -> Htmlelements
+					document.getElementById("RatCoeffSel" + Mode).value = NewValue[Mode];
+			}
+			SetRatingCoeff(NewValue);
+			threatlist.innerHTML = ChecksArrayToTiles(FilteredChecks);
 		}
 		
-		function SetChecksCompendium(Link) {
-			Checks = ChecksCompendiumToChecksArray( OpenTextfile(Link).join('\n') );//, true);
+		function SetChecksCompendium(Link, CreateInverseEntries) {
+			var comp;
+			if (CreateInverseEntries)
+				comp = Link
+			else comp = OpenTextfile(Link).join('\n');
+			Checks = ChecksCompendiumToChecksArray( comp, CreateInverseEntries );
 			FilteredChecks = FilterChecksArray(Checks, Threats, Entries);
-			threatlist.innerHTML = ChecksArrayToHtml(FilteredChecks);
+			threatlist.innerHTML = ChecksArrayToTiles(FilteredChecks);
 		}
 		
 		function UpdateAutocompleteResults() {
@@ -182,9 +272,9 @@
 			var temp = urlparam.split(',');
 			for (var t in temp) {
 				if (temp[t].length > 0)
-					result2.push(  MakeClickable( AutocompletePokemon(temp[t]) )  );
+					result2.push( AutocompletePokemon(temp[t]) );
 			}
-			team.innerHTML = ParseCompendium( result2.join("\n") );
+			team.innerHTML = ParseCompendium( result2.join("\n"), true );
 			
 			// print the threatlist
 			Entries = [];//["|"];
@@ -195,7 +285,7 @@
 			}
 			FilteredChecks = FilterChecksArray(Checks, Threats, Entries);
 			
-			threatlist.innerHTML = ChecksArrayToHtml(FilteredChecks);
+			threatlist.innerHTML = ChecksArrayToTiles(FilteredChecks);
 			
 			
 			document.getElementById("form1").elements["name"].value = '';
