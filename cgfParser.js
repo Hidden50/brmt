@@ -5,15 +5,15 @@ function Weblink(Dexnumber) {
 	return 'Serebii__Images/' + Dexnumber + '.png';
 }
 
-function DownloadTxt(content, name) {
-	DownloadFile(content, name, 'text/plain');
+function OpenTxt(content) {
+	OpenFile(content, 'text/plain');
 }
 
-function DownloadHtml(content, name) {
-	DownloadFile(content, name, 'text/html');
+function OpenHtml(content) {
+	OpenFile(content, 'text/html');
 }
 
-function DownloadFile(content, name, type) {
+function OpenFile(content, type) {
 	var file = new Blob([content], {type: type});
 	window.open(URL.createObjectURL(file));
 //	var a = document.createElement("a");
@@ -35,16 +35,18 @@ function ParseCompendium(Compendium, MakeImagesClickable) {
 				q--;
 			var Dexnumber = Line[i].substring(0, p).trim();
 			var Name = Line[i].substring(p+1, q).trim();
-			var S = '<img src='
-			      + quotes(Weblink(Dexnumber))
-			      + ' alt='
-			      + quotes(Name + ",")
-			      + ' title='
-			      + quotes(Name)
-			      + ' style="vertical-align:middle"'
-			      + '>';
-			if (MakeImagesClickable !== undefined)
-				S = MakeClickable(Dexnumber, S);
+			var S = '<img src="'
+			      + Weblink(Dexnumber)
+			      + '" alt="'
+			      + Name + ','
+			      + '" title="'
+			      + Name
+			      + '">';
+			if (MakeImagesClickable) {
+				if (LayeredOnClickInfo)
+					S = AddOnClickInfo(Dexnumber, S);
+				else S = MakeClickable(Dexnumber, S);
+			}
 			S += Line[i].substring(q+1, Line[i].length);
 		} else S = Line[i];
 		

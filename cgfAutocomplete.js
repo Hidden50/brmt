@@ -10,8 +10,15 @@ for (var line = 0; line < _AutocompleteList.length; line++) {
 	}
 }
 
-function ExtractDexNum(pokemon) { return pokemon.split('|')[0].trim(); }
-function ExtractName(pokemon) { return pokemon.split('|')[1].trim(); }
+function ExtractDexNum(pokemon)
+{
+	return pokemon.split('|')[0].trim();
+}
+
+function ExtractName(pokemon)
+{
+	return pokemon.split('|')[1].trim();
+}
 
 function OpenTextfile(url)
 {
