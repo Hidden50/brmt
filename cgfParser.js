@@ -33,6 +33,7 @@ function ParseCompendium(Compendium, MakeImagesClickable) {
 			q = Line[i].length - 1;
 			while(Line[i].charAt(q) != '|')
 				q--;
+			var cgfEntry = Line[i].substring(0, q+1);
 			var Dexnumber = Line[i].substring(0, p).trim();
 			var Name = Line[i].substring(p+1, q).trim();
 			var S = '<img src="'
@@ -40,12 +41,12 @@ function ParseCompendium(Compendium, MakeImagesClickable) {
 			      + '" alt="'
 			      + Name + ','
 			      + '" title="'
-			      + Name
+			      + cgfEntry
 			      + '">';
 			if (MakeImagesClickable) {
 				if (LayeredOnClickInfo)
 					S = AddOnClickInfo(Dexnumber, S);
-				else S = MakeClickable(Dexnumber, S);
+				else S = AddOnClickAddtoteam(Dexnumber, S);
 			}
 			S += Line[i].substring(q+1, Line[i].length);
 		} else S = Line[i];
