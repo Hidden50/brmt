@@ -30,7 +30,7 @@ function OpenTextfile(url)
 }
 
 
-function MakeClickable(pokemon, visibleHtml, id) {
+function AddOnClickAddtoteam(pokemon, visibleHtml, id) {
 	if (visibleHtml === undefined)
 		visibleHtml = pokemon;
 	return '<span style="cursor: pointer" id="'
@@ -73,11 +73,11 @@ function AutocompleteList(trigger) {
 		return "";
 	var i_Start = _autocomplete_StartIndex;
 	do {
-		result.push(  MakeClickable( current, current + current.replace("|", "").replace("|", ""), count )  )
+		result.push(  AddOnClickAddtoteam( current, current + current.replace("|", "").replace("|", ""), count )  )
 		result.push( 'Newline' );
 		current = AutocompletePokemon(trigger, true);
 		count++;
-	} while (  (_autocomplete_StartIndex > i_Start) && (count < 13)  );
+	} while (  (_autocomplete_StartIndex > i_Start) && (count < 60)  );
 	if (_autocomplete_StartIndex > i_Start)
 		result.push( '...' );
 	return result.join('\n');
