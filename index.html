@@ -253,6 +253,8 @@
 		
 		function UpdateAutocompleteResults() {
 			demo.innerHTML = ParseCompendium(AutocompleteList( document.getElementById("form1").elements["name"].value ));
+			if (!document.getElementById("form1").elements["name"].value)
+				document.getElementById("form1").elements["name"].blur();
 			var Images = rightsideDiv.getElementsByTagName('img');
 			for (i in Images) {
 				if (Images[i].title) {
@@ -320,7 +322,7 @@
 			
 			
 			document.getElementById("form1").elements["name"].value = '';
-			document.getElementById("form1").elements["name"].select();
+			document.getElementById("form1").elements["name"].blur();
 			document.getElementById("form1").elements["name"].oninput();
 		}
 		
