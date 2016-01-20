@@ -266,8 +266,7 @@ function AddTile(DN, rating, content) {
 	var result = [];
 	var theRating = -MinRating - rating;
 	var theColor = (theRating > 0) ? 'Coral' : (theRating > -50) ? 'Orange' : (theRating > -5000) ? 'PowderBlue ' : 'PaleGreen';
-	result.push( '<div style="display:inline-block; cursor:pointer; padding:5px; margin:5px; border: 2px solid Navy;'
-	   + ' background-color:' + theColor + '; vertical-align:middle"'
+	result.push( '<div class = "brmtTile" style="background-color:' + theColor + '; vertical-align:middle"'
 	   + ' onclick="OnClickInfo(\'' + DN + '\', this);">' );
 	result.push( '<span style="float:left; font-size:7pt">' + theRating + '</span>' );
 	result.push( content );

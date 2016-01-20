@@ -30,6 +30,27 @@
 	img {
 		vertical-align: middle;
 	}
+	div.brmtTile {
+		display: inline-block;
+		cursor: pointer;
+		padding: 5px;
+		margin: 5px;
+		border: 2px solid Navy;
+	}
+	div.brmtTile-highlighted {
+		display: inline-block;
+		cursor: pointer;
+		padding: 5px;
+		margin: 5px;
+		background-color: LawnGreen!important;
+		border: 2px solid Red;
+	}
+	div.brmtTile-subtle {
+		padding: 0px;
+		margin: 0px;
+		background-color: transparent;
+		border: none;
+	}
 </style>
 
 <body>
@@ -78,7 +99,7 @@
 
 <!-- rightside main div -->
 <!-- print team and threatlist -->
-<div style="float:left; width:73%; display:inline-block">
+<div ID="rightsideDiv" style="float:left; width:73%; display:inline-block">
 	<h3>Team</h3>
 	<p id="team"></p>
 	
@@ -166,6 +187,8 @@
 		var urlparam;
 		
 		function init() {
+			// direct all keyboard input to the edit field
+			document.onkeydown = function () { document.getElementById("form1").elements["name"].focus(); }
 			urlparam = getUrlParam('team=');
 			// pokemon identifiers contain a-z, A-Z, 0-9 and "-". Treat everything else as a separator
 			urlparam = urlparam.replace(/([^a-zA-Z0-9\-])+/g, ',');
@@ -230,6 +253,14 @@
 		
 		function UpdateAutocompleteResults() {
 			demo.innerHTML = ParseCompendium(AutocompleteList( document.getElementById("form1").elements["name"].value ));
+			var Images = rightsideDiv.getElementsByTagName('img');
+			for (i in Images) {
+				if (Images[i].title) {
+					if ( document.getElementById("form1").elements["name"].value && Images[i].title.toLowerCase().indexOf(document.getElementById("form1").elements["name"].value.toLowerCase()) > -1 )
+						Images[i].parentNode.setAttribute('class', 'brmtTile-highlighted');
+					else Images[i].parentNode.setAttribute('class', 'brmtTile');
+				}
+			}
 		}
 		
 		function AddToTeam(DexnumberOrName) {
@@ -272,7 +303,7 @@
 			var temp = urlparam.split(',');
 			for (var t in temp) {
 				if (temp[t].length > 0)
-					result2.push( AutocompletePokemon(temp[t]) );
+					result2.push( '<div class="brmtTile brmtTile-subtle">', AutocompletePokemon(temp[t]), '</div>' );
 			}
 			team.innerHTML = ParseCompendium( result2.join("\n"), true );
 			
