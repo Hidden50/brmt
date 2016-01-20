@@ -1,0 +1,3755 @@
+295          | Exploud           | [B][U]Exploud Checks[/U][/B]
+Newline
+SSI: 
+589          | Escavalier        | 
+379          | Registeel         | 
+437          | Bronzong          | 
+346          | Cradily           | 
+597          | Ferroseed         | 
+Newline
+NSI: 
+697          | Tyrantrum         | 
+359          | Absol             | 
+632          | Durant            | 
+648          | Meloetta          | 
+640          | Virizion          | 
+500          | Emboar            | 
+533          | Gurdurr           | 
+106          | Hitmonlee         | 
+308          | Medicham          | 
+560          | Scrafty           | 
+539          | Sawk              | 
+475          | Gallade           | 
+297          | Hariyama          | 
+Newline
+NSI to: 
+306          | Aggron            | 
+210          | Granbull          | 
+693          | Clawitzer         | 
+
+Newline
+Newline
+
+648          | Meloetta          | [B][U]Meloetta Checks[/U][/B]
+Newline
+GSI: 
+589          | Escavalier        | 
+Newline
+SSI: 
+208-m        | Steelix-Mega      | 
+199          | Slowking          | 
+229          | Houndoom          | 
+437          | Bronzong          | 
+452          | Drapion           | 
+442          | Spiritomb         | 
+379          | Registeel         | 
+435          | Skuntank          | 
+601          | Klinklang         | 
+Newline
+NSI: 
+632          | Durant            | 
+215          | Sneasel           | 
+510          | Liepard           | 
+359          | Absol             | 
+319          | Sharpedo          | 
+123          | Scyther           | 
+Newline
+GSI to: 
+561          | Sigilyph          | 
+124          | Jynx              | 
+Newline
+SSI to: 
+465          | Tangrowth         | 
+640          | Virizion          | 
+533          | Gurdurr           | 
+604          | Eelektross        | 
+Newline
+NSI to: 
+106          | Hitmonlee         | 
+142          | Aerodactyl        | 
+295          | Exploud           | 
+135          | Jolteon           | 
+539          | Sawk              | 
+306          | Aggron            | 
+475          | Gallade           | 
+354-m        | Banette-Mega      | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+621          | Druddigon         | [B][U]Druddigon Checks[/U][/B]
+Newline
+GSI: 
+594          | Alomomola         | 
+Newline
+SSI: 
+208-m        | Steelix-Mega      |  
+683          | Aromatisse        | 
+437          | Bronzong          | 
+589          | Escavalier        | 
+176          | Togetic           | 
+210          | Granbull          | 
+531-m        | Audino-Mega       | 
+379          | Registeel         | 
+601          | Klinklang         |  
+221          | Piloswine         | 
+Newline
+NSI: 
+460-m        | Abomasnow-Mega    | 
+697          | Tyrantrum         | 
+362-m        | Glalie-Mega       | 
+215          | Sneasel           | 
+330          | Flygon            | 
+110          | Weezing           | 
+479f         | Rotom-Frost       | 
+699          | Aurorus           | 
+Newline
+GSI to: 
+604          | Eelektross        | 
+Newline
+SSI to: 
+135          | Jolteon           | 
+666          | Vivillon          | 
+617          | Accelgor          | 
+
+Newline
+Newline
+
+655          | Delphox           | [B][U]Delphox Checks[/U][/B]
+Newline
+GSI: 
+199          | Slowking          | 
+Newline
+SSI: 
+697          | Tyrantrum         | 
+594          | Alomomola         | 
+330          | Flygon            | 
+323-m        | Camerupt-Mega     | 
+503          | Samurott          | 
+537          | Seismitoad        | 
+621          | Druddigon         | 
+593          | Jellicent         | 
+442          | Spiritomb         | 
+435          | Skuntank          | 
+229          | Houndoom          | 
+009          | Blastoise         | 
+693          | Clawitzer         | 
+Newline
+NSI: 
+215          | Sneasel           | 
+142          | Aerodactyl        | 
+632          | Durant            | 
+051          | Dugtrio           | 
+567          | Archeops          | 
+Newline
+GSI to: 
+124          | Jynx              | 
+Newline
+NSI to: 
+539          | Sawk              | 
+210          | Granbull          | 
+666          | Vivillon          | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+210          | Granbull          | [B][U]Granbull Checks[/U][/B]
+Newline
+GSI: 
+110          | Weezing           | 
+Newline
+SSI: 
+208-m        | Steelix-Mega      | 
+632          | Durant            | 
+500          | Emboar            | 
+211          | Qwilfish          | 
+437          | Bronzong          | 
+589          | Escavalier        | 
+306          | Aggron            | 
+591          | Amoonguss         | 
+045          | Vileplume         | 
+597          | Ferroseed         | 
+379          | Registeel         | 
+601          | Klinklang         | 
+594          | Alomomola         | 
+323-m        | Camerupt-Mega     | 
+Newline
+NSI: 
+465          | Tangrowth         | 
+655          | Delphox           | 
+295          | Exploud           | 
+693          | Clawitzer         | 
+Newline
+GSI to: 
+221          | Piloswine         | 
+687          | Malamar           | 
+475          | Gallade           | 
+Newline
+SSI to: 
+354-m        | Banette-Mega      | 
+617          | Accelgor          | 
+
+Newline
+Newline
+
+500          | Emboar            | [B][U] Emboar Checks[/U][/B]
+Newline
+GSI: 
+621          | Druddigon         | 
+Newline
+SSI: 
+697          | Tyrantrum         | 
+594          | Alomomola         | 
+330          | Flygon            | 
+199          | Slowking          | 
+323-m        | Camerupt-Mega     | 
+211          | Qwilfish          | 
+464          | Rhyperior         | 
+593          | Jellicent         | 
+481          | Mesprit           | 
+062          | Poliwrath         | 
+279          | Pelipper          | 
+423          | Gastrodon         | 
+171          | Lanturn           | 
+009          | Blastoise         | 
+537          | Seismitoad        | 
+195          | Quagsire          | 
+Newline
+NSI: 
+648          | Meloetta          | 
+662          | Fletchinder       | 
+655          | Delphox           | 
+503          | Samurott          | 
+308          | Medicham          | 
+319          | Sharpedo          | 
+142          | Aerodactyl        | 
+Newline
+GSI to: 
+465          | Tangrowth         | 
+215          | Sneasel           | 
+Newline
+SSI to: 
+362-m        | Glalie-Mega       | 
+640          | Virizion          | 
+589          | Escavalier        | 
+229          | Houndoom          | 
+479m         | Rotom-Mow         | 
+359          | Absol             | 
+452          | Drapion           | 
+210          | Granbull          | 
+221          | Piloswine         | 
+354-m        | Banette-Mega      | 
+617          | Accelgor          | 
+Newline
+NSI to: 
+560          | Scrafty           | 
+295          | Exploud           | 
+539          | Sawk              | 
+306          | Aggron            | 
+124          | Jynx              | 
+604          | Eelektross        | 
+687          | Malamar           | 
+
+Newline
+Newline
+
+628          | Braviary          | [B][U]Braviary Checks[/U][/B]
+Newline
+GSI: 
+437          | Bronzong          | 
+Newline
+SSI: 
+208-m        | Steelix-Mega      | 
+697          | Tyrantrum         | 
+594          | Alomomola         | 
+142          | Aerodactyl        | 
+464          | Rhyperior         | 
+442          | Spiritomb         | 
+306          | Aggron            | 
+604          | Eelektross        | 
+479          | Rotom             | 
+141          | Kabutops          | 
+082          | Magneton          | 
+139          | Omastar           | 
+379          | Registeel         | 
+479s         | Rotom-Fan         | 
+601          | Klinklang         | 
+699          | Aurorus           | 
+Newline
+NSI: 
+460-m        | Abomasnow-Mega    | 
+362-m        | Glalie-Mega       | 
+648          | Meloetta          | 
+319          | Sharpedo          | 
+662          | Fletchinder       | 
+229          | Houndoom          | 
+479m         | Rotom-Mow         | 
+215          | Sneasel           | 
+655          | Delphox           | 
+135          | Jolteon           | 
+124          | Jynx              | 
+
+Newline
+Newline
+
+693          | Clawitzer         | [B][U]Clawitzer Checks[/U][/B]
+Newline
+GSI: 
+062          | Poliwrath         | 
+594          | Alomomola         | 
+Newline
+SSI: 
+640          | Virizion          | 
+479m         | Rotom-Mow         | 
+589          | Escavalier        | 
+297          | Hariyama          | 
+272          | Ludicolo          | 
+Newline
+NSI: 
+106          | Hitmonlee         | 
+308          | Medicham          | 
+295          | Exploud           | 
+539          | Sawk              | 
+697          | Tyrantrum         | 
+604          | Eelektross        | 
+315          | Roselia           | 
+254          | Sceptile          | 
+275          | Shiftry           | 
+479f         | Rotom-Frost       | 
+479s         | Rotom-Fan         | 
+479          | Rotom             | 
+709          | Trevenant         | 
+135          | Jolteon           | 
+Newline
+SSI to: 
+221          | Piloswine         | 
+
+Newline
+Newline
+
+319          | Sharpedo          | [B][U]Sharpedo Checks[/U][/B]
+Newline
+GSI: 
+062          | Poliwrath         | 
+597          | Ferroseed         | 
+Newline
+SSI: 
+465          | Tangrowth         | 
+640          | Virizion          | 
+211          | Qwilfish          | 
+683          | Aromatisse        | 
+533          | Gurdurr           | 
+589          | Escavalier        | 
+503          | Samurott          | 
+604          | Eelektross        | 
+591          | Amoonguss         | 
+315          | Roselia           | 
+591          | Amoonguss         | 
+297          | Hariyama          | 
+346          | Cradily           | 
+045          | Vileplume         | 
+Newline
+NSI: 
+662          | Fletchinder       | 
+106          | Hitmonlee         | 
+Newline
+NSI to: 
+142          | Aerodactyl        | 
+452          | Drapion           | 
+306          | Aggron            | 
+124          | Jynx              | 
+617          | Accelgor          | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+460-m        | Abomasnow-Mega    | [B][U]Abomasnow-Mega Checks[/U][/B]
+Newline
+GSI: 
+589          | Escavalier        | 
+437          | Bronzong          | 
+Newline
+SSI: 
+208-m        | Steelix-Mega      | 
+632          | Durant            | 
+500          | Emboar            | 
+655          | Delphox           | 
+229          | Houndoom          | 
+533          | Gurdurr           | 
+062          | Poliwrath         | 
+379          | Registeel         | 
+601          | Klinklang         | 
+711          | Gourgeist         | 
+297          | Hariyama          | 
+693          | Clawitzer         | 
+503          | Samurott          |  
+082          | Magneton          | 
+144          | Articuno          | 
+Newline
+NSI: 
+662          | Fletchinder       | 
+323-m        | Camerupt-Mega     | 
+106          | Hitmonlee         | 
+560          | Scrafty           | 
+539          | Sawk              | 
+648          | Meloetta          | 
+308          | Medicham          |  
+295          | Exploud           | 
+475          | Gallade           | 
+687          | Malamar           | 
+237          | Hitmontop         | 
+141          | Kabutops          | 
+689          | Barbaracle        | 
+306          | Aggron            | 
+Newline
+GSI to: 
+479m         | Rotom-Mow         | 
+221          | Piloswine         | 
+Newline
+SSI to: 
+208-m        | Steelix-Mega      | 
+199          | Slowking          | 
+330          | Flygon            | 
+465          | Tangrowth         | 
+503          | Samurott          | 
+215          | Sneasel           | 
+135          | Jolteon           | 
+Newline
+NSI to: 
+362-m        | Glalie-Mega       | 
+640          | Virizion          | 
+452          | Drapion           | 
+621          | Druddigon         | 
+617          | Accelgor          | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+330          | Flygon            | [B][U]Flygon Checks[/U][/B]
+Newline
+GSI: 
+437          | Bronzong          | 
+594          | Alomomola         | 
+Newline
+SSI: 
+460-m        | Abomasnow-Mega    | 
+632          | Durant            | 
+465          | Tangrowth         | 
+464          | Rhyperior         | 
+537          | Seismitoad        | 
+062          | Poliwrath         | 
+195          | Quagsire          | 
+591          | Amoonguss         | 
+711          | Gourgeist         | 
+460          | Abomasnow         | 
+479f         | Rotom-Frost       | 
+009          | Blastoise         | 
+199          | Slowking          | 
+593          | Jellicent         | 
+210          | Granbull          | 
+683          | Aromatisse        | 
+176          | Togetic           | 
+531-m        | Audino-Mega       | 
+221          | Piloswine         | 
+Newline
+NSI: 
+362-m        | Glalie-Mega       | 
+215          | Sneasel           | 
+124          | Jynx              | 
+308          | Medicham          | 
+Newline
+GSI to: 
+452          | Drapion           | 
+Newline
+SSI to: 
+323-m        | Camerupt-Mega     | 
+229          | Houndoom          | 
+479m         | Rotom-Mow         | 
+142          | Aerodactyl        | 
+655          | Delphox           | 
+135          | Jolteon           | 
+306          | Aggron            | 
+617          | Accelgor          | 
+Newline
+NSI to: 
+503          | Samurott          | 
+621          | Druddigon         | 
+
+Newline
+Newline
+
+539          | Sawk              | [B][U] Sawk Checks[/U][/B]
+Newline
+GSI: 
+442          | Spiritomb         | 
+110          | Weezing           | 
+Newline
+SSI: 
+594          | Alomomola         | 
+199          | Slowking          | 
+211          | Qwilfish          | 
+561          | Sigilyph          | 
+683          | Aromatisse        | 
+481          | Mesprit           | 
+593          | Jellicent         | 
+176          | Togetic           | 
+480          | Uxie              | 
+591          | Amoonguss         | 
+210          | Granbull          | 
+479          | Rotom             | 
+354-m        | Banette-Mega      | 
+279          | Pelipper          | 
+711          | Gourgeist         | 
+479s         | Rotom-Fan         | 
+042          | Golbat            | 
+569          | Garbodor          | 
+518          | Musharna          | 
+123          | Scyther           | 
+662          | Fletchinder       | 
+666          | Vivillon          | 
+Newline
+NSI: 
+697          | Tyrantrum         | 
+640          | Virizion          | 
+648          | Meloetta          | 
+632          | Durant            | 
+362-m        | Glalie-Mega       | 
+465          | Tangrowth         | 
+142          | Aerodactyl        | 
+500          | Emboar            | 
+106          | Hitmonlee         | 
+308          | Medicham          | 
+655          | Delphox           | 
+475          | Gallade           | 
+628          | Braviary          | 
+124          | Jynx              | 
+567          | Archeops          | 
+Newline
+SSI to: 
+687          | Malamar           | 
+Newline
+NSI to: 
+306          | Aggron            | 
+693          | Clawitzer         | 
+221          | Piloswine         | 
+
+Newline
+Newline
+
+604          | Eelektross        | [B][U]Eelektross Checks[/U][/B]
+Newline
+GSI: 
+297          | Hariyama          | 
+621          | Druddigon         | 
+323-m        | Camerupt-Mega     | 
+Newline
+SSI: 
+648          | Meloetta          | 
+221          | Piloswine         | 
+560          | Scrafty           | 
+640          | Virizion          | 
+379          | Registeel         | 
+687          | Malamar           | 
+Newline
+NSI: 
+106          | Hitmonlee         | 
+500          | Emboar            | 
+475          | Gallade           | 
+389          | Torterra          | 
+697          | Tyrantrum         | 
+Newline
+GSI to: 
+666          | Vivillon          | 
+Newline
+SSI to: 
+617          | Accelgor          | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+589          | Escavalier        | [B][U]Escavalier Checks[/U][/B]
+Newline
+GSI: 
+062          | Poliwrath         | 
+662          | Fletchinder       | 
+279          | Pelipper          | 
+Newline
+SSI: 
+594          | Alomomola         | 
+500          | Emboar            | 
+323-m        | Camerupt-Mega     | 
+537          | Seismitoad        | 
+593          | Jellicent         | 
+711          | Gourgeist         | 
+195          | Quagsire          | 
+009          | Blastoise         | 
+211          | Qwilfish          | 
+208-m        | Steelix-Mega      | 
+Newline
+NSI: 
+655          | Delphox           | 
+229          | Houndoom          | 
+082          | Magneton          | 
+561          | Sigilyph          | 
+306          | Aggron            | 
+Newline
+GSI to: 
+479m         | Rotom-Mow         | 
+135          | Jolteon           | 
+124          | Jynx              | 
+666          | Vivillon          | 
+617          | Accelgor          | 
+Newline
+SSI to: 
+215          | Sneasel           | 
+319          | Sharpedo          | 
+621          | Druddigon         | 
+295          | Exploud           | 
+210          | Granbull          | 
+693          | Clawitzer         | 
+687          | Malamar           | 
+
+Newline
+Newline
+
+229          | Houndoom          | [B][U]Houndoom Checks[/U][/B]
+Newline
+GSI: 
+062          | Poliwrath         | 
+423          | Gastrodon         | 
+297          | Hariyama          | 
+Newline
+SSI: 
+330          | Flygon            | 
+323-m        | Camerupt-Mega     | 
+464          | Rhyperior         | 
+594          | Alomomola         | 
+621          | Druddigon         | 
+171          | Lanturn           | 
+009          | Blastoise         | 
+533          | Gurdurr           | 
+537          | Seismitoad        | 
+346          | Cradily           | 
+229          | Houndoom          | 
+500          | Emboar            | 
+Newline
+NSI: 
+640          | Virizion          | 
+106          | Hitmonlee         | 
+503          | Samurott          | 
+215          | Sneasel           | 
+632          | Durant            | 
+319          | Sharpedo          | 
+142          | Aerodactyl        | 
+662          | Fletchinder       | 
+051          | Dugtrio           | 
+687          | Malamar           | 
+693          | Clawitzer         | 
+237          | Hitmontop         | 
+567          | Archeops          | 
+141          | Kabutops          | 
+128          | Tauros            | 
+123          | Scyther           | 
+Newline
+GSI to: 
+354-m        | Banette-Mega      | 
+Newline
+SSI to: 
+655          | Delphox           | 
+124          | Jynx              | 
+Newline
+NSI to: 
+666          | Vivillon          | 
+475          | Gallade           | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+503          | Samurott          | [B][U]Samurott Checks[/U][/B]
+Newline
+GSI: 
+171          | Lanturn           | 
+593          | Jellicent         | 
+062          | Poliwrath         | 
+Newline
+SSI: 
+460-m        | Abomasnow-Mega    | 
+199          | Slowking          | 
+640          | Virizion          | 
+479m         | Rotom-Mow         | 
+604          | Eelektross        | 
+315          | Roselia           | 
+597          | Ferroseed         | 
+082          | Magneton          | 
+479f         | Rotom-Frost       | 
+479s         | Rotom-Fan         | 
+272          | Ludicolo          | 
+045          | Vileplume         | 
+211          | Qwilfish          | 
+711          | Gourgeist         | 
+Newline
+NSI: 
+330          | Flygon            | 
+465          | Tangrowth         | 
+135          | Jolteon           | 
+124          | Jynx              | 
+479f         | Rotom-Frost       | 
+479s         | Rotom-Fan         | 
+254          | Sceptile          | 
+275          | Shiftry           | 
+Newline
+SSI to: 
+319          | Sharpedo          | 
+655          | Delphox           | 
+687          | Malamar           | 
+Newline
+NSI to: 
+306          | Aggron            | 
+617          | Accelgor          | 
+
+Newline
+Newline
+
+632          | Durant            | [B][U]Durant Checks[/U][/B]
+Newline
+GSI: 
+500          | Emboar            | 
+211          | Qwilfish          | 
+479s         | Rotom-Fan         | 
+Newline
+SSI: 
+594          | Alomomola         | 
+662          | Fletchinder       | 
+323-m        | Camerupt-Mega     | 
+537          | Seismitoad        | 
+479          | Rotom             | 
+171          | Lanturn           | 
+082          | Magneton          | 
+711          | Gourgeist         | 
+208-m        | Steelix-Mega      | 
+593          | Jellicent         | 
+279          | Pelipper          | 
+211          | Qwilfish          | 
+009          | Blastoise         | 
+437          | Bronzong          | 
+062          | Poliwrath         | 
+Newline
+NSI: 
+135          | Jolteon           | 
+308          | Medicham          | 
+319          | Sharpedo          | 
+Newline
+SSI to: 
+330          | Flygon            | 
+362-m        | Glalie-Mega       | 
+561          | Sigilyph          | 
+465          | Tangrowth         | 
+640          | Virizion          | 
+215          | Sneasel           | 
+452          | Drapion           | 
+210          | Granbull          | 
+687          | Malamar           | 
+Newline
+NSI to: 
+648          | Meloetta          | 
+229          | Houndoom          | 
+479m         | Rotom-Mow         | 
+359          | Absol             | 
+142          | Aerodactyl        | 
+655          | Delphox           | 
+295          | Exploud           | 
+539          | Sawk              | 
+306          | Aggron            | 
+124          | Jynx              | 
+475          | Gallade           | 
+
+Newline
+Newline
+
+199          | Slowking          | [B][U]Slowking Checks[/U][/B]
+Newline
+GSI: 
+604          | Eelektross        | 
+199          | Slowking          | 
+171          | Lanturn           | 
+Newline
+SSI: 
+460-m        | Abomasnow-Mega    | 
+465          | Tangrowth         | 
+589          | Escavalier        | 
+479m         | Rotom-Mow         | 
+560          | Scrafty           | 
+711          | Gourgeist         | 
+479          | Rotom             | 
+275          | Shiftry           | 
+389          | Torterra          | 
+479f         | Rotom-Frost       | 
+479s         | Rotom-Fan         | 
+429          | Mismagius         | 
+648          | Meloetta          | 
+465          | Tangrowth         | 
+319          | Sharpedo          | 
+009          | Blastoise         | 
+503          | Samurott          | 
+693          | Clawitzer         | 
+124          | Jynx              | 
+346          | Cradily           | 
+272          | Ludicolo          | 
+Newline
+NSI: 
+632          | Durant            | 
+215          | Sneasel           | 
+135          | Jolteon           | 
+359          | Absol             | 
+687          | Malamar           | 
+254          | Sceptile          | 
+510          | Liepard           | 
+123          | Scyther           | 
+Newline
+GSI to: 
+362-m        | Glalie-Mega       | 
+561          | Sigilyph          | 
+323-m        | Camerupt-Mega     | 
+655          | Delphox           | 
+221          | Piloswine         | 
+124          | Jynx              | 
+Newline
+SSI to: 
+500          | Emboar            | 
+662          | Fletchinder       | 
+330          | Flygon            | 
+648          | Meloetta          | 
+106          | Hitmonlee         | 
+503          | Samurott          | 
+533          | Gurdurr           | 
+142          | Aerodactyl        | 
+308          | Medicham          | 
+539          | Sawk              | 
+
+Newline
+Newline
+
+475          | Gallade           | [B][U]Gallade Checks[/U][/B]
+Newline
+GSI: 
+442          | Spiritomb         | 
+210          | Granbull          | 
+683          | Aromatisse        | 
+176          | Togetic           | 
+Newline
+SSI: 
+195          | Quagsire          | 
+480          | Uxie              | 
+561          | Sigilyph          | 
+Newline
+NSI: 
+628          | Braviary          | 
+662          | Fletchinder       | 
+215          | Sneasel           | 
+229          | Houndoom          | 
+648          | Meloetta          | 
+481          | Mesprit           | 
+632          | Durant            | 
+
+Newline
+Newline
+
+560          | Scrafty           | [B][U]Scrafty Checks[/U][/B]
+Newline
+GSI: 
+237          | Hitmontop         | 
+042          | Golbat            | 
+045          | Vileplume         | 
+591          | Amoonguss         | 
+Newline
+SSI: 
+640          | Virizion          | 
+621          | Druddigon         | 
+279          | Pelipper          | 
+479s         | Rotom-Fan         | 
+297          | Hariyama          | 
+683          | Aromatisse        | 
+533          | Gurdurr           | 
+062          | Poliwrath         | 
+176          | Togetic           | 
+531-m        | Audino-Mega       | 
+210          | Granbull          | 
+Newline
+NSI: 
+662          | Fletchinder       | 
+308          | Medicham          | 
+500          | Emboar            | 
+Newline
+SSI to: 
+215          | Sneasel           | 
+604          | Eelektross        | 
+354-m        | Banette-Mega      | 
+Newline
+NSI to: 
+295          | Exploud           | 
+306          | Aggron            | 
+221          | Piloswine         | 
+
+Newline
+Newline
+
+323-m        | Camerupt-Mega     | [B][U]Camerupt-Mega Checks[/U][/B]
+Newline
+GSI: 
+199          | Slowking          | 
+537          | Seismitoad        | 
+593          | Jellicent         | 
+279          | Pelipper          | 
+Newline
+SSI: 
+330          | Flygon            | 
+211          | Qwilfish          | 
+503          | Samurott          | 
+062          | Poliwrath         | 
+195          | Quagsire          | 
+693          | Clawitzer         | 
+171          | Lanturn           | 
+297          | Hariyama          | 
+594          | Alomomola         | 
+009          | Blastoise         | 
+464          | Rhyperior         | 
+423          | Gastrodon         | 
+Newline
+NSI: 
+051          | Dugtrio           | 
+319          | Sharpedo          | 
+306          | Aggron            | 
+141          | Kabutops          | 
+139          | Omastar           | 
+689          | Barbaracle        | 
+272          | Ludicolo          | 
+Newline
+GSI to: 
+604          | Eelektross        | 
+617          | Accelgor          | 
+Newline
+SSI to: 
+589          | Escavalier        | 
+229          | Houndoom          | 
+479m         | Rotom-Mow         | 
+215          | Sneasel           | 
+655          | Delphox           | 
+135          | Jolteon           | 
+210          | Granbull          | 
+124          | Jynx              | 
+354-m        | Banette-Mega      | 
+Newline
+NSI to: 
+452          | Drapion           | 
+
+Newline
+Newline
+
+561          | Sigilyph          | [B][U]Sigilyph Checks[/U][/B]
+Newline
+GSI: 
+648          | Meloetta          | 
+199          | Slowking          | 
+604          | Eelektross        | 
+346          | Cradily           | 
+Newline
+SSI: 
+208-m        | Steelix-Mega      | 
+697          | Tyrantrum         | 
+632          | Durant            | 
+362-m        | Glalie-Mega       | 
+655          | Delphox           | 
+452          | Drapion           | 
+135          | Jolteon           | 
+221          | Piloswine         | 
+479          | Rotom             | 
+275          | Shiftry           | 
+082          | Magneton          | 
+479f         | Rotom-Frost       | 
+479s         | Rotom-Fan         | 
+442          | Spiritomb         | 
+435          | Skuntank          | 
+Newline
+NSI: 
+323-m        | Camerupt-Mega     | 
+479m         | Rotom-Mow         | 
+215          | Sneasel           | 
+229          | Houndoom          | 
+359          | Absol             | 
+510          | Liepard           | 
+319          | Sharpedo          | 
+142          | Aerodactyl        | 
+567          | Archeops          | 
+123          | Scyther           | 
+Newline
+SSI to: 
+465          | Tangrowth         | 
+640          | Virizion          | 
+106          | Hitmonlee         | 
+533          | Gurdurr           | 
+308          | Medicham          | 
+539          | Sawk              | 
+475          | Gallade           | 
+Newline
+NSI to: 
+589          | Escavalier        | 
+666          | Vivillon          | 
+
+Newline
+Newline
+
+640          | Virizion          | [B][U]Virizion Checks[/U][/B]
+Newline
+GSI: 
+480          | Uxie              | 
+110          | Weezing           | 
+569          | Garbodor          | 
+709          | Trevenant         | 
+Newline
+SSI: 
+648          | Meloetta          | 
+632          | Durant            | 
+500          | Emboar            | 
+662          | Fletchinder       | 
+465          | Tangrowth         | 
+655          | Delphox           | 
+176          | Togetic           | 
+628          | Braviary          | 
+479s         | Rotom-Fan         | 
+683          | Aromatisse        | 
+591          | Amoonguss         | 
+315          | Roselia           | 
+045          | Vileplume         | 
+103          | Exeggutor         | 
+042          | Golbat            | 
+711          | Gourgeist         | 
+210          | Granbull          | 
+561          | Sigilyph          | 
+Newline
+NSI: 
+215          | Sneasel           | 
+481          | Mesprit           | 
+308          | Medicham          | 
+460-m        | Abomasnow-Mega    | 
+362-m        | Glalie-Mega       | 
+142          | Aerodactyl        |  
+567          | Archeops          | 
+123          | Scyther           | 
+Newline
+GSI to: 
+479m         | Rotom-Mow         | 
+Newline
+SSI to: 
+503          | Samurott          | 
+560          | Scrafty           | 
+319          | Sharpedo          | 
+135          | Jolteon           | 
+693          | Clawitzer         | 
+221          | Piloswine         | 
+604          | Eelektross        | 
+617          | Accelgor          | 
+Newline
+NSI to: 
+229          | Houndoom          | 
+359          | Absol             | 
+295          | Exploud           | 
+539          | Sawk              | 
+306          | Aggron            | 
+124          | Jynx              | 
+
+Newline
+Newline
+
+697          | Tyrantrum         | [B][U]Tyrantrum Checks[/U][/B]
+Newline
+GSI: 
+208-m        | Steelix-Mega      | 
+464          | Rhyperior         | 
+437          | Bronzong          | 
+303          | Mawile            | 
+Newline
+SSI: 
+594          | Alomomola         | 
+199          | Slowking          | 
+465          | Tangrowth         | 
+683          | Aromatisse        | 
+589          | Escavalier        | 
+537          | Seismitoad        | 
+533          | Gurdurr           | 
+062          | Poliwrath         | 
+195          | Quagsire          | 
+531-m        | Audino-Mega       | 
+389          | Torterra          | 
+597          | Ferroseed         | 
+711          | Gourgeist         | 
+210          | Granbull          | 
+237          | Hitmontop         | 
+221          | Piloswine         | 
+379          | Registeel         | 
+601          | Klinklang         | 
+306          | Aggron            | 
+Newline
+NSI: 
+632          | Durant            | 
+330          | Flygon            | 
+362-m        | Glalie-Mega       | 
+640          | Virizion          | 
+323-m        | Camerupt-Mega     | 
+106          | Hitmonlee         | 
+560          | Scrafty           | 
+215          | Sneasel           | 
+051          | Dugtrio           | 
+475          | Gallade           | 
+539          | Sawk              | 
+297          | Hariyama          | 
+648          | Meloetta          | 
+319          | Sharpedo          | 
+500          | Emboar            | 
+308          | Medicham          | 
+479m         | Rotom-Mow         | 
+Newline
+SSI to: 
+500          | Emboar            | 
+662          | Fletchinder       | 
+561          | Sigilyph          | 
+655          | Delphox           | 
+666          | Vivillon          | 
+628          | Braviary          | 
+Newline
+NSI to: 
+362-m        | Glalie-Mega       | 
+142          | Aerodactyl        | 
+452          | Drapion           | 
+621          | Druddigon         | 
+295          | Exploud           | 
+539          | Sawk              | 
+693          | Clawitzer         | 
+604          | Eelektross        | 
+
+Newline
+Newline
+
+465          | Tangrowth         | [B][U]Tangrowth Checks[/U][/B]
+Newline
+GSI: 
+500          | Emboar            | 
+315          | Roselia           | 
+042          | Golbat            | 
+110          | Weezing           | 
+Newline
+SSI: 
+648          | Meloetta          | 
+460-m        | Abomasnow-Mega    | 
+632          | Durant            | 
+662          | Fletchinder       | 
+561          | Sigilyph          | 
+465          | Tangrowth         | 
+655          | Delphox           | 
+229          | Houndoom          | 
+621          | Druddigon         | 
+617          | Accelgor          | 
+666          | Vivillon          | 
+479f         | Rotom-Frost       | 
+479s         | Rotom-Fan         | 
+589          | Escavalier        | 
+591          | Amoonguss         | 
+628          | Braviary          | 
+452          | Drapion           | 
+435          | Skuntank          | 
+569          | Garbodor          | 
+045          | Vileplume         | 
+123          | Scyther           | 
+Newline
+NSI: 
+362-m        | Glalie-Mega       | 
+215          | Sneasel           | 
+295          | Exploud           | 
+142          | Aerodactyl        | 
+567          | Archeops          | 
+Newline
+GSI to: 
+359          | Absol             | 
+221          | Piloswine         | 
+Newline
+SSI to: 
+640          | Virizion          | 
+479m         | Rotom-Mow         | 
+533          | Gurdurr           | 
+319          | Sharpedo          | 
+Newline
+NSI to: 
+503          | Samurott          | 
+308          | Medicham          | 
+539          | Sawk              | 
+306          | Aggron            | 
+210          | Granbull          | 
+
+Newline
+Newline
+
+662          | Fletchinder       | [B][U] Fletchinder Checks[/U][/B]
+Newline
+GSI: 
+479          | Rotom             | 
+171          | Lanturn           | 
+139          | Omastar           | 
+479s         | Rotom-Fan         | 
+479f         | Rotom-Frost       | 
+Newline
+SSI: 
+697          | Tyrantrum         | 
+135          | Jolteon           | 
+604          | Eelektross        | 
+689          | Barbaracle        | 
+142          | Aerodactyl        | 
+567          | Archeops          | 
+208-m        | Steelix-Mega      | 
+594          | Alomomola         | 
+199          | Slowking          | 
+211          | Qwilfish          | 
+464          | Rhyperior         | 
+537          | Seismitoad        | 
+593          | Jellicent         | 
+195          | Quagsire          | 
+082          | Magneton          | 
+009          | Blastoise         | 
+306          | Aggron            |  
+601          | Klinklang         | 
+Newline
+NSI: 
+503          | Samurott          | 
+621          | Druddigon         | 
+Newline
+GSI to: 
+589          | Escavalier        | 
+Newline
+SSI to: 
+465          | Tangrowth         | 
+640          | Virizion          | 
+539          | Sawk              | 
+617          | Accelgor          | 
+Newline
+NSI to: 
+106          | Hitmonlee         | 
+229          | Houndoom          | 
+560          | Scrafty           | 
+319          | Sharpedo          | 
+124          | Jynx              | 
+666          | Vivillon          | 
+475          | Gallade           | 
+354-m        | Banette-Mega      | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+687          | Malamar           | [B][U]Malamar Checks[/U][/B]
+Newline
+GSI: 
+683          | Aromatisse        | 
+210          | Granbull          | 
+176          | Togetic           | 
+195          | Quagsire          | 
+531-m        | Audino-Mega       | 
+045          | Vileplume         | 
+Newline
+SSI: 
+632          | Durant            | 
+589          | Escavalier        | 
+503          | Samurott          | 
+062          | Poliwrath         | 
+533          | Gurdurr           | 
+481          | Mesprit           | 
+539          | Sawk              | 
+591          | Amoonguss         | 
+628          | Braviary          | 
+Newline
+NSI: 
+617          | Accelgor          | 
+135          | Jolteon           | 
+666          | Vivillon          | 
+123          | Scyther           | 
+500          | Emboar            | 
+106          | Hitmonlee         | 
+
+Newline
+Newline
+
+306          | Aggron            | [B][U]Aggron Checks[/U][/B]
+Newline
+GSI: 
+537          | Seismitoad        | 
+437          | Bronzong          | 
+062          | Poliwrath         | 
+389          | Torterra          | 
+423          | Gastrodon         | 
+195          | Quagsire          | 
+Newline
+SSI: 
+208-m        | Steelix-Mega      | 
+330          | Flygon            | 
+464          | Rhyperior         | 
+306          | Aggron            | 
+237          | Hitmontop         | 
+597          | Ferroseed         | 
+297          | Hariyama          | 
+379          | Registeel         | 
+601          | Klinklang         | 
+Newline
+NSI: 
+359          | Absol             | 
+632          | Durant            | 
+648          | Meloetta          | 
+319          | Sharpedo          | 
+465          | Tangrowth         | 
+640          | Virizion          | 
+009          | Blastoise         | 
+500          | Emboar            | 
+533          | Gurdurr           | 
+106          | Hitmonlee         | 
+308          | Medicham          | 
+503          | Samurott          | 
+560          | Scrafty           | 
+295          | Exploud           | 
+539          | Sawk              | 
+475          | Gallade           | 
+051          | Dugtrio           | 
+628          | Braviary          | 
+221          | Piloswine         | 
+567          | Archeops          | 
+141          | Kabutops          | 
+139          | Omastar           | 
+Newline
+SSI to: 
+210          | Granbull          | 
+666          | Vivillon          | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+359          | Absol             | [B][U]Absol Checks[/U][/B]
+Newline
+GSI: 
+533          | Gurdurr           | 
+062          | Poliwrath         | 
+465          | Tangrowth         | 
+009          | Blastoise         | 
+237          | Hitmontop         | 
+297          | Hariyama          | 
+Newline
+SSI: 
+208-m        | Steelix-Mega      | 
+500          | Emboar            | 
+211          | Qwilfish          | 
+464          | Rhyperior         | 
+537          | Seismitoad        | 
+176          | Togetic           | 
+683          | Aromatisse        | 
+210          | Granbull          | 
+195          | Quagsire          | 
+279          | Pelipper          | 
+110          | Weezing           | 
+591          | Amoonguss         | 
+452          | Drapion           | 
+Newline
+NSI: 
+640          | Virizion          | 
+632          | Durant            | 
+106          | Hitmonlee         | 
+539          | Sawk              | 
+123          | Scyther           | 
+Newline
+NSI to: 
+308          | Medicham          | 
+295          | Exploud           | 
+306          | Aggron            | 
+124          | Jynx              | 
+617          | Accelgor          | 
+
+Newline
+Newline
+
+308          | Medicham          | [B][U]Medicham Checks[/U][/B]
+Newline
+GSI: 
+442          | Spiritomb         | 
+480          | Uxie              | 
+210          | Granbull          | 
+563          | Cofagrigus        | 
+711          | Gourgeist         | 
+518          | Musharna          | 
+Newline
+SSI: 
+594          | Alomomola         | 
+211          | Qwilfish          | 
+561          | Sigilyph          | 
+683          | Aromatisse        | 
+199          | Slowking          | 
+593          | Jellicent         | 
+481          | Mesprit           | 
+176          | Togetic           | 
+279          | Pelipper          | 
+110          | Weezing           | 
+178          | Xatu              | 
+042          | Golbat            | 
+045          | Vileplume         | 
+591          | Amoonguss         | 
+123          | Scyther           | 
+Newline
+NSI: 
+359          | Absol             | 
+465          | Tangrowth         | 
+655          | Delphox           | 
+621          | Druddigon         | 
+Newline
+NSI to: 
+295          | Exploud           | 
+135          | Jolteon           | 
+539          | Sawk              | 
+306          | Aggron            | 
+693          | Clawitzer         | 
+221          | Piloswine         | 
+
+Newline
+Newline
+
+617          | Accelgor          | [B][U]Accelgor Checks[/U][/B]
+Newline
+GSI: 
+437          | Bronzong          | 
+323-m        | Camerupt-Mega     | 
+589          | Escavalier        | 
+591          | Amoonguss         | 
+297          | Hariyama          | 
+042          | Golbat            | 
+Newline
+SSI: 
+594          | Alomomola         | 
+330          | Flygon            | 
+640          | Virizion          | 
+142          | Aerodactyl        | 
+009          | Blastoise         | 
+500          | Emboar            | 
+662          | Fletchinder       | 
+537          | Seismitoad        | 
+533          | Gurdurr           | 
+621          | Druddigon         | 
+593          | Jellicent         | 
+442          | Spiritomb         | 
+604          | Eelektross        | 
+062          | Poliwrath         | 
+195          | Quagsire          | 
+423          | Gastrodon         | 
+171          | Lanturn           | 
+045          | Vileplume         | 
+210          | Granbull          | 
+683          | Aromatisse        | 
+176          | Togetic           | 
+Newline
+NSI: 
+460-m        | Abomasnow-Mega    | 
+359          | Absol             | 
+362-m        | Glalie-Mega       | 
+319          | Sharpedo          | 
+106          | Hitmonlee         | 
+503          | Samurott          | 
+
+Newline
+Newline
+
+124          | Jynx              | [B][U]Jynx Checks[/U][/B]
+Newline
+GSI: 
+437          | Bronzong          | 
+589          | Escavalier        | 
+655          | Delphox           | 
+648          | Meloetta          | 
+531-m        | Audino-Mega       | 
+199          | Slowking          | 
+687          | Malamar           | 
+Newline
+SSI: 
+208-m        | Steelix-Mega      | 
+442          | Spiritomb         | 
+683          | Aromatisse        | 
+229          | Houndoom          | 
+323-m        | Camerupt-Mega     | 
+Newline
+NSI: 
+632          | Durant            | 
+319          | Sharpedo          | 
+142          | Aerodactyl        | 
+362-m        | Glalie-Mega       | 
+359          | Absol             | 
+662          | Fletchinder       | 
+500          | Emboar            | 
+640          | Virizion          | 
+Newline
+NSI to: 
+666          | Vivillon          | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+452          | Drapion           | [B][U]Drapion Checks[/U][/B]
+Newline
+GSI: 
+208-m        | Steelix-Mega      | 
+330          | Flygon            |   
+537          | Seismitoad        | 
+062          | Poliwrath         | 
+195          | Quagsire          | 
+237          | Hitmontop         | 
+110          | Weezing           | 
+Newline
+SSI: 
+009          | Blastoise         | 
+594          | Alomomola         | 
+632          | Durant            | 
+452          | Drapion           | 
+500          | Emboar            | 
+211          | Qwilfish          | 
+306          | Aggron            | 
+379          | Registeel         | 
+389          | Torterra          | 
+423          | Gastrodon         | 
+464          | Rhyperior         | 
+Newline
+NSI: 
+697          | Tyrantrum         | 
+362-m        | Glalie-Mega       | 
+319          | Sharpedo          | 
+142          | Aerodactyl        | 
+323-m        | Camerupt-Mega     | 
+308          | Medicham          | 
+655          | Delphox           | 
+460-m        | Abomasnow-Mega    | 
+295          | Exploud           | 
+051          | Dugtrio           | 
+693          | Clawitzer         | 
+Newline
+GSI to: 
+354-m        | Banette-Mega      | 
+
+Newline
+Newline
+
+666          | Vivillon          | [B][U]Vivillon Checks[/U][/B]
+Newline
+GSI: 
+208-m        | Steelix-Mega      | 
+604          | Eelektross        | 
+479s         | Rotom-Fan         | 
+589          | Escavalier        | 
+437          | Bronzong          | 
+082          | Magneton          | 
+379          | Registeel         | 
+Newline
+SSI: 
+697          | Tyrantrum         | 
+479          | Rotom             | 
+135          | Jolteon           | 
+306          | Aggron            | 
+171          | Lanturn           | 
+142          | Aerodactyl        | 
+464          | Rhyperior         | 
+346          | Cradily           | 
+479f         | Rotom-Frost       | 
+567          | Archeops          | 
+621          | Druddigon         | 
+Newline
+NSI: 
+479m         | Rotom-Mow         | 
+362-m        | Glalie-Mega       | 
+229          | Houndoom          | 
+215          | Sneasel           | 
+662          | Fletchinder       | 
+655          | Delphox           | 
+124          | Jynx              | 
+561          | Sigilyph          | 
+442          | Spiritomb         | 
+
+Newline
+Newline
+
+533          | Gurdurr           | [B][U]Gurdurr Checks[/U][/B]
+Newline
+GSI: 
+683          | Aromatisse        | 
+210          | Granbull          | 
+176          | Togetic           | 
+591          | Amoonguss         | 
+195          | Quagsire          | 
+279          | Pelipper          | 
+045          | Vileplume         | 
+Newline
+SSI: 
+648          | Meloetta          | 
+199          | Slowking          | 
+465          | Tangrowth         | 
+561          | Sigilyph          | 
+308          | Medicham          | 
+655          | Delphox           | 
+481          | Mesprit           | 
+475          | Gallade           | 
+628          | Braviary          | 
+666          | Vivillon          | 
+479s         | Rotom-Fan         | 
+178          | Xatu              | 
+144          | Articuno          | 
+042          | Golbat            | 
+103          | Exeggutor         | 
+123          | Scyther           | 
+Newline
+NSI: 
+142          | Aerodactyl        | 
+567          | Archeops          | 
+Newline
+GSI to: 
+359          | Absol             | 
+221          | Piloswine         | 
+354-m        | Banette-Mega      | 
+Newline
+SSI to: 
+319          | Sharpedo          | 
+142          | Aerodactyl        | 
+687          | Malamar           | 
+617          | Accelgor          | 
+Newline
+NSI to: 
+295          | Exploud           | 
+306          | Aggron            | 
+
+Newline
+Newline
+
+362-m        | Glalie-Mega       | [B][U]Glalie-Mega Checks[/U][/B]
+Newline
+GSI: 
+208-m        | Steelix-Mega      | 
+199          | Slowking          | 
+437          | Bronzong          | 
+237          | Hitmontop         | 
+210          | Granbull          | 
+221          | Piloswine         | 
+297          | Hariyama          | 
+Newline
+SSI: 
+594          | Alomomola         | 
+500          | Emboar            | 
+683          | Aromatisse        | 
+655          | Delphox           | 
+211          | Qwilfish          | 
+215          | Sneasel           | 
+533          | Gurdurr           | 
+593          | Jellicent         | 
+062          | Poliwrath         | 
+195          | Quagsire          | 
+082          | Magneton          | 
+379          | Registeel         | 
+479f         | Rotom-Frost       | 
+601          | Klinklang         | 
+306          | Aggron            | 
+009          | Blastoise         | 
+632          | Durant            | 
+589          | Escavalier        | 
+Newline
+NSI: 
+697          | Tyrantrum         | 
+460-m        | Abomasnow-Mega    | 
+323-m        | Camerupt-Mega     | 
+106          | Hitmonlee         | 
+560          | Scrafty           | 
+308          | Medicham          | 
+Newline
+SSI to: 
+561          | Sigilyph          | 
+Newline
+NSI to: 
+465          | Tangrowth         | 
+640          | Virizion          | 
+479m         | Rotom-Mow         | 
+452          | Drapion           | 
+621          | Druddigon         | 
+135          | Jolteon           | 
+539          | Sawk              | 
+124          | Jynx              | 
+666          | Vivillon          | 
+617          | Accelgor          | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+479m         | Rotom-Mow         | [B][U]Rotom-Mow[/U][/B]
+Newline
+GSI: 
+460-m        | Abomasnow-Mega    | 
+640          | Virizion          | 
+589          | Escavalier        | 
+591          | Amoonguss         | 
+315          | Roselia           | 
+597          | Ferroseed         | 
+709          | Trevenant         | 
+045          | Vileplume         | 
+Newline
+SSI: 
+500          | Emboar            | 
+465          | Tangrowth         | 
+323-m        | Camerupt-Mega     | 
+655          | Delphox           | 
+531-m        | Audino-Mega       | 
+531          | Audino            | 
+711          | Gourgeist         | 
+176          | Togetic           | 
+330          | Flygon            | 
+569          | Garbodor          | 
+Newline
+NSI: 
+362-m        | Glalie-Mega       | 
+617          | Accelgor          | 
+275          | Shiftry           | 
+632          | Durant            | 
+215          | Sneasel           | 
+124          | Jynx              | 
+479f         | Rotom-Frost       | 
+479s         | Rotom-Fan         | 
+123          | Scyther           | 
+254          | Sceptile          | 
+Newline
+SSI to: 
+503          | Samurott          | 
+135          | Jolteon           | 
+693          | Clawitzer         | 
+Newline
+NSI to: 
+142          | Aerodactyl        | 
+666          | Vivillon          | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+142          | Aerodactyl        | [B][U]Aerodactyl Checks[/U][/B]
+Newline
+GSI: 
+208-m        | Steelix-Mega      | 
+594          | Alomomola         | 
+009          | Blastoise         | 
+537          | Seismitoad        | 
+437          | Bronzong          | 
+195          | Quagsire          | 
+423          | Gastrodon         | 
+597          | Ferroseed         | 
+Newline
+SSI: 
+199          | Slowking          | 
+464          | Rhyperior         | 
+211          | Qwilfish          | 
+062          | Poliwrath         | 
+237          | Hitmontop         | 
+221          | Piloswine         | 
+711          | Gourgeist         | 
+297          | Hariyama          | 
+379          | Registeel         | 
+389          | Torterra          | 
+601          | Klinklang         | 
+533          | Gurdurr           | 
+330          | Flygon            | 
+Newline
+NSI: 
+319          | Sharpedo          | 
+308          | Medicham          | 
+632          | Durant            | 
+648          | Meloetta          | 
+697          | Tyrantrum         | 
+479m         | Rotom-Mow         | 
+693          | Clawitzer         | 
+171          | Lanturn           | 
+Newline
+SSI to: 
+666          | Vivillon          | 
+617          | Accelgor          | 
+628          | Braviary          | 
+Newline
+NSI to: 
+452          | Drapion           | 
+655          | Delphox           | 
+539          | Sawk              | 
+124          | Jynx              | 
+
+Newline
+Newline
+
+106          | Hitmonlee         | [B][U]Hitmonlee Checks[/U][/B]
+Newline
+GSI: 
+211          | Qwilfish          | 
+442          | Spiritomb         | 
+176          | Togetic           | 
+591          | Amoonguss         | 
+210          | Granbull          | 
+279          | Pelipper          | 
+042          | Golbat            | 
+110          | Weezing           | 
+569          | Garbodor          | 
+Newline
+SSI: 
+594          | Alomomola         | 
+561          | Sigilyph          | 
+199          | Slowking          | 
+481          | Mesprit           | 
+480          | Uxie              | 
+531-m        | Audino-Mega       | 
+237          | Hitmontop         | 
+711          | Gourgeist         | 
+315          | Roselia           | 
+178          | Xatu              | 
+479s         | Rotom-Fan         | 
+683          | Aromatisse        | 
+045          | Vileplume         | 
+Newline
+NSI: 
+648          | Meloetta          | 
+662          | Fletchinder       | 
+655          | Delphox           | 
+666          | Vivillon          | 
+308          | Medicham          | 
+142          | Aerodactyl        | 
+567          | Archeops          | 
+123          | Scyther           | 
+Newline
+NSI to: 
+229          | Houndoom          | 
+215          | Sneasel           | 
+359          | Absol             | 
+319          | Sharpedo          | 
+295          | Exploud           | 
+539          | Sawk              | 
+306          | Aggron            | 
+693          | Clawitzer         | 
+221          | Piloswine         | 
+604          | Eelektross        | 
+687          | Malamar           | 
+617          | Accelgor          | 
+
+Newline
+Newline
+
+354-m        | Banette-Mega      | [B][U]Mega Banette Checks[/U][/B]
+Newline
+GSI: 
+452          | Drapion           | 
+229          | Houndoom          | 
+195          | Quagsire          | 
+594          | Alomomola         | 
+591          | Amoonguss         | 
+533          | Gurdurr           | 
+211          | Qwilfish          | 
+062          | Poliwrath         | 
+279          | Pelipper          | 
+Newline
+SSI: 
+500          | Emboar            | 
+560          | Scrafty           | 
+323-m        | Camerupt-Mega     | 
+531-m        | Audino-Mega       | 
+683          | Aromatisse        | 
+176          | Togetic           | 
+210          | Granbull          | 
+Newline
+NSI: 
+648          | Meloetta          | 
+662          | Fletchinder       | 
+
+Newline
+Newline
+
+135          | Jolteon           | [B][U]Jolteon Checks[/U][/B]
+Newline
+GSI: 
+208-m        | Steelix-Mega      | 
+589          | Escavalier        | 
+135          | Jolteon           | 
+604          | Eelektross        | 
+591          | Amoonguss         | 
+531-m        | Audino-Mega       | 
+315          | Roselia           | 
+221          | Piloswine         | 
+597          | Ferroseed         | 
+479f         | Rotom-Frost       | 
+346          | Cradily           | 
+171          | Lanturn           | 
+Newline
+SSI: 
+330          | Flygon            | 
+640          | Virizion          | 
+464          | Rhyperior         | 
+479m         | Rotom-Mow         | 
+460-m        | Abomasnow-Mega    | 
+621          | Druddigon         | 
+051          | Dugtrio           | 
+297          | Hariyama          | 
+389          | Torterra          | 
+045          | Vileplume         | 
+711          | Gourgeist         | 
+537          | Seismitoad        | 
+195          | Quagsire          | 
+423          | Gastrodon         | 
+323-m        | Camerupt-Mega     | 
+Newline
+NSI: 
+362-m        | Glalie-Mega       | 
+648          | Meloetta          | 
+308          | Medicham          | 
+475          | Gallade           | 
+Newline
+SSI to: 
+666          | Vivillon          | 
+Newline
+NSI to: 
+693          | Clawitzer         | 
+687          | Malamar           | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+215          | Sneasel           | [B][U]Sneasel Checks[/U][/B]
+Newline
+GSI: 
+208-m        | Steelix-Mega      | 
+594          | Alomomola         | 
+500          | Emboar            | 
+683          | Aromatisse        | 
+533          | Gurdurr           | 
+062          | Poliwrath         | 
+210          | Granbull          | 
+237          | Hitmontop         | 
+597          | Ferroseed         | 
+297          | Hariyama          | 
+009          | Blastoise         | 
+537          | Seismitoad        | 
+211          | Qwilfish          | 
+279          | Pelipper          | 
+Newline
+SSI: 
+460-m        | Abomasnow-Mega    | 
+632          | Durant            | 
+323-m        | Camerupt-Mega     | 
+589          | Escavalier        | 
+560          | Scrafty           | 
+082          | Magneton          | 
+379          | Registeel         | 
+423          | Gastrodon         | 
+Newline
+NSI: 
+106          | Hitmonlee         | 
+Newline
+NSI to: 
+655          | Delphox           | 
+621          | Druddigon         | 
+666          | Vivillon          | 
+475          | Gallade           | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+221          | Piloswine         | [B][U]Piloswine Checks[/U][/B]
+Newline
+GSI: 
+460-m        | Abomasnow-Mega    | 
+594          | Alomomola         | 
+199          | Slowking          | 
+465          | Tangrowth         | 
+009          | Blastoise         | 
+537          | Seismitoad        | 
+437          | Bronzong          | 
+533          | Gurdurr           | 
+481          | Mesprit           | 
+480          | Uxie              | 
+531-m        | Audino-Mega       | 
+210          | Granbull          | 
+062          | Poliwrath         | 
+195          | Quagsire          | 
+279          | Pelipper          | 
+597          | Ferroseed         | 
+479f         | Rotom-Frost       | 
+110          | Weezing           | 
+518          | Musharna          | 
+237          | Hitmontop         | 
+593          | Jellicent         | 
+Newline
+SSI: 
+640          | Virizion          | 
+500          | Emboar            | 
+693          | Clawitzer         | 
+297          | Hariyama          | 
+601          | Klinklang         | 
+208-m        | Steelix-Mega      | 
+Newline
+NSI: 
+103          | Exeggutor         | 
+045          | Vileplume         | 
+346          | Cradily           | 
+709          | Trevenant         | 
+475          | Gallade           | 
+106          | Hitmonlee         | 
+308          | Medicham          | 
+560          | Scrafty           | 
+539          | Sawk              | 
+Newline
+SSI to: 
+604          | Eelektross        | 
+
+Newline
+Newline
+
+208-m        | Steelix-Mega      | [B][U]Mega Steelix Checks[/U][/B]
+Newline
+GSI: 
+594          | Alomomola         | 
+465          | Tangrowth         | 
+199          | Slowking          | 
+479m         | Rotom-Mow         | 
+537          | Seismitoad        | 
+593          | Jellicent         | 
+062          | Poliwrath         | 
+195          | Quagsire          | 
+604          | Eelektross        | 
+237          | Hitmontop         | 
+279          | Pelipper          | 
+479          | Rotom             | 
+389          | Torterra          | 
+597          | Ferroseed         | 
+423          | Gastrodon         | 
+711          | Gourgeist         | 
+110          | Weezing           | 
+297          | Hariyama          | 
+272          | Ludicolo          | 
+226          | Mantine           | 
+009          | Blastoise         | 
+437          | Bronzong          | 
+Newline
+SSI: 
+500          | Emboar            | 
+330          | Flygon            | 
+640          | Virizion          | 
+655          | Delphox           | 
+560          | Scrafty           | 
+533          | Gurdurr           | 
+221          | Piloswine         | 
+460-m        | Abomasnow-Mega    | 
+211          | Qwilfish          | 
+479s         | Rotom-Fan         | 
+503          | Samurott          | 
+632          | Durant            | 
+208-m        | Steelix-Mega      | 
+693          | Clawitzer         | 
+Newline
+NSI: 
+648          | Meloetta          | 
+323-m        | Camerupt-Mega     | 
+106          | Hitmonlee         | 
+464          | Rhyperior         | 
+051          | Dugtrio           | 
+295          | Exploud           | 
+475          | Gallade           | 
+687          | Malamar           | 
+319          | Sharpedo          | 
+229          | Houndoom          | 
+308          | Medicham          | 
+539          | Sawk              | 
+Newline
+GSI to: 
+697          | Tyrantrum         | 
+362-m        | Glalie-Mega       | 
+215          | Sneasel           | 
+142          | Aerodactyl        | 
+452          | Drapion           | 
+135          | Jolteon           | 
+666          | Vivillon          | 
+Newline
+SSI to: 
+632          | Durant            | 
+662          | Fletchinder       | 
+648          | Meloetta          | 
+561          | Sigilyph          | 
+589          | Escavalier        | 
+359          | Absol             | 
+621          | Druddigon         | 
+306          | Aggron            | 
+210          | Granbull          | 
+221          | Piloswine         | 
+124          | Jynx              | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+062          | Poliwrath         | [B][U]Poliwrath Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+589          | Escavalier        | 
+229          | Houndoom          | 
+503          | Samurott          | 
+215          | Sneasel           | 
+359          | Absol             | 
+319          | Sharpedo          | 
+452          | Drapion           | 
+306          | Aggron            | 
+693          | Clawitzer         | 
+221          | Piloswine         | 
+354-m        | Banette-Mega      | 
+Newline
+SSI to: 
+460-m        | Abomasnow-Mega    | 
+697          | Tyrantrum         | 
+632          | Durant            | 
+500          | Emboar            | 
+330          | Flygon            | 
+362-m        | Glalie-Mega       | 
+323-m        | Camerupt-Mega     | 
+560          | Scrafty           | 
+142          | Aerodactyl        | 
+687          | Malamar           | 
+617          | Accelgor          | 
+
+Newline
+Newline
+
+594          | Alomomola         | [B][U]Alomomola Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+330          | Flygon            | 
+215          | Sneasel           | 
+142          | Aerodactyl        | 
+621          | Druddigon         | 
+693          | Clawitzer         | 
+221          | Piloswine         | 
+354-m        | Banette-Mega      | 
+Newline
+SSI to: 
+697          | Tyrantrum         | 
+632          | Durant            | 
+500          | Emboar            | 
+662          | Fletchinder       | 
+362-m        | Glalie-Mega       | 
+323-m        | Camerupt-Mega     | 
+589          | Escavalier        | 
+106          | Hitmonlee         | 
+229          | Houndoom          | 
+452          | Drapion           | 
+308          | Medicham          | 
+655          | Delphox           | 
+539          | Sawk              | 
+210          | Granbull          | 
+617          | Accelgor          | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+437          | Bronzong          | [B][U]Bronzong Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+460-m        | Abomasnow-Mega    | 
+208-m        | Steelix-Mega      | 
+697          | Tyrantrum         | 
+330          | Flygon            | 
+362-m        | Glalie-Mega       | 
+142          | Aerodactyl        | 
+306          | Aggron            | 
+221          | Piloswine         | 
+124          | Jynx              | 
+666          | Vivillon          | 
+617          | Accelgor          | 
+628          | Braviary          | 
+Newline
+SSI to: 
+632          | Durant            | 
+648          | Meloetta          | 
+621          | Druddigon         | 
+295          | Exploud           | 
+210          | Granbull          | 
+
+Newline
+Newline
+
+195          | Quagsire          | [B][U]Quagsire Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+533          | Gurdurr           | 
+142          | Aerodactyl        | 
+452          | Drapion           | 
+306          | Aggron            | 
+221          | Piloswine         | 
+687          | Malamar           | 
+354-m        | Banette-Mega      | 
+Newline
+SSI to: 
+697          | Tyrantrum         | 
+500          | Emboar            | 
+662          | Fletchinder       | 
+330          | Flygon            | 
+362-m        | Glalie-Mega       | 
+323-m        | Camerupt-Mega     | 
+589          | Escavalier        | 
+359          | Absol             | 
+135          | Jolteon           | 
+475          | Gallade           | 
+617          | Accelgor          | 
+
+Newline
+Newline
+
+537          | Seismitoad        | [B][U]Seismitoad Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+323-m        | Camerupt-Mega     | 
+215          | Sneasel           | 
+142          | Aerodactyl        | 
+452          | Drapion           | 
+306          | Aggron            | 
+221          | Piloswine         | 
+Newline
+SSI to: 
+697          | Tyrantrum         | 
+632          | Durant            | 
+500          | Emboar            | 
+662          | Fletchinder       | 
+330          | Flygon            | 
+589          | Escavalier        | 
+229          | Houndoom          | 
+359          | Absol             | 
+655          | Delphox           | 
+135          | Jolteon           | 
+617          | Accelgor          | 
+
+Newline
+Newline
+
+211          | Qwilfish          | [B][U]Qwilfish Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+632          | Durant            | 
+106          | Hitmonlee         | 
+215          | Sneasel           | 
+354-m        | Banette-Mega      | 
+Newline
+SSI to: 
+208-m        | Steelix-Mega      | 
+632          | Durant            | 
+500          | Emboar            | 
+662          | Fletchinder       | 
+362-m        | Glalie-Mega       | 
+323-m        | Camerupt-Mega     | 
+589          | Escavalier        | 
+503          | Samurott          | 
+359          | Absol             | 
+319          | Sharpedo          | 
+142          | Aerodactyl        | 
+452          | Drapion           | 
+308          | Medicham          | 
+539          | Sawk              | 
+210          | Granbull          | 
+
+Newline
+Newline
+
+591          | Amoonguss         | [B][U]Amoonguss Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+106          | Hitmonlee         | 
+479m         | Rotom-Mow         | 
+560          | Scrafty           | 
+533          | Gurdurr           | 
+135          | Jolteon           | 
+354-m        | Banette-Mega      | 
+617          | Accelgor          | 
+Newline
+SSI to: 
+330          | Flygon            | 
+465          | Tangrowth         | 
+640          | Virizion          | 
+359          | Absol             | 
+319          | Sharpedo          | 
+319          | Sharpedo          | 
+308          | Medicham          | 
+539          | Sawk              | 
+210          | Granbull          | 
+687          | Malamar           | 
+
+Newline
+Newline
+
+297          | Hariyama          | [B][U]Hariyama Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+362-m        | Glalie-Mega       | 
+229          | Houndoom          | 
+215          | Sneasel           | 
+359          | Absol             | 
+604          | Eelektross        | 
+617          | Accelgor          | 
+Newline
+SSI to: 
+460-m        | Abomasnow-Mega    | 
+323-m        | Camerupt-Mega     | 
+560          | Scrafty           | 
+319          | Sharpedo          | 
+142          | Aerodactyl        | 
+135          | Jolteon           | 
+306          | Aggron            | 
+693          | Clawitzer         | 
+221          | Piloswine         | 
+Newline
+NSI to: 
+697          | Tyrantrum         | 
+295          | Exploud           | 
+
+Newline
+Newline
+
+683          | Aromatisse        | [B][U]Aromatisse Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+215          | Sneasel           | 
+533          | Gurdurr           | 
+687          | Malamar           | 
+475          | Gallade           | 
+Newline
+SSI to: 
+697          | Tyrantrum         | 
+330          | Flygon            | 
+362-m        | Glalie-Mega       | 
+640          | Virizion          | 
+106          | Hitmonlee         | 
+560          | Scrafty           | 
+359          | Absol             | 
+319          | Sharpedo          | 
+308          | Medicham          | 
+621          | Druddigon         | 
+539          | Sawk              | 
+124          | Jynx              | 
+354-m        | Banette-Mega      | 
+617          | Accelgor          | 
+
+Newline
+Newline
+
+009          | Blastoise         | [B][U]Blastoise Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+215          | Sneasel           | 
+359          | Absol             | 
+142          | Aerodactyl        | 
+221          | Piloswine         | 
+Newline
+SSI to: 
+199          | Slowking          | 
+632          | Durant            | 
+500          | Emboar            | 
+662          | Fletchinder       | 
+330          | Flygon            | 
+362-m        | Glalie-Mega       | 
+323-m        | Camerupt-Mega     | 
+589          | Escavalier        | 
+229          | Houndoom          | 
+452          | Drapion           | 
+655          | Delphox           | 
+617          | Accelgor          | 
+Newline
+NSI to: 
+306          | Aggron            | 
+
+Newline
+Newline
+
+279          | Pelipper          | [B][U]Pelipper Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+323-m        | Camerupt-Mega     | 
+589          | Escavalier        | 
+106          | Hitmonlee         | 
+215          | Sneasel           | 
+533          | Gurdurr           | 
+221          | Piloswine         | 
+354-m        | Banette-Mega      | 
+Newline
+SSI to: 
+632          | Durant            | 
+500          | Emboar            | 
+560          | Scrafty           | 
+359          | Absol             | 
+308          | Medicham          | 
+539          | Sawk              | 
+
+Newline
+Newline
+
+479s         | Rotom-Fan         | [B][U]Rotom-Fan Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+632          | Durant            | 
+662          | Fletchinder       | 
+666          | Vivillon          | 
+Newline
+SSI to: 
+208-m        | Steelix-Mega      | 
+199          | Slowking          | 
+561          | Sigilyph          | 
+465          | Tangrowth         | 
+640          | Virizion          | 
+106          | Hitmonlee         | 
+503          | Samurott          | 
+560          | Scrafty           | 
+533          | Gurdurr           | 
+539          | Sawk              | 
+628          | Braviary          | 
+Newline
+NSI to: 
+479m         | Rotom-Mow         | 
+503          | Samurott          | 
+693          | Clawitzer         | 
+
+Newline
+Newline
+
+176          | Togetic           | [B][U]Togetic Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+106          | Hitmonlee         | 
+533          | Gurdurr           | 
+687          | Malamar           | 
+475          | Gallade           | 
+Newline
+SSI to: 
+330          | Flygon            | 
+640          | Virizion          | 
+479m         | Rotom-Mow         | 
+560          | Scrafty           | 
+359          | Absol             | 
+308          | Medicham          | 
+621          | Druddigon         | 
+539          | Sawk              | 
+354-m        | Banette-Mega      | 
+617          | Accelgor          | 
+
+Newline
+Newline
+
+593          | Jellicent         | [B][U]Jellicent Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+323-m        | Camerupt-Mega     | 
+503          | Samurott          | 
+221          | Piloswine         | 
+Newline
+SSI to: 
+632          | Durant            | 
+500          | Emboar            | 
+662          | Fletchinder       | 
+330          | Flygon            | 
+362-m        | Glalie-Mega       | 
+589          | Escavalier        | 
+308          | Medicham          | 
+655          | Delphox           | 
+539          | Sawk              | 
+617          | Accelgor          | 
+
+Newline
+Newline
+
+711          | Gourgeist         | [B][U]Gourgeist Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+308          | Medicham          | 
+Newline
+SSI to: 
+460-m        | Abomasnow-Mega    | 
+697          | Tyrantrum         | 
+199          | Slowking          | 
+632          | Durant            | 
+330          | Flygon            | 
+640          | Virizion          | 
+589          | Escavalier        | 
+106          | Hitmonlee         | 
+479m         | Rotom-Mow         | 
+503          | Samurott          | 
+142          | Aerodactyl        | 
+135          | Jolteon           | 
+539          | Sawk              | 
+
+Newline
+Newline
+
+597          | Ferroseed         | [B][U]Ferroseed Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+479m         | Rotom-Mow         | 
+215          | Sneasel           | 
+319          | Sharpedo          | 
+142          | Aerodactyl        | 
+135          | Jolteon           | 
+221          | Piloswine         | 
+Newline
+SSI to: 
+697          | Tyrantrum         | 
+503          | Samurott          | 
+295          | Exploud           | 
+306          | Aggron            | 
+210          | Granbull          | 
+
+Newline
+Newline
+
+237          | Hitmontop         | [B][U]Hitmontop Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+362-m        | Glalie-Mega       | 
+560          | Scrafty           | 
+215          | Sneasel           | 
+359          | Absol             | 
+452          | Drapion           | 
+221          | Piloswine         | 
+Newline
+SSI to: 
+697          | Tyrantrum         | 
+106          | Hitmonlee         | 
+142          | Aerodactyl        | 
+306          | Aggron            | 
+Newline
+NSI to: 
+460-m        | Abomasnow-Mega    | 
+229          | Houndoom          | 
+
+Newline
+Newline
+
+045          | Vileplume         | [B][U]Vileplume Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+479m         | Rotom-Mow         | 
+560          | Scrafty           | 
+533          | Gurdurr           | 
+687          | Malamar           | 
+Newline
+SSI to: 
+465          | Tangrowth         | 
+640          | Virizion          | 
+106          | Hitmonlee         | 
+503          | Samurott          | 
+319          | Sharpedo          | 
+308          | Medicham          | 
+135          | Jolteon           | 
+210          | Granbull          | 
+617          | Accelgor          | 
+Newline
+NSI to: 
+221          | Piloswine         | 
+
+Newline
+Newline
+
+110          | Weezing           | [B][U]Weezing Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+465          | Tangrowth         | 
+640          | Virizion          | 
+106          | Hitmonlee         | 
+452          | Drapion           | 
+539          | Sawk              | 
+210          | Granbull          | 
+221          | Piloswine         | 
+Newline
+SSI to: 
+359          | Absol             | 
+308          | Medicham          | 
+Newline
+NSI to: 
+621          | Druddigon         | 
+
+Newline
+Newline
+
+379          | Registeel         | [B][U]Registeel Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+666          | Vivillon          | 
+Newline
+SSI to: 
+460-m        | Abomasnow-Mega    | 
+697          | Tyrantrum         | 
+362-m        | Glalie-Mega       | 
+648          | Meloetta          | 
+215          | Sneasel           | 
+142          | Aerodactyl        | 
+452          | Drapion           | 
+621          | Druddigon         | 
+295          | Exploud           | 
+306          | Aggron            | 
+210          | Granbull          | 
+604          | Eelektross        | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+464          | Rhyperior         | [B][U]Rhyperior Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+697          | Tyrantrum         | 
+Newline
+SSI to: 
+500          | Emboar            | 
+662          | Fletchinder       | 
+330          | Flygon            | 
+323-m        | Camerupt-Mega     | 
+229          | Houndoom          | 
+359          | Absol             | 
+142          | Aerodactyl        | 
+452          | Drapion           | 
+135          | Jolteon           | 
+306          | Aggron            | 
+666          | Vivillon          | 
+628          | Braviary          | 
+Newline
+NSI to: 
+208-m        | Steelix-Mega      | 
+
+Newline
+Newline
+
+479f         | Rotom-Frost       | [B][U]Rotom-Frost Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+662          | Fletchinder       | 
+135          | Jolteon           | 
+221          | Piloswine         | 
+Newline
+SSI to: 
+199          | Slowking          | 
+330          | Flygon            | 
+362-m        | Glalie-Mega       | 
+561          | Sigilyph          | 
+465          | Tangrowth         | 
+503          | Samurott          | 
+666          | Vivillon          | 
+Newline
+NSI to: 
+479m         | Rotom-Mow         | 
+503          | Samurott          | 
+621          | Druddigon         | 
+693          | Clawitzer         | 
+
+Newline
+Newline
+
+531-m        | Audino-Mega       | [B][U]Audino-Mega Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+135          | Jolteon           | 
+221          | Piloswine         | 
+124          | Jynx              | 
+687          | Malamar           | 
+Newline
+SSI to: 
+697          | Tyrantrum         | 
+330          | Flygon            | 
+106          | Hitmonlee         | 
+479m         | Rotom-Mow         | 
+560          | Scrafty           | 
+621          | Druddigon         | 
+354-m        | Banette-Mega      | 
+
+Newline
+Newline
+
+171          | Lanturn           | [B][U]Lanturn Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+199          | Slowking          | 
+662          | Fletchinder       | 
+503          | Samurott          | 
+135          | Jolteon           | 
+Newline
+SSI to: 
+632          | Durant            | 
+500          | Emboar            | 
+323-m        | Camerupt-Mega     | 
+229          | Houndoom          | 
+666          | Vivillon          | 
+617          | Accelgor          | 
+Newline
+NSI to: 
+142          | Aerodactyl        | 
+
+Newline
+Newline
+
+442          | Spiritomb         | [B][U]Spiritomb Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+106          | Hitmonlee         | 
+308          | Medicham          | 
+539          | Sawk              | 
+475          | Gallade           | 
+Newline
+SSI to: 
+648          | Meloetta          | 
+561          | Sigilyph          | 
+655          | Delphox           | 
+124          | Jynx              | 
+617          | Accelgor          | 
+628          | Braviary          | 
+Newline
+NSI to: 
+666          | Vivillon          | 
+
+Newline
+Newline
+
+423          | Gastrodon         | [B][U]Gastrodon Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+229          | Houndoom          | 
+142          | Aerodactyl        | 
+306          | Aggron            | 
+Newline
+SSI to: 
+500          | Emboar            | 
+323-m        | Camerupt-Mega     | 
+215          | Sneasel           | 
+452          | Drapion           | 
+135          | Jolteon           | 
+617          | Accelgor          | 
+
+Newline
+Newline
+
+601          | Klinklang         | [B][U]Klinklang Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+460-m        | Abomasnow-Mega    | 
+697          | Tyrantrum         | 
+662          | Fletchinder       | 
+362-m        | Glalie-Mega       | 
+648          | Meloetta          | 
+142          | Aerodactyl        | 
+621          | Druddigon         | 
+306          | Aggron            | 
+210          | Granbull          | 
+221          | Piloswine         | 
+628          | Braviary          | 
+
+Newline
+Newline
+
+042          | Golbat            | [B][U]Golbat Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+465          | Tangrowth         | 
+106          | Hitmonlee         | 
+560          | Scrafty           | 
+617          | Accelgor          | 
+Newline
+SSI to: 
+640          | Virizion          | 
+533          | Gurdurr           | 
+308          | Medicham          | 
+539          | Sawk              | 
+
+Newline
+Newline
+
+082          | Magneton          | [B][U]Magneton Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+666          | Vivillon          | 
+Newline
+SSI to: 
+460-m        | Abomasnow-Mega    | 
+632          | Durant            | 
+662          | Fletchinder       | 
+362-m        | Glalie-Mega       | 
+561          | Sigilyph          | 
+503          | Samurott          | 
+215          | Sneasel           | 
+628          | Braviary          | 
+Newline
+NSI to: 
+589          | Escavalier        | 
+
+Newline
+Newline
+
+479          | Rotom             | [B][U]Rotom Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+662          | Fletchinder       | 
+Newline
+SSI to: 
+199          | Slowking          | 
+632          | Durant            | 
+561          | Sigilyph          | 
+539          | Sawk              | 
+666          | Vivillon          | 
+628          | Braviary          | 
+Newline
+NSI to: 
+693          | Clawitzer         | 
+
+Newline
+Newline
+
+315          | Roselia           | [B][U]Roselia Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+465          | Tangrowth         | 
+479m         | Rotom-Mow         | 
+135          | Jolteon           | 
+Newline
+SSI to: 
+640          | Virizion          | 
+106          | Hitmonlee         | 
+503          | Samurott          | 
+319          | Sharpedo          | 
+Newline
+NSI to: 
+693          | Clawitzer         | 
+
+Newline
+Newline
+
+346          | Cradily           | [B][U]Cradily Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+561          | Sigilyph          | 
+135          | Jolteon           | 
+Newline
+SSI to: 
+199          | Slowking          | 
+229          | Houndoom          | 
+319          | Sharpedo          | 
+295          | Exploud           | 
+666          | Vivillon          | 
+Newline
+NSI to: 
+221          | Piloswine         | 
+
+Newline
+Newline
+
+389          | Torterra          | [B][U]Torterra Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+306          | Aggron            | 
+Newline
+SSI to: 
+697          | Tyrantrum         | 
+199          | Slowking          | 
+142          | Aerodactyl        | 
+452          | Drapion           | 
+135          | Jolteon           | 
+Newline
+NSI to: 
+604          | Eelektross        | 
+
+Newline
+Newline
+
+481          | Mesprit           | [B][U]Mesprit Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+221          | Piloswine         | 
+Newline
+SSI to: 
+500          | Emboar            | 
+106          | Hitmonlee         | 
+533          | Gurdurr           | 
+308          | Medicham          | 
+539          | Sawk              | 
+687          | Malamar           | 
+Newline
+NSI to: 
+640          | Virizion          | 
+475          | Gallade           | 
+
+Newline
+Newline
+
+123          | Scyther           | [B][U]Scyther Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+465          | Tangrowth         | 
+533          | Gurdurr           | 
+308          | Medicham          | 
+539          | Sawk              | 
+Newline
+NSI to: 
+199          | Slowking          | 
+648          | Meloetta          | 
+561          | Sigilyph          | 
+640          | Virizion          | 
+106          | Hitmonlee         | 
+229          | Houndoom          | 
+479m         | Rotom-Mow         | 
+359          | Absol             | 
+687          | Malamar           | 
+
+Newline
+Newline
+
+480          | Uxie              | [B][U]Uxie Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+640          | Virizion          | 
+308          | Medicham          | 
+221          | Piloswine         | 
+Newline
+SSI to: 
+106          | Hitmonlee         | 
+539          | Sawk              | 
+475          | Gallade           | 
+
+Newline
+Newline
+
+569          | Garbodor          | [B][U]Garbodor Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+640          | Virizion          | 
+106          | Hitmonlee         | 
+Newline
+SSI to: 
+465          | Tangrowth         | 
+479m         | Rotom-Mow         | 
+539          | Sawk              | 
+
+Newline
+Newline
+
+567          | Archeops          | [B][U]Archeops Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+662          | Fletchinder       | 
+666          | Vivillon          | 
+Newline
+NSI to: 
+561          | Sigilyph          | 
+465          | Tangrowth         | 
+640          | Virizion          | 
+106          | Hitmonlee         | 
+229          | Houndoom          | 
+533          | Gurdurr           | 
+655          | Delphox           | 
+539          | Sawk              | 
+306          | Aggron            | 
+
+Newline
+Newline
+
+272          | Ludicolo          | [B][U]Ludicolo Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+Newline
+SSI to: 
+199          | Slowking          | 
+503          | Samurott          | 
+693          | Clawitzer         | 
+Newline
+NSI to: 
+323-m        | Camerupt-Mega     | 
+
+Newline
+Newline
+
+518          | Musharna          | [B][U]Musharna Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+308          | Medicham          | 
+221          | Piloswine         | 
+Newline
+SSI to: 
+539          | Sawk              | 
+
+Newline
+Newline
+
+435          | Skuntank          | [B][U]Skuntank Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+648          | Meloetta          | 
+561          | Sigilyph          | 
+465          | Tangrowth         | 
+655          | Delphox           | 
+
+Newline
+Newline
+
+709          | Trevenant         | [B][U]Trevenant Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+640          | Virizion          | 
+479m         | Rotom-Mow         | 
+Newline
+NSI to: 
+693          | Clawitzer         | 
+221          | Piloswine         | 
+
+Newline
+Newline
+
+051          | Dugtrio           | [B][U]Dugtrio Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+135          | Jolteon           | 
+Newline
+NSI to: 
+208-m        | Steelix-Mega      | 
+697          | Tyrantrum         | 
+323-m        | Camerupt-Mega     | 
+229          | Houndoom          | 
+452          | Drapion           | 
+655          | Delphox           | 
+306          | Aggron            | 
+
+Newline
+Newline
+
+139          | Omastar           | [B][U]Omastar Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+662          | Fletchinder       | 
+Newline
+SSI to: 
+628          | Braviary          | 
+Newline
+NSI to: 
+323-m        | Camerupt-Mega     | 
+306          | Aggron            | 
+
+Newline
+Newline
+
+275          | Shiftry           | [B][U]Shiftry Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+199          | Slowking          | 
+561          | Sigilyph          | 
+Newline
+NSI to: 
+479m         | Rotom-Mow         | 
+503          | Samurott          | 
+693          | Clawitzer         | 
+
+Newline
+Newline
+
+178          | Xatu              | [B][U]Xatu Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+106          | Hitmonlee         | 
+533          | Gurdurr           | 
+308          | Medicham          | 
+
+Newline
+Newline
+
+141          | Kabutops          | [B][U]Kabutops Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+628          | Braviary          | 
+Newline
+NSI to: 
+460-m        | Abomasnow-Mega    | 
+323-m        | Camerupt-Mega     | 
+229          | Houndoom          | 
+306          | Aggron            | 
+
+Newline
+Newline
+
+103          | Exeggutor         | [B][U]Exeggutor Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+640          | Virizion          | 
+533          | Gurdurr           | 
+Newline
+NSI to: 
+221          | Piloswine         | 
+
+Newline
+Newline
+
+144          | Articuno          | [B][U]Articuno Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+460-m        | Abomasnow-Mega    | 
+533          | Gurdurr           | 
+
+Newline
+Newline
+
+689          | Barbaracle        | [B][U]Barbaracle Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+662          | Fletchinder       | 
+Newline
+NSI to: 
+460-m        | Abomasnow-Mega    | 
+323-m        | Camerupt-Mega     | 
+
+Newline
+Newline
+
+254          | Sceptile          | [B][U]Sceptile Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+NSI to: 
+199          | Slowking          | 
+479m         | Rotom-Mow         | 
+503          | Samurott          | 
+693          | Clawitzer         | 
+
+Newline
+Newline
+
+226          | Mantine           | [B][U]Mantine Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+208-m        | Steelix-Mega      | 
+
+Newline
+Newline
+
+303          | Mawile            | [B][U]Mawile Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+697          | Tyrantrum         | 
+
+Newline
+Newline
+
+563          | Cofagrigus        | [B][U]Cofagrigus Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+GSI to: 
+308          | Medicham          | 
+
+Newline
+Newline
+
+699          | Aurorus           | [B][U]Aurorus Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+628          | Braviary          | 
+Newline
+NSI to: 
+621          | Druddigon         | 
+
+Newline
+Newline
+
+510          | Liepard           | [B][U]Liepard Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+NSI to: 
+199          | Slowking          | 
+648          | Meloetta          | 
+561          | Sigilyph          | 
+
+Newline
+Newline
+
+429          | Mismagius         | [B][U]Mismagius Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+199          | Slowking          | 
+
+Newline
+Newline
+
+460          | Abomasnow         | [B][U]Abomasnow Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+330          | Flygon            | 
+
+Newline
+Newline
+
+531          | Audino            | [B][U]Audino Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+SSI to: 
+479m         | Rotom-Mow         | 
+
+Newline
+Newline
+
+128          | Tauros            | [B][U]Tauros Checks[/U][/B]
+Newline
+GSI: 
+|
+Newline
+SSI: 
+|
+Newline
+NSI: 
+|
+Newline
+NSI to: 
+229          | Houndoom          | 
