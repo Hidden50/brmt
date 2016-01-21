@@ -188,7 +188,23 @@
 		
 		function init() {
 			// direct all keyboard input to the edit field
-			document.onkeydown = function () { document.getElementById("form1").elements["name"].focus(); }
+			document.onkeydown = function (e) {
+				if (cgfTextarea === document.activeElement)
+					return;
+				if (e.keyCode === 38) window.scrollBy(0, -50)  // arrow key up
+				else if (e.keyCode === 40) window.scrollBy(0, 50)  // arrow key down
+				else {
+					document.getElementById("form1").elements["name"].focus();
+					return;
+				}
+				document.getElementById("form1").elements["name"].blur();
+			}
+			document.onkeyup = function (e) {
+				if (cgfTextarea === document.activeElement)
+					return;
+				if (!document.getElementById("form1").elements["name"].value)
+					document.getElementById("form1").elements["name"].blur();
+			}
 			urlparam = getUrlParam('team=');
 			// pokemon identifiers contain a-z, A-Z, 0-9 and "-". Treat everything else as a separator
 			urlparam = urlparam.replace(/([^a-zA-Z0-9\-])+/g, ',');
@@ -242,10 +258,7 @@
 		}
 		
 		function SetChecksCompendium(Link, CreateInverseEntries) {
-			var comp;
-			if (CreateInverseEntries)
-				comp = Link
-			else comp = OpenTextfile(Link).join('\n');
+			var comp = CreateInverseEntries ? Link : OpenTextfile(Link).join('\n');
 			Checks = ChecksCompendiumToChecksArray( comp, CreateInverseEntries );
 			FilteredChecks = FilterChecksArray(Checks, Threats, Entries);
 			threatlist.innerHTML = ChecksArrayToTiles(FilteredChecks);
@@ -255,7 +268,8 @@
 			demo.innerHTML = ParseCompendium(AutocompleteList( document.getElementById("form1").elements["name"].value ));
 			if (!document.getElementById("form1").elements["name"].value)
 				document.getElementById("form1").elements["name"].blur();
-			var Images = rightsideDiv.getElementsByTagName('img');
+			
+			var Images = document.getElementsByTagName('img');
 			for (i in Images) {
 				if (Images[i].title) {
 					if ( document.getElementById("form1").elements["name"].value && Images[i].title.toLowerCase().indexOf(document.getElementById("form1").elements["name"].value.toLowerCase()) > -1 )
