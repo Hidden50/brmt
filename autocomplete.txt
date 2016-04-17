@@ -146,7 +146,7 @@
 031          | Nidoqueen         | 
 407          | Roserade          | 
 492          | Shaymin           | 
-718          | Zygerade          | 
+718          | Zygarde           | 
 
 242          | Blissey           | 
 609          | Chandelure        | 
@@ -818,5 +818,4 @@
 714          | Noibat            | 
 716          | Xerneas           | 
 717          | Yveltal           | 
-718          | Zygarde           | 
 719          | Diancie           | 
