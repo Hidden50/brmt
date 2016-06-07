@@ -24,6 +24,7 @@
 642          | Thundurus         | 
 641-s        | Tornadus-Therian  | 
 461          | Weavile           | 
+721          | Volcanion         | 
 
 334-m        | Altaria-Mega      | 
 006-my       | Charizard-Mega-Y  | 
