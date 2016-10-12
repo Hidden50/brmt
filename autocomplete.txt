@@ -68,6 +68,7 @@
 245          | Suicune           | 
 639          | Terrakion         | 
 468          | Togekiss          | 
+721          | Volcanion         | 
 637          | Volcarona         | 
 
 591          | Amoonguss         | 
@@ -783,7 +784,7 @@
 666          | Vivillon          | 
 667          | Litleo            | 
 668          | Pyroar            | 
-669          | Flabébé           | 
+669          | FlabÃ©bÃ©           | 
 670          | Floette           | 
 671          | Florges           | 
 672          | Skiddo            | 
