@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>gen7 brmt</title>
+	<base target="_blank">
+	<script src="./tools.js"></script>
+	<script src="./build.js"></script>
+	<script src="./OUcc.js"></script>
+	<link  href="./brmt.css" rel="stylesheet">
+</head>
+
+<body>
+	<label for="builddata">Build data</label> <button id="build">rebuild compendium</button><br>
+	<textarea id="builddata"></textarea><br>
+	<div id="output"></div>
+	<div class="footer">
+		<details> <summary>Mini Icons</summary> <textarea id="miniicons"></textarea> </details>
+		<details> <summary>Aliases</summary> <textarea id="aliases"></textarea> </details>
+		<details> <summary>Changelog</summary> <textarea id="changelog">maybe coming soon</textarea> </details>
+	</div>
+	<div ID="onclickinfo_popout" class="infopopout" onmouseleave="this.style.display = 'none'"></div>
+	<script>
+		window.onload = function() {
+			let btnBuild = document.getElementById("build");
+			let [taBuilddata, taMiniicons, taAliases, taChangelog] = ["builddata", "miniicons", "aliases", "changelog"].map(document.getElementById.bind(document));
+			let output = document.getElementById("output");
+			
+			if (!location.hash) location.hash = window.compendiums.OUcc.buildData.map( arr => arr.join(",") ).join("&");
+			taBuilddata.value = location.hash.substr(1).replace(/&/g, "\n").replace(/,/g, ", ").replace(/%20/g, " ");
+			[taMiniicons, taAliases, taChangelog].forEach(
+				(ta, index) =>  { ta.value = JSON.stringify(window.compendiums.OUcc[["miniIcons", "aliases", "changelog"][index]], null, 4); }
+			);
+			
+			btnBuild.addEventListener('click', function() {
+				let buildData = taBuilddata.value.split(/\r?\n/g).map( line => line.split(",").map(trim) );
+				let [miniIcons, aliases, changelog] = [taMiniicons, taAliases, taChangelog].map( ta => JSON.parse(ta.value) );
+				
+				window.compendiums.OUcc = {
+					"miniIcons": miniIcons,
+					"aliases":   aliases,
+					"changelog": changelog,
+					"buildData": buildData
+				};
+				
+				let build = window.buildTools.buildChecksCompendium( buildData );
+				
+				location.hash = buildData.map( arr => arr.join(",") ).join("&");
+				output.innerHTML = window.buildTools.compendiumToHtmlImages( window.compendiums.OUcc, build, ["tiles"] );
+				
+				[...output.getElementsByClassName("iconWrapper")].forEach(
+					iconWrapper => iconWrapper.addEventListener('click', function() {
+						let [, species, set] = iconWrapper.title.match(/^(.*) \(([^()]*)\)$/);
+						window.showPopout(
+							"onclickinfo_popout",
+							iconWrapper,
+							"<button id='onclickinfo_find'>find</button>" +
+							window.buildTools.compendiumToHtmlImages( window.compendiums.OUcc, build, [], species )
+						);
+						document.getElementById("onclickinfo_find").addEventListener('click', function() {
+							let needle = new RegExp(species, 'i');
+							
+							let offset = taBuilddata.selectionEnd;
+							let match = taBuilddata.value.substr(offset).match(needle);
+							if (!match) {
+								offset = 0;
+								match = taBuilddata.value.match(needle);
+							}
+							if (!match) return;
+							taBuilddata.focus();
+							let selStart = offset + match.index;
+							let selEnd = offset + match.index + match[0].length;
+							taBuilddata.setSelectionRange(selStart, selEnd);
+						});
+					})
+				);
+			});;
+			btnBuild.click();
+		}
+	</script>
+</body>
+
+</html>

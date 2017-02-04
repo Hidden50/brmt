@@ -1,0 +1,43 @@
+textarea {
+	white-space: pre-wrap;
+	min-height:  100px;
+	width:       98vw;
+}
+button {
+	margin-bottom: 5px;
+}
+div.footer {
+	position: absolute;
+	bottom:   0px;
+}
+div.infopopout {
+	background-color: white;
+	border:           4px solid Black;
+	position:         absolute;
+	display:          none;
+	padding:          15px;
+	margin:           5px;
+}
+button#onclickinfo_find {
+	margin-left: 15px;
+	float:       right;
+}
+span.iconWrapper {
+	vertical-align: middle;
+	display:        inline-block;
+	position:       relative;
+}
+div#output > span.iconWrapper {
+	background-color: yellow;
+	cursor:           pointer;
+	width:            42px;
+	height:           42px;
+	margin:           3px;
+	border:           2px solid Navy;
+}
+div#output > span.iconWrapper > img {
+	transform: translate(-50%, -50%);
+	position:  absolute;
+	left:      50%;
+	top:       50%;
+}
