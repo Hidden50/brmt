@@ -73,6 +73,7 @@ window.textareaFindText = function textareaFindText (ta, regex) {
 		match = ta.value.match(regex);
 	}
 	if (!match) return;  // no results found
+	ta.scrollTop = 0;
 	let selStart = offset + match.index;
 	let selEnd = offset + match.index + match[0].length;
 	let temp = ta.value;
