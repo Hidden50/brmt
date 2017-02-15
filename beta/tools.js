@@ -54,7 +54,8 @@ window.scrollBuilddata = function scrollBuilddata (species, set, defenderSpecies
 		[, defenderSpecies, defenderSet, species, set] = species.title.match(/^([^()]*) \(([^()]*)\)(?: beats ([^()]*) \(([^()]*)\))?$/);
 	if (!species)       // title was "species (set)" instead
 		[species, set, defenderSpecies, defenderSet] = [defenderSpecies, defenderSet, "", ""];
-	let [target, target2] = [species, defenderSpecies].map( spc => window.compendiums.aliases[spc] || spc );
+	[species, defenderSpecies] = [species, defenderSpecies].map( spc => window.compendiums.aliases[toId(spc)] || spc );
+	let target = species, target2 = defenderSpecies;
 	if (window.compendiums.officialnames[species])
 		target += `|${window.compendiums.officialnames[species]}`;
 	if (window.compendiums.officialnames[defenderSpecies])
