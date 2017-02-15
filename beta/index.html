@@ -11,41 +11,42 @@
 </head>
 
 <body>
-	<label for="builddata">Build data</label> <button id="build">rebuild compendium</button><br>
+	<label for="builddata">Build data</label> <button id="build">rebuild compendium</button> <button id="useofficialnames">use official names</button> <button id="usespeciesid">use species ID</button><br>
 	<textarea id="builddata"></textarea><br>
 	<div id="output"></div>
 	<div class="footer">
-		<details> <textarea id="miniicons"></textarea> <summary>Mini Icons</summary> </details>
 		<details> <textarea id="aliases"></textarea> <summary>Aliases</summary> </details>
-		<details> <textarea id="changelog">maybe coming soon</textarea> <summary>Changelog</summary> </details>
 	</div>
 	<div ID="onclickinfo_popout" class="infopopout" onmouseleave="this.style.display = 'none'"></div>
 	<script>
+		let buildDataToString = (data, sep, linesep, useOfficialNames) => data.map( arr => arr.map( a => packBuildData(unpackBuildData([a]), useOfficialNames) ).join(sep) ).join(linesep);
 		window.onload = function() {
 			let btnBuild = document.getElementById("build");
-			let [taBuilddata, taMiniicons, taAliases, taChangelog] = ["builddata", "miniicons", "aliases", "changelog"].map(document.getElementById.bind(document));
+			let [taBuilddata, taAliases] = ["builddata", "aliases"].map(document.getElementById.bind(document));
+			document.getElementById("useofficialnames").addEventListener('click', function() {
+				taBuilddata.value = buildDataToString( taBuilddata.value.split(/\r?\n/g).map( line => line.split(",").map(trim) ), ", ", "\n", true );
+			});
+			document.getElementById("usespeciesid").addEventListener('click', function() {
+				taBuilddata.value = buildDataToString( taBuilddata.value.split(/\r?\n/g).map( line => line.split(",").map(trim) ), ", ", "\n" );
+			});
 			let output = document.getElementById("output");
 			
-			if (!location.hash) location.hash = window.compendiums.OUcc.buildData.map( arr => arr.join(",") ).join("&");
+			if (!location.hash) location.hash = buildDataToString( window.compendiums.OUcc.buildData, ",", "&" );
 			taBuilddata.value = location.hash.substr(1).replace(/&/g, "\n").replace(/,/g, ", ").replace(/%20/g, " ");
-			[taMiniicons, taAliases, taChangelog].forEach(
-				(ta, index) =>  { ta.value = JSON.stringify(window.compendiums.OUcc[["miniIcons", "aliases", "changelog"][index]], null, 4); }
-			);
+			taAliases.value = JSON.stringify(window.compendiums.OUcc.aliases, null, 2);
 			
 			btnBuild.addEventListener('click', function() {
 				let buildData = taBuilddata.value.split(/\r?\n/g).map( line => line.split(",").map(trim) );
-				let [miniIcons, aliases, changelog] = [taMiniicons, taAliases, taChangelog].map( ta => JSON.parse(ta.value) );
 				
 				window.compendiums.OUcc = {
-					"miniIcons": miniIcons,
-					"aliases":   aliases,
-					"changelog": changelog,
 					"buildData": buildData
 				};
 				
-				window.build = window.buildTools.buildChecksCompendium( buildData );
+				let compendium = window.buildTools.buildChecksCompendium( buildData );
+				window.build = compendium.build;
+				window.compendiums.OUcc.miniIcons = compendium.miniIcons;
 				
-				location.hash = buildData.map( arr => arr.join(",") ).join("&");
+				location.hash = buildDataToString( buildData, ",", "&" );
 				output.innerHTML = window.buildTools.compendiumToHtmlImages( window.compendiums.OUcc, build, ["tiles"] );
 				addIconWrapListeners( output, 'click', addPopup );
 			});

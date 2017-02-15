@@ -1,5 +1,7 @@
 window.trim = x => x.trim();
 
+window.toId = x => x.toLowerCase().replace(/[^a-z0-9]/g, '');
+
 window.htmlDetails = (summary, details) => `<details><summary>${summary}</summary>${details}</details>`;
 
 window.showPopout = function showPopout (containerID, Sender, contentHtml) {
@@ -34,6 +36,7 @@ window.addIconWrapListeners = function addIconWrapListeners (parent, eventType, 
 window.addPopup = function addPopup (source, species, set) {
 	if (!species)
 		[, species, set] = source.title.match(/^(.*) \(([^()]*)\)$/);
+	species = window.compendiums.aliases[toId(species)] || species;
 	showPopout(
 		"onclickinfo_popout",
 		source,
@@ -47,12 +50,17 @@ window.addPopup = function addPopup (source, species, set) {
 }
 
 window.scrollBuilddata = function scrollBuilddata (species, set, defenderSpecies, defenderSet) {
-	if (species.title)  // title: "defenderSpecies (defenderSet) beats species (set)"
+	if (species.title)  // parsing title: "defenderSpecies (defenderSet) beats species (set)"
 		[, defenderSpecies, defenderSet, species, set] = species.title.match(/^([^()]*) \(([^()]*)\)(?: beats ([^()]*) \(([^()]*)\))?$/);
 	if (!species)       // title was "species (set)" instead
 		[species, set, defenderSpecies, defenderSet] = [defenderSpecies, defenderSet, "", ""];
-	textareaFindText( document.getElementById("builddata"), new RegExp("\n" + `(?=${species}[^\n]*${defenderSpecies})`, 'i') );
-	textareaFindText( document.getElementById("builddata"), new RegExp(defenderSpecies || species, 'i') );
+	let target = species, target2 = defenderSpecies;
+	if (window.compendiums.officialnames[species])
+		target += `|${window.compendiums.officialnames[species]}`;
+	if (window.compendiums.officialnames[defenderSpecies])
+		target2 += `|${window.compendiums.officialnames[defenderSpecies]}`;
+	textareaFindText( document.getElementById("builddata"), new RegExp("(?:^|\n)" + `(?=(?:${target}),[^\n]*(?:${target2}))`, 'i') );
+	textareaFindText( document.getElementById("builddata"), new RegExp(target2 || target, 'i') );
 }
 
 window.textareaFindText = function textareaFindText (ta, regex) {

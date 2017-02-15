@@ -36,3 +36,13 @@ div#output > span.iconWrapper > img {
 	left:      50%;
 	top:       50%;
 }
+span.miniIconWrapper {
+	text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	text-align:  right;
+	font-size:   10pt;
+	line-height: 90%;
+	color:       #fff;
+	position:    absolute;
+	bottom:      0px;
+	right:       0px;
+}
