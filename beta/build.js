@@ -112,24 +112,25 @@ this.compendiumToHtmlImages = function compendiumToHtmlImages    (compendium, bu
 	return Object.keys(build[species][set][mode][targetSpecies]).map( targetSetMap ).join('');
 };
 
-let Weblink = (imgName) => `./../Serebii__Images/${imgName}.png`;
+let Weblink = (imgName) => `./../Serebii__Images/${window.compendiums.aliases[toId(imgName)] || imgName}.png`;
 
 function brmtIcon (compendium, title, species, set) {
 	let { image, icon, letters } = compendium.miniIcons[species] && compendium.miniIcons[species][set] || {};
 	
 	if (compendium.miniIcons[set]) {
-		if (image === undefined)   image = compendium.miniIcons[set].image;
-		if (icon === undefined)    icon = compendium.miniIcons[set].icon;
 		if (letters === undefined) letters = compendium.miniIcons[set].letters;
+		image = image || compendium.miniIcons[set].image;
+		icon =  icon  || compendium.miniIcons[set].icon;
 	}
-	if (image === undefined)   image = species;
-	if (letters === undefined) letters = set;
+	if (letters === undefined) letters = icon ? "" : set;
+	letters = `<span class='textWrapper'>${letters}</span>`;
 	
 	if (icon) icon = `<img src="${Weblink(icon)}" width=18px height=18px">`;
-	else icon = `<b>${letters}</b>`;
-	image = `<img src="${Weblink(image)}">`;
+	icon = `<span class='iconWrapper'>${icon || ""}</span>`;
 	
-	return `<span title="${title}" class="iconWrapper">${image}<span class='miniIconWrapper'>${icon}</span></span>`;
+	image = `<img src="${Weblink(image || species)}">`;
+	
+	return `<span title="${title}" alt="${window.compendiums.officialnames[species] || species} (${set})" class="imageWrapper">${image}${icon}${letters}</span>`;
 }
 
 /* Aliases */
