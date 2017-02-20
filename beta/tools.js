@@ -28,8 +28,8 @@ window.showPopout = function showPopout (containerID, Sender, contentHtml) {
 window.addIconWrapListeners = function addIconWrapListeners (parent, eventType, listener) {
 	if (typeof parent === "string")
 		parent = document.getElementById(parent);
-	[...parent.getElementsByClassName("iconWrapper")].forEach(
-		iconWrapper => iconWrapper.addEventListener( eventType, () => listener(iconWrapper) )
+	[...parent.getElementsByClassName("imageWrapper")].forEach(
+		imageWrapper => imageWrapper.addEventListener( eventType, () => listener(imageWrapper) )
 	);
 };
 
