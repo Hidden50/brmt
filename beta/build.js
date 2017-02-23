@@ -75,20 +75,22 @@ function sortThreats(build) {
 	for (let species in build)
 	for (let set in build[species])
 		threats.push( [species, set] );
-	let count = (species, set, mode) => Object.keys(build[species][set] && build[species][set][mode] || []).length;
+	let count = (species, set, mode) => Object.keys(build[species][set][mode]).length;
 	let weights = [300, 200, 2, -11, -7, -3];
-	threats =  threats.sort( (a,b) => {
-		let scoreA = 0, scoreB = 0;
-		for (m = 0; m < siModes.length; m++) {
-			scoreA += weights[m] * ( count(a[0], "?", siModes[m]) || count(a[0], Object.keys(build[a[0]])[0], siModes[m]) );
-			scoreB += weights[m] * ( count(b[0], "?", siModes[m]) || count(b[0], Object.keys(build[b[0]])[0], siModes[m]) );
-			if (m === 2 && scoreA === 0)
-				scoreA = 500000;
-			if (m === 2 && scoreB === 0)
-				scoreB = 500000;
+	let score = (species, set) => {
+		let sum = 0;
+		for (let m = 0; m < siModes.length; m++) {
+			sum += weights[m] * count(species, set, siModes[m]);
+			if (m === 2 && sum === 0) sum = 500000;
 		}
-		return scoreA - scoreB;
-	} );
+		return sum;
+	};
+	let simpleHash = (str) => { let num = 0; for (let i in str) num += str.charCodeAt(i) * Math.pow(2, i); return num; }
+	threats =  threats.sort((a,b) => {
+		let scoreA = Math.min( ...Object.keys(build[a[0]]).map(set => score(a[0], set)) );
+		let scoreB = Math.min( ...Object.keys(build[b[0]]).map(set => score(b[0], set)) );
+		return ( scoreA - scoreB ) || ( simpleHash(a[0]) - simpleHash(b[0]) ) || ( score(a[0], a[1]) - score(b[0], b[1]) );
+	});
 //	window.showPopout(  "onclickinfo_popout", usespeciesid, "<textarea>" + threats.map(JSON.stringify).join("\r\n") + "</textarea>"  );
 	return threats;
 }
