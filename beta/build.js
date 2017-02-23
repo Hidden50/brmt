@@ -1,17 +1,21 @@
 window.buildTools = (function(){
 
+let siModes = ["GSI", "SSI", "NSI", "GSI to", "SSI to", "NSI to"];
+
 /* buildData -> build */
 
 this.buildChecksCompendium = function buildChecksCompendium (buildData) {
 	let build = {}, miniIcons = {};
 	for (let [attacker, mode, ...defenders] of buildData) {
 		attacker =  unpackBuildData( [attacker] );
+		// handle siModes
 		if (["GSI", "SSI", "NSI"].includes(mode)) {
 			defenders = unpackBuildData( defenders );
 			addEntries(build, attacker, mode, defenders);          // fill "*SI"    for attacker
 			addEntries(build, defenders, `${mode} to`, attacker);  // fill "*SI to" for defenders
 			continue;
 		}
+		// handle miniIcon setup. mode = icon, image or letters
 		for (let species in attacker)
 		for (let set in attacker[species]) {
 			if (!miniIcons[species]) miniIcons[species] = {};
@@ -26,15 +30,15 @@ this.buildChecksCompendium = function buildChecksCompendium (buildData) {
 	return { "build": build, "miniIcons": miniIcons };
 };
 
-function addEntries (build, attackers, mode, defenders) {
-	for (let species in attackers)
-	for (let set in attackers[species])
-	for (let defenderSpecies in defenders)
-	for (let defenderSet in defenders[defenderSpecies]) {
+function addEntries (build, subjects, mode, targets) {
+	for (let species in subjects)
+	for (let set in subjects[species])
+	for (let targetSpecies in targets)
+	for (let targetSet in targets[targetSpecies]) {
 		if (!build[species]) build[species] = {};
 		if (!build[species][set]) build[species][set] = { "GSI": {}, "SSI": {}, "NSI": {}, "GSI to": {}, "SSI to": {}, "NSI to": {} };
-		if (!build[species][set][mode][defenderSpecies]) build[species][set][mode][defenderSpecies] = {};
-		build[species][set][mode][defenderSpecies][defenderSet] = 1;
+		if (!build[species][set][mode][targetSpecies]) build[species][set][mode][targetSpecies] = {};
+		build[species][set][mode][targetSpecies][targetSet] = 1;
 	}
 }
 
@@ -71,14 +75,13 @@ function sortThreats(build) {
 	for (let species in build)
 	for (let set in build[species])
 		threats.push( [species, set] );
-	let count = (species, set, mode) => Object.keys(build[species][set][mode]).length;
-	let modes = ["GSI","SSI","NSI","GSI to","SSI to","NSI to"];
+	let count = (species, set, mode) => Object.keys(build[species][set] && build[species][set][mode] || []).length;
 	let weights = [300, 200, 2, -11, -7, -3];
 	threats =  threats.sort( (a,b) => {
 		let scoreA = 0, scoreB = 0;
-		for (m = 0; m < modes.length; m++) {
-			scoreA += weights[m] * count(a[0], a[1], modes[m]);
-			scoreB += weights[m] * count(b[0], b[1], modes[m]);
+		for (m = 0; m < siModes.length; m++) {
+			scoreA += weights[m] * ( count(a[0], "?", siModes[m]) || count(a[0], Object.keys(build[a[0]])[0], siModes[m]) );
+			scoreB += weights[m] * ( count(b[0], "?", siModes[m]) || count(b[0], Object.keys(build[b[0]])[0], siModes[m]) );
 			if (m === 2 && scoreA === 0)
 				scoreA = 500000;
 			if (m === 2 && scoreB === 0)
@@ -102,8 +105,10 @@ this.compendiumToHtmlImages = function compendiumToHtmlImages    (compendium, bu
 	
 	if (!species)        return sortThreats(build).map( speciesSetMap ).join('');
 	if (!build[species]) return `Error: Species "${species}" not found.`;
-	if (options.includes("tiles"))
+	if (options.includes("tiles")) {
+//		if (!build[species]["?"]) return "";
 		return brmtIcon(compendium, `${window.compendiums.officialnames[species] || species} (${set})`, species, set);
+	}
 	if (!set)            return `<b>${window.compendiums.officialnames[species] || species} Sets</b><br><hr>` + Object.keys(build[species]).map( setMap ).join('<br><hr>');
 	if (!mode)           return brmtIcon(compendium, `${window.compendiums.officialnames[species] || species} (${set})`, species, set) + ` <b>${set}</b><br>` + Object.keys(build[species][set]).map( modeMap ).join('<br>');
 //	if (!set)            return `<b>${species} Checks</b> (click to expand)<br>` + Object.keys(build[species]).map( setMap ).join('');
@@ -117,6 +122,11 @@ let Weblink = (imgName) => `./../Serebii__Images/${window.compendiums.aliases[to
 function brmtIcon (compendium, title, species, set) {
 	let { image, icon, letters } = compendium.miniIcons[species] && compendium.miniIcons[species][set] || {};
 	
+	if (compendium.miniIcons[species] && compendium.miniIcons[species]["?"]) {
+		if (letters === undefined) letters = compendium.miniIcons[species]["?"].letters;
+		image = image || compendium.miniIcons[species]["?"].image;
+		icon =  icon  || compendium.miniIcons[species]["?"].icon;
+	}
 	if (compendium.miniIcons[set]) {
 		if (letters === undefined) letters = compendium.miniIcons[set].letters;
 		image = image || compendium.miniIcons[set].image;
@@ -125,12 +135,12 @@ function brmtIcon (compendium, title, species, set) {
 	if (letters === undefined) letters = icon ? "" : set;
 	letters = `<span class='textWrapper'>${letters}</span>`;
 	
-	if (icon) icon = `<img src="${Weblink(icon)}" width=18px height=18px">`;
+	if (icon) icon = `<img src="${Weblink(icon)}" width=18px height=18px alt="(${window.compendiums.aliases[toId(icon)] || icon}) ">`;
 	icon = `<span class='iconWrapper'>${icon || ""}</span>`;
 	
-	image = `<img src="${Weblink(image || species)}">`;
+	image = `<img src="${Weblink(image || species)}" alt="${window.compendiums.officialnames[species] || species} ">`;
 	
-	return `<span title="${title}" alt="${window.compendiums.officialnames[species] || species} (${set})" class="imageWrapper">${image}${icon}${letters}</span>`;
+	return `<span title="${title}" class="imageWrapper">${image}${icon}${letters}</span>`;
 }
 
 /* Aliases */
