@@ -46,8 +46,9 @@ span.textWrapper {
 	text-align:  right;
 	font-size:   10pt;
 	line-height: 90%;
+	max-width:   38px;
 	color:       #fff;
 	position:    absolute;
-	bottom:      0px;
-	right:       0px;
+	bottom:      2px;
+	right:       2px;
 }
