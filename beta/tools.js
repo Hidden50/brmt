@@ -58,10 +58,21 @@ window.scrollBuilddata = function scrollBuilddata (species, set, defenderSpecies
 	let target = species, target2 = defenderSpecies;
 	if (window.compendiums.officialnames[species])
 		target += `|${window.compendiums.officialnames[species]}`;
-	if (window.compendiums.officialnames[defenderSpecies])
-		target2 += `|${window.compendiums.officialnames[defenderSpecies]}`;
-	textareaFindText( document.getElementById("builddata"), new RegExp("(?:^|\n)" + `(?=(?:${target}),[^\n]*(?:${target2}))`, 'i') );
-	textareaFindText( document.getElementById("builddata"), new RegExp(target2 || target, 'i') );
+	target = `(?:${target})[^,\\n]*\\|${set}(?=[,|])`;
+	if (target2) {
+		if (window.compendiums.officialnames[defenderSpecies])
+			target2 += `|${window.compendiums.officialnames[defenderSpecies]}`;
+		target2 = `(?:${target2})[^,\\n]*\\|${defenderSet}(?=[,|\\n])`;
+	}
+	let lineRegex =
+		"(?:^|\\n)(?=" + target +
+			(!target2 ? "" : "[^\\n]*" + target2)
+		+ ")";
+	let entryRegex = target2 || target;
+	
+	let r1 = textareaFindText( document.getElementById("builddata"), new RegExp(lineRegex, 'i') );
+	if (!r1) return;
+	let r2 = textareaFindText( document.getElementById("builddata"), new RegExp(entryRegex, 'i') );
 }
 
 window.textareaFindText = function textareaFindText (ta, regex) {
@@ -72,7 +83,7 @@ window.textareaFindText = function textareaFindText (ta, regex) {
 		offset = 0;
 		match = ta.value.match(regex);
 	}
-	if (!match) return;  // no results found
+	if (!match) return false;  // no results found
 	ta.scrollTop = 0;
 	let selStart = offset + match.index;
 	let selEnd = offset + match.index + match[0].length;
@@ -84,4 +95,5 @@ window.textareaFindText = function textareaFindText (ta, regex) {
 	ta.value = temp;
 	// mark result for user
 	ta.setSelectionRange(selStart, selEnd);
+	return true;
 }
