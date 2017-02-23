@@ -356,346 +356,346 @@ window.compendiums.OUcc.buildData = `121|lo, icon, lifeorb
 ?, letters`.split(/\r?\n/g).map( line => line.split(/, */g) );
 
 let gen7OUccBuilddata = `121|lo, GSI, 113
-121|lo, SSI, 658|protean|ash, 598, 465|av, 720-u|scarf, 381|scarf|specs|lo, 380, 199|cm
-121|lo, NSI, 645-s|scarf, 795|scarf|specs|lo|Quiver Dance, 720-u|band|specs|lo, 646-b, 545|?|Waterium Z SD, 248|scarf, 461, 319-m, 130-m, 089-a, 646, 082, 242
+121|lo, SSI, 658|protean|ash, 598|def, 465|av, 720-u|scarf, 381|scarf|specs|lo, 380|hw, 199|cm
+121|lo, NSI, 645-s|scarf, 795|scarf|specs|lo|Quiver Dance, 720-u|band|specs|lo, 646-b|Z-Ice, 545|bp|Waterium Z SD, 248|scarf, 461|lo, 319-m|Cleaner, 130-m|dd, 089-a|av, 646|specs, 082|scarf, 242
 
-130|Flyinium Z DD, GSI, 479w, 227|def, 080|tw, 080-m|cm|tw, 195, 395, 771
-130|Flyinium Z DD, SSI, 598, 145, 594
-130|Flyinium Z DD, NSI, 645-s|scarf, 793|scarf, 639|scarf, 642|tw, 142-m, 707, 630
+130|Flyinium Z DD, GSI, 479w|def, 227|def, 080|tw, 080-m|cm|tw, 195|curse, 395|def, 771|curse
+130|Flyinium Z DD, SSI, 598|def, 145|def, 594|def
+130|Flyinium Z DD, NSI, 645-s|scarf, 793|scarf, 639|scarf, 642|tw, 142-m, 707|Spikes, 630|def
 
-139|shell smash, GSI, 423, 537
-139|shell smash, NSI, 658|ash, 051|sash, 598, 591, 006-my, 465|av, 003-m, 113, 642|tw, 286, 707
+139|shell smash, GSI, 423|SpD, 537|def
+139|shell smash, NSI, 658|ash, 051|sash, 598|def, 591|def, 006-my|Drought Wallbreaker, 465|av, 003-m, 113, 642|tw, 286|SD, 707|Spikes
 
-141, GSI, 465|helmet, 798, 423, 080-m|cm|tw, 537
-141, SSI, 598, 591, 479w, 003-m, 080|tw, 286, 594, 395
-141, NSI, 658|ash, 647|scarf|specs, 051|sash, 065-m, 006-my, 230, 642|tw, 707
+141, GSI, 465|helmet, 798|SD Z-Move, 423|SpD, 080-m|cm|tw, 537|def
+141, SSI, 598|def, 591|def, 479w|def, 003-m, 080|tw, 286|SD, 594|def, 395|def
+141, NSI, 658|ash, 647|scarf|specs, 051|sash, 065-m, 006-my|Drought Wallbreaker, 230, 642|tw, 707|Spikes
 
-149, GSI
-149, SSI, 645-s|helmet, 797|Autotomize|SpD, 227|def, 145, 080|tw, 437, 080-m|tw, 594, 195
-149, NSI, 645-s|scarf, 376-m, 445|scarf, 786|scarf, 793|scarf, 381|scarf, 639|scarf, 461, 642|tw, 142-m, 141, 139|shell smash, 707
+149|DD Z-Move, GSI
+149|DD Z-Move, SSI, 645-s|helmet, 797|Autotomize|SpD, 227|def, 145|def, 080|tw, 437|def, 080-m|tw, 594|def, 195|curse
+149|DD Z-Move, NSI, 645-s|scarf, 376-m|Wallbreaker, 445|scarf, 786|scarf, 793|scarf, 381|scarf, 639|scarf, 461|lo, 642|tw, 142-m, 141, 139|shell smash, 707|Spikes
 
-151|stallbreaker, GSI, 658|ash, 006-mx|Bulky|dd, 006-my, 637, 635, 302-m
-151|stallbreaker, NSI, 795|scarf|specs|lo|Quiver Dance, 094|scarf|lo, 461, 359-m
+151|stallbreaker, GSI, 658|ash, 006-mx|Bulky|dd, 006-my|Drought Wallbreaker, 637|QD Z-Fire, 635|specs, 302-m
+151|stallbreaker, NSI, 795|scarf|specs|lo|Quiver Dance, 094|scarf|lo, 461|lo, 359-m
 
-199|cm, GSI, 658|protean|ash, 036|un cm, 720-u|band|scarf|specs|lo, 151|stallbreaker, 635
-199|cm, SSI, 788, 497
-199|cm, NSI, 795|scarf|specs|lo|Quiver Dance, 785, 787, 094|lo, 462|specs, 794, 646-b, 105-a, 248|band, 461, 798, 319-m, 642|Offensive|tw, 286, 130-m, 342, 089-a, 642-s, 796, 359-m
+199|cm, GSI, 658|protean|ash, 036|un cm, 720-u|band|scarf|specs|lo, 151|stallbreaker, 635|specs
+199|cm, SSI, 788|def, 497|SubSeed
+199|cm, NSI, 795|scarf|specs|lo|Quiver Dance, 785, 787, 094|lo, 462|specs, 794, 646-b|Z-Ice, 105-a, 248|band, 461|lo, 798|SD Z-Move, 319-m|Cleaner, 642|Offensive|tw, 286|SD, 130-m|dd, 342, 089-a|av, 642-s, 796|TG Z-Elec, 359-m
 
-230, GSI, 598, 788, 199|cm, 292, 395, 593
-230, SSI, 591, 465|av, 003-m, 113, 748, 242
-230, NSI, 642|tw, 184, 707, 730
+230, GSI, 598|def, 788|def, 199|cm, 292|Wall, 395|def, 593|def
+230, SSI, 591|def, 465|av, 003-m, 113, 748|def, 242
+230, NSI, 642|tw, 184, 707|Spikes, 730|specs
 
-245, GSI, 720-u|specs, 497, 080|cm, 423, 226, 080-m|cm, 199|cm, 292, 593, 537
-245, SSI, 788, 036|un cm, 381|specs|lo
-245, NSI, 785, 787, 462|specs, 490|z tg, 646-b, 145, 798, 642|Offensive|tw, 642-s, 796
+245|sub protect, GSI, 720-u|specs, 497|SubSeed, 080|cm, 423|SpD, 226|def, 080-m|cm, 199|cm, 292|Wall, 593|def, 537|def
+245|sub protect, SSI, 788|def, 036|un cm, 381|specs|lo
+245|sub protect, NSI, 785, 787, 462|specs, 490|z tg, 646-b|Z-Ice, 145|def, 798|SD Z-Move, 642|Offensive|tw, 642-s, 796|TG Z-Elec
 
-248|band, GSI, 645-s|helmet, 445|helmet, 647|scarf|specs, 794, 450
-248|band, SSI, 645-s|scarf|Double Dance|Offensive, 445|scarf|sd, 227|def, 465|helmet, 625, 530|scarf|Offensive Mold Breaker|Sand Rush, 625, 639|band|scarf|Rockium Z SD, 472|def, 286
-248|band, NSI, 376-m, 658|ash, 795|scarf|specs|lo|Quiver Dance, 051|sash|Offensive Trapper, 718|Coil|dd, 127-m, 641-s, 248|scarf, 461, 798, 473, 718-10, 130-m, 141, 139|shell smash, 721, 660, 195, 445-m, 160, 701
+248|band, GSI, 645-s|helmet, 445|helmet, 647|scarf|specs, 794, 450|def
+248|band, SSI, 645-s|scarf|Double Dance|Offensive, 445|scarf|sd, 227|def, 465|helmet, 625|SD, 530|scarf|Offensive Mold Breaker|Sand Rush, 625|SD, 639|band|scarf|Rockium Z SD, 472|def, 286|SD
+248|band, NSI, 376-m|Wallbreaker, 658|ash, 795|scarf|specs|lo|Quiver Dance, 051|sash|Offensive Trapper, 718|Coil|dd, 127-m|SD, 641-s|lo, 248|scarf, 461|lo, 798|SD Z-Move, 473|lo, 718-10, 130-m|dd, 141, 139|shell smash, 721|specs, 660, 195|curse, 445-m|SD, 160, 701|SubSD
 
-248|scarf, GSI, 645-s|helmet, 445|helmet, 647|scarf|specs, 794, 450
-248|scarf, SSI, 645-s|scarf|Double Dance|Offensive, 445|scarf|sd, 227|def, 465|helmet, 625, 530|scarf|Offensive Mold Breaker|Sand Rush, 625, 639|band|scarf|Rockium Z SD, 472|def, 286
-248|scarf, NSI, 658|ash, 795|scarf|specs|lo|Quiver Dance, 051|sash|Offensive Trapper, 718|Coil|dd, 641-s, 461, 798, 473, 718-10, 130-m, 141, 139|shell smash, 195, 445-m, 701
+248|scarf, GSI, 645-s|helmet, 445|helmet, 647|scarf|specs, 794, 450|def
+248|scarf, SSI, 645-s|scarf|Double Dance|Offensive, 445|scarf|sd, 227|def, 465|helmet, 625|SD, 530|scarf|Offensive Mold Breaker|Sand Rush, 625|SD, 639|band|scarf|Rockium Z SD, 472|def, 286|SD
+248|scarf, NSI, 658|ash, 795|scarf|specs|lo|Quiver Dance, 051|sash|Offensive Trapper, 718|Coil|dd, 641-s|lo, 461|lo, 798|SD Z-Move, 473|lo, 718-10, 130-m|dd, 141, 139|shell smash, 195|curse, 445-m|SD, 701|SubSD
 
-286, GSI, 591, 003-m, 794
-286, SSI, 445|helmet, 006-mx|Bulky|dd, 787, 006-my, 094|scarf|lo, 127-m, 373|Flyinium Z DD, 227|def, 465|helmet, 637, 381|scarf|specs|lo, 105-a, 545|Waterium Z SD, 641-s, 145, 149, 380, 151|stallbreaker, 468, 691, 724, 701, 663, 494
-286, NSI, 786|scarf|specs|Stallbreaker, 065-m, 642|Offensive|tw, 034, 121|lo
+286|SD, GSI, 591|def, 003-m, 794
+286|SD, SSI, 445|helmet, 006-mx|Bulky|dd, 787, 006-my|Drought Wallbreaker, 094|scarf|lo, 127-m|SD, 373|Flyinium Z DD, 227|def, 465|helmet, 637|QD Z-Fire, 381|scarf|specs|lo, 105-a, 545|Waterium Z SD, 641-s|lo, 145|def, 149|DD Z-Move, 380|hw, 151|stallbreaker, 468|Stallbreaker, 691|t-spike, 724|def, 701|SubSD, 663|SD z-fly, 494
+286|SD, NSI, 786|scarf|specs|Stallbreaker, 065-m, 642|Offensive|tw, 034|lo, 121|lo
 
-373|Flyinium Z DD, GSI, 797|Autotomize|SpD, 227|def|SpD, 080|tw, 437, 080-m|cm|tw
-373|Flyinium Z DD, SSI, 645-s|helmet, 145
-373|Flyinium Z DD, NSI, 445|scarf, 795|scarf, 647|scarf, 793|scarf, 381|scarf, 639|scarf, 461, 230, 642|tw, 141, 139|shell smash, 707
+373|Flyinium Z DD, GSI, 797|Autotomize|SpD, 227|def|SpD, 080|tw, 437|def, 080-m|cm|tw
+373|Flyinium Z DD, SSI, 645-s|helmet, 145|def
+373|Flyinium Z DD, NSI, 445|scarf, 795|scarf, 647|scarf, 793|scarf, 381|scarf, 639|scarf, 461|lo, 230, 642|tw, 141, 139|shell smash, 707|Spikes
 
-380, GSI, 797|SpD, 801|av, 385|scarf|SpD|SubTox, 113, 036|un cm, 089-a
-380, SSI, 376-m, 797|Autotomize, 786|scarf|specs|Stallbreaker, 598, 485, 801|specs|Shift Gear, 788, 462|av|specs, 227|def|SpD, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 248|band|scarf, 437, 199|cm, 468, 707, 395
-380, NSI, 658|protean|ash, 645-s|scarf, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 787, 094|scarf, 625, 720-u|band|scarf|specs|lo, 381|scarf, 545, 461, 230, 319-m, 718-10, 184, 778, 730, 359-m
+380|hw, GSI, 797|SpD, 801|av, 385|scarf|SpD|SubTox, 113, 036|un cm, 089-a|av
+380|hw, SSI, 376-m|Wallbreaker, 797|Autotomize, 786|scarf|specs|Stallbreaker, 598|def, 485, 801|specs|Shift Gear, 788|def, 462|av|specs, 227|def|SpD, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 248|band|scarf, 437|def, 199|cm, 468|Stallbreaker, 707|Spikes, 395|def
+380|hw, NSI, 658|protean|ash, 645-s|scarf, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 787, 094|scarf, 625|SD, 720-u|band|scarf|specs|lo, 381|scarf, 545|bp, 461|lo, 230, 319-m|Cleaner, 718-10, 184, 778|SD, 730|specs, 359-m
 
 381|specs|lo, GSI, 801|av, 385|scarf|SpD|SubTox
-381|specs|lo, SSI, 376-m, 797|Autotomize|SpD, 786|scarf, 598, 485, 801|specs|Shift Gear, 462|av|specs, 227|SpD, 113, 036|mg cm|Stealth Rock|un cm|un, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 212-m, 248|band|scarf, 437, 199|cm, 707, 089-a, 395
-381|specs|lo, NSI, 658|protean|ash, 645-s|scarf, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 787, 788, 094|scarf, 625, 720-u|band|scarf|specs|lo, 381|scarf, 545, 461, 230, 319-m, 718-10, 184, 778, 730, 359-m
+381|specs|lo, SSI, 376-m|Wallbreaker, 797|Autotomize|SpD, 786|scarf, 598|def, 485, 801|specs|Shift Gear, 462|av|specs, 227|SpD, 113, 036|mg cm|Stealth Rock|un cm|un, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 212-m|SD, 248|band|scarf, 437|def, 199|cm, 707|Spikes, 089-a|av, 395|def
+381|specs|lo, NSI, 658|protean|ash, 645-s|scarf, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 787, 788|def, 094|scarf, 625|SD, 720-u|band|scarf|specs|lo, 381|scarf, 545|bp, 461|lo, 230, 319-m|Cleaner, 718-10, 184, 778|SD, 730|specs, 359-m
 
-381|scarf, GSI, 376-m, 797|Autotomize|SpD, 801|av|specs, 385|scarf|SpD|SubTox, 485, 462|av|specs, 227|SpD, 113, 036|mg cm|Stealth Rock|un cm|un, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 248|band|scarf
-381|scarf, SSI, 786|scarf|specs|Stallbreaker, 598, 212-m, 437, 199|cm, 707, 089-a, 395
-381|scarf, NSI, 795|scarf, 787, 788, 625, 720-u|band|scarf|specs|lo, 545|Waterium Z SD, 230, 184, 778, 730
+381|scarf, GSI, 376-m|Wallbreaker, 797|Autotomize|SpD, 801|av|specs, 385|scarf|SpD|SubTox, 485, 462|av|specs, 227|SpD, 113, 036|mg cm|Stealth Rock|un cm|un, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 248|band|scarf
+381|scarf, SSI, 786|scarf|specs|Stallbreaker, 598|def, 212-m|SD, 437|def, 199|cm, 707|Spikes, 089-a|av, 395|def
+381|scarf, NSI, 795|scarf, 787, 788|def, 625|SD, 720-u|band|scarf|specs|lo, 545|Waterium Z SD, 230, 184, 778|SD, 730|specs
 
-385|scarf, GSI, 645-s|helmet, 797|Autotomize|SpD, 445|helmet, 598, 485, 479w, 227|def|SpD, 465|helmet, 625, 212-m, 145, 080|cm|tw, 437, 080-m|cm|tw, 199|cm, 594, 450, 395, 593, 082, 494
-385|scarf, SSI, 006-mx|Bulky|dd, 006-my, 637, 130|Flyinium Z DD, 105-a, 472|def, 279, 130-m, 226, 245, 721, 195, 537, 663
+385|scarf, GSI, 645-s|helmet, 797|Autotomize|SpD, 445|helmet, 598|def, 485, 479w|def, 227|def|SpD, 465|helmet, 625|SD, 212-m|SD, 145|def, 080|cm|tw, 437|def, 080-m|cm|tw, 199|cm, 594|def, 450|def, 395|def, 593|def, 082|scarf, 494
+385|scarf, SSI, 006-mx|Bulky|dd, 006-my|Drought Wallbreaker, 637|QD Z-Fire, 130|Flyinium Z DD, 105-a, 472|def, 279|def, 130-m|dd, 226|def, 245|sub protect, 721|specs, 195|curse, 537|def, 663|SD z-fly
 385|scarf, NSI, 445|scarf, 094|scarf, 230, 359-m
 
 445|sd, GSI
-445|sd, SSI, 645-s|helmet, 797|Autotomize|SpD, 787, 227|def|SpD, 465|helmet, 080|cm|tw, 437, 080-m|cm|tw, 468, 594
-445|sd, NSI, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 786|scarf, 788, 036|mg cm|Stealth Rock|un cm|un, 381|scarf|specs|lo, 461, 230, 473, 642|Offensive|tw, 718-10, 380, 139|shell smash, 038-a, 121|lo
+445|sd, SSI, 645-s|helmet, 797|Autotomize|SpD, 787, 227|def|SpD, 465|helmet, 080|cm|tw, 437|def, 080-m|cm|tw, 468|Stallbreaker, 594|def
+445|sd, NSI, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 786|scarf, 788|def, 036|mg cm|Stealth Rock|un cm|un, 381|scarf|specs|lo, 461|lo, 230, 473|lo, 642|Offensive|tw, 718-10, 380|hw, 139|shell smash, 038-a|Support, 121|lo
 
 445|scarf, GSI
-445|scarf, SSI, 645-s|helmet, 797|Autotomize|SpD, 787, 227|def|SpD, 465|helmet, 080|cm|tw, 437, 080-m|cm|tw, 468, 594
-445|scarf, NSI, 795|scarf, 788, 036|mg cm|Stealth Rock|un cm|un, 381|scarf, 461, 230, 473, 139|shell smash
+445|scarf, SSI, 645-s|helmet, 797|Autotomize|SpD, 787, 227|def|SpD, 465|helmet, 080|cm|tw, 437|def, 080-m|cm|tw, 468|Stallbreaker, 594|def
+445|scarf, NSI, 795|scarf, 788|def, 036|mg cm|Stealth Rock|un cm|un, 381|scarf, 461|lo, 230, 473|lo, 139|shell smash
 
-461, GSI, 801|av|specs|Shift Gear, 647|scarf, 227|def, 212-m, 748, 707, 771
-461, SSI, 788, 625, 036|mg cm|Stealth Rock|un cm|un, 130-m, 594, 184, 730
-461, NSI, 376-m, 658|ash, 385|scarf, 793|scarf, 639|scarf, 798, 230, 141, 139|shell smash, 082
+461|lo, GSI, 801|av|specs|Shift Gear, 647|scarf, 227|def, 212-m|SD, 748|def, 707|Spikes, 771|curse
+461|lo, SSI, 788|def, 625|SD, 036|mg cm|Stealth Rock|un cm|un, 130-m|dd, 594|def, 184, 730|specs
+461|lo, NSI, 376-m|Wallbreaker, 658|ash, 385|scarf, 793|scarf, 639|scarf, 798|SD Z-Move, 230, 141, 139|shell smash, 082|scarf
 
-462, GSI, 006-mx|Bulky|dd, 113, 105-a, 423, 195, 242, 537
+462, GSI, 006-mx|Bulky|dd, 113, 105-a, 423|SpD, 195|curse, 242, 537|def
 462, SSI, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 472|SpD
-462, NSI, 645-s|scarf|Double Dance|Offensive|helmet, 445|scarf|helmet|sd, 795|scarf|specs|lo|Quiver Dance, 051|scarf|sash|Offensive Trapper, 485, 718|Coil|dd, 006-my, 647|specs, 373|Flyinium Z DD, 637, 794, 545, 639|band|scarf|Rockium Z SD, 473, 718-10, 142-m, 286, 149, 660, 450, 034, 445-m, 646, 701, 663, 494
+462, NSI, 645-s|scarf|Double Dance|Offensive|helmet, 445|scarf|helmet|sd, 795|scarf|specs|lo|Quiver Dance, 051|scarf|sash|Offensive Trapper, 485, 718|Coil|dd, 006-my|Drought Wallbreaker, 647|specs, 373|Flyinium Z DD, 637|QD Z-Fire, 794, 545|bp, 639|band|scarf|Rockium Z SD, 473|lo, 718-10, 142-m, 286|SD, 149|DD Z-Move, 660, 450|def, 034|lo, 445-m|SD, 646|specs, 701|SubSD, 663|SD z-fly, 494
 
-468, GSI, 376-m, 797|Autotomize|SpD, 785, 485, 385|scarf|SpD|SubTox, 462|av|specs, 793|scarf|specs, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 248|band|scarf, 145, 142-m, 082, 796
-468, SSI, 212-m, 642|Offensive|tw, 141, 139|shell smash, 707, 774, 642-s
-468, NSI, 625, 646-b, 639|band|scarf|Rockium Z SD, 461, 473, 038-a, 646
+468|Stallbreaker, GSI, 376-m|Wallbreaker, 797|Autotomize|SpD, 785, 485, 385|scarf|SpD|SubTox, 462|av|specs, 793|scarf|specs, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 248|band|scarf, 145|def, 142-m, 082|scarf, 796|TG Z-Elec
+468|Stallbreaker, SSI, 212-m|SD, 642|Offensive|tw, 141, 139|shell smash, 707|Spikes, 774|Shell Smash, 642-s
+468|Stallbreaker, NSI, 625|SD, 646-b|Z-Ice, 639|band|scarf|Rockium Z SD, 461|lo, 473|lo, 038-a|Support, 646|specs
 
-472|def, GSI, 787, 227|def|SpD, 130|Flyinium Z DD, 080|cm|tw, 226, 080-m|tw|cm, 195, 630
-472|def, SSI, 006-my, 647|scarf|specs, 490|z tg, 479w, 497, 230, 473, 130-m, 245, 184, 646, 160
-472|def, NSI, 658|protean|ash, 795|scarf|specs|lo|Quiver Dance, 720-u|band|specs|lo, 461, 474|z conv electric, 319-m, 141, 139|shell smash, 034, 038-a, 730, 121|lo, 359-m
+472|def, GSI, 787, 227|def|SpD, 130|Flyinium Z DD, 080|cm|tw, 226|def, 080-m|tw|cm, 195|curse, 630|def
+472|def, SSI, 006-my|Drought Wallbreaker, 647|scarf|specs, 490|z tg, 479w|def, 497|SubSeed, 230, 473|lo, 130-m|dd, 245|sub protect, 184, 646|specs, 160
+472|def, NSI, 658|protean|ash, 795|scarf|specs|lo|Quiver Dance, 720-u|band|specs|lo, 461|lo, 474|z conv electric, 319-m|Cleaner, 141, 139|shell smash, 034|lo, 038-a|Support, 730|specs, 121|lo, 359-m
 
-472|SpD, GSI, 787, 227|def|SpD, 130|Flyinium Z DD, 080|cm|tw, 226, 080-m|tw|cm, 195, 630
-472|SpD, SSI, 006-my, 647|scarf|specs, 490|z tg, 497, 230, 473, 130-m, 245, 184, 646, 160
-472|SpD, NSI, 658|protean|ash, 795|scarf|specs|lo|Quiver Dance, 720-u|band|specs|lo, 461, 474|z conv electric, 319-m, 141, 139|shell smash, 034, 038-a, 730, 121|lo, 359-m
+472|SpD, GSI, 787, 227|def|SpD, 130|Flyinium Z DD, 080|cm|tw, 226|def, 080-m|tw|cm, 195|curse, 630|def
+472|SpD, SSI, 006-my|Drought Wallbreaker, 647|scarf|specs, 490|z tg, 497|SubSeed, 230, 473|lo, 130-m|dd, 245|sub protect, 184, 646|specs, 160
+472|SpD, NSI, 658|protean|ash, 795|scarf|specs|lo|Quiver Dance, 720-u|band|specs|lo, 461|lo, 474|z conv electric, 319-m|Cleaner, 141, 139|shell smash, 034|lo, 038-a|Support, 730|specs, 121|lo, 359-m
 
 
-473, GSI, 227|def, 080|cm|tw, 437, 080-m|cm|tw
-473, SSI, 479w, 594, 292
-473, NSI, 658|protean|ash, 376-m, 006-mx|dd, 006-my, 647|scarf|specs, 490|z tg, 637, 530|scarf|Offensive Mold Breaker|Sand Rush, 646-b, 212-m, 639|band|scarf|Rockium Z SD, 798, 230, 319-m, 130-m, 141, 139|shell smash, 245, 184, 121|lo, 494
+473|lo, GSI, 227|def, 080|cm|tw, 437|def, 080-m|cm|tw
+473|lo, SSI, 479w|def, 594|def, 292|Wall
+473|lo, NSI, 658|protean|ash, 376-m|Wallbreaker, 006-mx|dd, 006-my|Drought Wallbreaker, 647|scarf|specs, 490|z tg, 637|QD Z-Fire, 530|scarf|Offensive Mold Breaker|Sand Rush, 646-b|Z-Ice, 212-m|SD, 639|band|scarf|Rockium Z SD, 798|SD Z-Move, 230, 319-m|Cleaner, 130-m|dd, 141, 139|shell smash, 245|sub protect, 184, 121|lo, 494
 
-485, GSI, 130|Flyinium Z DD, 381|specs|lo, 230, 380
-485, SSI, 658|protean|ash, 485, 788, 647|scarf|specs, 490|z tg, 479w, 113, 748, 279, 080|cm|tw, 423, 226, 245, 080-m|cm|tw, 199|cm, 721, 594, 730, 195, 121|Bulky|lo, 593, 242, 635, 537, 073
-485, NSI, 645-s|scarf|Double Dance|Offensive, 445|scarf|helmet|sd, 795|scarf|lo|Quiver Dance, 051|scarf|sash|Offensive Trapper, 718|Coil|dd, 373|Flyinium Z DD, 530|scarf|Offensive Mold Breaker|Sand Rush, 545|Waterium Z SD, 639|band|scarf|Rockium Z SD, 472|SpD, 473, 319-m, 718-10, 142-m, 149, 130-m, 141, 139|shell smash, 184, 342, 660, 450, 774, 034, 395, 445-m, 646, 160, 701
+485, GSI, 130|Flyinium Z DD, 381|specs|lo, 230, 380|hw
+485, SSI, 658|protean|ash, 485, 788|def, 647|scarf|specs, 490|z tg, 479w|def, 113, 748|def, 279|def, 080|cm|tw, 423|SpD, 226|def, 245|sub protect, 080-m|cm|tw, 199|cm, 721|specs, 594|def, 730|specs, 195|curse, 121|Bulky|lo, 593|def, 242, 635|specs, 537|def, 073|def
+485, NSI, 645-s|scarf|Double Dance|Offensive, 445|scarf|helmet|sd, 795|scarf|lo|Quiver Dance, 051|scarf|sash|Offensive Trapper, 718|Coil|dd, 373|Flyinium Z DD, 530|scarf|Offensive Mold Breaker|Sand Rush, 545|Waterium Z SD, 639|band|scarf|Rockium Z SD, 472|SpD, 473|lo, 319-m|Cleaner, 718-10, 142-m, 149|DD Z-Move, 130-m|dd, 141, 139|shell smash, 184, 342, 660, 450|def, 774|Shell Smash, 034|lo, 395|def, 445-m|SD, 646|specs, 160, 701|SubSD
 
 490|z tg, GSI, 036|un cm
-490|z tg, SSI, 598, 003-m, 381|specs|lo, 748, 380
-490|z tg, NSI, 785, 465|av, 497, 798, 642|Offensive|tw, 642-s
+490|z tg, SSI, 598|def, 003-m, 381|specs|lo, 748|def, 380|hw
+490|z tg, NSI, 785, 465|av, 497|SubSeed, 798|SD Z-Move, 642|Offensive|tw, 642-s
 
 530|Offensive Mold Breaker, GSI, 227|def|SpD, 080-m|cm|tw
-530|Offensive Mold Breaker, SSI, 645-s|scarf|Double Dance|Offensive|helmet, 797|Autotomize|SpD, 465|helmet, 794, 130|Flyinium Z DD, 472|def, 080|cm|tw, 594, 450, 195, 279
-530|Offensive Mold Breaker, NSI, 658|protean|ash, 795|scarf|specs|lo|Quiver Dance, 051|scarf|sash|Offensive Trapper, 006-my, 647|scarf|specs, 490|z tg, 637, 639|band|scarf|Rockium Z SD, 472|SpD, 230, 319-m, 718-10, 286, 130-m, 141, 139|shell smash, 245, 184, 342, 121|Bulky|lo, 630, 701, 494
+530|Offensive Mold Breaker, SSI, 645-s|scarf|Double Dance|Offensive|helmet, 797|Autotomize|SpD, 465|helmet, 794, 130|Flyinium Z DD, 472|def, 080|cm|tw, 594|def, 450|def, 195|curse, 279|def
+530|Offensive Mold Breaker, NSI, 658|protean|ash, 795|scarf|specs|lo|Quiver Dance, 051|scarf|sash|Offensive Trapper, 006-my|Drought Wallbreaker, 647|scarf|specs, 490|z tg, 637|QD Z-Fire, 639|band|scarf|Rockium Z SD, 472|SpD, 230, 319-m|Cleaner, 718-10, 286|SD, 130-m|dd, 141, 139|shell smash, 245|sub protect, 184, 342, 121|Bulky|lo, 630|def, 701|SubSD, 494
 
-530|Sand Rush, GSI, 227|def|SpD, 080-m|cm|tw, 437
-530|Sand Rush, SSI, 645-s|scarf|Double Dance|Offensive|helmet, 797|Autotomize|SpD, 479w, 465|helmet, 794, 130|Flyinium Z DD, 472|def, 080|cm|tw, 594, 450, 195, 279
-530|Sand Rush, NSI, 658|ash, 795|scarf, 051|sash, 006-my, 286, 141, 184, 342, 630
+530|Sand Rush, GSI, 227|def|SpD, 080-m|cm|tw, 437|def
+530|Sand Rush, SSI, 645-s|scarf|Double Dance|Offensive|helmet, 797|Autotomize|SpD, 479w|def, 465|helmet, 794, 130|Flyinium Z DD, 472|def, 080|cm|tw, 594|def, 450|def, 195|curse, 279|def
+530|Sand Rush, NSI, 658|ash, 795|scarf, 051|sash, 006-my|Drought Wallbreaker, 286|SD, 141, 184, 342, 630|def
 
 530|scarf, GSI, 227|def|SpD, 080-m|cm|tw
-530|scarf, SSI, 645-s|scarf|Double Dance|Offensive|helmet, 797|Autotomize|SpD, 465|helmet, 794, 130|Flyinium Z DD, 472|def, 080|cm|tw, 594, 450, 195, 279
-530|scarf, NSI, 658|ash, 795|scarf, 051|scarf|sash, 647|scarf, 639|scarf, 472|SpD, 230, 319-m, 286, 141, 139|shell smash, 245, 184, 342, 630
+530|scarf, SSI, 645-s|scarf|Double Dance|Offensive|helmet, 797|Autotomize|SpD, 465|helmet, 794, 130|Flyinium Z DD, 472|def, 080|cm|tw, 594|def, 450|def, 195|curse, 279|def
+530|scarf, NSI, 658|ash, 795|scarf, 051|scarf|sash, 647|scarf, 639|scarf, 472|SpD, 230, 319-m|Cleaner, 286|SD, 141, 139|shell smash, 245|sub protect, 184, 342, 630|def
 
-545|Waterium Z SD, GSI, 445|helmet, 227|def, 212-m, 748
-545|Waterium Z SD, SSI, 195
-545|Waterium Z SD, NSI, 376-m, 127-m, 230, 642|tw
+545|Waterium Z SD, GSI, 445|helmet, 227|def, 212-m|SD, 748|def
+545|Waterium Z SD, SSI, 195|curse
+545|Waterium Z SD, NSI, 376-m|Wallbreaker, 127-m|SD, 230, 642|tw
 
-625, GSI, 647|scarf|specs, 794, 212-m, 450, 771
-625, SSI, 445|helmet, 006-mx|Bulky, 465|helmet, 195
-625, NSI, 658|protean|ash, 785, 786|scarf|specs, 051|sash, 787, 479w, 639|band|scarf|Rockium Z SD, 248|scarf, 472|def, 286, 701, 635
+625|SD, GSI, 647|scarf|specs, 794, 212-m|SD, 450|def, 771|curse
+625|SD, SSI, 445|helmet, 006-mx|Bulky, 465|helmet, 195|curse
+625|SD, NSI, 658|protean|ash, 785, 786|scarf|specs, 051|sash, 787, 479w|def, 639|band|scarf|Rockium Z SD, 248|scarf, 472|def, 286|SD, 701|SubSD, 635|specs
 
-637, GSI, 748, 149, 226, 774, 242, 663
-637, SSI, 485, 113, 105-a, 142-m
-637, NSI, 658|ash, 445|scarf, 793|scarf, 639|scarf, 230, 642|tw, 130|Flyinium Z DD, 141, 139|shell smash, 342, 707
+637|QD Z-Fire, GSI, 748|def, 149|DD Z-Move, 226|def, 774|Shell Smash, 242, 663|SD z-fly
+637|QD Z-Fire, SSI, 485, 113, 105-a, 142-m
+637|QD Z-Fire, NSI, 658|ash, 445|scarf, 793|scarf, 639|scarf, 230, 642|tw, 130|Flyinium Z DD, 141, 139|shell smash, 342, 707|Spikes
 
 642|Offensive|tw, GSI
-642|Offensive|tw, SSI, 785, 006-mx|Bulky|dd, 113, 036|mg cm|Stealth Rock|un, 381|scarf|specs|lo, 105-a, 423, 380, 450
-642|Offensive|tw, NSI, 658|protean|ash, 645-s|scarf, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 793|scarf, 639|scarf, 248|scarf, 461, 230, 319-m, 718-10, 142-m, 141, 139|shell smash
+642|Offensive|tw, SSI, 785, 006-mx|Bulky|dd, 113, 036|mg cm|Stealth Rock|un, 381|scarf|specs|lo, 105-a, 423|SpD, 380|hw, 450|def
+642|Offensive|tw, NSI, 658|protean|ash, 645-s|scarf, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 793|scarf, 639|scarf, 248|scarf, 461|lo, 230, 319-m|Cleaner, 718-10, 142-m, 141, 139|shell smash
 
-647|specs, GSI, 788, 591, 003-m, 748, 380, 593, 724, 073
-647|specs, SSI, 787, 130|Flyinium Z DD, 381|scarf|specs|lo, 279, 080|cm|tw, 226, 080-m|cm|tw, 199|cm, 184, 730, 292, 121|Bulky|lo
-647|specs, NSI, 376-m, 785, 786|scarf, 065-m, 465|av, 720-u|scarf, 497, 641-s, 798, 642|Offensive|tw, 663
+647|specs, GSI, 788|def, 591|def, 003-m, 748|def, 380|hw, 593|def, 724|def, 073|def
+647|specs, SSI, 787, 130|Flyinium Z DD, 381|scarf|specs|lo, 279|def, 080|cm|tw, 226|def, 080-m|cm|tw, 199|cm, 184, 730|specs, 292|Wall, 121|Bulky|lo
+647|specs, NSI, 376-m|Wallbreaker, 785, 786|scarf, 065-m, 465|av, 720-u|scarf, 497|SubSeed, 641-s|lo, 798|SD Z-Move, 642|Offensive|tw, 663|SD z-fly
 
-647|scarf, GSI, 788, 465|av, 591, 003-m, 748, 080|cm|tw, 380, 080-m|cm|tw, 199|cm, 593, 724, 073
-647|scarf, SSI, 787, 130|Flyinium Z DD, 381|scarf|specs|lo, 279, 226, 184, 730, 292, 121|Bulky|lo
-647|scarf, NSI, 497, 641-s, 642|tw
+647|scarf, GSI, 788|def, 465|av, 591|def, 003-m, 748|def, 080|cm|tw, 380|hw, 080-m|cm|tw, 199|cm, 593|def, 724|def, 073|def
+647|scarf, SSI, 787, 130|Flyinium Z DD, 381|scarf|specs|lo, 279|def, 226|def, 184, 730|specs, 292|Wall, 121|Bulky|lo
+647|scarf, NSI, 497|SubSeed, 641-s|lo, 642|tw
 
-658|protean, SSI, 598, 788, 647|scarf|specs, 003-m, 113, 423, 226
-658|protean, NSI, 645-s|scarf, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 785, 786|scarf, 639|scarf, 230, 286, 141
+658|protean, SSI, 598|def, 788|def, 647|scarf|specs, 003-m, 113, 423|SpD, 226|def
+658|protean, NSI, 645-s|scarf, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 785, 786|scarf, 639|scarf, 230, 286|SD, 141
 
 718|dd, GSI, 465|helmet, 036|un cm
 718|dd, SSI, 787, 794
-718|dd, NSI, 445|scarf, 795|scarf, 381|scarf, 461, 230, 473
+718|dd, NSI, 445|scarf, 795|scarf, 381|scarf, 461|lo, 230, 473|lo
 
 718|Coil, GSI, 465|helmet, 036|un cm
 718|Coil, SSI, 787, 794
-718|Coil, NSI, 658|protean, 795|specs, 445|scarf|sd, 795|scarf, 646-b, 381|specs|lo, 461, 230, 473, 038-a, 646
+718|Coil, NSI, 658|protean, 795|specs, 445|scarf|sd, 795|scarf, 646-b|Z-Ice, 381|specs|lo, 461|lo, 230, 473|lo, 038-a|Support, 646|specs
 
-721, GSI, 788, 113, 381|scarf|specs|lo, 380, 226, 635
-721, SSI, 479w, 080|cm|tw, 080-m|cm|tw, 199|cm, 721, 691, 593, 537, 073
-721, NSI, 645-s|scarf|Double Dance|Offensive, 445|scarf|helmet|sd, 785, 051|scarf|sash|Offensive Trapper, 718|Coil|dd, 793|scarf|specs, 530|scarf|Offensive Mold Breaker|Sand Rush, 720-u|specs, 646-b, 639|band|scarf|Rockium Z SD, 248|scarf, 145, 473, 642|Offensive|tw, 718-10, 142-m, 141, 660, 034, 445-m, 642-s, 796
+721|specs, GSI, 788|def, 113, 381|scarf|specs|lo, 380|hw, 226|def, 635|specs
+721|specs, SSI, 479w|def, 080|cm|tw, 080-m|cm|tw, 199|cm, 721|specs, 691|t-spike, 593|def, 537|def, 073|def
+721|specs, NSI, 645-s|scarf|Double Dance|Offensive, 445|scarf|helmet|sd, 785, 051|scarf|sash|Offensive Trapper, 718|Coil|dd, 793|scarf|specs, 530|scarf|Offensive Mold Breaker|Sand Rush, 720-u|specs, 646-b|Z-Ice, 639|band|scarf|Rockium Z SD, 248|scarf, 145|def, 473|lo, 642|Offensive|tw, 718-10, 142-m, 141, 660, 034|lo, 445-m|SD, 642-s, 796|TG Z-Elec
 
 785, GSI, 113, 530|SpD|scarf, 105-a, 242
-785, SSI, 598, 591, 465|av, 003-m, 530|Offensive Mold Breaker|Sand Rush, 423, 450, 089-a, 292, 691
-785, NSI, 645-s|scarf, 445|scarf, 795|lo, 094|scarf, 462|av|specs, 793|scarf, 545, 639|scarf, 472|SpD, 230, 473, 141, 139|shell smash, 034
+785, SSI, 598|def, 591|def, 465|av, 003-m, 530|Offensive Mold Breaker|Sand Rush, 423|SpD, 450|def, 089-a|av, 292|Wall, 691|t-spike
+785, NSI, 645-s|scarf, 445|scarf, 795|lo, 094|scarf, 462|av|specs, 793|scarf, 545|bp, 639|scarf, 472|SpD, 230, 473|lo, 141, 139|shell smash, 034|lo
 
-786|specs|Stallbreaker, GSI, 376-m, 797|SpD, 801|av, 385|scarf|SpD, 707
-786|specs|Stallbreaker, SSI, 485, 462|av, 227|SpD, 530|SpD|scarf, 212-m, 437, 151|stallbreaker, 199|cm, 089-a, 082
-786|specs|Stallbreaker, NSI, 797|Autotomize, 598, 801|specs|Shift Gear, 094|scarf|lo, 793|scarf|specs, 127-m, 545, 798, 319-m, 141, 139|shell smash
+786|specs|Stallbreaker, GSI, 376-m|Wallbreaker, 797|SpD, 801|av, 385|scarf|SpD, 707|Spikes
+786|specs|Stallbreaker, SSI, 485, 462|av, 227|SpD, 530|SpD|scarf, 212-m|SD, 437|def, 151|stallbreaker, 199|cm, 089-a|av, 082|scarf
+786|specs|Stallbreaker, NSI, 797|Autotomize, 598|def, 801|specs|Shift Gear, 094|scarf|lo, 793|scarf|specs, 127-m|SD, 545|bp, 798|SD Z-Move, 319-m|Cleaner, 141, 139|shell smash
 
-786|scarf, GSI, 376-m, 797|SpD, 801|av, 385|scarf|SpD, 707
-786|scarf, SSI, 485, 462|av, 227|SpD, 530|SpD|scarf, 212-m, 437, 151|stallbreaker, 199|cm, 089-a, 082
-786|scarf, NSI, 797|Autotomize, 801|specs|Shift Gear, 094|scarf, 545, 141, 139|shell smash
+786|scarf, GSI, 376-m|Wallbreaker, 797|SpD, 801|av, 385|scarf|SpD, 707|Spikes
+786|scarf, SSI, 485, 462|av, 227|SpD, 530|SpD|scarf, 212-m|SD, 437|def, 151|stallbreaker, 199|cm, 089-a|av, 082|scarf
+786|scarf, NSI, 797|Autotomize, 801|specs|Shift Gear, 094|scarf, 545|bp, 141, 139|shell smash
 
-787, GSI, 376-m
-787, SSI, 797|Autotomize|SpD, 591, 006-my, 094|scarf|lo, 127-m, 373|Flyinium Z DD, 227|def, 465|helmet, 003-m, 637, 212-m, 641-s, 437, 468, 691, 663
-787, NSI, 006-mx|Bulky|dd, 485, 385|scarf|SubTox, 793|scarf|specs, 794, 530|Sand Rush, 646-b, 545, 461, 798, 473, 319-m, 149, 721, 089-a, 034, 038-a, 646, 494
+787, GSI, 376-m|Wallbreaker
+787, SSI, 797|Autotomize|SpD, 591|def, 006-my|Drought Wallbreaker, 094|scarf|lo, 127-m|SD, 373|Flyinium Z DD, 227|def, 465|helmet, 003-m, 637|QD Z-Fire, 212-m|SD, 641-s|lo, 437|def, 468|Stallbreaker, 691|t-spike, 663|SD z-fly
+787, NSI, 006-mx|Bulky|dd, 485, 385|scarf|SubTox, 793|scarf|specs, 794, 530|Sand Rush, 646-b|Z-Ice, 545|bp, 461|lo, 798|SD Z-Move, 473|lo, 319-m|Cleaner, 149|DD Z-Move, 721|specs, 089-a|av, 034|lo, 038-a|Support, 646|specs, 494
 
-788, GSI, 598, 591, 003-m, 089-a
-788, SSI, 462|av|specs, 465|av, 497
-788, NSI, 785, 787, 094|scarf|lo, 145, 642|Offensive|tw, 286, 642-s, 796
+788|def, GSI, 598|def, 591|def, 003-m, 089-a|av
+788|def, SSI, 462|av|specs, 465|av, 497|SubSeed
+788|def, NSI, 785, 787, 094|scarf|lo, 145|def, 642|Offensive|tw, 286|SD, 642-s, 796|TG Z-Elec
 
-793|specs, GSI, 376-m, 801|av, 113, 423, 242, 537
-793|specs, SSI, 797|Autotomize|SpD, 445|scarf|helmet|sd, 598, 718|Coil|dd, 212-m, 639|band|scarf|Rockium Z SD, 437, 450, 034
-793|specs, NSI, 658|protean|ash, 645-s|scarf, 051|scarf|sash|Offensive Trapper, 801|specs|Shift Gear, 065-m, 647|scarf|specs, 720-u|band|scarf|specs, 381|scarf|specs|lo, 545, 461, 798, 230, 319-m, 718-10, 142-m, 141, 380, 139|shell smash, 245, 184, 342, 121|lo
+793|specs, GSI, 376-m|Wallbreaker, 801|av, 113, 423|SpD, 242, 537|def
+793|specs, SSI, 797|Autotomize|SpD, 445|scarf|helmet|sd, 598|def, 718|Coil|dd, 212-m|SD, 639|band|scarf|Rockium Z SD, 437|def, 450|def, 034|lo
+793|specs, NSI, 658|protean|ash, 645-s|scarf, 051|scarf|sash|Offensive Trapper, 801|specs|Shift Gear, 065-m, 647|scarf|specs, 720-u|band|scarf|specs, 381|scarf|specs|lo, 545|bp, 461|lo, 798|SD Z-Move, 230, 319-m|Cleaner, 718-10, 142-m, 141, 380|hw, 139|shell smash, 245|sub protect, 184, 342, 121|lo
 
-793|scarf, GSI, 376-m, 801|av, 113, 423, 242, 537
-793|scarf, SSI, 797|Autotomize|SpD, 445|scarf|helmet|sd, 598, 801|specs|Shift Gear, 718|Coil|dd, 212-m, 639|band|scarf|Rockium Z SD, 437, 450, 034
-793|scarf, NSI, 658|ash, 051|scarf|sash, 647|scarf, 720-u|band|scarf|specs, 381|scarf, 230, 319-m, 718-10, 141, 380, 139|shell smash, 245, 184, 342
+793|scarf, GSI, 376-m|Wallbreaker, 801|av, 113, 423|SpD, 242, 537|def
+793|scarf, SSI, 797|Autotomize|SpD, 445|scarf|helmet|sd, 598|def, 801|specs|Shift Gear, 718|Coil|dd, 212-m|SD, 639|band|scarf|Rockium Z SD, 437|def, 450|def, 034|lo
+793|scarf, NSI, 658|ash, 051|scarf|sash, 647|scarf, 720-u|band|scarf|specs, 381|scarf, 230, 319-m|Cleaner, 718-10, 141, 380|hw, 139|shell smash, 245|sub protect, 184, 342
 
-794, GSI, 645-s|helmet, 006-my, 227|def
-794, SSI, 645-s|scarf|Double Dance|Offensive, 788, 127-m, 302-m, 373|Flyinium Z DD, 637, 036|mg cm|Stealth Rock|un cm|un, 641-s, 748, 145, 472|def, 279, 226, 468, 184, 730, 292
-794, NSI, 006-mx|Bulky|dd, 381|scarf|specs|lo, 380, 121|lo, 646
+794, GSI, 645-s|helmet, 006-my|Drought Wallbreaker, 227|def
+794, SSI, 645-s|scarf|Double Dance|Offensive, 788|def, 127-m|SD, 302-m, 373|Flyinium Z DD, 637|QD Z-Fire, 036|mg cm|Stealth Rock|un cm|un, 641-s|lo, 748|def, 145|def, 472|def, 279|def, 226|def, 468|Stallbreaker, 184, 730|specs, 292|Wall
+794, NSI, 006-mx|Bulky|dd, 381|scarf|specs|lo, 380|hw, 121|lo, 646|specs
 
-795|specs, GSI, 130|Flyinium Z DD, 226, 292, 593, 563
-795|specs, SSI, 788, 006-my, 637, 794, 105-a, 748, 145, 279, 073
-795|specs, NSI, 645-s|scarf, 376-m, 658|ash, 127-m, 212-m, 642|tw, 141, 139|shell smash, 184, 342, 707, 778, 663
+795|specs, GSI, 130|Flyinium Z DD, 226|def, 292|Wall, 593|def, 563|def
+795|specs, SSI, 788|def, 006-my|Drought Wallbreaker, 637|QD Z-Fire, 794, 105-a, 748|def, 145|def, 279|def, 073|def
+795|specs, NSI, 645-s|scarf, 376-m|Wallbreaker, 658|ash, 127-m|SD, 212-m|SD, 642|tw, 141, 139|shell smash, 184, 342, 707|Spikes, 778|SD, 663|SD z-fly
 
-795|lo, GSI, 130|Flyinium Z DD, 226, 292, 593, 563
-795|lo, SSI, 788, 006-my, 637, 794, 105-a, 748, 145, 279, 073
-795|lo, NSI, 376-m, 658|ash, 127-m, 212-m, 642|tw, 141, 139|shell smash, 184, 342, 707, 778, 663
+795|lo, GSI, 130|Flyinium Z DD, 226|def, 292|Wall, 593|def, 563|def
+795|lo, SSI, 788|def, 006-my|Drought Wallbreaker, 637|QD Z-Fire, 794, 105-a, 748|def, 145|def, 279|def, 073|def
+795|lo, NSI, 376-m|Wallbreaker, 658|ash, 127-m|SD, 212-m|SD, 642|tw, 141, 139|shell smash, 184, 342, 707|Spikes, 778|SD, 663|SD z-fly
 
-795|Quiver Dance, GSI, 748, 637, 105-a, 226, 292, 593, 563
-795|Quiver Dance, SSI, 788, 006-my, 130|Flyinium Z DD, 794, 145, 279, 073
-795|Quiver Dance, NSI, 645-s|scarf, 376-m, 127-m, 212-m, 642|tw, 141, 139|shell smash, 184, 342, 707, 778, 663
+795|Quiver Dance, GSI, 748|def, 637|QD Z-Fire, 105-a, 226|def, 292|Wall, 593|def, 563|def
+795|Quiver Dance, SSI, 788|def, 006-my|Drought Wallbreaker, 130|Flyinium Z DD, 794, 145|def, 279|def, 073|def
+795|Quiver Dance, NSI, 645-s|scarf, 376-m|Wallbreaker, 127-m|SD, 212-m|SD, 642|tw, 141, 139|shell smash, 184, 342, 707|Spikes, 778|SD, 663|SD z-fly
 
-795|scarf, GSI, 130|Flyinium Z DD, 226, 292, 593, 563
-795|scarf, SSI, 788, 006-my, 637, 794, 105-a, 748, 145, 279, 073
-795|scarf, NSI, 376-m, 658|ash, 127-m, 212-m, 642|tw, 141, 139|shell smash, 184, 342, 707, 778, 663
+795|scarf, GSI, 130|Flyinium Z DD, 226|def, 292|Wall, 593|def, 563|def
+795|scarf, SSI, 788|def, 006-my|Drought Wallbreaker, 637|QD Z-Fire, 794, 105-a, 748|def, 145|def, 279|def, 073|def
+795|scarf, NSI, 376-m|Wallbreaker, 658|ash, 127-m|SD, 212-m|SD, 642|tw, 141, 139|shell smash, 184, 342, 707|Spikes, 778|SD, 663|SD z-fly
 
-474|z conv electric, GSI, 003-m, 113, 036|un cm|un, 195, 292
-474|z conv electric, SSI, 598, 105-a
+474|z conv electric, GSI, 003-m, 113, 036|un cm|un, 195|curse, 292|Wall
+474|z conv electric, SSI, 598|def, 105-a
 474|z conv electric, NSI, 645-s|scarf, 445|scarf, 051|scarf|sash, 230
 
-797|Autotomize, GSI, 145
-797|Autotomize, SSI, 785, 485, 479w
+797|Autotomize, GSI, 145|def
+797|Autotomize, SSI, 785, 485, 479w|def
 797|Autotomize, NSI, 230, 642|Offensive|tw, 642-s
 
-798, GSI, 376-m
-798, SSI, 212-m, 292
-798, NSI, 658|protean|ash, 795|scarf|specs|lo|Quiver Dance, 793|scarf, 639|scarf, 381|specs|lo, 139|shell smash, 121|lo, 082, 324
+798|SD Z-Move, GSI, 376-m|Wallbreaker
+798|SD Z-Move, SSI, 212-m|SD, 292|Wall
+798|SD Z-Move, NSI, 658|protean|ash, 795|scarf|specs|lo|Quiver Dance, 793|scarf, 639|scarf, 381|specs|lo, 139|shell smash, 121|lo, 082|scarf, 324|Support
 
-801|av|specs, GSI, 376-m, 006-my, 385|scarf|SpD|SubTox, 637, 113, 105-a, 707, 292, 494
-801|av|specs, SSI, 797|Autotomize|SpD, 598, 485, 227|SpD, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 212-m, 748, 472|SpD, 437, 721, 082, 073
-801|av|specs, NSI, 645-s|scarf|Double Dance|Offensive, 445|scarf|helmet|sd, 006-mx|Bulky|dd, 051|sash|Offensive Trapper, 718|Coil|dd, 473, 718-10, 660
+801|av|specs, GSI, 376-m|Wallbreaker, 006-my|Drought Wallbreaker, 385|scarf|SpD|SubTox, 637|QD Z-Fire, 113, 105-a, 707|Spikes, 292|Wall, 494
+801|av|specs, SSI, 797|Autotomize|SpD, 598|def, 485, 227|SpD, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 212-m|SD, 748|def, 472|SpD, 437|def, 721|specs, 082|scarf, 073|def
+801|av|specs, NSI, 645-s|scarf|Double Dance|Offensive, 445|scarf|helmet|sd, 006-mx|Bulky|dd, 051|sash|Offensive Trapper, 718|Coil|dd, 473|lo, 718-10, 660
 
-801|Shift Gear, GSI, 376-m, 006-my, 385|scarf|SpD|SubTox, 637, 113, 105-a, 707, 292, 494
-801|Shift Gear, SSI, 797|Autotomize|SpD, 598, 485, 227|SpD, 530|SpD, 212-m, 748, 472|SpD, 437, 721, 082, 073
+801|Shift Gear, GSI, 376-m|Wallbreaker, 006-my|Drought Wallbreaker, 385|scarf|SpD|SubTox, 637|QD Z-Fire, 113, 105-a, 707|Spikes, 292|Wall, 494
+801|Shift Gear, SSI, 797|Autotomize|SpD, 598|def, 485, 227|SpD, 530|SpD, 212-m|SD, 748|def, 472|SpD, 437|def, 721|specs, 082|scarf, 073|def
 801|Shift Gear, NSI, 006-mx|Bulky|dd, 051|sash, 718|Coil
 
-142-m, GSI, 227|def, 036|mg cm|Stealth Rock|un cm|un, 080|cm|tw, 437, 423, 080-m|cm|tw, 594, 450, 195, 771, 537
-142-m, SSI, 227|SpD, 645-s|helmet, 376-m, 797|Autotomize|SpD, 445|helmet, 598, 788, 385|scarf|SpD|SubTox, 479w, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 212-m, 748, 472|def, 245, 707, 395
-142-m, NSI, 658|ash, 795|lo, 647|scarf, 490|z tg, 793|scarf, 639|scarf, 248|band|scarf, 230, 130-m, 141, 139|shell smash, 184, 342, 730, 121|Bulky
+142-m, GSI, 227|def, 036|mg cm|Stealth Rock|un cm|un, 080|cm|tw, 437|def, 423|SpD, 080-m|cm|tw, 594|def, 450|def, 195|curse, 771|curse, 537|def
+142-m, SSI, 227|SpD, 645-s|helmet, 376-m|Wallbreaker, 797|Autotomize|SpD, 445|helmet, 598|def, 788|def, 385|scarf|SpD|SubTox, 479w|def, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 212-m|SD, 748|def, 472|def, 245|sub protect, 707|Spikes, 395|def
+142-m, NSI, 658|ash, 795|lo, 647|scarf, 490|z tg, 793|scarf, 639|scarf, 248|band|scarf, 230, 130-m|dd, 141, 139|shell smash, 184, 342, 730|specs, 121|Bulky
 
-065-m, GSI, 797|SpD, 801|av, 113, 089-a, 630, 242
-065-m, SSI, 385|scarf|SpD, 302-m, 036|mg cm|Stealth Rock|un, 720-u|band|scarf|specs, 212-m, 423, 199|cm, 707
-065-m, NSI, 645-s|scarf, 376-m, 445|scarf, 795|scarf|lo, 051|sash, 094|scarf, 465|av, 545, 230, 141, 139|shell smash
+065-m, GSI, 797|SpD, 801|av, 113, 089-a|av, 630|def, 242
+065-m, SSI, 385|scarf|SpD, 302-m, 036|mg cm|Stealth Rock|un, 720-u|band|scarf|specs, 212-m|SD, 423|SpD, 199|cm, 707|Spikes
+065-m, NSI, 645-s|scarf, 376-m|Wallbreaker, 445|scarf, 795|scarf|lo, 051|sash, 094|scarf, 465|av, 545|bp, 230, 141, 139|shell smash
 
-006-mx|dd, SSI, 645-s|helmet, 485, 788, 080|tw, 080-m|tw, 594, 450, 195, 771
-006-mx|dd, NSI, 645-s|scarf, 445|scarf, 051|sash, 793|scarf, 381|scarf, 639|scarf, 472|def, 230, 642|tw, 141, 139|shell smash, 184, 707, 730
+006-mx|dd, SSI, 645-s|helmet, 485, 788|def, 080|tw, 080-m|tw, 594|def, 450|def, 195|curse, 771|curse
+006-mx|dd, NSI, 645-s|scarf, 445|scarf, 051|sash, 793|scarf, 381|scarf, 639|scarf, 472|def, 230, 642|tw, 141, 139|shell smash, 184, 707|Spikes, 730|specs
 
-006-my, GSI, 113, 381|scarf|specs|lo, 380, 226, 184|sap, 242, 663
-006-my, SSI, 006-mx|Bulky|dd, 149
-006-my, NSI, 645-s|scarf, 445|scarf, 785, 793|scarf|specs, 639|band|scarf|Rockium Z SD, 248|scarf, 642|Offensive|tw, 142-m, 642-s
+006-my|Drought Wallbreaker, GSI, 113, 381|scarf|specs|lo, 380|hw, 226|def, 184|sap, 242, 663|SD z-fly
+006-my|Drought Wallbreaker, SSI, 006-mx|Bulky|dd, 149|DD Z-Move
+006-my|Drought Wallbreaker, NSI, 645-s|scarf, 445|scarf, 785, 793|scarf|specs, 639|band|scarf|Rockium Z SD, 248|scarf, 642|Offensive|tw, 142-m, 642-s
 
-036|mg cm, GSI, 797|SpD, 801|specs, 385|scarf|SpD|SubTox, 036|un cm, 530|SpD, 105-a, 748, 151|stallbreaker, 034, 195
-036|mg cm, SSI, 376-m, 485, 591, 094|lo, 462|specs, 227|SpD, 113, 530|scarf|Offensive Mold Breaker|Sand Rush, 212-m, 545|Waterium Z SD, 472|SpD, 089-a, 663, 073, 494
-036|mg cm, NSI, 625, 798, 660, 691
+036|mg cm, GSI, 797|SpD, 801|specs, 385|scarf|SpD|SubTox, 036|un cm, 530|SpD, 105-a, 748|def, 151|stallbreaker, 034|lo, 195|curse
+036|mg cm, SSI, 376-m|Wallbreaker, 485, 591|def, 094|lo, 462|specs, 227|SpD, 113, 530|scarf|Offensive Mold Breaker|Sand Rush, 212-m|SD, 545|Waterium Z SD, 472|SpD, 089-a|av, 663|SD z-fly, 073|def, 494
+036|mg cm, NSI, 625|SD, 798|SD Z-Move, 660, 691|t-spike
 
-094|lo, GSI, 089-a
-094|lo, SSI, 472|SpD, 630
-094|lo, NSI, 658|protean|ash, 645-s|scarf, 445|scarf, 785, 786|scarf, 065-m, 094|scarf, 385|scarf, 530|SpD|scarf, 720-u|scarf, 381|scarf, 212-m, 545|Waterium Z SD, 641-s, 248|scarf, 461, 230, 319-m, 642|Offensive, 718-10, 141, 139|shell smash, 121|lo, 359-m, 242
+094|lo, GSI, 089-a|av
+094|lo, SSI, 472|SpD, 630|def
+094|lo, NSI, 658|protean|ash, 645-s|scarf, 445|scarf, 785, 786|scarf, 065-m, 094|scarf, 385|scarf, 530|SpD|scarf, 720-u|scarf, 381|scarf, 212-m|SD, 545|Waterium Z SD, 641-s|lo, 248|scarf, 461|lo, 230, 319-m|Cleaner, 642|Offensive, 718-10, 141, 139|shell smash, 121|lo, 359-m, 242
 
-094|scarf, GSI, 089-a, 242
-094|scarf, SSI, 472|SpD, 630
-094|scarf, NSI, 530|SpD, 212-m, 545|Waterium Z SD, 641-s, 248|scarf, 230, 141, 139|shell smash, 359-m
+094|scarf, GSI, 089-a|av, 242
+094|scarf, SSI, 472|SpD, 630|def
+094|scarf, NSI, 530|SpD, 212-m|SD, 545|Waterium Z SD, 641-s|lo, 248|scarf, 230, 141, 139|shell smash, 359-m
 
-130-m, GSI, 598, 787, 788, 647|scarf|specs, 227|def, 465|helmet, 003-m, 798, 184, 730
-130-m, SSI, 591, 145, 286, 594, 630
-130-m, NSI, 645-s|scarf, 795|scarf|lo, 786|scarf, 639|scarf
+130-m|dd, GSI, 598|def, 787, 788|def, 647|scarf|specs, 227|def, 465|helmet, 003-m, 798|SD Z-Move, 184, 730|specs
+130-m|dd, SSI, 591|def, 145|def, 286|SD, 594|def, 630|def
+130-m|dd, NSI, 645-s|scarf, 795|scarf|lo, 786|scarf, 639|scarf
 
-720-u|specs, GSI, 801|av, 089-a
-720-u|specs, SSI, 248|scarf, 630, 707
-720-u|specs, NSI, 645-s|scarf|Double Dance|Offensive, 376-m, 658|ash, 445|scarf|sd, 795|scarf|specs|lo|Quiver Dance, 785, 051|sash|Offensive Trapper, 385|scarf, 127-m, 373|Flyinium Z DD, 530|Sand Rush, 545|?|Waterium Z SD, 639|band|scarf|Rockium Z SD, 641-s, 461, 798, 319-m, 718-10, 141, 445-m, 160, 494
+720-u|specs, GSI, 801|av, 089-a|av
+720-u|specs, SSI, 248|scarf, 630|def, 707|Spikes
+720-u|specs, NSI, 645-s|scarf|Double Dance|Offensive, 376-m|Wallbreaker, 658|ash, 445|scarf|sd, 795|scarf|specs|lo|Quiver Dance, 785, 051|sash|Offensive Trapper, 385|scarf, 127-m|SD, 373|Flyinium Z DD, 530|Sand Rush, 545|bp|Waterium Z SD, 639|band|scarf|Rockium Z SD, 641-s|lo, 461|lo, 798|SD Z-Move, 319-m|Cleaner, 718-10, 141, 445-m|SD, 160, 494
 
-720-u|band, SSI, 801|av|specs|Shift Gear, 248|scarf, 630
-720-u|band, NSI, 645-s|scarf|Double Dance|Offensive, 376-m, 658|ash, 445|scarf|sd, 795|scarf|specs|lo|Quiver Dance, 785, 051|sash|Offensive Trapper, 385|scarf, 127-m, 373|Flyinium Z DD, 530|Sand Rush, 545|?|Waterium Z SD, 639|band|scarf|Rockium Z SD, 641-s, 461, 798, 319-m, 718-10, 141, 445-m, 160, 494
+720-u|band, SSI, 801|av|specs|Shift Gear, 248|scarf, 630|def
+720-u|band, NSI, 645-s|scarf|Double Dance|Offensive, 376-m|Wallbreaker, 658|ash, 445|scarf|sd, 795|scarf|specs|lo|Quiver Dance, 785, 051|sash|Offensive Trapper, 385|scarf, 127-m|SD, 373|Flyinium Z DD, 530|Sand Rush, 545|bp|Waterium Z SD, 639|band|scarf|Rockium Z SD, 641-s|lo, 461|lo, 798|SD Z-Move, 319-m|Cleaner, 718-10, 141, 445-m|SD, 160, 494
 
-720-u|lo, SSI, 801|av|specs|Shift Gear, 248|scarf, 630
-720-u|lo, NSI, 645-s|scarf|Double Dance|Offensive, 376-m, 658|ash, 445|scarf|sd, 795|scarf|specs|lo|Quiver Dance, 785, 051|sash|Offensive Trapper, 385|scarf, 127-m, 373|Flyinium Z DD, 530|Sand Rush, 545|?|Waterium Z SD, 639|band|scarf|Rockium Z SD, 641-s, 461, 798, 319-m, 718-10, 141, 445-m, 160, 494
+720-u|lo, SSI, 801|av|specs|Shift Gear, 248|scarf, 630|def
+720-u|lo, NSI, 645-s|scarf|Double Dance|Offensive, 376-m|Wallbreaker, 658|ash, 445|scarf|sd, 795|scarf|specs|lo|Quiver Dance, 785, 051|sash|Offensive Trapper, 385|scarf, 127-m|SD, 373|Flyinium Z DD, 530|Sand Rush, 545|bp|Waterium Z SD, 639|band|scarf|Rockium Z SD, 641-s|lo, 461|lo, 798|SD Z-Move, 319-m|Cleaner, 718-10, 141, 445-m|SD, 160, 494
 
-720-u|scarf, GSI, 801|av|specs|Shift Gear, 089-a, 630, 707
+720-u|scarf, GSI, 801|av|specs|Shift Gear, 089-a|av, 630|def, 707|Spikes
 720-u|scarf, SSI, 658|ash, 465|av
-720-u|scarf, NSI, 645-s|scarf|Double Dance|Offensive, 376-m, 445|scarf|sd, 795|scarf|specs|lo|Quiver Dance, 785, 051|sash|Offensive Trapper, 788, 385|scarf, 127-m, 373|Flyinium Z DD, 530|Sand Rush, 545|?|Waterium Z SD, 639|band|scarf|Rockium Z SD, 641-s, 461, 798, 319-m, 718-10, 141, 445-m, 160, 494
+720-u|scarf, NSI, 645-s|scarf|Double Dance|Offensive, 376-m|Wallbreaker, 445|scarf|sd, 795|scarf|specs|lo|Quiver Dance, 785, 051|sash|Offensive Trapper, 788|def, 385|scarf, 127-m|SD, 373|Flyinium Z DD, 530|Sand Rush, 545|bp|Waterium Z SD, 639|band|scarf|Rockium Z SD, 641-s|lo, 461|lo, 798|SD Z-Move, 319-m|Cleaner, 718-10, 141, 445-m|SD, 160, 494
 
-646-b, SSI, 376-m, 385|scarf, 212-m, 080-m|cm|tw
-646-b, NSI, 445|scarf|sd, 795|scarf|lo|Quiver Dance, 006-mx|dd, 647|scarf|specs, 793|scarf|specs, 373|Flyinium Z DD, 381|scarf|specs|lo, 639|band|scarf|Rockium Z SD, 248|scarf, 798, 230, 718-10, 141, 380, 701, 635, 494
+646-b|Z-Ice, SSI, 376-m|Wallbreaker, 385|scarf, 212-m|SD, 080-m|cm|tw
+646-b|Z-Ice, NSI, 445|scarf|sd, 795|scarf|lo|Quiver Dance, 006-mx|dd, 647|scarf|specs, 793|scarf|specs, 373|Flyinium Z DD, 381|scarf|specs|lo, 639|band|scarf|Rockium Z SD, 248|scarf, 798|SD Z-Move, 230, 718-10, 141, 380|hw, 701|SubSD, 635|specs, 494
 
-645-s|Offensive, GSI, 437
-645-s|Offensive, SSI, 645-s|helmet, 797|Autotomize|SpD, 479w, 227|def, 080|cm|tw, 080-m|cm|tw, 594, 195, 771, 537
-645-s|Offensive, NSI, 658|protean|ash, 795|scarf|specs|lo|Quiver Dance, 006-my, 647|scarf|specs, 490|z tg, 646-b, 381|specs|lo, 461, 230, 473, 319-m, 642|Offensive|tw, 141, 380, 139|shell smash, 245, 184, 038-a, 121|lo, 646, 642-s, 359-m
+645-s|Offensive, GSI, 437|def
+645-s|Offensive, SSI, 645-s|helmet, 797|Autotomize|SpD, 479w|def, 227|def, 080|cm|tw, 080-m|cm|tw, 594|def, 195|curse, 771|curse, 537|def
+645-s|Offensive, NSI, 658|protean|ash, 795|scarf|specs|lo|Quiver Dance, 006-my|Drought Wallbreaker, 647|scarf|specs, 490|z tg, 646-b|Z-Ice, 381|specs|lo, 461|lo, 230, 473|lo, 319-m|Cleaner, 642|Offensive|tw, 141, 380|hw, 139|shell smash, 245|sub protect, 184, 038-a|Support, 121|lo, 646|specs, 642-s, 359-m
 
-645-s|Double Dance, GSI, 437
-645-s|Double Dance, SSI, 645-s|helmet, 797|Autotomize|SpD, 479w, 227|def, 080|cm|tw, 080-m|cm|tw, 594, 195, 771, 537
-645-s|Double Dance, NSI, 658|protean|ash, 795|scarf, 490|z tg, 461, 473, 141, 245, 184
+645-s|Double Dance, GSI, 437|def
+645-s|Double Dance, SSI, 645-s|helmet, 797|Autotomize|SpD, 479w|def, 227|def, 080|cm|tw, 080-m|cm|tw, 594|def, 195|curse, 771|curse, 537|def
+645-s|Double Dance, NSI, 658|protean|ash, 795|scarf, 490|z tg, 461|lo, 473|lo, 141, 245|sub protect, 184
 
-645-s|scarf, GSI, 645-s|helmet, 797|Autotomize|SpD, 465|helmet, 479w, 227|def|SpD, 437, 080|cm|tw, 080-m|cm|tw, 594, 450, 195, 771, 537
-645-s|scarf, SSI, 645-s|scarf|Double Dance|Offensive, 598, 787, 472|def|SpD
-645-s|scarf, NSI, 658|ash, 795|scarf, 647|scarf, 490|z tg, 461, 230, 473, 141, 139|shell smash, 245, 184
+645-s|scarf, GSI, 645-s|helmet, 797|Autotomize|SpD, 465|helmet, 479w|def, 227|def|SpD, 437|def, 080|cm|tw, 080-m|cm|tw, 594|def, 450|def, 195|curse, 771|curse, 537|def
+645-s|scarf, SSI, 645-s|scarf|Double Dance|Offensive, 598|def, 787, 472|def|SpD
+645-s|scarf, NSI, 658|ash, 795|scarf, 647|scarf, 490|z tg, 461|lo, 230, 473|lo, 141, 139|shell smash, 245|sub protect, 184
 
-376-m, GSI, 212-m
-376-m, SSI, 376-m, 645-s|helmet, 797|Autotomize|SpD, 445|helmet, 598, 227|def, 465|helmet, 080|cm|tw, 437, 080-m|cm|tw, 199|cm, 594, 450, 195, 292, 771, 537
-376-m, NSI, 658|ash, 051|sash|Offensive Trapper, 479w, 637, 625, 530|scarf, 720-u|scarf, 105-a, 319-m, 630, 563, 073, 324
+376-m|Wallbreaker, GSI, 212-m|SD
+376-m|Wallbreaker, SSI, 376-m|Wallbreaker, 645-s|helmet, 797|Autotomize|SpD, 445|helmet, 598|def, 227|def, 465|helmet, 080|cm|tw, 437|def, 080-m|cm|tw, 199|cm, 594|def, 450|def, 195|curse, 292|Wall, 771|curse, 537|def
+376-m|Wallbreaker, NSI, 658|ash, 051|sash|Offensive Trapper, 479w|def, 637|QD Z-Fire, 625|SD, 530|scarf, 720-u|scarf, 105-a, 319-m|Cleaner, 630|def, 563|def, 073|def, 324|Support
 
-127-m, GSI, 227|def, 145
-127-m, SSI, 376-m, 797|Autotomize|SpD, 785, 479w
-127-m, NSI, 645-s|scarf, 445|scarf, 793|scarf, 530|scarf, 639|scarf, 248|scarf, 642|Offensive|tw, 142-m, 141, 139|shell smash, 082, 642-s
+127-m|SD, GSI, 227|def, 145|def
+127-m|SD, SSI, 376-m|Wallbreaker, 797|Autotomize|SpD, 785, 479w|def
+127-m|SD, NSI, 645-s|scarf, 445|scarf, 793|scarf, 530|scarf, 639|scarf, 248|scarf, 642|Offensive|tw, 142-m, 141, 139|shell smash, 082|scarf, 642-s
 
-302-m, GSI, 006-mx|Bulky|dd, 801|av|specs|Shift Gear, 788, 006-my, 036|mg cm|Stealth Rock|un cm|un, 468
-302-m, SSI, 785, 485, 647|specs, 490|z tg, 637, 730, 663
+302-m, GSI, 006-mx|Bulky|dd, 801|av|specs|Shift Gear, 788|def, 006-my|Drought Wallbreaker, 036|mg cm|Stealth Rock|un cm|un, 468|Stallbreaker
+302-m, SSI, 785, 485, 647|specs, 490|z tg, 637|QD Z-Fire, 730|specs, 663|SD z-fly
 302-m, NSI, 786|scarf|specs|Stallbreaker, 472|def|SpD, 184
 
-212-m, GSI, 797|Autotomize|SpD, 006-mx|Bulky|dd, 006-my, 227|def|SpD, 637, 130|Flyinium Z DD, 748, 145, 195, 771, 663, 324
-212-m, SSI, 445|helmet, 485, 647|specs, 462|av|specs, 479w, 105-a, 721, 593, 630, 494
-212-m, NSI, 786|specs
+212-m|SD, GSI, 797|Autotomize|SpD, 006-mx|Bulky|dd, 006-my|Drought Wallbreaker, 227|def|SpD, 637|QD Z-Fire, 130|Flyinium Z DD, 748|def, 145|def, 195|curse, 771|curse, 663|SD z-fly, 324|Support
+212-m|SD, SSI, 445|helmet, 485, 647|specs, 462|av|specs, 479w|def, 105-a, 721|specs, 593|def, 630|def, 494
+212-m|SD, NSI, 786|specs
 
-319-m, GSI, 598, 227|def, 465|helmet, 630
-319-m, SSI, 788, 591, 647|scarf|specs, 479w, 003-m, 036|mg cm|Stealth Rock|un cm|un, 748, 145, 594, 184, 730
-319-m, NSI, 795|scarf, 545|?|Waterium Z SD, 639|scarf, 798, 230, 286, 635
+319-m|Cleaner, GSI, 598|def, 227|def, 465|helmet, 630|def
+319-m|Cleaner, SSI, 788|def, 591|def, 647|scarf|specs, 479w|def, 003-m, 036|mg cm|Stealth Rock|un cm|un, 748|def, 145|def, 594|def, 184, 730|specs
+319-m|Cleaner, NSI, 795|scarf, 545|bp|Waterium Z SD, 639|scarf, 798|SD Z-Move, 230, 286|SD, 635|specs
 
-080-m|cm, GSI, 658|protean|ash, 462|av, 036|un cm, 720-u|specs, 635, 771
-080-m|cm, SSI, 788, 381|specs|lo, 497, 292
-080-m|cm, NSI, 785, 787, 094|lo, 462|specs, 490|z tg, 479w, 145, 798, 319-m, 642|Offensive|tw, 342, 082, 642-s, 796
+080-m|cm, GSI, 658|protean|ash, 462|av, 036|un cm, 720-u|specs, 635|specs, 771|curse
+080-m|cm, SSI, 788|def, 381|specs|lo, 497|SubSeed, 292|Wall
+080-m|cm, NSI, 785, 787, 094|lo, 462|specs, 490|z tg, 479w|def, 145|def, 798|SD Z-Move, 319-m|Cleaner, 642|Offensive|tw, 342, 082|scarf, 642-s, 796|TG Z-Elec
 
-641-s, GSI, 479w, 142-m
-641-s, SSI, 785, 793|scarf, 145, 199|cm
-641-s, NSI, 645-s|scarf, 639|scarf, 461, 642|Offensive|tw, 141, 139|shell smash, 082, 642-s, 796
+641-s|lo, GSI, 479w|def, 142-m
+641-s|lo, SSI, 785, 793|scarf, 145|def, 199|cm
+641-s|lo, NSI, 645-s|scarf, 639|scarf, 461|lo, 642|Offensive|tw, 141, 139|shell smash, 082|scarf, 642-s, 796|TG Z-Elec
 
-003-m, GSI, 376-m, 797|Autotomize, 385|scarf|SpD, 227|SpD, 113, 641-s, 800, 579, 242, 663
-003-m, SSI, 006-mx|Bulky|dd, 485, 646-b, 381|scarf|specs|lo, 105-a, 149, 380
-003-m, NSI, 645-s|Offensive, 786|scarf|specs|Stallbreaker, 065-m, 127-m, 373|Flyinium Z DD, 637, 130|Flyinium Z DD
+003-m, GSI, 376-m|Wallbreaker, 797|Autotomize, 385|scarf|SpD, 227|SpD, 113, 641-s|av, 800|Stored Power, 579|cm, 242, 663|SD z-fly
+003-m, SSI, 006-mx|Bulky|dd, 485, 646-b|Z-Ice, 381|scarf|specs|lo, 105-a, 149|DD Z-Move, 380|hw
+003-m, NSI, 645-s|Offensive, 786|scarf|specs|Stallbreaker, 065-m, 127-m|SD, 373|Flyinium Z DD, 637|QD Z-Fire, 130|Flyinium Z DD
 
 639|band|Rockium Z SD, GSI, 080-m|cm|tw
-639|band|Rockium Z SD, SSI, 645-s|helmet, 227|def, 465|helmet, 748, 080|cm|tw, 450
-639|band|Rockium Z SD, NSI, 658|protean, 645-s|scarf, 376-m, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 786|scarf, 051|scarf|sash|Offensive Trapper, 065-m, 647|scarf, 530|scarf, 720-u|scarf, 381|scarf|specs|lo, 212-m, 497, 639|scarf, 472|def, 798, 230, 319-m, 718-10, 286, 141, 380, 139|shell smash, 121|lo, 701
+639|band|Rockium Z SD, SSI, 645-s|helmet, 227|def, 465|helmet, 748|def, 080|cm|tw, 450|def
+639|band|Rockium Z SD, NSI, 658|protean, 645-s|scarf, 376-m|Wallbreaker, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 786|scarf, 051|scarf|sash|Offensive Trapper, 065-m, 647|scarf, 530|scarf, 720-u|scarf, 381|scarf|specs|lo, 212-m|SD, 497|SubSeed, 639|scarf, 472|def, 798|SD Z-Move, 230, 319-m|Cleaner, 718-10, 286|SD, 141, 380|hw, 139|shell smash, 121|lo, 701|SubSD
 
 639|scarf, GSI, 080-m|cm|tw
-639|scarf, SSI, 645-s|helmet, 227|def, 465|helmet, 748, 080|cm|tw, 450
-639|scarf, NSI, 645-s|scarf, 795|scarf, 051|scarf|sash, 381|scarf, 212-m, 472|def, 230, 286, 141, 139|shell smash
+639|scarf, SSI, 645-s|helmet, 227|def, 465|helmet, 748|def, 080|cm|tw, 450|def
+639|scarf, NSI, 645-s|scarf, 795|scarf, 051|scarf|sash, 381|scarf, 212-m|SD, 472|def, 230, 286|SD, 141, 139|shell smash
 
-658|ash, GSI, 788, 113, 242
-658|ash, SSI, 465|av, 130-m, 635
-658|ash, NSI, 645-s|scarf, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 785, 786|scarf, 545|?|Waterium Z SD, 639|scarf, 230, 286, 141, 184, 730
+658|ash, GSI, 788|def, 113, 242
+658|ash, SSI, 465|av, 130-m|dd, 635|specs
+658|ash, NSI, 645-s|scarf, 445|scarf, 795|scarf|specs|lo|Quiver Dance, 785, 786|scarf, 545|bp|Waterium Z SD, 639|scarf, 230, 286|SD, 141, 184, 730|specs
 
-105-a, GSI, 635
-105-a, SSI, 645-s|helmet, 658|ash, 479w, 130-m
-105-a, NSI, 718|Coil|dd, 647|scarf|specs, 793|scarf|specs, 625, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 720-u|band|scarf|specs|lo, 639|band|scarf|Rockium Z SD, 248|band|scarf, 461, 230, 473, 319-m, 718-10, 141, 139|shell smash, 245, 721, 184, 342, 660, 034, 730, 445-m
+105-a, GSI, 635|specs
+105-a, SSI, 645-s|helmet, 658|ash, 479w|def, 130-m|dd
+105-a, NSI, 718|Coil|dd, 647|scarf|specs, 793|scarf|specs, 625|SD, 530|SpD|scarf|Offensive Mold Breaker|Sand Rush, 720-u|band|scarf|specs|lo, 639|band|scarf|Rockium Z SD, 248|band|scarf, 461|lo, 230, 473|lo, 319-m|Cleaner, 718-10, 141, 139|shell smash, 245|sub protect, 721|specs, 184, 342, 660, 034|lo, 730|specs, 445-m|SD
 
-080|cm, GSI, 658|protean|ash, 462|av, 720-u|specs, 635
-080|cm, SSI, 788, 381|scarf|specs|lo, 497, 145, 130-m, 292, 646
-080|cm, NSI, 785, 787, 094|lo, 462|specs, 490|z tg, 248|band, 798, 642|Offensive|tw, 286, 082, 642-s, 796
+080|cm, GSI, 658|protean|ash, 462|av, 720-u|specs, 635|specs
+080|cm, SSI, 788|def, 381|scarf|specs|lo, 497|SubSeed, 145|def, 130-m|dd, 292|Wall, 646|specs
+080|cm, NSI, 785, 787, 094|lo, 462|specs, 490|z tg, 248|band, 798|SD Z-Move, 642|Offensive|tw, 286|SD, 082|scarf, 642-s, 796|TG Z-Elec
 
 718-10, GSI, 787, 080|cm|tw, 080-m|cm|tw
-718-10, SSI, 594
-718-10, NSI, 795|scarf|specs|lo|Quiver Dance, 786|scarf, 381|scarf, 461, 139|shell smash
+718-10, SSI, 594|def
+718-10, NSI, 795|scarf|specs|lo|Quiver Dance, 786|scarf, 381|scarf, 461|lo, 139|shell smash
 
 scarf, icon, choicescarf
 band, icon, choiceband
@@ -707,12 +707,19 @@ av, icon, assaultvest
 
 SpD, letters, SpD
 
+797|SpD, icon, leftovers
+490|z tg, icon, wateriumz
+490|z tg, letters, z tg
 151|stallbreaker, icon, leftovers
 151|stallbreaker, letters, taunt
 139|shell smash, letters, smash
 139|shell smash, icon, wateriumz
 139|shell smash, icon, wateriumz
+658|protean, icon, lifeorb
+658|protean, letters, protean
 658|ash, image, 658-a
+658|ash, icon, choicespecs
+658|ash, letters, ash
 797|Autotomize, icon, flyiniumz
 797|Autotomize, letters, auto
 006-mx|Bulky, letters, Wisp
@@ -742,7 +749,7 @@ SpD, letters, SpD
 642|Offensive, letters, Off
 718|Coil, letters, Coil
 
-?, letters`.split(/\r?\n/g).map( line => line.split(/, */g) );
+?, letters, <font size=7>?</font>`.split(/\r?\n/g).map( line => line.split(/, */g) );
 
 window.compendiums.officialnames = {
 	"100": "Voltorb",
