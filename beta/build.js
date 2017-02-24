@@ -27,6 +27,19 @@ this.buildChecksCompendium = function buildChecksCompendium (buildData) {
 			}
 		}
 	}
+	let isEmptySubjectSet = (subjectSet) => siModes.every( mode => Object.keys(subjectSet[mode]).length === 0 );
+	// import from "?" to all sets
+	for (let species in build) {
+		if (isEmptySubjectSet( build[species]["?"] )) {
+			delete build[species]["?"];
+			continue;
+		}
+		let specializedSets = Object.keys(build[species]).filter( set => set !== "?" );
+		let subjects = {};
+		subjects[species] = build[species];
+		for (let mode of siModes)
+			addEntries(build, subjects, mode, build[species]["?"][mode]);
+	}
 	return { "build": build, "miniIcons": miniIcons };
 };
 
@@ -35,7 +48,7 @@ function addEntries (build, subjects, mode, targets) {
 	for (let set in subjects[species])
 	for (let targetSpecies in targets)
 	for (let targetSet in targets[targetSpecies]) {
-		if (!build[species]) build[species] = {};
+		if (!build[species]) build[species] = { "?": { "GSI": {}, "SSI": {}, "NSI": {}, "GSI to": {}, "SSI to": {}, "NSI to": {} } };
 		if (!build[species][set]) build[species][set] = { "GSI": {}, "SSI": {}, "NSI": {}, "GSI to": {}, "SSI to": {}, "NSI to": {} };
 		if (!build[species][set][mode][targetSpecies]) build[species][set][mode][targetSpecies] = {};
 		build[species][set][mode][targetSpecies][targetSet] = 1;
@@ -51,11 +64,11 @@ window.unpackBuildData = function unpackBuildData (packedSetlists) {
 		species = window.compendiums.aliases[toId(species)] || species;
 		if (!setlists[species])
 			setlists[species] = {};
-		for (set of sets)
+		for (let set of sets)
 			setlists[species][set] = 1;
 	}
 	return setlists;
-}
+};
 
 window.packBuildData = function packBuildData (setlists, useOfficialNames) {
 	return Object.keys(setlists).map( species => {
@@ -66,7 +79,7 @@ window.packBuildData = function packBuildData (setlists, useOfficialNames) {
 			return species;
 		return species + '|' + packedSets;
 	});
-}
+};
 
 /* Generate Html Output */
 
@@ -85,7 +98,7 @@ function sortThreats(build) {
 		}
 		return sum;
 	};
-	let simpleHash = (str) => { let num = 0; for (let i in str) num += str.charCodeAt(i) * Math.pow(2, i); return num; }
+	let simpleHash = (str) => { let num = 0; for (let i in str) num += str.charCodeAt(i) * Math.pow(2, i); return num; };
 	threats =  threats.sort((a,b) => {
 		let scoreA = Math.min( ...Object.keys(build[a[0]]).map(set => score(a[0], set)) );
 		let scoreB = Math.min( ...Object.keys(build[b[0]]).map(set => score(b[0], set)) );
@@ -149,4 +162,4 @@ function brmtIcon (compendium, title, species, set) {
 
 return this;
 
-})()
+})();
