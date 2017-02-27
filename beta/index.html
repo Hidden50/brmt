@@ -11,8 +11,12 @@
 </head>
 
 <body>
-	<label for="builddata">Build data</label> <button id="build">rebuild compendium</button> <button id="useofficialnames">use official names</button> <button id="usespeciesid">use species ID</button><br>
+	<label for="builddata">Build data</label>
+	<button id="build">rebuild compendium</button>
+	<button id="useofficialnames">use official names</button>
+	<button id="usespeciesid">use species ID</button><br>
 	<textarea id="builddata"></textarea><br>
+	Team: <div id="team"></div>
 	<div id="output"></div>
 	<div ID="onclickinfo_popout" class="infopopout" onmouseleave="this.style.display = 'none'"></div>
 	<script>
@@ -47,25 +51,24 @@
 				location.hash = buildDataToString( buildData, ",", "&" );
 				output.innerHTML = window.buildTools.compendiumToHtmlImages( window.compendiums.OUcc, build, ["tiles"] );
 				addIconWrapListeners( output, 'click', addPopup );
+				document.getElementById("team").innerHTML = Object.keys(window.team).map(species =>
+					Object.keys(window.team[species]).map(set =>
+						window.brmtIcon( window.compendiums.OUcc, `${species} (${set})`, species, set )
+					).join("")
+				).join("");
 			});
 			btnBuild.click();
 		}
 		
 		window.onerror = function(msg, url, line, col, error) {
-			// Note that col & error are new to the HTML 5 spec and may not be 
-			// supported in every browser
-			var extra = !col ? '' : '\ncolumn: ' + col;
-			extra += !error ? '' : '\nerror: ' + error;
+			let suppressErrorAlert = false;
 			
-			// You can view the information in an alert to see things working like this:
-			alert("Error: " + msg + "\nurl: " + url + "\nline: " + line + extra);
+			// COL and ERROR are new to HTML 5 and may not be supported
+			let extra = "";
+			if (col)   extra += `\ncolumn: ${col}`;
+			if (error) extra += `\nerror: ${error}`;
 			
-			// TODO: Report this error via ajax so you can keep track
-			//       of what pages have JS issues
-			
-			var suppressErrorAlert = false;
-			// If you return true, then error alerts (like in older versions of 
-			// Internet Explorer) will be suppressed.
+			alert( `Error: ${msg}\nurl: ${url}\nline: ${line}${extra}` );
 			return suppressErrorAlert;
 		};
 	</script>
