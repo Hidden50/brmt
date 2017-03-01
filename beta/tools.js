@@ -40,7 +40,7 @@ window.addPopup = function addPopup (source, species, set) {
 	showPopout(
 		"onclickinfo_popout",
 		source,
-		buildTools.compendiumToHtmlImages( compendiums.OUcc, build, [], species, set )
+		brmt.compendiumToHtmlImages( compendiums.OUcc, build, [], species, set )
 	);
 	addIconWrapListeners(
 		"onclickinfo_popout",

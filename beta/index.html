@@ -11,17 +11,53 @@
 </head>
 
 <body>
-	<label for="builddata">Build data</label>
-	<button id="build">rebuild compendium</button>
-	<button id="useofficialnames">use official names</button>
-	<button id="usespeciesid">use species ID</button><br>
-	<textarea id="builddata"></textarea><br>
-	Team: <div id="team"></div>
-	<div id="output"></div>
+	<h2 style="display: inline-block; margin-right:.25em">OU Weakness Checker (BreakMyTeam)</h2>
+	<a target="_blank" style="font-size:10pt" href="About.html">About this tool</a>
+	<button id="showdev">Show Builddata</button>
+	
+	<div id="dev" style="display:none">
+		<button id="build">rebuild compendium</button>
+		<button id="useofficialnames">use official names</button>
+		<button id="usespeciesid">use species ID</button><br>
+		<textarea id="builddata"></textarea>
+	</div>
+	
+	<div>
+		<div class="rightside-container">
+			<div ID="rightsideDiv" class="rightside">
+				<h3>Team</h3>
+				<p id="team"></p>
+			</div>
+		</div>
+		<div class="leftside">
+			<h3>Add Team Members</h3>
+	<!--	<form id="form1" onsubmit="demo.firstElementChild.onclick(); return false;">
+				Filter: <input name="name" type="text" size="20"
+							   oninput = "UpdateAutocompleteResults();" onpropertychange="UpdateAutocompleteResults();">
+				<a class="javascriptlink" onclick="urlparam=''; AddToTeam('');">Clear Team</a>
+			</form>
+			<p id="demo">Loading..</p>-->
+		</div>
+	</div>
+	
+	<h3>Threatlist</h3>
+	<p id="output"></p>
+	
 	<div ID="onclickinfo_popout" class="infopopout" onmouseleave="this.style.display = 'none'"></div>
 	<script>
 		let buildDataToString = (data, sep, linesep, useOfficialNames) => data.map( arr => arr.map( a => packBuildData(unpackBuildData([a]), useOfficialNames) ).join(sep) ).join(linesep);
 		window.onload = function() {
+			let dev = document.getElementById("dev");
+			let showdev = document.getElementById("showdev");
+			showdev.addEventListener('click', () => {
+				if (dev.style.display === "block") {
+					dev.style.display = "none";
+					showdev.innerText = "Show Builddata";
+				} else {
+					dev.style.display = (dev.style.display === "block") ? "none" : "block";
+					showdev.innerText = "Hide Builddata";
+				}
+			});
 			let taBuilddata = document.getElementById("builddata");
 			let btnBuild = document.getElementById("build");
 			let output = document.getElementById("output");
@@ -35,7 +71,7 @@
 			
 			if (!location.hash) location.hash = buildDataToString( window.compendiums.OUcc.buildData, ",", "&" );
 			else if (location.hash === "#gen7OUcc") location.hash = buildDataToString( gen7OUccBuilddata, ",", "&" );
-			taBuilddata.value = location.hash.substr(1).replace(/&/g, "\n").replace(/,/g, ", ").replace(/%20/g, " ");
+			taBuilddata.value = location.hash.substr(1).replace(/&/g, "\n").replace(/,/g, ", ").replace(/%20/g, " ").replace(/%3C/g, "<").replace(/%3E/g, ">");
 			
 			btnBuild.addEventListener('click', function() {
 				let buildData = taBuilddata.value.split(/\r?\n/g).map( line => line.split(",").map(trim) );
@@ -44,12 +80,12 @@
 					"buildData": buildData
 				};
 				
-				let compendium = window.buildTools.buildChecksCompendium( buildData );
+				let compendium = brmt.buildChecksCompendium( buildData );
 				window.build = compendium.build;
 				window.compendiums.OUcc.miniIcons = compendium.miniIcons;
 				
 				location.hash = buildDataToString( buildData, ",", "&" );
-				output.innerHTML = window.buildTools.compendiumToHtmlImages( window.compendiums.OUcc, build, ["tiles"] );
+				output.innerHTML = brmt.compendiumToHtmlImages( window.compendiums.OUcc, build, ["tiles"] );
 				addIconWrapListeners( output, 'click', addPopup );
 				document.getElementById("team").innerHTML = Object.keys(window.team).map(species =>
 					Object.keys(window.team[species]).map(set =>

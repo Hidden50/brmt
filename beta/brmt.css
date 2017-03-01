@@ -1,13 +1,22 @@
+div.rightside-container {
+	float: left;
+	width: 100%;
+}
+div.rightside {
+	margin-left:25%;
+}
+div.leftside {
+	float: left;
+	width: 25%;
+	margin-left: -100%;
+}
+
 textarea {
 	min-height:  100px;
 	width:       97vw;
 }
 button {
 	margin-bottom: 5px;
-}
-.footer {
-	position: absolute;
-	bottom:   0px;
 }
 .infopopout {
 	background-color: white;
@@ -17,9 +26,10 @@ button {
 	padding:          15px;
 	margin:           5px;
 }
-.infopopout > .imageWrapper.red {
+.infopopout > .imageWrapper.isonownteam {
 	border: 1px solid red;
 }
+
 .imageWrapper {
 	vertical-align: middle;
 	display:        inline-block;
@@ -27,9 +37,8 @@ button {
 	cursor:         pointer;
 }
 #output > .imageWrapper {
-	background-color: yellow;
-	width:            42px;
-	height:           42px;
+	width:            48px;
+	height:           48px;
 	margin:           3px;
 	border:           2px solid Navy;
 }
@@ -39,6 +48,11 @@ button {
 	left:      50%;
 	top:       50%;
 }
+#output > .imageWrapper.rating-0                 { background-color: Coral; }
+#output > .imageWrapper.rating-50               { background-color: Orange; }
+#output > .imageWrapper.rating-5000           { background-color: PowderBlue; }
+#output > .imageWrapper.rating-verysmall { background-color: PaleGreen; }
+
 .iconWrapper {
 	position:    absolute;
 	bottom:      0px;
