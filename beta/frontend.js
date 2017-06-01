@@ -35,7 +35,7 @@ window.onload = function() {
 		let team       = frontend.cache.team       = [];
 		
 		let build      = frontend.cache.build      = brmt.buildChecksCompendium(buildData);
-		let threatlist = frontend.cache.threatlist = brmt.getThreatlist(build, []);
+		let threatlist = frontend.cache.threatlist = brmt.getThreatlist(build, team);
 		let iconConfig = frontend.cache.iconConfig = brmt.readIconConfig(buildData);
 		
 		frontend.appendChildnode( document.body, brmt.tools.jsObjectToHtml(threatlist) );

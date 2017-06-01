@@ -77,7 +77,7 @@ htmloutput.makeIconGallery = function makeIconGallery (pokemonlist, team, iconCo
 		if (pokemon.score) {
 			if (team.length)
 				scoreDisplay = -pokemon.score.team;
-			scoreDisplay = -pokemon.score.set;
+			else scoreDisplay = -pokemon.score.set;
 		}
 		return htmloutput.brmtIcon(pokemon, team, iconConfig, scoreDisplay);
 	}).join("");
