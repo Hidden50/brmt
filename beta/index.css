@@ -10,6 +10,12 @@ div.leftside {
 	width: 25%;
 	margin-left: -100%;
 }
+a.jslink {
+	text-decoration-color: blue;
+	text-decoration:       underline;
+	cursor:                pointer;
+	color:                 blue;
+}
 
 textarea {
 	min-height:  100px;
@@ -25,9 +31,6 @@ button {
 	display:          none;
 	padding:          15px;
 	margin:           5px;
-}
-.infopopout > .imageWrapper.isonownteam {
-	border: 1px solid red;
 }
 
 .imageWrapper {
@@ -48,10 +51,11 @@ button {
 	left:      50%;
 	top:       50%;
 }
-#output > .imageWrapper.rating-0                 { background-color: Coral; }
-#output > .imageWrapper.rating-50               { background-color: Orange; }
+#output > .imageWrapper.rating-0                 { background-color: Coral;      }
+#output > .imageWrapper.rating-50               { background-color: Orange;     }
 #output > .imageWrapper.rating-5000           { background-color: PowderBlue; }
-#output > .imageWrapper.rating-verysmall { background-color: PaleGreen; }
+#output > .imageWrapper.rating-250000       { background-color: PaleGreen;  }
+#output > .imageWrapper.rating-verysmall { background-color: LightGrey;  }
 
 .iconWrapper {
 	position:    absolute;
@@ -75,4 +79,28 @@ button {
 .ratingWrapper {
 	font-size: 7pt;
 	top:       2px;
+}
+.GSI > .imageWrapper  > .ratingWrapper,
+.SSI > .imageWrapper  > .ratingWrapper,
+.NSI > .imageWrapper  > .ratingWrapper {
+	color:       lime;
+	font-weight: bold;
+}
+.GSI.to > .imageWrapper  > .ratingWrapper,
+.SSI.to > .imageWrapper  > .ratingWrapper,
+.NSI.to > .imageWrapper  > .ratingWrapper {
+	color:       coral;
+	font-weight: bold;
+}
+
+
+.infopopout > .GSI > .imageWrapper.onteam,
+.infopopout > .SSI > .imageWrapper.onteam,
+.infopopout > .NSI > .imageWrapper.onteam {
+	border: 1px solid lime;
+}
+.infopopout > .GSI.to > .imageWrapper.onteam,
+.infopopout > .SSI.to > .imageWrapper.onteam,
+.infopopout > .NSI.to > .imageWrapper.onteam {
+	border: 1px solid coral;
 }

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+	<script src="./build.js"></script>
+	<script src="./teamrater.js"></script>
+	<script src="./htmloutput.js"></script>
+	<script src="./tools.js"></script>
+	<script src="./aliases.js"></script>
+	<script src="./../compendiums/OUcc.js"></script>
+	<script src="./../config.js"></script>
+	<link  href="./../index.css" rel="stylesheet">
+</head>
+
+<style>
+tr {
+	vertical-align: top;
+	margin:         1px;
+}
+pre {
+	display:        inline-block;
+	margin:         0px;
+}
+</style>
+
+<body><script>
+
+window.onerror = function(msg, url, line, col, error) {
+	const suppressErrorAlert = false;
+	
+	// COL and ERROR are new to HTML 5 and may not be supported
+	let extra = "";
+	if (col)   extra += `\ncolumn: ${col}`;
+	if (error) extra += `\nerror: ${error}`;
+	
+	alert( `Error: ${msg}\nurl: ${url}\nline: ${line}${extra}` );
+	return suppressErrorAlert;
+};
+
+let builddata   = brmt.compendiums.OUcc.split(/\r?\n/g).map( line => line.split(/ *, */g) );
+let build       = brmt.buildChecksCompendium(builddata);
+let threatlist  = brmt.getThreatlist(build, []);
+let iconConfig  = brmt.readIconConfig(builddata);
+let testPokemon = brmt.tools.makePokemonObject("006-mx", "dd");
+let testEntry   = brmt.htmloutput.makeCompendiumEntry(build, testPokemon, [], iconConfig);
+
+let container = document.createElement("div");
+container.innerHTML = brmt.tools.jsObjectToHtml({
+	"brmt":  brmt,
+	"tests": {
+		"OUcc build":       build,
+		"OUcc Threatlist":  threatlist,
+		"OUcc Icon Config": iconConfig
+	}
+});
+container.id = "projectdata";
+document.body.appendChild(container);
+
+</script></body></html>
