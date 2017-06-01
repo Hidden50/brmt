@@ -56,4 +56,12 @@ builder.packSetData = function packSetData (setlists, useOfficialNames) {
 	});
 };
 
+builder.buildDataToString = function buildDataToString (data, sep, linesep, useOfficialNames) {
+	return data.map(
+		line => line.map(
+			el => brmt.builder.packSetData( brmt.builder.unpackSetData( [el] ), useOfficialNames )
+		).join(sep)
+	).join(linesep);
+};
+
 })();

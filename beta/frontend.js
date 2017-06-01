@@ -23,10 +23,10 @@ window.onload = function() {
 	});
 	
 	document.getElementById("useofficialnames").addEventListener('click', function() {
-		taBuilddata.value = frontend.buildDataToString( taBuilddata.value.split(/\r?\n/g).map( line => line.split(/ *, */) ), ", ", "\n", true );
+		taBuilddata.value = brmt.builder.buildDataToString( taBuilddata.value.split(/\r?\n/g).map( line => line.split(/ *, */) ), ", ", "\n", true );
 	});
 	document.getElementById("usespeciesid").addEventListener('click', function() {
-		taBuilddata.value = frontend.buildDataToString( taBuilddata.value.split(/\r?\n/g).map( line => line.split(/ *, */) ), ", ", "\n" );
+		taBuilddata.value = brmt.builder.buildDataToString( taBuilddata.value.split(/\r?\n/g).map( line => line.split(/ *, */) ), ", ", "\n" );
 	});
 	
 	
@@ -37,6 +37,8 @@ window.onload = function() {
 		let build      = frontend.cache.build      = brmt.buildChecksCompendium(buildData);
 		let threatlist = frontend.cache.threatlist = brmt.getThreatlist(build, []);
 		let iconConfig = frontend.cache.iconConfig = brmt.readIconConfig(buildData);
+		
+		frontend.appendChildnode( document.body, brmt.tools.jsObjectToHtml(threatlist) );
 		
 		output.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, team, iconConfig);
 		frontend.addIconWrapListeners( output, 'click', frontend.addPopup );
@@ -49,12 +51,10 @@ window.onload = function() {
 	btnBuild.click();
 }
 
-frontend.buildDataToString = function buildDataToString (data, sep, linesep, useOfficialNames) {
-	return data.map(
-		line => line.map(
-			el => brmt.builder.packSetData( brmt.builder.unpackSetData( [el] ), useOfficialNames )
-		).join(sep)
-	).join(linesep);
+frontend.appendChildnode = function appendHtml (parentNode, code) {
+	let container = document.createElement("div");
+	container.innerHTML = code;
+	parentNode.appendChild(container);
 };
 
 frontend.addIconWrapListeners = function addIconWrapListeners (parent, eventType, listener) {
