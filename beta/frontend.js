@@ -36,29 +36,6 @@ frontend.addEventListeners = function addEventListeners () {
 		);
 	});
 	
-	htmlNodes.register( ...document.querySelectorAll("[id]") );
-	
-	htmlNodes.textareas.builddata.value = brmt.compendiums.OUcc;
-	
-	htmlNodes.buttons.showbuilddata.addEventListener('click', () => {
-		htmlNodes.divs.builddata.style.display = "block";
-		htmlNodes.buttons.showbuilddata.style.display = "none";
-	});
-	htmlNodes.buttons.hidebuilddata.addEventListener('click', () => {
-		htmlNodes.divs.builddata.style.display = "none";
-		htmlNodes.buttons.showbuilddata.style.display = "block";
-	});
-	
-	htmlNodes.buttons.useofficialnames.addEventListener('click', function() {
-		htmlNodes.textareas.builddata.value = brmt.builder.buildDataToString(
-			brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value ), ", ", "\n", true
-		);
-	});
-	htmlNodes.buttons.usespeciesids.addEventListener('click', function() {
-		htmlNodes.textareas.builddata.value = brmt.builder.buildDataToString(
-			brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value ), ", ", "\n"
-		);
-	});
 	
 	htmlNodes.buttons.showobjectinspector.addEventListener('click', () => {
 		frontend.showPopup(
@@ -71,12 +48,6 @@ frontend.addEventListeners = function addEventListeners () {
 };
 
 frontend.rebuild = function rebuild() {
-	htmlNodes.buttons.build.addEventListener('click', );
-	
-	frontend.buildCompendium();
-};
-
-frontend.buildCompendium = function buildCompendium() {
 	let buildData  = cache.buildData  = brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value );
 	let team       = cache.team;
 	
@@ -102,18 +73,6 @@ htmlNodes.register = function register (node, ...rest) {
 	
 	if (rest.length)
 		htmlNodes.register(...rest);
-frontend.htmlNodes.register = function register (node, ...rest) {
-	if (typeof node === "string")
-		node = document.getElementById(node);
-	let tagClass = node.tagName.toLowerCase();
-	if (tagClass.length > 1)
-		tagClass += "s";  // collection names make more sense in plural: htmlNodes.buttons.buttonxyz, not htmlNodes.button.buttonxyz
-	frontend.htmlNodes[tagClass] = frontend.htmlNodes[tagClass] || {};
-	let name = node.id.substr(1 + node.id.indexOf("_"));
-	frontend.htmlNodes[tagClass][name] = node;
-	if (rest.length)
-		frontend.htmlNodes.register(...rest);
->>>>>>> origin/gh-pages
 	return node;
 };
 
