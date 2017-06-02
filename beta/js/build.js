@@ -64,4 +64,8 @@ builder.buildDataToString = function buildDataToString (data, sep, linesep, useO
 	).join(linesep);
 };
 
+builder.stringToBuildData = function stringToBuildData (S) {
+	return S.split(/\r?\n/g).map( line => line.split(/ *, */) );
+};
+
 })();

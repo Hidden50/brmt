@@ -1,20 +1,23 @@
-div.rightside-container {
+div.partition-right {
+	margin-left: 25%;
+}
+div.partition-left {
+	margin-left: -100%;
+	float:       left;
+	width:       25%;
+}
+div.partition-right-container {
 	float: left;
 	width: 100%;
 }
-div.rightside {
-	margin-left:25%;
+
+.objectinspector tr {
+	vertical-align: top;
+	margin:         1px;
 }
-div.leftside {
-	float: left;
-	width: 25%;
-	margin-left: -100%;
-}
-a.jslink {
-	text-decoration-color: blue;
-	text-decoration:       underline;
-	cursor:                pointer;
-	color:                 blue;
+.objectinspector pre {
+	display:        inline-block;
+	margin:         0px;
 }
 
 textarea {
@@ -24,13 +27,19 @@ textarea {
 button {
 	margin-bottom: 5px;
 }
-.infopopout {
+
+#div_popup {
 	background-color: white;
 	border:           4px solid Black;
 	position:         absolute;
 	display:          none;
 	padding:          15px;
 	margin:           5px;
+}
+#button_showobjectinspector ,
+#button_showbuilddata ,
+#button_hidebuilddata {
+	float: right;
 }
 
 .imageWrapper {
@@ -39,23 +48,23 @@ button {
 	position:       relative;
 	cursor:         pointer;
 }
-#output > .imageWrapper {
+#div_threatlist > .imageWrapper {
 	width:            48px;
 	height:           48px;
 	margin:           3px;
 	border:           2px solid Navy;
 }
-#output > .imageWrapper > img {
+#div_threatlist > .imageWrapper > img {
 	transform: translate(-50%, -50%);
 	position:  absolute;
 	left:      50%;
 	top:       50%;
 }
-#output > .imageWrapper.rating-0                 { background-color: Coral;      }
-#output > .imageWrapper.rating-50               { background-color: Orange;     }
-#output > .imageWrapper.rating-5000           { background-color: PowderBlue; }
-#output > .imageWrapper.rating-250000       { background-color: PaleGreen;  }
-#output > .imageWrapper.rating-verysmall { background-color: LightGrey;  }
+#div_threatlist > .imageWrapper.rating-0                 { background-color: Coral;      }
+#div_threatlist > .imageWrapper.rating-50               { background-color: Orange;     }
+#div_threatlist > .imageWrapper.rating-5000           { background-color: PowderBlue; }
+#div_threatlist > .imageWrapper.rating-250000       { background-color: PaleGreen;  }
+#div_threatlist > .imageWrapper.rating-verysmall { background-color: LightGrey;  }
 
 .iconWrapper {
 	position:    absolute;
@@ -67,6 +76,7 @@ button {
 	transform:        translate(-50%);
 	left:             50%;
 	width:            40px;
+	text-shadow:      1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 	text-shadow:      1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 	text-align:       center;
 	line-height:      90%;
@@ -80,27 +90,27 @@ button {
 	font-size: 7pt;
 	top:       2px;
 }
-.GSI > .imageWrapper  > .ratingWrapper,
-.SSI > .imageWrapper  > .ratingWrapper,
-.NSI > .imageWrapper  > .ratingWrapper {
+
+tr.GSI > .imageWrapper  > .ratingWrapper,
+tr.SSI > .imageWrapper  > .ratingWrapper,
+tr.NSI > .imageWrapper  > .ratingWrapper {
 	color:       lime;
 	font-weight: bold;
 }
-.GSI.to > .imageWrapper  > .ratingWrapper,
-.SSI.to > .imageWrapper  > .ratingWrapper,
-.NSI.to > .imageWrapper  > .ratingWrapper {
+tr.GSIto > .imageWrapper  > .ratingWrapper,
+tr.SSIto > .imageWrapper  > .ratingWrapper,
+tr.NSIto > .imageWrapper  > .ratingWrapper {
 	color:       coral;
 	font-weight: bold;
 }
 
-
-.infopopout > .GSI > .imageWrapper.onteam,
-.infopopout > .SSI > .imageWrapper.onteam,
-.infopopout > .NSI > .imageWrapper.onteam {
+tr.GSI > .imageWrapper.onteam,
+tr.SSI > .imageWrapper.onteam,
+tr.NSI > .imageWrapper.onteam {
 	border: 1px solid lime;
 }
-.infopopout > .GSI.to > .imageWrapper.onteam,
-.infopopout > .SSI.to > .imageWrapper.onteam,
-.infopopout > .NSI.to > .imageWrapper.onteam {
+tr.GSIto > .imageWrapper.onteam,
+tr.SSIto > .imageWrapper.onteam,
+tr.NSIto > .imageWrapper.onteam {
 	border: 1px solid coral;
 }

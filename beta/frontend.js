@@ -1,90 +1,105 @@
 (function(){
 
 window.frontend = {};
-frontend.cache = {};
+let cache = frontend.cache = {};
+let htmlNodes = frontend.htmlNodes = {};
+
+cache.team = [];
 
 window.onload = function() {
-	let dev = document.getElementById("dev");
-	let showdev = document.getElementById("showdev");
-	let taBuilddata = document.getElementById("textarea_builddata");
-	let btnBuild = document.getElementById("build");
-	let output = document.getElementById("output");
+	htmlNodes.register( ...document.querySelectorAll("[id]") );
 	
-	taBuilddata.value = brmt.compendiums.OUcc;
+	htmlNodes.textareas.builddata.value = brmt.compendiums.OUcc;
 	
-	showdev.addEventListener('click', () => {
-		if (dev.style.display === "block") {
-			dev.style.display = "none";
-			showdev.innerText = "Show Builddata";
-		} else {
-			dev.style.display = "block";
-			showdev.innerText = "Hide Builddata";
-		}
+	htmlNodes.buttons.showbuilddata.addEventListener('click', () => {
+		htmlNodes.divs.builddata.style.display = "block";
+		htmlNodes.buttons.showbuilddata.style.display = "none";
+	});
+	htmlNodes.buttons.hidebuilddata.addEventListener('click', () => {
+		htmlNodes.divs.builddata.style.display = "none";
+		htmlNodes.buttons.showbuilddata.style.display = "block";
 	});
 	
-	document.getElementById("useofficialnames").addEventListener('click', function() {
-		taBuilddata.value = brmt.builder.buildDataToString( taBuilddata.value.split(/\r?\n/g).map( line => line.split(/ *, */) ), ", ", "\n", true );
+	htmlNodes.buttons.useofficialnames.addEventListener('click', function() {
+		htmlNodes.textareas.builddata.value = brmt.builder.buildDataToString(
+			brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value ), ", ", "\n", true
+		);
 	});
-	document.getElementById("usespeciesid").addEventListener('click', function() {
-		taBuilddata.value = brmt.builder.buildDataToString( taBuilddata.value.split(/\r?\n/g).map( line => line.split(/ *, */) ), ", ", "\n" );
+	htmlNodes.buttons.usespeciesids.addEventListener('click', function() {
+		htmlNodes.textareas.builddata.value = brmt.builder.buildDataToString(
+			brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value ), ", ", "\n"
+		);
 	});
 	
-	
-	btnBuild.addEventListener('click', function buildBtnPress() {
-		let buildData  = frontend.cache.buildData  = taBuilddata.value.split(/\r?\n/g).map( line => line.split(/ *, */) );
-		let team       = frontend.cache.team       = [];
-		
-		let build      = frontend.cache.build      = brmt.buildChecksCompendium(buildData);
-		let threatlist = frontend.cache.threatlist = brmt.getThreatlist(build, team);
-		let iconConfig = frontend.cache.iconConfig = brmt.readIconConfig(buildData);
-		
-		frontend.appendChildnode( document.body, brmt.tools.jsObjectToHtml(threatlist) );
-		
-		output.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, team, iconConfig);
-		frontend.addIconWrapListeners( output, 'click', frontend.addPopup );
-//		document.getElementById("team").innerHTML = Object.keys(team).map(species =>
-//			Object.keys(window.team[species]).map(set =>
-//				window.brmtIcon( window.compendiums.OUcc, `${species} (${set})`, species, set )
-//			).join("")
-//		).join("");
+	htmlNodes.buttons.showobjectinspector.addEventListener('click', () => {
+		frontend.showPopup(
+			htmlNodes.buttons.showobjectinspector,
+			"Object Inspector:<div class='objectinspector'>" + brmt.tools.jsObjectToHtml({ "frontend": frontend, "brmt": brmt }) + "</div>"
+		);
 	});
-	btnBuild.click();
-}
+	
+	htmlNodes.buttons.build.addEventListener('click', );
+	
+	frontend.buildCompendium();
+};
 
-frontend.appendChildnode = function appendHtml (parentNode, code) {
+frontend.buildCompendium = function buildCompendium() {
+	let buildData  = cache.buildData  = brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value );
+	let team       = cache.team;
+	
+	let build      = cache.build      = brmt.buildChecksCompendium(buildData);
+	let threatlist = cache.threatlist = brmt.getThreatlist(build, team);
+	let iconConfig = cache.iconConfig = brmt.readIconConfig(buildData);
+	
+	htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, team, iconConfig);
+	frontend.addIconWrapListeners( htmlNodes.divs.threatlist, 'click', frontend.showCompendiumEntry );
+};
+
+frontend.htmlNodes.register = function register (node, ...rest) {
+	if (typeof node === "string")
+		node = document.getElementById(node);
+	let tagClass = node.tagName.toLowerCase();
+	if (tagClass.length > 1)
+		tagClass += "s";  // collection names make more sense in plural: htmlNodes.buttons.buttonxyz, not htmlNodes.button.buttonxyz
+	frontend.htmlNodes[tagClass] = frontend.htmlNodes[tagClass] || {};
+	let name = node.id.substr(1 + node.id.indexOf("_"));
+	frontend.htmlNodes[tagClass][name] = node;
+	if (rest.length)
+		frontend.htmlNodes.register(...rest);
+	return node;
+};
+
+frontend.appendChildnode = function appendChildnode (parentNode, code) {
 	let container = document.createElement("div");
 	container.innerHTML = code;
 	parentNode.appendChild(container);
 };
 
 frontend.addIconWrapListeners = function addIconWrapListeners (parent, eventType, listener) {
-	if (typeof parent === "string")
-		parent = document.getElementById(parent);
 	[...parent.getElementsByClassName("imageWrapper")].forEach(
 		imageWrapper => imageWrapper.addEventListener( eventType, () => listener(imageWrapper) )
 	);
 };
 
-frontend.addPopup = function addPopup (source, species, set) {
+frontend.showCompendiumEntry = function showCompendiumEntry (source, species, set) {
 	if (!species)
 		[, species, set] = source.title.match(/^(.*) \(([^()]*)\)$/);
 	let pokemon = brmt.tools.makePokemonObject(species, set);
-	frontend.showPopout(
-		"onclickinfo_popout",
+	frontend.showPopup(
 		source,
-		brmt.htmloutput.makeCompendiumEntry(frontend.cache.build, pokemon, frontend.cache.team, frontend.cache.iconConfig)
+		brmt.htmloutput.makeCompendiumEntry(cache.build, pokemon, cache.team, cache.iconConfig)
 	);
 	frontend.addIconWrapListeners(
-		"onclickinfo_popout",
+		htmlNodes.divs.popup,
 		'click',
 		frontend.scrollBuilddata
 	);
 };
 
-frontend.showPopout = function showPopout (containerID, Sender, contentHtml) {
-	// Sender: Attempts to position the popout above this element.
+frontend.showPopup = function showPopup (Sender, contentHtml) {
+	// Sender: Attempts to position the popup above this element.
 	//         We can't use mouse coordinates, because the popout can also be spawned using the keyboard
-	let container = document.getElementById(containerID);
+	let container = htmlNodes.divs.popup;
 	let XOffset = Sender.offsetLeft, YOffset = Sender.offsetTop;
 	if (container.contains(Sender)) {
 		XOffset += container.offsetLeft;  // adjustment for relative position inside a popout box
@@ -110,7 +125,7 @@ frontend.scrollBuilddata = function scrollBuilddata (wrapperNode) {
 	// check if title was "subjectSpecies (subjectSet)" instead
 	if (!subjectSpecies) [subjectSpecies, subjectSet, targetSpecies, targetSet] = [targetSpecies, targetSet, "", ""];
 	
-	let subject = brmt.tools.makePokemonObject(subjectSpecies, subjectSet)
+	let subject = brmt.tools.makePokemonObject(subjectSpecies, subjectSet);
 	let target = brmt.tools.makePokemonObject(targetSpecies, targetSet);
 	
 	let searchword  = subject.species;
@@ -123,10 +138,7 @@ frontend.scrollBuilddata = function scrollBuilddata (wrapperNode) {
 			searchword2 += `|${brmt.aliases.officialnames[target.species]}`;
 		searchword2 = `(?:${searchword2})[^,\\n]*\\|${target.set}(?=[,|\\n])`;
 	}
-	let lineRegex =
-		"(?:^|\\n)(?=" + searchword +
-			(!searchword2 ? "" : "[^\\n]*" + searchword2)
-		+ ")";
+	let lineRegex = `(?:^|\\n)(?=${searchword}` + (!searchword2 ? `` : `[^\\n]*${searchword2}`) + `)`;
 	let entryRegex = searchword2 || searchword;
 	
 	let find = frontend.textareaFindText( document.getElementById("textarea_builddata"), new RegExp(lineRegex, 'i') );

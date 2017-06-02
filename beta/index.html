@@ -17,39 +17,35 @@
 
 <body>
 
-<h2 style="display:inline-block; margin-right:.25em">OU Weakness Checker (BreakMyTeam)</h2>
-<a style="font-size:10pt" href="About.html">About this tool</a>
-<button id="showdev">Show Builddata</button>
+<h2 style="float: left">OU Weakness Checker (BreakMyTeam)</h2>
 
-<div id="dev" style="display:none">
-	<button id="build">rebuild compendium</button>
-	<button id="useofficialnames">use official names</button>
-	<button id="usespeciesid">use species ID</button><br>
+<button id="button_showobjectinspector">Inspect Project</button>
+<button id="button_showbuilddata">Show Builddata</button>
+<div id="div_builddata" style="display:none">
+	<button id="button_hidebuilddata">Hide Builddata</button>
 	<textarea id="textarea_builddata"></textarea>
+	<button id="button_useofficialnames">use official names</button>
+	<button id="button_usespeciesids">use species ID</button>
+	<button id="button_build">rebuild compendium</button>
 </div>
 
 <div>
-	<div class="rightside-container">
-		<div class="rightside">
-			<h3>Team</h3>
-			<p id="team"></p>
-		</div>
+	<div class="partition-right-container">
+		<div class="partition-right"><h3>Team</h3><div id="div_team"></div></div>
 	</div>
-	<div class="leftside">
+	<div class="partition-left">
 		<h3>Add Team Members</h3>
-		<form id="teamFrm" onsubmit="searchresults.firstElementChild.onclick(); return false;">
-			Filter:
-			<input name="name" type="text" size="20" oninput = "UpdateAutocompleteResults();" onpropertychange="UpdateAutocompleteResults();">
-			<a class="jslink" onclick="urlparam=''; AddToTeam('');">Clear Team</a>
+		<form id="form_teamsearch" onsubmit="searchresults.firstElementChild.onclick(); return false;">
+			Filter: <input name="name" type="text" size="20" oninput = "UpdateAutocompleteResults();" onpropertychange="UpdateAutocompleteResults();">
 		</form>
-		<p id="searchresults">Loading..</p>
+		<p id="div_teamsearch_results">Loading..</p>
 	</div>
 </div>
 
-<br><br><br><br><br><br><br>
-<h3>Threatlist</h3>
-<p id="output"></p>
-
-<div ID="onclickinfo_popout" class="infopopout" onmouseleave="this.style.display = 'none'"></div>
+<div style="float:left">
+	<h3>Threatlist</h3>
+	<div id="div_threatlist"></div>
+</div>
+<div ID="div_popup" onmouseleave="this.style.display = 'none'"></div>
 
 </body></html>
