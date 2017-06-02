@@ -13,8 +13,6 @@ av, icon, assaultvest
 ?, letters
 main, letters
 
-??, letters, <font size=7>?</font>
-
 Starmie|lo, GSI, Chansey
 Starmie|lo, SSI, Greninja|protean|ash, Ferrothorn|main, Tangrowth|av, Hoopa-Unbound|scarf, Latios|scarf|specs|lo, Latias|hw, Slowking|cm
 Starmie|lo, NSI, Landorus-Therian|scarf, Hoopa-Unbound|band|specs|lo, Kyurem-Black|z-Ice, Scolipede|bp|Waterium Z SD, Tyranitar|scarf, Weavile|lo, Sharpedo-Mega|cleaner, Gyarados-Mega|dd, Muk-Alola|av, Kyurem|specs, Magneton|scarf, Blissey|cm

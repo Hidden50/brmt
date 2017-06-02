@@ -33,10 +33,10 @@ builder.unpackSetData = function unpackSetData (packedSetlists) {
 	let setlists = {};
 	for (let packedSetlist of packedSetlists) {
 		let [species, ...sets] = packedSetlist.split('|');
+		species = brmt.aliases.getSpeciesID(species);
 		if (!species) continue;
 		if (sets.length === 0)
 			sets = ["?"];
-		species = brmt.aliases.getSpeciesID(species);
 		if (!setlists[species])
 			setlists[species] = {};
 		for (let set of sets)
@@ -64,8 +64,8 @@ builder.buildDataToString = function buildDataToString (data, sep, linesep, useO
 	).join(linesep);
 };
 
-builder.stringToBuildData = function stringToBuildData (S) {
-	return S.split(/\r?\n/g).map( line => line.split(/ *, */) );
+builder.stringToBuildData = function stringToBuildData (Str) {
+	return Str.split(/\r?\n/g).map( line => line.split(/ *, */) );
 };
 
 })();

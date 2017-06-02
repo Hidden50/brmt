@@ -98,11 +98,18 @@ htmloutput.makeCompendiumEntry = function makeCompendiumEntry (build, subject, t
 				targets.push(target);
 			}
 		}
-		table.push( [`${mode}: `, htmloutput.makeIconGallery(targets, team, iconConfig) || "-"] );
+		let gallery = htmloutput.makeIconGallery(targets, team, iconConfig) || "-";
+		table.push( [`${mode}: `, `<span class="${mode.replace(" ", "")}">${gallery}</span>`] );
 	}
 	let image = htmloutput.brmtIcon(subject, team, iconConfig);
 	let text  = brmt.aliases.getSetTitle(subject);
 	return `${image} <b>${text}</b>` + brmt.tools.makeHtmlTable(table);
+};
+
+htmloutput.makeCompendium = function makeCompendium (build, pokemonlist, team, iconConfig) {
+	return pokemonlist.map(
+		pokemon => htmloutput.makeCompendiumEntry(build, pokemon, team, iconConfig)
+	).join("<hr>");
 };
 
 })();

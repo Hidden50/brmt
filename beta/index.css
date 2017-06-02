@@ -28,6 +28,21 @@ button {
 	margin: 2px;
 }
 
+#div_teamselect > button,
+#button_team {
+	width:      210px;
+	height:     41px;
+	display:    block;
+	font-size:  7pt;
+	color:      grey;
+}
+
+#button_threatlistconfig {
+	font-size: 7pt;
+}
+
+#div_threatlistconfig,
+#div_teamselect,
 #div_popup {
 	background-color: white;
 	border:           4px solid Black;
@@ -52,7 +67,6 @@ button {
 	width:            48px;
 	height:           48px;
 	margin:           3px;
-	border:           2px solid Navy;
 }
 #div_threatlist > .imageWrapper > img {
 	transform: translate(-50%, -50%);
@@ -60,11 +74,11 @@ button {
 	left:      50%;
 	top:       50%;
 }
-#div_threatlist > .imageWrapper.rating-0                 { background-color: Coral;      }
-#div_threatlist > .imageWrapper.rating-50               { background-color: Orange;     }
-#div_threatlist > .imageWrapper.rating-5000           { background-color: PowderBlue; }
-#div_threatlist > .imageWrapper.rating-250000       { background-color: PaleGreen;  }
-#div_threatlist > .imageWrapper.rating-verysmall { background-color: LightGrey;  }
+#div_threatlist > .imageWrapper.rating-0                 { background-color: Coral;      border: 2px solid Navy; }
+#div_threatlist > .imageWrapper.rating-50               { background-color: Orange;     border: 2px solid Navy; }
+#div_threatlist > .imageWrapper.rating-5000           { background-color: PowderBlue; border: 2px solid Navy; }
+#div_threatlist > .imageWrapper.rating-250000       { background-color: PaleGreen;  border: 2px solid Navy; }
+#div_threatlist > .imageWrapper.rating-verysmall { background-color: LightGrey;  border: 2px solid Navy; }
 
 .iconWrapper {
 	position:    absolute;
@@ -91,26 +105,26 @@ button {
 	top:       2px;
 }
 
-tr.GSI > .imageWrapper  > .ratingWrapper,
-tr.SSI > .imageWrapper  > .ratingWrapper,
-tr.NSI > .imageWrapper  > .ratingWrapper {
+span.GSI > .imageWrapper  > .ratingWrapper,
+span.SSI > .imageWrapper  > .ratingWrapper,
+span.NSI > .imageWrapper  > .ratingWrapper {
 	color:       lime;
 	font-weight: bold;
 }
-tr.GSIto > .imageWrapper  > .ratingWrapper,
-tr.SSIto > .imageWrapper  > .ratingWrapper,
-tr.NSIto > .imageWrapper  > .ratingWrapper {
+span.GSIto > .imageWrapper  > .ratingWrapper,
+span.SSIto > .imageWrapper  > .ratingWrapper,
+span.NSIto > .imageWrapper  > .ratingWrapper {
 	color:       coral;
 	font-weight: bold;
 }
 
-tr.GSI > .imageWrapper.onteam,
-tr.SSI > .imageWrapper.onteam,
-tr.NSI > .imageWrapper.onteam {
+span.GSI > .imageWrapper.onteam,
+span.SSI > .imageWrapper.onteam,
+span.NSI > .imageWrapper.onteam {
 	border: 1px solid lime;
 }
-tr.GSIto > .imageWrapper.onteam,
-tr.SSIto > .imageWrapper.onteam,
-tr.NSIto > .imageWrapper.onteam {
+span.GSIto > .imageWrapper.onteam,
+span.SSIto > .imageWrapper.onteam,
+span.NSIto > .imageWrapper.onteam {
 	border: 1px solid coral;
 }

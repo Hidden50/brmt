@@ -5,49 +5,22 @@ let cache = frontend.cache = {};
 let htmlNodes = frontend.htmlNodes = {};
 
 cache.team = [];
+cache.teams = brmt.config.getTeamStorage();
 
 window.onload = function() {
 	htmlNodes.register( ...document.querySelectorAll("[id]") );  // register all html nodes that have ids
 	
 	htmlNodes.textareas.builddata.value = brmt.compendiums.OUcc;
 	
-	frontend.addEventListeners();
 	frontend.rebuild();
+	frontend.addEventListeners();
 };
 
-frontend.addEventListeners = function addEventListeners () {
-	htmlNodes.buttons.showbuilddata.addEventListener('click', () => {
-		htmlNodes.divs.builddata.style.display = "block";
-		htmlNodes.buttons.showbuilddata.style.display = "none";
-	});
-	htmlNodes.buttons.hidebuilddata.addEventListener('click', () => {
-		htmlNodes.divs.builddata.style.display = "none";
-		htmlNodes.buttons.showbuilddata.style.display = "block";
-	});
+frontend.rebuild = function rebuild () {
+	// read input configuration
+	let threatlistmode = htmlNodes.selects.threatlistmode.value;
 	
-	htmlNodes.buttons.useofficialnames.addEventListener('click', function() {
-		htmlNodes.textareas.builddata.value = brmt.builder.buildDataToString(
-			brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value ), ", ", "\n", true
-		);
-	});
-	htmlNodes.buttons.usespeciesids.addEventListener('click', function() {
-		htmlNodes.textareas.builddata.value = brmt.builder.buildDataToString(
-			brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value ), ", ", "\n"
-		);
-	});
-	
-	
-	htmlNodes.buttons.showobjectinspector.addEventListener('click', () => {
-		frontend.showPopup(
-			htmlNodes.buttons.showobjectinspector,
-			"Object Inspector:<div class='objectinspector'>" + brmt.tools.jsObjectToHtml({ "frontend": frontend, "brmt": brmt }) + "</div>"
-		);
-	});
-	
-	htmlNodes.buttons.build.addEventListener('click', frontend.rebuild);
-};
-
-frontend.rebuild = function rebuild() {
+	// calculate results
 	let buildData  = cache.buildData  = brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value );
 	let team       = cache.team;
 	
@@ -55,8 +28,22 @@ frontend.rebuild = function rebuild() {
 	let threatlist = cache.threatlist = brmt.getThreatlist(build, team);
 	let iconConfig = cache.iconConfig = brmt.readIconConfig(buildData);
 	
-	htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, team, iconConfig);
-	frontend.addIconWrapListeners( htmlNodes.divs.threatlist, 'click', frontend.showCompendiumEntry );
+	switch (threatlistmode) {
+		case "species": {
+			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, team, iconConfig);
+			frontend.addIconWrapListeners( htmlNodes.divs.threatlist, 'click', frontend.showCompendiumEntry );
+			break;
+		}
+		case "sets": {
+			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, team, iconConfig);
+			frontend.addIconWrapListeners( htmlNodes.divs.threatlist, 'click', frontend.showCompendiumEntry );
+			break;
+		}
+		case "compendium": {
+			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeCompendium (build, threatlist, team, iconConfig)
+			break;
+		}
+	}
 };
 
 htmlNodes.register = function register (node, ...rest) {
@@ -93,6 +80,7 @@ frontend.showCompendiumEntry = function showCompendiumEntry (source, species, se
 		[, species, set] = source.title.match(/^(.*) \(([^()]*)\)$/);
 	let pokemon = brmt.tools.makePokemonObject(species, set);
 	frontend.showPopup(
+		htmlNodes.divs.popup,
 		source,
 		brmt.htmloutput.makeCompendiumEntry(cache.build, pokemon, cache.team, cache.iconConfig)
 	);
@@ -103,13 +91,12 @@ frontend.showCompendiumEntry = function showCompendiumEntry (source, species, se
 	);
 };
 
-frontend.showPopup = function showPopup (Sender, contentHtml) {
-	// Sender: Attempts to position the popup above this element.
-	//         We can't use mouse coordinates, because the popout can also be spawned using the keyboard
-	let container = htmlNodes.divs.popup;
-	let XOffset = Sender.offsetLeft, YOffset = Sender.offsetTop;
-	if (container.contains(Sender)) {
-		XOffset += container.offsetLeft;  // adjustment for relative position inside a popout box
+frontend.showPopup = function showPopup (container, sender, contentHtml) {
+	// sender: Attempts to position the popup above this element.
+	//         We can't use mouse coordinates, because the popup can also be spawned using the keyboard
+	let XOffset = sender.offsetLeft, YOffset = sender.offsetTop;
+	if (container.contains(sender)) {
+		XOffset += container.offsetLeft;  // adjustment for relative position inside a popup
 		YOffset += container.offsetTop;
 	}
 	if (contentHtml)
@@ -174,6 +161,68 @@ frontend.textareaFindText = function textareaFindText (ta, regex) {
 	// mark result for user
 	ta.setSelectionRange(selStart, selEnd);
 	return true;
+};
+
+frontend.addEventListeners = function addEventListeners () {
+	// Controls the Build Data textarea
+	htmlNodes.buttons.showbuilddata.addEventListener('click', () => {
+		htmlNodes.divs.builddata.style.display = "block";
+		htmlNodes.buttons.showbuilddata.style.display = "none";
+	});
+	htmlNodes.buttons.hidebuilddata.addEventListener('click', () => {
+		htmlNodes.divs.builddata.style.display = "none";
+		htmlNodes.buttons.showbuilddata.style.display = "block";
+	});
+	htmlNodes.buttons.useofficialnames.addEventListener('click', function() {
+		htmlNodes.textareas.builddata.value = brmt.builder.buildDataToString(
+			brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value ), ", ", "\n", true
+		);
+	});
+	htmlNodes.buttons.usespeciesids.addEventListener('click', function() {
+		htmlNodes.textareas.builddata.value = brmt.builder.buildDataToString(
+			brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value ), ", ", "\n"
+		);
+	});
+	htmlNodes.buttons.build.addEventListener('click', frontend.rebuild);
+	
+	// Controls for the Object Inspector
+	htmlNodes.buttons.showobjectinspector.addEventListener('click', () => {
+		frontend.showPopup(
+			htmlNodes.divs.popup,
+			htmlNodes.buttons.showobjectinspector,
+			"Object Inspector:<div class='objectinspector'>" + brmt.tools.jsObjectToHtml({ "frontend": frontend, "brmt": brmt }) + "</div>"
+		);
+	});
+	
+	// Controls for the Threatlist
+	htmlNodes.buttons.threatlistconfig.addEventListener('click', () => {
+		frontend.showPopup(
+			htmlNodes.divs.threatlistconfig,
+			htmlNodes.buttons.threatlistconfig
+		);
+	});
+	htmlNodes.divs.threatlistconfig.addEventListener('mouseleave', () => {
+		frontend.rebuild();
+	});
+	
+	// Controls for Team Selection
+	htmlNodes.buttons.team.addEventListener('click', () => {
+		frontend.showPopup(
+			htmlNodes.divs.teamselect,
+			htmlNodes.buttons.team
+		);
+	});
+	htmlNodes.divs.teamselect.innerHTML = cache.teams.map( team => {
+		let teamHtml = brmt.htmloutput.makeIconGallery(team, team, cache.iconConfig);
+		return `<button>${teamHtml}</button>`;
+	}).join("");
+	htmlNodes.divs.teamselect.childNodes.forEach(
+		(node, index) => node.addEventListener('click', () => {
+			cache.team = cache.teams[index];
+			htmlNodes.buttons.team.innerHTML = brmt.htmloutput.makeIconGallery(cache.team, cache.team, cache.iconConfig);
+			frontend.rebuild();
+		})
+	);
 };
 
 })();
