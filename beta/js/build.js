@@ -47,9 +47,9 @@ builder.unpackSetData = function unpackSetData (packedSetlists) {
 
 builder.packSetData = function packSetData (setlists, useOfficialNames) {
 	return Object.keys(setlists).map( species => {
-		if (useOfficialNames)
-			species = brmt.getOfficialname(species);
 		let packedSets = Object.keys(setlists[species]).join('|');
+		if (useOfficialNames)
+			species = brmt.aliases.getOfficialname(species);
 		if (!packedSets || packedSets === "?")
 			return species;
 		return species + '|' + packedSets;
