@@ -39,14 +39,14 @@ tools.makePokemonObject = function makePokemonObject (species, set) {
 	return { "species": brmt.aliases.getSpeciesID(species), "set": set };
 };
 
-tools.makeHtmlTable = function(rows, colParams = []) {
-	let cellMap = (cell, i) => `<td ${colParams[i] || ""}>${cell}</td>`;
+tools.makeHtmlTable = function(rows, cellParams = []) {
+	let cellMap = (cell, i) => `<td ${cellParams[i] || ""}>${cell}</td>`;
 	let rowMap = row => `<tr>${row.map(cellMap).join("")}</tr>`;
 	return `<table>${rows.map(rowMap).join("")}</table>`;
 };
 
-tools.jsObjectToHtml = function jsObjectToHtml (Obj, debth=0) {
-	let open = debth > 1 ? "" : " open";
+tools.jsObjectToHtml = function jsObjectToHtml (Obj, debth=2) {
+	let open = debth > 0 ? "open" : "";
 	if (typeof Obj === "function") {
 		let sourcecode = tools.escapeHTML(Obj.toString()).replace(/\t/g, "    ");  // tabs are 4 spaces long in my editor
 		if (!/\r?\n/.test(sourcecode))
@@ -61,7 +61,7 @@ tools.jsObjectToHtml = function jsObjectToHtml (Obj, debth=0) {
 	}
 	let internals = Object.keys(Obj).map(key => [
 		`${tools.escapeHTML(JSON.stringify(key).slice(1,-1))}: `,
-		jsObjectToHtml(Obj[key], debth+1)
+		jsObjectToHtml(Obj[key], debth-1)
 	]);
 	if (!internals.length) internals = "";
 	else internals = tools.makeHtmlTable(internals);
