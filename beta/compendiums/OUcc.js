@@ -199,7 +199,7 @@ Tapu Lele|scarf, GSI, Celesteela|SpD, Magearna|av, Jirachi|scarf|SpD, Klefki|Spi
 Tapu Lele|scarf, SSI, Heatran|??, Magnezone|av, Skarmory|SpD, Excadrill|SpD|scarf, Scizor-Mega|SD|HP Ice, Bronzong|def, Mew|stallbreaker, Slowking|cm, Muk-Alola|av, Magneton|scarf
 Tapu Lele|scarf, NSI, Celesteela|Autotomize, Magearna|specs|Shift Gear, Gengar|scarf, Scolipede|bp, Kabutops|??, Omastar|shell smash, Greninja|scarf
 
-Tapu Bulu|??, GSI, Metagross-Mega|Wall-breaker
+Tapu Bulu|??, GSI,
 Tapu Bulu|??, SSI, Celesteela|Autotomize|SpD, Amoonguss|def, Charizard-Mega-Y|Wall-breaker, Gengar|scarf|lo, Pinsir-Mega|SD, Salamence|Flyinium Z DD, Skarmory|def, Tangrowth|helmet, Venusaur-Mega|??, Volcarona|Firium Z QD, Scizor-Mega|SD|HP Ice, Tornadus-Therian|lo, Bronzong|def, Togekiss|Stall-breaker, Dragalge|t-spike, Talonflame|SD
 Tapu Bulu|??, NSI, Charizard-Mega-X|Bulky|dd, Heatran|??, Jirachi|scarf|SubTox, Nihilego|scarf|specs, Buzzwole|??, Excadrill|Sand Rush, Kyurem-Black|z-Ice, Scolipede|bp, Weavile|lo, Kartana|SD, Mamoswine|lo, Sharpedo-Mega|cleaner, Dragonite|z-fly, Volcanion|specs, Muk-Alola|av, Nidoking|lo, Ninetales-Alola|Support, Kyurem|specs, Victini|??, Greninja|scarf
 
@@ -227,7 +227,7 @@ Celesteela|Autotomize, GSI, Zapdos|def
 Celesteela|Autotomize, SSI, Tapu Koko|??, Heatran|??, Rotom-Wash|def|SpD
 Celesteela|Autotomize, NSI, Kingdra|??, Thundurus|Offensive|tw, Thundurus-Therian|??
 
-Kartana|SD, GSI, Metagross-Mega|Wall-breaker
+Kartana|SD, GSI,
 Kartana|SD, SSI, Scizor-Mega|SD|HP Ice, Shedinja|Wall
 Kartana|SD, NSI, Greninja|protean|ash, Nihilego|scarf, Terrakion|scarf, Latios|specs|lo, Omastar|shell smash, Starmie|lo, Magneton|scarf, Torkoal|Support
 
