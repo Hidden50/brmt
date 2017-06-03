@@ -20,7 +20,9 @@
 <h2 style="float: left">OU Weakness Checker (BreakMyTeam)</h2>
 
 <button id="button_showobjectinspector">Inspect Project</button>
+<button id="button_threatlistconfig">Configure Threatlist</button>
 <button id="button_showbuilddata">Show Builddata</button>
+
 <div id="div_builddata" style="display:none">
 	<button id="button_hidebuilddata">Hide Builddata</button>
 	<textarea id="textarea_builddata"></textarea>
@@ -29,31 +31,21 @@
 	<button id="button_build">rebuild compendium</button>
 </div>
 
-<div class="partition-right-container">
-	<div class="partition-right">
-		<h3>Team</h3>
-		<button id="button_team">(press to select)</button>
-	</div>
-</div>
-<div class="partition-left">
-	<h3>Add Team Members</h3>
-	<form id="form_teamsearch" onsubmit="searchresults.firstElementChild.onclick(); return false;">
-		Filter: <input name="name" type="text" size="20" oninput = "UpdateAutocompleteResults();" onpropertychange="UpdateAutocompleteResults();">
-	</form>
-	<p id="div_teamsearch_results">Loading..</p>
+<div style="float:left; margin-left: 180px">
+	<b>Team</b>
+	<button id="button_team">(press to select)</button>
 </div>
 
 <div style="float:left">
 	<h3 style="display:inline-block">Threatlist</h3>
-	<button id="button_threatlistconfig">configure</button>
 	<div id="div_threatlist"></div>
 </div>
 
 <div ID="div_threatlistconfig" onmouseleave="this.style.display = 'none'">
 	<select id="select_threatlistmode">
-		<option value="species" disabled>Display threatlist as Pok&eacute;mon species</option>
-		<option value="sets" selected>Display threatlist as Pok&eacute;mon Sets</option>
-		<option value="compendium">Display threatlist as Checks Compendium</option> 
+		<option value="species" disabled>Display as Pok&eacute;mon species</option>
+		<option value="sets" selected>Display as Pok&eacute;mon Sets</option>
+		<option value="compendium">Display as Checks Compendium</option> 
 	</select>
 </div>
 <div id="div_teamselect" onmouseleave="this.style.display = 'none'"></div>

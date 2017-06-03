@@ -40,7 +40,7 @@ frontend.rebuild = function rebuild () {
 			break;
 		}
 		case "compendium": {
-			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeCompendium (build, threatlist, team, iconConfig)
+			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeCompendium (build, threatlist, team, iconConfig);
 			break;
 		}
 	}
@@ -219,7 +219,8 @@ frontend.addEventListeners = function addEventListeners () {
 	htmlNodes.divs.teamselect.childNodes.forEach(
 		(node, index) => node.addEventListener('click', () => {
 			cache.team = cache.teams[index];
-			htmlNodes.buttons.team.innerHTML = brmt.htmloutput.makeIconGallery(cache.team, cache.team, cache.iconConfig);
+			let buttons = brmt.htmloutput.makeIconGallery(cache.team, cache.team, cache.iconConfig);
+			htmlNodes.buttons.team.innerHTML = buttons || "(press to select)";
 			frontend.rebuild();
 		})
 	);

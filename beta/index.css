@@ -26,6 +26,7 @@ textarea {
 }
 button {
 	margin: 2px;
+	cursor: pointer;
 }
 
 #div_teamselect > button,
@@ -35,10 +36,6 @@ button {
 	display:    block;
 	font-size:  7pt;
 	color:      grey;
-}
-
-#button_threatlistconfig {
-	font-size: 7pt;
 }
 
 #div_threatlistconfig,
@@ -52,6 +49,7 @@ button {
 	margin:           5px;
 }
 #button_showobjectinspector ,
+#button_threatlistconfig,
 #button_showbuilddata ,
 #button_hidebuilddata {
 	float: right;
