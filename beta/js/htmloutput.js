@@ -74,11 +74,8 @@ htmloutput.weblink = (imgName) => `./../Serebii__Images/${brmt.aliases.getSpecie
 htmloutput.makeIconGallery = function makeIconGallery (pokemonlist, team, iconConfig) {
 	return pokemonlist.map( pokemon => {
 		let scoreDisplay;
-		if (pokemon.score) {
-			if (team.length)
-				scoreDisplay = -pokemon.score.team;
-			else scoreDisplay = -pokemon.score.set;
-		}
+		if (pokemon.score)
+			scoreDisplay = -pokemon.score.team;
 		return htmloutput.brmtIcon(pokemon, team, iconConfig, scoreDisplay);
 	}).join("");
 };

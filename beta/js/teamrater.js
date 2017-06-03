@@ -57,7 +57,7 @@ brmt.getThreatlist = teamrater.getThreatlist = function getThreatlist (build, te
 		// .. going by set usage would be even better
 		threat.score.species  = teamrater.scoreSpecies(build, threat, team, countTargetSpecies);
 		threat.score.set      = teamrater.scoreSet(build, threat, team, countTargetSpecies);
-		threat.score.team = team.length ? teamrater.scoreSet(build, threat, team, countTeamChecks) : 0;
+		threat.score.team     = teamrater.scoreSet(build, threat, team, countTeamChecks);
 	}
 	
 	// sort the array based on the above scoring functions

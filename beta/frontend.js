@@ -18,7 +18,7 @@ window.onload = function() {
 
 frontend.rebuild = function rebuild () {
 	// read input configuration
-	let threatlistmode = htmlNodes.selects.threatlistmode.value;
+	let threatlistmode = document.querySelector('input[name="radiogroup_threatlistconfig"]:checked').value
 	
 	// calculate results
 	let buildData  = cache.buildData  = brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value );
@@ -30,13 +30,11 @@ frontend.rebuild = function rebuild () {
 	
 	switch (threatlistmode) {
 		case "species": {
-			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, team, iconConfig);
-			frontend.addIconWrapListeners( htmlNodes.divs.threatlist, 'click', frontend.showCompendiumEntry );
+			// todo: implement species threatlist
 			break;
 		}
 		case "sets": {
 			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, team, iconConfig);
-			frontend.addIconWrapListeners( htmlNodes.divs.threatlist, 'click', frontend.showCompendiumEntry );
 			break;
 		}
 		case "compendium": {
@@ -44,6 +42,7 @@ frontend.rebuild = function rebuild () {
 			break;
 		}
 	}
+	frontend.addClassListeners( htmlNodes.divs.threatlist, "imageWrapper", 'click', frontend.showCompendiumEntry );
 };
 
 htmlNodes.register = function register (node, ...rest) {
@@ -69,23 +68,30 @@ frontend.appendChildnode = function appendChildnode (parentNode, code) {
 	parentNode.appendChild(container);
 };
 
-frontend.addIconWrapListeners = function addIconWrapListeners (parent, eventType, listener) {
-	[...parent.getElementsByClassName("imageWrapper")].forEach(
-		imageWrapper => imageWrapper.addEventListener( eventType, () => listener(imageWrapper) )
-	);
+frontend.addClassListeners = function addClassListeners (parentNode, className, eventType, listener) {
+	[...parentNode.childNodes].forEach( node => {
+		if (node.classList && node.classList.contains("imageWrapper"))
+			node.addEventListener( eventType, () => listener(node) );
+		addClassListeners (node, className, eventType, listener)
+	});
 };
 
-frontend.showCompendiumEntry = function showCompendiumEntry (source, species, set) {
-	if (!species)
-		[, species, set] = source.title.match(/^(.*) \(([^()]*)\)$/);
-	let pokemon = brmt.tools.makePokemonObject(species, set);
+frontend.showCompendiumEntry = function showCompendiumEntry (source, pokemon) {
+	if (!pokemon) {
+		let {subject, target} = frontend.parseIconWrapperTitle(source.title);
+		if (target.species && !source.parentNode.className.endsWith("to"))
+			pokemon = target;
+		else pokemon = subject;
+	}
+	
 	frontend.showPopup(
 		htmlNodes.divs.popup,
 		source,
 		brmt.htmloutput.makeCompendiumEntry(cache.build, pokemon, cache.team, cache.iconConfig)
 	);
-	frontend.addIconWrapListeners(
+	frontend.addClassListeners(
 		htmlNodes.divs.popup,
+		"imageWrapper",
 		'click',
 		frontend.scrollBuilddata
 	);
@@ -111,16 +117,23 @@ frontend.showPopup = function showPopup (container, sender, contentHtml) {
 	container.style.top = Math.max(0, maxTop - Math.max(0, container.offsetTop - YOffset)) + 'px';
 };
 
-frontend.scrollBuilddata = function scrollBuilddata (wrapperNode) {
+frontend.parseIconWrapperTitle = function parseIconWrapperTitle (title) {
 	// parse the following title: "targetSpecies (targetSet) beats subjectSpecies (subjectSet)"
 	let titleRegex = /^([^()]*) \(([^()]*)\)(?: beats ([^()]*) \(([^()]*)\))?$/;
-	let [, targetSpecies, targetSet, subjectSpecies, subjectSet] = wrapperNode.title.match(titleRegex);
+	let [, targetSpecies, targetSet, subjectSpecies, subjectSet] = title.match(titleRegex);
 	
 	// check if title was "subjectSpecies (subjectSet)" instead
 	if (!subjectSpecies) [subjectSpecies, subjectSet, targetSpecies, targetSet] = [targetSpecies, targetSet, "", ""];
 	
-	let subject = brmt.tools.makePokemonObject(subjectSpecies, subjectSet);
-	let target = brmt.tools.makePokemonObject(targetSpecies, targetSet);
+	let result = {};
+	result.subject = brmt.tools.makePokemonObject(subjectSpecies, subjectSet);
+	result.target = brmt.tools.makePokemonObject(targetSpecies, targetSet);
+	
+	return result;
+};
+
+frontend.scrollBuilddata = function scrollBuilddata (wrapperNode) {
+	let {subject, target} = frontend.parseIconWrapperTitle(wrapperNode.title);
 	
 	let searchword  = subject.species;
 	let searchword2 = target.species;
@@ -201,9 +214,11 @@ frontend.addEventListeners = function addEventListeners () {
 			htmlNodes.buttons.threatlistconfig
 		);
 	});
-	htmlNodes.divs.threatlistconfig.addEventListener('mouseleave', () => {
-		frontend.rebuild();
-	});
+	[...document.querySelectorAll('input[name="radiogroup_threatlistconfig"]')].forEach(
+		radioButton => radioButton.addEventListener('change', () => {
+			frontend.rebuild();
+		})
+	);
 	
 	// Controls for Team Selection
 	htmlNodes.buttons.team.addEventListener('click', () => {

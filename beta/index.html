@@ -42,14 +42,18 @@
 </div>
 
 <div ID="div_threatlistconfig" onmouseleave="this.style.display = 'none'">
-	<select id="select_threatlistmode">
-		<option value="species" disabled>Display as Pok&eacute;mon species</option>
-		<option value="sets" selected>Display as Pok&eacute;mon Sets</option>
-		<option value="compendium">Display as Checks Compendium</option> 
-	</select>
+	<b>Threatlist</b>
+	<br>
+	<input type="radio" id="radio_threatlistconfig_species" name="radiogroup_threatlistconfig" value="species" disabled>
+	<label for="radio_threatlistconfig_species"><s>Show as Pok&eacute;mon species</s></label>
+	<br>
+	<input type="radio" id="radio_threatlistconfig_sets" name="radiogroup_threatlistconfig" value="sets" checked>
+	<label for="radio_threatlistconfig_sets">Show as Pok&eacute;mon Sets</label>
+	<br>
+	<input type="radio" id="radio_threatlistconfig_compendium" name="radiogroup_threatlistconfig" value="compendium">
+	<label for="radio_threatlistconfig_compendium">Show as Checks Compendium</label>
 </div>
 <div id="div_teamselect" onmouseleave="this.style.display = 'none'"></div>
-
 <div ID="div_popup" onmouseleave="this.style.display = 'none'"></div>
 
 </body></html>
