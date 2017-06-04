@@ -2,18 +2,7 @@ window.brmt = window.brmt || {};
 brmt.compendiums = brmt.compendiums || {};
 
 brmt.compendiums.OUcc =
-`scarf, icon, choicescarf
-band, icon, choiceband
-cb, icon, choiceband
-specs, icon, choicespecs
-sash, icon, focussash
-lo, icon, lifeorb
-helmet, icon, rockyhelmet
-av, icon, assaultvest
-?, letters
-main, letters
-
-Starmie|lo, GSI, Chansey
+`Starmie|lo, GSI, Chansey
 Starmie|lo, SSI, Greninja|protean|ash, Ferrothorn|main, Tangrowth|av, Hoopa-Unbound|scarf, Latios|scarf|specs|lo, Latias|hw, Slowking|cm
 Starmie|lo, NSI, Landorus-Therian|scarf, Hoopa-Unbound|band|specs|lo, Kyurem-Black|z-Ice, Scolipede|bp|Waterium Z SD, Tyranitar|scarf, Weavile|lo, Sharpedo-Mega|cleaner, Gyarados-Mega|dd, Muk-Alola|av, Kyurem|specs, Magneton|scarf, Blissey|cm, Sceptile-Mega|??
 
@@ -384,6 +373,17 @@ Sceptile-Mega|??, NSI, Greninja|scarf, Garchomp|scarf, Gengar|scarf, Pinsir-Mega
 
 SpD, letters, SpD
 SD, letters, SD
+
+scarf, icon, choicescarf
+band, icon, choiceband
+cb, icon, choiceband
+specs, icon, choicespecs
+sash, icon, focussash
+lo, icon, lifeorb
+helmet, icon, rockyhelmet
+av, icon, assaultvest
+?, letters
+main, letters
 
 Heatran|Offensive, letters, Off
 Heatran|Wisp, letters, wisp
