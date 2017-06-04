@@ -1,19 +1,22 @@
-# brmt
-This is a tool to find weaknesses in a PokÃ©mon team, based on a Checks Compendium.
+Breakmyteam
+===========
 
-CHECKS COMPENDIUM (cc) - a text file in CompGen format, with certain keywords that have to  
-     be exactly matched. I.E., the list of GSIs is proceeded by 'GSI: ', NOT 'GSI:'.         
-     OUcc hosted by Tressed www.smogon.com/forums/threads/ou-checks-compendium.3545711       
-     RUcc hosted by Arifeen www.smogon.com/forums/threads/ru-checks-compendium-v2.3559443    
+This is a tool for generating threat lists for Pokémon Teams.
 
-COMPGEN FORMAT (cgf) - a lax inter-language format for any content with minisprites.        
-     Lines starting with "DexNumber | Name |" will be replaced with the corresponding        
-     sprite. Linebreaks are ignored; they can be used for formatting.                        
-     "Newline" generates an actual linebreak in the output.                                  
-     CompGen currently exports to html, png, or BBCode.                                      
+Brmt works by traversing a checks compendium; a list divided into six categories (GSI, SSI, NSI, GSI to, SSI to, NSI to) that represent how strong or weak other Pokémon are against said threat.
+Breakmyteam assigns a score based on how many of the listed Pokémon from each category are present on the team it is rating. The list is then sorted by those scores, and the results are color coded to indicate low and high scores. Lower scores should indicate threats that the team is less prepared for.
 
-CHECKS ARRAY (ca) - an Array[DexNumber][GSI..invNSI][0..k-1] with Strings in it.            
-     Each string identifies a minisprite ("DexNumber | Name |").                             
-     Array[DN].asHtml contains a pre-parsed version.                                         
-     Array[DN].Tiebreaker contains a unique index for sorting. If the rating function        
-         for two threats is a tie, their order will be decided by the Tiebreaker.            
+The different files and what they do
+------------------------------------
+
+ - `build.js` parses a checks compendium given to it in text form and outputs a format the tool can manipulate.
+ - `aliases.js` deals with alternate names and makes sure you can write something like Charizard-Mega-Y and have brmt understand it's the same as 006-my
+ - `teamrater.js` generates a threat list, assigns several different scores to the pokémon in it, and sorts it based on them
+ - `htmloutput.js` formats the results as html
+ - `tools.js` contains a bag of utility functions used in this project
+ - `config.js` contains the default configuration for several settings, such as the scores assigned to the six compendium categories during rating
+ - `test.html` contains test cases and sample code for making sure the above units work correctly
+ - `index.html` is the main file for this project. 
+ - `index.css` contains style information that specifies how index.html should look
+ - `frontend.js` controls the behavior of the html elements in `index.html`
+ - `README.md` is this file. To understand recursion, you must first understand recursion

@@ -71,7 +71,7 @@ htmloutput.brmtIcon = function brmtIcon (pokemon, build, team, iconConfig, ratin
 	return `<span title="${mouseoverText}" class="${wrapperClass}">${image}${icon}${letters}${rating}</span>`;
 };
 
-htmloutput.weblink = (imgName) => `./../Serebii__Images/${brmt.aliases.getSpeciesID(imgName)}.png`;
+htmloutput.weblink = (imgName) => `./Serebii__Images/${brmt.aliases.getSpeciesID(imgName)}.png`;
 
 htmloutput.makeCompendiumEntry = function makeCompendiumEntry (pokemon, build, team, iconConfig) {
 	let table = [];
