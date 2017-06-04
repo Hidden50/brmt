@@ -11,7 +11,7 @@ button {
 	margin: 2px;
 }
 button,
-input[type!=text],
+input:not([type=text]),
 label {
 	cursor: pointer;
 }
@@ -23,12 +23,11 @@ label {
 }
 #input_search {
 	display:     block;
-	text-align:  top;
 }
 
 #div_teamselect > button,
 #button_team {
-	width:      210px;
+	min-width:  220px;
 	height:     41px;
 	display:    block;
 	font-size:  7pt;
@@ -74,6 +73,7 @@ label {
 #div_threatlist > .imageWrapper > img {
 	transform: translate(-50%, -50%);
 	position:  absolute;
+	filter:    blur(0);
 	left:      50%;
 	top:       50%;
 }
