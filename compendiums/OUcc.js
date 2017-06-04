@@ -136,11 +136,11 @@ Bisharp|SD, SSI, Garchomp|helmet, Charizard-Mega-X|Bulky, Tangrowth|helmet, Quag
 Bisharp|SD, NSI, Greninja|protean|ash, Tapu Koko|??, Tapu Lele|scarf|specs, Dugtrio|sash, Tapu Bulu|??, Rotom-Wash|def, Terrakion|band|scarf|Rockium Z SD, Tyranitar|scarf, Gliscor|def, Breloom|SD, Hawlucha|SubSD, Hydreigon|specs, Heracross-Mega|??
 
 Volcarona|Z-Move QD, GSI, Mantine|def, Minior|smash, Blissey|cm, Talonflame|SD
-Volcarona|Z-Move QD, SSI, Heatran, Chansey, Marowak-Alola|??, Aerodactyl-Mega|??, Tyranitar|scarf|band, Toxapex|def, Dragonite|z-fly, Garchomp|sd|scarf|helmet, Zygarde|band|Coil|dd
+Volcarona|Z-Move QD, SSI, Heatran, Chansey, Marowak-Alola|??, Aerodactyl-Mega|??, Tyranitar|scarf|band, Toxapex|def, Dragonite|z-fly, Garchomp|sd|scarf|helmet, Zygarde|band|Coil|dd, Latios|scarf|specs|lo, Latias|hw
 Volcarona|Z-Move QD, NSI, Garchomp|scarf, Nihilego|scarf, Terrakion|scarf, Kingdra|??, Thundurus|tw, Gyarados|Flyinium Z DD, Kabutops|??, Omastar|shell smash, Crawdaunt|??, Greninja|scarf, Keldeo|scarf
 
 Volcarona|Charti QD, GSI, Mantine|def, Minior|smash, Blissey|cm, Talonflame|SD, Toxapex|def
-Volcarona|Charti QD, SSI, Heatran, Chansey, Marowak-Alola|??, Aerodactyl-Mega|??, Tyranitar|scarf|band, Dragonite|z-fly, Garchomp|sd|helmet, Zygarde|band|Coil|dd
+Volcarona|Charti QD, SSI, Heatran, Chansey, Marowak-Alola|??, Aerodactyl-Mega|??, Tyranitar|scarf|band, Dragonite|z-fly, Garchomp|sd|helmet, Zygarde|band|Coil|dd, Latios|scarf|specs|lo, Latias|hw
 Volcarona|Charti QD, NSI, Terrakion|scarf, Kingdra|??, Thundurus|tw, Gyarados|Flyinium Z DD, Kabutops|??, Omastar|shell smash, Crawdaunt|??
 
 Thundurus|Offensive|tw, GSI
@@ -382,8 +382,8 @@ sash, icon, focussash
 lo, icon, lifeorb
 helmet, icon, rockyhelmet
 av, icon, assaultvest
-?, letters
-main, letters
+?, letters,
+main, letters,
 
 Heatran|Offensive, letters, Off
 Heatran|Wisp, letters, wisp
