@@ -41,7 +41,7 @@ Dragonite|z-fly, GSI
 Dragonite|z-fly, SSI, Landorus-Therian|helmet, Celesteela|Autotomize|SpD, Skarmory|def, Zapdos|def|3 Atks, Slowbro|tw, Bronzong|def, Slowbro-Mega|tw, Alomomola|def, Quagsire|curse
 Dragonite|z-fly, NSI, Landorus-Therian|scarf, Garchomp|scarf, Tapu Lele|scarf, Nihilego|scarf, Latios|scarf, Terrakion|scarf, Weavile|lo, Thundurus|tw, Aerodactyl-Mega|??, Kabutops|??, Omastar|shell smash, Klefki|Spikes, Greninja|scarf
 
-Mew|stallbreaker, GSI, Greninja|protean|ash, Charizard-Mega-X|Bulky|dd, Charizard-Mega-Y|Wall-breaker, Volcarona|Firium Z QD, Hydreigon|specs, Sableye-Mega, Heatran|??
+Mew|stallbreaker, GSI, Greninja|protean|ash, Charizard-Mega-X|Bulky|dd, Charizard-Mega-Y|Wall-breaker, Volcarona, Hydreigon|specs, Sableye-Mega, Heatran
 Mew|stallbreaker, NSI, Gengar|scarf|lo, Weavile|lo, Absol-Mega|??
 
 Slowking|cm, GSI, Greninja|protean|ash, Clefable|un cm, Hoopa-Unbound|band|scarf|specs|lo, Mew|stallbreaker, Hydreigon|specs
@@ -67,7 +67,7 @@ Tyranitar|scarf, SSI, Landorus-Therian|scarf|Double Dance|Offensive, Garchomp|sc
 Tyranitar|scarf, NSI, Greninja|ash, Dugtrio|sash|Offensive Trapper, Zygarde|Coil|dd|band, Tornadus-Therian|lo, Weavile|lo, Kartana|SD, Mamoswine|lo, Zygarde-10%|cb, Gyarados-Mega|dd, Kabutops|??, Omastar|shell smash, Quagsire|curse, Garchomp-Mega|SD, Hawlucha|SubSD, Rotom-Wash|def, Sceptile-Mega|??
 
 Breloom|SD, GSI, Amoonguss|def, Venusaur-Mega|??, Buzzwole|??, Heracross-Mega|??
-Breloom|SD, SSI, Garchomp|helmet, Charizard-Mega-X|Bulky|dd, Tapu Bulu|??, Charizard-Mega-Y|Wall-breaker, Gengar|scarf|lo, Pinsir-Mega|SD, Salamence|Flyinium Z DD, Skarmory|def, Tangrowth|helmet|Mixed Def, Volcarona|Firium Z QD, Latios|scarf|specs|lo, Marowak-Alola|??, Scolipede|Waterium Z SD, Tornadus-Therian|lo, Zapdos|def|3 Atks, Dragonite|z-fly, Latias|hw, Mew|stallbreaker, Togekiss|Stall-breaker, Dragalge|t-spike, Decidueye|def, Hawlucha|SubSD, Talonflame|SD, Victini|??
+Breloom|SD, SSI, Garchomp|helmet, Charizard-Mega-X|Bulky|dd, Tapu Bulu|??, Charizard-Mega-Y|Wall-breaker, Gengar|scarf|lo, Pinsir-Mega|SD, Salamence|Flyinium Z DD, Skarmory|def, Tangrowth|helmet|Mixed Def, Volcarona, Latios|scarf|specs|lo, Marowak-Alola|??, Scolipede|Waterium Z SD, Tornadus-Therian|lo, Zapdos|def|3 Atks, Dragonite|z-fly, Latias|hw, Mew|stallbreaker, Togekiss|Stall-breaker, Dragalge|t-spike, Decidueye|def, Hawlucha|SubSD, Talonflame|SD, Victini|??
 Breloom|SD, NSI, Tapu Lele|scarf|specs|Stall-breaker, Alakazam-Mega|??, Thundurus|Offensive|tw, Nidoking|lo, Starmie|lo
 
 Salamence|Flyinium Z DD, GSI, Celesteela|Autotomize|SpD, Skarmory|def|SpD, Slowbro|tw, Bronzong|def, Slowbro-Mega|cm|tw
@@ -75,19 +75,19 @@ Salamence|Flyinium Z DD, SSI, Landorus-Therian|helmet, Zapdos|def|3 Atks
 Salamence|Flyinium Z DD, NSI, Garchomp|scarf, Keldeo|scarf, Nihilego|scarf, Latios|scarf, Terrakion|scarf, Weavile|lo, Kingdra|??, Thundurus|tw, Kabutops|??, Omastar|shell smash, Klefki|Spikes, Greninja|scarf
 
 Latias|hw, GSI, Celesteela|SpD, Magearna|av, Jirachi|scarf|SpD|SubTox, Chansey, Clefable|un cm, Muk-Alola|av
-Latias|hw, SSI, Celesteela|Autotomize, Tapu Lele|scarf|specs|Stall-breaker, Ferrothorn|main, Heatran|??, Magearna|specs|Shift Gear, Tapu Fini|def, Magnezone|av|specs, Skarmory|def|SpD, Excadrill|SpD|scarf|Offensive Mold Breaker|Sand Rush, Tyranitar|band|scarf, Bronzong|def, Slowking|cm, Togekiss|Stall-breaker, Klefki|Spikes, Empoleon|def, Mawile-Mega|??
+Latias|hw, SSI, Celesteela|Autotomize, Tapu Lele|scarf|specs|Stall-breaker, Ferrothorn|main, Heatran, Magearna|specs|Shift Gear, Tapu Fini|def, Magnezone|av|specs, Skarmory|def|SpD, Excadrill|SpD|scarf|Offensive Mold Breaker|Sand Rush, Tyranitar|band|scarf, Bronzong|def, Slowking|cm, Togekiss|Stall-breaker, Klefki|Spikes, Empoleon|def, Mawile-Mega|??
 Latias|hw, NSI, Greninja|protean|ash, Landorus-Therian|scarf, Garchomp|scarf, Tapu Bulu|??, Gengar|scarf, Bisharp|SD, Hoopa-Unbound|band|scarf|specs|lo, Latios|scarf, Scolipede|bp, Weavile|lo, Kingdra|??, Sharpedo-Mega|cleaner, Zygarde-10%|cb, Azumarill|??, Mimikyu|SD, Primarina|specs, Absol-Mega|??
 
 Latios|specs|lo, GSI, Magearna|av, Jirachi|scarf|SpD|SubTox
-Latios|specs|lo, SSI, Celesteela|Autotomize|SpD, Tapu Lele|scarf, Ferrothorn|main, Heatran|??, Magearna|specs|Shift Gear, Magnezone|av|specs, Skarmory|SpD, Chansey, Clefable|mg cm|Stealth Rock|un cm|un, Excadrill|SpD|scarf|Offensive Mold Breaker|Sand Rush, Scizor-Mega|SD|HP Ice, Tyranitar|band|scarf, Bronzong|def, Slowking|cm, Klefki|Spikes, Muk-Alola|av, Empoleon|def
+Latios|specs|lo, SSI, Celesteela|Autotomize|SpD, Tapu Lele|scarf, Ferrothorn|main, Heatran, Magearna|specs|Shift Gear, Magnezone|av|specs, Skarmory|SpD, Chansey, Clefable|mg cm|Stealth Rock|un cm|un, Excadrill|SpD|scarf|Offensive Mold Breaker|Sand Rush, Scizor-Mega|SD|HP Ice, Tyranitar|band|scarf, Bronzong|def, Slowking|cm, Klefki|Spikes, Muk-Alola|av, Empoleon|def
 Latios|specs|lo, NSI, Greninja|protean|ash, Landorus-Therian|scarf, Garchomp|scarf, Tapu Bulu|??, Tapu Fini|def, Gengar|scarf, Bisharp|SD, Hoopa-Unbound|band|scarf|specs|lo, Latios|scarf, Scolipede|bp, Weavile|lo, Kingdra|??, Sharpedo-Mega|cleaner, Zygarde-10%|cb, Azumarill|??, Mimikyu|SD, Primarina|specs, Absol-Mega|??, Mawile-Mega|??, Sceptile-Mega|??
 
-Latios|scarf, GSI, Celesteela|Autotomize|SpD, Magearna|av|specs, Jirachi|scarf|SpD|SubTox, Heatran|??, Magnezone|av|specs, Skarmory|SpD, Chansey, Clefable|mg cm|Stealth Rock|un cm|un, Excadrill|SpD|scarf|Offensive Mold Breaker|Sand Rush, Tyranitar|band|scarf, Mawile-Mega|??
+Latios|scarf, GSI, Celesteela|Autotomize|SpD, Magearna|av|specs, Jirachi|scarf|SpD|SubTox, Heatran, Magnezone|av|specs, Skarmory|SpD, Chansey, Clefable|mg cm|Stealth Rock|un cm|un, Excadrill|SpD|scarf|Offensive Mold Breaker|Sand Rush, Tyranitar|band|scarf, Mawile-Mega|??
 Latios|scarf, SSI, Tapu Lele|scarf|specs|Stall-breaker, Ferrothorn|main, Scizor-Mega|SD|HP Ice, Bronzong|def, Slowking|cm, Klefki|Spikes, Muk-Alola|av, Empoleon|def
 Latios|scarf, NSI, Tapu Bulu|??, Tapu Fini|def, Bisharp|SD, Hoopa-Unbound|band|scarf|specs|lo, Scolipede|Waterium Z SD, Kingdra|??, Azumarill|??, Mimikyu|SD, Primarina|specs
 
-Jirachi|scarf, GSI, Landorus-Therian|helmet, Celesteela|Autotomize|SpD, Garchomp|helmet, Ferrothorn|main, Heatran|??, Rotom-Wash|def, Skarmory|def|SpD, Tangrowth|helmet, Bisharp|SD, Scizor-Mega|SD|HP Ice, Zapdos|def|3 Atks, Slowbro|cm|tw, Bronzong|def, Slowbro-Mega|cm|tw, Slowking|cm, Alomomola|def, Hippowdon|def, Empoleon|def, Jellicent, Magneton|scarf, Victini|??, Mawile-Mega|??, Rotom-Wash|SpD
-Jirachi|scarf, SSI, Charizard-Mega-X|Bulky|dd, Charizard-Mega-Y|Wall-breaker, Volcarona|Firium Z QD, Gyarados|Flyinium Z DD, Marowak-Alola|??, Gliscor|def, Pelipper|def, Gyarados-Mega|dd, Mantine|def, Suicune|sub protect, Volcanion|specs, Quagsire|curse, Seismitoad|def, Talonflame|SD, Swampert-Mega|??
+Jirachi|scarf, GSI, Landorus-Therian|helmet, Celesteela|Autotomize|SpD, Garchomp|helmet, Ferrothorn|main, Heatran, Rotom-Wash|def, Skarmory|def|SpD, Tangrowth|helmet, Bisharp|SD, Scizor-Mega|SD|HP Ice, Zapdos|def|3 Atks, Slowbro|cm|tw, Bronzong|def, Slowbro-Mega|cm|tw, Slowking|cm, Alomomola|def, Hippowdon|def, Empoleon|def, Jellicent, Magneton|scarf, Victini|??, Mawile-Mega|??, Rotom-Wash|SpD
+Jirachi|scarf, SSI, Charizard-Mega-X|Bulky|dd, Charizard-Mega-Y|Wall-breaker, Volcarona, Gyarados|Flyinium Z DD, Marowak-Alola|??, Gliscor|def, Pelipper|def, Gyarados-Mega|dd, Mantine|def, Suicune|sub protect, Volcanion|specs, Quagsire|curse, Seismitoad|def, Talonflame|SD, Swampert-Mega|??
 Jirachi|scarf, NSI, Garchomp|scarf, Gengar|scarf, Kingdra|??, Absol-Mega|??
 
 Garchomp|sd, GSI
@@ -104,9 +104,9 @@ Weavile|lo, NSI, Greninja|ash, Jirachi|scarf, Nihilego|scarf, Terrakion|scarf, K
 
 Magnezone, GSI, Charizard-Mega-X|Bulky|dd, Chansey, Marowak-Alola|??, Gastrodon|SpD, Quagsire|curse, Blissey|cm, Seismitoad|def, Swampert-Mega|??
 Magnezone, SSI, Excadrill|SpD|scarf|Offensive Mold Breaker|Sand Rush, Gliscor|SpD
-Magnezone, NSI, Landorus-Therian|scarf|Double Dance|Offensive|helmet, Garchomp|scarf|helmet|sd, Dugtrio|scarf|sash|Offensive Trapper, Heatran|??, Zygarde|Coil|dd|band, Charizard-Mega-Y|Wall-breaker, Keldeo|specs, Salamence|Flyinium Z DD, Volcarona|Firium Z QD, Buzzwole|??, Scolipede|bp, Terrakion|band|scarf|Rockium Z SD, Mamoswine|lo, Zygarde-10%|cb, Aerodactyl-Mega|??, Breloom|SD, Dragonite|z-fly, Diggersby|??, Hippowdon|def, Nidoking|lo, Garchomp-Mega|SD, Kyurem|specs, Hawlucha|SubSD, Talonflame|SD, Victini|??, Heracross-Mega|??, Sceptile-Mega|??
+Magnezone, NSI, Landorus-Therian|scarf|Double Dance|Offensive|helmet, Garchomp|scarf|helmet|sd, Dugtrio|scarf|sash|Offensive Trapper, Heatran, Zygarde|Coil|dd|band, Charizard-Mega-Y|Wall-breaker, Keldeo|specs, Salamence|Flyinium Z DD, Volcarona, Buzzwole|??, Scolipede|bp, Terrakion|band|scarf|Rockium Z SD, Mamoswine|lo, Zygarde-10%|cb, Aerodactyl-Mega|??, Breloom|SD, Dragonite|z-fly, Diggersby|??, Hippowdon|def, Nidoking|lo, Garchomp-Mega|SD, Kyurem|specs, Hawlucha|SubSD, Talonflame|SD, Victini|??, Heracross-Mega|??, Sceptile-Mega|??
 
-Togekiss|Stall-breaker, GSI, Celesteela|Autotomize|SpD, Tapu Koko|??, Heatran|??, Jirachi|scarf|SpD|SubTox, Magnezone|av|specs, Nihilego|scarf|specs, Excadrill|SpD|scarf|Offensive Mold Breaker|Sand Rush, Tyranitar|band|scarf, Zapdos|def|3 Atks, Aerodactyl-Mega|??, Magneton|scarf, Xurkitree|z-elec, Rotom-Wash|SpD
+Togekiss|Stall-breaker, GSI, Celesteela|Autotomize|SpD, Tapu Koko|??, Heatran, Jirachi|scarf|SpD|SubTox, Magnezone|av|specs, Nihilego|scarf|specs, Excadrill|SpD|scarf|Offensive Mold Breaker|Sand Rush, Tyranitar|band|scarf, Zapdos|def|3 Atks, Aerodactyl-Mega|??, Magneton|scarf, Xurkitree|z-elec, Rotom-Wash|SpD
 Togekiss|Stall-breaker, SSI, Scizor-Mega|SD|HP Ice, Thundurus|Offensive|tw, Kabutops|??, Omastar|shell smash, Klefki|Spikes, Minior|smash, Thundurus-Therian|??
 Togekiss|Stall-breaker, NSI, Bisharp|SD, Kyurem-Black|z-Ice, Terrakion|band|scarf|Rockium Z SD, Weavile|lo, Mamoswine|lo, Ninetales-Alola|Support, Kyurem|specs
 
@@ -120,11 +120,11 @@ Gliscor|SpD, NSI, Greninja|protean|ash, Hoopa-Unbound|band|specs|lo, Weavile|lo,
 
 Mamoswine|lo, GSI, Skarmory|def, Slowbro|cm|tw, Bronzong|def, Slowbro-Mega|cm|tw
 Mamoswine|lo, SSI, Rotom-Wash|def|SpD, Alomomola|def, Shedinja|Wall, Scizor-Mega|SD|HP Ice
-Mamoswine|lo, NSI, Greninja|protean|ash, Charizard-Mega-X|dd, Charizard-Mega-Y|Wall-breaker, Keldeo|scarf|specs, Manaphy|z tg, Volcarona|Firium Z QD, Excadrill|scarf|Offensive Mold Breaker|Sand Rush, Kyurem-Black|z-Ice, Terrakion|band|scarf|Rockium Z SD, Kartana|SD, Kingdra|??, Sharpedo-Mega|cleaner, Gyarados-Mega|dd, Kabutops|??, Omastar|shell smash, Suicune|sub protect, Azumarill|??, Starmie|lo, Victini|??, Heracross-Mega|??
+Mamoswine|lo, NSI, Greninja|protean|ash, Charizard-Mega-X|dd, Charizard-Mega-Y|Wall-breaker, Keldeo|scarf|specs, Manaphy|z tg, Volcarona, Excadrill|scarf|Offensive Mold Breaker|Sand Rush, Kyurem-Black|z-Ice, Terrakion|band|scarf|Rockium Z SD, Kartana|SD, Kingdra|??, Sharpedo-Mega|cleaner, Gyarados-Mega|dd, Kabutops|??, Omastar|shell smash, Suicune|sub protect, Azumarill|??, Starmie|lo, Victini|??, Heracross-Mega|??
 
-Heatran|??, GSI, Gyarados|Flyinium Z DD, Latios|specs|lo, Kingdra|??, Latias|hw
-Heatran|??, SSI, Greninja|protean|ash, Heatran|??, Tapu Fini|def, Keldeo|scarf|specs, Manaphy|z tg, Rotom-Wash|def|SpD, Chansey, Toxapex|def, Pelipper|def, Slowbro|cm|tw, Gastrodon|SpD, Mantine|def, Suicune|sub protect, Slowbro-Mega|cm|tw, Slowking|cm, Volcanion|specs, Alomomola|def, Primarina|specs, Quagsire|curse, Starmie|Bulky|lo, Jellicent, Blissey|cm, Hydreigon|specs, Seismitoad|def, Tentacruel|def, Swampert-Mega|??
-Heatran|??, NSI, Landorus-Therian|scarf|Double Dance|Offensive, Garchomp|scarf|helmet|sd, Dugtrio|scarf|sash|Offensive Trapper, Zygarde|Coil|dd|band, Salamence|Flyinium Z DD, Excadrill|scarf|Offensive Mold Breaker|Sand Rush, Scolipede|Waterium Z SD, Terrakion|band|scarf|Rockium Z SD, Gliscor|SpD, Mamoswine|lo, Sharpedo-Mega|cleaner, Zygarde-10%|cb, Aerodactyl-Mega|??, Dragonite|z-fly, Gyarados-Mega|dd, Kabutops|??, Omastar|shell smash, Azumarill|??, Crawdaunt|??, Diggersby|??, Hippowdon|def, Minior|smash, Nidoking|lo, Empoleon|def, Garchomp-Mega|SD, Kyurem|specs, Feraligatr|??, Hawlucha|SubSD, Greninja|scarf
+Heatran|Offensive, GSI, Gyarados|Flyinium Z DD, Latios|specs|lo, Kingdra|??, Latias|hw
+Heatran|Offensive, SSI, Greninja|protean|ash, Tapu Fini|def, Keldeo|scarf|specs, Manaphy|z tg, Rotom-Wash|def|SpD, Chansey, Toxapex|def, Pelipper|def, Slowbro|cm|tw, Gastrodon|SpD, Mantine|def, Suicune|sub protect, Slowbro-Mega|cm|tw, Slowking|cm, Volcanion|specs, Alomomola|def, Primarina|specs, Quagsire|curse, Starmie|Bulky|lo, Jellicent, Blissey|cm, Hydreigon|specs, Seismitoad|def, Tentacruel|def, Swampert-Mega|??
+Heatran|Offensive, NSI, Landorus-Therian|scarf|Double Dance|Offensive, Garchomp|scarf|helmet|sd, Dugtrio|scarf|sash|Offensive Trapper, Zygarde|Coil|dd|band, Salamence|Flyinium Z DD, Excadrill|scarf|Offensive Mold Breaker|Sand Rush, Scolipede|Waterium Z SD, Terrakion|band|scarf|Rockium Z SD, Gliscor|SpD, Mamoswine|lo, Sharpedo-Mega|cleaner, Zygarde-10%|cb, Aerodactyl-Mega|??, Dragonite|z-fly, Gyarados-Mega|dd, Kabutops|??, Omastar|shell smash, Azumarill|??, Crawdaunt|??, Diggersby|??, Hippowdon|def, Minior|smash, Nidoking|lo, Empoleon|def, Garchomp-Mega|SD, Kyurem|specs, Feraligatr|??, Hawlucha|SubSD, Greninja|scarf
 
 Manaphy|z tg, GSI, Clefable|un cm, Blissey|cm
 Manaphy|z tg, SSI, Ferrothorn|main, Venusaur-Mega|??, Latios|specs|lo, Toxapex|def, Latias|hw
@@ -132,7 +132,7 @@ Manaphy|z tg, NSI, Tapu Koko|??, Tangrowth|av, Serperior|SubSeed, Kartana|SD, Th
 
 Excadrill|Offensive Mold Breaker, GSI, Skarmory|def|SpD, Slowbro-Mega|cm|tw
 Excadrill|Offensive Mold Breaker, SSI, Landorus-Therian|scarf|Double Dance|Offensive|helmet, Celesteela|Autotomize|SpD, Tangrowth|helmet|Mixed Def, Buzzwole|??, Gyarados|Flyinium Z DD, Gliscor|def, Slowbro|cm|tw, Alomomola|def, Hippowdon|def, Quagsire|curse, Pelipper|def, Heracross-Mega|??
-Excadrill|Offensive Mold Breaker, NSI, Greninja|protean|ash, Dugtrio|scarf|sash|Offensive Trapper, Charizard-Mega-Y|Wall-breaker, Keldeo|scarf|specs, Manaphy|z tg, Volcarona|Firium Z QD, Terrakion|band|scarf|Rockium Z SD, Gliscor|SpD, Kingdra|??, Sharpedo-Mega|cleaner, Zygarde-10%|cb, Breloom|SD, Gyarados-Mega|dd, Kabutops|??, Omastar|shell smash, Suicune|sub protect, Azumarill|??, Crawdaunt|??, Starmie|Bulky|lo, Mandibuzz|def, Hawlucha|SubSD, Victini|??, Greninja|scarf, Swampert-Mega|??
+Excadrill|Offensive Mold Breaker, NSI, Greninja|protean|ash, Dugtrio|scarf|sash|Offensive Trapper, Charizard-Mega-Y|Wall-breaker, Keldeo|scarf|specs, Manaphy|z tg, Volcarona, Terrakion|band|scarf|Rockium Z SD, Gliscor|SpD, Kingdra|??, Sharpedo-Mega|cleaner, Zygarde-10%|cb, Breloom|SD, Gyarados-Mega|dd, Kabutops|??, Omastar|shell smash, Suicune|sub protect, Azumarill|??, Crawdaunt|??, Starmie|Bulky|lo, Mandibuzz|def, Hawlucha|SubSD, Victini|??, Greninja|scarf, Swampert-Mega|??
 
 Excadrill|Sand Rush, GSI, Skarmory|def|SpD, Slowbro-Mega|cm|tw, Bronzong|def
 Excadrill|Sand Rush, SSI, Landorus-Therian|scarf|Double Dance|Offensive|helmet, Celesteela|Autotomize|SpD, Rotom-Wash|def|SpD, Tangrowth|helmet|Mixed Def, Buzzwole|??, Gyarados|Flyinium Z DD, Gliscor|def, Slowbro|cm|tw, Alomomola|def, Hippowdon|def, Quagsire|curse, Pelipper|def
@@ -142,17 +142,17 @@ Excadrill|scarf, GSI, Skarmory|def|SpD, Slowbro-Mega|cm|tw
 Excadrill|scarf, SSI, Landorus-Therian|scarf|Double Dance|Offensive|helmet, Celesteela|Autotomize|SpD, Tangrowth|helmet|Mixed Def, Buzzwole|??, Gyarados|Flyinium Z DD, Gliscor|def, Slowbro|cm|tw, Alomomola|def, Hippowdon|def, Quagsire|curse, Pelipper|def, Heracross-Mega|??
 Excadrill|scarf, NSI, Greninja|ash, Dugtrio|scarf|sash, Keldeo|scarf, Terrakion|scarf, Gliscor|SpD, Kingdra|??, Sharpedo-Mega|cleaner, Breloom|SD, Kabutops|??, Omastar|shell smash, Suicune|sub protect, Azumarill|??, Crawdaunt|??, Mandibuzz|def, Greninja|scarf, Swampert-Mega|??
 
-Scolipede|Waterium Z SD, GSI, Garchomp|helmet, Skarmory|def, Scizor-Mega|SD|HP Ice, Toxapex|def
-Scolipede|Waterium Z SD, SSI, Quagsire|curse
-Scolipede|Waterium Z SD, NSI, Pinsir-Mega|SD, Kingdra|??, Thundurus|tw
-
 Bisharp|SD, GSI, Keldeo|scarf|specs, Buzzwole|??, Scizor-Mega|SD, Hippowdon|def, Pyukumuku|curse
 Bisharp|SD, SSI, Garchomp|helmet, Charizard-Mega-X|Bulky, Tangrowth|helmet, Quagsire|curse
 Bisharp|SD, NSI, Greninja|protean|ash, Tapu Koko|??, Tapu Lele|scarf|specs, Dugtrio|sash, Tapu Bulu|??, Rotom-Wash|def, Terrakion|band|scarf|Rockium Z SD, Tyranitar|scarf, Gliscor|def, Breloom|SD, Hawlucha|SubSD, Hydreigon|specs, Heracross-Mega|??
 
-Volcarona|Firium Z QD, GSI, Mantine|def, Minior|smash, Blissey|cm, Talonflame|SD
-Volcarona|Firium Z QD, SSI, Heatran|??, Chansey, Marowak-Alola|??, Aerodactyl-Mega|??, Tyranitar|scarf|band, Toxapex|def, Dragonite|z-fly, Garchomp|sd|scarf|helmet, Zygarde|band|Coil|dd
-Volcarona|Firium Z QD, NSI, Greninja|ash, Garchomp|scarf, Nihilego|scarf, Terrakion|scarf, Kingdra|??, Thundurus|tw, Gyarados|Flyinium Z DD, Kabutops|??, Omastar|shell smash, Crawdaunt|??, Klefki|Spikes, Greninja|scarf, Keldeo|scarf
+Volcarona|Z-Move QD, GSI, Mantine|def, Minior|smash, Blissey|cm, Talonflame|SD
+Volcarona|Z-Move QD, SSI, Heatran, Chansey, Marowak-Alola|??, Aerodactyl-Mega|??, Tyranitar|scarf|band, Toxapex|def, Dragonite|z-fly, Garchomp|sd|scarf|helmet, Zygarde|band|Coil|dd
+Volcarona|Z-Move QD, NSI, Garchomp|scarf, Nihilego|scarf, Terrakion|scarf, Kingdra|??, Thundurus|tw, Gyarados|Flyinium Z DD, Kabutops|??, Omastar|shell smash, Crawdaunt|??, Greninja|scarf, Keldeo|scarf
+
+Volcarona|Charti QD, GSI, Mantine|def, Minior|smash, Blissey|cm, Talonflame|SD, Toxapex|def
+Volcarona|Charti QD, SSI, Heatran, Chansey, Marowak-Alola|??, Aerodactyl-Mega|??, Tyranitar|scarf|band, Dragonite|z-fly, Garchomp|sd|helmet, Zygarde|band|Coil|dd
+Volcarona|Charti QD, NSI, Terrakion|scarf, Kingdra|??, Thundurus|tw, Gyarados|Flyinium Z DD, Kabutops|??, Omastar|shell smash, Crawdaunt|??
 
 Thundurus|Offensive|tw, GSI
 Thundurus|Offensive|tw, SSI, Tapu Koko|??, Charizard-Mega-X|Bulky|dd, Chansey, Clefable|mg cm|Stealth Rock|un, Latios|scarf|specs|lo, Marowak-Alola|??, Gastrodon|SpD, Latias|hw, Hippowdon|def, Swampert-Mega|??
@@ -191,16 +191,16 @@ Tapu Koko|??, SSI, Ferrothorn|main, Gastrodon|SpD, Hippowdon|def, Shedinja|Wall,
 Tapu Koko|??, NSI, Landorus-Therian|scarf, Garchomp|scarf, Gengar|scarf, Nihilego|scarf, Scolipede|bp, Terrakion|scarf, Gliscor|SpD, Kingdra|??, Kabutops|??, Omastar|shell smash, Nidoking|lo, Greninja|scarf
 
 Tapu Lele|specs|Stall-breaker, GSI, Celesteela|SpD, Magearna|av, Jirachi|scarf|SpD, Klefki|Spikes
-Tapu Lele|specs|Stall-breaker, SSI, Heatran|??, Magnezone|av, Skarmory|SpD, Excadrill|SpD|scarf, Bronzong|def, Mew|stallbreaker, Slowking|cm, Muk-Alola|av, Magneton|scarf
+Tapu Lele|specs|Stall-breaker, SSI, Heatran, Magnezone|av, Skarmory|SpD, Excadrill|SpD|scarf, Bronzong|def, Mew|stallbreaker, Slowking|cm, Muk-Alola|av, Magneton|scarf
 Tapu Lele|specs|Stall-breaker, NSI, Celesteela|Autotomize, Ferrothorn|main, Magearna|specs|Shift Gear, Gengar|scarf|lo, Nihilego|scarf|specs, Pinsir-Mega|SD, Scolipede|bp, Kartana|SD, Sharpedo-Mega|cleaner, Kabutops|??, Omastar|shell smash, Greninja|scarf
 
 Tapu Lele|scarf, GSI, Celesteela|SpD, Magearna|av, Jirachi|scarf|SpD, Klefki|Spikes
-Tapu Lele|scarf, SSI, Heatran|??, Magnezone|av, Skarmory|SpD, Excadrill|SpD|scarf, Scizor-Mega|SD|HP Ice, Bronzong|def, Mew|stallbreaker, Slowking|cm, Muk-Alola|av, Magneton|scarf
+Tapu Lele|scarf, SSI, Heatran, Magnezone|av, Skarmory|SpD, Excadrill|SpD|scarf, Scizor-Mega|SD|HP Ice, Bronzong|def, Mew|stallbreaker, Slowking|cm, Muk-Alola|av, Magneton|scarf
 Tapu Lele|scarf, NSI, Celesteela|Autotomize, Magearna|specs|Shift Gear, Gengar|scarf, Scolipede|bp, Kabutops|??, Omastar|shell smash, Greninja|scarf
 
 Tapu Bulu|??, GSI,
-Tapu Bulu|??, SSI, Celesteela|Autotomize|SpD, Amoonguss|def, Charizard-Mega-Y|Wall-breaker, Gengar|scarf|lo, Pinsir-Mega|SD, Salamence|Flyinium Z DD, Skarmory|def, Tangrowth|helmet, Venusaur-Mega|??, Volcarona|Firium Z QD, Scizor-Mega|SD|HP Ice, Tornadus-Therian|lo, Bronzong|def, Togekiss|Stall-breaker, Dragalge|t-spike, Talonflame|SD, Heracross-Mega|??
-Tapu Bulu|??, NSI, Charizard-Mega-X|Bulky|dd, Heatran|??, Jirachi|scarf|SubTox, Nihilego|scarf|specs, Buzzwole|??, Excadrill|Sand Rush, Kyurem-Black|z-Ice, Scolipede|bp, Weavile|lo, Kartana|SD, Mamoswine|lo, Sharpedo-Mega|cleaner, Dragonite|z-fly, Volcanion|specs, Muk-Alola|av, Nidoking|lo, Ninetales-Alola|Support, Kyurem|specs, Victini|??, Greninja|scarf
+Tapu Bulu|??, SSI, Celesteela|Autotomize|SpD, Amoonguss|def, Charizard-Mega-Y|Wall-breaker, Gengar|scarf|lo, Pinsir-Mega|SD, Salamence|Flyinium Z DD, Skarmory|def, Tangrowth|helmet, Venusaur-Mega|??, Volcarona, Scizor-Mega|SD|HP Ice, Tornadus-Therian|lo, Bronzong|def, Togekiss|Stall-breaker, Dragalge|t-spike, Talonflame|SD, Heracross-Mega|??
+Tapu Bulu|??, NSI, Charizard-Mega-X|Bulky|dd, Heatran, Jirachi|scarf|SubTox, Nihilego|scarf|specs, Buzzwole|??, Excadrill|Sand Rush, Kyurem-Black|z-Ice, Scolipede|bp, Weavile|lo, Kartana|SD, Mamoswine|lo, Sharpedo-Mega|cleaner, Dragonite|z-fly, Volcanion|specs, Muk-Alola|av, Nidoking|lo, Ninetales-Alola|Support, Kyurem|specs, Victini|??, Greninja|scarf
 
 Tapu Fini|def, GSI, Ferrothorn|main, Amoonguss|def, Venusaur-Mega|??, Muk-Alola|av
 Tapu Fini|def, SSI, Magnezone|av|specs, Tangrowth|av, Serperior|SubSeed
@@ -215,7 +215,7 @@ Nihilego|scarf, SSI, Celesteela|Autotomize|SpD, Garchomp|scarf|helmet|sd, Ferrot
 Nihilego|scarf, NSI, Greninja|ash, Dugtrio|scarf|sash, Keldeo|scarf, Hoopa-Unbound|band|scarf|specs, Latios|scarf, Kingdra|??, Sharpedo-Mega|cleaner, Zygarde-10%|cb, Kabutops|??, Latias|hw, Omastar|shell smash, Suicune|sub protect, Azumarill|??, Crawdaunt|??
 
 Buzzwole|??, GSI, Landorus-Therian|helmet, Charizard-Mega-Y|Wall-breaker, Skarmory|def
-Buzzwole|??, SSI, Landorus-Therian|scarf|Double Dance|Offensive, Tapu Fini|def, Pinsir-Mega|SD, Sableye-Mega, Salamence|Flyinium Z DD, Volcarona|Firium Z QD, Clefable|mg cm|Stealth Rock|un cm|un, Tornadus-Therian|lo, Toxapex|def, Zapdos|def|3 Atks, Gliscor|def, Pelipper|def, Mantine|def, Togekiss|Stall-breaker, Azumarill|??, Primarina|specs, Shedinja|Wall
+Buzzwole|??, SSI, Landorus-Therian|scarf|Double Dance|Offensive, Tapu Fini|def, Pinsir-Mega|SD, Sableye-Mega, Salamence|Flyinium Z DD, Volcarona, Clefable|mg cm|Stealth Rock|un cm|un, Tornadus-Therian|lo, Toxapex|def, Zapdos|def|3 Atks, Gliscor|def, Pelipper|def, Mantine|def, Togekiss|Stall-breaker, Azumarill|??, Primarina|specs, Shedinja|Wall
 Buzzwole|??, NSI, Charizard-Mega-X|Bulky|dd, Latios|scarf|specs|lo, Latias|hw, Starmie|lo, Kyurem|specs
 
 Porygon-Z|z conv electric, GSI, Venusaur-Mega|??, Chansey, Clefable|un cm|un, Quagsire|curse, Shedinja|Wall
@@ -223,19 +223,19 @@ Porygon-Z|z conv electric, SSI, Ferrothorn|main, Marowak-Alola|??
 Porygon-Z|z conv electric, NSI, Landorus-Therian|scarf, Garchomp|scarf, Dugtrio|scarf|sash, Kingdra|??
 
 Celesteela|Autotomize, GSI, Zapdos|def|3 Atks
-Celesteela|Autotomize, SSI, Tapu Koko|??, Heatran|??, Rotom-Wash|def|SpD
+Celesteela|Autotomize, SSI, Tapu Koko|??, Heatran, Rotom-Wash|def|SpD
 Celesteela|Autotomize, NSI, Kingdra|??, Thundurus|Offensive|tw, Thundurus-Therian|??
 
 Kartana|SD, GSI,
 Kartana|SD, SSI, Scizor-Mega|SD|HP Ice, Shedinja|Wall
-Kartana|SD, NSI, Greninja|protean|ash, Nihilego|scarf, Terrakion|scarf, Latios|specs|lo, Omastar|shell smash, Starmie|lo, Magneton|scarf, Torkoal|Support
+Kartana|SD, NSI, Greninja|protean|ash, Nihilego|scarf, Terrakion|scarf, Latios|specs|lo, Omastar|shell smash, Starmie|lo, Magneton|scarf, Torkoal|Support, Tapu Koko|??
 
-Magearna|av|specs, GSI, Charizard-Mega-Y|Wall-breaker, Jirachi|scarf|SpD|SubTox, Volcarona|Firium Z QD, Chansey, Marowak-Alola|??, Klefki|Spikes, Shedinja|Wall, Victini|??
-Magearna|av|specs, SSI, Celesteela|Autotomize|SpD, Ferrothorn|main, Heatran|??, Skarmory|SpD, Excadrill|SpD|scarf|Offensive Mold Breaker|Sand Rush, Scizor-Mega|SD|HP Ice, Toxapex|def, Gliscor|SpD, Bronzong|def, Volcanion|specs, Magneton|scarf, Tentacruel|def
+Magearna|av|specs, GSI, Charizard-Mega-Y|Wall-breaker, Jirachi|scarf|SpD|SubTox, Volcarona, Chansey, Marowak-Alola|??, Klefki|Spikes, Shedinja|Wall, Victini|??
+Magearna|av|specs, SSI, Celesteela|Autotomize|SpD, Ferrothorn|main, Heatran, Skarmory|SpD, Excadrill|SpD|scarf|Offensive Mold Breaker|Sand Rush, Scizor-Mega|SD|HP Ice, Toxapex|def, Gliscor|SpD, Bronzong|def, Volcanion|specs, Magneton|scarf, Tentacruel|def
 Magearna|av|specs, NSI, Landorus-Therian|scarf|Double Dance|Offensive, Garchomp|scarf|helmet|sd, Charizard-Mega-X|Bulky|dd, Dugtrio|sash|Offensive Trapper, Zygarde|Coil|dd|band, Mamoswine|lo, Zygarde-10%|cb, Diggersby|??
 
-Magearna|Shift Gear, GSI, Charizard-Mega-Y|Wall-breaker, Jirachi|scarf|SpD|SubTox, Volcarona|Firium Z QD, Chansey, Marowak-Alola|??, Klefki|Spikes, Shedinja|Wall, Victini|??
-Magearna|Shift Gear, SSI, Celesteela|Autotomize|SpD, Ferrothorn|main, Heatran|??, Skarmory|SpD, Excadrill|SpD, Scizor-Mega|SD|HP Ice, Toxapex|def, Gliscor|SpD, Bronzong|def, Volcanion|specs, Magneton|scarf, Tentacruel|def
+Magearna|Shift Gear, GSI, Charizard-Mega-Y|Wall-breaker, Jirachi|scarf|SpD|SubTox, Volcarona, Chansey, Marowak-Alola|??, Klefki|Spikes, Shedinja|Wall, Victini|??
+Magearna|Shift Gear, SSI, Celesteela|Autotomize|SpD, Ferrothorn|main, Heatran, Skarmory|SpD, Excadrill|SpD, Scizor-Mega|SD|HP Ice, Toxapex|def, Gliscor|SpD, Bronzong|def, Volcanion|specs, Magneton|scarf, Tentacruel|def
 Magearna|Shift Gear, NSI, Charizard-Mega-X|Bulky|dd, Dugtrio|sash, Zygarde|Coil
 
 Aerodactyl-Mega|??, GSI, Skarmory|def, Clefable|mg cm|Stealth Rock|un cm|un, Slowbro|cm|tw, Bronzong|def, Gastrodon|SpD, Slowbro-Mega|cm|tw, Alomomola|def, Hippowdon|def, Quagsire|curse, Pyukumuku|curse, Seismitoad|def
@@ -246,7 +246,8 @@ Alakazam-Mega|??, GSI, Celesteela|SpD, Magearna|av, Chansey, Muk-Alola|av, Mandi
 Alakazam-Mega|??, SSI, Jirachi|scarf|SpD, Sableye-Mega, Clefable|mg cm|Stealth Rock|un, Hoopa-Unbound|band|scarf|specs, Scizor-Mega|SD|HP Ice, Gastrodon|SpD, Slowking|cm, Klefki|Spikes
 Alakazam-Mega|??, NSI, Landorus-Therian|scarf, Garchomp|scarf, Dugtrio|sash, Gengar|scarf, Tangrowth|av, Scolipede|bp, Kingdra|??, Kabutops|??, Omastar|shell smash, Mawile-Mega|??
 
-Charizard-Mega-X|dd, SSI, Landorus-Therian|helmet, Toxapex|def, Tapu Fini|def, Slowbro|tw, Slowbro-Mega|tw, Alomomola|def, Hippowdon|def, Quagsire|curse, Pyukumuku|curse
+Charizard-Mega-X|dd, GSI, Landorus-Therian|helmet, Hippowdon|def, Slowbro|tw, Slowbro-Mega|tw, 
+Charizard-Mega-X|dd, SSI, Toxapex|def, Tapu Fini|def, Alomomola|def, Quagsire|curse, Pyukumuku|curse
 Charizard-Mega-X|dd, NSI, Landorus-Therian|scarf, Garchomp|scarf, Dugtrio|sash, Nihilego|scarf, Latios|scarf, Terrakion|scarf, Gliscor|def, Kingdra|??, Thundurus|tw, Kabutops|??, Omastar|shell smash, Azumarill|??, Klefki|Spikes, Primarina|specs
 
 Charizard-Mega-Y|Wall-breaker, GSI, Chansey, Latios|scarf|specs|lo, Latias|hw, Mantine|def, Azumarill|sap, Blissey|cm, Talonflame|SD
@@ -254,7 +255,7 @@ Charizard-Mega-Y|Wall-breaker, SSI, Charizard-Mega-X|Bulky|dd, Dragonite|z-fly, 
 Charizard-Mega-Y|Wall-breaker, NSI, Landorus-Therian|scarf, Garchomp|scarf, Tapu Koko|??, Nihilego|scarf|specs, Terrakion|band|scarf|Rockium Z SD, Tyranitar|scarf, Thundurus|Offensive|tw, Aerodactyl-Mega|??, Thundurus-Therian|??, Greninja|scarf
 
 Clefable|mg cm, GSI, Celesteela|SpD, Magearna|specs, Jirachi|scarf|SpD|SubTox, Clefable|un cm, Excadrill|SpD, Marowak-Alola|??, Toxapex|def, Mew|stallbreaker, Nidoking|lo, Quagsire|curse
-Clefable|mg cm, SSI, Heatran|??, Amoonguss|def, Gengar|lo, Magnezone|specs, Skarmory|SpD, Chansey, Excadrill|scarf|Offensive Mold Breaker|Sand Rush, Scizor-Mega|SD|HP Ice, Scolipede|Waterium Z SD, Gliscor|SpD, Muk-Alola|av, Talonflame|SD, Tentacruel|def, Victini|??, Mawile-Mega|??
+Clefable|mg cm, SSI, Heatran, Amoonguss|def, Gengar|lo, Magnezone|specs, Skarmory|SpD, Chansey, Excadrill|scarf|Offensive Mold Breaker|Sand Rush, Scizor-Mega|SD|HP Ice, Scolipede|Waterium Z SD, Gliscor|SpD, Muk-Alola|av, Talonflame|SD, Tentacruel|def, Victini|??, Mawile-Mega|??
 Clefable|mg cm, NSI, Bisharp|SD, Kartana|SD, Diggersby|??, Dragalge|t-spike
 
 Gengar|lo, GSI, Muk-Alola|av
@@ -265,7 +266,7 @@ Gengar|scarf, GSI, Muk-Alola|av, Blissey|cm
 Gengar|scarf, SSI, Gliscor|SpD, Mandibuzz|def
 Gengar|scarf, NSI, Excadrill|SpD, Scizor-Mega|SD|HP Ice, Scolipede|Waterium Z SD, Tornadus-Therian|lo, Tyranitar|scarf, Kingdra|??, Kabutops|??, Omastar|shell smash, Absol-Mega|??, Mawile-Mega|??, Greninja|scarf
 
-Gyarados-Mega|dd, GSI, Ferrothorn|main, Tapu Bulu|??, Tapu Fini|def, Keldeo|scarf|specs, Skarmory|def, Tangrowth|helmet|Mixed Def, Venusaur-Mega|??, Kartana|SD, Azumarill|??, Primarina|specs
+Gyarados-Mega|dd, GSI, Ferrothorn|main, Tapu Bulu|??, Tapu Fini|def, Keldeo|scarf|specs, Skarmory|def, Tangrowth|helmet|Mixed Def|av, Venusaur-Mega|??, Kartana|SD, Azumarill|??, Primarina|specs
 Gyarados-Mega|dd, SSI, Amoonguss|def, Zapdos|def|3 Atks, Breloom|SD, Alomomola|def, Mandibuzz|def
 Gyarados-Mega|dd, NSI, Landorus-Therian|scarf, Tapu Lele|scarf, Terrakion|scarf
 
@@ -299,19 +300,19 @@ Landorus-Therian|scarf, SSI, Landorus-Therian|scarf|Double Dance|Offensive, Ferr
 Landorus-Therian|scarf, NSI, Greninja|ash, Keldeo|scarf, Manaphy|z tg, Weavile|lo, Kingdra|??, Mamoswine|lo, Kabutops|??, Omastar|shell smash, Suicune|sub protect, Azumarill|??, Greninja|scarf
 
 Pinsir-Mega|SD, GSI, Skarmory|def, Zapdos|def|3 Atks
-Pinsir-Mega|SD, SSI, Celesteela|Autotomize|SpD, Tapu Koko|??, Rotom-Wash|def
+Pinsir-Mega|SD, SSI, Celesteela|Autotomize|SpD, Tapu Koko|??, Rotom-Wash|def|SpD
 Pinsir-Mega|SD, NSI, Landorus-Therian|scarf, Garchomp|scarf, Nihilego|scarf, Excadrill|scarf, Terrakion|scarf, Tyranitar|scarf, Thundurus|Offensive|tw, Aerodactyl-Mega|??, Kabutops|??, Omastar|shell smash, Magneton|scarf, Thundurus-Therian|??
 
 Sableye-Mega, GSI, Charizard-Mega-X|Bulky|dd, Magearna|av|specs|Shift Gear, Tapu Fini|def, Charizard-Mega-Y|Wall-breaker, Clefable|mg cm|Stealth Rock|un cm|un, Togekiss|Stall-breaker
-Sableye-Mega, SSI, Tapu Koko|??, Heatran|??, Keldeo|specs, Manaphy|z tg, Volcarona|Firium Z QD, Primarina|specs, Talonflame|SD
+Sableye-Mega, SSI, Tapu Koko|??, Heatran, Keldeo|specs, Manaphy|z tg, Volcarona, Primarina|specs, Talonflame|SD
 Sableye-Mega, NSI, Tapu Lele|scarf|specs|Stall-breaker, Gliscor|def|SpD, Azumarill|??, Mawile-Mega|??
 
-Scizor-Mega|SD, GSI, Celesteela|Autotomize|SpD, Charizard-Mega-X|Bulky|dd, Charizard-Mega-Y|Wall-breaker, Skarmory|def|SpD, Volcarona|Firium Z QD, Gyarados|Flyinium Z DD, Toxapex|def, Zapdos|def|3 Atks, Quagsire|curse, Pyukumuku|curse, Talonflame|SD, Torkoal|Support
-Scizor-Mega|SD, SSI, Garchomp|helmet, Heatran|??, Keldeo|specs, Magnezone|av|specs, Rotom-Wash|def, Marowak-Alola|??, Volcanion|specs, Jellicent, Mandibuzz|def, Victini|??
+Scizor-Mega|SD, GSI, Celesteela|Autotomize|SpD, Charizard-Mega-X|Bulky|dd, Charizard-Mega-Y|Wall-breaker, Skarmory|def|SpD, Volcarona, Gyarados|Flyinium Z DD, Toxapex|def, Zapdos|def|3 Atks, Quagsire|curse, Pyukumuku|curse, Talonflame|SD, Torkoal|Support
+Scizor-Mega|SD, SSI, Garchomp|helmet, Heatran, Keldeo|specs, Magnezone|av|specs, Rotom-Wash|def, Marowak-Alola|??, Volcanion|specs, Jellicent, Mandibuzz|def, Victini|??
 Scizor-Mega|SD, NSI, Tapu Lele|specs|Stall-breaker, Rotom-Wash|SpD
 
-Scizor-Mega|HP Ice, GSI, Celesteela|Autotomize|SpD, Charizard-Mega-X|Bulky|dd, Charizard-Mega-Y|Wall-breaker, Skarmory|def|SpD, Volcarona|Firium Z QD, Gyarados|Flyinium Z DD, Toxapex|def, Zapdos|def|3 Atks, Quagsire|curse, Pyukumuku|curse, Talonflame|SD, Torkoal|Support
-Scizor-Mega|HP Ice, SSI, Heatran|??, Keldeo|specs, Magnezone|av|specs, Rotom-Wash|def, Marowak-Alola|??, Volcanion|specs, Jellicent, Mandibuzz|def, Victini|??
+Scizor-Mega|HP Ice, GSI, Celesteela|Autotomize|SpD, Charizard-Mega-X|Bulky|dd, Charizard-Mega-Y|Wall-breaker, Skarmory|def|SpD, Volcarona, Gyarados|Flyinium Z DD, Toxapex|def, Zapdos|def|3 Atks, Quagsire|curse, Pyukumuku|curse, Talonflame|SD, Torkoal|Support
+Scizor-Mega|HP Ice, SSI, Heatran, Keldeo|specs, Magnezone|av|specs, Rotom-Wash|def, Marowak-Alola|??, Volcanion|specs, Jellicent, Mandibuzz|def, Victini|??
 Scizor-Mega|HP Ice, NSI, Tapu Lele|specs|Stall-breaker, Rotom-Wash|SpD
 
 Sharpedo-Mega|cleaner, GSI, Ferrothorn|main, Skarmory|def, Tangrowth|helmet|Mixed Def, Mandibuzz|def
@@ -327,8 +328,8 @@ Tornadus-Therian|lo, SSI, Tapu Koko|??, Nihilego|scarf, Zapdos|def|3 Atks, Slowk
 Tornadus-Therian|lo, NSI, Landorus-Therian|scarf, Terrakion|scarf, Weavile|lo, Thundurus|Offensive|tw, Kabutops|??, Omastar|shell smash, Magneton|scarf, Thundurus-Therian|??, Xurkitree|z-elec, Greninja|scarf
 
 Venusaur-Mega|??, GSI, Celesteela|Autotomize, Jirachi|scarf|SpD, Skarmory|SpD, Chansey, Tornadus-Therian|av, Necrozma|Stored Power, Reuniclus|cm, Blissey|cm, Talonflame|SD
-Venusaur-Mega|??, SSI, Charizard-Mega-X|Bulky|dd, Heatran|??, Kyurem-Black|z-Ice, Latios|scarf|specs|lo, Marowak-Alola|??, Dragonite|z-fly, Latias|hw, Heracross-Mega|??
-Venusaur-Mega|??, NSI, Landorus-Therian|Offensive, Tapu Lele|scarf|specs|Stall-breaker, Alakazam-Mega|??, Pinsir-Mega|SD, Salamence|Flyinium Z DD, Volcarona|Firium Z QD, Gyarados|Flyinium Z DD
+Venusaur-Mega|??, SSI, Charizard-Mega-X|Bulky|dd, Heatran, Kyurem-Black|z-Ice, Latios|scarf|specs|lo, Marowak-Alola|??, Dragonite|z-fly, Latias|hw, Heracross-Mega|??
+Venusaur-Mega|??, NSI, Landorus-Therian|Offensive, Tapu Lele|scarf|specs|Stall-breaker, Alakazam-Mega|??, Pinsir-Mega|SD, Salamence|Flyinium Z DD, Volcarona, Gyarados|Flyinium Z DD
 
 Terrakion|band|Rockium Z SD, GSI, Slowbro-Mega|cm|tw
 Terrakion|band|Rockium Z SD, SSI, Landorus-Therian|helmet, Skarmory|def, Tangrowth|helmet, Toxapex|def, Slowbro|cm|tw, Hippowdon|def
@@ -350,12 +351,8 @@ Slowbro|cm, GSI, Greninja|protean|ash, Magnezone|av, Hoopa-Unbound|specs, Hydrei
 Slowbro|cm, SSI, Tapu Fini|def, Latios|scarf|specs|lo, Serperior|SubSeed, Zapdos|def|3 Atks, Gyarados-Mega|dd, Shedinja|Wall, Kyurem|specs, Sceptile-Mega|??
 Slowbro|cm, NSI, Tapu Koko|??, Tapu Bulu|??, Gengar|lo, Magnezone|specs, Manaphy|z tg, Tyranitar|band, Kartana|SD, Thundurus|Offensive|tw, Breloom|SD, Magneton|scarf, Thundurus-Therian|??, Xurkitree|z-elec, Heracross-Mega|??
 
-Zygarde-10%|cb, GSI, Tapu Bulu|??, Slowbro|cm|tw, Slowbro-Mega|cm|tw
-Zygarde-10%|cb, SSI, Alomomola|def
-Zygarde-10%|cb, NSI, Tapu Lele|scarf, Latios|scarf, Weavile|lo, Omastar|shell smash, Greninja|scarf, Heracross-Mega|??, Sceptile-Mega|??
-
 Mawile-Mega|??, GSI, 
-Mawile-Mega|??, SSI, Landorus-Therian|helmet, Heatran|??, Mew|stallbreaker, Cofagrigus|??
+Mawile-Mega|??, SSI, Landorus-Therian|helmet, Heatran|Wisp, Mew|stallbreaker, Cofagrigus|??
 Mawile-Mega|??, NSI, Garchomp|helmet, Tapu Lele|specs, Dugtrio|sash, Charizard-Mega-X|Bulky, Keldeo|specs, Rotom-Wash|def|SpD, Terrakion|band, Primarina|specs, Hydreigon|specs, Magearna|specs|Shift Gear, Tyranitar|band, Tapu Koko|??, Heracross-Mega|??
 
 Medicham-Mega|??, GSI, Cofagrigus|??
@@ -371,7 +368,7 @@ Nidoking|lo, NSI, Terrakion|scarf|band, Zygarde|dd|band, Zygarde-10%|cb, Chariza
 
 Heracross-Mega|??, GSI, Clefable|un|un cm
 Heracross-Mega|??, SSI, Skarmory|def, Clefable|SR|mg cm, Toxapex|def, Mimikyu|SD, Tapu Fini|def, Nidoking|lo
-Heracross-Mega|??, NSI, Hoopa-Unbound|band|specs|lo, Charizard-Mega-X|dd|Bulky, Pinsir-Mega|SD, Tornadus-Therian|lo|av, Latios|specs, Tapu Lele|specs|scarf|Stall-breaker, Alakazam-Mega|??, Volcarona|Firium Z QD, Heatran|??, Charizard-Mega-Y|Wall-breaker, Togekiss|Stall-breaker, Talonflame|SD
+Heracross-Mega|??, NSI, Hoopa-Unbound|band|specs|lo, Charizard-Mega-X|dd|Bulky, Pinsir-Mega|SD, Tornadus-Therian|lo|av, Latios|specs, Tapu Lele|specs|scarf|Stall-breaker, Alakazam-Mega|??, Volcarona, Heatran, Charizard-Mega-Y|Wall-breaker, Togekiss|Stall-breaker, Talonflame|SD
 
 Zapdos|3 Atks, GSI, Kyurem-Black|z-Ice, Charizard-Mega-X|dd|Bulky, Latios|lo|specs, Mamoswine|lo, Tyranitar|band|scarf, Latias|hw, Clefable|un cm|mg cm, Chansey, Blissey|cm, Gastrodon|SpD, Kyurem|specs, Hippowdon|def, Quagsire|curse, Swampert-Mega|??
 Zapdos|3 Atks, SSI, Nihilego|specs|scarf, Hydreigon|specs, Hoopa-Unbound|band|specs|lo, Terrakion|scarf|band|Rockium Z SD
@@ -382,12 +379,14 @@ Swampert-Mega|??, SSI, Mantine|def, Pelipper|def, Serperior|SubSeed, Tapu Bulu|?
 Swampert-Mega|??, NSI, Venusaur-Mega|??
 
 Sceptile-Mega|??, GSI, Celesteela|SpD|Autotomize, Skarmory|SpD, Tangrowth|av, Amoonguss|def, Venusaur-Mega|??, Tornadus-Therian|av, Magearna|av, Chansey, Blissey|cm, Jirachi|SpD, Azumarill|sap, Togekiss|Stall-breaker
-Sceptile-Mega|??, SSI, Mawile-Mega|??, Volcarona|Firium Z QD, Jirachi|SubTox|scarf, Ferrothorn|main, Muk-Alola|av, Scizor-Mega|SD|HP Ice
+Sceptile-Mega|??, SSI, Mawile-Mega|??, Volcarona, Jirachi|SubTox|scarf, Ferrothorn|main, Muk-Alola|av, Scizor-Mega|SD|HP Ice
 Sceptile-Mega|??, NSI, Greninja|scarf, Garchomp|scarf, Gengar|scarf, Pinsir-Mega|SD, Latios|scarf, Mamoswine|lo, Tapu Lele|scarf, Weavile|lo
 
 SpD, letters, SpD
 SD, letters, SD
 
+Heatran|Offensive, letters, Off
+Heatran|Wisp, letters, wisp
 Scizor-Mega|HP Ice, letters, ice
 Rotom-Wash|SpD, letters, SpD
 Tangrowth|Mixed Def, icon, leftovers
@@ -395,8 +394,8 @@ Tangrowth|Mixed Def, letters, Mix
 Tapu Fini|def, icon, leftovers
 Tapu Fini|def, letters, def
 Talonflame|SD, icon, flyiniumz
-Volcarona|Firium Z QD, icon, firiumz
-Volcarona|Firium Z QD, letters, QD
+Volcarona|Z-Move QD, icon, normaliumz
+Volcarona|Z-Move QD, letters, QD
 Kartana|SD, icon, fightiniumz
 Kartana|SD, letters, SD
 Celesteela|SpD, icon, leftovers
