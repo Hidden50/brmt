@@ -374,7 +374,7 @@ Heracross-Mega|??, SSI, Skarmory|def, Clefable|SR|mg cm, Toxapex|def, Mimikyu|SD
 Heracross-Mega|??, NSI, Hoopa-Unbound|band|specs|lo, Charizard-Mega-X|dd|Bulky, Pinsir-Mega|SD, Tornadus-Therian|lo|av, Latios|specs, Tapu Lele|specs|scarf|Stall-breaker, Alakazam-Mega|??, Volcarona|Firium Z QD, Heatran|??, Charizard-Mega-Y|Wall-breaker, Togekiss|Stall-breaker, Talonflame|SD
 
 Zapdos|3 Atks, GSI, Kyurem-Black|z-Ice, Charizard-Mega-X|dd|Bulky, Latios|lo|specs, Mamoswine|lo, Tyranitar|band|scarf, Latias|hw, Clefable|un cm|mg cm, Chansey, Blissey|cm, Gastrodon|SpD, Kyurem|specs, Hippowdon|def, Quagsire|curse, Swampert-Mega|??
-Zapdos|3 Atks, SSI, Nihilego|specs|scarf, Hydreigon|specs, Hoopa-Unbound|band|specs|lo, Terrakion|scarf|band|Rockium Z SD.
+Zapdos|3 Atks, SSI, Nihilego|specs|scarf, Hydreigon|specs, Hoopa-Unbound|band|specs|lo, Terrakion|scarf|band|Rockium Z SD
 Zapdos|3 Atks, NSI, Tapu Lele|specs, Tapu Koko|??
 
 Swampert-Mega|??, GSI, Rotom-Wash|def|SpD, Tangrowth|helmet|Mixed Def, Slowbro|cm|tw, Slowbro-Mega|cm|tw, Skarmory|def, Alomomola|def
