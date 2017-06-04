@@ -14,7 +14,7 @@ brmt.buildChecksCompendium = builder.buildChecksCompendium = function buildCheck
 		builder.addEntries(build, subject, mode, targets);                           // fill "*SI"    for subject
 		builder.addEntries(build, targets, brmt.tools.invertSIMode(mode), subject);  // fill "*SI to" for targets
 	}
-	return build;
+	return builder.inheritEntries(build);
 };
 
 builder.addEntries = function addEntries (build, subjects, mode, targets) {
@@ -22,8 +22,8 @@ builder.addEntries = function addEntries (build, subjects, mode, targets) {
 	for (let set in subjects[species])
 	for (let targetSpecies in targets)
 	for (let targetSet in targets[targetSpecies]) {
-		if (!build[species]) build[species] = {};
-		if (!build[species][set]) build[species][set] = { "GSI": {}, "SSI": {}, "NSI": {}, "GSI to": {}, "SSI to": {}, "NSI to": {} };
+		if (!build[species]) build[species] = { "?": brmt.config.emptySubjectObject() };
+		if (!build[species][set]) build[species][set] = brmt.config.emptySubjectObject();
 		if (!build[species][set][mode][targetSpecies]) build[species][set][mode][targetSpecies] = {};
 		build[species][set][mode][targetSpecies][targetSet] = 1;
 	}
@@ -54,6 +54,28 @@ builder.packSetData = function packSetData (setlists, useOfficialNames) {
 			return species;
 		return species + '|' + packedSets;
 	});
+};
+
+builder.inheritEntries = function inheritEntries (build) {
+	for (let species in build) {
+		// all sets inherit from the "?" set
+		let isEmpty = Object.keys(build[species]["?"]).every( mode =>
+			brmt.teamrater.countTargetSpecies(build, brmt.tools.makePokemonObject(species, "?"), mode) === 0
+		);
+		if (isEmpty) {
+			delete build[species]["?"];
+			continue;
+		}
+		
+		let subject = {};
+		subject[species] = build[species];
+		for (let mode in build[species]["?"]) {
+			let targets = build[species]["?"][mode];
+			builder.addEntries(build, subject, mode, targets);
+			builder.addEntries(build, targets, brmt.tools.invertSIMode(mode), subject);
+		}
+	}
+	return build;
 };
 
 builder.buildDataToString = function buildDataToString (data, sep, linesep, useOfficialNames) {

@@ -10,6 +10,15 @@ brmt.config.modeWeights = {
 	"NSI to":   -3
 };
 
+brmt.config.emptySubjectObject =  () => ({
+	"GSI":    {},
+	"SSI":    {},
+	"NSI":    {},
+	"GSI to": {},
+	"SSI to": {},
+	"NSI to": {}
+});
+
 brmt.config.siModes = Object.keys(brmt.config.modeWeights);
 brmt.config.weights = brmt.config.siModes.map( mode => brmt.config.modeWeights[mode] );
 
