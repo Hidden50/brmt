@@ -22,18 +22,23 @@
 <button id="button_showobjectinspector">Inspect Project</button>
 <button id="button_threatlistconfig">Configure Threatlist</button>
 <button id="button_showbuilddata">Show Builddata</button>
+<button id="button_hidebuilddata" style="display:none">Hide Builddata</button>
+
+<div id="div_search" style="float:right">
+	<b>Search</b>
+	<input id="input_search" type="text">
+</div>
+
+<div id="div_team" style="float:right">
+	<b>Team</b>
+	<button id="button_team">(press to select)</button>
+</div>
 
 <div id="div_builddata" style="display:none">
-	<button id="button_hidebuilddata">Hide Builddata</button>
-	<textarea id="textarea_builddata"></textarea>
+	<textarea id="textarea_builddata" spellcheck="false"></textarea>
 	<button id="button_useofficialnames">use official names</button>
 	<button id="button_usespeciesids">use species ID</button>
 	<button id="button_build">rebuild compendium</button>
-</div>
-
-<div style="float:left; margin-left: 180px">
-	<b>Team</b>
-	<button id="button_team">(press to select)</button>
 </div>
 
 <div style="float:left">
@@ -48,7 +53,7 @@
 	<label for="radio_threatlistconfig_species"><s>Show as Pok&eacute;mon species</s></label>
 	<br>
 	<input type="radio" id="radio_threatlistconfig_sets" name="radiogroup_threatlistconfig" value="sets" checked>
-	<label for="radio_threatlistconfig_sets">Show as Pok&eacute;mon Sets</label>
+	<label for="radio_threatlistconfig_sets">Show as Pok&eacute;mon sets</label>
 	<br>
 	<input type="radio" id="radio_threatlistconfig_compendium" name="radiogroup_threatlistconfig" value="compendium">
 	<label for="radio_threatlistconfig_compendium">Show as Checks Compendium</label>

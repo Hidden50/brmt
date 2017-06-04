@@ -8,7 +8,7 @@ cache.team = [];
 cache.teams = brmt.config.getTeamStorage();
 
 window.onload = function() {
-	htmlNodes.register( ...document.querySelectorAll("[id]") );  // register all html nodes that have ids
+	htmlNodes.register( ...document.querySelectorAll("[id]") );  // register all html nodes that have an id
 	
 	htmlNodes.textareas.builddata.value = brmt.compendiums.OUcc;
 	
@@ -18,7 +18,7 @@ window.onload = function() {
 
 frontend.rebuild = function rebuild () {
 	// read input configuration
-	let threatlistmode = document.querySelector('input[name="radiogroup_threatlistconfig"]:checked').value
+	let threatlistmode = document.querySelector('input[name="radiogroup_threatlistconfig"]:checked').value;
 	
 	// calculate results
 	let buildData  = cache.buildData  = brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value );
@@ -28,21 +28,37 @@ frontend.rebuild = function rebuild () {
 	let threatlist = cache.threatlist = brmt.getThreatlist(build, team);
 	let iconConfig = cache.iconConfig = brmt.readIconConfig(buildData);
 	
+	let teamGallery = brmt.htmloutput.makeIconGallery(cache.team, cache.build, cache.team, cache.iconConfig);
+	htmlNodes.buttons.team.innerHTML = teamGallery || "(press to select)";
+	
 	switch (threatlistmode) {
 		case "species": {
 			// todo: implement species threatlist
 			break;
 		}
 		case "sets": {
-			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, team, iconConfig);
+			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, build, team, iconConfig);
 			break;
 		}
 		case "compendium": {
-			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeCompendium (build, threatlist, team, iconConfig);
+			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeCompendium (threatlist, build, team, iconConfig);
 			break;
 		}
 	}
+	frontend.markSearchResults();
 	frontend.addClassListeners( htmlNodes.divs.threatlist, "imageWrapper", 'click', frontend.showCompendiumEntry );
+};
+
+frontend.markSearchResults = function markSearchResults () {
+	let searchText = htmlNodes.inputs.search.value;
+	let searchRegex = new RegExp(searchText, 'i');
+	[...htmlNodes.divs.threatlist.childNodes].forEach( childNode => {
+		if (!childNode.classList || !childNode.classList.contains("imageWrapper"))
+			return;
+		if (searchText && childNode.title.match(searchRegex))
+			childNode.classList.add("searchresult");
+		else childNode.classList.remove("searchresult");
+	});
 };
 
 htmlNodes.register = function register (node, ...rest) {
@@ -72,28 +88,28 @@ frontend.addClassListeners = function addClassListeners (parentNode, className, 
 	[...parentNode.childNodes].forEach( node => {
 		if (node.classList && node.classList.contains("imageWrapper"))
 			node.addEventListener( eventType, () => listener(node) );
-		addClassListeners (node, className, eventType, listener)
+		addClassListeners (node, className, eventType, listener);
 	});
 };
 
-frontend.showCompendiumEntry = function showCompendiumEntry (source, pokemon) {
+frontend.showCompendiumEntry = function showCompendiumEntry (caller, pokemon) {
 	if (!pokemon) {
-		let {subject, target} = frontend.parseIconWrapperTitle(source.title);
-		if (target.species && !source.parentNode.className.endsWith("to"))
+		let {subject, target} = frontend.parseIconWrapperTitle(caller.title);
+		if (target.species && !caller.parentNode.className.endsWith("to"))
 			pokemon = target;
 		else pokemon = subject;
 	}
 	
 	frontend.showPopup(
 		htmlNodes.divs.popup,
-		source,
-		brmt.htmloutput.makeCompendiumEntry(cache.build, pokemon, cache.team, cache.iconConfig)
+		caller,
+		brmt.htmloutput.makeCompendiumEntry(pokemon, cache.build, cache.team, cache.iconConfig)
 	);
 	frontend.addClassListeners(
 		htmlNodes.divs.popup,
 		"imageWrapper",
 		'click',
-		frontend.scrollBuilddata
+		frontend.popupPokemonClick
 	);
 };
 
@@ -130,6 +146,32 @@ frontend.parseIconWrapperTitle = function parseIconWrapperTitle (title) {
 	result.target = brmt.tools.makePokemonObject(targetSpecies, targetSet);
 	
 	return result;
+};
+
+frontend.popupPokemonClick = function popupPokemonClick (wrapperNode) {
+	if (htmlNodes.divs.builddata.style.display === "block")
+		return frontend.scrollBuilddata(wrapperNode);
+	return frontend.toggleTeammember(wrapperNode);
+};
+
+frontend.toggleTeammember = function toggleTeammember (wrapperNode) {
+	let {subject, target} = frontend.parseIconWrapperTitle(wrapperNode.title);
+	
+	let pokemon;
+	if (target.species && !wrapperNode.parentNode.className.endsWith("to"))
+		pokemon = target;
+	else pokemon = subject;
+	
+	let deleted;
+	cache.team = cache.team.filter( teamMember => {
+		if (teamMember.species === pokemon.species && teamMember.set === pokemon.set) {
+			deleted = true;
+			return false;
+		}
+		return true;
+	});
+	if (!deleted) cache.team.push(pokemon);
+	frontend.rebuild();
 };
 
 frontend.scrollBuilddata = function scrollBuilddata (wrapperNode) {
@@ -181,10 +223,12 @@ frontend.addEventListeners = function addEventListeners () {
 	htmlNodes.buttons.showbuilddata.addEventListener('click', () => {
 		htmlNodes.divs.builddata.style.display = "block";
 		htmlNodes.buttons.showbuilddata.style.display = "none";
+		htmlNodes.buttons.hidebuilddata.style.display = "block";
 	});
 	htmlNodes.buttons.hidebuilddata.addEventListener('click', () => {
 		htmlNodes.divs.builddata.style.display = "none";
 		htmlNodes.buttons.showbuilddata.style.display = "block";
+		htmlNodes.buttons.hidebuilddata.style.display = "none";
 	});
 	htmlNodes.buttons.useofficialnames.addEventListener('click', function() {
 		htmlNodes.textareas.builddata.value = brmt.builder.buildDataToString(
@@ -228,17 +272,43 @@ frontend.addEventListeners = function addEventListeners () {
 		);
 	});
 	htmlNodes.divs.teamselect.innerHTML = cache.teams.map( team => {
-		let teamHtml = brmt.htmloutput.makeIconGallery(team, team, cache.iconConfig);
+		let teamHtml = brmt.htmloutput.makeIconGallery(team, cache.build, team, cache.iconConfig);
 		return `<button>${teamHtml}</button>`;
 	}).join("");
 	htmlNodes.divs.teamselect.childNodes.forEach(
 		(node, index) => node.addEventListener('click', () => {
 			cache.team = cache.teams[index];
-			let buttons = brmt.htmloutput.makeIconGallery(cache.team, cache.team, cache.iconConfig);
-			htmlNodes.buttons.team.innerHTML = buttons || "(press to select)";
 			frontend.rebuild();
 		})
 	);
+	
+	// Controls for Pokemon Search
+	htmlNodes.inputs.search.addEventListener('input', () => {
+		frontend.markSearchResults();
+		if (!htmlNodes.inputs.search.value)
+			htmlNodes.inputs.search.blur();
+	});
+	document.addEventListener('keydown', (e) => {
+		if (document.activeElement === htmlNodes.textareas.builddata)
+			return;
+		
+		if (e.keyCode === 40) {              // arrow key up
+			window.scrollBy(0, 50)
+			htmlNodes.inputs.search.blur();
+		} else if (e.keyCode === 38) {       // arrow key down
+			window.scrollBy(0, -50)
+			htmlNodes.inputs.search.blur();
+		} else if (e.keyCode === 13) {       // enter key
+			let firstResult = htmlNodes.divs.threatlist.querySelector('.imageWrapper.searchresult');
+			if (!firstResult)
+				return;
+			
+			frontend.toggleTeammember(firstResult);
+			htmlNodes.inputs.search.value = "";
+			frontend.markSearchResults();
+		} else
+			htmlNodes.inputs.search.focus();
+	});
 };
 
 })();

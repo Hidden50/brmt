@@ -26,11 +26,13 @@ brmt.readIconConfig = htmloutput.readIconConfig = function readIconConfig (build
 	return iconConfig;
 };
 
-htmloutput.brmtIcon = function brmtIcon (pokemon, team, iconConfig, rating) {
+htmloutput.brmtIcon = function brmtIcon (pokemon, build, team, iconConfig, rating) {
 	let {species, set, mouseoverText} = pokemon;
 	let wrapperClass = "imageWrapper";
 	if (team.some( pokemon => pokemon.species === species && pokemon.set === set ))
 		wrapperClass += " onteam";
+	if (!build[pokemon.species] || !build[pokemon.species][pokemon.set])
+		wrapperClass += " notcovered";
 	if (rating !== undefined) {
 		if (rating <= -250000)  wrapperClass += " rating-verysmall";
 		if (rating <= -5000)    wrapperClass += " rating-250000";
@@ -71,23 +73,14 @@ htmloutput.brmtIcon = function brmtIcon (pokemon, team, iconConfig, rating) {
 
 htmloutput.weblink = (imgName) => `./../Serebii__Images/${brmt.aliases.getSpeciesID(imgName)}.png`;
 
-htmloutput.makeIconGallery = function makeIconGallery (pokemonlist, team, iconConfig) {
-	return pokemonlist.map( pokemon => {
-		let scoreDisplay;
-		if (pokemon.score)
-			scoreDisplay = -pokemon.score.team;
-		return htmloutput.brmtIcon(pokemon, team, iconConfig, scoreDisplay);
-	}).join("");
-};
-
-htmloutput.makeCompendiumEntry = function makeCompendiumEntry (build, subject, team, iconConfig) {
+htmloutput.makeCompendiumEntry = function makeCompendiumEntry (pokemon, build, team, iconConfig) {
 	let table = [];
-	for (let mode in build[subject.species][subject.set]) {
+	for (let mode in build[pokemon.species][pokemon.set]) {
 		let targets = [];
-		for (let targetSpecies in build[subject.species][subject.set][mode]) {
-			for (let targetSet in build[subject.species][subject.set][mode][targetSpecies]) {
+		for (let targetSpecies in build[pokemon.species][pokemon.set][mode]) {
+			for (let targetSet in build[pokemon.species][pokemon.set][mode][targetSpecies]) {
 				let target = brmt.tools.makePokemonObject(targetSpecies, targetSet);
-				let A = brmt.aliases.getSetTitle(subject);
+				let A = brmt.aliases.getSetTitle(pokemon);
 				let B = brmt.aliases.getSetTitle(target);
 				if (mode.endsWith("to"))
 					target.mouseoverText = `${A} beats ${B}`;
@@ -95,17 +88,26 @@ htmloutput.makeCompendiumEntry = function makeCompendiumEntry (build, subject, t
 				targets.push(target);
 			}
 		}
-		let gallery = htmloutput.makeIconGallery(targets, team, iconConfig) || "-";
+		let gallery = htmloutput.makeIconGallery(targets, build, team, iconConfig) || "-";
 		table.push( [`${mode}: `, `<span class="${mode.replace(" ", "")}">${gallery}</span>`] );
 	}
-	let image = htmloutput.brmtIcon(subject, team, iconConfig);
-	let text  = brmt.aliases.getSetTitle(subject);
+	let image = htmloutput.brmtIcon(pokemon, build, team, iconConfig);
+	let text  = brmt.aliases.getSetTitle(pokemon);
 	return `${image} <b>${text}</b>` + brmt.tools.makeHtmlTable(table);
 };
 
-htmloutput.makeCompendium = function makeCompendium (build, pokemonlist, team, iconConfig) {
+htmloutput.makeIconGallery = function makeIconGallery (pokemonlist, build, team, iconConfig) {
+	return pokemonlist.map( pokemon => {
+		let scoreDisplay;
+		if (pokemon.score)
+			scoreDisplay = -pokemon.score.team;
+		return htmloutput.brmtIcon(pokemon, build, team, iconConfig, scoreDisplay);
+	}).join("");
+};
+
+htmloutput.makeCompendium = function makeCompendium (pokemonlist, build,  team, iconConfig) {
 	return pokemonlist.map(
-		pokemon => htmloutput.makeCompendiumEntry(build, pokemon, team, iconConfig)
+		pokemon => htmloutput.makeCompendiumEntry(pokemon, build, team, iconConfig)
 	).join("<hr>");
 };
 
