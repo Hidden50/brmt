@@ -171,7 +171,7 @@ Zygarde|dd, GSI, Tangrowth|helmet|Mixed Def, Clefable|un cm|un|Stealth Rock|mg c
 Zygarde|dd, SSI, Tapu Bulu|??, Buzzwole|??, Tangrowth|av
 Zygarde|dd, NSI, Garchomp|scarf, Latios|scarf, Weavile|lo, Kingdra|??, Mamoswine|lo, Greninja|scarf
 
-Zygarde|Coil, GSI, Tangrowth|helmet|Mixed Def, Clefable|un cm|SR|mg cm|un, Landorus-Therian|helmet, Tapu Bulu|??, Scizor-Mega|HP Ice, Heracross-Mega|??
+Zygarde|Coil, GSI, Tangrowth|helmet|Mixed Def, Clefable|un cm|Stealth Rock|mg cm|un, Landorus-Therian|helmet, Tapu Bulu|??, Scizor-Mega|HP Ice, Heracross-Mega|??
 Zygarde|Coil, SSI, Buzzwole|??, Tangrowth|av
 Zygarde|Coil, NSI, Greninja|protean, Garchomp|scarf|sd, Kyurem-Black|z-Ice, Latios|specs|lo, Weavile|lo, Kingdra|??, Mamoswine|lo, Ninetales-Alola|Support, Kyurem|specs, Greninja|scarf, Tapu Lele|specs
 
@@ -361,7 +361,7 @@ Nidoking|lo, SSI, Mantine|def
 Nidoking|lo, NSI, Terrakion|scarf|band, Zygarde|dd|band, Zygarde-10%|cb, Charizard-Mega-X|dd, Hoopa-Unbound|band|specs|scarf|lo, Kyurem-Black|z-Ice, Medicham-Mega, Charizard-Mega-Y|Wallbreaker, Weavile|lo, Kingdra|??, Garchomp|scarf|sd, Greninja|ash, Kabutops|??, Starmie|lo, Manaphy|z tg, Landorus-Therian|Offensive|Double Dance|scarf, Sharpedo-Mega|cleaner, Greninja|protean|scarf, Excadrill|scarf|Offensive Mold Breaker|Sand Rush, Latios|specs|lo|scarf, Keldeo|scarf|specs, Alakazam-Mega|??, Latias|hw, Tapu Lele|scarf|specs|Stall-breaker, Hydreigon|specs, Kyurem|specs, Dugtrio|sash|scarf|Offensive Trapper, Crawdaunt|??, Rotom-Wash|SpD|def
 
 Heracross-Mega|??, GSI, Clefable|un|un cm
-Heracross-Mega|??, SSI, Skarmory|def, Clefable|SR|mg cm, Toxapex|def, Mimikyu|SD, Tapu Fini|def, Nidoking|lo
+Heracross-Mega|??, SSI, Skarmory|def, Clefable|Stealth Rock|mg cm, Toxapex|def, Mimikyu|SD, Tapu Fini|def, Nidoking|lo
 Heracross-Mega|??, NSI, Hoopa-Unbound|band|specs|lo, Charizard-Mega-X|dd|Bulky, Pinsir-Mega|SD, Tornadus-Therian|lo|av, Latios|specs, Tapu Lele|specs|scarf|Stall-breaker, Alakazam-Mega|??, Volcarona, Heatran, Charizard-Mega-Y|Wallbreaker, Togekiss|Stallbreaker, Talonflame|SD
 
 Zapdos|3 Atks, GSI, Kyurem-Black|z-Ice, Charizard-Mega-X|dd|Bulky, Latios|lo|specs, Mamoswine|lo, Tyranitar|band|scarf, Latias|hw, Clefable|un cm|mg cm, Chansey, Blissey|cm, Gastrodon|SpD, Kyurem|specs, Hippowdon|def, Quagsire|curse, Swampert-Mega|??
