@@ -16,12 +16,15 @@ The different files and what they do
  - `htmloutput.js` formats the results as html
  - `brmtconfig.js` contains the default configuration for several settings, such as the scores assigned to the six compendium categories during rating
  - `brmttools.js` contains utility functions used by files in `/brmt/`
+ 
 `/js/userinterface/`:
  - `eventlisteners.js` controls the behavior of the html elements in `index.html`
  - `ui.js` controls the various UI meta-features such as threatlist and popups
  - `uitools.js` contains utility functions used by files in `/userinterface/`
+ 
 `/js/`:
  - `tools.js` contains utility functions used by all files
+ 
 general:
  - `index.html` is the main file for this project. It specifies what other files a browser should load and contains the basic layout of the website
  - `index.css` contains style information that specifies how index.html should be displayed
