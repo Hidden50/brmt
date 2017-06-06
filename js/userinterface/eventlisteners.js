@@ -99,7 +99,7 @@ listeners.init = function init () {
 			ui.toggleTeammember(firstResult);
 			htmlNodes.inputs.search.value = "";
 			ui.threatlistFindPokemon(htmlNodes.inputs.search.value);
-		} else
+		} else if (e.keyCode === 8 || e.keyCode >= 65 && e.keyCode <= 90)
 			htmlNodes.inputs.search.focus();
 	});
 };
