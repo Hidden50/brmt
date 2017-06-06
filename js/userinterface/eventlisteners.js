@@ -96,8 +96,7 @@ listeners.init = function init () {
 			if (!firstResult)
 				return;
 			
-			ui.toggleTeammember(firstResult);
-			htmlNodes.inputs.search.value = "";
+			ui.toggleTeammember(brmt.aliases.parseSetTitle(firstResult.title).subject);
 			ui.threatlistFindPokemon(htmlNodes.inputs.search.value);
 		} else if (e.keyCode === 8 || e.keyCode >= 65 && e.keyCode <= 90)
 			htmlNodes.inputs.search.focus();

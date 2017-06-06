@@ -60,6 +60,7 @@ ui.toggleTeammember = function toggleTeammember (pokemon) {
 		return true;
 	});
 	if (!deleted) cache.team.push(pokemon);
+	htmlNodes.inputs.search.value = "";
 	ui.rebuildThreatlist();
 };
 
