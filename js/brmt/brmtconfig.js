@@ -1,5 +1,11 @@
-window.brmt = window.brmt || {};
+window.project = window.project || {};
+window.brmt = project.brmt = project.brmt || {};
 brmt.config = {};
+
+// shortcuts to the module's main functions
+brmt.buildChecksCompendium = brmt.builder.buildChecksCompendium;
+brmt.getThreatlist         = brmt.teamrater.getThreatlist;
+brmt.readIconConfig        = brmt.htmloutput.readIconConfig;
 
 brmt.config.modeWeights = {
 	"GSI":   10000,

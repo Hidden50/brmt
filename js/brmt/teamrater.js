@@ -1,6 +1,7 @@
 (function(){
 
-window.brmt = window.brmt || {};
+window.project = window.project || {};
+window.brmt = project.brmt = project.brmt || {};
 let teamrater = brmt.teamrater = {};
 
 let countTargetSpecies = teamrater.countTargetSpecies = function countTargetSpecies (build, subject, mode) {
@@ -42,7 +43,7 @@ teamrater.scoreSpecies = function scoreSpecies (build, subject, team, evaluator)
 	));
 };
 
-brmt.getThreatlist = teamrater.getThreatlist = function getThreatlist (build, team) {
+teamrater.getThreatlist = function getThreatlist (build, team) {
 	// make an array with the species ID and set ID of every pokemon in the compendium
 	let threats = [];
 	for (let species in build) {

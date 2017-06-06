@@ -1,9 +1,10 @@
 (function(){
 
-window.brmt = window.brmt || {};
+window.project = window.project || {};
+window.brmt = project.brmt = project.brmt || {};
 let builder = brmt.builder = {};
 
-brmt.buildChecksCompendium = builder.buildChecksCompendium = function buildChecksCompendium (buildData) {
+builder.buildChecksCompendium = function buildChecksCompendium (buildData) {
 	let build = {};
 	for (let line of buildData) {
 		let [subject, mode, ...targets] = line;

@@ -1,9 +1,12 @@
 (function(){
 
-window.brmt = window.brmt || {};
+window.project = window.project || {};
+window.brmt = project.brmt = project.brmt || {};
 let htmloutput = brmt.htmloutput = {};
 
-brmt.readIconConfig = htmloutput.readIconConfig = function readIconConfig (buildData) {
+htmloutput.weblink = (imgName) => `./Serebii__Images/${brmt.aliases.getSpeciesID(imgName)}.png`;
+
+htmloutput.readIconConfig = function readIconConfig (buildData) {
 	let iconConfig = {};
 	for (let line of buildData) {
 		let [subject, config, data] = line;
@@ -71,8 +74,6 @@ htmloutput.brmtIcon = function brmtIcon (pokemon, build, team, iconConfig, ratin
 	return `<span title="${mouseoverText}" class="${wrapperClass}">${image}${icon}${letters}${rating}</span>`;
 };
 
-htmloutput.weblink = (imgName) => `./Serebii__Images/${brmt.aliases.getSpeciesID(imgName)}.png`;
-
 htmloutput.makeCompendiumEntry = function makeCompendiumEntry (pokemon, build, team, iconConfig) {
 	let table = [];
 	for (let mode in build[pokemon.species][pokemon.set]) {
@@ -93,7 +94,7 @@ htmloutput.makeCompendiumEntry = function makeCompendiumEntry (pokemon, build, t
 	}
 	let image = htmloutput.brmtIcon(pokemon, build, team, iconConfig);
 	let text  = brmt.aliases.getSetTitle(pokemon);
-	return `${image} <b>${text}</b>` + brmt.tools.makeHtmlTable(table);
+	return `${image} <b>${text}</b>` + project.tools.makeHtmlTable(table);
 };
 
 htmloutput.makeIconGallery = function makeIconGallery (pokemonlist, build, team, iconConfig) {
