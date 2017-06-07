@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>gen7 brmt</title>
+	<title>brmt</title>
 	<meta charset="utf-8">
 	<base target="_blank">
 	<script src="./js/tools.js"></script>
@@ -15,27 +15,40 @@
 	<script src="./js/userinterface/uitools.js"></script>
 	<script src="./js/userinterface/eventlisteners.js"></script>
 	<script src="./js/userinterface/ui.js"></script>
-	<script src="./compendiums/OUcc.js"></script>
-	<link  href="./index.css" rel="stylesheet">
+	<script src="./compendiums/gen7OU.js"></script>
+	<script src="./compendiums/gen6OU.js"></script>
+	<link  href="./style/index.css" rel="stylesheet">
+	<link  href="./style/imagewrapper.css" rel="stylesheet">
 </head>
 
 <body>
 
-<h2 style="float: left">OU Weakness Checker (BreakMyTeam)</h2>
+<h2 style="float: left">Team Weakness Finder (BreakMyTeam)</h2>
 
-<button id="button_showobjectinspector">Inspect Project</button>
-<button id="button_threatlistconfig">Configure Threatlist</button>
-<button id="button_showbuilddata">Show Builddata</button>
-<button id="button_hidebuilddata" style="display:none">Hide Builddata</button>
+<div class="mainmenu">
+	<div id="div_team">
+		<b>Team</b>
+		<button id="button_team">(press to select)</button>
+	</div>
 
-<div id="div_search" style="float:right">
-	<b>Search</b>
-	<input id="input_search" type="text">
-</div>
+	<div id="div_search">
+		<b>Search</b>
+		<input id="input_search" type="text">
+	</div>
 
-<div id="div_team" style="float:right">
-	<b>Team</b>
-	<button id="button_team">(press to select)</button>
+	<div class="mainmenu">
+		<button id="button_showbuilddata">Show Builddata</button>
+		<button id="button_threatlistconfig">Configure Threatlist</button>
+		<button id="button_showobjectinspector">Inspect Project</button>
+		<button id="button_hidebuilddata" style="display:none">Hide Builddata</button>
+		<br>
+		<label for="select_checkscompendium">Resource:</label>
+		<br>
+		<select id="select_checkscompendium">
+			<option value="gen7OU" selected>Gen7 OU Checks Compendium by dk</option>
+			<option value="gen6OU">Gen6 OU Checks Compendium by Orda-Y</option>
+		</select>
+	</div>
 </div>
 
 <div id="div_builddata" style="display:none">
@@ -46,15 +59,15 @@
 </div>
 
 <div style="float:left">
-	<h3 style="display:inline-block">Threatlist</h3>
+	<h3>Threatlist</h3>
 	<div id="div_threatlist"></div>
 </div>
 
 <div ID="div_threatlistconfig" onmouseleave="this.style.display = 'none'">
 	<b>Threatlist</b>
 	<br>
-	<input type="radio" id="radio_threatlistconfig_species" name="radiogroup_threatlistconfig" value="species" disabled>
-	<label for="radio_threatlistconfig_species"><s>Show as Pok&eacute;mon species</s></label>
+	<input type="radio" id="radio_threatlistconfig_species" name="radiogroup_threatlistconfig" value="species">
+	<label for="radio_threatlistconfig_species">Show as Pok&eacute;mon species</label>
 	<br>
 	<input type="radio" id="radio_threatlistconfig_sets" name="radiogroup_threatlistconfig" value="sets" checked>
 	<label for="radio_threatlistconfig_sets">Show as Pok&eacute;mon sets</label>
