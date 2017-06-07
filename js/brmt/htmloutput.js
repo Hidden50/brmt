@@ -32,7 +32,7 @@ htmloutput.readIconConfig = function readIconConfig (buildData) {
 htmloutput.brmtIcon = function brmtIcon (pokemon, build, team, iconConfig, rating) {
 	let {species, set, mouseoverText} = pokemon;
 	let wrapperClass = "imageWrapper";
-	if (team.some( pokemon => pokemon.species === species && pokemon.set === set ))
+	if (team.some( teammember => teammember.species === pokemon.species && teammember.set === pokemon.set ))
 		wrapperClass += " onteam";
 	if (!build[pokemon.species] || !build[pokemon.species][pokemon.set])
 		wrapperClass += " notcovered";
@@ -48,12 +48,12 @@ htmloutput.brmtIcon = function brmtIcon (pokemon, build, team, iconConfig, ratin
 		mouseoverText = brmt.aliases.getSetTitle(pokemon);
 	
 	// is there a config for this set?
-	let {image, icon, letters} = iconConfig[species] && iconConfig[species][set] || {};
+	let {image, icon, letters} = iconConfig[pokemon.species] && iconConfig[pokemon.species][set] || {};
 	// inherit unspecified config elements from the species
-	if (iconConfig[species] && iconConfig[species]["?"]) {
-		if (letters === undefined) letters = iconConfig[species]["?"].letters;
-		image = image || iconConfig[species]["?"].image;
-		icon =  icon  || iconConfig[species]["?"].icon;
+	if (iconConfig[pokemon.species] && iconConfig[pokemon.species]["?"]) {
+		if (letters === undefined) letters = iconConfig[pokemon.species]["?"].letters;
+		image = image || iconConfig[pokemon.species]["?"].image;
+		icon =  icon  || iconConfig[pokemon.species]["?"].icon;
 	}
 	// inherit still unspecified config elements from the set
 	// for example, all |cb sets may have been set to have a choice band icon
@@ -63,7 +63,14 @@ htmloutput.brmtIcon = function brmtIcon (pokemon, build, team, iconConfig, ratin
 		icon =  icon  || iconConfig[set].icon;
 	}
 	// label the icon with its set name, unless there's a mini icon
-	if (letters === undefined) letters = icon ? "" : set;
+	if (letters === undefined) {
+		if (icon)
+			letters = "";
+		else if (set === "species")
+			letters = "";
+		else
+			letters = set;
+	}
 	
 	// generate html output
 	letters = `<span class='textWrapper'>${letters}</span>`;
@@ -75,6 +82,16 @@ htmloutput.brmtIcon = function brmtIcon (pokemon, build, team, iconConfig, ratin
 };
 
 htmloutput.makeCompendiumEntry = function makeCompendiumEntry (pokemon, build, team, iconConfig) {
+	if (pokemon.set === "species") {
+		return Object.keys( build[pokemon.species] ).map( set =>
+			htmloutput.makeCompendiumEntry(
+				brmt.tools.makePokemonObject(pokemon.species, set),
+				build,
+				team,
+				iconConfig
+			)
+		).join("<hr>");
+	}
 	let table = [];
 	for (let mode in build[pokemon.species][pokemon.set]) {
 		let targets = [];

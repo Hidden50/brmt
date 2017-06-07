@@ -10,7 +10,7 @@ cache.teams = brmt.config.getTeamStorage();
 window.onload = ui.init = function init () {
 	htmlNodes.register( ...document.querySelectorAll("[id]") );  // register all html nodes that have an id
 	
-	htmlNodes.textareas.builddata.value = brmt.compendiums.OUcc;
+	htmlNodes.textareas.builddata.value = brmt.compendiums.gen7OU;
 	
 	ui.rebuildThreatlist();
 	ui.listeners.init();
@@ -18,23 +18,23 @@ window.onload = ui.init = function init () {
 
 ui.rebuildThreatlist = function rebuildThreatlist () {
 	// read input configuration
-	let threatlistmode = document.querySelector('input[name="radiogroup_threatlistconfig"]:checked').value;
+	let threatlisttype = document.querySelector('input[name="radiogroup_threatlistconfig"]:checked').value;
 	
 	// calculate results
 	let buildData  = cache.buildData  = brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value );
 	let team       = cache.team;
 	
 	let build      = cache.build      = brmt.buildChecksCompendium(buildData);
-	let threatlist = cache.threatlist = brmt.getThreatlist(build, team);
+	let threatlist = cache.threatlist = brmt.getThreatlist(build, team, threatlisttype);
 	let iconConfig = cache.iconConfig = brmt.readIconConfig(buildData);
 	
 
 	let teamGallery = brmt.htmloutput.makeIconGallery(cache.team, cache.build, cache.team, cache.iconConfig);
 	htmlNodes.buttons.team.innerHTML = teamGallery || "(press to select)";
 	
-	switch (threatlistmode) {
+	switch (threatlisttype) {
 		case "species": {
-			// todo: implement species threatlist
+			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, build, team, iconConfig);
 			break;
 		}
 		case "sets": {

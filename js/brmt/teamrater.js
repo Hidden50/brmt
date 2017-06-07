@@ -27,7 +27,9 @@ let countTeamChecks = teamrater.countTeamChecks = function countTeamChecks (buil
 };
 
 teamrater.scoreSet = function scoreSet (build, subject, team, evaluator) {
-	// returns the weighted sum over an evaluator, for the given set
+// returns the weighted sum over an evaluator, for the given set
+	if (subject.set === "species")
+		return teamrater.scoreSpecies(build, subject, team, evaluator);
 	let sum = 0;
 	if (["GSI","SSI","NSI"].every( mode => countTargetSpecies(build, subject, mode) === 0 ))
 		sum = 500000;
@@ -38,17 +40,21 @@ teamrater.scoreSet = function scoreSet (build, subject, team, evaluator) {
 
 teamrater.scoreSpecies = function scoreSpecies (build, subject, team, evaluator) {
 	// the score of a species is that of its most threatening set
-	return Math.min(...Object.keys(build[subject.species]).map(
-		set => teamrater.scoreSet( build, { "species": subject.species, "set": set }, team, evaluator )
+	return Math.min( ...Object.keys(build[subject.species] ).map(
+		set => teamrater.scoreSet( build, brmt.tools.makePokemonObject(subject.species, set), team, evaluator )
 	));
 };
 
-teamrater.getThreatlist = function getThreatlist (build, team) {
-	// make an array with the species ID and set ID of every pokemon in the compendium
+teamrater.getThreatlist = function getThreatlist (build, team, type) {
+	// make an array with the species ID and set ID of every threat
 	let threats = [];
 	for (let species in build) {
-		for (let set in build[species])
-			threats.push({ "species": species, "set": set });
+		if (type === "species")
+			threats.push( brmt.tools.makePokemonObject(species, "species") );
+		else {
+			for (let set in build[species])
+				threats.push( brmt.tools.makePokemonObject(species, set) );
+		}
 	}
 	
 	// attach scores to every one of these {species, set} combinations
@@ -57,8 +63,8 @@ teamrater.getThreatlist = function getThreatlist (build, team) {
 		// use countTargetSpecies over countTargetSets to avoid overrespresenting checks that have many sets..
 		// .. going by set usage would be even better
 		threat.score.species  = teamrater.scoreSpecies(build, threat, team, countTargetSpecies);
-		threat.score.set      = teamrater.scoreSet(build, threat, team, countTargetSpecies);
-		threat.score.team     = teamrater.scoreSet(build, threat, team, countTeamChecks);
+		threat.score.set      = teamrater.scoreSet    (build, threat, team, countTargetSpecies);
+		threat.score.team     = teamrater.scoreSet    (build, threat, team, countTeamChecks   );
 	}
 	
 	// sort the array based on the above scoring functions

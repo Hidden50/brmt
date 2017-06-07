@@ -1,7 +1,7 @@
 window.brmt = window.brmt || {};
 brmt.compendiums = brmt.compendiums || {};
 
-brmt.compendiums.OUcc =
+brmt.compendiums.gen7OU =
 `Starmie|lo, GSI, Chansey
 Starmie|lo, SSI, Greninja|protean|ash, Ferrothorn|main, Tangrowth|av, Hoopa-Unbound|scarf, Latios|scarf|specs|lo, Latias|hw, Slowking|cm
 Starmie|lo, NSI, Landorus-Therian|scarf, Hoopa-Unbound|band|specs|lo, Kyurem-Black|z-Ice, Scolipede|Waterium Z SD, Tyranitar|scarf, Weavile|lo, Sharpedo-Mega|cleaner, Gyarados-Mega|dd, Muk-Alola|av, Kyurem|specs, Magneton|scarf, Blissey|cm, Sceptile-Mega|??
@@ -210,6 +210,8 @@ Buzzwole|??, GSI, Landorus-Therian|helmet, Charizard-Mega-Y|Wallbreaker, Skarmor
 Buzzwole|??, SSI, Landorus-Therian|scarf|Double Dance|Offensive, Tapu Fini|def, Pinsir-Mega|SD, Sableye-Mega, Salamence|Flyinium Z DD, Volcarona, Clefable|mg cm|Stealth Rock|un cm|un, Tornadus-Therian|lo, Toxapex|def, Zapdos|def|3 Atks, Gliscor|def, Pelipper|def, Mantine|def, Togekiss|Stallbreaker, Azumarill|??, Primarina|specs, Shedinja|Wall
 Buzzwole|??, NSI, Charizard-Mega-X|Bulky|dd, Latios|scarf|specs|lo, Latias|hw, Starmie|lo, Kyurem|specs, Tapu Koko|scarf
 
+Porygon-Z|z conv electric, icon, normaliumz
+Porygon-Z|z conv electric, letters, el conv
 Porygon-Z|z conv electric, GSI, Venusaur-Mega|??, Chansey, Clefable|un cm|un, Quagsire|curse, Shedinja|Wall
 Porygon-Z|z conv electric, SSI, Ferrothorn|main, Marowak-Alola|??
 Porygon-Z|z conv electric, NSI, Landorus-Therian|scarf, Garchomp|scarf, Dugtrio|scarf|sash, Kingdra|??
@@ -377,13 +379,13 @@ Sceptile-Mega|??, NSI, Greninja|scarf, Garchomp|scarf, Gengar|scarf, Pinsir-Mega
 
 Manectric-Mega|??, GSI, Kyurem-Black|z-Ice, Tyranitar|band|scarf, Swampert-Mega|??, Latias|hw, Venusaur-Mega|??, Chansey, Blissey|cm, Quagsire|curse, Gastrodon|SpD, Hippowdon|def, Seismitoad|def, Kyurem|specs, Dragalge|t-spike
 Manectric-Mega|??, SSI, Latios|specs|lo|scarf, Mamoswine|lo, Charizard-Mega-X|dd|Bulky, Tangrowth|av
-Manectric-Mega|??, NSI, Garchomp|scarf, Landorus-Therian|scarf, Excadrill|scarf|sand|SpD, Hydreigon|specs, Dugtrio|sash|scarf, Hoopa-Unbound|specs|band|scarf|lo, Zygarde|coil|dd|band
+Manectric-Mega|??, NSI, Garchomp|scarf, Landorus-Therian|scarf, Excadrill|scarf|Sand Rush|SpD, Hydreigon|specs, Dugtrio|sash|scarf, Hoopa-Unbound|specs|band|scarf|lo, Zygarde|coil|dd|band
 
 Tyranitar-Mega|DD, GSI, Keldeo|scarf|specs, Skarmory|def, Quagsire|curse, Tangrowth|helmet|Mixed Def, Hippowdon|def
 Tyranitar-Mega|DD, SSI, Kartana|SD, Terrakion|scarf, Landorus-Therian|helmet, Zygarde|dd|coil|band, Scizor-Mega|HP Ice|SD, Garchomp|helmet, Ferrothorn|main
 Tyranitar-Mega|DD, NSI, Gengar|scarf, Rotom-Wash|def, Dugtrio|sash
 
-Tapu Koko|scarf, GSI, Kyurem-Black|z-Ice, Excadrill|scarf|Mold Breaker|Sand Rush|SpD, Mamoswine|lo, Swampert-Mega|??, Magnezone|?, Tangrowth|Mixed Def, Hippowdon|def, Ferrothorn|main, Blissey|cm, Chansey, Quagsire|curse, Gastrodon|SpD, Seismitoad|def
+Tapu Koko|scarf, GSI, Kyurem-Black|z-Ice, Excadrill|scarf|Offensive Mold Breaker|Sand Rush|SpD, Mamoswine|lo, Swampert-Mega|??, Magnezone|?, Tangrowth|Mixed Def, Hippowdon|def, Ferrothorn|main, Blissey|cm, Chansey, Quagsire|curse, Gastrodon|SpD, Seismitoad|def
 Tapu Koko|scarf, SSI, Charizard-Mega-X|dd|Bulky, Tyranitar|band|scarf, Venusaur-Mega|??, Tangrowth|av|helmet
 Tapu Koko|scarf, NSI, Garchomp|scarf|SD|helmet, Tapu Bulu|??, Landorus-Therian|Double Dance|Offensive|scarf|helmet, Latios|specs|lo|scarf, Zygarde|dd|band|coil, Nidoking|lo, Latias|hw, Amoonguss|def, Dugtrio|sash, Tyranitar-Mega|DD
 
@@ -447,9 +449,6 @@ Landorus-Therian|Double Dance, letters, DD
 Landorus-Therian|Offensive, letters, Off
 Magearna|Shift Gear, icon, steeliumz
 
-Porygon-Z, icon, normaliumz
-Porygon-Z|z conv electric, letters, el conv
-Porygon-Z|z conv ghost, letters, ghst
 Salamence|Flyinium Z DD, icon, flyiniumz
 Scolipede|Waterium Z SD, icon, wateriumz
 
@@ -461,6 +460,4 @@ Thundurus|Offensive, letters, Off
 Xurkitree|z-elec, icon, electriumz
 Xurkitree|z-elec, letters, z-elec
 
-Ferrothorn|main, icon, leftovers
-
-Chansey, icon, eviolite`;
+Ferrothorn|main, icon, leftovers`;

@@ -1,0 +1,61 @@
+div.mainmenu {
+	float:right;
+}
+
+#div_search,
+#div_team {
+	display:        inline-block;
+	vertical-align: top;
+	margin:         20px;
+	margin-top:      0px;
+}
+#input_search {
+	display:     block;
+}
+label[for="select_checkscompendium"] {
+	font-size:8pt;
+}
+
+#div_threatlistconfig,
+#div_teamselect,
+#div_popup {
+	background-color: white;
+	border:           4px solid Black;
+	position:         absolute;
+	display:          none;
+	padding:          15px;
+	margin:           5px;
+}
+
+button {
+	margin: 3px;
+}
+input[type=radio],
+button,
+label {
+	cursor: pointer;
+}
+
+#div_teamselect > button,
+#button_team {
+	min-width:  220px;
+	height:     41px;
+	display:    block;
+	font-size:  7pt;
+	color:      grey;
+}
+
+#textarea_builddata {
+	min-height:  100px;
+	min-width:   97vw;
+	max-width:   97vw;
+}
+
+.objectinspector tr {
+	vertical-align: top;
+	margin:         1px;
+}
+.objectinspector pre {
+	display:        inline-block;
+	margin:         0px;
+}

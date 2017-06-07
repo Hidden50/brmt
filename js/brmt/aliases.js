@@ -19,6 +19,8 @@ aliases.getOfficialname = function getOfficialname (speciesID) {
 };
 
 aliases.getSetTitle = function getSetTitle (pokemon) {
+	if (pokemon.set === "species")
+		return aliases.getOfficialname(pokemon.species);
 	return `${aliases.getOfficialname(pokemon.species)} (${pokemon.set})`;
 };
 
@@ -26,13 +28,17 @@ aliases.parseSetTitle = function parseSetTitle (title) {
 	// parse one of the following titles:
 	// (1) `${species} (${set}) beats ${species2} (${set2})`
 	// (2) `${species2} (${set2})`
+	// (3) `${species2}`
 	
-	let titleRegex = /^([^()]*) \(([^()]*)\)(?: beats ([^()]*) \(([^()]*)\))?$/;
+	let titleRegex = /^([^()]*)(?: \(([^()]*)\)(?: beats ([^()]*) \(([^()]*)\))?)?$/;
 	let [, targetSpecies, targetSet, subjectSpecies, subjectSet] = title.match(titleRegex);
 	
-	// in case 2 we need to swap the results
+	// in case 2 and 3 we need to swap the results
 	if (!subjectSpecies)
 		[subjectSpecies, subjectSet, targetSpecies, targetSet] = [targetSpecies, targetSet, "", ""];
+	// return "species" instead of undefined for species2 in 3
+	if (subjectSet === undefined)
+		subjectSet = "species";
 	
 	return {
 		"subject": brmt.tools.makePokemonObject(subjectSpecies, subjectSet),
