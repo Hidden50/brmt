@@ -14,7 +14,7 @@ listeners.addClassListeners = function addClassListeners (parentNode, className,
 };
 
 listeners.init = function init () {
-	// Controls the Build Data textarea
+	// Controls for the Builddata textarea
 	htmlNodes.buttons.showbuilddata.addEventListener('click', () => {
 		htmlNodes.divs.builddata.style.display = "block";
 		htmlNodes.buttons.showbuilddata.style.display = "none";
@@ -74,6 +74,12 @@ listeners.init = function init () {
 			ui.rebuildThreatlist();
 		})
 	);
+	
+	// Controls for Compendium selection
+	htmlNodes.selects.checkscompendium.addEventListener('change', () =>{
+		htmlNodes.textareas.builddata.value = brmt.compendiums[htmlNodes.selects.checkscompendium.value];
+		ui.rebuildThreatlist();
+	});
 	
 	// Controls for Pokemon Search
 	htmlNodes.inputs.search.addEventListener('input', () => {
