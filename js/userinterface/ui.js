@@ -11,14 +11,21 @@ window.onload = ui.init = function init () {
 	htmlNodes.register( ...document.querySelectorAll("[id]") );  // register all html nodes that have an id
 	
 	htmlNodes.textareas.builddata.value = brmt.compendiums.gen7OU;
+	ui.cache.threatlistmode = "suggestions";
 	
 	ui.rebuildThreatlist();
+	ui.rebuildTeams();
 	ui.listeners.init();
 };
 
 ui.rebuildThreatlist = function rebuildThreatlist () {
 	// read input configuration
 	let threatlisttype = document.querySelector('input[name="radiogroup_threatlistconfig"]:checked').value;
+	
+	if (ui.cache.threatlistmode === "wallit")
+		brmt.config.weights = [    0,   0, 0, -11, -7, -3];
+	else
+		brmt.config.weights = [10000, 100, 2, -11, -7, -3];
 	
 	// calculate results
 	let buildData  = cache.buildData  = brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value );
@@ -27,10 +34,6 @@ ui.rebuildThreatlist = function rebuildThreatlist () {
 	let build      = cache.build      = brmt.buildChecksCompendium(buildData);
 	let threatlist = cache.threatlist = brmt.getThreatlist(build, team, threatlisttype);
 	let iconConfig = cache.iconConfig = brmt.readIconConfig(buildData);
-	
-
-	let teamGallery = brmt.htmloutput.makeIconGallery(cache.team, cache.build, cache.team, cache.iconConfig);
-	htmlNodes.buttons.team.innerHTML = teamGallery || "(press to select)";
 	
 	switch (threatlisttype) {
 		case "species": {
@@ -47,7 +50,30 @@ ui.rebuildThreatlist = function rebuildThreatlist () {
 		}
 	}
 	ui.threatlistFindPokemon(htmlNodes.inputs.search.value);
-	ui.listeners.addClassListeners( htmlNodes.divs.threatlist, "imageWrapper", 'click', ui.showEntry );
+	if (ui.cache.threatlistmode === "suggestions") {
+		ui.listeners.addClassListeners( htmlNodes.divs.threatlist, "imageWrapper", 'click', node =>
+			ui.toggleTeammember( brmt.aliases.parseSetTitle(node.title).subject )
+		);
+	} else {
+		ui.listeners.addClassListeners( htmlNodes.divs.threatlist, "imageWrapper", 'click', node => ui.showEntry(node) );
+	}
+};
+
+ui.rebuildTeams = function rebuildTeams() {
+	let teamGallery = brmt.htmloutput.makeIconGallery(cache.team, cache.build, cache.team, cache.iconConfig);
+	htmlNodes.divs.team.innerHTML = teamGallery || "(please select from below)";
+	ui.listeners.addClassListeners( htmlNodes.divs.team, "imageWrapper", 'click',
+		node => ui.toggleTeammember( brmt.aliases.parseSetTitle(node.title).subject )
+	);
+	htmlNodes.divs.teamselect.innerHTML = ui.cache.teams.map( team => {
+		let teamHtml = brmt.htmloutput.makeIconGallery(team, ui.cache.build, team, ui.cache.iconConfig);
+		return `<button class="team">${teamHtml}</button>`;
+	}).join("");
+	ui.listeners.addClassListeners( htmlNodes.divs.teamselect, "team", 'click', (node, index) => {
+		ui.cache.team = ui.cache.teams[index];
+		ui.rebuildThreatlist();
+		ui.rebuildTeams();
+	});
 };
 
 ui.toggleTeammember = function toggleTeammember (pokemon) {
@@ -62,6 +88,7 @@ ui.toggleTeammember = function toggleTeammember (pokemon) {
 	if (!deleted) cache.team.push(pokemon);
 	htmlNodes.inputs.search.value = "";
 	ui.rebuildThreatlist();
+	ui.rebuildTeams();
 };
 
 ui.scrollBuilddataFindEntry = function scrollBuilddataFindEntry (subject, target) {
@@ -107,12 +134,9 @@ ui.showEntry = function showEntry (caller, pokemon) {
 		htmlNodes.divs.popup,
 		brmt.htmloutput.makeCompendiumEntry(pokemon, cache.build, cache.team, cache.iconConfig)
 	);
-	ui.listeners.addClassListeners(
-		htmlNodes.divs.popup,
-		"imageWrapper",
-		'click',
+	ui.listeners.addClassListeners( htmlNodes.divs.popup, "imageWrapper", 'click',
 		wrapperNode => {
-		// add team member. Display corresponding build data instead, if the user is editing it
+		// add team member, or reveal build data if the user is editing it
 			let {subject, target} = brmt.aliases.parseSetTitle(wrapperNode.title);
 			
 			if (htmlNodes.divs.builddata.style.display !== "none")
