@@ -31,16 +31,18 @@ teamrater.scoreSet = function scoreSet (build, subject, team, evaluator) {
 	if (subject.set === "species")
 		return teamrater.scoreSpecies(build, subject, team, evaluator);
 	let sum = 0;
-	if (["GSI","SSI","NSI"].every( mode => countTargetSpecies(build, subject, mode) === 0 ))
-		sum = 500000;
+	if (brmt.config.weights[0] || brmt.config.weights[1] || brmt.config.weights[2]) {
+		if (["GSI","SSI","NSI"].every( mode => countTargetSpecies(build, subject, mode) === 0 ))
+			sum = -500000;
+	}
 	for (let m = 0; m < brmt.config.siModes.length; m++)
-		sum += brmt.config.weights[m] * evaluator(build, subject, brmt.config.siModes[m], team);
+		sum -= brmt.config.weights[m] * evaluator(build, subject, brmt.config.siModes[m], team);
 	return sum;
 };
 
 teamrater.scoreSpecies = function scoreSpecies (build, subject, team, evaluator) {
 	// the score of a species is that of its most threatening set
-	return Math.min( ...Object.keys(build[subject.species] ).map(
+	return Math.max( ...Object.keys(build[subject.species] ).map(
 		set => teamrater.scoreSet( build, brmt.tools.makePokemonObject(subject.species, set), team, evaluator )
 	));
 };
@@ -69,10 +71,10 @@ teamrater.getThreatlist = function getThreatlist (build, team, type) {
 	
 	// sort the array based on the above scoring functions
 	threats = threats.sort( (a,b) =>
-		    ( a.score.team         - b.score.team         )  // sort by team specific set rating
-		 || ( a.score.species      - b.score.species      )  // sort by species rating if tied
-		 || ( a.species.hashCode() - b.species.hashCode() )  // group by species if still tied
-		 || ( a.score.set          - b.score.set          )  // sort by set rating within that group
+		    ( b.score.team         - a.score.team         )  // sort by team specific set rating
+		 || ( b.score.species      - a.score.species      )  // sort by species rating if tied
+		 || ( b.species.hashCode() - a.species.hashCode() )  // group by species if still tied
+		 || ( b.score.set          - a.score.set          )  // sort by set rating within that group
 	);
 	
 	return threats;

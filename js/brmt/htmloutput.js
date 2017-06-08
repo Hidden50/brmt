@@ -115,12 +115,9 @@ htmloutput.makeCompendiumEntry = function makeCompendiumEntry (pokemon, build, t
 };
 
 htmloutput.makeIconGallery = function makeIconGallery (pokemonlist, build, team, iconConfig) {
-	return pokemonlist.map( pokemon => {
-		let scoreDisplay;
-		if (pokemon.score)
-			scoreDisplay = -pokemon.score.team;
-		return htmloutput.brmtIcon(pokemon, build, team, iconConfig, scoreDisplay);
-	}).join("");
+	return pokemonlist.map( pokemon =>
+		htmloutput.brmtIcon(pokemon, build, team, iconConfig, pokemon.score && pokemon.score.team)
+	).join("");
 };
 
 htmloutput.makeCompendium = function makeCompendium (pokemonlist, build,  team, iconConfig) {
