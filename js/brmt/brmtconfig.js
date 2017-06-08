@@ -36,7 +36,7 @@ chansey, alomomola|def
 tangrowth|av, heatran|?, scizor-mega|SD, greninja|protean, landorus-therian|Offensive, nihilego|scarf
 nihilego|scarf, venusaur-mega|??, hydreigon|specs, greninja|ash, bronzong|def, tapu lele|Stall-breaker
 celesteela|SpD, venusaur-mega|??, landorus-therian|Offensive, nihilego|scarf, keldeo|specs, tapu lele|Stall-breaker
-tapu koko|??, metagross-mega|Breaker, landorus-therian|Offensive, keldeo|scarf, gengar|lo, tangrowth|av
+tapu koko|?, metagross-mega|Breaker, landorus-therian|Offensive, keldeo|scarf, gengar|lo, tangrowth|av
 dugtrio|sash, skarmory|def, sableye-mega|?, blissey|cm, amoonguss|def, pyukumuku|curse
 greninja|protean, tapu lele|Stall-breaker, heatran|?, amoonguss|def, landorus-therian|scarf, buzzwole|??
 `;
