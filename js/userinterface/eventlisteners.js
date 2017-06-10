@@ -111,6 +111,10 @@ listeners.init = function init () {
 			);
 			node.parentNode.classList.add('active');
 			ui.cache.threatlistmode = toId(node.title);
+			htmlNodes.divs.threatlist.classList.remove("suggestions");
+			htmlNodes.divs.threatlist.classList.remove("breakit");
+			htmlNodes.divs.threatlist.classList.remove("wallit");
+			htmlNodes.divs.threatlist.classList.add(ui.cache.threatlistmode);
 			ui.rebuildThreatlist();
 			e.preventDefault();
 		})

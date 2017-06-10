@@ -41,33 +41,60 @@
 	width:            48px;
 	height:           48px;
 	margin:           3px;
+	border:           2px solid navy;
 }
-#div_threatlist > .imageWrapper.onteam {
-	border: 2px dashed darkblue !important;
-}
+
 #div_threatlist > .imageWrapper.rating-0 {
 	background-color: coral;
-	border: 2px solid navy;
 }
 #div_threatlist > .imageWrapper.rating-50 {
 	background-color: orange;
-	border: 2px solid navy;
 }
 #div_threatlist > .imageWrapper.rating-5000 {
 	background-color: powderblue;
-	border: 2px solid navy;
 }
 #div_threatlist > .imageWrapper.rating-250000 {
 	background-color: palegreen;
-	border: 2px solid navy;
 }
 #div_threatlist > .imageWrapper.rating-verysmall {
 	background-color: lightgrey;
-	border: 2px solid navy;
 }
+
+#div_threatlist > .imageWrapper.onteam {
+	border-style: dashed !important;
+}
+
+#div_threatlist.suggestions > .imageWrapper > .ratingWrapper {
+	display: none;
+}
+#div_threatlist.suggestions > .imageWrapper.onteam.rating-50 {
+	background-color: #ffc14d;
+}
+#div_threatlist.suggestions > .imageWrapper.onteam.rating-verysmall {
+	background-color: #e6e6e6;
+}
+
+#div_threatlist.wallit > .imageWrapper.rating-50 {
+	background-color: powderblue;
+}
+
 #div_threatlist > .imageWrapper.searchresult {
-	background-color: lawngreen;
-	border: 2px solid red;
+	background-color: lawngreen !important;
+	border-color: red !important;
+}
+
+.team > .imageWrapper.notcovered:after {
+	content:     'unrated';
+	font-size:   8pt;
+	color:       red;
+	position:    absolute;
+	bottom:      50%;
+	left:        50%;
+	transform:   translate(-50%);
+	width:       52px;
+	text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
+	text-align:  center;
+	line-height: 90%;
 }
 
 span.GSI > .imageWrapper  > .ratingWrapper,
@@ -92,18 +119,4 @@ span.GSIto > .imageWrapper.onteam,
 span.SSIto > .imageWrapper.onteam,
 span.NSIto > .imageWrapper.onteam {
 	border: 1px solid coral;
-}
-
-.team > .imageWrapper.notcovered:after {
-	content:     'unrated';
-	font-size:   8pt;
-	color:       red;
-	position:    absolute;
-	bottom:      50%;
-	left:        50%;
-	transform:   translate(-50%);
-	width:       52px;
-	text-shadow: 1px 0 0 #fff, 0 -1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff;
-	text-align:  center;
-	line-height: 90%;
 }

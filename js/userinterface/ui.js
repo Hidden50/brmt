@@ -22,26 +22,28 @@ ui.rebuildThreatlist = function rebuildThreatlist () {
 	// read input configuration
 	let threatlisttype = document.querySelector('input[name="radiogroup_threatlistconfig"]:checked').value;
 	
-	if (ui.cache.threatlistmode === "wallit")
-		brmt.config.weights = [    0,   0, 0, -11, -7, -3];
-	else
-		brmt.config.weights = [10000, 100, 2, -11, -7, -3];
-	
 	// calculate results
 	let buildData  = cache.buildData  = brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value );
 	let team       = cache.team;
 	
 	let build      = cache.build      = brmt.buildChecksCompendium(buildData);
-	let threatlist = cache.threatlist = brmt.getThreatlist(build, team, threatlisttype);
+	let threatlist;
+	if (ui.cache.threatlistmode === "suggestions") {
+		brmt.config.weights  = [10000, 100, 2, -11, -7, -3];
+		threatlist = cache.threatlist = brmt.getThreatlist(build, [], threatlisttype, ["team", "species", "hashcode", "set"]);
+	} else if (ui.cache.threatlistmode === "breakit") {
+		brmt.config.weights = [10000, 100, 2, -11, -7, -3];
+		threatlist = cache.threatlist = brmt.getThreatlist(build, team, threatlisttype, ["team", "species", "hashcode", "set"]);
+	} else {  // wall it
+		brmt.config.weights = [    0,   0, 0, -11, -7, -3];
+		threatlist = cache.threatlist = brmt.getThreatlist(build, team, threatlisttype, ["team", "species", "hashcode", "set"]);
+	}
 	let iconConfig = cache.iconConfig = brmt.readIconConfig(buildData);
 	
 	switch (threatlisttype) {
-		case "species": {
-			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, build, team, iconConfig);
-			break;
-		}
+		case "species":
 		case "sets": {
-			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, build, team, iconConfig);
+			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, build, team, iconConfig, "team");
 			break;
 		}
 		case "compendium": {

@@ -37,11 +37,13 @@ htmloutput.brmtIcon = function brmtIcon (pokemon, build, team, iconConfig, ratin
 	if (!build[pokemon.species] || !build[pokemon.species][pokemon.set])
 		wrapperClass += " notcovered";
 	if (rating !== undefined) {
-		if (rating <= -250000)  wrapperClass += " rating-verysmall";
-		if (rating <= -5000)    wrapperClass += " rating-250000";
-		else if (rating <= -50) wrapperClass += " rating-5000";
-		else if (rating <= 0)   wrapperClass += " rating-50";
-		else                    wrapperClass += " rating-0";
+		if (rating <= -250000) {
+			wrapperClass += " rating-verysmall";
+			rating += 500000;  // don't display penalty for defensive threats
+		} else if (rating <= -5000) wrapperClass += " rating-250000";
+		else if (rating <= -50)     wrapperClass += " rating-5000";
+		else if (rating <= 0)       wrapperClass += " rating-50";
+		else                        wrapperClass += " rating-0";
 	}
 	
 	if (mouseoverText === undefined)
@@ -114,9 +116,9 @@ htmloutput.makeCompendiumEntry = function makeCompendiumEntry (pokemon, build, t
 	return `${image} <b>${text}</b>` + project.tools.makeHtmlTable(table);
 };
 
-htmloutput.makeIconGallery = function makeIconGallery (pokemonlist, build, team, iconConfig) {
+htmloutput.makeIconGallery = function makeIconGallery (pokemonlist, build, team, iconConfig, scoreMode) {
 	return pokemonlist.map( pokemon =>
-		htmloutput.brmtIcon(pokemon, build, team, iconConfig, pokemon.score && pokemon.score.team)
+		htmloutput.brmtIcon(pokemon, build, team, iconConfig, pokemon.score && pokemon.score[scoreMode])
 	).join("");
 };
 

@@ -47,7 +47,7 @@ teamrater.scoreSpecies = function scoreSpecies (build, subject, team, evaluator)
 	));
 };
 
-teamrater.getThreatlist = function getThreatlist (build, team, type) {
+teamrater.getThreatlist = function getThreatlist (build, team, type, priorities) {
 	// make an array with the species ID and set ID of every threat
 	let threats = [];
 	for (let species in build) {
@@ -62,20 +62,20 @@ teamrater.getThreatlist = function getThreatlist (build, team, type) {
 	// attach scores to every one of these {species, set} combinations
 	for (let threat of threats) {
 		threat.score = {};
-		// use countTargetSpecies over countTargetSets to avoid overrespresenting checks that have many sets..
-		// .. going by set usage would be even better
 		threat.score.species  = teamrater.scoreSpecies(build, threat, team, countTargetSpecies);
 		threat.score.set      = teamrater.scoreSet    (build, threat, team, countTargetSpecies);
 		threat.score.team     = teamrater.scoreSet    (build, threat, team, countTeamChecks   );
+		threat.score.hashcode = threat.species.hashCode();
 	}
 	
 	// sort the array based on the above scoring functions
-	threats = threats.sort( (a,b) =>
-		    ( b.score.team         - a.score.team         )  // sort by team specific set rating
-		 || ( b.score.species      - a.score.species      )  // sort by species rating if tied
-		 || ( b.species.hashCode() - a.species.hashCode() )  // group by species if still tied
-		 || ( b.score.set          - a.score.set          )  // sort by set rating within that group
-	);
+	threats = threats.sort( (a,b) => {
+		for (p of priorities) {
+			if(b.score[p] !== a.score[p])
+				return b.score[p] - a.score[p];
+		}
+		return 0;
+	});
 	
 	return threats;
 };
