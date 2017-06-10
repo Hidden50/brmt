@@ -54,6 +54,12 @@ div.team {
 	border-radius:    5px;
 }
 
+#button_loadteam,
+#button_clearteam {
+	float:     right;
+	font-size: 8px;
+}
+
 #div_builddata {
 	margin-bottom: 18px;
 }

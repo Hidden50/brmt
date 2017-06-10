@@ -57,11 +57,16 @@ listeners.init = function init () {
 	);
 	
 	// Controls for Team Selection
-	htmlNodes.buttons.team.addEventListener('click', () => {
+	htmlNodes.buttons.loadteam.addEventListener('click', () => {
 		ui.showPopup(
-			htmlNodes.buttons.team,
+			htmlNodes.buttons.loadteam,
 			htmlNodes.divs.teamselect
 		);
+	});
+	htmlNodes.buttons.clearteam.addEventListener('click', () => {
+		ui.cache.team = [];
+		ui.rebuildThreatlist();
+		ui.rebuildTeams();
 	});
 	
 	// Controls for Compendium selection
