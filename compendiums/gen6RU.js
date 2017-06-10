@@ -187,4 +187,6 @@ Piloswine, NSI, Exeggutor, Vileplume, Cradily, Trevenant, Gallade, Hitmonlee, Me
 
 Steelix-Mega, GSI, Alomomola, Tangrowth, Slowking, Rotom-Mow, Seismitoad, Jellicent, Poliwrath, Quagsire, Eelektross, Hitmontop, Pelipper, Rotom, Torterra, Ferroseed, Gastrodon, Gourgeist, Weezing, Hariyama, Ludicolo, Mantine, Blastoise, Bronzong
 Steelix-Mega, SSI, Emboar, Flygon, Virizion, Delphox, Scrafty, Gurdurr, Piloswine, Abomasnow-Mega, Qwilfish, Rotom-Fan, Samurott, Durant, Steelix-Mega, Clawitzer
-Steelix-Mega, NSI, Meloetta, Camerupt-Mega, Hitmonlee, Rhyperior, Dugtrio, Exploud, Gallade, Malamar, Sharpedo, Houndoom, Medicham, Sawk, Venusaur`;
+Steelix-Mega, NSI, Meloetta, Camerupt-Mega, Hitmonlee, Rhyperior, Dugtrio, Exploud, Gallade, Malamar, Sharpedo, Houndoom, Medicham, Sawk, Venusaur
+
+?, letters,`;

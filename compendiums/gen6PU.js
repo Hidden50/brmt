@@ -210,4 +210,6 @@ Purugly, NSI, Floatzel, Zebstrika, Kadabra, Machoke, Monferno, Fraxure
 
 Electabuzz, GSI, Roselia, Grumpig, Stunfisk, Clefairy, Lickilicky, Gourgeist, Gogoat, Hippopotas
 Electabuzz, SSI, Tangela, Machoke, Regice, Misdreavus
-Electabuzz, NSI, Floatzel, Stoutland, Rapidash, Ursaring, Fraxure, Leafeon`;
+Electabuzz, NSI, Floatzel, Stoutland, Rapidash, Ursaring, Fraxure, Leafeon
+
+?, letters,`;

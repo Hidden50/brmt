@@ -154,4 +154,6 @@ Cottonee, NSI, Shellder, Doduo, Taillow
 
 Hippopotas, GSI, Snivy, Corphish, Staryu, Cottonee, Chespin, Pumpkaboo, Mienfoo, Koffing, Ferroseed, Foongus, Slowpoke, Shellos, Lileep, Frillish, Tirtouga, Snubbull, Spritzee, Porygon, Munchlax, Hippopotas
 Hippopotas, SSI, Chinchou, Skrelp, Drilbur, Gastly, Vullaby, Timburr, Pancham, Scraggy, Riolu, Amaura, Snover
-Hippopotas, NSI, Gothita, Carvanha`;
+Hippopotas, NSI, Gothita, Carvanha
+
+?, letters,`;
