@@ -27,10 +27,11 @@ ui.rebuildThreatlist = function rebuildThreatlist () {
 	let team       = cache.team;
 	
 	let build      = cache.build      = brmt.buildChecksCompendium(buildData);
+	brmt.config.weights  = [10000, 100, 2, -11, -7, -3];
+	let defaultThreatlist = brmt.getThreatlist(build, [], "sets", ["team", "species", "hashcode", "set"]);
 	let threatlist;
 	if (ui.cache.threatlistmode === "suggestions") {
-		brmt.config.weights  = [10000, 100, 2, -11, -7, -3];
-		threatlist = cache.threatlist = brmt.getThreatlist(build, [], threatlisttype, ["team", "species", "hashcode", "set"]);
+		threatlist = cache.threatlist = defaultThreatlist;
 	} else if (ui.cache.threatlistmode === "breakit") {
 		brmt.config.weights = [10000, 100, 2, -11, -7, -3];
 		threatlist = cache.threatlist = brmt.getThreatlist(build, team, threatlisttype, ["team", "species", "hashcode", "set"]);
@@ -51,7 +52,8 @@ ui.rebuildThreatlist = function rebuildThreatlist () {
 			break;
 		}
 	}
-	ui.threatlistFindPokemon(htmlNodes.inputs.search.value);
+	htmlNodes.divs.searchresults.innerHTML = brmt.htmloutput.makeSetsList(defaultThreatlist, build, team, iconConfig);
+	ui.updateSearchresults(htmlNodes.inputs.search.value);
 	if (ui.cache.threatlistmode === "suggestions") {
 		ui.listeners.addClassListeners( htmlNodes.divs.threatlist, "imageWrapper", 'click', node =>
 			ui.toggleTeammember( brmt.aliases.parseSetTitle(node.title).subject )
@@ -112,8 +114,45 @@ ui.scrollBuilddataFindEntry = function scrollBuilddataFindEntry (subject, target
 	let find2 = ui.tools.scrollTextareaFindText( htmlNodes.textareas.builddata, new RegExp(entryRegex, 'i') );
 };
 
-ui.threatlistFindPokemon = function threatlistFindPokemon (searchText) {
+ui.updateSearchresults = function updateSearchresults (searchText) {
 	let searchRegex = new RegExp(searchText, 'i');
+	
+	if (searchText.length) {
+		// resize main div and display search result div
+		htmlNodes.divs.main.style["margin-right"] = "200px";
+		htmlNodes.divs.searchresults.style.display = "block";
+	} else {
+		htmlNodes.divs.main.style["margin-right"] = "0px";
+		htmlNodes.divs.searchresults.style.display = "none";
+		htmlNodes.selectedSearchResult = null;
+	}
+	
+	// select which search results to show
+	let firstMatch = true;
+	[...htmlNodes.divs.searchresults.firstChild.firstChild.childNodes].forEach( tablerow => {
+		if (searchText && tablerow.firstChild.firstChild.title.match(searchRegex)) {
+			tablerow.classList.add("searchresult");
+			if (tablerow.firstChild.firstChild.classList.contains("onteam"))
+				tablerow.classList.add("onteam");
+			else tablerow.classList.remove("onteam");
+			if (firstMatch) {
+				htmlNodes.selectedSearchResult = tablerow;
+				tablerow.classList.add("selected");
+				firstMatch = false;
+			} else tablerow.classList.remove("selected");
+		} else {
+			tablerow.classList.remove("searchresult");
+		}
+	});
+	
+	// add listeners for clicking on search results
+	ui.listeners.addClassListeners( htmlNodes.divs.searchresults, "searchresult", 'click',
+		tablerow => {
+			return ui.toggleTeammember( brmt.aliases.parseSetTitle(tablerow.firstChild.firstChild.title).subject );
+		}
+	);
+	
+	// mark results in the threatlist
 	[...htmlNodes.divs.threatlist.childNodes].forEach( childNode => {
 		if (!childNode.classList || !childNode.classList.contains("imageWrapper"))
 			return;

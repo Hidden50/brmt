@@ -60,14 +60,11 @@
 	background-color: lightgrey;
 }
 
-#div_threatlist > .imageWrapper.onteam {
-	border-style: dashed !important;
-}
-
 #div_threatlist.suggestions > .imageWrapper > .ratingWrapper {
 	display: none;
 }
-#div_threatlist.suggestions > .imageWrapper.onteam.rating-50 {
+#div_threatlist.suggestions > .imageWrapper.onteam {
+	border-style: dashed !important;
 	background-color: #ffc14d;
 }
 #div_threatlist.suggestions > .imageWrapper.onteam.rating-verysmall {
@@ -83,6 +80,22 @@
 	border-color: red !important;
 }
 
+.team {
+	min-width:     220px;
+	width:         100%;
+	height:        41px;
+	display:       block;
+}
+div.team {
+	display:          flex;
+	justify-content:  center;
+	align-items:      center;
+	border:           1px solid black;
+	background-color: lightgray;
+	color:            gray;
+	font-size:        8pt;
+	border-radius:    5px;
+}
 .team > .imageWrapper.notcovered:after {
 	content:     'unrated';
 	font-size:   8pt;

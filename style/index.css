@@ -2,63 +2,76 @@ body {
 	background: #4a98d3;
 }
 
-.header .menu {
-	float:right;
-}
-.header .menu > div:not(.menu) {
-	display:    inline-block;
-	margin:     20px;
-	margin-top: 0px;
-}
-
-#input_search {
-	display:     block;
-}
-label[for="select_checkscompendium"] {
-	font-size:8pt;
-}
-
-#popup_threatlistconfig,
-#popup_teamselect,
-#popup_main {
-	background-color: white;
-	border:           4px solid Black;
-	position:         absolute;
-	padding:          15px;
-	margin:           5px;
-}
-
-button {
-	margin: 3px;
-}
 input[type=radio],
 button,
 label {
 	cursor: pointer;
 }
 
-.team {
-	min-width:     220px;
-	width:         100%;
-	height:        41px;
-	display:       block;
-}
-div.team {
-	display:          flex;
-	justify-content:  center;
-	align-items:      center;
-	border:           1px solid black;
-	background-color: lightgray;
-	color:            gray;
-	font-size:        8pt;
-	border-radius:    5px;
+/* rules for header elements */
+
+.header .menu {
+	float: right;
 }
 
+.header button {
+	margin: 3px;
+}
+
+.team-container {
+	margin:     20px;
+	margin-top: 0px;
+	display:    inline-block;
+}
 #button_loadteam,
 #button_clearteam {
 	float:     right;
 	font-size: 8px;
 }
+
+.search-container {
+	float:        right;
+	position:     relative;
+	margin-left:  20px;
+	margin-right: 20px;
+}
+#input_search {
+	display:      block;
+	width:        156px;
+	padding:      2px;
+}
+#div_searchresults {
+	background-color: white;
+	position:         absolute;
+	width:            100%;
+}
+#div_searchresults table {
+	width:       100%;
+}
+#div_searchresults tr {
+	display: none;
+}
+#div_searchresults tr.searchresult {
+	display:       block;
+	cursor:        pointer;
+	border-style:  solid;
+	border-color:  navy;
+	border-width:  1px 2px 1px 2px;
+	border-radius: 3px;
+	margin:        1px;
+}
+#div_searchresults tr.searchresult:hover {
+	background-color: #a7cce5 !important;
+}
+#div_searchresults tr.searchresult.selected {
+	background-color: lightblue;
+}
+
+label[for="select_checkscompendium"] {
+	font-size: 8pt;
+}
+
+/* rules for elements in the .main container */
 
 #div_builddata {
 	margin-bottom: 18px;
@@ -68,6 +81,18 @@ div.team {
 	min-height:  100px;
 	min-width:   100%;
 	max-width:   100%;
+}
+
+/* rules for popup containers */
+
+#popup_threatlistconfig,
+#popup_teamselect,
+#popup_main {
+	background-color: white;
+	border:           4px solid Black;
+	position:         absolute;
+	padding:          15px;
+	margin:           5px;
 }
 
 .objectinspector tr {

@@ -78,7 +78,7 @@ listeners.init = function init () {
 	
 	// Controls for Pokemon Search
 	htmlNodes.inputs.search.addEventListener('input', () => {
-		ui.threatlistFindPokemon(htmlNodes.inputs.search.value);
+		ui.updateSearchresults(htmlNodes.inputs.search.value);
 		if (!htmlNodes.inputs.search.value)
 			htmlNodes.inputs.search.blur();
 	});
@@ -88,19 +88,46 @@ listeners.init = function init () {
 		if (e.ctrlKey || e.altKey || e.metaKey)
 			return;
 		
-		if (e.keyCode === 40) {              // arrow key up
-			window.scrollBy(0, 50)
-			htmlNodes.inputs.search.blur();
-		} else if (e.keyCode === 38) {       // arrow key down
-			window.scrollBy(0, -50)
-			htmlNodes.inputs.search.blur();
+		if (e.keyCode === 40) {              // arrow key down
+			if (document.activeElement === htmlNodes.inputs.search) {
+				let node = htmlNodes.selectedSearchResult;
+				while (node) {
+					node = node.nextElementSibling;
+					if (node && node.classList && node.classList.contains("searchresult")) {
+						htmlNodes.selectedSearchResult.classList.remove("selected");
+						htmlNodes.selectedSearchResult = node;
+						node.classList.add("selected");
+						break;
+					}
+				}
+			} else {
+				window.scrollBy(0, 50)
+				htmlNodes.inputs.search.blur();
+			}
+			e.preventDefault();
+		} else if (e.keyCode === 38) {       // arrow key up
+			if (document.activeElement === htmlNodes.inputs.search) {
+				let node = htmlNodes.selectedSearchResult;
+				while (node) {
+					node = node.previousElementSibling;
+					if (node && node.classList && node.classList.contains("searchresult")) {
+						htmlNodes.selectedSearchResult.classList.remove("selected");
+						htmlNodes.selectedSearchResult = node;
+						node.classList.add("selected");
+						break;
+					}
+				}
+			} else {
+				window.scrollBy(0, -50)
+				htmlNodes.inputs.search.blur();
+			}
+			e.preventDefault();
 		} else if (e.keyCode === 13) {       // enter key
-			let firstResult = htmlNodes.divs.threatlist.querySelector('.imageWrapper.searchresult');
-			if (!firstResult)
+			if (!htmlNodes.selectedSearchResult)
 				return;
 			
-			ui.toggleTeammember(brmt.aliases.parseSetTitle(firstResult.title).subject);
-			ui.threatlistFindPokemon(htmlNodes.inputs.search.value);
+			ui.toggleTeammember(brmt.aliases.parseSetTitle(htmlNodes.selectedSearchResult.firstChild.firstChild.title).subject);
+			ui.updateSearchresults(htmlNodes.inputs.search.value);
 		} else if (e.keyCode === 8 || e.keyCode >= 65 && e.keyCode <= 90)
 			htmlNodes.inputs.search.focus();
 	});

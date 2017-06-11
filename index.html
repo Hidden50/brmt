@@ -19,10 +19,10 @@
 	<script src="./compendiums/gen6RU.js"></script>
 	<script src="./compendiums/gen6PU.js"></script>
 	<script src="./compendiums/gen6LC.js"></script>
-	<link  href="./style/index.css" rel="stylesheet">
-	<link  href="./style/brmt.css" rel="stylesheet">
+	<link  href="./style/index.css"    rel="stylesheet">
+	<link  href="./style/brmt.css"     rel="stylesheet">
 	<link  href="./style/tabpages.css" rel="stylesheet">
-	<link  href="./favicon.ico" rel="icon" type="image/x-icon">
+	<link  href="./favicon.ico"        rel="icon" type="image/x-icon">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 <div class="header">
 	<h2 style="float: left">Team Weakness Finder (BreakMyTeam)</h2>
 	<div class="menu">
-		<div>
+		<div class="team-container">
 			<b>Team</b>
 			<button id="button_clearteam">clear</button>
 			<button id="button_loadteam">load</button>
@@ -43,11 +43,10 @@
 				<button id="button_showobjectinspector">Inspect Project</button>
 			</div>
 			<br>
-			<div class="menu">
-				<div>
-					<b>Search</b>
-					<input id="input_search" type="text">
-				</div>
+			<div class="search-container">
+				<b>Search</b>
+				<input id="input_search" type="text" spellcheck="false">
+				<div id="div_searchresults"></div>
 			</div>
 			<div class="menu">
 				<label for="select_checkscompendium">Resource:</label>
@@ -65,7 +64,7 @@
 	</div>
 </div>
 
-<div class="main">
+<div id="div_main" class="main">
 	<div id="div_builddata" style="display:none">
 		<textarea id="textarea_builddata" spellcheck="false"></textarea>
 		<button id="button_useofficialnames">use official names</button>

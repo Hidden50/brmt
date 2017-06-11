@@ -116,6 +116,17 @@ htmloutput.makeCompendiumEntry = function makeCompendiumEntry (pokemon, build, t
 	return `${image} <b>${text}</b>` + project.tools.makeHtmlTable(table);
 };
 
+htmloutput.makeSetsList = function makeSetsList (pokemonlist, build, team, iconConfig) {
+	let table = [];
+	for (let pokemon of pokemonlist) {
+		table.push([
+			htmloutput.brmtIcon(pokemon, build, team, iconConfig),
+			brmt.aliases.getSetTitle(pokemon).replace(" (", "<br>(")
+		]);
+	}
+	return project.tools.makeHtmlTable(table);
+};
+
 htmloutput.makeIconGallery = function makeIconGallery (pokemonlist, build, team, iconConfig, scoreMode) {
 	return pokemonlist.map( pokemon =>
 		htmloutput.brmtIcon(pokemon, build, team, iconConfig, pokemon.score && pokemon.score[scoreMode])
