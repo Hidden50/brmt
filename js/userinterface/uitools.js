@@ -34,13 +34,18 @@ htmlNodes.register = function register (node, ...rest) {
 	if (typeof node === "string")
 		node = document.getElementById(node);
 	
-	let tagClass = node.tagName.toLowerCase();
-	if (tagClass.length > 1)
-		tagClass += "s";      // collection names make more sense in plural
-	let name = node.id.substr(1 + node.id.indexOf("_"));
+	let path = node.id.split("_");
+	let name = path.pop();
 	
-	htmlNodes[tagClass] = htmlNodes[tagClass] || {};
-	htmlNodes[tagClass][name] = node;
+	let el = htmlNodes;
+	for (let p in path) {
+		let key = path[p];
+		if (key.length > 1)
+			key += "s";                // collection names make more sense in plural
+		el = el[key] = el[key] || {};
+	}
+	
+	el[name] = node;
 	
 	if (rest.length)
 		htmlNodes.register(...rest);

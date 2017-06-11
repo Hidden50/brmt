@@ -40,7 +40,7 @@ listeners.init = function init () {
 	htmlNodes.buttons.showobjectinspector.addEventListener('click', () => {
 		ui.showPopup(
 			htmlNodes.buttons.showobjectinspector,
-			htmlNodes.divs.popup,
+			htmlNodes.popups.main,
 			"Object Inspector:<div class='objectinspector'>" + project.tools.jsObjectToHtml(project, 1) + "</div>"
 		);
 	});
@@ -49,7 +49,7 @@ listeners.init = function init () {
 	htmlNodes.buttons.threatlistconfig.addEventListener('click', () => {
 		ui.showPopup(
 			htmlNodes.buttons.threatlistconfig,
-			htmlNodes.divs.threatlistconfig
+			htmlNodes.popups.threatlistconfig
 		);
 	});
 	[...document.querySelectorAll('input[name="radiogroup_threatlistconfig"]')].forEach(
@@ -60,7 +60,7 @@ listeners.init = function init () {
 	htmlNodes.buttons.loadteam.addEventListener('click', () => {
 		ui.showPopup(
 			htmlNodes.buttons.loadteam,
-			htmlNodes.divs.teamselect
+			htmlNodes.popups.teamselect
 		);
 	});
 	htmlNodes.buttons.clearteam.addEventListener('click', () => {

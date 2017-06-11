@@ -67,11 +67,11 @@ ui.rebuildTeams = function rebuildTeams() {
 	ui.listeners.addClassListeners( htmlNodes.divs.team, "imageWrapper", 'click',
 		node => ui.toggleTeammember( brmt.aliases.parseSetTitle(node.title).subject )
 	);
-	htmlNodes.divs.teamselect.innerHTML = ui.cache.teams.map( team => {
+	htmlNodes.popups.teamselect.innerHTML = ui.cache.teams.map( team => {
 		let teamHtml = brmt.htmloutput.makeIconGallery(team, ui.cache.build, team, ui.cache.iconConfig);
 		return `<button class="team">${teamHtml}</button>`;
 	}).join("");
-	ui.listeners.addClassListeners( htmlNodes.divs.teamselect, "team", 'click', (node, index) => {
+	ui.listeners.addClassListeners( htmlNodes.popups.teamselect, "team", 'click', (node, index) => {
 		ui.cache.team = ui.cache.teams[index];
 		ui.rebuildThreatlist();
 		ui.rebuildTeams();
@@ -133,10 +133,10 @@ ui.showEntry = function showEntry (caller, pokemon) {
 	
 	ui.showPopup(
 		caller,
-		htmlNodes.divs.popup,
+		htmlNodes.popups.main,
 		brmt.htmloutput.makeCompendiumEntry(pokemon, cache.build, cache.team, cache.iconConfig)
 	);
-	ui.listeners.addClassListeners( htmlNodes.divs.popup, "imageWrapper", 'click',
+	ui.listeners.addClassListeners( htmlNodes.popups.main, "imageWrapper", 'click',
 		wrapperNode => {
 		// add team member, or reveal build data if the user is editing it
 			let {subject, target} = brmt.aliases.parseSetTitle(wrapperNode.title);
