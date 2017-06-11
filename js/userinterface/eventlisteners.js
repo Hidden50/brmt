@@ -85,6 +85,8 @@ listeners.init = function init () {
 	document.addEventListener('keydown', (e) => {
 		if (document.activeElement === htmlNodes.textareas.builddata)
 			return;
+		if (e.ctrlKey || e.altKey || e.metaKey)
+			return;
 		
 		if (e.keyCode === 40) {              // arrow key up
 			window.scrollBy(0, 50)
