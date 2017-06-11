@@ -43,7 +43,7 @@ tools.jsObjectToHtml = function jsObjectToHtml (Obj, debth=0) {
 			return `<pre>${sourcecode}</pre>`;
 		return `<details${open}><summary><pre>${sourcecode.replace(/\r?\n/, "</pre></summary><pre>")}</pre></details>`;
 	}
-	if (typeof Obj !== "object") {
+	if (Obj === null || typeof Obj !== "object") {
 		let Str = tools.escapeHTML(JSON.stringify(Obj));
 		if (Str.length < 120)
 			return Str;
