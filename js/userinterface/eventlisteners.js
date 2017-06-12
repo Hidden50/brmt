@@ -109,7 +109,7 @@ listeners.init = function init () {
 	htmlNodes.inputs.search.addEventListener('input', e => {
 		if (!htmlNodes.inputs.search.value)
 			htmlNodes.inputs.search.blur();
-		else ui.updateSearchresults(htmlNodes.inputs.search.value);
+		ui.updateSearchresults(htmlNodes.inputs.search.value);
 		return listeners.preventPropagation(e);
 	});
 	htmlNodes.inputs.search.addEventListener('focus', e => {
@@ -138,7 +138,7 @@ listeners.init = function init () {
 						htmlNodes.selectedSearchResult.classList.remove("selected");
 						htmlNodes.selectedSearchResult = node;
 						node.classList.add("selected");
-						if (!project.tools.isVisibleDOMElement(node))
+						if (!ui.tools.isVisibleDOMElement(node))
 							node.scrollIntoView();
 						break;
 					}
@@ -159,7 +159,7 @@ listeners.init = function init () {
 						htmlNodes.selectedSearchResult.classList.remove("selected");
 						htmlNodes.selectedSearchResult = node;
 						node.classList.add("selected");
-						if (!project.tools.isVisibleDOMElement(node))
+						if (!ui.tools.isVisibleDOMElement(node))
 							node.scrollIntoView();
 						break;
 					}
