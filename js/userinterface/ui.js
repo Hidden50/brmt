@@ -106,7 +106,7 @@ ui.updateSearchresults = function updateSearchresults (searchText) {
 	
 	if (searchText.length || document.activeElement === htmlNodes.inputs.search) {
 		// resize main div and display search result div
-		htmlNodes.divs.main.style["margin-right"] = "200px";
+		htmlNodes.divs.main.style["margin-right"] = "240px";
 		htmlNodes.divs.searchresults.style.display = "block";
 	} else {
 		htmlNodes.divs.main.style["margin-right"] = "0px";
