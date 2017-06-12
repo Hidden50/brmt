@@ -46,7 +46,9 @@ label {
 	width:            100%;
 }
 #div_searchresults table {
-	width:       100%;
+	table-layout: fixed;
+	box-sizing:   border-box;
+	width:        100%;
 }
 #div_searchresults tr {
 	display: none;
