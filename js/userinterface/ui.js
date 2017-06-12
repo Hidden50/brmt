@@ -52,7 +52,13 @@ ui.rebuildThreatlist = function rebuildThreatlist () {
 			break;
 		}
 	}
+	
 	htmlNodes.divs.searchresults.innerHTML = brmt.htmloutput.makeSetsList(defaultThreatlist, build, team, iconConfig);
+	// add listeners for clicking on search results
+	ui.listeners.addClassListeners( htmlNodes.divs.searchresults, "tr", 'click',
+		tablerow => ui.toggleTeammember( brmt.aliases.parseSetTitle(tablerow.firstChild.firstChild.title).subject )
+	);
+	
 	ui.updateSearchresults(htmlNodes.inputs.search.value);
 	if (ui.cache.threatlistmode === "suggestions") {
 		ui.listeners.addClassListeners( htmlNodes.divs.threatlist, "imageWrapper", 'click', node =>
@@ -95,6 +101,47 @@ ui.toggleTeammember = function toggleTeammember (pokemon) {
 	ui.rebuildTeams();
 };
 
+ui.updateSearchresults = function updateSearchresults (searchText) {
+	let searchRegex = new RegExp(searchText, 'i');
+	
+	if (searchText.length || document.activeElement === htmlNodes.inputs.search) {
+		// resize main div and display search result div
+		htmlNodes.divs.main.style["margin-right"] = "200px";
+		htmlNodes.divs.searchresults.style.display = "block";
+	} else {
+		htmlNodes.divs.main.style["margin-right"] = "0px";
+		htmlNodes.divs.searchresults.style.display = "none";
+	}
+	
+	htmlNodes.selectedSearchResult = null;
+	// select which search results to show
+	let firstMatch = true;
+	[...htmlNodes.divs.searchresults.firstChild.firstChild.childNodes].forEach( tablerow => {
+		if (tablerow.firstChild.firstChild.title.match(searchRegex)) {
+			tablerow.classList.add("searchresult");
+			if (tablerow.firstChild.firstChild.classList.contains("onteam"))
+				tablerow.classList.add("onteam");
+			else tablerow.classList.remove("onteam");
+			if (firstMatch) {
+				htmlNodes.selectedSearchResult = tablerow;
+				tablerow.classList.add("selected");
+				firstMatch = false;
+			} else tablerow.classList.remove("selected");
+		} else {
+			tablerow.classList.remove("searchresult");
+		}
+	});
+	
+	// mark results in the threatlist
+	[...htmlNodes.divs.threatlist.childNodes].forEach( childNode => {
+		if (!childNode.classList || !childNode.classList.contains("imageWrapper"))
+			return;
+		if (searchText && childNode.title.match(searchRegex))
+			childNode.classList.add("searchresult");
+		else childNode.classList.remove("searchresult");
+	});
+};
+
 ui.scrollBuilddataFindEntry = function scrollBuilddataFindEntry (subject, target) {
 	let searchword  = subject.species;
 	let searchword2 = target.species;
@@ -112,54 +159,6 @@ ui.scrollBuilddataFindEntry = function scrollBuilddataFindEntry (subject, target
 	let find = ui.tools.scrollTextareaFindText( htmlNodes.textareas.builddata, new RegExp(lineRegex, 'i') );
 	if (!find) return;
 	let find2 = ui.tools.scrollTextareaFindText( htmlNodes.textareas.builddata, new RegExp(entryRegex, 'i') );
-};
-
-ui.updateSearchresults = function updateSearchresults (searchText) {
-	let searchRegex = new RegExp(searchText, 'i');
-	
-	if (searchText.length) {
-		// resize main div and display search result div
-		htmlNodes.divs.main.style["margin-right"] = "200px";
-		htmlNodes.divs.searchresults.style.display = "block";
-	} else {
-		htmlNodes.divs.main.style["margin-right"] = "0px";
-		htmlNodes.divs.searchresults.style.display = "none";
-		htmlNodes.selectedSearchResult = null;
-	}
-	
-	// select which search results to show
-	let firstMatch = true;
-	[...htmlNodes.divs.searchresults.firstChild.firstChild.childNodes].forEach( tablerow => {
-		if (searchText && tablerow.firstChild.firstChild.title.match(searchRegex)) {
-			tablerow.classList.add("searchresult");
-			if (tablerow.firstChild.firstChild.classList.contains("onteam"))
-				tablerow.classList.add("onteam");
-			else tablerow.classList.remove("onteam");
-			if (firstMatch) {
-				htmlNodes.selectedSearchResult = tablerow;
-				tablerow.classList.add("selected");
-				firstMatch = false;
-			} else tablerow.classList.remove("selected");
-		} else {
-			tablerow.classList.remove("searchresult");
-		}
-	});
-	
-	// add listeners for clicking on search results
-	ui.listeners.addClassListeners( htmlNodes.divs.searchresults, "searchresult", 'click',
-		tablerow => {
-			return ui.toggleTeammember( brmt.aliases.parseSetTitle(tablerow.firstChild.firstChild.title).subject );
-		}
-	);
-	
-	// mark results in the threatlist
-	[...htmlNodes.divs.threatlist.childNodes].forEach( childNode => {
-		if (!childNode.classList || !childNode.classList.contains("imageWrapper"))
-			return;
-		if (searchText && childNode.title.match(searchRegex))
-			childNode.classList.add("searchresult");
-		else childNode.classList.remove("searchresult");
-	});
 };
 
 ui.showEntry = function showEntry (caller, pokemon) {

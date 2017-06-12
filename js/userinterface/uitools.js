@@ -5,6 +5,44 @@ window.ui = project.ui = project.ui || {};
 window.htmlNodes = ui.htmlNodes = {};
 let tools = ui.tools = {};
 
+tools.isVisibleDOMElement = function isVisibleDOMElement (el) {
+	// source: https://stackoverflow.com/a/1542908
+	if (el.offsetWidth === 0 || el.offsetHeight === 0) return false;
+	
+	let height = document.documentElement.clientHeight;
+	let rects = el.getClientRects();
+	
+	for (let i = 0, l = rects.length; i < l; i++) {
+		let r = rects[i];
+		if (r.top > 0)
+			return r.top <= height;
+		return r.bottom > 0 && r.bottom <= height;
+	}
+	return false;
+}
+
+htmlNodes.register = function register (node, ...rest) {
+	if (typeof node === "string")
+		node = document.getElementById(node);
+	
+	let path = node.id.split("_");
+	let name = path.pop();
+	
+	let el = htmlNodes;
+	for (let p in path) {
+		let key = path[p];
+		if (key.length > 1)
+			key += "s";                // collection names make more sense in plural
+		el = el[key] = el[key] || {};
+	}
+	
+	el[name] = node;
+	
+	if (rest.length)
+		htmlNodes.register(...rest);
+	return node;
+};
+
 tools.scrollTextareaFindText = function scrollTextareaFindText (ta, regex) {
 // basic Ctrl + F behavior
 // selects the next match from the current position, wraps around when it reaches the end
@@ -28,28 +66,6 @@ tools.scrollTextareaFindText = function scrollTextareaFindText (ta, regex) {
 	// mark result for user
 	ta.setSelectionRange(selStart, selEnd);
 	return true;
-};
-
-htmlNodes.register = function register (node, ...rest) {
-	if (typeof node === "string")
-		node = document.getElementById(node);
-	
-	let path = node.id.split("_");
-	let name = path.pop();
-	
-	let el = htmlNodes;
-	for (let p in path) {
-		let key = path[p];
-		if (key.length > 1)
-			key += "s";                // collection names make more sense in plural
-		el = el[key] = el[key] || {};
-	}
-	
-	el[name] = node;
-	
-	if (rest.length)
-		htmlNodes.register(...rest);
-	return node;
 };
 
 })();

@@ -4,18 +4,33 @@ window.project = window.project || {};
 window.ui = project.ui = project.ui || {};
 let listeners = ui.listeners = {};
 
+listeners.preventPropagation = function preventPropagation (domEvent) {
+	// prevent the containing DOM element from receiving this event
+	let evt = domEvent || window.event;
+	
+	if (evt.stopPropagation)
+		evt.stopPropagation();
+	else
+		evt.cancelBubble = true;
+	
+	return false;
+};
+
 listeners.addClassListeners = function addClassListeners (parentNode, className, eventType, listener) {
 	// recursively add listeners to all children, and their children, and so on, who have the specified class
 	[...parentNode.childNodes].forEach( (node, index) => {
-		if (node.classList && node.classList.contains(className))
-			node.addEventListener( eventType, () => listener(node, index) );
+		if ( (node.tagName && node.tagName.toLowerCase() === className) || (node.classList && node.classList.contains(className)) )
+			node.addEventListener( eventType, e => {
+				listener(node, index);
+				return listeners.preventPropagation(e);
+			});
 		addClassListeners(node, className, eventType, listener);
 	});
 };
 
 listeners.init = function init () {
 	// Controls for the Builddata textarea
-	htmlNodes.buttons.showbuilddata.addEventListener('click', () => {
+	htmlNodes.buttons.showbuilddata.addEventListener('click', e => {
 		if (htmlNodes.divs.builddata.style.display === "none") {
 			htmlNodes.divs.builddata.style.display = "block";
 			htmlNodes.buttons.showbuilddata.innerText = "Hide Builddata";
@@ -23,70 +38,96 @@ listeners.init = function init () {
 			htmlNodes.divs.builddata.style.display = "none";
 			htmlNodes.buttons.showbuilddata.innerText = "Show Builddata";
 		}
+		return listeners.preventPropagation(e);
 	});
-	htmlNodes.buttons.useofficialnames.addEventListener('click', function() {
+	htmlNodes.buttons.useofficialnames.addEventListener('click', e => {
 		htmlNodes.textareas.builddata.value = brmt.builder.buildDataToString(
 			brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value ), ", ", "\n", true
 		);
+		return listeners.preventPropagation(e);
 	});
-	htmlNodes.buttons.usespeciesids.addEventListener('click', function() {
+	htmlNodes.buttons.usespeciesids.addEventListener('click', e => {
 		htmlNodes.textareas.builddata.value = brmt.builder.buildDataToString(
 			brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value ), ", ", "\n"
 		);
+		return listeners.preventPropagation(e);
 	});
-	htmlNodes.buttons.build.addEventListener('click', ui.rebuildThreatlist);
+	htmlNodes.buttons.build.addEventListener('click', e => {
+		ui.rebuildThreatlist();
+		return listeners.preventPropagation(e);
+	});
 	
 	// Controls for the Object Inspector
-	htmlNodes.buttons.showobjectinspector.addEventListener('click', () => {
+	htmlNodes.buttons.showobjectinspector.addEventListener('click', e => {
 		ui.showPopup(
 			htmlNodes.buttons.showobjectinspector,
 			htmlNodes.popups.main,
 			"Object Inspector:<div class='objectinspector'>" + project.tools.jsObjectToHtml(project, 1) + "</div>"
 		);
+		return listeners.preventPropagation(e);
 	});
 	
 	// Controls for the Threatlist
-	htmlNodes.buttons.threatlistconfig.addEventListener('click', () => {
+	htmlNodes.buttons.threatlistconfig.addEventListener('click', e => {
 		ui.showPopup(
 			htmlNodes.buttons.threatlistconfig,
 			htmlNodes.popups.threatlistconfig
 		);
+		return listeners.preventPropagation(e);
 	});
 	[...document.querySelectorAll('input[name="radiogroup_threatlistconfig"]')].forEach(
-		radioButton => radioButton.addEventListener('change', ui.rebuildThreatlist)
+		radioButton => radioButton.addEventListener('change', e => {
+			ui.rebuildThreatlist();
+			return listeners.preventPropagation(e);
+		})
 	);
 	
 	// Controls for Team Selection
-	htmlNodes.buttons.loadteam.addEventListener('click', () => {
+	htmlNodes.buttons.loadteam.addEventListener('click', e => {
 		ui.showPopup(
 			htmlNodes.buttons.loadteam,
 			htmlNodes.popups.teamselect
 		);
+		return listeners.preventPropagation(e);
 	});
-	htmlNodes.buttons.clearteam.addEventListener('click', () => {
+	htmlNodes.buttons.clearteam.addEventListener('click', e => {
 		ui.cache.team = [];
 		ui.rebuildThreatlist();
 		ui.rebuildTeams();
+		return listeners.preventPropagation(e);
 	});
 	
 	// Controls for Compendium selection
-	htmlNodes.selects.checkscompendium.addEventListener('change', () =>{
+	htmlNodes.selects.checkscompendium.addEventListener('change', e =>{
 		htmlNodes.textareas.builddata.value = brmt.compendiums[htmlNodes.selects.checkscompendium.value];
 		ui.rebuildThreatlist();
 		ui.rebuildTeams();
+		return listeners.preventPropagation(e);
 	});
 	
 	// Controls for Pokemon Search
-	htmlNodes.inputs.search.addEventListener('input', () => {
-		ui.updateSearchresults(htmlNodes.inputs.search.value);
+	htmlNodes.inputs.search.addEventListener('input', e => {
 		if (!htmlNodes.inputs.search.value)
 			htmlNodes.inputs.search.blur();
+		else ui.updateSearchresults(htmlNodes.inputs.search.value);
+		return listeners.preventPropagation(e);
 	});
-	document.addEventListener('keydown', (e) => {
+	htmlNodes.inputs.search.addEventListener('focus', e => {
+		ui.updateSearchresults(htmlNodes.inputs.search.value);
+		return listeners.preventPropagation(e);
+	});
+	document.body.addEventListener('click', e => {
+		// using on:'blur' with htmlNodes.inputs.search
+		// would lead to undesired results when clicking on a search result
+		// so we are using on:'click' with document.body instead
+		ui.updateSearchresults(htmlNodes.inputs.search.value);
+		return listeners.preventPropagation(e);
+	});
+	document.addEventListener('keydown', e => {
 		if (document.activeElement === htmlNodes.textareas.builddata)
-			return;
+			return listeners.preventPropagation(e);
 		if (e.ctrlKey || e.altKey || e.metaKey)
-			return;
+			return listeners.preventPropagation(e);
 		
 		if (e.keyCode === 40) {              // arrow key down
 			if (document.activeElement === htmlNodes.inputs.search) {
@@ -97,11 +138,15 @@ listeners.init = function init () {
 						htmlNodes.selectedSearchResult.classList.remove("selected");
 						htmlNodes.selectedSearchResult = node;
 						node.classList.add("selected");
+						if (!project.tools.isVisibleDOMElement(node))
+							node.scrollIntoView();
 						break;
 					}
 				}
+				if (!node)
+					window.scrollBy(0, 50);
 			} else {
-				window.scrollBy(0, 50)
+				window.scrollBy(0, 50);
 				htmlNodes.inputs.search.blur();
 			}
 			e.preventDefault();
@@ -114,22 +159,27 @@ listeners.init = function init () {
 						htmlNodes.selectedSearchResult.classList.remove("selected");
 						htmlNodes.selectedSearchResult = node;
 						node.classList.add("selected");
+						if (!project.tools.isVisibleDOMElement(node))
+							node.scrollIntoView();
 						break;
 					}
 				}
+				if (!node)
+					window.scrollBy(0, -50);
 			} else {
-				window.scrollBy(0, -50)
+				window.scrollBy(0, -50);
 				htmlNodes.inputs.search.blur();
 			}
 			e.preventDefault();
 		} else if (e.keyCode === 13) {       // enter key
 			if (!htmlNodes.selectedSearchResult)
-				return;
+				return listeners.preventPropagation(e);
 			
 			ui.toggleTeammember(brmt.aliases.parseSetTitle(htmlNodes.selectedSearchResult.firstChild.firstChild.title).subject);
 			ui.updateSearchresults(htmlNodes.inputs.search.value);
 		} else if (e.keyCode === 8 || e.keyCode >= 65 && e.keyCode <= 90)
 			htmlNodes.inputs.search.focus();
+		return listeners.preventPropagation(e);
 	});
 	
 	// Controls for tab pages
@@ -146,6 +196,7 @@ listeners.init = function init () {
 			htmlNodes.divs.threatlist.classList.add(ui.cache.threatlistmode);
 			ui.rebuildThreatlist();
 			e.preventDefault();
+			return listeners.preventPropagation(e);
 		})
 	);
 };
