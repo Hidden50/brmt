@@ -1,13 +1,14 @@
 /* Style for content tabs                                                                  */
 /* Source: http://inspirationalpixels.com/tutorials/creating-tabs-with-html-css-and-jquery */
 
-.tabs {
+.tabcontainer {
 	width:           100%;
 	display:         inline-block;
 }
 
 .tab-links {
 	margin:          0px;
+	padding:         0px 40px;
 }
 
 .tab-links:after {

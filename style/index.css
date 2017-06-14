@@ -11,34 +11,34 @@ label {
 /* rules for header elements */
 
 .header .menu {
-	float: right;
+	float:            right;
 }
 
 .header button {
-	margin: 3px;
+	margin:           5px;
 }
 
 .team-container {
-	margin:     20px;
-	margin-top: 0px;
-	display:    inline-block;
+	display:          inline-block;
+	margin:           20px;
+	margin-top:       0px;
 }
 #button_loadteam,
 #button_clearteam {
-	float:     right;
-	font-size: 8px;
+	float:            right;
+	font-size:        8px;
 }
 
 .search-container {
-	float:        right;
-	position:     relative;
-	margin-left:  20px;
-	margin-right: 20px;
+	display:          inline-block;
+	position:         relative;
+	margin-left:      20px;
+	margin-right:     20px;
 }
 #input_search {
-	display:      block;
-	width:        196px;
-	padding:      2px;
+	display:          block;
+	width:            196px;
+	padding:          2px;
 }
 #div_searchresults {
 	background-color: white;
@@ -46,21 +46,21 @@ label {
 	width:            100%;
 }
 #div_searchresults table {
-	table-layout: fixed;
-	box-sizing:   border-box;
-	width:        100%;
+	table-layout:     fixed;
+	box-sizing:       border-box;
+	width:            100%;
 }
 #div_searchresults tr {
-	display: none;
+	display:          none;
 }
 #div_searchresults tr.searchresult {
-	display:       block;
-	cursor:        pointer;
-	border-style:  solid;
-	border-color:  navy;
-	border-width:  1px 2px 1px 2px;
-	border-radius: 3px;
-	margin:        1px;
+	display:          block;
+	cursor:           pointer;
+	border-style:     solid;
+	border-color:     navy;
+	border-width:     1px 2px 1px 2px;
+	border-radius:    3px;
+	margin:           1px;
 }
 #div_searchresults tr.searchresult:hover {
 	background-color: #a7cce5 !important;
@@ -70,24 +70,33 @@ label {
 }
 
 label[for="select_checkscompendium"] {
-	font-size: 8pt;
+	font-size:        8pt;
 }
 
 /* rules for elements in the .main container */
+
+.tab-links li.suggestions,
+.tab-links li.wallit,
+.tab-links li.about,
+.tab-links li.builddata {
+	margin-right:  20px;
+}
+.tab-links li.objectinspector {
+	display:       none;
+}
 
 #div_builddata {
 	margin-bottom: 18px;
 }
 #textarea_builddata {
-	box-sizing:  border-box;
-	min-height:  100px;
-	min-width:   100%;
-	max-width:   100%;
+	box-sizing:    border-box;
+	min-height:    100px;
+	min-width:     100%;
+	max-width:     100%;
 }
 
 /* rules for popup containers */
 
-#popup_threatlistconfig,
 #popup_teamselect,
 #popup_main {
 	background-color: white;
@@ -96,12 +105,15 @@ label[for="select_checkscompendium"] {
 	padding:          15px;
 	margin:           5px;
 }
+#popup_teamselect button {
+	margin: 3px;
+}
 
 .objectinspector tr {
-	vertical-align: top;
-	margin:         1px;
+	vertical-align:   top;
+	margin:           1px;
 }
 .objectinspector pre {
-	display:        inline-block;
-	margin:         0px;
+	display:          inline-block;
+	margin:           0px;
 }

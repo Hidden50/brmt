@@ -29,17 +29,14 @@ listeners.addClassListeners = function addClassListeners (parentNode, className,
 };
 
 listeners.init = function init () {
-	// Controls for the Builddata textarea
-	htmlNodes.buttons.showbuilddata.addEventListener('click', e => {
-		if (htmlNodes.divs.builddata.style.display === "none") {
-			htmlNodes.divs.builddata.style.display = "block";
-			htmlNodes.buttons.showbuilddata.innerText = "Hide Builddata";
-		} else {
-			htmlNodes.divs.builddata.style.display = "none";
-			htmlNodes.buttons.showbuilddata.innerText = "Show Builddata";
-		}
-		return listeners.preventPropagation(e);
-	});
+	listeners.initBuilddataTA();
+	listeners.initTeamselection();
+	listeners.initCompendiumSelector();
+	listeners.initPokemonsearch();
+	listeners.initTabpages();
+};
+
+listeners.initBuilddataTA = function initBuilddataTA () {
 	htmlNodes.buttons.useofficialnames.addEventListener('click', e => {
 		htmlNodes.textareas.builddata.value = brmt.builder.buildDataToString(
 			brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value ), ", ", "\n", true
@@ -56,33 +53,9 @@ listeners.init = function init () {
 		ui.rebuildThreatlist();
 		return listeners.preventPropagation(e);
 	});
-	
-	// Controls for the Object Inspector
-	htmlNodes.buttons.showobjectinspector.addEventListener('click', e => {
-		ui.showPopup(
-			htmlNodes.buttons.showobjectinspector,
-			htmlNodes.popups.main,
-			"Object Inspector:<div class='objectinspector'>" + project.tools.jsObjectToHtml(project, 1) + "</div>"
-		);
-		return listeners.preventPropagation(e);
-	});
-	
-	// Controls for the Threatlist
-	htmlNodes.buttons.threatlistconfig.addEventListener('click', e => {
-		ui.showPopup(
-			htmlNodes.buttons.threatlistconfig,
-			htmlNodes.popups.threatlistconfig
-		);
-		return listeners.preventPropagation(e);
-	});
-	[...document.querySelectorAll('input[name="radiogroup_threatlistconfig"]')].forEach(
-		radioButton => radioButton.addEventListener('change', e => {
-			ui.rebuildThreatlist();
-			return listeners.preventPropagation(e);
-		})
-	);
-	
-	// Controls for Team Selection
+};
+
+listeners.initTeamselection = function initTeamselection () {
 	htmlNodes.buttons.loadteam.addEventListener('click', e => {
 		ui.showPopup(
 			htmlNodes.buttons.loadteam,
@@ -96,16 +69,18 @@ listeners.init = function init () {
 		ui.rebuildTeams();
 		return listeners.preventPropagation(e);
 	});
-	
-	// Controls for Compendium selection
+};
+
+listeners.initCompendiumSelector = function initCompendiumSelector () {
 	htmlNodes.selects.checkscompendium.addEventListener('change', e =>{
 		htmlNodes.textareas.builddata.value = brmt.compendiums[htmlNodes.selects.checkscompendium.value];
 		ui.rebuildThreatlist();
 		ui.rebuildTeams();
 		return listeners.preventPropagation(e);
 	});
-	
-	// Controls for Pokemon Search
+};
+
+listeners.initPokemonsearch = function initPokemonsearch () {
 	htmlNodes.inputs.search.addEventListener('input', e => {
 		if (!htmlNodes.inputs.search.value)
 			htmlNodes.inputs.search.blur();
@@ -177,28 +152,51 @@ listeners.init = function init () {
 			
 			ui.toggleTeammember(brmt.aliases.parseSetTitle(htmlNodes.selectedSearchResult.firstChild.firstChild.title).subject);
 			ui.updateSearchresults(htmlNodes.inputs.search.value);
-		} else if (e.keyCode === 8 || e.keyCode >= 65 && e.keyCode <= 90)
+		} else if ((e.keyCode === 8 && htmlNodes.inputs.search.value.length) || (e.keyCode >= 65 && e.keyCode <= 90))
 			htmlNodes.inputs.search.focus();
 		return listeners.preventPropagation(e);
 	});
-	
-	// Controls for tab pages
-	[...document.querySelectorAll('.tabs .tab-links a')].forEach(
-		node => node.addEventListener('click', e => {
-			[...node.parentNode.parentNode.childNodes].forEach(
-				sibling => sibling.classList && sibling.classList.remove('active')
-			);
-			node.parentNode.classList.add('active');
-			ui.cache.threatlistmode = toId(node.title);
-			htmlNodes.divs.threatlist.classList.remove("suggestions");
-			htmlNodes.divs.threatlist.classList.remove("breakit");
-			htmlNodes.divs.threatlist.classList.remove("wallit");
-			htmlNodes.divs.threatlist.classList.add(ui.cache.threatlistmode);
-			ui.rebuildThreatlist();
-			e.preventDefault();
-			return listeners.preventPropagation(e);
-		})
+};
+
+listeners.initTabpages = function initTabpages () {
+	[...document.querySelectorAll('.tabcontainer .tab-links a')].forEach(
+		node => {
+			let [, listID, tabID, contentID] = node.id.split('_');
+			node.addEventListener('click', e => {
+				// make this node's <li> parent the only active one in its list
+				[...node.parentNode.parentNode.childNodes].forEach(
+					listNode => listNode.classList && listNode.classList.remove('active')
+				);
+				node.parentNode.classList.add('active');
+				
+				// make the corresponding tab the only active one in its list
+				[...node.parentNode.parentNode.nextElementSibling.childNodes].forEach(
+					tab => tab.classList && tab.classList.remove('active')
+				);
+				htmlNodes.tabs[listID][tabID].classList.add('active');
+				
+				if (contentID) {
+					// set class to style for dynamic tab content
+					for (cID in htmlNodes.tablinks[listID][tabID])
+						htmlNodes.tabs[listID][tabID].classList.remove(cID);
+					htmlNodes.tabs[listID][tabID].classList.add(contentID);
+				}
+				htmlNodes.tabcontainers[listID].updateDynContent(contentID || "");
+				
+				e.preventDefault();
+				return listeners.preventPropagation(e);
+			});
+		}
 	);
+	htmlNodes.tabcontainers.main.updateDynContent = function updateDynContent(contentID) {
+		ui.rebuildThreatlist(contentID);
+	};
+	htmlNodes.links.objectinspector.addEventListener('click', e => {
+		htmlNodes.tablinks.main.dyncontent.objectinspector.parentNode.style.display = "block";
+		htmlNodes.tablinks.main.dyncontent.objectinspector.click();
+		e.preventDefault();
+		return listeners.preventPropagation(e);
+	});
 };
 
 })();

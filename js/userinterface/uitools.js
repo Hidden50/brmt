@@ -19,7 +19,7 @@ tools.isVisibleDOMElement = function isVisibleDOMElement (el) {
 		return r.bottom > 0 && r.bottom <= height;
 	}
 	return false;
-}
+};
 
 htmlNodes.register = function register (node, ...rest) {
 	if (typeof node === "string")
@@ -27,16 +27,13 @@ htmlNodes.register = function register (node, ...rest) {
 	
 	let path = node.id.split("_");
 	let name = path.pop();
+	if (path.length)
+		path[0] += "s";  // collection names make more sense in plural
 	
 	let el = htmlNodes;
-	for (let p in path) {
-		let key = path[p];
-		if (key.length > 1)
-			key += "s";                // collection names make more sense in plural
-		el = el[key] = el[key] || {};
-	}
-	
-	el[name] = node;
+	for (let p of path)  // create a chain of namespaces
+		el = el[p] = el[p] || {};
+	el[name] = node;     // insert the node at the end of that chain
 	
 	if (rest.length)
 		htmlNodes.register(...rest);

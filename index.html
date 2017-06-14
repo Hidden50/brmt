@@ -28,73 +28,69 @@
 <body>
 
 <div class="header">
-	<h2 style="float: left">Team Weakness Finder (BreakMyTeam)</h2>
-	<div class="menu">
-		<div class="team-container">
-			<b>Team</b>
-			<button id="button_clearteam">clear</button>
-			<button id="button_loadteam">load</button>
-			<div id="div_team" class="team"></div>
-		</div>
-		<div class="menu">
-			<div class="menu">
-				<button id="button_showbuilddata">Show Builddata</button>
-				<button id="button_threatlistconfig">Configure Threatlist</button>
-				<button id="button_showobjectinspector">Inspect Project</button>
-			</div>
-			<br>
-			<div class="search-container">
-				<b>Search</b>
-				<input id="input_search" type="text" spellcheck="false">
-				<div id="div_searchresults"></div>
-			</div>
-			<div class="menu">
-				<label for="select_checkscompendium">Resource:</label>
-				<br>
-				<select id="select_checkscompendium">
-					<option value="gen7OU" selected>Gen7 OU Checks Compendium by dk</option>
-					<option disabled> - - - </option>
-					<option value="gen6OU">Gen6 OU Checks Compendium by Orda-Y</option>
-					<option value="gen6RU">Gen6 RU Checks Compendium by Arifeen</option>
-					<option value="gen6PU">Gen6 PU Checks Compendium by Anty</option>
-					<option value="gen6LC">Gen6 LC Checks Compendium by Trash</option>
-				</select>
-			</div>
-		</div>
+
+<h2 style="float: left">Team Weakness Finder (BreakMyTeam)</h2>
+
+<div class="menu">
+	<div class="team-container">
+		<b>Team</b>
+		<button id="button_clearteam">clear</button>
+		<button id="button_loadteam">load</button>
+		<div id="div_team" class="team"></div>
 	</div>
+	<div style="display: inline-block;">
+		<label for="select_checkscompendium">Resource:</label>
+		<br>
+		<select id="select_checkscompendium">
+			<option value="gen7OU" selected>Gen7 OU Checks Compendium by dk</option>
+			<option disabled> - - - </option>
+			<option value="gen6OU">Gen6 OU Checks Compendium by Orda-Y</option>
+			<option value="gen6RU">Gen6 RU Checks Compendium by Arifeen</option>
+			<option value="gen6PU">Gen6 PU Checks Compendium by Anty</option>
+			<option value="gen6LC">Gen6 LC Checks Compendium by Trash</option>
+		</select>
+	</div>
+	<div class="search-container">
+		<b>Search</b>
+		<input id="input_search" type="text" spellcheck="false">
+		<div id="div_searchresults"></div>
+	</div>
+</div>
+
 </div>
 
 <div id="div_main" class="main">
-	<div id="div_builddata" style="display:none">
-		<textarea id="textarea_builddata" spellcheck="false"></textarea>
-		<button id="button_useofficialnames">use official names</button>
-		<button id="button_usespeciesids">use species ID</button>
-		<button id="button_build">rebuild compendium</button>
-	</div>
-	<div class="tabs">
+	<div class="tabcontainer" id="tabcontainer_main_container">
 		<ul class="tab-links">
-			<li class="active"><a href="#suggestions" title="Suggestions">Add Team Members</a></li>
-			<li><a href="#breakit" title="Break it">Break it</a></li>
-			<li><a href="#wallit" title="Wall it">Wall it</a></li>
+			<li class="suggestions active"><a href="#suggestions" id="tablink_main_dyncontent_suggestions">Team</a></li>
+			<li class="breakit"><a href="#breakit" id="tablink_main_dyncontent_breakit">Break it</a></li>
+			<li class="wallit"><a href="#wallit" id="tablink_main_dyncontent_wallit">Wall it</a></li>
+			<li class="about"><a href="#about" id="tablink_main_about">Q&A</a></li>
+			<li class="compendium"><a href="#compendium" id="tablink_main_dyncontent_compendium">Compendium</a></li>
+			<li class="builddata"><a href="#builddata" id="tablink_main_dyncontent_builddata">Data</a></li>
+			<li class="objectinspector"><a href="#objectinspector" id="tablink_main_dyncontent_objectinspector">Object Inspector</a></li>
 		</ul>
 		<div class="tab-content">
-			<div id="div_threatlist" class="tab active suggestions"></div>
+			<div id="div_builddata" style="display:none">
+				<textarea id="textarea_builddata" spellcheck="false"></textarea>
+				<button id="button_useofficialnames">use official names</button>
+				<button id="button_usespeciesids">use species ID</button>
+				<button id="button_build">rebuild compendium</button>
+			</div>
+			<div id="tab_main_dyncontent" class="tab active suggestions"></div>
+			<div id="tab_main_about" class="tab">
+				<h2>Frequently asked questions:</h2>
+				<p>Q: What is brmt?<br>A: Brmt is a tool for generating threat lists for Pok&eacute;mon Teams. </p>
+				<p>Q: How does it work?<br>A: By going through a list of common answers to common threats. It scores based on the quality and quantity it finds on your team, and sorts the list based on those scores.</p>
+				<p>Q: What do GSI, SSI and NSI stand for?<br>A: They stand for <i>guaranteed switch-in</i>, <i>situational switch-in</i> and <i>non-switch-in</i>. These are the categories traditionally used for expressing how well a Pok&eacute;mon is checked by another.</p>
+				<p>Q: What do the colors mean?<br>A: Colors help you interpret the ratings. Usually green threats are well covered, blues are probably covered, orange threats aren't covered, and red threats also themselves check some of your team members.</p>
+				<p>Q: How do I make a checks compendium?<br>A: The <i>Data</i> tab shows the active compendium's data. Feel free to replace it and test how it works. If you end up making something, note that I can only accept what Smogon's quality control approves.</p>
+				<p>Q: I am interested in programming. Can I see the source code for this project?<br>A: Brmt is open source, the source code can be found on <a target="_blank" href="https://github.com/Hidden50/brmt">Github</a>. There's also a small <a href="#objectinspector" id="link_objectinspector">object inspector</a> for the project, containing the entire javascript source and variables, segmented into name spaces.</p>
+			</div>
 		</div>
 	</div>
 </div>
 
-<div ID="popup_threatlistconfig" style="display:none" onmouseleave="this.style.display = 'none'">
-	<b>Threatlist</b>
-	<br>
-	<input type="radio" id="radio_threatlistconfig_species" name="radiogroup_threatlistconfig" value="species">
-	<label for="radio_threatlistconfig_species">Show as Pok&eacute;mon species</label>
-	<br>
-	<input type="radio" id="radio_threatlistconfig_sets" name="radiogroup_threatlistconfig" value="sets" checked>
-	<label for="radio_threatlistconfig_sets">Show as Pok&eacute;mon sets</label>
-	<br>
-	<input type="radio" id="radio_threatlistconfig_compendium" name="radiogroup_threatlistconfig" value="compendium">
-	<label for="radio_threatlistconfig_compendium">Show as Checks Compendium</label>
-</div>
 <div id="popup_teamselect" style="display:none" onmouseleave="this.style.display = 'none'"></div>
 <div ID="popup_main" style="display:none" onmouseleave="this.style.display = 'none'"></div>
 

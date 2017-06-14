@@ -11,61 +11,91 @@ window.onload = ui.init = function init () {
 	htmlNodes.register( ...document.querySelectorAll("[id]") );  // register all html nodes that have an id
 	
 	htmlNodes.textareas.builddata.value = brmt.compendiums.gen7OU;
-	ui.cache.threatlistmode = "suggestions";
 	
-	ui.rebuildThreatlist();
+	ui.rebuildThreatlist("suggestions");
 	ui.rebuildTeams();
 	ui.listeners.init();
 };
 
-ui.rebuildThreatlist = function rebuildThreatlist () {
-	// read input configuration
-	let threatlisttype = document.querySelector('input[name="radiogroup_threatlistconfig"]:checked').value;
+ui.rebuildThreatlist = function rebuildThreatlist (contentID) {
+	if (contentID === "builddata")
+		htmlNodes.divs.builddata.style.display = "block";
+	else {
+		htmlNodes.divs.builddata.style.display = "none";
+		if (contentID === "")
+			return;
+	}
 	
-	// calculate results
+	ui.cache.threatlistmode = contentID || ui.cache.threatlistmode;
+	
 	let buildData  = cache.buildData  = brmt.builder.stringToBuildData( htmlNodes.textareas.builddata.value );
+	let build      = cache.build      = brmt.buildChecksCompendium(buildData);
+	let iconConfig = cache.iconConfig = brmt.readIconConfig(buildData);
 	let team       = cache.team;
 	
-	let build      = cache.build      = brmt.buildChecksCompendium(buildData);
 	brmt.config.weights  = [10000, 100, 2, -11, -7, -3];
 	let defaultThreatlist = brmt.getThreatlist(build, [], "sets", ["team", "species", "hashcode", "set"]);
-	let threatlist;
-	if (ui.cache.threatlistmode === "suggestions") {
-		threatlist = cache.threatlist = defaultThreatlist;
-	} else if (ui.cache.threatlistmode === "breakit") {
-		brmt.config.weights = [10000, 100, 2, -11, -7, -3];
-		threatlist = cache.threatlist = brmt.getThreatlist(build, team, threatlisttype, ["team", "species", "hashcode", "set"]);
-	} else {  // wall it
-		brmt.config.weights = [    0,   0, 0, -11, -7, -3];
-		threatlist = cache.threatlist = brmt.getThreatlist(build, team, threatlisttype, ["team", "species", "hashcode", "set"]);
-	}
-	let iconConfig = cache.iconConfig = brmt.readIconConfig(buildData);
-	
-	switch (threatlisttype) {
-		case "species":
-		case "sets": {
-			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, build, team, iconConfig, "team");
-			break;
-		}
-		case "compendium": {
-			htmlNodes.divs.threatlist.innerHTML = brmt.htmloutput.makeCompendium (threatlist, build, team, iconConfig);
-			break;
-		}
-	}
-	
 	htmlNodes.divs.searchresults.innerHTML = brmt.htmloutput.makeSetsList(defaultThreatlist, build, team, iconConfig);
 	// add listeners for clicking on search results
 	ui.listeners.addClassListeners( htmlNodes.divs.searchresults, "tr", 'click',
 		tablerow => ui.toggleTeammember( brmt.aliases.parseSetTitle(tablerow.firstChild.firstChild.title).subject )
 	);
-	
 	ui.updateSearchresults(htmlNodes.inputs.search.value);
-	if (ui.cache.threatlistmode === "suggestions") {
-		ui.listeners.addClassListeners( htmlNodes.divs.threatlist, "imageWrapper", 'click', node =>
-			ui.toggleTeammember( brmt.aliases.parseSetTitle(node.title).subject )
-		);
-	} else {
-		ui.listeners.addClassListeners( htmlNodes.divs.threatlist, "imageWrapper", 'click', node => ui.showEntry(node) );
+	
+	let threatlist, threatlisttype;
+	switch (ui.cache.threatlistmode) {
+		case "suggestions": {
+			threatlisttype = "set";
+			brmt.config.weights = [10000, 100, 2, -11, -7, -3];
+			threatlist = cache.threatlist = brmt.getThreatlist(build, [], "sets", ["team", "species", "hashcode", "set"]);
+			htmlNodes.tabs.main.dyncontent.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, build, team, iconConfig, "team");
+			ui.listeners.addClassListeners( htmlNodes.tabs.main.dyncontent, "imageWrapper", 'click', node =>
+				ui.toggleTeammember( brmt.aliases.parseSetTitle(node.title).subject )
+			);
+			break;
+		}
+		case "breakit": {
+			threatlisttype = "set";
+			brmt.config.weights = [10000, 100, 2, -11, -7, -3];
+			threatlist = cache.threatlist = brmt.getThreatlist(build, team, threatlisttype, ["team", "species", "hashcode", "set"]);
+			htmlNodes.tabs.main.dyncontent.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, build, team, iconConfig, "team");
+			ui.listeners.addClassListeners( htmlNodes.tabs.main.dyncontent, "imageWrapper", 'click', node => ui.showEntry(node) );
+			break;
+		}
+		case "wallit": {
+			threatlisttype = "set";
+			brmt.config.weights = [    0,   0, 0, -11, -7, -3];
+			threatlist = cache.threatlist = brmt.getThreatlist(build, team, threatlisttype, ["team", "species", "hashcode", "set"]);
+			htmlNodes.tabs.main.dyncontent.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, build, team, iconConfig, "team");
+			ui.listeners.addClassListeners( htmlNodes.tabs.main.dyncontent, "imageWrapper", 'click', node => ui.showEntry(node) );
+			break;
+		}
+		case "compendium": {
+			threatlisttype = "set";
+			brmt.config.weights = [10000, 100, 2, -11, -7, -3];
+			threatlist = cache.threatlist = brmt.getThreatlist(build, [], threatlisttype, ["team", "species", "hashcode", "set"]);
+			htmlNodes.tabs.main.dyncontent.innerHTML = brmt.htmloutput.makeCompendium (threatlist, build, [], iconConfig);
+			ui.listeners.addClassListeners( htmlNodes.tabs.main.dyncontent, "imageWrapper", 'click', node => ui.showEntry(node) );
+			break;
+		}
+		case "builddata": {
+			threatlisttype = "set";
+			brmt.config.weights = [10000, 100, 2, -11, -7, -3];
+			threatlist = cache.threatlist = brmt.getThreatlist(build, [], "sets", ["species", "hashcode", "set"]);
+			htmlNodes.tabs.main.dyncontent.innerHTML = brmt.htmloutput.makeIconGallery(threatlist, build, [], iconConfig, "species");
+			ui.listeners.addClassListeners( htmlNodes.tabs.main.dyncontent, "imageWrapper", 'click', node => {
+				ui.showEntry(node);
+				let {subject, target} = brmt.aliases.parseSetTitle(node.title);
+				ui.scrollBuilddataFindEntry(subject, target);
+			});
+			htmlNodes.divs.builddata.style.display = "block";
+			break;
+		}
+		case "objectinspector": {
+			htmlNodes.tabs.main.dyncontent.innerHTML =
+				"Object Inspector:<div class='objectinspector'>" + project.tools.jsObjectToHtml(project, 1) + "</div>";
+			
+		}
 	}
 };
 
@@ -133,7 +163,7 @@ ui.updateSearchresults = function updateSearchresults (searchText) {
 	});
 	
 	// mark results in the threatlist
-	[...htmlNodes.divs.threatlist.childNodes].forEach( childNode => {
+	[...htmlNodes.tabs.main.dyncontent.childNodes].forEach( childNode => {
 		if (!childNode.classList || !childNode.classList.contains("imageWrapper"))
 			return;
 		if (searchText && childNode.title.match(searchRegex))
