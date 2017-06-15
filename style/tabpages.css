@@ -44,7 +44,16 @@ li.active a, li.active a:hover {
 	background:      #fff;
 	color:           #4c4c4c;
 }
- 
+
+.tab-links:not(.reveal-hidden) li:not(.active).hidden {
+	display:         none;
+}
+
+.tab-links li.hidden:not(.active) a,
+.tab-links li.hiddentabs:not(.active) a {
+	background:      lightgrey;
+}
+
 .tab-content {
 	padding:         15px;
 	border-radius:   3px;

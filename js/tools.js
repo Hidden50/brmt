@@ -35,10 +35,10 @@ tools.makeHtmlTable = function(rows, cellParams = []) {
 	return `<table>${rows.map(rowMap).join("")}</table>`;
 };
 
-tools.jsObjectToHtml = function jsObjectToHtml (Obj, debth=0) {
+tools.jsObjectToHtml = function jsObjectToHtml (Obj, desc, debth=0) {
 	let open = debth > 0 ? " open" : "";
 	if (typeof Obj === "function") {
-		let sourcecode = tools.escapeHTML(Obj.toString()).replace(/\t/g, "    ");  // tabs are 4 spaces long in my editor
+		let sourcecode = tools.escapeHTML( Obj.toString() ).replace(/\t/g, "    ");  // make tab length consistent: 4 spaces
 		if (!/\r?\n/.test(sourcecode))
 			return `<pre>${sourcecode}</pre>`;
 		return `<details${open}><summary><pre>${sourcecode.replace(/\r?\n/, "</pre></summary><pre>")}</pre></details>`;
@@ -51,20 +51,29 @@ tools.jsObjectToHtml = function jsObjectToHtml (Obj, debth=0) {
 	}
 	let internals = Object.keys(Obj).map(key => [
 		`${tools.escapeHTML(JSON.stringify(key).slice(1,-1))}: `,
-		jsObjectToHtml(Obj[key], debth-1)
+		jsObjectToHtml(Obj[key], desc[key] || {}, debth-1)
 	]);
-//	let totalLength = internals.reduce( (sum, el) => Number(sum) + el[0].length + el[1].length, 0 );
 	
-	if (!internals.length)
-		internals = "";
-//	else if ( Array.isArray(Obj) && (totalLength < 120) )
-//		return tools.escapeHTML(JSON.stringify(Obj));
+	if (!internals.length) {
+		if (Array.isArray(Obj))
+			return "[]";
+		else return "{}";
+	}
+	internals = tools.makeHtmlTable(internals);
+	
+	let summary;
+	if (typeof desc === "string")
+		summary = `<span class="desc">${desc}</span>`;
+	else if (desc.desc)
+		summary = `<span class="desc">${desc.desc}</span>`;
 	else
-		internals = tools.makeHtmlTable(internals);
+		summary = "...";
 	
 	if (Array.isArray(Obj))
-		return internals ? `<details${open}><summary>[...]</summary>${internals}</details>` : "[]";
-	return internals ? `<details${open}><summary>{...}</summary>${internals}</details>` : "{}";
+		summary = `[ <span class="desc-wrapper">${summary} ]</span>`;
+	else summary = `{ <span class="desc-wrapper">${summary} }</span>`;
+	
+	return `<details${open}><summary>${summary}</summary>${internals}</details>`;
 };
 
 })();

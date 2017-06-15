@@ -69,30 +69,28 @@ label {
 	background-color: lightblue;
 }
 
-label[for="select_checkscompendium"] {
+.resource-container {
+	display:          inline-block;
+}
+.resource-container label {
 	font-size:        8pt;
 }
 
 /* rules for elements in the .main container */
 
 .tab-links li.suggestions,
-.tab-links li.wallit,
-.tab-links li.about,
-.tab-links li.builddata {
-	margin-right:  20px;
-}
-.tab-links li.objectinspector {
-	display:       none;
+.tab-links li.wallit {
+	margin-right:     20px;
 }
 
 #div_builddata {
-	margin-bottom: 18px;
+	margin-bottom:    18px;
 }
 #textarea_builddata {
-	box-sizing:    border-box;
-	min-height:    100px;
-	min-width:     100%;
-	max-width:     100%;
+	box-sizing:       border-box;
+	min-height:       100px;
+	min-width:        100%;
+	max-width:        100%;
 }
 
 /* rules for popup containers */
@@ -116,4 +114,16 @@ label[for="select_checkscompendium"] {
 .objectinspector pre {
 	display:          inline-block;
 	margin:           0px;
+}
+.objectinspector summary {
+	white-space:      nowrap;
+	overflow-x:       hidden;
+}
+.objectinspector .desc-wrapper {
+	display:          inline-block;
+	white-space:      normal;
+	vertical-align:   top;
+}
+.objectinspector .desc {
+	color:            orange;
 }

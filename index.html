@@ -14,6 +14,7 @@
 	<script src="./js/userinterface/uitools.js"></script>
 	<script src="./js/userinterface/eventlisteners.js"></script>
 	<script src="./js/userinterface/ui.js"></script>
+	<script src="./js/projectdesc.js"></script>
 	<script src="./compendiums/gen7OU.js"></script>
 	<script src="./compendiums/gen6OU.js"></script>
 	<script src="./compendiums/gen6RU.js"></script>
@@ -38,7 +39,7 @@
 		<button id="button_loadteam">load</button>
 		<div id="div_team" class="team"></div>
 	</div>
-	<div style="display: inline-block;">
+	<div class="resource-container">
 		<label for="select_checkscompendium">Resource:</label>
 		<br>
 		<select id="select_checkscompendium">
@@ -66,9 +67,10 @@
 			<li class="breakit"><a href="#breakit" id="tablink_main_dyncontent_breakit">Break it</a></li>
 			<li class="wallit"><a href="#wallit" id="tablink_main_dyncontent_wallit">Wall it</a></li>
 			<li class="about"><a href="#about" id="tablink_main_about">Q&A</a></li>
-			<li class="compendium"><a href="#compendium" id="tablink_main_dyncontent_compendium">Compendium</a></li>
-			<li class="builddata"><a href="#builddata" id="tablink_main_dyncontent_builddata">Data</a></li>
-			<li class="objectinspector"><a href="#objectinspector" id="tablink_main_dyncontent_objectinspector">Object Inspector</a></li>
+			<li class="compendium hidden"><a href="#compendium" id="tablink_main_dyncontent_compendium">Compendium</a></li>
+			<li class="builddata hidden"><a href="#builddata" id="tablink_main_dyncontent_builddata">Data</a></li>
+			<li class="objectinspector hidden"><a href="#objectinspector" id="tablink_main_dyncontent_objectinspector">Object Inspector</a></li>
+			<li class="hiddentabs"><a href="#hiddentabs" id="tablink_main_dyncontent_hiddentabs">+</a></li>
 		</ul>
 		<div class="tab-content">
 			<div id="div_builddata" style="display:none">

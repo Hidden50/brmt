@@ -9,12 +9,15 @@ cache.teams = brmt.config.getTeamStorage();
 
 window.onload = ui.init = function init () {
 	htmlNodes.register( ...document.querySelectorAll("[id]") );  // register all html nodes that have an id
-	
 	htmlNodes.textareas.builddata.value = brmt.compendiums.gen7OU;
 	
+	ui.listeners.init();
 	ui.rebuildThreatlist("suggestions");
 	ui.rebuildTeams();
-	ui.listeners.init();
+	
+	let contentID = location.hash && location.hash.substr && location.hash.substr(1);
+	if (htmlNodes.tablinks.main.dyncontent[contentID])
+		htmlNodes.tablinks.main.dyncontent[contentID].click();
 };
 
 ui.rebuildThreatlist = function rebuildThreatlist (contentID) {
@@ -93,7 +96,7 @@ ui.rebuildThreatlist = function rebuildThreatlist (contentID) {
 		}
 		case "objectinspector": {
 			htmlNodes.tabs.main.dyncontent.innerHTML =
-				"Object Inspector:<div class='objectinspector'>" + project.tools.jsObjectToHtml(project, 1) + "</div>";
+				"<div class='objectinspector'>" + project.tools.jsObjectToHtml(project, project.tools.projectdesc, 1) + "</div>";
 			
 		}
 	}

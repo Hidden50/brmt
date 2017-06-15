@@ -159,10 +159,16 @@ listeners.initPokemonsearch = function initPokemonsearch () {
 };
 
 listeners.initTabpages = function initTabpages () {
-	[...document.querySelectorAll('.tabcontainer .tab-links a')].forEach(
-		node => {
-			let [, listID, tabID, contentID] = node.id.split('_');
-			node.addEventListener('click', e => {
+	[...document.querySelectorAll('.tabcontainer .tab-links a')].forEach( node => {
+		let [, listID, tabID, contentID] = node.id.split('_');
+		node.addEventListener('click', e => {
+			if (contentID === "hiddentabs") {
+				node.parentNode.parentNode.classList.add('reveal-hidden');
+				node.parentNode.classList.add('active');
+			} else {
+				// hide hidden tabs if previously revealed
+				node.parentNode.parentNode.classList.remove('reveal-hidden');
+				
 				// make this node's <li> parent the only active one in its list
 				[...node.parentNode.parentNode.childNodes].forEach(
 					listNode => listNode.classList && listNode.classList.remove('active')
@@ -176,23 +182,22 @@ listeners.initTabpages = function initTabpages () {
 				htmlNodes.tabs[listID][tabID].classList.add('active');
 				
 				if (contentID) {
-					// set class to style for dynamic tab content
+					// set container class to match contentID so that it can be styled
 					for (cID in htmlNodes.tablinks[listID][tabID])
 						htmlNodes.tabs[listID][tabID].classList.remove(cID);
 					htmlNodes.tabs[listID][tabID].classList.add(contentID);
 				}
 				htmlNodes.tabcontainers[listID].updateDynContent(contentID || "");
-				
-				e.preventDefault();
-				return listeners.preventPropagation(e);
-			});
-		}
-	);
+			}
+			
+			e.preventDefault();
+			return listeners.preventPropagation(e);
+		});
+	});
 	htmlNodes.tabcontainers.main.updateDynContent = function updateDynContent(contentID) {
 		ui.rebuildThreatlist(contentID);
 	};
 	htmlNodes.links.objectinspector.addEventListener('click', e => {
-		htmlNodes.tablinks.main.dyncontent.objectinspector.parentNode.style.display = "block";
 		htmlNodes.tablinks.main.dyncontent.objectinspector.click();
 		e.preventDefault();
 		return listeners.preventPropagation(e);

@@ -21,6 +21,13 @@ tools.isVisibleDOMElement = function isVisibleDOMElement (el) {
 	return false;
 };
 
+tools.appendChildnode = function appendChildnode (parentNode, containerTagName, code) {
+	let container = document.createElement(containerTagName);
+	container.innerHTML = code;
+	parentNode.appendChild(container);
+	return container;
+};
+
 htmlNodes.register = function register (node, ...rest) {
 	if (typeof node === "string")
 		node = document.getElementById(node);
