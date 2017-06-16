@@ -11,6 +11,7 @@ label {
 /* rules for header elements */
 
 .header .menu {
+	margin-bottom:    25px;
 	float:            right;
 }
 
