@@ -89,16 +89,6 @@
 	height:        41px;
 	display:       block;
 }
-div.team {
-	display:          flex;
-	justify-content:  center;
-	align-items:      center;
-	border:           1px solid black;
-	background-color: lightgray;
-	color:            gray;
-	font-size:        8pt;
-	border-radius:    5px;
-}
 .team > .imageWrapper.notcovered:after {
 	content:     'unrated';
 	font-size:   8pt;
