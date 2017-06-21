@@ -121,6 +121,9 @@ label {
 	margin: 3px;
 }
 
+.objectinspector {
+	margin:           15px;
+}
 .objectinspector tr {
 	vertical-align:   top;
 	margin:           1px;
@@ -139,5 +142,5 @@ label {
 	vertical-align:   top;
 }
 .objectinspector .desc {
-	color:            orange;
+	color:            lightgrey;
 }
