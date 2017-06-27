@@ -65,15 +65,17 @@ listeners.initTeamselection = function initTeamselection () {
 	});
 	htmlNodes.buttons.clearteam.addEventListener('click', e => {
 		ui.cache.team = [];
-		ui.rebuildThreatlist();
 		ui.rebuildTeams();
+		let params = ui.config.threatlistParameters[ui.cache.tab];
+		if (params && params.rate.teamSource === "team" || params.display.teamSource === "team")
+			ui.rebuildThreatlist();
 		return listeners.preventPropagation(e);
 	});
 };
 
 listeners.initCompendiumSelector = function initCompendiumSelector () {
 	htmlNodes.selects.checkscompendium.addEventListener('change', e =>{
-		htmlNodes.textareas.builddata.value = brmt.compendiums[htmlNodes.selects.checkscompendium.value];
+		ui.initCompendium( htmlNodes.selects.checkscompendium.value );
 		ui.rebuildThreatlist();
 		ui.rebuildTeams();
 		return listeners.preventPropagation(e);
@@ -187,16 +189,29 @@ listeners.initTabpages = function initTabpages () {
 						htmlNodes.tabs[listID][tabID].classList.remove(cID);
 					htmlNodes.tabs[listID][tabID].classList.add(contentID);
 				}
-				htmlNodes.tabcontainers[listID].updateDynContent(contentID || "");
+				if (htmlNodes.tabcontainers[listID].updateContent)
+					htmlNodes.tabcontainers[listID].updateContent(listID, tabID, contentID || "");
 			}
 			
 			e.preventDefault();
 			return listeners.preventPropagation(e);
 		});
 	});
-	htmlNodes.tabcontainers.main.updateDynContent = function updateDynContent(contentID) {
-		ui.rebuildThreatlist(contentID);
+	
+	htmlNodes.tabcontainers.main.updateContent = function updateContent(listID, tabID, contentID) {
+		location.hash = contentID || tabID;
+		ui.cache.tab = contentID || ui.cache.tab || "suggestions";
+		htmlNodes.divs.builddata.style.display = (contentID === "builddata") ? "block" : "none";
+		if (tabID === "dyncontent") {
+			if (contentID === "objectinspector") {
+				let inspector = project.tools.jsObjectToHtml(project, project.tools.projectdesc, 1);
+				htmlNodes.tabs.main.dyncontent.innerHTML = `<div class='objectinspector'>${inspector}</div>`;
+				return;
+			}
+			ui.rebuildThreatlist();
+		}
 	};
+	
 	htmlNodes.links.objectinspector.addEventListener('click', e => {
 		htmlNodes.tablinks.main.dyncontent.objectinspector.click();
 		e.preventDefault();

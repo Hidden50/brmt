@@ -26,28 +26,28 @@ let countTeamChecks = teamrater.countTeamChecks = function countTeamChecks (buil
 	return sum;
 };
 
-teamrater.scoreSet = function scoreSet (build, subject, team, evaluator) {
+teamrater.scoreSet = function scoreSet (build, subject, team, evaluator, weights) {
 // returns the weighted sum over an evaluator, for the given set
 	if (subject.set === "species")
 		return teamrater.scoreSpecies(build, subject, team, evaluator);
 	let sum = 0;
-	if (brmt.config.weights[0] || brmt.config.weights[1] || brmt.config.weights[2]) {
+	if (weights[0] || weights[1] || weights[2]) {
 		if (["GSI","SSI","NSI"].every( mode => countTargetSpecies(build, subject, mode) === 0 ))
 			sum = -500000;
 	}
-	for (let m = 0; m < brmt.config.siModes.length; m++)
-		sum -= brmt.config.weights[m] * evaluator(build, subject, brmt.config.siModes[m], team);
+	for (let m = 0; m < brmt.tools.siModes.length; m++)
+		sum -= weights[m] * evaluator(build, subject, brmt.tools.siModes[m], team);
 	return sum;
 };
 
-teamrater.scoreSpecies = function scoreSpecies (build, subject, team, evaluator) {
+teamrater.scoreSpecies = function scoreSpecies (build, subject, team, evaluator, weights) {
 	// the score of a species is that of its most threatening set
 	return Math.max( ...Object.keys(build[subject.species] ).map(
-		set => teamrater.scoreSet( build, brmt.tools.makePokemonObject(subject.species, set), team, evaluator )
+		set => teamrater.scoreSet( build, brmt.tools.makePokemonObject(subject.species, set), team, evaluator, weights )
 	));
 };
 
-teamrater.getThreatlist = function getThreatlist (build, team, type, priorities) {
+teamrater.getThreatlist = function getThreatlist (build, team, type, weights, priorities) {
 	// make an array with the species ID and set ID of every threat
 	let threats = [];
 	for (let species in build) {
@@ -62,9 +62,9 @@ teamrater.getThreatlist = function getThreatlist (build, team, type, priorities)
 	// attach scores to every one of these {species, set} combinations
 	for (let threat of threats) {
 		threat.score = {};
-		threat.score.species  = teamrater.scoreSpecies(build, threat, team, countTargetSpecies);
-		threat.score.set      = teamrater.scoreSet    (build, threat, team, countTargetSpecies);
-		threat.score.team     = teamrater.scoreSet    (build, threat, team, countTeamChecks   );
+		threat.score.species  = teamrater.scoreSpecies(build, threat, team, countTargetSpecies, weights);
+		threat.score.set      = teamrater.scoreSet    (build, threat, team, countTargetSpecies, weights);
+		threat.score.team     = teamrater.scoreSet    (build, threat, team, countTeamChecks,    weights);
 		threat.score.hashcode = threat.species.hashCode();
 	}
 	

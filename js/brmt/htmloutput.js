@@ -4,13 +4,19 @@ window.project = window.project || {};
 window.brmt = project.brmt = project.brmt || {};
 let htmloutput = brmt.htmloutput = {};
 
+htmloutput.iconConfigTypes = [
+	"icon",
+	"image",
+	"letters"
+];
+
 htmloutput.weblink = (imgName) => `./Serebii__Images/${brmt.aliases.getSpeciesID(imgName)}.png`;
 
 htmloutput.readIconConfig = function readIconConfig (buildData) {
 	let iconConfig = {};
 	for (let line of buildData) {
-		let [subject, config, data] = line;
-		if (!brmt.config.iconConfigs.includes(config))
+		let [subject, configType, configData] = line;
+		if (!htmloutput.iconConfigTypes.includes(configType))
 			continue;
 		subject = brmt.builder.unpackSetData([subject]);
 		for (let species in subject)
@@ -20,9 +26,9 @@ htmloutput.readIconConfig = function readIconConfig (buildData) {
 			if (brmt.aliases.officialnames[species]) {
 				if (!iconConfig[species][set])
 					iconConfig[species][set] = {};
-				iconConfig[species][set][config] = data;
+				iconConfig[species][set][configType] = configData;
 			} else {
-				iconConfig[species][config] = data;
+				iconConfig[species][configType] = configData;
 			}
 		}
 	}

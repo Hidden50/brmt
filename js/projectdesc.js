@@ -20,15 +20,16 @@ project.tools.projectdesc = {
 			officialnames: "pokemon names by species id",
 			speciesIDs:    "species ids by pokemon name"
 		},
-		config:      "default configuration. Todo: Eliminate and move to function parameters",
 		compendiums: "raw compendium data. Todo: Move to ui.cache"
 	},
 	ui: {
-		desc:      "user interface",
-		htmlNodes: "organized list of all html elements accessible via id",
-		tools:     "utility functions",
-		listeners: "controls responses to user input",
-		cache:     "settings and computation results"
+		desc:             "user interface",
+		htmlNodes:        "organized list of all html elements accessible via id",
+		tools:            "utility functions",
+		listeners:        "controls responses to user input",
+		cache:            "settings and computation results",
+		threatlistEvents: "some possible events when clicking on a pokemon image",
+		config:           "default configuration, may change with user input"
 	},
 };
 

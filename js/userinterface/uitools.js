@@ -5,6 +5,25 @@ window.ui = project.ui = project.ui || {};
 window.htmlNodes = ui.htmlNodes = {};
 let tools = ui.tools = {};
 
+tools.getTeamStorage = function getTeamStorage () {
+	let teamDataList = brmt.builder.stringToBuildData(ui.config.teams);
+	let teams = [];
+	for (let teamData of teamDataList) {
+		let team = [];
+		for (let packedSetlist of teamData) {
+			let [species, ...sets] = packedSetlist.split('|');
+			if (!species) continue;
+			if (sets.length === 0)
+				sets = ["?"];
+			if (sets.length > 1)
+				throw new Error(`oops. Something went wrong! One of your teams has a pokemon with more than one set: ${teamData.join(", ")}`);
+			team.push(brmt.tools.makePokemonObject(species, sets[0]));
+		}
+		teams.push(team);
+	}
+	return teams;
+};
+
 tools.isVisibleDOMElement = function isVisibleDOMElement (el) {
 	// source: https://stackoverflow.com/a/1542908
 	if (el.offsetWidth === 0 || el.offsetHeight === 0) return false;

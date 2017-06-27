@@ -8,7 +8,7 @@ builder.buildChecksCompendium = function buildChecksCompendium (buildData) {
 	let build = {};
 	for (let line of buildData) {
 		let [subject, mode, ...targets] = line;
-		if (!brmt.config.siModes.includes(mode))
+		if (!brmt.tools.siModes.includes(mode))
 			continue;
 		subject = builder.unpackSetData( [subject] );
 		targets = builder.unpackSetData(  targets  );
@@ -23,8 +23,8 @@ builder.addEntries = function addEntries (build, subjects, mode, targets) {
 	for (let set in subjects[species])
 	for (let targetSpecies in targets)
 	for (let targetSet in targets[targetSpecies]) {
-		if (!build[species]) build[species] = { "?": brmt.config.emptySubjectObject() };
-		if (!build[species][set]) build[species][set] = brmt.config.emptySubjectObject();
+		if (!build[species]) build[species] = { "?": brmt.tools.emptySubjectObject() };
+		if (!build[species][set]) build[species][set] = brmt.tools.emptySubjectObject();
 		if (!build[species][set][mode][targetSpecies]) build[species][set][mode][targetSpecies] = {};
 		build[species][set][mode][targetSpecies][targetSet] = 1;
 	}
@@ -82,7 +82,7 @@ builder.inheritEntries = function inheritEntries (build) {
 builder.buildDataToString = function buildDataToString (data, sep, linesep, useOfficialNames) {
 	return data.map(
 		line => line.map(
-			el => brmt.builder.packSetData( brmt.builder.unpackSetData( [el] ), useOfficialNames )
+			el => brmt.builder.packSetData( brmt.builder.unpackSetData([el]), useOfficialNames )
 		).join(sep)
 	).join(linesep);
 };
