@@ -14,17 +14,15 @@ window.onload = ui.init = function init () {
 	ui.rebuildTeams();
 	ui.listeners.init();
 	
-	let contentID = location.hash && location.hash.substr && location.hash.substr(1);
-	if (htmlNodes.tablinks.main.dyncontent[contentID])
-		htmlNodes.tablinks.main.dyncontent[contentID].click();
-	else if (htmlNodes.tablinks.main[contentID])
-		htmlNodes.tablinks.main[contentID].click();
-	else ui.rebuildThreatlist();
+	ui.cache.generatedLists = [];
+	let tabID = location.hash && location.hash.substr && location.hash.substr(1);
+	if (htmlNodes.tabs.main[tabID])
+		htmlNodes.tabs.main[tabID].firstChild.click();
+	else htmlNodes.tabs.main.suggestions.firstChild.click();
 };
 
 ui.initCompendium = function initCompendium (compTitle) {
 	htmlNodes.textareas.builddata.value = brmt.compendiums[compTitle];
-	if (!htmlNodes.textareas.builddata.value) console.log("blubb");
 	cache.buildData  = brmt.builder.stringToBuildData(htmlNodes.textareas.builddata.value);
 	cache.build      = brmt.builder.buildChecksCompendium(cache.buildData);
 	cache.iconConfig = brmt.htmloutput.readIconConfig(cache.buildData);
@@ -36,9 +34,24 @@ ui.initCompendium = function initCompendium (compTitle) {
 	);
 };
 
+ui.invalidateThreatlists = function invalidateThreatlists (arg) {
+	ui.cache.generatedLists = ui.cache.generatedLists.filter( tabID => {
+		let params = ui.config.threatlistParameters[tabID];
+		if (arg === "team") {
+			if (params.rate.teamSource !== "team" && params.display.teamSource !== "team")
+				return true;
+		}
+		htmlNodes.tabcontents.main[tabID].innerHTML = "";
+	});
+	if (ui.config.threatlistParameters[ui.cache.tabID])
+		ui.rebuildThreatlist();
+};
+
 ui.rebuildThreatlist = function rebuildThreatlist () {
-	let params = ui.config.threatlistParameters[ui.cache.tab];
-	if (!params)
+	if (ui.cache.generatedLists.includes(ui.cache.tabID))
+		return;                                                   // output does not need updating
+	let params = ui.config.threatlistParameters[ui.cache.tabID];
+	if (!params)                                                  // active tab does not have a threat list
 		return;
 	cache.threatlist = brmt.teamrater.getThreatlist(
 		cache.build,
@@ -47,7 +60,7 @@ ui.rebuildThreatlist = function rebuildThreatlist () {
 		params.rate.weights,
 		params.rate.priorities
 	);
-	htmlNodes.tabs.main.dyncontent.innerHTML = brmt.htmloutput[params.display.method](
+	htmlNodes.tabcontents.main[ui.cache.tabID].innerHTML = brmt.htmloutput[params.display.method](
 		cache.threatlist,
 		cache.build,
 		cache[params.display.teamSource] || [],
@@ -55,11 +68,12 @@ ui.rebuildThreatlist = function rebuildThreatlist () {
 		params.display.ratingType
 	);
 	ui.listeners.addClassListeners(
-		htmlNodes.tabs.main.dyncontent,
+		htmlNodes.tabcontents.main[ui.cache.tabID],
 		"imageWrapper",
 		'click',
 		ui.threatlistEvents[params.onClickEventType]
 	);
+	ui.cache.generatedLists.push(ui.cache.tabID);
 	ui.updateSearchresults( htmlNodes.inputs.search.value );
 };
 
@@ -75,12 +89,15 @@ ui.rebuildTeams = function rebuildTeams() {
 	}).join("");
 	ui.listeners.addClassListeners( htmlNodes.popups.teamselect, "team", 'click', (node, index) => {
 		ui.cache.team = ui.cache.teams[index];
-		ui.rebuildThreatlist();
+		ui.invalidateThreatlists("team");
 		ui.rebuildTeams();
 	});
 };
 
 ui.toggleTeammember = function toggleTeammember (pokemon) {
+	Object.keys(ui.config.threatlistParameters).forEach( tabID => {
+		
+	});
 	let deleted;
 	cache.team = cache.team.filter( teamMember => {
 		if (teamMember.species === pokemon.species && teamMember.set === pokemon.set) {
@@ -91,7 +108,7 @@ ui.toggleTeammember = function toggleTeammember (pokemon) {
 	});
 	if (!deleted) cache.team.push(pokemon);
 	htmlNodes.inputs.search.value = "";
-	ui.rebuildThreatlist();
+	ui.invalidateThreatlists("team");
 	ui.rebuildTeams();
 };
 
@@ -127,7 +144,7 @@ ui.updateSearchresults = function updateSearchresults (searchText) {
 	});
 	
 	// mark results in the threatlist
-	[...htmlNodes.tabs.main.dyncontent.childNodes].forEach( childNode => {
+	[...htmlNodes.tabcontents.main[ui.cache.tabID].childNodes].forEach( childNode => {
 		if (!childNode.classList || !childNode.classList.contains("imageWrapper"))
 			return;
 		if (searchText && childNode.title.match(searchRegex))

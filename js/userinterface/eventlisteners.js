@@ -50,7 +50,7 @@ listeners.initBuilddataTA = function initBuilddataTA () {
 		return listeners.preventPropagation(e);
 	});
 	htmlNodes.buttons.build.addEventListener('click', e => {
-		ui.rebuildThreatlist();
+		ui.invalidateThreatlists();
 		return listeners.preventPropagation(e);
 	});
 };
@@ -66,9 +66,7 @@ listeners.initTeamselection = function initTeamselection () {
 	htmlNodes.buttons.clearteam.addEventListener('click', e => {
 		ui.cache.team = [];
 		ui.rebuildTeams();
-		let params = ui.config.threatlistParameters[ui.cache.tab];
-		if (params && params.rate.teamSource === "team" || params.display.teamSource === "team")
-			ui.rebuildThreatlist();
+		ui.invalidateThreatlists("team");
 		return listeners.preventPropagation(e);
 	});
 };
@@ -76,7 +74,7 @@ listeners.initTeamselection = function initTeamselection () {
 listeners.initCompendiumSelector = function initCompendiumSelector () {
 	htmlNodes.selects.checkscompendium.addEventListener('change', e =>{
 		ui.initCompendium( htmlNodes.selects.checkscompendium.value );
-		ui.rebuildThreatlist();
+		ui.invalidateThreatlists();
 		ui.rebuildTeams();
 		return listeners.preventPropagation(e);
 	});
@@ -94,8 +92,7 @@ listeners.initPokemonsearch = function initPokemonsearch () {
 		return listeners.preventPropagation(e);
 	});
 	document.body.addEventListener('click', e => {
-		// using on:'blur' with htmlNodes.inputs.search
-		// would lead to undesired results when clicking on a search result
+		// using htmlNodes.inputs.search -> on:'blur' with  would trigger when clicking on search results
 		// so we are using on:'click' with document.body instead
 		ui.updateSearchresults(htmlNodes.inputs.search.value);
 		return listeners.preventPropagation(e);
@@ -106,11 +103,11 @@ listeners.initPokemonsearch = function initPokemonsearch () {
 		if (e.ctrlKey || e.altKey || e.metaKey)
 			return listeners.preventPropagation(e);
 		
-		if (e.keyCode === 40) {              // arrow key down
+		if (e.keyCode === 38 || e.keyCode === 40) {  // arrow key up / down
 			if (document.activeElement === htmlNodes.inputs.search) {
 				let node = htmlNodes.selectedSearchResult;
 				while (node) {
-					node = node.nextElementSibling;
+					node = (e.keyCode === 38) ? node.previousElementSibling : node.nextElementSibling;
 					if (node && node.classList && node.classList.contains("searchresult")) {
 						htmlNodes.selectedSearchResult.classList.remove("selected");
 						htmlNodes.selectedSearchResult = node;
@@ -120,98 +117,69 @@ listeners.initPokemonsearch = function initPokemonsearch () {
 						break;
 					}
 				}
-				if (!node)
-					window.scrollBy(0, 50);
-			} else {
-				window.scrollBy(0, 50);
-				htmlNodes.inputs.search.blur();
+				if (!node) window.scrollBy(0, (e.keyCode === 38) ? -50 : 50);
+				e.preventDefault();
 			}
-			e.preventDefault();
-		} else if (e.keyCode === 38) {       // arrow key up
-			if (document.activeElement === htmlNodes.inputs.search) {
-				let node = htmlNodes.selectedSearchResult;
-				while (node) {
-					node = node.previousElementSibling;
-					if (node && node.classList && node.classList.contains("searchresult")) {
-						htmlNodes.selectedSearchResult.classList.remove("selected");
-						htmlNodes.selectedSearchResult = node;
-						node.classList.add("selected");
-						if (!ui.tools.isVisibleDOMElement(node))
-							node.scrollIntoView();
-						break;
-					}
-				}
-				if (!node)
-					window.scrollBy(0, -50);
-			} else {
-				window.scrollBy(0, -50);
-				htmlNodes.inputs.search.blur();
-			}
-			e.preventDefault();
-		} else if (e.keyCode === 13) {       // enter key
+			return listeners.preventPropagation(e);
+		}
+		
+		if (e.keyCode === 13) {       // enter key
 			if (!htmlNodes.selectedSearchResult)
 				return listeners.preventPropagation(e);
 			
 			ui.toggleTeammember(brmt.aliases.parseSetTitle(htmlNodes.selectedSearchResult.firstChild.firstChild.title).subject);
 			ui.updateSearchresults(htmlNodes.inputs.search.value);
-		} else if ((e.keyCode === 8 && htmlNodes.inputs.search.value.length) || (e.keyCode >= 65 && e.keyCode <= 90))
+			return listeners.preventPropagation(e);
+		}
+		
+		if ((e.keyCode === 8 && htmlNodes.inputs.search.value.length) || (e.keyCode >= 65 && e.keyCode <= 90))
 			htmlNodes.inputs.search.focus();
 		return listeners.preventPropagation(e);
 	});
 };
 
 listeners.initTabpages = function initTabpages () {
-	[...document.querySelectorAll('.tabcontainer .tab-links a')].forEach( node => {
-		let [, listID, tabID, contentID] = node.id.split('_');
-		node.addEventListener('click', e => {
-			if (contentID === "hiddentabs") {
-				node.parentNode.parentNode.classList.add('reveal-hidden');
-				node.parentNode.classList.add('active');
-			} else {
-				// hide hidden tabs if previously revealed
-				node.parentNode.parentNode.classList.remove('reveal-hidden');
-				
-				// make this node's <li> parent the only active one in its list
-				[...node.parentNode.parentNode.childNodes].forEach(
-					listNode => listNode.classList && listNode.classList.remove('active')
-				);
-				node.parentNode.classList.add('active');
-				
-				// make the corresponding tab the only active one in its list
-				[...node.parentNode.parentNode.nextElementSibling.childNodes].forEach(
-					tab => tab.classList && tab.classList.remove('active')
-				);
-				htmlNodes.tabs[listID][tabID].classList.add('active');
-				
-				if (contentID) {
-					// set container class to match contentID so that it can be styled
-					for (cID in htmlNodes.tablinks[listID][tabID])
-						htmlNodes.tabs[listID][tabID].classList.remove(cID);
-					htmlNodes.tabs[listID][tabID].classList.add(contentID);
+	[...document.querySelectorAll('.tab-container li')].forEach( tab => {
+		let [, listID, tabID] = tab.id.split('_');
+		tab.addEventListener('click', e => {
+			if (tab.classList) {
+				if (tab.classList.contains("reveal")) {
+					tab.parentNode.classList.toggle('reveal');
+					e.preventDefault();
+					return listeners.preventPropagation(e);
 				}
-				if (htmlNodes.tabcontainers[listID].updateContent)
-					htmlNodes.tabcontainers[listID].updateContent(listID, tabID, contentID || "");
+				if (tab.classList.contains("hidden"))
+					tab.parentNode.classList.add('reveal');
 			}
+			
+			[...tab.parentNode.childNodes].forEach(
+				listNode => listNode.classList && listNode.classList.remove('active')          // make all tabs inactive
+			);
+			tab.classList.add('active');                                                       // make selected tab active
+			
+			[...tab.parentNode.parentNode.querySelectorAll('.tab-content .content')].forEach(
+				content => content.classList && content.classList.remove('active')             // make all tabcontents inactive
+			);
+			if (htmlNodes.tabcontents[listID] && htmlNodes.tabcontents[listID][tabID])
+				htmlNodes.tabcontents[listID][tabID].classList.add('active');                  // make selected tabcontent active
+			
+			if (htmlNodes.tabgroups[listID].updateContent)
+				htmlNodes.tabgroups[listID].updateContent(listID, tabID);
 			
 			e.preventDefault();
 			return listeners.preventPropagation(e);
 		});
 	});
-	
-	htmlNodes.tabcontainers.main.updateContent = function updateContent(listID, tabID, contentID) {
-		location.hash = contentID || tabID;
-		ui.cache.tab = contentID || ui.cache.tab || "suggestions";
-		htmlNodes.divs.builddata.style.display = (contentID === "builddata") ? "block" : "none";
-		if (tabID === "dyncontent") {
-			if (contentID === "objectinspector") {
-				let inspector = project.tools.jsObjectToHtml(project, project.tools.projectdesc, 1);
-				htmlNodes.tabs.main.dyncontent.innerHTML = `<div class='objectinspector'>${inspector}</div>`;
-				return;
-			}
+	htmlNodes.tabgroups.main.updateContent = function updateContent(listID, tabID) {
+		location.hash = ui.cache.tabID = tabID;
+		htmlNodes.divs.builddata.style.display = (tabID === "builddata") ? "block" : "none";
+		if (ui.config.threatlistParameters[tabID])
 			ui.rebuildThreatlist();
+		else if (tabID === "objectinspector") {
+			let inspector = project.tools.jsObjectToHtml(project, project.tools.projectdesc, 1);
+			htmlNodes.tabcontents.main.objectinspector.innerHTML = `<div class='objectinspector'>${inspector}</div>`;
 		}
 	};
-	
 	htmlNodes.links.objectinspector.addEventListener('click', e => {
 		htmlNodes.tablinks.main.dyncontent.objectinspector.click();
 		e.preventDefault();

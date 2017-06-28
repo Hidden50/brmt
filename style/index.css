@@ -92,8 +92,8 @@ label {
 
 /* rules for elements in the .main container */
 
-.tab-links li.suggestions,
-.tab-links li.wallit {
+#tab_main_suggestions,
+#tab_main_wallit {
 	margin-right:     20px;
 }
 
