@@ -43,7 +43,9 @@ htmloutput.brmtIcon = function brmtIcon (pokemon, build, team, iconConfig, ratin
 	if (!build[pokemon.species] || !build[pokemon.species][pokemon.set])
 		wrapperClass += " notcovered";
 	if (rating !== undefined) {
-		if (rating <= -250000) {
+		if (typeof rating === "string")
+			wrapperClass += ` rating-${rating.replace("+", " plus").replace("-", " minus")}`
+		else if (rating <= -250000) {
 			wrapperClass += " rating-verysmall";
 			rating += 500000;  // don't display penalty for defensive threats
 		} else if (rating <= -5000) wrapperClass += " rating-250000";

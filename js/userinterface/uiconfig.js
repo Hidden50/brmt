@@ -5,17 +5,17 @@ window.ui = project.ui = project.ui || {};
 let config = ui.config = {};
 
 config.threatlistParameters = {
-	"suggestions": {
+	"viability": {
 		"rate": {
 			"teamSource":     "",
 			"threatlistType": "sets",
 			"weights":        [10000, 100, 2, -11, -7, -3],
-			"priorities":     ["team", "species", "hashcode", "set"]
+			"priorities":     ["viability", "species", "hashcode", "set"]
 		},
 		"display": {
 			"method":         "makeIconGallery",
 			"teamSource":     "team",
-			"ratingType":     "team"
+			"ratingType":     "vr"
 		},
 		"onClickEventType":   "toggleTeammember"
 	},
@@ -52,7 +52,7 @@ config.threatlistParameters = {
 			"teamSource":     "",
 			"threatlistType": "sets",
 			"weights":        [10000, 100, 2, -11, -7, -3],
-			"priorities":     ["team", "species", "hashcode", "set"]
+			"priorities":     ["viability", "species", "hashcode", "set"]
 		},
 		"display": {
 			"method":         "makeCompendium",

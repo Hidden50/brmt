@@ -18,16 +18,17 @@ window.onload = ui.init = function init () {
 	let tabID = location.hash && location.hash.substr && location.hash.substr(1);
 	if (htmlNodes.tabs.main[tabID])
 		htmlNodes.tabs.main[tabID].firstChild.click();
-	else htmlNodes.tabs.main.suggestions.firstChild.click();
+	else htmlNodes.tabs.main.viability.firstChild.click();
 };
 
 ui.initCompendium = function initCompendium (compTitle) {
 	htmlNodes.textareas.builddata.value = brmt.compendiums[compTitle];
 	cache.buildData  = brmt.builder.stringToBuildData(htmlNodes.textareas.builddata.value);
 	cache.build      = brmt.builder.buildChecksCompendium(cache.buildData);
+	cache.setInfo    = brmt.teamrater.readSetInfo(cache.buildData);
 	cache.iconConfig = brmt.htmloutput.readIconConfig(cache.buildData);
 	
-	let defaultThreatlist = brmt.teamrater.getThreatlist(cache.build, [], "sets", [10000, 100, 2, -11, -7, -3], ["team", "species", "hashcode", "set"]);
+	let defaultThreatlist = brmt.teamrater.getThreatlist(cache.build, cache.setInfo, [], "sets", [10000, 100, 2, -11, -7, -3], ["viability", "team", "species", "hashcode", "set"]);
 	htmlNodes.divs.searchresults.innerHTML = brmt.htmloutput.makeSetsList(defaultThreatlist, cache.build, cache.team, cache.iconConfig);
 	ui.listeners.addClassListeners( htmlNodes.divs.searchresults, "tr", 'click',
 		tablerow => ui.toggleTeammember( brmt.aliases.parseSetTitle(tablerow.firstChild.firstChild.title).subject )
@@ -55,6 +56,7 @@ ui.rebuildThreatlist = function rebuildThreatlist () {
 		return;
 	cache.threatlist = brmt.teamrater.getThreatlist(
 		cache.build,
+		cache.setInfo,
 		cache[params.rate.teamSource] || [],
 		params.rate.threatlistType,
 		params.rate.weights,

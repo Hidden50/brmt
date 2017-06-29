@@ -4,6 +4,30 @@ window.project = window.project || {};
 window.brmt = project.brmt = project.brmt || {};
 let teamrater = brmt.teamrater = {};
 
+teamrater.readSetInfo = function readSetInfo (buildData) {
+	let setInfo = {};
+	for (let line of buildData) {
+		let [rank, type, ...targets] = line;
+		if (type !== "vr")
+			continue;
+		
+		targets = brmt.builder.unpackSetData(targets);
+		for (let species in targets)
+		for (let set in targets[species]) {
+			if (!setInfo[species]) setInfo[species] = {};
+			
+			if (brmt.aliases.officialnames[species]) {
+				if (!setInfo[species][set])
+					setInfo[species][set] = {};
+				setInfo[species][set][type] = rank;
+			} else {
+				setInfo[species][type] = rank;
+			}
+		}
+	}
+	return setInfo;
+};
+
 let countTargetSpecies = teamrater.countTargetSpecies = function countTargetSpecies (build, subject, mode) {
 	return Object.keys( build[subject.species][subject.set][mode] ).length;
 };
@@ -47,7 +71,32 @@ teamrater.scoreSpecies = function scoreSpecies (build, subject, team, evaluator,
 	));
 };
 
-teamrater.getThreatlist = function getThreatlist (build, team, type, weights, priorities) {
+let scoreViability = teamrater.scoreViability = function scoreViability (pokemon) {
+	let vrScore = {
+		"S":  10,
+		"A+": 9,
+		"A":  8,
+		"A-": 7,
+		"B+": 6,
+		"B":  5,
+		"B-": 4,
+		"C+": 3,
+		"C":  2,
+		"C-": 1,
+		"?":  0
+	};
+	return vrScore[pokemon.score.vr];
+}
+
+let getViability = teamrater.getViability = function getViability (pokemon, setInfo) {
+	if (!setInfo[pokemon.species])
+		return "?";
+	if (setInfo[pokemon.species][pokemon.set])
+		return setInfo[pokemon.species][pokemon.set].vr
+	return setInfo[pokemon.species]["?"].vr;
+};
+
+teamrater.getThreatlist = function getThreatlist (build, setInfo, team, type, weights, priorities) {
 	// make an array with the species ID and set ID of every threat
 	let threats = [];
 	for (let species in build) {
@@ -62,10 +111,12 @@ teamrater.getThreatlist = function getThreatlist (build, team, type, weights, pr
 	// attach scores to every one of these {species, set} combinations
 	for (let threat of threats) {
 		threat.score = {};
-		threat.score.species  = teamrater.scoreSpecies(build, threat, team, countTargetSpecies, weights);
-		threat.score.set      = teamrater.scoreSet    (build, threat, team, countTargetSpecies, weights);
-		threat.score.team     = teamrater.scoreSet    (build, threat, team, countTeamChecks,    weights);
-		threat.score.hashcode = threat.species.hashCode();
+		threat.score.vr        = getViability(threat, setInfo);
+		threat.score.viability = scoreViability(threat);
+		threat.score.species   = teamrater.scoreSpecies(build, threat, team, countTargetSpecies, weights);
+		threat.score.set       = teamrater.scoreSet    (build, threat, team, countTargetSpecies, weights);
+		threat.score.team      = teamrater.scoreSet    (build, threat, team, countTeamChecks,    weights);
+		threat.score.hashcode  = threat.species.hashCode();
 	}
 	
 	// sort the array based on the above scoring functions

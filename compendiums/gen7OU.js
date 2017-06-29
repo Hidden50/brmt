@@ -2,7 +2,21 @@ window.brmt = window.brmt || {};
 brmt.compendiums = brmt.compendiums || {};
 
 brmt.compendiums.gen7OU =
-`Starmie|lo, GSI, Chansey
+`S, vr, Landorus-Therian, Magearna
+
+A+, vr, Greninja|Ash, Celesteela, Heatran, Greninja, Tangrowth, Tapu Bulu, Volcarona, Zygarde
+A, vr, Dugtrio, Ferrothorn, Garchomp, Keldeo, Mawile-Mega, Mew, Pinsir-Mega, Tapu Koko, Tapu Lele, Toxapex
+A-, vr, Alakazam-Mega, Amoonguss, Chansey, Charizard-Mega-Y, Clefable, Gengar, Heracross-Mega, Latios, Magnezone, Medicham-Mega, Pelipper, Scizor-Mega, Sableye-Mega, Skarmory, Tyranitar, Tyranitar-Mega, Zapdos
+
+B+, vr, Bisharp, Gyarados, Hoopa-Unbound, Jirachi, Kingdra, Marowak-Alola, Rotom-W, Swampert-Mega, Tapu Fini, Tornadus-Therian, Weavile
+B, vr, Alakazam, Alomomola, Excadrill, Kartana, Kyurem-Black, Mamoswine, Manectric-Mega, Mantine, Mimikyu, Nihilego, Reuniclus, Serperior, Slowbro-Mega, Smeargle, Suicune, Terrakion, Thundurus
+B-, vr, Azumarill, Charizard (Mega-X), Gastrodon, Latias, Muk-Alola, Nidoking, Omastar, Porygon-Z, Salamence, Sharpedo-Mega, Slowbro, Togekiss, Venusaur-Mega
+
+C+, vr, Aerodactyl-Mega, Beedrill-Mega, Breloom, Buzzwole, Cofagrigus, Dragonite, Garchomp-Mega, Gliscor, Gyarados-Mega, Hippowdon, Kabutops, Manaphy, Primarina, Quagsire, Scolipede, Starmie, Volcanion
+C, vr, Azelf, Crawdaunt, Cresselia, Ditto, Hawlucha, Hydreigon, Kyurem, Magneton, Ninetales-Alola, Pidgeot-Mega, Thundurus-Therian
+C-, vr, Bronzong, Mandibuzz, Sceptile-Mega, Talonflame, Uxie, Victini
+
+Starmie|lo, GSI, Chansey
 Starmie|lo, SSI, Greninja|protean|ash, Ferrothorn|main, Tangrowth|av, Hoopa-Unbound|scarf, Latios|scarf|specs|lo, Latias|hw, Slowking|cm
 Starmie|lo, NSI, Landorus-Therian|scarf, Hoopa-Unbound|band|specs|lo, Kyurem-Black|z-Ice, Scolipede|Waterium Z SD, Tyranitar|scarf, Weavile|lo, Sharpedo-Mega|cleaner, Gyarados-Mega|dd, Muk-Alola|av, Kyurem|specs, Magneton|scarf, Blissey|cm, Sceptile-Mega|??
 
