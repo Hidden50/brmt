@@ -52,6 +52,11 @@
 	border-width:     0px;
 }
 
+.tab-content .imageWrapper.searchresult {
+	background-color: lawngreen !important;
+	border-color: red !important;
+}
+
 .tab-content .imageWrapper.rating-0 {
 	background-color: coral;
 }
@@ -71,36 +76,38 @@
 #tabcontent_main_viability .imageWrapper {
 	background-color: lightgrey;
 }
+#tabcontent_main_viability .imageWrapper.onteam {
+	border-style: dashed !important;
+	background-color: #e6e6e6;
+}
 #tabcontent_main_viability .imageWrapper.rating-S,
 #tabcontent_main_viability .imageWrapper.rating-A {
 	background-color: orange;
 }
+#tabcontent_main_viability .imageWrapper.rating-S.onteam,
+#tabcontent_main_viability .imageWrapper.rating-A.onteam {
+	background-color: #ffc14d;
+}
 #tabcontent_main_viability .imageWrapper.rating-B {
 	background-color: powderblue;
 }
+#tabcontent_main_viability .imageWrapper.rating-B.onteam {
+	background-color: #d8eff3;
+}
 #tabcontent_main_viability .imageWrapper.rating-C {
 	background-color: palegreen;
+}
+#tabcontent_main_viability .imageWrapper.rating-C.onteam {
+	background-color: #b6fcb6;
 }
 
 
 #tabcontent_main_builddata .imageWrapper > .ratingWrapper {
 	display: none;
 }
-#tabcontent_main_viability .imageWrapper.onteam {
-	border-style: dashed !important;
-	background-color: #ffc14d;
-}
-#tabcontent_main_viability .imageWrapper.onteam.rating-verysmall {
-	background-color: #e6e6e6;
-}
 
 #tabcontent_main_wallit .imageWrapper.rating-50 {
 	background-color: powderblue;
-}
-
-.tab-content .imageWrapper.searchresult {
-	background-color: lawngreen !important;
-	border-color: red !important;
 }
 
 .team {
