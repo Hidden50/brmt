@@ -1,7 +1,8 @@
-window.brmt = window.brmt || {};
-brmt.compendiums = brmt.compendiums || {};
+window.ui = window.ui || {};
+ui.cache = ui.cache || {};
+ui.cache.compendiums = ui.cache.compendiums || {};
 
-brmt.compendiums.gen6RU =
+ui.cache.compendiums.gen6RU =
 `Exploud, SSI, Escavalier, Registeel, Bronzong, Cradily, Ferroseed
 Exploud, NSI, Tyrantrum, Absol, Durant, Meloetta, Virizion, Emboar, Gurdurr, Hitmonlee, Medicham, Scrafty, Sawk, Gallade, Hariyama, Diancie
 

@@ -19,8 +19,7 @@ project.tools.projectdesc = {
 			desc:          "lets brmt use more readable names, like Charizard-Mega-Y for 006-my",
 			officialnames: "pokemon names by species id",
 			speciesIDs:    "species ids by pokemon name"
-		},
-		compendiums: "raw compendium data. Todo: Move to ui.cache"
+		}
 	},
 	ui: {
 		desc:             "user interface",

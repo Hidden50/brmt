@@ -1,7 +1,8 @@
-window.brmt = window.brmt || {};
-brmt.compendiums = brmt.compendiums || {};
+window.ui = window.ui || {};
+ui.cache = ui.cache || {};
+ui.cache.compendiums = ui.cache.compendiums || {};
 
-brmt.compendiums.gen6OU =
+ui.cache.compendiums.gen6OU =
 `Starmie, GSI, Clefable, Jirachi, Chansey, Kyurem-Black, Sylveon, Gastrodon, Porygon2
 Starmie, SSI, Gyarados-Mega, Rotom-Wash, Celebi, Ferrothorn, Manaphy, Mew, Raikou, Seismitoad, Goodra
 Starmie, NSI, Bisharp, Landorus-Therian, Latios, Talonflame, Gardevoir-Mega, Manectric-Mega, Tyranitar, Venusaur-Mega, Scizor-Mega, Tornadus-Therian, Beedrill-Mega, Sceptile-Mega, Hydreigon, Weavile, Zapdos, Absol-Mega, Victini, Hoopa, Ampharos-Mega

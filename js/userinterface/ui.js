@@ -22,7 +22,8 @@ window.onload = ui.init = function init () {
 };
 
 ui.initCompendium = function initCompendium (compTitle) {
-	htmlNodes.textareas.builddata.value = brmt.compendiums[compTitle];
+	if (compTitle)
+		htmlNodes.textareas.builddata.value = ui.cache.compendiums[compTitle];
 	cache.buildData  = brmt.builder.stringToBuildData(htmlNodes.textareas.builddata.value);
 	cache.build      = brmt.builder.buildChecksCompendium(cache.buildData);
 	cache.setInfo    = brmt.teamrater.readSetInfo(cache.buildData);

@@ -1,7 +1,8 @@
-window.brmt = window.brmt || {};
-brmt.compendiums = brmt.compendiums || {};
+window.ui = window.ui || {};
+ui.cache = ui.cache || {};
+ui.cache.compendiums = ui.cache.compendiums || {};
 
-brmt.compendiums.gen6PU =
+ui.cache.compendiums.gen6PU =
 `Zweilous, SSI, Tangela, Machoke, Mr. Mime, Clefairy, Relicanth, Klang, Avalugg
 Zweilous, NSI, Floatzel, Dodrio, Stoutland, Simipour, Ursaring, Rotom-Frost, Golduck, Fraxure, Articuno, Basculin, Ninjask, Gabite
 

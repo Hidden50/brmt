@@ -1,7 +1,8 @@
-window.brmt = window.brmt || {};
-brmt.compendiums = brmt.compendiums || {};
+window.ui = window.ui || {};
+ui.cache = ui.cache || {};
+ui.cache.compendiums = ui.cache.compendiums || {};
 
-brmt.compendiums.gen6LC =
+ui.cache.compendiums.gen6LC =
 `Bunnelby, SSI, Pumpkaboo, Ferroseed, Magnemite, Drifloon, Pawniard, Onix, Honedge, Frillish
 Bunnelby, NSI, Fletchling, Carvanha, Archen, Gastly, Cottonee, Omanyte, Tirtouga, Mienfoo, Timburr, Pancham, Scraggy, Croagunk, Taillow, Doduo
 

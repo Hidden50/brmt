@@ -1,7 +1,8 @@
-window.brmt = window.brmt || {};
-brmt.compendiums = brmt.compendiums || {};
+window.ui = window.ui || {};
+ui.cache = ui.cache || {};
+ui.cache.compendiums = ui.cache.compendiums || {};
 
-brmt.compendiums.gen7OU =
+ui.cache.compendiums.gen7OU =
 `S, vr, Landorus-Therian, Magearna
 
 A+, vr, Greninja|Ash, Celesteela, Heatran, Greninja, Tangrowth, Tapu Bulu, Volcarona, Zygarde
