@@ -393,15 +393,15 @@ Sceptile-Mega|??, NSI, Greninja|scarf, Garchomp|scarf, Gengar|scarf, Pinsir-Mega
 
 Manectric-Mega|??, GSI, Kyurem-Black|z-Ice, Tyranitar|band|scarf, Swampert-Mega|??, Latias|hw, Venusaur-Mega|??, Chansey, Blissey|cm, Quagsire|curse, Gastrodon|SpD, Hippowdon|def, Seismitoad|def, Kyurem|specs, Dragalge|t-spike
 Manectric-Mega|??, SSI, Latios|specs|lo|scarf, Mamoswine|lo, Charizard-Mega-X|dd|Bulky, Tangrowth|av
-Manectric-Mega|??, NSI, Garchomp|scarf, Landorus-Therian|scarf, Excadrill|scarf|Sand Rush|SpD, Hydreigon|specs, Dugtrio|sash|scarf, Hoopa-Unbound|specs|band|scarf|lo, Zygarde|coil|dd|band
+Manectric-Mega|??, NSI, Garchomp|scarf, Landorus-Therian|scarf, Excadrill|scarf|Sand Rush|SpD, Hydreigon|specs, Dugtrio|sash|scarf, Hoopa-Unbound|specs|band|scarf|lo, Zygarde|Coil|dd|band
 
 Tyranitar-Mega|dd, GSI, Keldeo|scarf|specs, Skarmory|def, Quagsire|curse, Tangrowth|helmet|Mixed Def, Hippowdon|def
-Tyranitar-Mega|dd, SSI, Kartana|SD, Terrakion|scarf, Landorus-Therian|helmet, Zygarde|dd|coil|band, Scizor-Mega|HP Ice|SD, Garchomp|helmet, Ferrothorn|main
+Tyranitar-Mega|dd, SSI, Kartana|SD, Terrakion|scarf, Landorus-Therian|helmet, Zygarde|dd|Coil|band, Scizor-Mega|HP Ice|SD, Garchomp|helmet, Ferrothorn|main
 Tyranitar-Mega|dd, NSI, Gengar|scarf, Rotom-Wash|def, Dugtrio|sash
 
 Tapu Koko|scarf, GSI, Kyurem-Black|z-Ice, Excadrill|scarf|Offensive Mold Breaker|Sand Rush|SpD, Mamoswine|lo, Swampert-Mega|??, Magnezone|?, Tangrowth|Mixed Def, Hippowdon|def, Ferrothorn|main, Blissey|cm, Chansey, Quagsire|curse, Gastrodon|SpD, Seismitoad|def
 Tapu Koko|scarf, SSI, Charizard-Mega-X|dd|Bulky, Tyranitar|band|scarf, Venusaur-Mega|??, Tangrowth|av|helmet
-Tapu Koko|scarf, NSI, Garchomp|scarf|SD|helmet, Tapu Bulu|??, Landorus-Therian|Double Dance|Offensive|scarf|helmet, Latios|specs|lo|scarf, Zygarde|dd|band|coil, Nidoking|lo, Latias|hw, Amoonguss|def, Dugtrio|sash, Tyranitar-Mega|dd
+Tapu Koko|scarf, NSI, Garchomp|scarf|SD|helmet, Tapu Bulu|??, Landorus-Therian|Double Dance|Offensive|scarf|helmet, Latios|specs|lo|scarf, Zygarde|dd|band|Coil, Nidoking|lo, Latias|hw, Amoonguss|def, Dugtrio|sash, Tyranitar-Mega|dd
 
 SpD, letters, SpD
 SD, letters, SD
