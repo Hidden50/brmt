@@ -3,7 +3,24 @@ ui.cache = ui.cache || {};
 ui.cache.compendiums = ui.cache.compendiums || {};
 
 ui.cache.compendiums.gen6RU =
-`Exploud, SSI, Escavalier, Registeel, Bronzong, Cradily, Ferroseed
+`S, vr, Alomomola, Venusaur, Flygon
+
+A+, vr, Escavalier, Registeel, Virizion, Drapion, Sigilyph, Sneasel, Diancie
+A, vr, Meloetta, Glalie-Mega, Slowking, Jellicent, Camerupt-Mega, Medicham, Rhyperior
+A-, vr, Sawk, Magneton, Audino-Mega, Uxie, Absol, Blastoise, Scrafty, Jolteon, Aerodactyl, Emboar
+
+B+, vr, Braviary, Bronzong, Exploud, Granbull, Gurdurr, Hitmonlee, Houndoom, Rotom-Mow, Seismitoad, Steelix, Xatu
+B, vr, Banette-Mega, Delphox, Fletchinder, Gallade, Garbodor, Hoopa, Malamar, Rotom, Spiritomb, Vivillon, Weezing
+B-, vr, Abomasnow, Accelgor, Druddigon, Gourgeist XL, Hariyama, Mesprit, Musharna, Omastar, Piloswine, Torterra, Scyther
+
+C+, vr, Aggron, Aromatisse, Aurorus, Barbaracle, Clawitzer, Golbat, Lanturn, Poliwrath, Sceptile, Togetic
+C, vr, Eelektross, Ferroseed, Hitmontop, Kabutops, Liepard, Ludicolo, Manectric, Pelipper, Quagsire, Qwilfish, Samurott, Skuntank
+C-, vr, Archeops, Articuno, Cofagrigus, Jynx, Klinklang, Lilligant, Roselia, Rotom-Fan, Smeargle
+
+D, vr, Ambipom, Cinccino
+D-, vr, Typhlosion
+
+Exploud, SSI, Escavalier, Registeel, Bronzong, Cradily, Ferroseed
 Exploud, NSI, Tyrantrum, Absol, Durant, Meloetta, Virizion, Emboar, Gurdurr, Hitmonlee, Medicham, Scrafty, Sawk, Gallade, Hariyama, Diancie
 
 Meloetta, GSI, Escavalier

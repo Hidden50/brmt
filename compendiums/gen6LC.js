@@ -3,7 +3,23 @@ ui.cache = ui.cache || {};
 ui.cache.compendiums = ui.cache.compendiums || {};
 
 ui.cache.compendiums.gen6LC =
-`Bunnelby, SSI, Pumpkaboo, Ferroseed, Magnemite, Drifloon, Pawniard, Onix, Honedge, Frillish
+`S, vr, Diglett, Mienfoo, Pawniard, Porygon
+
+A+, vr, Fletchling, Foongus, Magnemite, Shellder, Timburr, Vullaby
+A, vr, Abra, Carvanha, Chinchou, Cottonee, Gastly, Gothita, Ponyta, Snivy
+A-, vr, Archen, Corphish, Croagunk, Drilbur, Ferroseed, Omanyte, Snubbull, Spritzee, Staryu, Tirtouga
+
+B+, vr, Aipom, Dwebble, Hippopotas, Larvesta, Munchlax, Onix, Scraggy, Skrelp, Vulpix
+B, vr, Bellsprout, Bunnelby, Cranidos, Doduo, Elekid, Houndour, Pancham, Pumpkaboo, Riolu, Surskit, Taillow, Torchic
+B-, vr, Amaura, Clamperl, Deerling, Honedge, Magby, Shellos, Slowpoke, Stunky, Tentacool, Zigzagoon
+
+C+, vr, Aron, Anorith, Axew, Buneary, Chespin, Darumaka, Frillish, Kabuto, Lickitung, Lileep, Numel, Rufflet, Sandile, Sandshrew, Snover, Trapinch, Trubbish, Tyrunt, Wynaut
+C, vr, Bulbasaur, Dratini, Exeggcute, Geodude, Inkay, Koffing, Meowth, Natu, Purrloin, Spinarak, Teddiursa, Venipede
+C-, vr, Budew, Cubone, Goldeen, Karrablast, Larvitar, Machop, Mankey, Mantyke, Nosepass, Remoraid, Shelmet, Togepi, Wingull, Wooper, Zorua
+
+D, vr, Binacle, Bronzor, Cacnea, Ekans, Finneon, Froakie, Gible, Glameow, Grimer, Golett, Growlithe, Helioptile, Litleo, Mime Jr., Munna, Oddish, Pineco, Piplup, Poliwag, Shroomish, Skiddo, Smoochum, Solosis, Totodile, Treecko, Voltorb, Wailmer
+
+Bunnelby, SSI, Pumpkaboo, Ferroseed, Magnemite, Drifloon, Pawniard, Onix, Honedge, Frillish
 Bunnelby, NSI, Fletchling, Carvanha, Archen, Gastly, Cottonee, Omanyte, Tirtouga, Mienfoo, Timburr, Pancham, Scraggy, Croagunk, Taillow, Doduo
 
 Houndour, GSI, Houndour, Munchlax, Porygon

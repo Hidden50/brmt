@@ -3,7 +3,23 @@ ui.cache = ui.cache || {};
 ui.cache.compendiums = ui.cache.compendiums || {};
 
 ui.cache.compendiums.gen6OU =
-`Starmie, GSI, Clefable, Jirachi, Chansey, Kyurem-Black, Sylveon, Gastrodon, Porygon2
+`S, vr, Clefable, Landorus-Therian
+
+A+, vr, Diancie-Mega, Heatran, Keldeo, Latios, Lopunny-Mega, Medicham-Mega, Rotom-Wash, Scizor-Mega, Tornadus-Therian, Tyranitar
+A, vr, Charizard-Mega-X, Excadrill, Ferrothorn, Garchomp, Heracross-Mega, Jirachi, Manaphy, Slowbro, Talonflame, Thundurus, Weavile
+A-, vr, Alakazam-Mega, Azumarill, Bisharp, Charizard-Mega-Y, Gardevoir-Mega, Gliscor, Metagross-Mega, Pinsir-Mega, Serperior, Skarmory, Starmie, Tangrowth, Terrakion
+
+B+, vr, Amoonguss, Chansey, Crawdaunt, Gengar, Gyarados-Mega, Hippowdon, Kyurem-Black, Latias, Latias-Mega, Magnezone, Manectric-Mega, Mew, Nidoking, Slowbro-Mega, Suicune, Venusaur-Mega, Volcanion
+B, vr, Aerodactyl-Mega, Alakazam, Alomomola, Altaria-Mega, Breloom, Dragonite, Gastrodon, Gyarados, Hydreigon, Klefki, Quagsire, Reuniclus, Slowking, Volcarona, Zapdos
+B-, vr, Celebi, Diggersby, Dugtrio, Kabutops, Kingdra, Kyurem, Mamoswine, Metagross, Politoed, Raikou, Scizor, Togekiss
+
+C+, vr, Dragalge, Empoleon, Gallade-Mega, Garchomp-Mega,Infernape, Lucario, Mandibuzz, Omastar, Sceptile-Mega, Scolipede, Sharpedo-Mega, Swampert-Mega, Thundurus-Therian, Victini, Zygarde
+C, vr, Azelf, Entei, Feraligatr, Hawlucha, Jellicent, Magneton, Pidgeot-Mega, Seismitoad, Tentacruel, Toxicroak, Tyranitar-Mega
+C-, vr, Aggron-Mega, Beedrill-Mega, Blastoise-Mega, Chesnaught, Cobalion, Cofagrigus, Conkeldurr, Goodra,Hoopa, Rotom-Heat, Staraptor
+
+D, vr, Ampharos-Mega, Blissey, Bronzong, Cresselia, Houndoom-Mega, Porygon2, Rhyperior, Sylveon, Roserade, Sableye, Shedinja, Tyrantrum, Whimsicott
+
+Starmie, GSI, Clefable, Jirachi, Chansey, Kyurem-Black, Sylveon, Gastrodon, Porygon2
 Starmie, SSI, Gyarados-Mega, Rotom-Wash, Celebi, Ferrothorn, Manaphy, Mew, Raikou, Seismitoad, Goodra
 Starmie, NSI, Bisharp, Landorus-Therian, Latios, Talonflame, Gardevoir-Mega, Manectric-Mega, Tyranitar, Venusaur-Mega, Scizor-Mega, Tornadus-Therian, Beedrill-Mega, Sceptile-Mega, Hydreigon, Weavile, Zapdos, Absol-Mega, Victini, Hoopa, Ampharos-Mega
 

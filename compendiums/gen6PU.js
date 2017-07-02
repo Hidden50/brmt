@@ -3,7 +3,23 @@ ui.cache = ui.cache || {};
 ui.cache.compendiums = ui.cache.compendiums || {};
 
 ui.cache.compendiums.gen6PU =
-`Zweilous, SSI, Tangela, Machoke, Mr. Mime, Clefairy, Relicanth, Klang, Avalugg
+`S, vr, Muk, Rotom-Frost, Stoutland
+
+A+, vr, Monferno, Golem, Leafeon, Floatzel, Mr. Mime, Grumpig, Mawile
+A, vr, Zebstrika, Clefairy, Vullaby, Combusken, Pawniard, Cacturne, Dodrio, Gourgeist, Metang
+A-, vr, Rapidash, Lumineon, Jumpluff, Bouffalant, Chatot, Electrode, Duosion, Articuno, Stunfisk, Roselia, Audino, Probopass, Gabite, Beheeyem, Kadabra, Arbok, Swanna
+
+B+, vr, Politoed, Drifblim, Relicanth, Huntail, Regice, Cryogonal, Camerupt, Dusknoir, Quilladin, Lapras, Prinplup, Rotom-Fan, Altaria, Ninjask, Murkrow, Tangela, Raichu, Crustle
+B, vr, Bronzor, Gorebyss, Misdreavus, Ninetales, Pelipper, Purugly, Simipour, Simisage, Smeargle, Solrock, Trapinch, Ursaring, Vibrava
+B-, vr, Basculin, Chinchou, Fraxure, Gogoat, Golduck, Hippopotas, Kingler, Klang, Krokorok, Marowak, Rampardos, Servine, Simisear, Trevenant, Zweilous
+
+C+, vr, Ampharos, Armaldo, Avalugg, Electabuzz, Leavanny, Mightyena, Regigigas, Sawsbuck, Volbeat
+C, vr, Beartic, Glalie, Dusclops, Meowstic-M, Munchlax, Seaking, Venipede
+C-, vr, Butterfree, Carbink, Glaceon, Hypno, Lickilicky, Lopunny, Swoobat, Torkoal, Wartortle, Wigglytuff
+
+D, vr, Banette, Ditto, Frogadier, Furfrou, Luxray, Maractus, Mienfoo, Natu, Octillery, Shedinja, Vanilluxe, Weepinbell
+
+Zweilous, SSI, Tangela, Machoke, Mr. Mime, Clefairy, Relicanth, Klang, Avalugg
 Zweilous, NSI, Floatzel, Dodrio, Stoutland, Simipour, Ursaring, Rotom-Frost, Golduck, Fraxure, Articuno, Basculin, Ninjask, Gabite
 
 Floatzel, SSI, Roselia, Tangela, Grumpig, Clefairy, Gourgeist, Lickilicky, Politoed, Relicanth, Quilladin, Lapras

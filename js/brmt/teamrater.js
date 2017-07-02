@@ -83,7 +83,10 @@ let scoreViability = teamrater.scoreViability = function scoreViability (pokemon
 		"C+": -3,
 		"C":  -4,
 		"C-": -5,
-		"?":  -6
+		"D+": -6,
+		"D":  -7,
+		"D-": -8,
+		"?":  -9
 	};
 	return vrScore[pokemon.score.vr];
 }

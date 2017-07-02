@@ -131,7 +131,7 @@ ui.toggleTeammember = function toggleTeammember (pokemon) {
 	});
 	if (!deleted) cache.team.push(pokemon);
 	htmlNodes.inputs.search.value = "";
-	ui.updateSearchresults();
+	htmlNodes.inputs.search.blur();
 	ui.invalidateThreatlists("team");
 	ui.rebuildTeams();
 };
