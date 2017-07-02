@@ -9,7 +9,7 @@ A+, vr, Greninja|Ash, Celesteela, Heatran, Greninja, Tangrowth, Tapu Bulu, Volca
 A, vr, Dugtrio, Ferrothorn, Garchomp, Keldeo, Mawile-Mega, Mew, Pinsir-Mega, Tapu Koko, Tapu Lele, Toxapex
 A-, vr, Alakazam-Mega, Amoonguss, Chansey, Charizard-Mega-Y, Clefable, Gengar, Heracross-Mega, Latios, Magnezone, Medicham-Mega, Pelipper, Scizor-Mega, Sableye-Mega, Skarmory, Tyranitar, Tyranitar-Mega, Zapdos
 
-B+, vr, Bisharp, Gyarados, Hoopa-Unbound, Jirachi, Kingdra, Marowak-Alola, Rotom-W, Swampert-Mega, Tapu Fini, Tornadus-Therian, Weavile
+B+, vr, Bisharp, Gyarados, Hoopa-Unbound, Jirachi, Kingdra, Marowak-Alola, Rotom-Wash, Swampert-Mega, Tapu Fini, Tornadus-Therian, Weavile
 B, vr, Alakazam, Alomomola, Excadrill, Kartana, Kyurem-Black, Mamoswine, Manectric-Mega, Mantine, Mimikyu, Nihilego, Reuniclus, Serperior, Slowbro-Mega, Smeargle, Suicune, Terrakion, Thundurus
 B-, vr, Azumarill, Charizard (Mega-X), Gastrodon, Latias, Muk-Alola, Nidoking, Omastar, Porygon-Z, Salamence, Sharpedo-Mega, Slowbro, Togekiss, Venusaur-Mega
 
