@@ -1,4 +1,9 @@
+html {
+	height:     100%;
+}
+
 body {
+	height:     100%;
 	background: #4a98d3;
 }
 
@@ -57,9 +62,9 @@ label {
 	padding:          2px;
 }
 #div_searchresults {
-	background-color: white;
 	position:         absolute;
 	width:            100%;
+	z-index:          1;
 }
 #div_searchresults table {
 	table-layout:     fixed;
@@ -70,6 +75,7 @@ label {
 	display:          none;
 }
 #div_searchresults tr.searchresult {
+	background:       white;
 	display:          block;
 	cursor:           pointer;
 	border-style:     solid;
@@ -92,9 +98,22 @@ label {
 
 /* rules for elements in the .main container */
 
-#tab_main_viability,
-#tab_main_wallit {
-	margin-right:     20px;
+#tab_main_viability-sets,
+#tab_main_breakit-species,
+#tab_main_wallit-species {
+	vertical-align:   bottom;
+	margin-left:      -2px;
+}
+#tab_main_viability-sets a,
+#tab_main_breakit-species a,
+#tab_main_wallit-species a {
+	padding:          6px 10px;
+	font-size:        12px;
+}
+
+#tab_main_breakit,
+#tab_main_about {
+	margin-left:      20px;
 }
 
 #div_builddata {

@@ -38,7 +38,7 @@ htmloutput.readIconConfig = function readIconConfig (buildData) {
 htmloutput.brmtIcon = function brmtIcon (pokemon, build, team, iconConfig, rating) {
 	let {species, set, mouseoverText} = pokemon;
 	let wrapperClass = "imageWrapper";
-	if (team.some( teammember => teammember.species === pokemon.species && teammember.set === pokemon.set ))
+	if (team.some( teamMember => pokemon.species === teamMember.species && (pokemon.set === teamMember.set || pokemon.set === "species") ))
 		wrapperClass += " onteam";
 	if (!build[pokemon.species] || !build[pokemon.species][pokemon.set])
 		wrapperClass += " notcovered";
@@ -121,7 +121,8 @@ htmloutput.makeCompendiumEntry = function makeCompendiumEntry (pokemon, build, t
 	}
 	let image = htmloutput.brmtIcon(pokemon, build, team, iconConfig);
 	let text  = brmt.aliases.getSetTitle(pokemon);
-	return `${image} <b>${text}</b>` + project.tools.makeHtmlTable(table);
+	
+	return `${image} <b>${text}</b>${project.tools.makeHtmlTable(table)}`;
 };
 
 htmloutput.makeSetsList = function makeSetsList (pokemonlist, build, team, iconConfig) {

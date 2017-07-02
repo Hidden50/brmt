@@ -73,40 +73,50 @@
 	background-color: lightgrey;
 }
 
-#tabcontent_main_viability .imageWrapper {
+#tabcontent_main_viability .imageWrapper,
+#tabcontent_main_viability-sets .imageWrapper {
 	background-color: lightgrey;
 }
-#tabcontent_main_viability .imageWrapper.onteam {
+#tabcontent_main_viability .imageWrapper.onteam,
+#tabcontent_main_viability-sets .imageWrapper.onteam {
 	border-style: dashed !important;
 	background-color: #e6e6e6;
 }
 #tabcontent_main_viability .imageWrapper.rating-S,
-#tabcontent_main_viability .imageWrapper.rating-A {
+#tabcontent_main_viability-sets .imageWrapper.rating-S,
+#tabcontent_main_viability .imageWrapper.rating-A,
+#tabcontent_main_viability-sets .imageWrapper.rating-A {
 	background-color: orange;
 }
 #tabcontent_main_viability .imageWrapper.rating-S.onteam,
-#tabcontent_main_viability .imageWrapper.rating-A.onteam {
+#tabcontent_main_viability-sets .imageWrapper.rating-S.onteam,
+#tabcontent_main_viability .imageWrapper.rating-A.onteam,
+#tabcontent_main_viability-sets .imageWrapper.rating-A.onteam {
 	background-color: #ffc14d;
 }
-#tabcontent_main_viability .imageWrapper.rating-B {
+#tabcontent_main_viability .imageWrapper.rating-B,
+#tabcontent_main_viability-sets .imageWrapper.rating-B {
 	background-color: powderblue;
 }
-#tabcontent_main_viability .imageWrapper.rating-B.onteam {
+#tabcontent_main_viability .imageWrapper.rating-B.onteam,
+#tabcontent_main_viability-sets .imageWrapper.rating-B.onteam {
 	background-color: #d8eff3;
 }
-#tabcontent_main_viability .imageWrapper.rating-C {
+#tabcontent_main_viability .imageWrapper.rating-C,
+#tabcontent_main_viability-sets .imageWrapper.rating-C {
 	background-color: palegreen;
 }
-#tabcontent_main_viability .imageWrapper.rating-C.onteam {
+#tabcontent_main_viability .imageWrapper.rating-C.onteam,
+#tabcontent_main_viability-sets .imageWrapper.rating-C.onteam {
 	background-color: #b6fcb6;
 }
-
 
 #tabcontent_main_builddata .imageWrapper > .ratingWrapper {
 	display: none;
 }
 
-#tabcontent_main_wallit .imageWrapper.rating-50 {
+#tabcontent_main_wallit .imageWrapper.rating-50,
+#tabcontent_main_wallit-sets .imageWrapper.rating-50 {
 	background-color: powderblue;
 }
 

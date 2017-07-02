@@ -50,11 +50,13 @@ ui.invalidateThreatlists = function invalidateThreatlists (arg) {
 };
 
 ui.rebuildThreatlist = function rebuildThreatlist () {
-	if (ui.cache.generatedLists.includes(ui.cache.tabID))
+	if (ui.cache.generatedLists.includes(ui.cache.tabID)) {
+		ui.updateSearchresults();
 		return;                                                   // output does not need updating
+	}
 	let params = ui.config.threatlistParameters[ui.cache.tabID];
-	if (!params)                                                  // active tab does not have a threat list
-		return;
+	if (!params)
+		return;                                                   // active tab does not have a threat list
 	cache.threatlist = brmt.teamrater.getThreatlist(
 		cache.build,
 		cache.setInfo,
@@ -77,7 +79,7 @@ ui.rebuildThreatlist = function rebuildThreatlist () {
 		ui.threatlistEvents[params.onClickEventType]
 	);
 	ui.cache.generatedLists.push(ui.cache.tabID);
-	ui.updateSearchresults( htmlNodes.inputs.search.value );
+	ui.updateSearchresults();
 };
 
 ui.rebuildTeams = function rebuildTeams() {
@@ -98,9 +100,27 @@ ui.rebuildTeams = function rebuildTeams() {
 };
 
 ui.toggleTeammember = function toggleTeammember (pokemon) {
-	Object.keys(ui.config.threatlistParameters).forEach( tabID => {
-		
-	});
+	if (pokemon.set === "species") {
+		let onTeam = false;
+		for (teamMember of ui.cache.team) {
+			if (teamMember.species === pokemon.species) {
+				onTeam = true;
+				pokemon.set = teamMember.set;
+				break;
+			}
+		}
+		if (!onTeam) {
+			let search = brmt.aliases.getOfficialname(pokemon.species);
+			if (htmlNodes.inputs.search.value !== search) {
+				htmlNodes.inputs.search.value = search;
+				ui.updateSearchresults();
+			} else {
+				htmlNodes.inputs.search.value = "";
+				ui.updateSearchresults();
+			}
+			return;
+		}
+	}
 	let deleted;
 	cache.team = cache.team.filter( teamMember => {
 		if (teamMember.species === pokemon.species && teamMember.set === pokemon.set) {
@@ -111,20 +131,25 @@ ui.toggleTeammember = function toggleTeammember (pokemon) {
 	});
 	if (!deleted) cache.team.push(pokemon);
 	htmlNodes.inputs.search.value = "";
+	ui.updateSearchresults();
 	ui.invalidateThreatlists("team");
 	ui.rebuildTeams();
 };
 
 ui.updateSearchresults = function updateSearchresults (searchText) {
-	let searchRegex = new RegExp(searchText, 'i');
+	if (searchText === undefined)
+		searchText = htmlNodes.inputs.search.value;
 	
-	if (searchText.length || document.activeElement === htmlNodes.inputs.search) {
-		// resize main div and display search result div
-		htmlNodes.divs.main.style["margin-right"] = "240px";
+	if (searchText.length || document.activeElement === htmlNodes.inputs.search)
 		htmlNodes.divs.searchresults.style.display = "block";
-	} else {
-		htmlNodes.divs.main.style["margin-right"] = "0px";
-		htmlNodes.divs.searchresults.style.display = "none";
+	else htmlNodes.divs.searchresults.style.display = "none";
+	
+	let searchRegex;
+	try {
+		searchRegex = new RegExp(searchText, 'i');
+	} catch (e) {
+		if (e instanceof SyntaxError)
+			searchRegex = new RegExp(searchText.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&"), 'i');
 	}
 	
 	htmlNodes.selectedSearchResult = null;
@@ -148,11 +173,11 @@ ui.updateSearchresults = function updateSearchresults (searchText) {
 	
 	// mark results in the threatlist
 	[...htmlNodes.tabcontents.main[ui.cache.tabID].childNodes].forEach( childNode => {
-		if (!childNode.classList || !childNode.classList.contains("imageWrapper"))
-			return;
-		if (searchText && childNode.title.match(searchRegex))
-			childNode.classList.add("searchresult");
-		else childNode.classList.remove("searchresult");
+		if (childNode.classList && childNode.classList.contains("imageWrapper")) {
+			if (searchText && childNode.title.match(searchRegex))
+				childNode.classList.add("searchresult");
+			else childNode.classList.remove("searchresult");
+		}
 	});
 };
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 
 <head>
 	<title>brmt</title>
@@ -64,8 +64,11 @@
 	<div id="tabgroup_main_container" class="tabgroup">
 		<ul class="tab-container">
 			<li id="tab_main_viability" class="active"><a href="#viability">Team</a></li>
+			<li id="tab_main_viability-sets" class="hidden"><a href="#viability-sets">(sets)</a></li>
 			<li id="tab_main_breakit"><a href="#breakit">Break it</a></li>
+			<li id="tab_main_breakit-species" class="hidden"><a href="#breakit-species">(species)</a></li>
 			<li id="tab_main_wallit"><a href="#wallit">Wall it</a></li>
+			<li id="tab_main_wallit-species" class="hidden"><a href="#wallit-species">(species)</a></li>
 			<li id="tab_main_about"><a href="#about">Q&A</a></li>
 			<li id="tab_main_compendium" class="hidden"><a href="#compendium">Compendium</a></li>
 			<li id="tab_main_builddata" class="hidden"><a href="#builddata">Data</a></li>
@@ -79,9 +82,12 @@
 				<button id="button_usespeciesids">use species ID</button>
 				<button id="button_build">rebuild compendium</button>
 			</div>
-			<div id="tabcontent_main_viability" class="content active"></div>
-			<div id="tabcontent_main_breakit" class="content"></div>
-			<div id="tabcontent_main_wallit" class="content"></div>
+			<div id="tabcontent_main_viability" class="content active">Loading...</div>
+			<div id="tabcontent_main_viability-sets" class="content active">Loading...</div>
+			<div id="tabcontent_main_breakit" class="content">Loading...</div>
+			<div id="tabcontent_main_breakit-species" class="content">Loading...</div>
+			<div id="tabcontent_main_wallit" class="content">Loading...</div>
+			<div id="tabcontent_main_wallit-species" class="content">Loading...</div>
 			<div id="tabcontent_main_about" class="content">
 				<h2>Frequently asked questions:</h2>
 				<p>Q: What is brmt?<br>A: Brmt is a tool for generating threat lists for Pok&eacute;mon Teams. </p>
@@ -91,9 +97,9 @@
 				<p>Q: How do I make a checks compendium?<br>A: The <i>Data</i> tab shows the active compendium's data. Feel free to replace it and test how it works. If you end up making something, note that I can only accept what Smogon's quality control approves.</p>
 				<p>Q: I am interested in programming. Can I see the source code for this project?<br>A: Brmt is open source, the source code can be found on <a target="_blank" href="https://github.com/Hidden50/brmt">Github</a>. There's also a small <a href="#objectinspector" id="link_objectinspector">object inspector</a> for the project, containing the entire javascript source and variables, segmented into name spaces.</p>
 			</div>
-			<div id="tabcontent_main_compendium" class="content"></div>
-			<div id="tabcontent_main_builddata" class="content"></div>
-			<div id="tabcontent_main_objectinspector" class="content"></div>
+			<div id="tabcontent_main_compendium" class="content">Loading...</div>
+			<div id="tabcontent_main_builddata" class="content">Loading...</div>
+			<div id="tabcontent_main_objectinspector" class="content">Loading...</div>
 		</div>
 	</div>
 </div>

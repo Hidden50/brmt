@@ -53,7 +53,7 @@ let countTeamChecks = teamrater.countTeamChecks = function countTeamChecks (buil
 teamrater.scoreSet = function scoreSet (build, subject, team, evaluator, weights) {
 // returns the weighted sum over an evaluator, for the given set
 	if (subject.set === "species")
-		return teamrater.scoreSpecies(build, subject, team, evaluator);
+		return teamrater.scoreSpecies(build, subject, team, evaluator, weights);
 	let sum = 0;
 	if (weights[0] || weights[1] || weights[2]) {
 		if (["GSI","SSI","NSI"].every( mode => countTargetSpecies(build, subject, mode) === 0 ))
@@ -73,17 +73,17 @@ teamrater.scoreSpecies = function scoreSpecies (build, subject, team, evaluator,
 
 let scoreViability = teamrater.scoreViability = function scoreViability (pokemon) {
 	let vrScore = {
-		"S":  10,
-		"A+": 9,
-		"A":  8,
-		"A-": 7,
-		"B+": 6,
-		"B":  5,
-		"B-": 4,
-		"C+": 3,
-		"C":  2,
-		"C-": 1,
-		"?":  0
+		"S":   4,
+		"A+":  3,
+		"A":   2,
+		"A-":  1,
+		"B+":  0,
+		"B":  -1,
+		"B-": -2,
+		"C+": -3,
+		"C":  -4,
+		"C-": -5,
+		"?":  -6
 	};
 	return vrScore[pokemon.score.vr];
 }
@@ -111,12 +111,13 @@ teamrater.getThreatlist = function getThreatlist (build, setInfo, team, type, we
 	// attach scores to every one of these {species, set} combinations
 	for (let threat of threats) {
 		threat.score = {};
-		threat.score.vr        = getViability(threat, setInfo);
-		threat.score.viability = scoreViability(threat);
-		threat.score.species   = teamrater.scoreSpecies(build, threat, team, countTargetSpecies, weights);
-		threat.score.set       = teamrater.scoreSet    (build, threat, team, countTargetSpecies, weights);
-		threat.score.team      = teamrater.scoreSet    (build, threat, team, countTeamChecks,    weights);
-		threat.score.hashcode  = threat.species.hashCode();
+		threat.score.vr            = getViability(threat, setInfo);
+		threat.score.viability     = scoreViability(threat);
+		threat.score.species       = teamrater.scoreSpecies(build, threat, team, countTargetSpecies, weights);
+		threat.score.set           = teamrater.scoreSet    (build, threat, team, countTargetSpecies, weights);
+		threat.score.team          = teamrater.scoreSet    (build, threat, team, countTeamChecks,    weights);
+		threat.score.teamviability = threat.score.team + threat.score.viability;
+		threat.score.hashcode      = threat.species.hashCode();
 	}
 	
 	// sort the array based on the above scoring functions

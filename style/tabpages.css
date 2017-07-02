@@ -19,7 +19,7 @@
 
 .tab-container li {
 	margin:          0px 5px;
-	float:           left;
+	display:         inline-block;
 	list-style:      none;
 }
 

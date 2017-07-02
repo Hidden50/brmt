@@ -19,11 +19,12 @@ listeners.preventPropagation = function preventPropagation (domEvent) {
 listeners.addClassListeners = function addClassListeners (parentNode, className, eventType, listener) {
 	// recursively add listeners to all children, and their children, and so on, who have the specified class
 	[...parentNode.childNodes].forEach( (node, index) => {
-		if ( (node.tagName && node.tagName.toLowerCase() === className) || (node.classList && node.classList.contains(className)) )
+		if ( (node.tagName && node.tagName.toLowerCase() === className) || (node.classList && node.classList.contains(className)) ) {
 			node.addEventListener( eventType, e => {
 				listener(node, index);
 				return listeners.preventPropagation(e);
 			});
+		}
 		addClassListeners(node, className, eventType, listener);
 	});
 };
@@ -50,6 +51,7 @@ listeners.initBuilddataTA = function initBuilddataTA () {
 		return listeners.preventPropagation(e);
 	});
 	htmlNodes.buttons.build.addEventListener('click', e => {
+		ui.initCompendium();
 		ui.invalidateThreatlists();
 		return listeners.preventPropagation(e);
 	});
@@ -73,7 +75,7 @@ listeners.initTeamselection = function initTeamselection () {
 
 listeners.initCompendiumSelector = function initCompendiumSelector () {
 	htmlNodes.selects.checkscompendium.addEventListener('change', e =>{
-		ui.initCompendium( htmlNodes.selects.checkscompendium.value );
+		ui.initCompendium(htmlNodes.selects.checkscompendium.value);
 		ui.invalidateThreatlists();
 		ui.rebuildTeams();
 		return listeners.preventPropagation(e);
@@ -84,17 +86,18 @@ listeners.initPokemonsearch = function initPokemonsearch () {
 	htmlNodes.inputs.search.addEventListener('input', e => {
 		if (!htmlNodes.inputs.search.value)
 			htmlNodes.inputs.search.blur();
-		ui.updateSearchresults(htmlNodes.inputs.search.value);
+		ui.updateSearchresults();
 		return listeners.preventPropagation(e);
 	});
 	htmlNodes.inputs.search.addEventListener('focus', e => {
-		ui.updateSearchresults(htmlNodes.inputs.search.value);
+		ui.updateSearchresults();
 		return listeners.preventPropagation(e);
 	});
 	document.body.addEventListener('click', e => {
 		// using htmlNodes.inputs.search -> on:'blur' with  would trigger when clicking on search results
 		// so we are using on:'click' with document.body instead
-		ui.updateSearchresults(htmlNodes.inputs.search.value);
+		htmlNodes.inputs.search.value = "";
+		ui.updateSearchresults();
 		return listeners.preventPropagation(e);
 	});
 	document.addEventListener('keydown', e => {
@@ -104,22 +107,20 @@ listeners.initPokemonsearch = function initPokemonsearch () {
 			return listeners.preventPropagation(e);
 		
 		if (e.keyCode === 38 || e.keyCode === 40) {  // arrow key up / down
-			if (document.activeElement === htmlNodes.inputs.search) {
-				let node = htmlNodes.selectedSearchResult;
-				while (node) {
-					node = (e.keyCode === 38) ? node.previousElementSibling : node.nextElementSibling;
-					if (node && node.classList && node.classList.contains("searchresult")) {
-						htmlNodes.selectedSearchResult.classList.remove("selected");
-						htmlNodes.selectedSearchResult = node;
-						node.classList.add("selected");
-						if (!ui.tools.isVisibleDOMElement(node))
-							node.scrollIntoView();
-						break;
-					}
+			let node = htmlNodes.selectedSearchResult;
+			while (node) {
+				node = (e.keyCode === 38) ? node.previousElementSibling : node.nextElementSibling;
+				if (node && node.classList && node.classList.contains("searchresult")) {
+					htmlNodes.selectedSearchResult.classList.remove("selected");
+					htmlNodes.selectedSearchResult = node;
+					node.classList.add("selected");
+					if (!ui.tools.isVisibleDOMElement(node))
+						node.scrollIntoView();
+					break;
 				}
-				if (!node) window.scrollBy(0, (e.keyCode === 38) ? -50 : 50);
-				e.preventDefault();
 			}
+			if (node && ui.tools.isVisibleDOMElement(node))
+				e.preventDefault();
 			return listeners.preventPropagation(e);
 		}
 		
@@ -128,7 +129,7 @@ listeners.initPokemonsearch = function initPokemonsearch () {
 				return listeners.preventPropagation(e);
 			
 			ui.toggleTeammember(brmt.aliases.parseSetTitle(htmlNodes.selectedSearchResult.firstChild.firstChild.title).subject);
-			ui.updateSearchresults(htmlNodes.inputs.search.value);
+			ui.updateSearchresults();
 			return listeners.preventPropagation(e);
 		}
 		

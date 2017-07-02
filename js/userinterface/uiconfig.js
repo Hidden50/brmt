@@ -8,6 +8,20 @@ config.threatlistParameters = {
 	"viability": {
 		"rate": {
 			"teamSource":     "",
+			"threatlistType": "species",
+			"weights":        [10000, 100, 2, -11, -7, -3],
+			"priorities":     ["viability", "species", "hashcode", "set"]
+		},
+		"display": {
+			"method":         "makeIconGallery",
+			"teamSource":     "team",
+			"ratingType":     "vr"
+		},
+		"onClickEventType":   "toggleTeammember"
+	},
+	"viability-sets": {
+		"rate": {
+			"teamSource":     "",
 			"threatlistType": "sets",
 			"weights":        [10000, 100, 2, -11, -7, -3],
 			"priorities":     ["viability", "species", "hashcode", "set"]
@@ -24,12 +38,26 @@ config.threatlistParameters = {
 			"teamSource":     "team",
 			"threatlistType": "sets",
 			"weights":        [10000, 100, 2, -11, -7, -3],
-			"priorities":     ["team", "species", "hashcode", "set"]
+			"priorities":     ["teamviability", "species", "hashcode", "set"]
 		},
 		"display": {
 			"method":         "makeIconGallery",
 			"teamSource":     "team",
-			"ratingType":     "team"
+			"ratingType":     "teamviability"
+		},
+		"onClickEventType":   "showEntry"
+	},
+	"breakit-species": {
+		"rate": {
+			"teamSource":     "team",
+			"threatlistType": "species",
+			"weights":        [10000, 100, 2, -11, -7, -3],
+			"priorities":     ["teamviability", "species", "hashcode", "set"]
+		},
+		"display": {
+			"method":         "makeIconGallery",
+			"teamSource":     "team",
+			"ratingType":     "teamviability"
 		},
 		"onClickEventType":   "showEntry"
 	},
@@ -38,12 +66,26 @@ config.threatlistParameters = {
 			"teamSource":     "team",
 			"threatlistType": "sets",
 			"weights":        [    0,   0, 0, -11, -7, -3],
-			"priorities":     ["team", "species", "hashcode", "set"]
+			"priorities":     ["teamviability", "species", "hashcode", "set"]
 		},
 		"display": {
 			"method":         "makeIconGallery",
 			"teamSource":     "team",
-			"ratingType":     "team"
+			"ratingType":     "teamviability"
+		},
+		"onClickEventType":   "showEntry"
+	},
+	"wallit-species": {
+		"rate": {
+			"teamSource":     "team",
+			"threatlistType": "species",
+			"weights":        [    0,   0, 0, -11, -7, -3],
+			"priorities":     ["teamviability", "species", "hashcode", "set"]
+		},
+		"display": {
+			"method":         "makeIconGallery",
+			"teamSource":     "team",
+			"ratingType":     "teamviability"
 		},
 		"onClickEventType":   "showEntry"
 	},
