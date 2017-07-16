@@ -10,7 +10,7 @@ htmloutput.iconConfigTypes = [
 	"letters"
 ];
 
-htmloutput.weblink = (imgName) => `./Serebii__Images/${brmt.aliases.getSpeciesID(imgName)}.png`;
+htmloutput.weblink = (imgName) => `./img/${brmt.aliases.getSpeciesID(imgName)}.png`;
 
 htmloutput.readIconConfig = function readIconConfig (buildData) {
 	let iconConfig = {};
