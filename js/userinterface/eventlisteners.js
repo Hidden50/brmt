@@ -106,7 +106,8 @@ listeners.initPokemonsearch = function initPokemonsearch () {
 		if (e.ctrlKey || e.altKey || e.metaKey)
 			return listeners.preventPropagation(e);
 		
-		if (e.keyCode === 38 || e.keyCode === 40) {  // arrow key up / down
+		// arrow key up / down
+		if (e.keyCode === 38 || e.keyCode === 40) {
 			let node = htmlNodes.selectedSearchResult;
 			while (node) {
 				node = (e.keyCode === 38) ? node.previousElementSibling : node.nextElementSibling;
@@ -121,10 +122,15 @@ listeners.initPokemonsearch = function initPokemonsearch () {
 			}
 			if (node && ui.tools.isVisibleDOMElement(node))
 				e.preventDefault();
+			else if (document.activeElement.type === "text") {
+				window.scrollBy(0, e.keyCode === 38 ? -50 : 50);
+				e.preventDefault();
+			}
 			return listeners.preventPropagation(e);
 		}
 		
-		if (e.keyCode === 13) {       // enter key
+		// enter key
+		if (e.keyCode === 13) {
 			if (!htmlNodes.selectedSearchResult)
 				return listeners.preventPropagation(e);
 			
