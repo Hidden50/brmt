@@ -30,78 +30,83 @@
 
 <div class="header">
 
-<h2 style="float: left">Team Weakness Finder (BreakMyTeam)</h2>
+<h2>Team Weakness Finder (BreakMyTeam)</h2>
 
 <div class="menu">
 	<div class="team-container">
 		<label>Team</label>
 		<button id="button_clearteam">clear</button>
 		<button id="button_loadteam">load</button>
-		<div id="div_team" class="team"></div>
+		<div    id="div_team" class="team"></div>
 	</div>
-	<div class="resource-container">
-		<label for="select_checkscompendium">Resource</label>
-		<br>
-		<select id="select_checkscompendium">
-			<option value="gen7OU" selected>Gen7 OU Checks Compendium by dk</option>
-			<option disabled> - - - </option>
-			<option value="gen6OU">Gen6 OU Checks Compendium by Orda-Y</option>
-			<option value="gen6RU">Gen6 RU Checks Compendium by Arifeen</option>
-			<option value="gen6PU">Gen6 PU Checks Compendium by Anty</option>
-			<option value="gen6LC">Gen6 LC Checks Compendium by Trash</option>
-		</select>
-	</div>
-	<div class="search-container">
-		<label>Search</label>
-		<input id="input_search" type="text" spellcheck="false">
-		<div id="div_searchresults" style="display:none"></div>
-	</div>
-</div>
-
-</div>
-
-<div id="div_main" class="main">
-	<div id="tabgroup_main_container" class="tabgroup">
-		<ul class="tab-container">
-			<li id="tab_main_viability" class="active"><a href="#viability">Team</a></li>
-			<li id="tab_main_viability-sets" class="hidden"><a href="#viability-sets">(sets)</a></li>
-			<li id="tab_main_breakit"><a href="#breakit">Break it</a></li>
-			<li id="tab_main_breakit-species" class="hidden"><a href="#breakit-species">(species)</a></li>
-			<li id="tab_main_wallit"><a href="#wallit">Wall it</a></li>
-			<li id="tab_main_wallit-species" class="hidden"><a href="#wallit-species">(species)</a></li>
-			<li id="tab_main_about"><a href="#about">Q&A</a></li>
-			<li id="tab_main_compendium" class="hidden"><a href="#compendium">Compendium</a></li>
-			<li id="tab_main_builddata" class="hidden"><a href="#builddata">Data</a></li>
-			<li id="tab_main_objectinspector" class="hidden"><a href="#objectinspector">Object Inspector</a></li>
-			<li id="tab_main_revealhidden" class="reveal hidden"><a href="#hiddentabs"></a></li>
-		</ul>
-		<div class="tab-content">
-			<div id="div_builddata" style="display:none">
-				<textarea id="textarea_builddata" spellcheck="false"></textarea>
-				<button id="button_useofficialnames">use official names</button>
-				<button id="button_usespeciesids">use species ID</button>
-				<button id="button_build">rebuild compendium</button>
+	<div class="menugroup">
+		<div class="format-container">
+			<label for="select_checkscompendium">Format</label>
+			<br>
+			<select id="select_checkscompendium">
+				<option value="gen7OU" selected>Gen7 OU</option>
+				<option disabled> - - - </option>
+				<option value="gen6OU">Gen6 OU</option>
+				<option value="gen6RU">Gen6 RU</option>
+				<option value="gen6PU">Gen6 PU</option>
+				<option value="gen6LC">Gen6 LC</option>
+			</select>
+		</div>
+		<div class="search-container">
+			<div class="search-wrapper">
+				<label>Search</label>
+				<input id="input_search" type="text" spellcheck="false">
+				<div id="div_searchresults" style="display:none"></div>
 			</div>
-			<div id="tabcontent_main_viability" class="content active">Loading...</div>
-			<div id="tabcontent_main_viability-sets" class="content active">Loading...</div>
-			<div id="tabcontent_main_breakit" class="content">Loading...</div>
-			<div id="tabcontent_main_breakit-species" class="content">Loading...</div>
-			<div id="tabcontent_main_wallit" class="content">Loading...</div>
-			<div id="tabcontent_main_wallit-species" class="content">Loading...</div>
-			<div id="tabcontent_main_about" class="content">
-				<h2>Frequently asked questions:</h2>
-				<p>Q: What is brmt?<br>A: Brmt is a tool for generating threat lists for Pok&eacute;mon Teams. </p>
-				<p>Q: How does it work?<br>A: By going through a list of common answers to common threats. It scores based on the quality and quantity it finds on your team, and sorts the list based on those scores.</p>
-				<p>Q: What do GSI, SSI and NSI stand for?<br>A: They stand for <i>guaranteed switch-in</i>, <i>situational switch-in</i> and <i>non-switch-in</i>. These are the categories traditionally used for expressing how well a Pok&eacute;mon is checked by another.</p>
-				<p>Q: What do the colors mean?<br>A: Colors help you interpret the ratings. Usually green threats are well covered, blues are probably covered, orange threats aren't covered, and red threats also themselves check some of your team members.</p>
-				<p>Q: How do I make a checks compendium?<br>A: The <i>Data</i> tab shows the active compendium's data. Feel free to replace it and test how it works. If you end up making something, note that I can only accept what Smogon's quality control approves.</p>
-				<p>Q: I am interested in programming. Can I see the source code for this project?<br>A: Brmt is open source, the source code can be found on <a target="_blank" href="https://github.com/Hidden50/brmt">Github</a>. There's also a small <a href="#objectinspector" id="link_objectinspector">object inspector</a> for the project, containing the entire javascript source and variables, segmented into name spaces.</p>
-			</div>
-			<div id="tabcontent_main_compendium" class="content">Loading...</div>
-			<div id="tabcontent_main_builddata" class="content">Loading...</div>
-			<div id="tabcontent_main_objectinspector" class="content">Loading...</div>
 		</div>
 	</div>
+</div>
+
+</div>
+
+<div class="main">
+
+<ul class="tab-container">
+	<li id="tab_main_viability" class="active"><a href="#viability">Team</a></li>
+	<li id="tab_main_viability-sets" class="small hidden"><a href="#viability-sets">(sets)</a></li>
+	<li id="tab_main_breakit"><a href="#breakit">Break it</a></li>
+	<li id="tab_main_breakit-species" class="small hidden"><a href="#breakit-species">(species)</a></li>
+	<li id="tab_main_wallit"><a href="#wallit">Wall it</a></li>
+	<li id="tab_main_wallit-species" class="small hidden"><a href="#wallit-species">(species)</a></li>
+	<li id="tab_main_about"><a href="#about">Q&A</a></li>
+	<li id="tab_main_compendium" class="hidden"><a href="#compendium">Compendium</a></li>
+	<li id="tab_main_builddata" class="hidden"><a href="#builddata">Data</a></li>
+	<li id="tab_main_objectinspector" class="hidden"><a href="#objectinspector">Object Inspector</a></li>
+	<li id="tab_main_revealhidden" class="reveal hidden"><a href="#hiddentabs"></a></li>
+</ul>
+
+<div class="tab-content">
+	<div id="div_builddata" style="display:none">
+		<textarea id="textarea_builddata" spellcheck="false"></textarea>
+		<button id="button_useofficialnames">use official names</button>
+		<button id="button_usespeciesids">use species ID</button>
+		<button id="button_build">rebuild compendium</button>
+	</div>
+	<div id="tabcontent_main_viability" class="content active">Loading...</div>
+	<div id="tabcontent_main_viability-sets" class="content active">Loading...</div>
+	<div id="tabcontent_main_breakit" class="content">Loading...</div>
+	<div id="tabcontent_main_breakit-species" class="content">Loading...</div>
+	<div id="tabcontent_main_wallit" class="content">Loading...</div>
+	<div id="tabcontent_main_wallit-species" class="content">Loading...</div>
+	<div id="tabcontent_main_about" class="content">
+		<h2>Frequently asked questions:</h2>
+		<p>Q: What is brmt?<br>A: Brmt is a tool for generating threat lists for Pok&eacute;mon Teams. </p>
+		<p>Q: How does it work?<br>A: By going through a list of common answers to common threats. It scores based on the quality and quantity it finds on your team, and sorts the list based on those scores.</p>
+		<p>Q: What do GSI, SSI and NSI stand for?<br>A: They stand for <i>guaranteed switch-in</i>, <i>situational switch-in</i> and <i>non-switch-in</i>. These are the categories traditionally used for expressing how well a Pok&eacute;mon is checked by another.</p>
+		<p>Q: What do the colors mean?<br>A: Colors help you interpret the ratings. Usually green threats are well covered, blues are probably covered, orange threats aren't covered, and red threats also themselves check some of your team members.</p>
+		<p>Q: How do I make a checks compendium?<br>A: The <i>Data</i> tab shows the active compendium's data. Feel free to replace it and test how it works. If you end up making something, note that I can only accept what Smogon's quality control approves.</p>
+		<p>Q: I am interested in programming. Can I see the source code for this project?<br>A: Brmt is open source, the source code can be found on <a target="_blank" href="https://github.com/Hidden50/brmt">Github</a>. There's also a small <a href="#objectinspector" id="link_objectinspector">object inspector</a> for the project, containing the entire javascript source and variables, segmented into name spaces.</p>
+	</div>
+	<div id="tabcontent_main_compendium" class="content">Loading...</div>
+	<div id="tabcontent_main_builddata" class="content">Loading...</div>
+	<div id="tabcontent_main_objectinspector" class="content">Loading...</div>
+</div>
+
 </div>
 
 <div id="popup_teamselect" style="display:none" onmouseleave="this.style.display = 'none'"></div>

@@ -170,14 +170,14 @@ listeners.initTabpages = function initTabpages () {
 			if (htmlNodes.tabcontents[listID] && htmlNodes.tabcontents[listID][tabID])
 				htmlNodes.tabcontents[listID][tabID].classList.add('active');                  // make selected tabcontent active
 			
-			if (htmlNodes.tabgroups[listID].updateContent)
-				htmlNodes.tabgroups[listID].updateContent(listID, tabID);
+			if (htmlNodes.tabcontents[listID] && htmlNodes.tabcontents[listID].updateContent)
+				htmlNodes.tabcontents[listID].updateContent(listID, tabID);
 			
 			e.preventDefault();
 			return listeners.preventPropagation(e);
 		});
 	});
-	htmlNodes.tabgroups.main.updateContent = function updateContent(listID, tabID) {
+	htmlNodes.tabcontents.main.updateContent = function updateContent(listID, tabID) {
 		location.hash = ui.cache.tabID = tabID;
 		htmlNodes.divs.builddata.style.display = (tabID === "builddata") ? "block" : "none";
 		if (ui.config.threatlistParameters[tabID])

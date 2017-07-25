@@ -1,36 +1,42 @@
 html {
-	height:     100%;
+	height:     calc(100% - 16px);
 }
 
 body {
-	height:     100%;
-	background: #4a98d3;
+	height:      100%;
+	width:       calc(100vw - 68px);
+	margin-left: 34px;
+	background:  #4a98d3;
 }
 
 input[type=radio],
-button,
-label {
+select,
+button {
 	cursor: pointer;
 }
 
-/* rules for header elements */
+/* header elements */
+
+.header h2 {
+	display:          inline-block;
+	margin-top:       7px;
+	margin-bottom:    14px;
+}
 
 .header .menu {
-	margin-bottom:    25px;
 	float:            right;
+	margin-bottom:    12px;
 }
-
-.header label {
-	font-weight:       bold;
+.menu label {
+	font-weight:      bold;
 }
-
-.header button {
+.menu button {
 	margin:           5px;
 }
-
 .team-container {
 	display:          inline-block;
-	margin:           0px 20px;
+	vertical-align:   bottom;
+	margin-left:      10px;
 }
 #button_loadteam,
 #button_clearteam {
@@ -41,30 +47,41 @@ label {
 	display:          flex;
 	justify-content:  center;
 	align-items:      center;
-	border:           1px solid black;
+	border:           1px solid #787878;
 	background-color: lightgray;
 	color:            gray;
 	font-size:        8pt;
 	border-radius:    5px;
 }
-
-
-.search-container {
-	display:          inline-block;
+.menugroup {
+	display:          inline-flex;
 	position:         relative;
-	margin-left:      20px;
-	margin-right:     20px;
 	vertical-align:   bottom;
+	margin-left:      10px;
+}
+.format-container {
+	min-height:       41px;
+	padding:          2px;
+}
+.search-container {
+	position:         relative;
+	z-index:          1;
+	width:            216px;
+	height:           100%;
+	margin-left:      10px;
+}
+.search-wrapper {
+	position:         absolute;
+	width:            100%;
+	padding:          2px;
 }
 #input_search {
 	display:          block;
-	width:            196px;
+	width:            calc(100% - 8px);
 	padding:          2px;
 }
 #div_searchresults {
-	position:         absolute;
 	width:            100%;
-	z-index:          1;
 }
 #div_searchresults table {
 	table-layout:     fixed;
@@ -91,29 +108,16 @@ label {
 	background-color: lightblue;
 }
 
-.resource-container {
-	display:          inline-block;
-	vertical-align:   bottom;
-}
-
-/* rules for elements in the .main container */
-
-#tab_main_viability-sets,
-#tab_main_breakit-species,
-#tab_main_wallit-species {
-	vertical-align:   bottom;
-	margin-left:      -2px;
-}
-#tab_main_viability-sets a,
-#tab_main_breakit-species a,
-#tab_main_wallit-species a {
-	padding:          6px 10px;
-	font-size:        12px;
-}
+/* elements in the .main container */
 
 #tab_main_breakit,
 #tab_main_about {
 	margin-left:      20px;
+}
+
+.main > .tab-content > .content {
+	max-height:       calc(100vh - 137px);
+	overflow-y:       auto;
 }
 
 #div_builddata {
@@ -126,7 +130,7 @@ label {
 	max-width:        100%;
 }
 
-/* rules for popup containers */
+/* popup elements */
 
 #popup_teamselect,
 #popup_main {
@@ -135,6 +139,7 @@ label {
 	position:         absolute;
 	padding:          15px;
 	margin:           5px;
+	z-index:          100;
 }
 #popup_teamselect button {
 	margin: 3px;

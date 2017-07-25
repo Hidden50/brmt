@@ -15,10 +15,8 @@ window.onload = ui.init = function init () {
 	ui.listeners.init();
 	
 	ui.cache.generatedLists = [];
-	let tabID = location.hash && location.hash.substr && location.hash.substr(1);
-	if (htmlNodes.tabs.main[tabID])
-		htmlNodes.tabs.main[tabID].firstChild.click();
-	else htmlNodes.tabs.main.viability.firstChild.click();
+	let tabID = location.hash && location.hash.substr && location.hash.substr(1) || "viability";
+	htmlNodes.tabs.main[tabID].firstChild.click();
 };
 
 ui.initCompendium = function initCompendium (compTitle) {
@@ -155,7 +153,7 @@ ui.updateSearchresults = function updateSearchresults (searchText) {
 	htmlNodes.selectedSearchResult = null;
 	// select which search results to show
 	let firstMatch = true;
-	[...htmlNodes.divs.searchresults.firstChild.firstChild.childNodes].forEach( tablerow => {
+	[...htmlNodes.divs.searchresults.firstElementChild.firstChild.childNodes].forEach( tablerow => {
 		if (tablerow.firstChild.firstChild.title.match(searchRegex)) {
 			tablerow.classList.add("searchresult");
 			if (tablerow.firstChild.firstChild.classList.contains("onteam"))
