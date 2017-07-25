@@ -11,7 +11,7 @@ A-, vr, Alakazam-Mega, Amoonguss, Chansey, Charizard-Mega-Y, Clefable, Gengar, H
 
 B+, vr, Bisharp, Gyarados, Hoopa-Unbound, Jirachi, Kingdra, Marowak-Alola, Rotom-Wash, Swampert-Mega, Tapu Fini, Tornadus-Therian, Weavile
 B, vr, Alakazam, Alomomola, Excadrill, Kartana, Kyurem-Black, Mamoswine, Manectric-Mega, Mantine, Mimikyu, Nihilego, Reuniclus, Serperior, Slowbro-Mega, Smeargle, Suicune, Terrakion, Thundurus
-B-, vr, Azumarill, Charizard (Mega-X), Gastrodon, Latias, Muk-Alola, Nidoking, Omastar, Porygon-Z, Salamence, Sharpedo-Mega, Slowbro, Togekiss, Venusaur-Mega
+B-, vr, Azumarill, Charizard-Mega-X, Gastrodon, Latias, Muk-Alola, Nidoking, Omastar, Porygon-Z, Salamence, Sharpedo-Mega, Slowbro, Togekiss, Venusaur-Mega
 
 C+, vr, Aerodactyl-Mega, Beedrill-Mega, Breloom, Buzzwole, Cofagrigus, Dragonite, Garchomp-Mega, Gliscor, Gyarados-Mega, Hippowdon, Kabutops, Manaphy, Primarina, Quagsire, Scolipede, Starmie, Volcanion
 C, vr, Azelf, Crawdaunt, Cresselia, Ditto, Hawlucha, Hydreigon, Kyurem, Magneton, Ninetales-Alola, Pidgeot-Mega, Thundurus-Therian
