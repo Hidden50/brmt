@@ -178,7 +178,10 @@ listeners.initTabpages = function initTabpages () {
 		});
 	});
 	htmlNodes.tabcontents.main.updateContent = function updateContent(listID, tabID) {
-		location.hash = ui.cache.tabID = tabID;
+		ui.cache.tabID = tabID;
+		if (tabID === "viability")
+			history.pushState("", document.title, window.location.pathname);
+		else location.hash = tabID;
 		htmlNodes.divs.builddata.style.display = (tabID === "builddata") ? "block" : "none";
 		if (ui.config.threatlistParameters[tabID])
 			ui.rebuildThreatlist();
