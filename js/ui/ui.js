@@ -5,7 +5,12 @@ window.ui = project.ui = project.ui || {};
 let cache = ui.cache = {};
 
 window.onload = ui.init = function init () {
-	htmlNodes.register( ...document.querySelectorAll("[id]") );  // register all html nodes that have an id
+	htmlNodes.register( ...document.querySelectorAll("[id]") );                          // register all html nodes that have an id
+	
+	htmlNodes.tabcontents.main.about.innerHTML = ui.config.about;                        // load some tab content
+	htmlNodes.tabcontents.main.faq.innerHTML = ui.config.faq;
+	htmlNodes.register( ...htmlNodes.tabcontents.main.about.querySelectorAll("[id]") );
+	htmlNodes.register( ...htmlNodes.tabcontents.main.faq.querySelectorAll("[id]") );
 	
 	cache.team = [];
 	cache.teams = ui.tools.getTeamStorage();
@@ -15,8 +20,8 @@ window.onload = ui.init = function init () {
 	ui.listeners.init();
 	
 	ui.cache.generatedLists = [];
-	let tabID = location.hash && location.hash.substr && location.hash.substr(1) || "viability";
-	htmlNodes.tabs.main[tabID].firstChild.click();
+	let tabID = location.hash && location.hash.substr && location.hash.substr(1);
+	(htmlNodes.tabs.main[tabID] || htmlNodes.tabs.main.about).firstChild.click();
 };
 
 ui.initCompendium = function initCompendium (compTitle) {
@@ -82,7 +87,7 @@ ui.rebuildThreatlist = function rebuildThreatlist () {
 
 ui.rebuildTeams = function rebuildTeams() {
 	let teamGallery = brmt.htmloutput.makeIconGallery(cache.team, cache.build, cache.team, cache.iconConfig);
-	htmlNodes.divs.team.innerHTML = teamGallery || "(please select from below)";
+	htmlNodes.divs.team.innerHTML = teamGallery || "(please select team members)";
 	ui.listeners.addClassListeners( htmlNodes.divs.team, "imageWrapper", 'click',
 		node => ui.toggleTeammember( brmt.aliases.parseSetTitle(node.title).subject )
 	);
@@ -138,9 +143,13 @@ ui.updateSearchresults = function updateSearchresults (searchText) {
 	if (searchText === undefined)
 		searchText = htmlNodes.inputs.search.value;
 	
-	if (searchText.length || document.activeElement === htmlNodes.inputs.search)
+	if (searchText.length || document.activeElement === htmlNodes.inputs.search) {
 		htmlNodes.divs.searchresults.style.display = "block";
-	else htmlNodes.divs.searchresults.style.display = "none";
+		htmlNodes.labels.search.innerText = "Select a set";
+	} else {
+		htmlNodes.divs.searchresults.style.display = "none";
+		htmlNodes.labels.search.innerText = "Search";
+	}
 	
 	let searchRegex;
 	try {
@@ -198,6 +207,17 @@ ui.scrollBuilddataFindEntry = function scrollBuilddataFindEntry (subject, target
 	let find2 = ui.tools.scrollTextareaFindText( htmlNodes.textareas.builddata, new RegExp(entryRegex, 'i') );
 };
 
+ui.showHelp = function showHelp (id) {
+	if (htmlNodes.tabcontents.main.about.classList.contains('active')) {
+		if (htmlNodes.sliders.about[id]) {
+			[...htmlNodes.tabcontents.main.about.childNodes].forEach(
+				slider => slider.classList && slider.classList.remove('active')
+			);
+			htmlNodes.sliders.about[id].classList.add('active');
+		}
+	}
+}
+
 ui.showEntry = function showEntry (caller, pokemon) {
 	if (!pokemon) {
 		let {subject, target} = brmt.aliases.parseSetTitle(caller.title);
@@ -245,6 +265,7 @@ ui.showPopup = function showPopup (caller, container, contentHtml) {
 	let maxTop = window.pageYOffset + window.innerHeight - container.offsetHeight - 15;
 	container.style.top = maxTop + 'px';
 	container.style.top = Math.max(0, maxTop - Math.max(0, container.offsetTop - YOffset)) + 'px';
+	container.focus();
 };
 
 ui.threatlistEvents = {};

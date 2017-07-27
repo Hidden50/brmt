@@ -11,19 +11,16 @@
 	margin:          0px;
 	padding:         0px 40px;
 }
-
 .tab-container:after {
 	display:         block;
 	clear:           both;
 	content:         '';
 }
-
 .tab-container li {
 	margin:          0px 5px;
 	display:         inline-block;
 	list-style:      none;
 }
-
 .tab-container a {
 	padding:         9px 15px;
 	display:         inline-block;
@@ -35,12 +32,10 @@
 	transition:      all linear 0.15s;
 	text-decoration: none;
 }
-
 .tab-container a:hover {
 	background:      #a7cce5;
 	text-decoration: none;
 }
-
 .tab-container li.active a,
 .tab-container li.active a:hover {
 	background:      #fff;
@@ -72,7 +67,7 @@
 .tab-container.reveal li.reveal a:after {
 	content:         '-'
 }
-.tab-container:not(.reveal) li.hidden:not(.reveal) {
+.tab-container:not(.reveal) li.hidden:not(.reveal):not(.active) {
 	display:         none;
 }
 
@@ -82,11 +77,9 @@
 	background:      #fff;
 	box-shadow:      -1px 1px 1px rgba(0,0,0,0.15);
 }
-
 .tab-content >  .content {
 	display:         none;
 }
- 
 .tab-content > .content.active {
 	display:         block;
 }

@@ -48,6 +48,8 @@ tools.appendChildnode = function appendChildnode (parentNode, containerTagName, 
 };
 
 htmlNodes.register = function register (node, ...rest) {
+	if (!node)
+		return;
 	if (typeof node === "string")
 		node = document.getElementById(node);
 	

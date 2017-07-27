@@ -32,7 +32,7 @@ listeners.addClassListeners = function addClassListeners (parentNode, className,
 listeners.init = function init () {
 	listeners.initBuilddataTA();
 	listeners.initTeamselection();
-	listeners.initCompendiumSelector();
+	listeners.initFormatSelector();
 	listeners.initPokemonsearch();
 	listeners.initTabpages();
 };
@@ -73,9 +73,9 @@ listeners.initTeamselection = function initTeamselection () {
 	});
 };
 
-listeners.initCompendiumSelector = function initCompendiumSelector () {
-	htmlNodes.selects.checkscompendium.addEventListener('change', e =>{
-		ui.initCompendium(htmlNodes.selects.checkscompendium.value);
+listeners.initFormatSelector = function initFormatSelector () {
+	htmlNodes.selects.format.addEventListener('change', e =>{
+		ui.initCompendium(htmlNodes.selects.format.value);
 		ui.invalidateThreatlists();
 		ui.rebuildTeams();
 		return listeners.preventPropagation(e);
@@ -176,11 +176,23 @@ listeners.initTabpages = function initTabpages () {
 			e.preventDefault();
 			return listeners.preventPropagation(e);
 		});
+		tab.addEventListener('mouseenter', e => ui.showHelp(tabID));
 	});
+	htmlNodes.divs.team.addEventListener        ('mouseenter', e => ui.showHelp("team"));
+	htmlNodes.buttons.loadteam.addEventListener ('mouseenter', e => ui.showHelp("loadteam"));
+	htmlNodes.buttons.clearteam.addEventListener('mouseenter', e => ui.showHelp("clearteam"));
+	htmlNodes.selects.format.addEventListener   ('mouseenter', e => ui.showHelp("format"));
+	htmlNodes.inputs.search.addEventListener    ('mouseenter', e => ui.showHelp("search"));
+	
 	htmlNodes.tabcontents.main.updateContent = function updateContent(listID, tabID) {
 		ui.cache.tabID = tabID;
-		if (tabID === "viability")
-			history.pushState("", document.title, window.location.pathname);
+		if (tabID === "about") {
+			if (location.hash)
+				history.pushState("", document.title, window.location.pathname);
+			[...htmlNodes.tabcontents.main.about.childNodes].forEach(
+				slider => slider.classList && slider.classList.remove('active')
+			);
+		}
 		else location.hash = tabID;
 		htmlNodes.divs.builddata.style.display = (tabID === "builddata") ? "block" : "none";
 		if (ui.config.threatlistParameters[tabID])
