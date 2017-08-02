@@ -7,19 +7,18 @@ let cache = ui.cache = {};
 window.onload = ui.init = function init () {
 	htmlNodes.register( ...document.querySelectorAll("[id]") );                          // register all html nodes that have an id
 	
-	htmlNodes.tabcontents.main.about.innerHTML = ui.config.about;                        // load some tab content
+	htmlNodes.divs.about.innerHTML = ui.config.about;                                    // load static tab content
 	htmlNodes.tabcontents.main.faq.innerHTML = ui.config.faq;
-	htmlNodes.register( ...htmlNodes.tabcontents.main.about.querySelectorAll("[id]") );
+	htmlNodes.register( ...htmlNodes.divs.about.querySelectorAll("[id]") );
 	htmlNodes.register( ...htmlNodes.tabcontents.main.faq.querySelectorAll("[id]") );
 	
-	cache.team = [];
+	cache.team = [];                                                                     // init some variables
 	cache.teams = ui.tools.getTeamStorage();
-	
 	ui.initCompendium("gen7OU");
 	ui.rebuildTeams();
 	ui.listeners.init();
 	
-	ui.cache.generatedLists = [];
+	ui.cache.generatedLists = [];                                                        // display a tab
 	let tabID = location.hash && location.hash.substr && location.hash.substr(1);
 	(htmlNodes.tabs.main[tabID] || htmlNodes.tabs.main.about).firstChild.click();
 };
@@ -208,14 +207,11 @@ ui.scrollBuilddataFindEntry = function scrollBuilddataFindEntry (subject, target
 };
 
 ui.showHelp = function showHelp (id) {
-	if (htmlNodes.tabcontents.main.about.classList.contains('active')) {
-		if (htmlNodes.sliders.about[id]) {
-			[...htmlNodes.tabcontents.main.about.childNodes].forEach(
-				slider => slider.classList && slider.classList.remove('active')
-			);
-			htmlNodes.sliders.about[id].classList.add('active');
-		}
-	}
+	[...htmlNodes.divs.about.childNodes].forEach(
+		slider => slider.classList && slider.classList.remove('active')
+	);
+	if (htmlNodes.sliders.about[id])
+		htmlNodes.sliders.about[id].classList.add('active');
 }
 
 ui.showEntry = function showEntry (caller, pokemon) {

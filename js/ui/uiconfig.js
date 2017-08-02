@@ -5,12 +5,23 @@ window.ui = project.ui = project.ui || {};
 let config = ui.config = {};
 
 config.about =
-`<div id="slider_about_background" class="slider background"><img src="./cover-art-gen7OU.png"><p>Team rating tool.</p></div>
-<div id="slider_about_about" class="slider active"></div>
+`<div id="slider_about_about" class="slider">
+	<h2>Credits</h2>
+	<table>
+		<tr><th>Programming</th><td><a target="_blank" href="https://hidden50.github.io/">hidden50</a></td></tr>
+		<tr><th>Artwork</th><td><a target="_blank" href="http://www.smogon.com/forums/members/ssensenh.289929/">Ssensenh</a></td></tr>
+		<tr><th>Sprites</th><td><a target="_blank" href="http://serebii.net/">Serebii.net</a></td></tr>
+		<tr><th>Compendiums</th></tr>
+		<tr><td>Gen7 OU</td><td><a target="_blank" href="http://www.smogon.com/forums/members/dk.322027/">dk</a></td></tr>
+		<tr><td>Gen6 OU</td><td><a target="_blank" href="http://www.smogon.com/forums/members/agent-gibbs.117581/">Agent Gibbs</a>, <a target="_blank" href="http://www.smogon.com/forums/members/tressed.123092/">Tressed</a></td></tr>
+		<tr><td>Gen6 RU</td><td><a target="_blank" href="http://www.smogon.com/forums/members/arifeen.231398/">Arifeen</a></td></tr>
+		<tr><td>Gen6 PU</td><td><a target="_blank" href="http://www.smogon.com/forums/members/anty.177336/">Anty</a></td></tr>
+		<tr><td>Gen6 LC</td><td><a target="_blank" href="http://www.smogon.com/forums/members/trash.235068/">Trash</a></td></tr>
+	</table>
+</div>
 <div id="slider_about_viability" class="slider">
 	<h2>The Team Tab</h2>
 	<p>Click on a Pokémon to bring up its sets, then select one. Alternatively, you can type its name into the search field.</p>
-	<p>The sets are sorted by Smogon's viability rating.</p>
 </div>
 <div id="slider_about_viability-sets" class="slider">
 	<h2>Team Tab (by set)</h2>
@@ -18,8 +29,8 @@ config.about =
 </div>
 <div id="slider_about_breakit" class="slider">
 	<h2>Break it!</h2>
-	<p>Your team's weakness to offensive threats. Anything with red color and a high number is dangerous.</p>
-	<p>Click on a threat to see checks and counters to the individual sets it may have. You can click on Pokémon in that popup to add them to your team.</p>
+	<p>Your team's weakness to offensive threats. Anything with red color and / or a high number is probably dangerous.</p>
+	<p>Click on a threat to see a popup with checks and counters to the individual sets it may have. You can click on Pokémon in that popup to add them to your team.</p>
 	<p>GSI: <i>guaranteed switch-in</i><br>SSI: <i>situational switch-in</i><br>NSI: <i>non-switch-in</i></p>
 </div>
 <div id="slider_about_breakit-sets" class="slider">
@@ -36,22 +47,12 @@ config.about =
 	<p>Like "Wall it!", but shows threats by set instead of by species. More precision, but less overview at a glance.</p>
 </div>
 <div id="slider_about_faq" class="slider">
-	<h2>Credits</h2>
-	<table>
-		<tr><th>Programming</th><td><a target="_blank" href="https://hidden50.github.io/">hidden50</a></td></tr>
-		<tr><th>Artwork</th><td><a target="_blank" href="http://www.smogon.com/forums/members/ssensenh.289929/">Ssensenh</a></td></tr>
-		<tr><th>Sprites</th><td><a target="_blank" href="http://serebii.net/">Serebii.net</a></td></tr>
-		<tr><th>Compendiums</th></tr>
-		<tr><td>Gen7 OU</td><td><a target="_blank" href="http://www.smogon.com/forums/members/dk.322027/">dk</a></td></tr>
-		<tr><td>Gen6 OU</td><td><a target="_blank" href="http://www.smogon.com/forums/members/agent-gibbs.117581/">Agent Gibbs</a>, <a target="_blank" href="http://www.smogon.com/forums/members/tressed.123092/">Tressed</a></td></tr>
-		<tr><td>Gen6 RU</td><td><a target="_blank" href="http://www.smogon.com/forums/members/arifeen.231398/">Arifeen</a></td></tr>
-		<tr><td>Gen6 PU</td><td><a target="_blank" href="http://www.smogon.com/forums/members/anty.177336/">Anty</a></td></tr>
-		<tr><td>Gen6 LC</td><td><a target="_blank" href="http://www.smogon.com/forums/members/trash.235068/">Trash</a></td></tr>
-	</table>
+	<h2>Questions &amp; Answers</h2>
+	<p>What people usually ask me.</p>
 </div>
 <div id="slider_about_compendium" class="slider">
 	<h2>Compendium</h2>
-	<p>The rating is based on a checks compendiums. This tab contains the full compendium currently loaded into brmt.</p>
+	<p>The rating is based on a checks compendium. This tab contains the full compendium currently loaded into brmt.</p>
 </div>
 <div id="slider_about_builddata" class="slider">
 	<h2>Build Data</h2>
@@ -73,11 +74,11 @@ config.about =
 	<p>Add Pokémon via the "Team" tab. You can click on one here to kick it back out.</p>
 </div>
 <div id="slider_about_loadteam" class="slider">
-	<h2>"load team" Button</h2>
-	<p>Saving and loading teams isn't fully implemented yet. Currently this button contains a few sample teams.</p>
+	<h2>load-team Button</h2>
+	<p>Saving your own teams isn't implemented yet. Currently this button contains a few sample teams.</p>
 </div>
 <div id="slider_about_clearteam" class="slider">
-	<h2>"clear team" Button</h2>
+	<h2>clear-team Button</h2>
 	<p>Remove everything on your team and start from zero.</p>
 </div>
 <div id="slider_about_format" class="slider">
@@ -94,12 +95,12 @@ config.about =
 
 config.faq =
 `<h2>Frequently asked questions:</h2>
-<p>Q: What is brmt?<br>A: Brmt is a tool for generating threat lists for Pok&eacute;mon Teams. </p>
-<p>Q: How does it work?<br>A: By going through a list of common answers to common threats. It scores based on the quality and quantity it finds on your team, and sorts the list based on those scores.</p>
+<p>Q: What is brmt?<br>A: It is a tool for generating threat lists for Pok&eacute;mon Teams. </p>
+<p>Q: How does it work?<br>A: It goes through a list of stored answers to common threats and scores them based on the quality and quantity it finds on your team. Then it sorts that list based on those scores.</p>
 <p>Q: What do GSI, SSI and NSI stand for?<br>A: They stand for <i>guaranteed switch-in</i>, <i>situational switch-in</i> and <i>non-switch-in</i>. These are the categories traditionally used for expressing how well a Pok&eacute;mon is checked by another.</p>
 <p>Q: What do the colors mean?<br>A: Colors help you interpret the ratings. Usually green threats are well covered, blues are probably covered, orange threats aren't covered, and red threats also themselves check some of your team members.</p>
 <p>Q: How do I make a checks compendium?<br>A: The <i>Data</i> tab shows the active compendium's data. Feel free to replace it and test how it works. If you end up making something, note that I can only accept what Smogon's quality control approves.</p>
-<p>Q: I am interested in programming. Can I see the source code for this project?<br>A: Brmt is open source, the source code can be found on <a target="_blank" href="https://github.com/Hidden50/brmt">Github</a>. There's also a small <a href="#objectinspector" id="link_objectinspector">object inspector</a> for the project, containing the entire javascript source and variables, segmented into name spaces.</p>`;
+<p>Q: I am interested in programming. Can I see the source code?<br>A: Brmt is open source, the source code can be found on <a target="_blank" href="https://github.com/Hidden50/brmt">Github</a>. There is also an <a href="#objectinspector" id="link_objectinspector">object inspector</a> that contains the entire javascript source and all variables.</p>`;
 
 config.threatlistParameters = {
 	"viability": {

@@ -183,6 +183,7 @@ listeners.initTabpages = function initTabpages () {
 	htmlNodes.buttons.clearteam.addEventListener('mouseenter', e => ui.showHelp("clearteam"));
 	htmlNodes.selects.format.addEventListener   ('mouseenter', e => ui.showHelp("format"));
 	htmlNodes.inputs.search.addEventListener    ('mouseenter', e => ui.showHelp("search"));
+	htmlNodes.divs.about.addEventListener       ('mouseenter', e => ui.showHelp(""));
 	
 	htmlNodes.tabcontents.main.updateContent = function updateContent(listID, tabID) {
 		ui.cache.tabID = tabID;

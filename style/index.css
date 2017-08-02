@@ -37,7 +37,6 @@ h2 {
 .team-container {
 	display:          inline-block;
 	vertical-align:   bottom;
-	margin-left:      10px;
 }
 #button_loadteam,
 #button_clearteam {
@@ -48,6 +47,7 @@ h2 {
 	display:          flex;
 	justify-content:  center;
 	align-items:      center;
+	cursor:           default;
 	border:           1px solid #787878;
 	background-color: lightgray;
 	color:            gray;
@@ -111,6 +111,75 @@ h2 {
 
 /* elements in the .main container */
 
+.main > .tab-content {
+	position:         relative;
+}
+.main > .tab-content > .content {
+	max-height:       calc(100vh - 167px);
+	overflow-y:       auto;
+}
+.slider:not(.active) {
+	display:          none;
+}
+
+#div_about {
+	position:         absolute;
+	width:            calc(100% - 30px);
+	height:           calc(100% - 30px);
+}
+#div_about .slider.active {
+	position:         absolute;
+	display:          flex;
+	flex-direction:   column;
+	justify-content:  center;
+	align-items:      center;
+	width:            calc(30% - 50px);
+	left:             50%;
+	top:              45%;
+	transform:        translate(-50%, -45%);
+	padding:          24px;
+	z-index:          1;
+	text-align:       center;
+	border-radius:    30px;
+	color:            #fff;
+	text-shadow:      1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	background:       rgba(0, 0, 0, 0.85);
+}
+#div_about .slider p {
+	padding:          2px;
+	background:       rgba(255, 255, 255, 0.3);
+}
+#div_about .slider tr {
+	padding:          2px;
+	background:       rgba(255, 255, 255, 0.3);
+}
+#div_about .slider td {
+	padding:          0px 15px;
+	margin:           2px;
+}
+#div_about .slider th {
+	padding:          0px 15px;
+}
+
+#div_about .slider a {
+	text-decoration:  none;
+	color:            #fff;
+}
+#div_about .slider a:hover {
+	text-decoration:  underline;
+}
+
+#tabcontent_main_about {
+	height:           calc(100vh - 167px);
+	width:            100%;
+	text-align:       center;
+}
+#tabcontent_main_about > img {
+	height:           calc(100% - 60px);
+	width:            auto;
+	max-width:        calc(100% - 4px);
+}
+
 #tab_main_viability a {
 	padding-left:        32px;
 	background-image:    url("./../img/repeatball.png");
@@ -139,68 +208,6 @@ h2 {
 #tab_main_breakit-sets,
 #tab_main_wallit-sets {
 	margin-left:         -2px;
-}
-
-.main > .tab-content > .content {
-	max-height:       calc(100vh - 167px);
-	overflow-y:       auto;
-}
-
-.slider {
-	display:          none;
-}
-.slider.active,
-.slider.background {
-	display:          block;
-	height:           100%;
-}
-.slider.background {
-	position:         absolute;
-	width:            100%;
-	text-align:       center;
-}
-
-#tabcontent_main_about {
-	position:         relative;
-	height:           calc(100vh - 167px);
-	overflow:         hidden;
-}
-#tabcontent_main_about .slider.active {
-	position:         relative;
-	margin:           13% 35%;
-	text-shadow:      1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-	text-align:       center;
-	color:            #fff;
-}
-#tabcontent_main_about .slider.active p {
-	background:       rgba(255, 255, 255, 0.3);
-	padding:          2px;
-}
-#tabcontent_main_about .slider a {
-	text-decoration:  none;
-	color:            #fff;
-}
-#tabcontent_main_about .slider a:hover {
-	text-decoration:  underline;
-}
-#tabcontent_main_about .slider.active table {
-	margin-left:      50px;
-}
-#tabcontent_main_about .slider.active tr {
-	background:       rgba(255, 255, 255, 0.3);
-	padding:          2px;
-}
-#tabcontent_main_about .slider.active td {
-	padding:          0px 15px;
-	margin:           2px;
-}
-#tabcontent_main_about .slider.active th {
-	padding:          0px 15px;
-}
-#slider_about_background > img {
-	height:           calc(100% - 60px);
-	width:            auto;
-	max-width:        calc(100% - 4px);
 }
 
 #div_builddata {
