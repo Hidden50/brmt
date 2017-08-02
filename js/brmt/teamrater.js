@@ -11,7 +11,7 @@ teamrater.readSetInfo = function readSetInfo (buildData) {
 		if (type !== "vr")
 			continue;
 		
-		targets = brmt.builder.unpackSetData(targets);
+		targets = brmt.parser.unpackSetData(targets);
 		for (let species in targets)
 		for (let set in targets[species]) {
 			if (!setInfo[species]) setInfo[species] = {};

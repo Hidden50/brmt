@@ -6,7 +6,7 @@ window.htmlNodes = ui.htmlNodes = {};
 let tools = ui.tools = {};
 
 tools.getTeamStorage = function getTeamStorage () {
-	let teamDataList = brmt.builder.stringToBuildData(ui.config.teams);
+	let teamDataList = brmt.parser.stringToBuildData(ui.config.teams);
 	let teams = [];
 	for (let teamData of teamDataList) {
 		let team = [];

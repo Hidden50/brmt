@@ -18,7 +18,7 @@ htmloutput.readIconConfig = function readIconConfig (buildData) {
 		let [subject, configType, configData] = line;
 		if (!htmloutput.iconConfigTypes.includes(configType))
 			continue;
-		subject = brmt.builder.unpackSetData([subject]);
+		subject = brmt.parser.unpackSetData([subject]);
 		for (let species in subject)
 		for (let set in subject[species]) {
 			if (!iconConfig[species]) iconConfig[species] = {};

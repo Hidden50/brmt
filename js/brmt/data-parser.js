@@ -2,23 +2,23 @@
 
 window.project = window.project || {};
 window.brmt = project.brmt = project.brmt || {};
-let builder = brmt.builder = {};
+let parser = brmt.parser = {};
 
-builder.buildChecksCompendium = function buildChecksCompendium (buildData) {
+parser.parseChecksCompendium = function parseChecksCompendium (buildData) {
 	let build = {};
 	for (let line of buildData) {
 		let [subject, mode, ...targets] = line;
 		if (!brmt.tools.siModes.includes(mode))
 			continue;
-		subject = builder.unpackSetData( [subject] );
-		targets = builder.unpackSetData(  targets  );
-		builder.addEntries(build, subject, mode, targets);                           // fill "*SI"    for subject
-		builder.addEntries(build, targets, brmt.tools.invertSIMode(mode), subject);  // fill "*SI to" for targets
+		subject = parser.unpackSetData( [subject] );
+		targets = parser.unpackSetData(  targets  );
+		parser.addEntries(build, subject, mode, targets);                           // fill "*SI"    for subject
+		parser.addEntries(build, targets, brmt.tools.invertSIMode(mode), subject);  // fill "*SI to" for targets
 	}
-	return builder.inheritEntries(build);
+	return parser.inheritEntries(build);
 };
 
-builder.addEntries = function addEntries (build, subjects, mode, targets) {
+parser.addEntries = function addEntries (build, subjects, mode, targets) {
 	for (let species in subjects)
 	for (let set in subjects[species])
 	for (let targetSpecies in targets)
@@ -30,7 +30,7 @@ builder.addEntries = function addEntries (build, subjects, mode, targets) {
 	}
 };
 
-builder.unpackSetData = function unpackSetData (packedSetlists) {
+parser.unpackSetData = function unpackSetData (packedSetlists) {
 	let setlists = {};
 	for (let packedSetlist of packedSetlists) {
 		let [species, ...sets] = packedSetlist.split('|');
@@ -46,7 +46,7 @@ builder.unpackSetData = function unpackSetData (packedSetlists) {
 	return setlists;
 };
 
-builder.packSetData = function packSetData (setlists, useOfficialNames) {
+parser.packSetData = function packSetData (setlists, useOfficialNames) {
 	return Object.keys(setlists).map( species => {
 		let packedSets = Object.keys(setlists[species]).join('|');
 		if (useOfficialNames)
@@ -57,7 +57,7 @@ builder.packSetData = function packSetData (setlists, useOfficialNames) {
 	});
 };
 
-builder.inheritEntries = function inheritEntries (build) {
+parser.inheritEntries = function inheritEntries (build) {
 	for (let species in build) {
 		// all sets inherit from the "?" set
 		let isEmpty = Object.keys(build[species]["?"]).every( mode =>
@@ -72,22 +72,22 @@ builder.inheritEntries = function inheritEntries (build) {
 		subject[species] = build[species];
 		for (let mode in build[species]["?"]) {
 			let targets = build[species]["?"][mode];
-			builder.addEntries(build, subject, mode, targets);
-			builder.addEntries(build, targets, brmt.tools.invertSIMode(mode), subject);
+			parser.addEntries(build, subject, mode, targets);
+			parser.addEntries(build, targets, brmt.tools.invertSIMode(mode), subject);
 		}
 	}
 	return build;
 };
 
-builder.buildDataToString = function buildDataToString (data, sep, linesep, useOfficialNames) {
+parser.buildDataToString = function buildDataToString (data, sep, linesep, useOfficialNames) {
 	return data.map(
 		line => line.map(
-			el => brmt.builder.packSetData( brmt.builder.unpackSetData([el]), useOfficialNames )
+			el => brmt.parser.packSetData( brmt.parser.unpackSetData([el]), useOfficialNames )
 		).join(sep)
 	).join(linesep);
 };
 
-builder.stringToBuildData = function stringToBuildData (Str) {
+parser.stringToBuildData = function stringToBuildData (Str) {
 	return Str.split(/\r?\n/g).map( line => line.split(/ *, */) );
 };
 
