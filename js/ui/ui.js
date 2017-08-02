@@ -103,15 +103,17 @@ ui.rebuildTeams = function rebuildTeams() {
 
 ui.toggleTeammember = function toggleTeammember (pokemon) {
 	if (pokemon.set === "species") {
+		// is the pokemon already on our team?
 		let onTeam = false;
 		for (teamMember of ui.cache.team) {
 			if (teamMember.species === pokemon.species) {
 				onTeam = true;
-				pokemon.set = teamMember.set;
+				pokemon.set = teamMember.set;  // the pokemon will be removed
 				break;
 			}
 		}
 		if (!onTeam) {
+			// add pokemon to team
 			let search = brmt.aliases.getOfficialname(pokemon.species);
 			if (htmlNodes.inputs.search.value !== search) {
 				htmlNodes.inputs.search.value = search;
@@ -123,6 +125,7 @@ ui.toggleTeammember = function toggleTeammember (pokemon) {
 			return;
 		}
 	}
+	// delete all instances of the pokemon from our team
 	let deleted;
 	cache.team = cache.team.filter( teamMember => {
 		if (teamMember.species === pokemon.species && teamMember.set === pokemon.set) {
@@ -131,7 +134,7 @@ ui.toggleTeammember = function toggleTeammember (pokemon) {
 		}
 		return true;
 	});
-	if (!deleted) cache.team.push(pokemon);
+	if (!deleted) cache.team.push(pokemon);  // nothing removed. Add it instead
 	htmlNodes.inputs.search.value = "";
 	htmlNodes.inputs.search.blur();
 	ui.invalidateThreatlists("team");
@@ -143,10 +146,10 @@ ui.updateSearchresults = function updateSearchresults (searchText) {
 		searchText = htmlNodes.inputs.search.value;
 	
 	if (searchText.length || document.activeElement === htmlNodes.inputs.search) {
-		htmlNodes.divs.searchresults.style.display = "block";
+		htmlNodes.divs.searchresults.classList.add('active');
 		htmlNodes.labels.search.innerText = "Select a set";
 	} else {
-		htmlNodes.divs.searchresults.style.display = "none";
+		htmlNodes.divs.searchresults.classList.remove('active');
 		htmlNodes.labels.search.innerText = "Search";
 	}
 	
@@ -232,7 +235,7 @@ ui.showEntry = function showEntry (caller, pokemon) {
 		// add team member, or reveal build data if the user is editing it
 			let {subject, target} = brmt.aliases.parseSetTitle(wrapperNode.title);
 			
-			if (htmlNodes.divs.builddata.style.display !== "none")
+			if (htmlNodes.divs.builddata.classList.contains('active'))
 				return ui.scrollBuilddataFindEntry(subject, target);
 			
 			// clicking a pokemon in an inverse mode means we pass the subject instead of the target
@@ -253,7 +256,7 @@ ui.showPopup = function showPopup (caller, container, contentHtml) {
 	}
 	if (contentHtml)
 		container.innerHTML = contentHtml;
-	container.style.display = 'block';
+	container.classList.add('active');
 	
 	container.style.right = '0px';
 	container.style.right = Math.max(container.offsetLeft - XOffset, 0) + 'px';

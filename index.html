@@ -56,7 +56,7 @@
 			<div class="search-wrapper">
 				<label id="label_search">Search</label>
 				<input id="input_search" type="text" spellcheck="false">
-				<div id="div_searchresults" style="display:none"></div>
+				<div id="div_searchresults"></div>
 			</div>
 		</div>
 	</div>
@@ -82,14 +82,14 @@
 </ul>
 
 <div class="tab-content">
-	<div id="div_builddata" style="display:none">
+	<div id="div_builddata">
 		<textarea id="textarea_builddata" spellcheck="false"></textarea>
 		<button id="button_useofficialnames">use official names</button>
 		<button id="button_usespeciesids">use species ID</button>
 		<button id="button_build">rebuild compendium</button>
 	</div>
 	<div id="div_about">Loading...</div>
-	<div id="tabcontent_main_about"           class="content"><img src="./cover-art-gen7OU.png"><p>Team rating tool.</p></div>
+	<div id="tabcontent_main_about"           class="content"></div>
 	<div id="tabcontent_main_viability"       class="content">Loading...</div>
 	<div id="tabcontent_main_viability-sets"  class="content">Loading...</div>
 	<div id="tabcontent_main_breakit"         class="content">Loading...</div>
@@ -105,7 +105,7 @@
 
 </div>
 
-<div id="popup_teamselect" tabindex="-1" style="display:none" onmouseleave="this.style.display = 'none'"></div>
-<div ID="popup_main" tabindex="-1" style="display:none" onmouseleave="this.style.display = 'none'"></div>
+<div id="popup_teamselect" class="popup" tabindex="-1"></div>
+<div ID="popup_main" class="popup" tabindex="-1"></div>
 
 </body></html>

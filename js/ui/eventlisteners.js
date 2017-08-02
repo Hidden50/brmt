@@ -35,6 +35,7 @@ listeners.init = function init () {
 	listeners.initFormatSelector();
 	listeners.initPokemonsearch();
 	listeners.initTabpages();
+	listeners.initPopups();
 };
 
 listeners.initBuilddataTA = function initBuilddataTA () {
@@ -93,9 +94,7 @@ listeners.initPokemonsearch = function initPokemonsearch () {
 		ui.updateSearchresults();
 		return listeners.preventPropagation(e);
 	});
-	document.body.addEventListener('click', e => {
-		// using htmlNodes.inputs.search -> on:'blur' with  would trigger when clicking on search results
-		// so we are using on:'click' with document.body instead
+	document.querySelector("html").addEventListener('click', e => {
 		htmlNodes.inputs.search.value = "";
 		ui.updateSearchresults();
 		return listeners.preventPropagation(e);
@@ -178,12 +177,13 @@ listeners.initTabpages = function initTabpages () {
 		});
 		tab.addEventListener('mouseenter', e => ui.showHelp(tabID));
 	});
-	htmlNodes.divs.team.addEventListener        ('mouseenter', e => ui.showHelp("team"));
-	htmlNodes.buttons.loadteam.addEventListener ('mouseenter', e => ui.showHelp("loadteam"));
-	htmlNodes.buttons.clearteam.addEventListener('mouseenter', e => ui.showHelp("clearteam"));
-	htmlNodes.selects.format.addEventListener   ('mouseenter', e => ui.showHelp("format"));
-	htmlNodes.inputs.search.addEventListener    ('mouseenter', e => ui.showHelp("search"));
-	htmlNodes.divs.about.addEventListener       ('mouseenter', e => ui.showHelp(""));
+	htmlNodes.divs.team.addEventListener           ('mouseenter', e => ui.showHelp("team"));
+	htmlNodes.buttons.loadteam.addEventListener    ('mouseenter', e => ui.showHelp("loadteam"));
+	htmlNodes.buttons.clearteam.addEventListener   ('mouseenter', e => ui.showHelp("clearteam"));
+	htmlNodes.selects.format.addEventListener      ('mouseenter', e => ui.showHelp("format"));
+	htmlNodes.inputs.search.addEventListener       ('mouseenter', e => ui.showHelp("search"));
+	htmlNodes.divs.about.addEventListener          ('mouseenter', e => ui.showHelp(""));
+	document.querySelector("html").addEventListener('click',      e => ui.showHelp(""));
 	
 	htmlNodes.tabcontents.main.updateContent = function updateContent(listID, tabID) {
 		ui.cache.tabID = tabID;
@@ -195,7 +195,9 @@ listeners.initTabpages = function initTabpages () {
 			);
 		}
 		else location.hash = tabID;
-		htmlNodes.divs.builddata.style.display = (tabID === "builddata") ? "block" : "none";
+		if (tabID === "builddata") 
+			htmlNodes.divs.builddata.classList.add('active');
+		else htmlNodes.divs.builddata.classList.remove('active');
 		if (ui.config.threatlistParameters[tabID])
 			ui.rebuildThreatlist();
 		else if (tabID === "objectinspector") {
@@ -207,6 +209,13 @@ listeners.initTabpages = function initTabpages () {
 		htmlNodes.tablinks.main.dyncontent.objectinspector.click();
 		e.preventDefault();
 		return listeners.preventPropagation(e);
+	});
+};
+
+listeners.initPopups = function initPopups () {
+	document.querySelector("html").addEventListener('click', e => {
+		htmlNodes.popups.main.classList.remove('active');
+		htmlNodes.popups.teamselect.classList.remove('active');
 	});
 };
 

@@ -8,7 +8,6 @@ body {
 	background:  #4a98d3;
 }
 
-input[type=radio],
 select,
 button {
 	cursor: pointer;
@@ -23,6 +22,7 @@ h2 {
 
 .header h2 {
 	display:          inline-block;
+	max-width:        40%;
 }
 .header .menu {
 	float:            right;
@@ -84,6 +84,9 @@ h2 {
 #div_searchresults {
 	width:            100%;
 }
+#div_searchresults:not(.active) {
+	display:             none;
+}
 #div_searchresults table {
 	table-layout:     fixed;
 	box-sizing:       border-box;
@@ -112,72 +115,80 @@ h2 {
 /* elements in the .main container */
 
 .main > .tab-content {
-	position:         relative;
+	position:            relative;
 }
 .main > .tab-content > .content {
-	max-height:       calc(100vh - 167px);
-	overflow-y:       auto;
+	max-height:          calc(100vh - 167px);
+	overflow-y:          auto;
 }
 .slider:not(.active) {
-	display:          none;
+	display:             none;
 }
 
 #div_about {
-	position:         absolute;
-	width:            calc(100% - 30px);
-	height:           calc(100% - 30px);
+	position:            absolute;
+	width:               calc(100% - 30px);
+	height:              calc(100% - 30px);
 }
 #div_about .slider.active {
-	position:         absolute;
-	display:          flex;
-	flex-direction:   column;
-	justify-content:  center;
-	align-items:      center;
-	width:            calc(30% - 50px);
-	left:             50%;
-	top:              45%;
-	transform:        translate(-50%, -45%);
-	padding:          24px;
-	z-index:          1;
-	text-align:       center;
-	border-radius:    30px;
-	color:            #fff;
-	text-shadow:      1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-	background:       rgba(0, 0, 0, 0.85);
+	position:            absolute;
+	display:             flex;
+	flex-direction:      column;
+	justify-content:     center;
+	align-items:         center;
+	width:               calc(30% - 50px);
+	left:                50%;
+	top:                 45%;
+	transform:           translate(-50%, -45%);
+	padding:             24px;
+	z-index:             1;
+	text-align:          center;
+	border-radius:       30px;
+	color:               #fff;
+	text-shadow:         1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+	background:          rgba(0, 0, 0, 0.85);
 }
 #div_about .slider p {
-	padding:          2px;
-	background:       rgba(255, 255, 255, 0.3);
+	padding:             2px;
+	background:          rgba(255, 255, 255, 0.3);
 }
 #div_about .slider tr {
-	padding:          2px;
-	background:       rgba(255, 255, 255, 0.3);
+	padding:             2px;
+	background:          rgba(255, 255, 255, 0.3);
 }
 #div_about .slider td {
-	padding:          0px 15px;
-	margin:           2px;
+	padding:             0px 15px;
+	margin:              2px;
 }
 #div_about .slider th {
-	padding:          0px 15px;
+	padding:             0px 15px;
 }
 
 #div_about .slider a {
-	text-decoration:  none;
-	color:            #fff;
+	text-decoration:     none;
+	color:               #fff;
 }
 #div_about .slider a:hover {
-	text-decoration:  underline;
+	text-decoration:     underline;
 }
 
 #tabcontent_main_about {
-	height:           calc(100vh - 167px);
-	width:            100%;
-	text-align:       center;
+	height:              calc(100vh - 207px);
+	max-height:          61vw;
+	margin-bottom:       40px;
+	width:               100%;
+	background-size:     contain;
+	background-image:    url(./../cover-art-gen7OU.png);
+	background-repeat:   no-repeat;
+	background-position: top center;
 }
-#tabcontent_main_about > img {
-	height:           calc(100% - 60px);
-	width:            auto;
-	max-width:        calc(100% - 4px);
+#tabcontent_main_about:after {
+	content:             'Team rating tool.';
+	position:            absolute;
+	left:                50%;
+	bottom:              20px;
+	transform:           translate(-50%);
+	padding:             4px;
 }
 
 #tab_main_viability a {
@@ -210,30 +221,35 @@ h2 {
 	margin-left:         -2px;
 }
 
+#div_builddata:not(.active) {
+	display:             none;
+}
 #div_builddata {
-	margin-bottom:    18px;
+	margin-bottom:       18px;
 }
 #textarea_builddata {
-	box-sizing:       border-box;
-	min-height:       100px;
-	min-width:        100%;
-	max-width:        100%;
+	box-sizing:          border-box;
+	min-height:          100px;
+	min-width:           100%;
+	max-width:           100%;
 }
 
 /* popup elements */
 
-#popup_teamselect,
-#popup_main {
+.popup:not(.active) {
+	display:          none;
+}
+.popup {
 	position:         absolute;
 	z-index:          100;
 	max-height:       90vh;
-	margin:           5px;
+	margin:           150px 5px 5px 5px;
 	padding:          15px;
 	overflow-y:       auto;
 	background-color: white;
 	border:           4px solid Black;
 }
-#popup_teamselect button {
+.popup button {
 	margin: 3px;
 }
 
