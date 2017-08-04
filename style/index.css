@@ -125,11 +125,6 @@ h2 {
 	display:             none;
 }
 
-#div_about {
-	position:            absolute;
-	width:               calc(100% - 30px);
-	height:              calc(100% - 30px);
-}
 #div_about .slider.active {
 	position:            absolute;
 	display:             flex;
