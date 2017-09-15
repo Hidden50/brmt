@@ -9,9 +9,9 @@
 		"type": "image/png",
 		"sizes": "192x192"
 	}, {
-		"src": "img/cover-art-gen7OU.png",
+		"src": "img/launcher-icon-512x512.png",
 		"type": "image/png",
-		"sizes": "1000x613"
+		"sizes": "512x512"
 	}],
 	"start_url": "/"
 }
