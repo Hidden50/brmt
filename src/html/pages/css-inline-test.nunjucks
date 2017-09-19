@@ -1,0 +1,10 @@
+{% extends "index.nunjucks" %}
+
+{% block comment %}<!-- includes inline css as a stylesheet instead -->{% endblock %}
+
+{% block debugging %}{% include "debug.nunjucks" %}{% endblock %}
+
+{% block styles %}
+	<link rel="stylesheet" href="./stylesheet.min.css">
+	<link rel="stylesheet" href="../src/html/templates/inline.min.css">
+{% endblock %}

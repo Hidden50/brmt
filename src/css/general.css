@@ -1,0 +1,42 @@
+* { /* critical */
+	box-sizing:       border-box;
+}
+html, body { /* critical */
+	margin:           0;
+	padding:          0;
+}
+body { /* critical */
+	background:       #4a98d3!important;
+	font-family:      -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	line-height:      1.5;
+}
+
+.tab-content > .content:not(.active),
+#div_searchresults:not(.active),
+#div_builddata:not(.active),
+.slider:not(.active),
+.popup:not(.active) { /* critical */
+	display:          none;
+}
+
+.js-indicator, .css-indicator { /* critical */
+	color:            red;
+}
+body.js-loaded .js-indicator { /* critical */
+	color:            green;
+}
+
+
+.popup {
+	position:         absolute;
+	z-index:          100;
+	margin:           150px 5px 5px 5px;
+	padding:          15px;
+	overflow-y:       auto;
+	background-color: white;
+	border:           4px solid Black;
+}
+.popup tr td:first-child {
+	white-space:      nowrap;
+	vertical-align:   top;
+}

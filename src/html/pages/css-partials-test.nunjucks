@@ -1,0 +1,38 @@
+{% extends "index.nunjucks" %}
+
+{% block comment %}<!-- includes stylesheet as partials instead of a minified file -->{% endblock %}
+
+{% block debugging %}{% include "debug.nunjucks" %}{% endblock %}
+
+{% block styles %}
+	<link rel="stylesheet" href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="../src/css/brmt.css">
+	<link rel="stylesheet" href="../src/css/general.css">
+	<link rel="stylesheet" href="../src/css/header.css">
+	<link rel="stylesheet" href="../src/css/main.css">
+	<link rel="stylesheet" href="../src/css/nav.css">
+{% endblock %}
+
+{% block scripts %}
+	{% include "vendorjs.nunjucks" %}
+	<script src="../src/js/scripts/tools.js" async></script>
+
+	<script src="../src/js/scripts/brmt/brmttools.js" async></script>
+	<script src="../src/js/scripts/brmt/data-parser.js" async></script>
+	<script src="../src/js/scripts/brmt/teamrater.js" async></script>
+	<script src="../src/js/scripts/brmt/htmloutput.js" async></script>
+	<script src="../src/js/scripts/brmt/aliases.js" async></script>
+
+	<script src="../src/js/scripts/ui/uitools.js" async></script>
+	<script src="../src/js/scripts/ui/eventlisteners.js" async></script>
+	<script src="../src/js/scripts/ui/ui.js" async></script>
+	<script src="../src/js/scripts/ui/uiconfig.js" async></script>
+
+	<script src="../src/js/scripts/projectdesc.js" async></script>
+
+	<script src="../src/js/scripts/data/gen7OU.js" async></script>
+	<script src="../src/js/scripts/data/gen6OU.js" async></script>
+	<script src="../src/js/scripts/data/gen6RU.js" async></script>
+	<script src="../src/js/scripts/data/gen6PU.js" async></script>
+	<script src="../src/js/scripts/data/gen6LC.js" async></script>
+{% endblock %}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+
+{% block comment %}{% endblock %}
+
+<head>
+	<title>Hidden50 | brmt</title>
+	<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+	<meta name="viewport"            content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color"         content="#ffa500">
+	<script>
+		if (window.location.host.substr(-10) === '.github.io' && window.location.protocol !== 'https:')
+			window.location.protocol = 'https:';
+	</script>
+	<link rel="manifest"             href="./manifest.json">
+	<link rel="icon"                 href="./img/favicon.ico"   type="image/x-icon">
+	{% block styles %}{% endblock %}
+</head>
+
+<body>
+
+{% include "header.nunjucks" %}
+
+<main>
+
+{% block content %}{% endblock %}
+
+{% block debugging %}{% endblock %}
+
+</main>
+
+{% block footer %}{% endblock %}
+
+{% block scripts %}{% endblock %}
+
+</body></html>

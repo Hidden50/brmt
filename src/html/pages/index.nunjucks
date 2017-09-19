@@ -1,0 +1,65 @@
+{% extends "layout.nunjucks" %}
+
+{% block styles %}
+	<script>
+		/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */ !function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+		/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */ !function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+	</script>
+	<link rel="preload" as="style"   href="./stylesheet.min.css" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="./stylesheet.min.css"></noscript>
+	<style>{% include "inline.min.css" %}</style>
+	<link rel="preload" as="image" href="sprites.png">
+{% endblock %}
+
+{% block scripts %}
+	{% include "vendorjs.nunjucks" %}
+	<script src="./scripts.min.js" async></script>
+{% endblock %}
+
+{% block content %}
+<section id="tabgroup_main_container" class="tabgroup">
+
+<nav class="nav nav-pills justify-content-center">
+	<a class="nav-link hidden active" href="#intro"           id="navlink_main_intro">Intro</a>
+	<a class="nav-link"               href="#team"            id="navlink_main_team">Team</a>
+	<a class="nav-link hidden"        href="#team-sets"       id="navlink_main_team-sets">(sets)</a>
+	<a class="nav-link"               href="#breakit"         id="navlink_main_breakit">Break it</a>
+	<a class="nav-link hidden"        href="#breakit-sets"    id="navlink_main_breakit-sets">(sets)</a>
+	<a class="nav-link"               href="#wallit"          id="navlink_main_wallit">Wall it</a>
+	<a class="nav-link hidden"        href="#wallit-sets"     id="navlink_main_wallit-sets">(sets)</a>
+	<a class="nav-link"               href="#faq"             id="navlink_main_faq">FAQ</a>
+	<a class="nav-link hidden"        href="#compendium"      id="navlink_main_compendium">Compendium</a>
+	<a class="nav-link hidden"        href="#builddata"       id="navlink_main_builddata">Data</a>
+	<a class="nav-link hidden"        href="#objectinspector" id="navlink_main_objectinspector">Object Inspector</a>
+	<a class="nav-link reveal hidden" href="#hiddentabs"      id="navlink_main_revealhidden"><span class="sr-only">expand/collapse</span></a>
+</nav>
+
+<div class="tab-content">
+	<div id="div_builddata">
+		<textarea id="textarea_builddata" spellcheck="false"></textarea>
+		<button class="btn" id="button_useofficialnames">use official names</button>
+		<button class="btn" id="button_usespeciesids">use species ID</button>
+		<button class="btn" id="button_build">rebuild compendium</button>
+	</div>
+	<div id="tabcontent_main_intro"           class="content active"></div>
+	<div id="tabcontent_main_team"            class="content"></div>
+	<div id="tabcontent_main_team-sets"       class="content"></div>
+	<div id="tabcontent_main_breakit"         class="content"></div>
+	<div id="tabcontent_main_breakit-sets"    class="content"></div>
+	<div id="tabcontent_main_wallit"          class="content"></div>
+	<div id="tabcontent_main_wallit-sets"     class="content"></div>
+	<div id="tabcontent_main_faq"             class="content"></div>
+	<div id="tabcontent_main_compendium"      class="content"></div>
+	<div id="tabcontent_main_builddata"       class="content"></div>
+	<div id="tabcontent_main_objectinspector" class="content"></div>
+	<div id="div_about"></div>
+</div>
+
+</section>
+{% endblock %}
+
+{% block footer %}
+<div id="popup_teamselect" class="popup" tabindex="-1"></div>
+<div id="popup_main" class="popup" tabindex="-1"></div>
+<div id="popup_offlineready" class="popup" tabindex="-1">Ready for offline use</div>
+{% endblock %}

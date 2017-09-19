@@ -1,0 +1,88 @@
+/* BRANDING */
+.navbar-brand { /* critical */
+	margin:           0 16px 0 0;
+	line-height:      30px;
+	padding:          5px 0px;
+	font-weight:      500;
+	font-size:        20px;
+	white-space:      no-wrap;
+}
+.navbar-brand span { /* critical */
+	display:          block;
+	font-size:        0.5em;
+	line-height:      15px;
+}
+
+/* FORMAT SELECTOR */
+#select_format { /* critical */
+	border:           none;
+	background:       #292b2c;
+	color:            rgba(255, 255, 255, 0.5);
+}
+/* workaround for firefox: Custom background colors on the select element look very poor */
+@supports (-moz-appearance: none) {
+	.js-loaded #select_format { /* critical */
+		-moz-appearance:    none;
+		padding-right:      10px;
+		background:         #292b2c url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVR42mNgwAfKy8v/48I4FeA0AacVDFQBAP9wJkE/KhUMAAAAAElFTkSuQmCC") no-repeat center right;
+	}
+}
+
+/* TEAM CONTAINER */
+#div_team {
+	position:         absolute;
+	left:             52%;
+	top:              50%;
+	transform:        translate(-52%, -50%);
+}
+@media (min-width: 0px) and (max-width: 500px), (min-width: 576px) and (max-width: 729px) {
+	#div_team {
+		display:               grid;
+		max-height:            100%;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows:    repeat(2, auto);
+		grid-auto-flow:        column;
+	}
+}
+@media (min-width: 0px) and (max-width: 575px) {
+	#div_team {
+		left:                  66%;
+		transform:             translate(-66%, -50%);
+	}
+}
+
+/* SEARCH BAR */
+.search-container { /* critical */
+	width:            200px;
+}
+.search-wrapper { /* critical */
+	position:         relative;
+	width:            100%;
+}
+#div_searchresults {
+	position:         absolute;
+	z-index:          1;
+	width:            calc(100%);
+}
+#div_searchresults table {
+	table-layout:     fixed;
+	width:            100%;
+}
+#div_searchresults tr {
+	display:          none;
+}
+#div_searchresults tr.searchresult {
+	display:          block;
+	cursor:           pointer;
+	margin:           1px 0px;
+	border-radius:    3px;
+	background:       #ffffff;
+	color:            #000000;
+	border:           1px solid #000080;
+}
+tr.searchresult.selected {
+	background-color: #add8e6 !important;
+}
+#div_searchresults tr.searchresult:hover {
+	background-color: #a7cce5 !important;
+}

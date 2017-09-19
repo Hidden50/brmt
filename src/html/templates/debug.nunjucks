@@ -1,0 +1,51 @@
+<div class="debug">
+	<span class="js-indicator">js</span>
+	<span class="css-indicator">css</span>
+	<span class="onlinestatus"></span>
+	<br>
+</div>
+<script>
+	const btnContainer = document.querySelector('.debug');
+	for (let el of [...document.querySelectorAll("link[href$='.css']")]) {
+		const toggleBtn = document.createElement("button");
+		const [linkTarget] = el.href.match(/[^\/]*$/);
+		toggleBtn.innerText = linkTarget;
+		toggleBtn.style.color = "green";
+		toggleBtn.style.margin = "1px";
+		toggleBtn.style.border = "1px solid #000000";
+		toggleBtn.className = "btn";
+		let linkRel = el.rel;
+		toggleBtn.addEventListener('click', e => {
+			if (el.rel === "") {
+				el.rel = linkRel;
+				toggleBtn.style.color = "green";
+			} else {
+				linkRel = el.rel;
+				el.rel = "";
+				toggleBtn.style.color = "red";
+			}
+			e.preventDefault;
+
+			// prevent the containing DOM element from receiving this event
+			const evt = e || window.event;
+			if (evt.stopPropagation)
+				evt.stopPropagation();
+			else evt.cancelBubble = true;
+			return false;
+		});
+		btnContainer.appendChild(toggleBtn);
+	}
+	const closeBtn = document.createElement("button");
+	closeBtn.innerText = "close";
+	closeBtn.style.margin = "1px";
+	closeBtn.style.border = "1px solid #000000";
+	closeBtn.className = "btn";
+	closeBtn.addEventListener('click', () => {
+		btnContainer.style.display = "none";
+	});
+	btnContainer.appendChild(closeBtn);
+	btnContainer.style.position = "fixed";
+	btnContainer.style.left = "0px";
+	btnContainer.style.bottom = "0px";
+	document.body.appendChild(btnContainer);
+</script>

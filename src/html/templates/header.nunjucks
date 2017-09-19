@@ -1,0 +1,25 @@
+<header class="navbar navbar-toggleable navbar-expand-sm navbar-inverse bg-inverse">
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar_main_collapse" aria-controls="navbar_main_collapse" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<a class="navbar-brand" href="./">BreakMyTeam<span>Team Weakness Finder</span></a>
+
+	<div id="div_team" tabindex="-1"></div>
+
+	<div class="collapse navbar-collapse" id="navbar_main_collapse">
+		<div class="format-container navbar-nav mr-auto">
+			<select id="select_format">
+				<option disabled>Format:</option>
+				<option value="gen7OU" selected>Gen7 OU</option>
+				<option value="gen6OU">Gen6 OU</option>
+				<option value="gen6RU">Gen6 RU</option>
+				<option value="gen6PU">Gen6 PU</option>
+				<option value="gen6LC">Gen6 LC</option>
+			</select>
+		</div>
+		<form class="search-container my-2 my-md-0">
+			<input id="input_search" class="form-control mr-sm-2" type="text" spellcheck="false" placeholder="search">
+			<div class="search-wrapper"><div id="div_searchresults"></div></div>
+		</form>
+	</div>
+</header>

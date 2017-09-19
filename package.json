@@ -1,0 +1,49 @@
+{
+  "name": "brmt",
+  "version": "3.1.0",
+  "description": "Threatlist generator web app for Pokemon Teams",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-if-else": "^1.0.3",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-uglify-es": "^0.1.3",
+    "gulp.spritesmith": "^6.5.1",
+    "imagemin-pngquant": "^5.0.1",
+    "merge-stream": "^1.0.1",
+    "postcss-critical-split": "^2.5.1",
+    "postcss-uncss": "^0.15.0",
+    "uncss": "^0.15.0",
+    "vinyl-buffer": "^1.0.0",
+    "yargs": "^8.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hidden50/brmt.git"
+  },
+  "keywords": [
+    "pokemon",
+    "team",
+    "rate",
+    "breakmyteam"
+  ],
+  "author": "https://github.com/Hidden50/",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hidden50/brmt/issues"
+  },
+  "homepage": "https://github.com/Hidden50/brmt#readme"
+}
