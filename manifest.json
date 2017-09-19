@@ -1,0 +1,17 @@
+{
+	"short_name": "brmt",
+	"name": "BreakMyTeam",
+	"display": "standalone",
+	"background_color": "#4a98d3",
+	"theme_color": "#d3d3d3",
+	"icons": [{
+		"src": "img/launcher-icon.png",
+		"type": "image/png",
+		"sizes": "192x192"
+	}, {
+		"src": "img/launcher-icon-512x512.png",
+		"type": "image/png",
+		"sizes": "512x512"
+	}],
+	"start_url": "/"
+}
