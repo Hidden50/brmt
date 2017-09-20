@@ -270,6 +270,10 @@ textarea {
   display: none;
 }
 
+.collapse.show {
+  display: block;
+}
+
 .nav {
   display: -webkit-box;
   display: -webkit-flex;

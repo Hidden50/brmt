@@ -62,7 +62,12 @@ gulp.task('stylesheet', function() {
 gulp.task('vendor', function() {
 	return gulp.src('src/css/vendor/*.css')
 		.pipe(concat('vendor.css'))
-		.pipe(postcss([ uncss({html: ['www/index.html']}) ]))
+		.pipe(postcss([
+			uncss({
+				html: ['www/index.html'],
+				ignore: [".collapse.show"]
+			 })
+		]))
 		.pipe(replace( /^([\r\n\w\W]*)$/, "/* critical:start */\r\n\r\n$1\r\n\r\n/* critical:end */" ))
 		.pipe(gulp.dest('src/css/'))
 });
