@@ -46,7 +46,7 @@ C-, vr, 752, 534, 395, 141, 800, 139, 213, 663, 480, 494
 184|Z-Belly Drum, NSI, 646-b|Sub Icium-Z, 149|DD Z-Fly/Elec, 658|Protean|scarf, 121|lo, 381|scarf|lo|specs, 786|scarf|Stallbreaker|specs, 319-m|Cleaner, 286|sash, 373|DD, 260-m|Swift Swim, 130|DD, 647|specs, 490|TG Icium-Z, 212-m|Utility, 145|Off Utility|Def, 227|Def, 748|ThaPex, 591|Mixed Def, 479w|Off Utility, 423|SpD, 594|Mixed Def, 635|specs, 646|specs, 497|SubSeed, 778|SD, 563|TR Ghostium-Z
 
 625|SD, icon, darkiniumz
-Bishard|SD, letters, SD
+625|SD, letters, SD
 625|SD, GSI, 647|scarf|specs, 794|SubPunch
 625|SD, SSI, 006-mx|DD, 465|Mixed Def, 797|Mixed Def, 212-m|Utility, 788|CM|Utility, 195|Unaware|Curse, 797|Autotomize|SpD, 752|RD Waterium-Z, 534|Guts, 450|Mixed Def
 625|SD, NSI, 658|Protean|Ash, 785|Z-Wild Charge|Off Utility|lo|specs|scarf, 786|scarf|specs, 445|Offensive SR|SD|scarf, 445-m|SD Sand Force, 787|SD Z-Grass/Fight|band, 479w|Off Utility, 428-m|Offensive, 639|SD|scarf, 472|SubToxic, 286|sash, 701|SD Unburden, 635|specs, 214-m|SD, 248-m|DD, 663|SD, 018-m|Offensive, 475-m|SD
