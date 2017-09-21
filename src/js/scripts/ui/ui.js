@@ -128,45 +128,48 @@ ui.rebuildTeams = function rebuildTeams() {
 };
 
 ui.toggleTeammember = function toggleTeammember (pokemon) {
-	if (pokemon.set === "species") {
-		// is the pokemon already on our team?
-		let onTeam = false;
-		for (let teamMember of ui.cache.team) {
-			if (teamMember.species === pokemon.species) {
-				onTeam = true;
-				pokemon.set = teamMember.set;  // the pokemon will be removed
-				break;
-			}
-		}
-		if (!onTeam) {
-			// add pokemon to team
-			let search = brmt.aliases.getOfficialname(pokemon.species);
-			if (htmlNodes.inputs.search.value !== search)
-				ui.updateSearchresults(search);
-			else ui.updateSearchresults("");
-			return;
-		}
-	}
-	// delete all instances of the pokemon from our team
+	// delete pokemon from the team
 	let deleted;
 	cache.team = cache.team.filter( teamMember => {
-		if (teamMember.species === pokemon.species && teamMember.set === pokemon.set) {
+		if ( pokemon.species === teamMember.species && (pokemon.set === teamMember.set || pokemon.set === "species") ) {
 			deleted = true;
 			return false;
 		}
 		return true;
 	});
-	if (!deleted) cache.team.push(pokemon);  // nothing removed. Add it instead
-	htmlNodes.inputs.search.value = "";
-	htmlNodes.inputs.search.blur();
-	ui.invalidateThreatlists("team");
-	ui.rebuildTeams();
+
+	if (!deleted && pokemon.set === "species") {  // prompt user to choose a set
+		const search = brmt.aliases.getOfficialname(pokemon.species);
+		if (ui.cache.search !== search)
+			ui.updateSearchresults(search);  // prompt
+		else ui.updateSearchresults("");      // cancel the prompt
+	} else {
+		if (!deleted)
+			cache.team.push(pokemon);
+		htmlNodes.inputs.search.value = "";
+		htmlNodes.inputs.search.blur();
+		ui.invalidateThreatlists("team");
+		ui.rebuildTeams();
+	}
 };
 
 ui.updateSearchresults = function updateSearchresults (search) {
-	let searchText = search;
-	if (searchText === undefined)
-		searchText = htmlNodes.inputs.search.value;
+	const searchText = (search !== undefined) ? search : htmlNodes.inputs.search.value;
+	
+	if (searchText) {
+		// make sure the search bar is visible whenever the app brings up searchresults
+		if (!htmlNodes.navbars.main.collapse.classList.contains('show')) {
+			htmlNodes.navbars.main.collapse.classList.add('show');
+			htmlNodes.navbars.main.toggler.classList.remove('collapsed');
+		}
+	} else {
+		if (ui.cache.search) {
+			// close search bar from previous search
+			htmlNodes.navbars.main.collapse.classList.remove('show');
+			htmlNodes.navbars.main.toggler.classList.add('collapsed');
+		}
+	}
+	ui.cache.search = searchText;
 
 	if (search) {
 		htmlNodes.divs.searchresults.classList.add('active');
