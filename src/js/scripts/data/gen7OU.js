@@ -8,17 +8,17 @@ ui.cache.compendiums = ui.cache.compendiums || {};
 ui.cache.compendiums.gen7OU =
 `S, vr, 645-s, 801
 
-A+, vr, 797, 658, 658-a, 485, 151, 787, 748, 637, 718
-A, vr, 006-my, 036, 598, 445, 647, 381, 303-m, 127-m, 465, 785, 786
-A-, vr, 113, 308-m, 279, 302-m, 227, 248, 248-m, 003-m, 145
+A+, vr, 797, 719-m, 598, 658, 658-a, 485, 785, 786, 748, 718
+A, vr, 036, 646-b, 381, 303-m, 151, 127-m, 465, 787, 637, 145
+A-, vr, 113, 445, 798, 647, 308-m, 279, 302-m, 212-m, 248, 003-m
 
-B+, vr, 065-m, 591, 625, 094, 130, 214-m, 798, 230, 646-b, 428-m, 462, 226, 105-a, 479w, 212-m, 245, 260-m, 788, 641-s, 461
-B, vr, 065, 594, 530, 475-m, 720-u, 385, 380, 473, 310-m, 778, 038-a, 579, 497, 080-m, 639, 642
-B-, vr, 184, 323-m, 006-mx, 423, 701, 490, 034, 373, 319-m, 080, 468
+B+, vr, 065-m, 625, 006-my, 094, 130, 214-m, 230, 380-m, 428-m, 462, 226, 105-a, 227, 245, 260-m, 788, 641-s, 248-m, 461
+B, vr, 594, 591, 530, 423, 720-u, 385, 380, 473, 490, 778, 579, 479w, 497, 642
+B-, vr, 065, 184, 323-m, 006-mx, 149, 475-m, 701, 450, 310-m, 080-m, 639
 
-C+, vr, 142-m, 563, 149, 445-m, 282-m, 130-m, 450, 392, 089-a, 793, 730, 195, 545, 235, 121, 721
-C, vr, 482, 286, 794, 609, 342, 488, 132, 472, 635, 646, 018-m, 474, 642-s
-C-, vr, 752, 534, 395, 141, 800, 139, 213, 663, 480, 494
+C+, vr, 142-m, 334-m, 609, 563, 132, 445-m, 282-m, 130-m, 392, 089-a, 034, 038-a, 195, 373, 545, 319-m, 080, 235, 468, 494
+C, vr, 482, 342, 488, 472, 635, 793, 474, 730, 121, 642-s, 480, 721
+C-, vr, 752, 286, 794, 534, 395, 139, 213, 663
 
 142-m|Offensive, icon, aerodactylite
 142-m|Offensive, GSI, 036|Unaware|CM|Utility, 080|CM|Mixed Def, 423|SpD, 080-m|CM|Mega Tank, 594|Mixed Def, 450|Mixed Def, 195|Unaware|Curse, 245|VinCune|CroCune, 579|CM, 488|TR Utility
@@ -188,7 +188,7 @@ C-, vr, 752, 534, 395, 141, 800, 139, 213, 663, 480, 494
 658|Ash, letters, Ash
 658|Ash, GSI, 788|Utility, 113|Blob, 647|scarf, 730|specs
 658|Ash, SSI, 465|av, 130-m|Sub DD, 635|specs, 647|specs|scarf, 591|Mixed Def, 748|ThaPex, 752|band|RD Waterium-Z
-658|Ash, NSI, 645-s|scarf, 445|scarf, 786|scarf, 428-m|Offensive, 545|SD Waterium-Z, 639|scarf, 230|Swift Swim, 141|SD Swift Swim, 139|SS Swift Swim, 286|SD|sash, 184|Z-Belly Drum, 730|specs, 310-m|Offensive, 785|scarf, 534|Guts
+658|Ash, NSI, 645-s|scarf, 445|scarf, 786|scarf, 428-m|Offensive, 545|SD Waterium-Z, 639|scarf, 230|Swift Swim, 141|SD Swift Swim, 139|SS Swift Swim, 286|SD|sash, 184|Z-Belly Drum, 310-m|Offensive, 785|scarf, 534|Guts
 
 658|scarf, GSI, 003-m|Mixed Def|Offensive, 797|SpD|Mixed Def, 748|ThaPex, 212-m|Utility, 303-m|SD|4 Atks, 113|Blob, 594|Mixed Def, 423|SpD, 385|Utility|scarf, 479w|Off Utility, 080|CM|Mixed Def, 080-m|CM|Mega Tank, 195|Unaware|Curse, 279|Mixed Def, 752|band|RD Waterium-Z
 658|scarf, SSI, 465|Mixed Def|av, 036|CM|Utility|Unaware, 598|Mixed Def, 788|CM|Utility, 647|scarf|specs, 226|Mixed Def, 534|Guts
