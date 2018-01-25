@@ -172,9 +172,16 @@ listeners.initTabpages = function initTabpages () {
 		}
 		else location.hash = tabID;
 
-		if (tabID === "builddata") 
+		if (tabID === "builddata") {
 			htmlNodes.divs.builddata.classList.add('active');
-		else htmlNodes.divs.builddata.classList.remove('active');
+			if (!htmlNodes.fullspriteCSS) {
+				htmlNodes.fullspriteCSS = document.createElement("LINK");
+				htmlNodes.fullspriteCSS.type = "text/css";
+				htmlNodes.fullspriteCSS.rel = "stylesheet";
+				htmlNodes.fullspriteCSS.href = "./sprites-full.css";
+				document.head.appendChild(htmlNodes.fullspriteCSS);
+			}
+		} else htmlNodes.divs.builddata.classList.remove('active');
 
 		if (ui.config.threatlistParameters[tabID])
 			ui.rebuildThreatlist();
