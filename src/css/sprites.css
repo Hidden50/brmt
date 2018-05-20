@@ -14,7 +14,7 @@
 }
 
 .sprite-003-m {
-	background-position: -501px -128px;
+	background-position: -501px -160px;
 }
 .sprite-003 {
 	background-position: -469px -160px;
@@ -709,10 +709,10 @@
 	background-position: -501px -96px;
 }
 .sprite-470 {
-	background-position: -116px -64px;
+	background-position: -501px -128px;
 }
 .sprite-472 {
-	background-position: -501px -160px;
+	background-position: -116px -64px;
 }
 .sprite-473 {
 	background-position: -501px -192px;
@@ -1221,182 +1221,188 @@
 .sprite-801 {
 	background-position: -576px -608px;
 }
+.sprite-805 {
+	background-position: -608px -608px;
+}
+.sprite-806 {
+	background-position: -661px 0px;
+}
 .sprite-aerodactylite {
-	background-position: -661px -288px;
+	background-position: -661px -368px;
 }
 .sprite-alakazite {
-	background-position: -24px -640px;
+	background-position: -96px -640px;
 }
 .sprite-assaultvest {
-	background-position: 0px -640px;
+	background-position: -72px -640px;
 }
 .sprite-blacksludge {
-	background-position: -661px -24px;
+	background-position: -661px -104px;
 }
 .sprite-cameruptite {
-	background-position: -661px -48px;
+	background-position: -661px -128px;
 }
 .sprite-charizarditex {
-	background-position: -661px -72px;
+	background-position: -661px -152px;
 }
 .sprite-charizarditey {
-	background-position: -661px -96px;
+	background-position: -661px -176px;
 }
 .sprite-chartiberry {
-	background-position: -661px -120px;
+	background-position: -661px -200px;
 }
 .sprite-choiceband {
-	background-position: -661px -144px;
+	background-position: -661px -224px;
 }
 .sprite-choicescarf {
-	background-position: -661px -168px;
+	background-position: -661px -248px;
 }
 .sprite-choicespecs {
-	background-position: -661px -192px;
+	background-position: -661px -272px;
 }
 .sprite-damprock {
-	background-position: -661px -216px;
+	background-position: -661px -296px;
 }
 .sprite-darkiniumz {
-	background-position: -661px -240px;
+	background-position: -661px -320px;
 }
 .sprite-dragoniumz {
-	background-position: -661px -264px;
+	background-position: -661px -344px;
 }
 .sprite-electricseed {
-	background-position: -608px -608px;
+	background-position: -661px -32px;
 	width: 25px;
 }
 .sprite-electriumz {
-	background-position: -661px -312px;
+	background-position: -661px -392px;
 }
 .sprite-eviolite {
-	background-position: -661px -336px;
+	background-position: -661px -416px;
 }
 .sprite-fightiniumz {
-	background-position: -661px -360px;
+	background-position: -661px -440px;
 }
 .sprite-figyberry {
-	background-position: -661px -384px;
+	background-position: -661px -464px;
 }
 .sprite-firiumz {
-	background-position: -661px -408px;
+	background-position: -661px -488px;
 }
 .sprite-flameorb {
-	background-position: -661px -432px;
+	background-position: -661px -512px;
 }
 .sprite-flyiniumz {
-	background-position: -661px -456px;
+	background-position: -661px -536px;
 }
 .sprite-focussash {
-	background-position: -661px -480px;
+	background-position: -661px -560px;
 }
 .sprite-galladite {
-	background-position: -661px -504px;
+	background-position: -661px -584px;
 }
 .sprite-garchompite {
-	background-position: -661px -528px;
+	background-position: -661px -608px;
 }
 .sprite-gardevoirite {
-	background-position: -661px -552px;
+	background-position: 0px -640px;
 }
 .sprite-ghostiumz {
-	background-position: -661px -576px;
+	background-position: -24px -640px;
 }
 .sprite-grassiumz {
-	background-position: -661px -600px;
+	background-position: -48px -640px;
 }
 .sprite-grassyseed {
-	background-position: -633px -608px;
+	background-position: -661px -56px;
 	width: 25px;
 }
 .sprite-groundiumz {
-	background-position: -661px 0px;
+	background-position: -661px -80px;
 }
 .sprite-gyaradosite {
-	background-position: -48px -640px;
-}
-.sprite-heracronite {
-	background-position: -72px -640px;
-}
-.sprite-iciumz {
-	background-position: -96px -640px;
-}
-.sprite-leftovers {
 	background-position: -120px -640px;
 }
-.sprite-lifeorb {
+.sprite-heracronite {
 	background-position: -144px -640px;
 }
-.sprite-lightclay {
+.sprite-iciumz {
 	background-position: -168px -640px;
 }
-.sprite-lopunnite {
+.sprite-leftovers {
 	background-position: -192px -640px;
 }
-.sprite-magnet {
+.sprite-lifeorb {
 	background-position: -216px -640px;
 }
-.sprite-manectite {
+.sprite-lightclay {
 	background-position: -240px -640px;
 }
-.sprite-mawilite {
+.sprite-lopunnite {
 	background-position: -264px -640px;
 }
-.sprite-medichamite {
+.sprite-magnet {
 	background-position: -288px -640px;
 }
-.sprite-mentalherb {
+.sprite-manectite {
 	background-position: -312px -640px;
 }
-.sprite-normaliumz {
+.sprite-mawilite {
 	background-position: -336px -640px;
 }
-.sprite-pidgeotite {
+.sprite-medichamite {
 	background-position: -360px -640px;
 }
-.sprite-pinsirite {
+.sprite-mentalherb {
 	background-position: -384px -640px;
 }
-.sprite-rockiumz {
+.sprite-normaliumz {
 	background-position: -408px -640px;
 }
-.sprite-rockyhelmet {
+.sprite-pidgeotite {
 	background-position: -432px -640px;
 }
-.sprite-sablenite {
+.sprite-pinsirite {
 	background-position: -456px -640px;
 }
-.sprite-scizorite {
+.sprite-rockiumz {
 	background-position: -480px -640px;
 }
-.sprite-sharpedonite {
+.sprite-rockyhelmet {
 	background-position: -504px -640px;
 }
-.sprite-shedshell {
+.sprite-sablenite {
 	background-position: -528px -640px;
 }
-.sprite-slowbronite {
+.sprite-scizorite {
 	background-position: -552px -640px;
 }
-.sprite-steeliumz {
+.sprite-sharpedonite {
 	background-position: -576px -640px;
 }
-.sprite-swampertite {
+.sprite-shedshell {
 	background-position: -600px -640px;
 }
-.sprite-thickclub {
+.sprite-slowbronite {
 	background-position: -624px -640px;
 }
-.sprite-toxicorb {
+.sprite-steeliumz {
 	background-position: -648px -640px;
 }
+.sprite-swampertite {
+	background-position: 0px -664px;
+}
+.sprite-thickclub {
+	background-position: -24px -664px;
+}
+.sprite-toxicorb {
+	background-position: -48px -664px;
+}
 .sprite-tyranitarite {
-	background-position: -685px 0px;
+	background-position: -72px -664px;
 }
 .sprite-venusaurite {
-	background-position: -685px -24px;
+	background-position: -96px -664px;
 }
 .sprite-wateriumz {
-	background-position: -685px -48px;
+	background-position: -120px -664px;
 }
