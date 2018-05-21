@@ -12,7 +12,8 @@ config.about =
 		<tr><th>Artwork</th><td><a target="_blank" rel="noopener" href="http://www.smogon.com/forums/members/ssensenh.289929/">Ssensenh</a></td></tr>
 		<tr><th>Sprites</th><td><a target="_blank" rel="noopener" href="http://serebii.net/">Serebii.net</a></td></tr>
 		<tr><th>Compendiums</th></tr>
-		<tr><td>Gen7 OU</td><td><a target="_blank" rel="noopener" href="http://www.smogon.com/forums/members/dk.322027/">dk</a></td></tr>
+		<tr><td>Gen7 OU</td><td><a target="_blank" rel="noopener" href="https://www.smogon.com/forums/members/jordy.395754/">jordy</a></td></tr>
+		<tr><td>sumo OU</td><td><a target="_blank" rel="noopener" href="http://www.smogon.com/forums/members/dk.322027/">dk</a></td></tr>
 		<tr><td>Gen6 OU</td><td><a target="_blank" rel="noopener" href="http://www.smogon.com/forums/members/agent-gibbs.117581/">Agent Gibbs</a>, <a target="_blank" rel="noopener" href="http://www.smogon.com/forums/members/tressed.123092/">Tressed</a></td></tr>
 		<tr><td>Gen6 RU</td><td><a target="_blank" rel="noopener" href="http://www.smogon.com/forums/members/arifeen.231398/">Arifeen</a></td></tr>
 		<tr><td>Gen6 PU</td><td><a target="_blank" rel="noopener" href="http://www.smogon.com/forums/members/anty.177336/">Anty</a></td></tr>

@@ -23,11 +23,29 @@
 }
 
 #tabcontent_main_faq,
+#tabcontent_main_about,
 #tabcontent_main_compendium {
 	padding: 15px;
 	border-radius: 3px;
 	background: #fff;
 	box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
+}
+
+#slider_about_intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	margin: 0 25%;
+	padding-bottom: 25px;
+}
+#slider_about_intro th,
+#slider_about_intro td {
+	background: #fff;
+	border-radius: 3px;
+	text-align: center;
+	padding: 5px;
+	border: 1px solid #000;
 }
 
 #div_builddata {

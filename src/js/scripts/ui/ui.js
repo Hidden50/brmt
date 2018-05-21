@@ -10,9 +10,9 @@ window.onload = ui.init = function init () {
 
 	htmlNodes.register( ...document.querySelectorAll("[id]") );                          // register all html nodes that have an id
 
-	htmlNodes.divs.about.innerHTML = ui.config.about;                                    // load content of static tabs
+	htmlNodes.tabcontents.main.about.innerHTML = ui.config.about;                        // load content of static tabs
 	htmlNodes.tabcontents.main.faq.innerHTML = ui.config.faq;
-	htmlNodes.register( ...htmlNodes.divs.about.querySelectorAll("[id]") );
+	htmlNodes.register( ...htmlNodes.tabcontents.main.about.querySelectorAll("[id]") );
 	htmlNodes.register( ...htmlNodes.tabcontents.main.faq.querySelectorAll("[id]") );
 
 	ui.updateOnlineStatus();
@@ -54,14 +54,6 @@ ui.initCompendium = function initCompendium (compTitle) {
 	cache.iconConfig = brmt.htmloutput.readIconConfig(cache.buildData);
 
 	ui.initSearchresults();
-};
-
-ui.initSearchresults = async function initSearchresults () {
-	let defaultThreatlist = brmt.teamrater.getThreatlist(cache.build, cache.setInfo, [], "sets", [10000, 100, 2, -11, -7, -3], ["viability", "team", "species", "hashcode", "set"]);
-	htmlNodes.divs.searchresults.innerHTML = brmt.htmloutput.makeSetsList(defaultThreatlist, cache.build, cache.team, cache.iconConfig);
-	ui.listeners.addClassListeners( htmlNodes.divs.searchresults, "tr", 'click',
-		tablerow => ui.toggleTeammember( brmt.aliases.parseSetTitle(tablerow.firstChild.firstChild.title).subject )
-	);
 };
 
 ui.invalidateThreatlists = function invalidateThreatlists (arg) {
@@ -153,6 +145,31 @@ ui.toggleTeammember = function toggleTeammember (pokemon) {
 	}
 };
 
+ui.initSearchresults = async function initSearchresults () {
+	const defaultThreatlist = brmt.teamrater.getThreatlist(
+		cache.build,
+		cache.setInfo,
+		[],
+		"sets",
+		[10000, 100, 2, -11, -7, -3],
+		["viability", "team", "species", "hashcode", "set"]
+	);
+	htmlNodes.divs.searchresults.innerHTML = brmt.htmloutput.makeSetsList(
+		defaultThreatlist,
+		cache.build,
+		cache.team,
+		cache.iconConfig
+	);
+	ui.listeners.addClassListeners(
+		htmlNodes.divs.searchresults,
+		"tr",
+		"click",
+		tablerow => ui.toggleTeammember(
+			brmt.aliases.parseSetTitle(tablerow.firstChild.firstChild.title).subject
+		)
+	);
+};
+
 ui.updateSearchresults = function updateSearchresults (search) {
 	const searchText = (search !== undefined) ? search : htmlNodes.inputs.search.value;
 	
@@ -189,14 +206,15 @@ ui.updateSearchresults = function updateSearchresults (search) {
 		searchRegex = new RegExp(searchText, 'i');  // try parsing input as a regex first
 	} catch (e) {
 		if (e instanceof SyntaxError)               // if this fails, assume the input was plain text
-			searchRegex = new RegExp(searchText.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&"), 'i');
+			searchRegex = new RegExp(searchText.replace(/[\-\]\\./[{}()*+?^$|]+/g, "\\$&"), 'i');
 	}
 	
+	// show results below the search bar
 	htmlNodes.selectedSearchResult = null;
-	// select which search results to show
 	let firstMatch = true;
 	[...htmlNodes.divs.searchresults.firstElementChild.firstChild.childNodes].forEach( tablerow => {
-		if (tablerow.firstChild.firstChild.title.match(searchRegex)) {
+		const title = tablerow.firstChild.firstChild.title;
+		if (title.match(searchRegex)) {
 			tablerow.classList.add("searchresult");
 			if (tablerow.firstChild.firstChild.classList.contains("onteam"))
 				tablerow.classList.add("onteam");

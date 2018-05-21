@@ -14,7 +14,6 @@ body { /* critical */
 .tab-content > .content:not(.active),
 #div_searchresults:not(.active),
 #div_builddata:not(.active),
-.slider:not(.active),
 .popup:not(.active) { /* critical */
 	display:          none;
 }

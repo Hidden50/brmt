@@ -27,9 +27,10 @@
 	<a class="nav-link hidden"        href="#breakit-sets"    id="navlink_main_breakit-sets">(sets)</a>
 	<a class="nav-link"               href="#wallit"          id="navlink_main_wallit">Wall it</a>
 	<a class="nav-link hidden"        href="#wallit-sets"     id="navlink_main_wallit-sets">(sets)</a>
-	<a class="nav-link"               href="#faq"             id="navlink_main_faq">FAQ</a>
 	<a class="nav-link hidden"        href="#compendium"      id="navlink_main_compendium">Compendium</a>
 	<a class="nav-link hidden"        href="#builddata"       id="navlink_main_builddata">Data</a>
+	<a class="nav-link"               href="#about"           id="navlink_main_about">About</a>
+	<a class="nav-link"               href="#faq"             id="navlink_main_faq">FAQ</a>
 	<a class="nav-link hidden"        href="#objectinspector" id="navlink_main_objectinspector">Object Inspector</a>
 	<a class="nav-link reveal hidden" href="#hiddentabs"      id="navlink_main_revealhidden"><span class="sr-only">expand/collapse</span></a>
 </nav>
@@ -48,11 +49,11 @@
 	<div id="tabcontent_main_breakit-sets"    class="content"></div>
 	<div id="tabcontent_main_wallit"          class="content"></div>
 	<div id="tabcontent_main_wallit-sets"     class="content"></div>
-	<div id="tabcontent_main_faq"             class="content"></div>
 	<div id="tabcontent_main_compendium"      class="content"></div>
 	<div id="tabcontent_main_builddata"       class="content"></div>
+	<div id="tabcontent_main_about"           class="content"></div>
+	<div id="tabcontent_main_faq"             class="content"></div>
 	<div id="tabcontent_main_objectinspector" class="content"></div>
-	<div id="div_about"></div>
 </div>
 
 </section>
