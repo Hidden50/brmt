@@ -14,7 +14,7 @@
 }
 
 .sprite-003-m {
-	background-position: -501px -160px;
+	background-position: -501px -192px;
 }
 .sprite-003 {
 	background-position: -469px -160px;
@@ -712,10 +712,10 @@
 	background-position: -501px -128px;
 }
 .sprite-472 {
-	background-position: -116px -64px;
+	background-position: -501px -160px;
 }
 .sprite-473 {
-	background-position: -501px -192px;
+	background-position: -116px -64px;
 }
 .sprite-474 {
 	background-position: -501px -224px;
@@ -1231,7 +1231,7 @@
 	background-position: -661px -368px;
 }
 .sprite-alakazite {
-	background-position: -96px -640px;
+	background-position: -144px -640px;
 }
 .sprite-assaultvest {
 	background-position: -72px -640px;
@@ -1265,6 +1265,9 @@
 }
 .sprite-darkiniumz {
 	background-position: -661px -320px;
+}
+.sprite-diancite {
+	background-position: -120px -664px;
 }
 .sprite-dragoniumz {
 	background-position: -661px -344px;
@@ -1317,13 +1320,16 @@
 	width: 25px;
 }
 .sprite-groundiumz {
-	background-position: -661px -80px;
+	background-position: -96px -640px;
 }
 .sprite-gyaradosite {
 	background-position: -120px -640px;
 }
 .sprite-heracronite {
-	background-position: -144px -640px;
+	background-position: -661px -80px;
+}
+.sprite-iapapaberry {
+	background-position: -192px -664px;
 }
 .sprite-iciumz {
 	background-position: -168px -640px;
@@ -1363,6 +1369,9 @@
 }
 .sprite-pinsirite {
 	background-position: -456px -640px;
+}
+.sprite-psychiumz {
+	background-position: -168px -664px;
 }
 .sprite-rockiumz {
 	background-position: -480px -640px;
@@ -1404,5 +1413,5 @@
 	background-position: -96px -664px;
 }
 .sprite-wateriumz {
-	background-position: -120px -664px;
+	background-position: -144px -664px;
 }

@@ -71,24 +71,35 @@ teamrater.scoreSpecies = function scoreSpecies (build, subject, team, evaluator,
 	));
 };
 
-let scoreViability = teamrater.scoreViability = function scoreViability (pokemon) {
+const scoreViability = teamrater.scoreViability = function scoreViability (pokemon) {
 	let vrScore = {
-		"S":   4,
-		"A+":  3,
-		"A":   2,
-		"A-":  1,
-		"B+":  0,
-		"B":  -1,
-		"B-": -2,
-		"C+": -3,
-		"C":  -4,
-		"C-": -5,
-		"D+": -6,
-		"D":  -7,
-		"D-": -8,
-		"?":  -9
+		"S+":   5,
+		"S":    4,
+		"S-":   3,
+		"A+":   2,
+		"A":    1,
+		"A-":   0,
+		"B+":  -1,
+		"B":   -2,
+		"B-":  -3,
+		"C+":  -4,
+		"C":   -5,
+		"C-":  -6,
+		"D+":  -7,
+		"D":   -8,
+		"D-":  -9,
+		"E+": -10,
+		"E":  -11,
+		"E-": -12,
+		"F+": -13,
+		"F":  -14,
+		"F-": -15,
+		"?":  -16
 	};
-	return vrScore[pokemon.score.vr];
+	const vr = pokemon.score.vr;
+	if (vr in vrScore)
+		return vrScore[vr];
+	return vrScore["?"];
 };
 
 let getViability = teamrater.getViability = function getViability (pokemon, setInfo) {
