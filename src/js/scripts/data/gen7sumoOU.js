@@ -5,8 +5,9 @@ window.ui = project.ui = project.ui || {};
 ui.cache = ui.cache || {};
 ui.cache.compendiums = ui.cache.compendiums || {};
 
-ui.cache.compendiums.gen7OU =
-`S, vr, 645-s, 801
+ui.cache.compendiums.gen7sumoOU =
+`
+S, vr, 645-s, 801
 
 A+, vr, 797, 719-m, 598, 658, 658-a, 485, 785, 786, 748, 718
 A, vr, 036, 646-b, 381, 303-m, 151, 127-m, 465, 787, 637, 145
@@ -717,6 +718,7 @@ CM, letters, CM
 788|Utility, icon, leftovers
 748|ThaPex, icon, shedshell
 003-m|Mixed Def, icon, venusaurite
-145|Def, icon, leftovers`;
+145|Def, icon, leftovers
+`.trim();
 
 })();

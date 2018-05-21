@@ -11,6 +11,7 @@
 			<select id="select_format">
 				<option disabled>Format:</option>
 				<option value="gen7OU" selected>Gen7 OU</option>
+				<option value="gen7sumoOU">sumo OU</option>
 				<option value="gen6OU">Gen6 OU</option>
 				<option value="gen6RU">Gen6 RU</option>
 				<option value="gen6PU">Gen6 PU</option>
