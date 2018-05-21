@@ -127,7 +127,6 @@ listeners.initPokemonsearch = function initPokemonsearch () {
 				// user is typing outside the search bar
 				// focus the search bar and type there instead
 				htmlNodes.inputs.search.focus();
-				console.log("blubb");
 			}
 		}
 		return listeners.preventPropagation(e);
