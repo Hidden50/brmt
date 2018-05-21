@@ -7,6 +7,8 @@ let parser = brmt.parser = {};
 parser.parseChecksCompendium = function parseChecksCompendium (buildData) {
 	let build = {};
 	for (let line of buildData) {
+		if (!line.length || line[0].startsWith("//"))
+			continue;
 		let [subject, mode, ...targets] = line;
 		if (!brmt.tools.siModes.includes(mode))
 			continue;
@@ -33,15 +35,23 @@ parser.addEntries = function addEntries (build, subjects, mode, targets) {
 parser.unpackSetData = function unpackSetData (packedSetlists) {
 	let setlists = {};
 	for (let packedSetlist of packedSetlists) {
-		let [species, ...sets] = packedSetlist.split('|');
-		species = brmt.aliases.getSpeciesID(species);
+		let [species, ...sets] = packedSetlist.split('|').filter( entry => entry.length );
 		if (!species) continue;
-		if (sets.length === 0)
+		species = brmt.aliases.getSpeciesID(species);
+
+		if (sets.length === 0) {
 			sets = ["?"];
-		if (!setlists[species])
+		}
+		if (!setlists[species]) {
 			setlists[species] = {};
-		for (let set of sets)
+		}
+
+		for (let set of sets) {
+			set = brmt.aliases.getSetAlias(set)
+				.replace(/([a-z])([A-Z])/g, "$1 $2")  // convert camel case to spaced words
+				.toLowerCase();                       // convert to lower case
 			setlists[species][set] = 1;
+		}
 	}
 	return setlists;
 };
@@ -80,11 +90,14 @@ parser.inheritEntries = function inheritEntries (build) {
 };
 
 parser.buildDataToString = function buildDataToString (data, sep, linesep, useOfficialNames) {
-	return data.map(
-		line => line.map(
-			el => brmt.parser.packSetData( brmt.parser.unpackSetData([el]), useOfficialNames )
-		).join(sep)
-	).join(linesep);
+	return data.map( line => {
+		if (typeof line[0] === "string" && !line[0].startsWith("//")) {
+			line = line.map(
+				arg => brmt.parser.packSetData( brmt.parser.unpackSetData([arg]), useOfficialNames )
+			);
+		}
+		return line.join(sep);
+	}).join(linesep);
 };
 
 parser.stringToBuildData = function stringToBuildData (Str) {

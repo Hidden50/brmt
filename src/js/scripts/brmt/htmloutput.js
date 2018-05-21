@@ -24,20 +24,25 @@ htmloutput.sprite = (imgName) => {
 htmloutput.readIconConfig = function readIconConfig (buildData) {
 	let iconConfig = {};
 	for (let line of buildData) {
+		if (!line.length || line[0].startsWith("//"))
+			continue;
 		let [subject, configType, configData] = line;
 		if (!htmloutput.iconConfigTypes.includes(configType))
 			continue;
 		subject = brmt.parser.unpackSetData([subject]);
-		for (let species in subject)
-		for (let set in subject[species]) {
-			if (!iconConfig[species]) iconConfig[species] = {};
-			
-			if (brmt.aliases.officialnames[species]) {
-				if (!iconConfig[species][set])
-					iconConfig[species][set] = {};
-				iconConfig[species][set][configType] = configData;
-			} else {
-				iconConfig[species][configType] = configData;
+		for (let species in subject) {
+			for (let set in subject[species]) {
+				if (!iconConfig[species]) iconConfig[species] = {};
+				
+				if (brmt.aliases.officialnames[species]) {
+					if (!iconConfig[species][set])
+						iconConfig[species][set] = {};
+					iconConfig[species][set][configType] = configData;
+				} else {
+					const speciesAlias = brmt.aliases.getSetAlias(species);
+					if (!iconConfig[speciesAlias]) iconConfig[speciesAlias] = {};
+					iconConfig[speciesAlias][configType] = configData;
+				}
 			}
 		}
 	}
@@ -57,10 +62,15 @@ htmloutput.brmtIcon = function brmtIcon (pokemon, build, team, iconConfig, ratin
 		else if (rating <= -250000) {
 			wrapperClass += " rating-verysmall";
 			rating += 500000;  // don't display penalty for defensive threats
-		} else if (rating <= -5000) wrapperClass += " rating-250000";
-		else if (rating <= -50)     wrapperClass += " rating-5000";
-		else if (rating <= 0)       wrapperClass += " rating-50";
-		else                        wrapperClass += " rating-0";
+		} else if (rating <= -5000) {
+			wrapperClass += " rating-250000";
+		} else if (rating <= -50) {
+			wrapperClass += " rating-5000";
+		} else if (rating <= 0) {
+			wrapperClass += " rating-50";
+		} else {
+			wrapperClass += " rating-0";
+		}
 	}
 	
 	if (mouseoverText === undefined)
