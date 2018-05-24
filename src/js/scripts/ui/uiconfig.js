@@ -94,7 +94,7 @@ config.about =
 
 config.faq =
 `<h2>Frequently asked questions:</h2>
-<p>Q: What is brmt?<br>A: A tool to make threat lists for Pok&eacute;mon Teams. </p>
+<p>Q: What is brmt?<br>A: Web app for finding weaknesses in a Pok&eacute;mon team, based on a Checks Compendium. </p>
 <p>Q: How does it work?<br>A: It goes through a list of stored answers to common threats and scores them based on the quality and quantity it finds on your team. Then it sorts that list based on those scores.</p>
 <p>Q: What do GSI, SSI and NSI stand for?<br>A: They stand for <i>guaranteed switch-in</i>, <i>situational switch-in</i> and <i>non-switch-in</i>. These are the categories traditionally used for expressing how well a Pok&eacute;mon is checked by another.</p>
 <p>Q: What do the colors mean?<br>A: Colors help you interpret the ratings. Usually green threats are well covered, blues are probably covered, orange threats aren't covered, and red threats also themselves check some of your team members.</p>
