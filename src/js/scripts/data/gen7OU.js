@@ -69,7 +69,7 @@ C-, vr, 142-m, 334-m, 713, 482, 149, 076-a, 793, 545, 319-m, 398
 323-m|wallbreaker, NSI, 645-s|flyinium|rockium|double dance|scarf|def, 445|offensive sr|scarf|sd, 445-m|sd sand force, 718|cb|dd|double dance|sub coil|sub dd|sub toxic, 658|protean|ash|scarf, 647|scarf|waterium|specs, 485|offensive, 787|sd z-grass/fight/rock|cb, 308-m|offensive, 260-m|swift swim, 248|cb, 721|sub, 786|specs, 473|lo, 646-b|sub icium, 490|z-rain dance, 184|z-belly drum, 319-m|cleaner, 034|lo, 472|defog|taunt|sd, 142-m|offensive, 342|cb|sd, 211|swift swim, 
 
 036|cm, icon, leftovers
-036|cm, GSI, 485|utility|sp d|offensive, 637|qd z-move|charti|bulky qd, 006-my|wallbreaker, 797|sp d, 003-m|mixed def|offensive, 385|scarf|rocks|wish, 036|unaware, 748|tha pex, 034|lo, 721|sub, 579|cm, 
+036|cm, GSI, 485|utility|sp d|offensive, 637|qd z-move|sub qd, 006-my|wallbreaker, 797|sp d, 003-m|mixed def|offensive, 385|scarf|rocks|wish, 036|unaware, 748|tha pex, 034|lo, 721|sub, 579|cm, 
 036|cm, SSI, 797|mixed def, 801|sg z-fight/elec/fairy, 530|sand|sash|scarf, 591|mixed def|av, 094|off utility|specs, 462|sub, 227|def, 113|blob, 212-m|utility|sd, 598|mixed def, 545|sd waterium, 721|sub, 494|cb, 303-m|sd|4 atks
 036|cm, NSI, 645-s|flyinium, 785|z-wild charge|off utility|shuca, 788|utility, 787|sd z-grass/fight/rock|cb, 786|stallbreaker|specs, 646-b|sub icium, 490|z-rain dance, 720-u|cb, 625|sd, 798|sd|scarf, 211|swift swim
 
@@ -97,20 +97,41 @@ C-, vr, 142-m, 334-m, 713, 482, 149, 076-a, 793, 545, 319-m, 398
 
 149|dd z-fly, icon, flyiniumz
 149|dd z-fly, letters, DD
-149|dd z-fly, GSI, 195|unaware, 488|tr utility
-149|dd z-fly, SSI, 645-s|def, 145|off utility|def, 797|sp d, 594|mixed def, 227|def, 080-m|mega tank, 598|mixed def
+149|dd z-fly, GSI, 195|unaware, 488|tr utility, 227|def, 
+149|dd z-fly, SSI, 645-s|def, 145|off utility|def, 797|sp d, 594|mixed def, 080-m|mega tank, 598|mixed def
 149|dd z-fly, NSI, 645-s|scarf|rockium, 036|unaware, 445|scarf, 786|scarf, 793|scarf, 381|scarf, 639|scarf, 473|lo, 461|cb, 642|np|defiant mixed, 142-m|offensive, 230|swift swim, 658|scarf
 
 719-m|offensive, icon, diancite
 719-m|offensive, GSI, 113|blob, 385|rocks|wish, 801|av, 465|av, 003-m|mixed def, 591|mixed def|av
 719-m|offensive, SSI, 212-m|utility|sd, 797|sp d, 227|def, 423|sp d, 748|tha pex, 485|utility|scarf, 801|sg z-fight/elec/fairy, 
-719-m|offensive, NSI, 645-s|scarf, 658|ash|protean|scarf, 785|shuca|z-wild charge|off utility|specs, 065-m|offensive, 445|scarf, 798|scarf, 260-m|swift swim, 211|swift swim, 230|swift swim, 647|scarf, 428-m, 
+719-m|offensive, NSI, 645-s|scarf, 658|ash|protean|scarf, 785|shuca|z-wild charge|off utility|specs, 065-m|offensive, 445|scarf, 798|scarf, 260-m|swift swim, 211|swift swim, 230|swift swim, 647|scarf, 428-m|offensive, 
 
 719-m|sub, icon, diancite
 719-m|sub, letters, sub
 719-m|sub, GSI, 212-m|utility|sd, 598|mixed def, 748|tha pex, 465|mixed def|av, 591|mixed def|av, 
 719-m|sub, SSI, 385|wish, 
 719-m|sub, NSI, 645-s|scarf, 658|ash|protean|scarf, 785|shuca|z-wild charge|off utility|specs, 065-m|offensive, 445|scarf, 798|scarf, 260-m|swift swim, 211|swift swim, 647|scarf, 
+
+530|sd sand rush, icon, lifeorb
+530|sd sand rush, letters, SD
+530|sd sand rush, GSI, 227|def, 645-s|def|scarf, 080-m|mega tank, 797|spd, 479w|utility, 
+530|sd sand rush, SSI, 645-s|flyinium|rockium|double dance, 465|mixed def, 130|dd, 472|taunt|stallbreaker|defog, 594|mixed def, 450|mixed def, 195|unaware, 279|mixed def, 488|tr utility
+530|sd sand rush, NSI, 006-my|wallbreaker, 
+
+530|sash, letters, Mold
+530|sash, GSI, 797|spd, 465|mixed def|av, 227|def, 645-s|def|scarf, 080-m|mega tank, 472|taunt|stallbreaker|defog, 450|mixed def, 594|mixed def, 195|unaware, 579|cm, 488|tr utility
+530|sash, SSI, 645-s|flyinium|rockium|double dance, 445|scarf, 226|mixed def, 130|dd, 279|mixed def|specs, 214-m|sd
+530|sash, NSI, 658|protean|ash, 006-my|wallbreaker, 647|waterium|scarf|specs, 490|z-rain dance, 637|qd z-move|sub qd, 639|scarf, 428-m|offensive, 230|swift swim, 319-m|cleaner, 130-m|sub dd, 245|vin cune, 184|z-belly drum, 342|cb|sd, 701|sd unburden, 494|cb|scarf, 260-m|swift swim
+
+530|scarf, GSI, 797|sp d, 465|mixed def|av, 227|def, 645-s|def|scarf, 080-m|mega tank, 472|taunt|defog|stallbreaker, 450|mixed def, 594|mixed def, 195|unaware, 579|cm, 488|tr utility
+530|scarf, SSI, 645-s|flyinium|rockium|double dance, 445|scarf, 226|mixed def, 130|dd, 279|mixed def|specs, 214-m|sd
+530|scarf, NSI, 658|ash, 647|scarf, 639|scarf, 319-m|cleaner, 130-m|sub dd, 260-m|swift swim, 230|swift swim, 245|vin cune, 184|z-belly drum|perish trap, 342|cb|sd, 701|sd unburden, 
+
+475-m|sd, icon, galladite
+475-m|sd, letters, sd
+475-m|sd, GSI, 036|unaware, 480|tr utility, 080-m|mega tank, 488|tr utility, 195|unaware, 302-m|def, 
+475-m|sd, SSI, 036|cm|rocks, 151|utility, 645|def|scarf, 788|utility, 334-m|utility, 
+475-m|sd, NSI, 719-m|offensive|sub, 094|specs|off uility, 211|swift swim, 065|lo, 065-m|offensive, 260-m|swift swim, 701|sd unburden, 641-s|flyinium|lo, 785|specs|z-wild charge, 786|scarf, 127-m|sd, 398|scarf, 
 
 //
 // general: set shorthands
