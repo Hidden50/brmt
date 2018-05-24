@@ -8,7 +8,7 @@
 	<link rel="preload" as="style"   href="./stylesheet.min.css" onload="this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="./stylesheet.min.css"></noscript>
 	<style>{% include "inline.min.css" %}</style>
-	<link rel="preload" as="image" href="sprites.png">
+	<link rel="prefetch" as="image" href="sprites.png">
 {% endblock %}
 
 {% block scripts %}
