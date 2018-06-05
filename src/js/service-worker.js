@@ -4,7 +4,7 @@ const version = "3.0.0-{%INSERT-DATE%}";
 const expectedCaches = [`v${version}`];
 
 const reqFiles = [
-	`/`,
+	`./`,
 	`./index.html`,
 	`./sprites.png`,
 	`./stylesheet.min.css`,
